@@ -1,20 +1,24 @@
 "use client";
 import { useState } from "react";
 
-const RATES = {
-  "allrisk": {
+type RateCategory = "0-125" | "125-200" | "200-400" | "400-800" | "800+";
+type RegionKey = "1" | "2" | "3";
+type InsuranceType = "allrisk" | "tlo";
+
+const RATES: Record<InsuranceType, Record<RegionKey, Record<RateCategory, number>>> = {
+  allrisk: {
     "1": { "0-125": 3.82, "125-200": 2.67, "200-400": 2.18, "400-800": 2.08, "800+": 2.09 },
     "2": { "0-125": 3.26, "125-200": 2.28, "200-400": 1.69, "400-800": 1.69, "800+": 1.70 },
     "3": { "0-125": 2.53, "125-200": 1.74, "200-400": 1.37, "400-800": 1.37, "800+": 1.37 },
   },
-  "tlo": {
+  tlo: {
     "1": { "0-125": 0.47, "125-200": 0.63, "200-400": 0.53, "400-800": 0.43, "800+": 0.37 },
     "2": { "0-125": 0.65, "125-200": 0.44, "200-400": 0.37, "400-800": 0.37, "800+": 0.37 },
     "3": { "0-125": 0.43, "125-200": 0.30, "200-400": 0.25, "400-800": 0.25, "800+": 0.25 },
   },
 };
 
-function getCategory(value: number): string {
+function getCategory(value: number): RateCategory {
   if (value <= 125) return "0-125";
   if (value <= 200) return "125-200";
   if (value <= 400) return "200-400";
