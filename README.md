@@ -87,4 +87,3 @@ import Image from "next/image";
 Website ini dibuat sesuai permintaan Rio Mardiansyah.
 - WhatsApp: 0813-1556-592
 - Email: marketing.btma@gmail.com
-"# Asuransi-Batam" 
