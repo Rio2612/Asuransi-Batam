@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
-import { Breadcrumb, CTASection, FAQAccordion, SectionHeader } from "@/components/ui/index";
+import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Truck, CheckCircle2, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = generateSEO({

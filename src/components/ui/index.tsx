@@ -1,3 +1,4 @@
+// Server components only – no hooks, no "use client"
 import Link from "next/link";
 import { ChevronRight, Star } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/constants";
@@ -55,56 +56,19 @@ export function CTASection({
           href={WHATSAPP_URL(waMsg)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-navy rounded-xl transition-all hover:scale-105"
-          style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold rounded-xl transition-all hover:scale-105"
+          style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)", color: "#0a1628" }}
         >
           Konsultasi Gratis
         </a>
         <Link
           href="/kalkulator-premi/mobil"
-          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border-2 border-white/30 rounded-xl hover:border-gold hover:text-gold transition-all"
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border-2 border-white/30 rounded-xl hover:border-yellow-400 hover:text-yellow-400 transition-all"
         >
           Hitung Premi
         </Link>
       </div>
     </section>
-  );
-}
-
-// ─── FAQ Accordion ────────────────────────────────────────────
-"use client";
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-
-export function FAQAccordion({ faqs }: { faqs: { q: string; a: string }[] }) {
-  const [open, setOpen] = useState<number | null>(0);
-  return (
-    <div className="space-y-3">
-      {faqs.map((faq, idx) => (
-        <div
-          key={idx}
-          className="border border-gray-200 rounded-xl overflow-hidden"
-        >
-          <button
-            className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-navy hover:bg-blue-50 transition-colors"
-            onClick={() => setOpen(open === idx ? null : idx)}
-          >
-            <span>{faq.q}</span>
-            <ChevronDown
-              size={18}
-              className={`flex-shrink-0 ml-4 transition-transform duration-200 ${
-                open === idx ? "rotate-180 text-blue-600" : "text-gray-400"
-              }`}
-            />
-          </button>
-          {open === idx && (
-            <div className="px-5 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
-              {faq.a}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
   );
 }
 
@@ -116,8 +80,7 @@ export function StarRating({ rating }: { rating: number }) {
         <Star
           key={i}
           size={14}
-          className={i < rating ? "text-gold fill-gold" : "text-gray-300"}
-          style={{ color: i < rating ? "#c9a84c" : undefined, fill: i < rating ? "#c9a84c" : "none" }}
+          style={{ color: i < rating ? "#c9a84c" : "#d1d5db", fill: i < rating ? "#c9a84c" : "none" }}
         />
       ))}
     </div>
@@ -147,8 +110,8 @@ export function SectionHeader({
         </span>
       )}
       <h2
-        className="text-3xl md:text-4xl font-bold text-navy mb-3"
-        style={{ fontFamily: "Syne, sans-serif" }}
+        className="text-3xl md:text-4xl font-bold mb-3"
+        style={{ fontFamily: "Syne, sans-serif", color: "#0a1628" }}
       >
         {title}
       </h2>
@@ -161,7 +124,7 @@ export function SectionHeader({
   );
 }
 
-// ─── Product Page Shell ──────────────────────────────────────
+// ─── Product Page Hero ──────────────────────────────────────
 export function ProductPageHero({
   tag,
   title,
@@ -199,14 +162,14 @@ export function ProductPageHero({
             href={WHATSAPP_URL(waMsg)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-navy rounded-xl"
-            style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold rounded-xl"
+            style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)", color: "#0a1628" }}
           >
             Konsultasi Sekarang
           </a>
           <Link
             href="/kalkulator-premi/mobil"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border border-white/30 rounded-xl hover:border-gold hover:text-gold transition-all"
+            className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border border-white/30 rounded-xl hover:border-yellow-400 hover:text-yellow-400 transition-all"
           >
             Hitung Premi
           </Link>
