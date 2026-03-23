@@ -151,13 +151,20 @@ export default function KalkulatorMobil() {
               * Estimasi berdasarkan tarif acuan OJK. Premi final ditentukan oleh perusahaan
               asuransi pilihan Anda sesuai kondisi kendaraan.
             </p>
+            {/* Discount banner */}
+            <div className="flex items-center gap-2 mb-3 px-4 py-2.5 bg-[#c9a84c]/20 border border-[#c9a84c]/50 rounded-xl">
+              <span className="text-lg">🎁</span>
+              <p className="text-sm text-[#f0d080] font-semibold leading-snug">
+                Dapatkan <span className="text-white font-bold">diskon s/d Rp 1.000.000</span> dengan menghubungi langsung!
+              </p>
+            </div>
             <a
               href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi%20mobil%20di%20Batam"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center hover:bg-[#f0d080] transition-colors"
             >
-              Minta Penawaran Resmi via WhatsApp
+              Hubungi Langsung & Klaim Diskon
             </a>
           </div>
         )}
