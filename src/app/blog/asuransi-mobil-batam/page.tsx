@@ -27,23 +27,23 @@ export default function ArticleAsuransiMobilBatamPage() {
         <li><strong>Aktivitas industri:</strong> Kendaraan niaga dan alat berat yang beroperasi memerlukan perlindungan khusus</li>
       </ul>
 
-      <h2>Tarif Premi Asuransi Mobil di Batam (Wilayah 2)</h2>
-      <p>Berdasarkan Surat Edaran OJK, Batam termasuk dalam Wilayah 2. Berikut acuan tarif premi:</p>
+      <h2>Tarif Premi Asuransi Mobil di Batam (Wilayah 1)</h2>
+      <p>Berdasarkan Surat Edaran OJK, Batam termasuk Wilayah 1 (Sumatera). Berikut acuan tarif premi:</p>
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
         <table className="w-full text-sm">
           <thead className="bg-[#0a1628] text-white">
             <tr>
               <th className="text-left p-4">Harga Kendaraan</th>
-              <th className="p-4 text-center">All Risk (Wilayah 2)</th>
-              <th className="p-4 text-center">TLO (Wilayah 2)</th>
+              <th className="p-4 text-center">All Risk (Wilayah 1)</th>
+              <th className="p-4 text-center">TLO (Wilayah 1)</th>
             </tr>
           </thead>
           <tbody>
             {[
-              ["s.d. Rp 125 juta", "3.26% - 3.59%", "0.47% - 0.56%"],
-              ["Rp 125-200 juta", "2.28% - 2.69%", "0.63% - 0.74%"],
-              ["Rp 200-400 juta", "1.69% - 2.00%", "0.53% - 0.63%"],
-              ["Rp 400-800 juta", "1.69% - 2.00%", "0.43% - 0.52%"],
+              ["s.d. Rp 125 juta", "3.82% - 4.20%", "0.47% - 0.56%"],
+              ["Rp 125-200 juta", "2.67% - 2.94%", "0.63% - 0.74%"],
+              ["Rp 200-400 juta", "2.18% - 2.40%", "0.53% - 0.63%"],
+              ["Rp 400-800 juta", "2.18% - 2.40%", "0.43% - 0.52%"],
               ["Di atas Rp 800 juta", "1.70% - 2.00%", "0.37% - 0.45%"],
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>

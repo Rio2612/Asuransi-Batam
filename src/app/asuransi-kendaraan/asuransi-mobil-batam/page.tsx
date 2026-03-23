@@ -19,7 +19,7 @@ const benefits = [
 
 const faqs = [
   { q: "Berapa premi asuransi mobil All Risk di Batam?", a: "Premi All Risk berkisar 1.5% - 3.5% dari nilai kendaraan per tahun, tergantung wilayah dan jenis kendaraan. Gunakan kalkulator di bawah untuk estimasi." },
-  { q: "Apa itu wilayah rating dalam asuransi mobil?", a: "OJK membagi Indonesia menjadi 3 wilayah. Batam termasuk wilayah 2. Setiap wilayah memiliki tarif premi berbeda berdasarkan tingkat risiko." },
+  { q: "Apa itu wilayah rating dalam asuransi mobil?", a: "OJK membagi Indonesia menjadi 3 wilayah. Batam termasuk Wilayah 1 (Sumatera & sekitarnya). Setiap wilayah memiliki tarif premi berbeda berdasarkan tingkat risiko." },
   { q: "Apakah bisa klaim tanpa surat polisi jika kecelakaan ringan?", a: "Untuk kerusakan ringan (bumper lecet, dll) biasanya tidak perlu surat polisi. Namun untuk kerusakan berat atau tabrakan pihak ketiga, laporan polisi diperlukan." },
   { q: "Berapa lama proses klaim asuransi mobil?", a: "Proses survey 1-2 hari kerja, persetujuan klaim 3-7 hari kerja, perbaikan di bengkel sesuai kerusakan." },
 ];

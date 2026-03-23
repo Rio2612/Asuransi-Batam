@@ -6,8 +6,6 @@ export const metadata: Metadata = {
   description: "Profil Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
   alternates: { canonical: "https://asuransibatam.id/tentang-kami" },
 };
-import Image from "next/image";
-<Image src="/images/rio-mardiansyah.jpg" alt="Rio Mardiansyah – Konsultan Asuransi Batam" width={500} height={500} />
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
