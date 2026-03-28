@@ -70,9 +70,15 @@ export default function KalkulatorMobilForm() {
             <div className="bg-white/10 rounded-xl p-3 text-center"><div className="text-white/60 text-xs">Min</div><div className="font-bold">{fmt(result.min)}</div></div>
             <div className="bg-[#c9a84c]/20 rounded-xl p-3 text-center border border-[#c9a84c]/40"><div className="text-[#c9a84c] text-xs">Max</div><div className="font-bold text-[#f0d080]">{fmt(result.max)}</div></div>
           </div>
+          <div className="flex items-center gap-2 mb-3 px-4 py-2.5 bg-[#c9a84c]/20 border border-[#c9a84c]/50 rounded-xl">
+            <span className="text-base">🎁</span>
+            <p className="text-xs text-[#f0d080] font-semibold leading-snug">
+              Dapatkan <span className="text-white font-bold">diskon s/d Rp 1.000.000</span> dengan menghubungi langsung!
+            </p>
+          </div>
           <a href="https://wa.me/628131556592" target="_blank" rel="noopener noreferrer"
             className="block w-full py-2.5 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center text-sm hover:bg-[#f0d080] transition-colors">
-            Minta Penawaran Resmi
+            Hubungi Langsung & Klaim Diskon
           </a>
         </div>
       )}
