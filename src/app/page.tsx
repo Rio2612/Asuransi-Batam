@@ -211,7 +211,7 @@ export default function HomePage() {
                     { label: "Produk Tersedia", value: "20+" },
                   ].map((stat) => (
                     <div key={stat.label} className="bg-white/5 rounded-2xl p-4 text-center">
-                      <div className="font-display font-bold text-3xl text-[#c9a84c]">{stat.value}</div>
+                      <div className="font-display font-bold text-2xl text-[#c9a84c]">{stat.value}</div>
                       <div className="text-white/60 text-xs mt-1">{stat.label}</div>
                     </div>
                   ))}
@@ -352,9 +352,9 @@ export default function HomePage() {
                 { val: "98%", label: "Tingkat Klaim Sukses", bg: "bg-[#1a4fa0]", color: "text-white" },
                 { val: "24/7", label: "Layanan Darurat", bg: "bg-[#132040]", color: "text-[#f0d080]" },
               ].map((s) => (
-                <div key={s.label} className={`${s.bg} rounded-2xl p-8 text-center`}>
-                  <div className={`font-display font-black text-5xl ${s.color} mb-2`}>{s.val}</div>
-                  <div className="text-white/60 text-sm">{s.label}</div>
+                <div key={s.label} className={`${s.bg} rounded-2xl p-4 sm:p-6 lg:p-8 text-center overflow-hidden`}>
+                  <div className={`font-display font-black text-3xl sm:text-4xl lg:text-5xl ${s.color} mb-2 leading-none`}>{s.val}</div>
+                  <div className="text-white/60 text-xs sm:text-sm mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
