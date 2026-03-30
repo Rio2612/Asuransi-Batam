@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Alat Berat Batam – Excavator, Bulldozer, Wheel Loader",
   description: "Asuransi alat berat di Batam. Perlindungan excavator, bulldozer, wheel loader, dan alat konstruksi dari kerusakan dan kecelakaan. Hubungi 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-machinery/asuransi-alat-berat" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-alat-berat" },
 };
 const benefits = [
   { icon: "🚜", title: "Equipment All Risk", desc: "Perlindungan menyeluruh alat berat dari semua risiko fisik." },

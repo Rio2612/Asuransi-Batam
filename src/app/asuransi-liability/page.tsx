@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Liability Batam – Tanggung Gugat Pihak Ketiga & Limbah B3",
   description: "Asuransi liability di Batam. Perlindungan public liability, produk liability, dan asuransi khusus limbah B3. Wajib untuk industri di Batam. 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-liability" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability" },
 };
 const benefits = [
   { icon: "⚖️", title: "Tanggung Gugat Pihak Ketiga", desc: "Biaya ganti rugi dan legal jika bisnis Anda menyebabkan kerugian pihak ketiga." },

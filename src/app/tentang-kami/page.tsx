@@ -6,7 +6,7 @@ import KonsultasiForm from "./KonsultasiForm";
 export const metadata: Metadata = {
   title: "Tentang Kami – Rio Mardiansyah, Konsultan Asuransi Batam",
   description: "Profil Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
-  alternates: { canonical: "https://asuransibatam.id/tentang-kami" },
+  alternates: { canonical: "https://asuransibatam.biz.id/tentang-kami" },
 };
 
 const schema = {

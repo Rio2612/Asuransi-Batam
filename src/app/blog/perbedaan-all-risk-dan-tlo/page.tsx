@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Perbedaan Asuransi All Risk dan TLO – Mana yang Lebih Baik?",
   description: "Penjelasan lengkap perbedaan All Risk dan TLO, kelebihan kekurangan masing-masing, dan panduan memilih yang sesuai untuk kendaraan Anda di Batam.",
-  alternates: { canonical: "https://asuransibatam.id/blog/perbedaan-all-risk-dan-tlo" },
+  alternates: { canonical: "https://asuransibatam.biz.id/blog/perbedaan-all-risk-dan-tlo" },
 };
 const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Perbedaan Asuransi All Risk dan TLO", datePublished: "2025-03-05", author: { "@type": "Person", name: "Rio Mardiansyah" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
 export default function ArticleAllRiskTLOPage() {

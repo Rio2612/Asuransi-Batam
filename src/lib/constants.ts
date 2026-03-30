@@ -2,7 +2,7 @@
 export const SITE = {
   name: "Asuransi Batam",
   tagline: "Konsultan Asuransi Kerugian Terpercaya di Batam",
-  url: "https://asuransibatam.id",
+  url: "https://asuransibatam.biz.id",
   phone: "08131556592",
   phoneWA: "628131556592",
   email: "marketing.btma@gmail.com",

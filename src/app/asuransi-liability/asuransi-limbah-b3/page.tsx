@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Limbah B3 Batam – Wajib untuk Industri Penghasil Limbah Berbahaya",
   description: "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum bagi industri. Perlindungan dari tuntutan pencemaran lingkungan. 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-liability/asuransi-limbah-b3" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3" },
 };
 const benefits = [
   { icon: "☣️", title: "Pencemaran Tanah & Air", desc: "Biaya pembersihan dan pemulihan lingkungan akibat tumpahan atau kebocoran limbah B3." },

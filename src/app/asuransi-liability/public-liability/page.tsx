@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Public Liability Batam – Tanggung Gugat Publik & Pihak Ketiga",
   description: "Public Liability Insurance di Batam untuk restoran, hotel, pusat perbelanjaan, dan bisnis umum. Lindungi dari tuntutan cedera pengunjung. 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-liability/public-liability" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability/public-liability" },
 };
 const benefits = [
   { icon: "👤", title: "Cedera Pengunjung/Tamu", desc: "Biaya medis dan ganti rugi jika pengunjung terluka di area bisnis Anda." },

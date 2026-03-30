@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Asuransi Mobil Batam 2025 – Panduan Lengkap, Tarif & Tips Klaim",
   description: "Panduan lengkap asuransi mobil di Batam 2025. Tarif premi, perusahaan terbaik, cara klaim, dan tips memilih polis yang tepat untuk kendaraan Anda di Batam.",
-  alternates: { canonical: "https://asuransibatam.id/blog/asuransi-mobil-batam" },
+  alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-mobil-batam" },
 };
 const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Asuransi Mobil Batam 2025 – Panduan Lengkap", datePublished: "2025-03-01", author: { "@type": "Person", name: "Rio Mardiansyah" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
 export default function ArticleAsuransiMobilBatamPage() {

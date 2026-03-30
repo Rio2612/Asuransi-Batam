@@ -4,7 +4,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Rumah Batam – Lindungi Rumah & Isi Rumah Anda",
   description: "Asuransi rumah tinggal di Batam. Perlindungan dari kebakaran, banjir, pencurian, dan bencana alam. Premi terjangkau, proses mudah. Hubungi 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-properti/asuransi-rumah-batam" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-rumah-batam" },
 };
 
 const benefits = [

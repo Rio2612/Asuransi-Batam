@@ -3,7 +3,7 @@ import KalkulatorMobil from "@/components/KalkulatorMobil";
 export const metadata: Metadata = {
   title: "Kalkulator Premi Asuransi Mobil Batam – Hitung Online Gratis",
   description: "Kalkulator premi asuransi mobil online gratis. Estimasi biaya All Risk dan TLO berdasarkan tarif OJK terbaru. Wilayah 1, 2, dan 3 tersedia.",
-  alternates: { canonical: "https://asuransibatam.id/kalkulator-premi-mobil" },
+  alternates: { canonical: "https://asuransibatam.biz.id/kalkulator-premi-mobil" },
 };
 export default function KalkulatorPremiMobilPage() {
   return (

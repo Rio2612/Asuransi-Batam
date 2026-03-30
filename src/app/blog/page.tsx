@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Blog Edukasi Asuransi – Tips, Panduan & Info Asuransi Batam",
   description: "Artikel edukasi asuransi kerugian. Panduan klaim, perbedaan produk, tips memilih asuransi, dan informasi terkini tentang asuransi di Batam.",
-  alternates: { canonical: "https://asuransibatam.id/blog" },
+  alternates: { canonical: "https://asuransibatam.biz.id/blog" },
 };
 const articles = [
   { title: "Cara Klaim Asuransi Mobil yang Benar dan Cepat", slug: "cara-klaim-asuransi-mobil", date: "10 Maret 2025", category: "Kendaraan", excerpt: "Panduan lengkap langkah demi langkah cara mengajukan klaim asuransi mobil, dokumen yang dibutuhkan, dan tips agar klaim disetujui lebih cepat.", readTime: "7 menit" },

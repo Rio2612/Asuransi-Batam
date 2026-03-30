@@ -18,7 +18,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asuransibatam.id"),
+  metadataBase: new URL("https://asuransibatam.biz.id"),
   title: {
     default: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio Mardiansyah",
     template: "%s | Asuransi Batam",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://asuransibatam.id",
+    url: "https://asuransibatam.biz.id",
     siteName: "Asuransi Batam",
     title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya",
     description:

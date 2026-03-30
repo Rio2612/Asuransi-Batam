@@ -4,7 +4,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Hotel Batam – Perlindungan Aset Hotel & Penginapan",
   description: "Asuransi hotel dan penginapan di Batam. Lindungi bangunan, perabot, dan tanggung jawab tamu dari risiko kebakaran, banjir, dan kerusakan. Konsultasi gratis.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-properti/asuransi-hotel-batam" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-hotel-batam" },
 };
 
 const benefits = [

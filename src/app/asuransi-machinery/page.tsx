@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Machinery Batam – Alat Berat, Crane & Mesin Industri",
   description: "Asuransi machinery, alat berat, dan crane di Batam. Perlindungan dari kerusakan operasional, kecelakaan, dan breakdown. Konsultasi Rio Mardiansyah.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-machinery" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-machinery" },
 };
 const benefits = [
   { icon: "⚙️", title: "Kerusakan Mesin (MB)", desc: "Machinery Breakdown – perlindungan kerusakan mesin akibat kegagalan operasional." },

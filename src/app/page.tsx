@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio Mardiansyah",
   description:
     "Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 10+ tahun. Hubungi 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id" },
+  alternates: { canonical: "https://asuransibatam.biz.id" },
 };
 
 const products = [
@@ -94,9 +94,9 @@ export default function HomePage() {
     "@graph": [
       {
         "@type": ["InsuranceAgency", "LocalBusiness"],
-        "@id": "https://asuransibatam.id/#organization",
+        "@id": "https://asuransibatam.biz.id/#organization",
         name: "Asuransi Batam – Rio Mardiansyah",
-        url: "https://asuransibatam.id",
+        url: "https://asuransibatam.biz.id",
         telephone: "+628131556592",
         email: "marketing.btma@gmail.com",
         address: {

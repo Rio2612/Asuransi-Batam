@@ -3,7 +3,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Kontak – Hubungi Rio Mardiansyah Konsultan Asuransi Batam",
   description: "Hubungi Rio Mardiansyah untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-1556-592, email marketing.btma@gmail.com. Batam Center.",
-  alternates: { canonical: "https://asuransibatam.id/kontak" },
+  alternates: { canonical: "https://asuransibatam.biz.id/kontak" },
 };
 export default function KontakPage() {
   return (

@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Engineering Batam – CAR, EAR, Contractor All Risk",
   description: "Asuransi engineering di Batam. Contractor All Risk (CAR), Erection All Risk (EAR), dan perlindungan proyek konstruksi. Konsultasi Rio Mardiansyah 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-engineering" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-engineering" },
 };
 const benefits = [
   { icon: "🏗️", title: "Contractor All Risk (CAR)", desc: "Perlindungan proyek konstruksi bangunan dari semua risiko selama masa pembangunan." },

@@ -5,7 +5,7 @@ import KalkulatorMobil from "@/components/KalkulatorMobil";
 export const metadata: Metadata = {
   title: "Asuransi Mobil Batam – All Risk & TLO | Kalkulator Premi Online",
   description: "Asuransi mobil All Risk dan TLO di Batam. Hitung premi online gratis. Perlindungan lengkap dari kecelakaan, pencurian, banjir. Konsultasi Rio 0813-1556-592.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-kendaraan/asuransi-mobil-batam" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-mobil-batam" },
 };
 
 const benefits = [

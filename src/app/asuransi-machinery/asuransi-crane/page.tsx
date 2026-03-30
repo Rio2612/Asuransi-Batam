@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Crane Batam – Perlindungan Tower Crane & Mobile Crane",
   description: "Asuransi crane di Batam. Tower crane, mobile crane, dan lifting equipment dilindungi dari kerusakan dan tanggung jawab pihak ketiga. Konsultasi gratis.",
-  alternates: { canonical: "https://asuransibatam.id/asuransi-machinery/asuransi-crane" },
+  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-crane" },
 };
 const benefits = [
   { icon: "🏗️", title: "Kerusakan Fisik Crane", desc: "Perlindungan boom, cabin, sistem hidrolik, dan komponen utama crane." },

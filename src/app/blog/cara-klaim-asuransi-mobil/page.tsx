@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Mobil yang Benar dan Cepat – Panduan 2025",
   description: "Panduan lengkap cara klaim asuransi mobil. Dokumen yang dibutuhkan, langkah-langkah klaim, dan tips agar klaim disetujui. Berlaku untuk All Risk dan TLO.",
-  alternates: { canonical: "https://asuransibatam.id/blog/cara-klaim-asuransi-mobil" },
+  alternates: { canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-mobil" },
 };
 const schema = {
   "@context": "https://schema.org",
