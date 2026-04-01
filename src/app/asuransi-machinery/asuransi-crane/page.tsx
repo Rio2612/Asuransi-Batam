@@ -18,7 +18,7 @@ const faqs = [
   { q: "Apakah ada persyaratan khusus untuk asuransi crane?", a: "Umumnya diperlukan sertifikat kelayakan crane, riwayat perawatan, dan data operator bersertifikat." },
   { q: "Berapa nilai pertanggungan yang disarankan untuk crane?", a: "Minimal sebesar nilai penggantian crane baru (replacement cost). Untuk tanggung jawab pihak ketiga, nilai harus memadai sesuai risiko lokasi proyek." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Crane Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Crane Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiCranePage() {
   return (
     <ProductPageLayout title="Asuransi Crane Batam" subtitle="Perlindungan Lifting Equipment"
