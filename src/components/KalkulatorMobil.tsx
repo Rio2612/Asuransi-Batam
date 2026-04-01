@@ -259,7 +259,7 @@ export default function KalkulatorMobil() {
                 </p>
               </div>
               <a
-                href={`https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi%20mobil%20${vehicleType === "listrik" ? "listrik" : ""}%20di%20Batam`}
+                href={`https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi%20mobil%20${vehicleType === "listrik" ? "listrik" : ""}%20di%20Batam`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center hover:bg-[#f0d080] transition-colors"

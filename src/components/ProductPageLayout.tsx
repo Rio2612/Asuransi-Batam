@@ -77,7 +77,7 @@ export default function ProductPageLayout({
             <p className="text-white/70 text-lg leading-relaxed mb-8">{description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+                href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl transition-all text-center"
@@ -85,10 +85,10 @@ export default function ProductPageLayout({
                 Konsultasi Gratis
               </a>
               <a
-                href="tel:08131556592"
+                href="tel:081373336728"
                 className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all text-center"
               >
-                0813-1556-592
+                0813-7333-6728
               </a>
             </div>
           </div>
