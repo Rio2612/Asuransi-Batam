@@ -8,7 +8,7 @@ import { Hammer, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = generateSEO({
   title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi",
   description:
-    "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio Mardiansyah!",
+    "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
   canonical: "/asuransi-engineering/contractor-all-risk",
 });
 
