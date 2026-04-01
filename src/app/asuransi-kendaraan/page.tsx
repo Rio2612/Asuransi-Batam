@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Asuransi Kendaraan Batam – Mobil, Dump Truck & Kendaraan Niaga",
-  description: "Asuransi kendaraan All Risk dan TLO di Batam. Mobil pribadi, dump truck, dan kendaraan niaga. Kalkulator premi online. Konsultasi Rio Mardiansyah 0813-1556-592.",
+  description: "Asuransi kendaraan All Risk dan TLO di Batam. Mobil pribadi, dump truck, dan kendaraan niaga. Kalkulator premi online. Konsultasi Rio 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-kendaraan" },
 };
 
@@ -28,7 +28,7 @@ const schema = {
   "@type": "Service",
   name: "Asuransi Kendaraan Batam",
   description: "Asuransi mobil dan kendaraan niaga All Risk dan TLO di Batam",
-  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" },
+  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" },
   areaServed: { "@type": "City", name: "Batam" },
 };
 
