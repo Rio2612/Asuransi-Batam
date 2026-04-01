@@ -88,7 +88,7 @@ export default function KalkulatorPremiMobilPage() {
             <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
               <h3 className="font-bold text-navy mb-2">Butuh Penawaran Resmi?</h3>
               <p className="text-sm text-gray-600 mb-3">
-                Rio Mardiansyah akan membantu Anda mendapatkan penawaran dari beberapa perusahaan asuransi terbaik dengan premi paling kompetitif.
+                Rio akan membantu Anda mendapatkan penawaran dari beberapa perusahaan asuransi terbaik dengan premi paling kompetitif.
               </p>
               <a href={WHATSAPP_URL("Halo Rio, saya ingin penawaran asuransi mobil")} target="_blank" rel="noopener noreferrer"
                 className="block text-center py-2.5 rounded-xl font-semibold text-navy text-sm"
