@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Liability Batam – Tanggung Gugat Pihak Ketiga & Limbah B3",
-  description: "Asuransi liability di Batam. Perlindungan public liability, produk liability, dan asuransi khusus limbah B3. Wajib untuk industri di Batam. 0813-1556-592.",
+  description: "Asuransi liability di Batam. Perlindungan public liability, produk liability, dan asuransi khusus limbah B3. Wajib untuk industri di Batam. 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability" },
 };
 const benefits = [
@@ -18,7 +18,7 @@ const faqs = [
   { q: "Siapa yang wajib punya asuransi liability?", a: "Bisnis yang berinteraksi dengan publik, industri yang menghasilkan limbah, operator alat berat, dan semua usaha yang berpotensi menimbulkan kerugian pihak ketiga." },
   { q: "Apa itu Public Liability Insurance?", a: "Asuransi yang melindungi bisnis dari tuntutan hukum pihak ketiga (customer, pengunjung, masyarakat) akibat cedera atau kerusakan properti yang disebabkan oleh operasional bisnis." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Liability Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Liability Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiLiabilityPage() {
   return (
     <ProductPageLayout title="Asuransi Liability Batam" subtitle="Perlindungan Tanggung Gugat Bisnis"
