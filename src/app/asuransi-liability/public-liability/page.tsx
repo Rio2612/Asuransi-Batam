@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Public Liability Batam – Tanggung Gugat Publik & Pihak Ketiga",
-  description: "Public Liability Insurance di Batam untuk restoran, hotel, pusat perbelanjaan, dan bisnis umum. Lindungi dari tuntutan cedera pengunjung. 0813-1556-592.",
+  description: "Public Liability Insurance di Batam untuk restoran, hotel, pusat perbelanjaan, dan bisnis umum. Lindungi dari tuntutan cedera pengunjung. 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability/public-liability" },
 };
 const benefits = [
@@ -17,7 +17,7 @@ const faqs = [
   { q: "Bisnis apa saja yang butuh Public Liability?", a: "Hotel, restoran, kafe, pusat perbelanjaan, kontraktor, event organizer, gym, klinik, dan semua bisnis yang melayani publik atau beroperasi di area publik." },
   { q: "Berapa limit pertanggungan yang direkomendasikan?", a: "Minimal Rp 1 miliar per kejadian untuk bisnis kecil-menengah. Bisnis besar atau yang menangani acara besar perlu limit lebih tinggi." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Public Liability Insurance Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Public Liability Insurance Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function PublicLiabilityPage() {
   return (
     <ProductPageLayout title="Public Liability Insurance Batam" subtitle="Lindungi Bisnis dari Tuntutan Publik"
