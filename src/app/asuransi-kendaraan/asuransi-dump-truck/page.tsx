@@ -9,7 +9,7 @@ import { Truck, CheckCircle2, ChevronRight } from "lucide-react";
 export const metadata: Metadata = generateSEO({
   title: "Asuransi Dump Truck Batam – Perlindungan Kendaraan Niaga Berat",
   description:
-    "Asuransi dump truck di Batam untuk kendaraan niaga berat. All risk maupun TLO tersedia. Perlindungan komprehensif, klaim cepat, premi kompetitif. Hubungi Rio Mardiansyah!",
+    "Asuransi dump truck di Batam untuk kendaraan niaga berat. All risk maupun TLO tersedia. Perlindungan komprehensif, klaim cepat, premi kompetitif. Hubungi Rio!",
   canonical: "/asuransi-kendaraan/asuransi-dump-truck",
 });
 
@@ -161,7 +161,7 @@ export default function AsuransiDumpTruckPage() {
 
       <CTASection
         title="Lindungi Armada Dump Truck Anda"
-        subtitle="Konsultasi gratis dengan Rio Mardiansyah untuk mendapatkan penawaran asuransi dump truck terbaik di Batam."
+        subtitle="Konsultasi gratis dengan Rio untuk mendapatkan penawaran asuransi dump truck terbaik di Batam."
         waMsg="Halo Rio, saya ingin konsultasi asuransi dump truck di Batam"
       />
     </>
