@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Machinery Batam – Alat Berat, Crane & Mesin Industri",
-  description: "Asuransi machinery, alat berat, dan crane di Batam. Perlindungan dari kerusakan operasional, kecelakaan, dan breakdown. Konsultasi Rio Mardiansyah.",
+  description: "Asuransi machinery, alat berat, dan crane di Batam. Perlindungan dari kerusakan operasional, kecelakaan, dan breakdown. Konsultasi Rio.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-machinery" },
 };
 const benefits = [
@@ -19,7 +19,7 @@ const faqs = [
   { q: "Apakah keausan normal ditanggung?", a: "Tidak. Asuransi machinery menanggung kerusakan tiba-tiba, bukan keausan normal, korosi, atau deteriorasi bertahap." },
   { q: "Apa yang dimaksud Equipment All Risk?", a: "Equipment All Risk (EAR) menanggung semua risiko kerusakan fisik alat berat selama proyek, termasuk kecelakaan dan bencana alam." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Machinery Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Machinery Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiMachineryPage() {
   return (
     <ProductPageLayout title="Asuransi Machinery Batam" subtitle="Perlindungan Mesin & Alat Industri"
