@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Asuransi Properti Batam – Rumah, Hotel, Gedung Komersial",
-  description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio Mardiansyah, konsultan asuransi properti terpercaya.",
+  description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio, konsultan asuransi properti terpercaya.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-properti" },
 };
 
@@ -38,8 +38,8 @@ const schema = {
   description: "Layanan asuransi properti untuk rumah, hotel, dan bangunan komersial di Batam",
   provider: {
     "@type": "InsuranceAgency",
-    name: "Asuransi Batam – Rio Mardiansyah",
-    telephone: "+628131556592",
+    name: "Asuransi Batam – Rio",
+    telephone: "+6281373336728",
   },
   areaServed: { "@type": "City", name: "Batam" },
 };
