@@ -35,7 +35,7 @@ const schema = {
   "@type": "Service",
   name: "Asuransi Hotel Batam",
   description: "Asuransi perlindungan hotel dan penginapan di Batam",
-  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" },
+  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" },
   areaServed: { "@type": "City", name: "Batam" },
 };
 
