@@ -40,7 +40,7 @@ export default function KonsultasiForm() {
           />
         </div>
         <a
-          href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+          href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full py-3.5 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0] text-white font-bold rounded-xl text-center hover:shadow-lg transition-all"

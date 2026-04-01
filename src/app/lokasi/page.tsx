@@ -8,7 +8,7 @@ import { MapPin, Clock, Phone, MessageCircle, Navigation } from "lucide-react";
 export const metadata: Metadata = generateSEO({
   title: "Lokasi Konsultan Asuransi Batam – Batam Center, Kepulauan Riau",
   description:
-    "Temukan lokasi kantor konsultan asuransi kerugian terpercaya di Batam Center. Rio Mardiansyah melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
+    "Temukan lokasi kantor konsultan asuransi kerugian terpercaya di Batam Center. Rio melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
   canonical: "/lokasi",
 });
 
@@ -41,7 +41,7 @@ export default function LokasPage() {
         "@context": "https://schema.org",
         "@type": "InsuranceAgency",
         "@id": `${SITE.url}/#localbusiness`,
-        "name": "Asuransi Batam – Rio Mardiansyah",
+        "name": "Asuransi Batam – Rio",
         "url": SITE.url,
         "telephone": SITE.phone,
         "email": SITE.email,
@@ -83,7 +83,7 @@ export default function LokasPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "Syne, sans-serif" }}>
             Lokasi & Area Layanan
           </h1>
-          <p className="text-gray-300 text-lg">Konsultan Asuransi Kerugian Batam – Rio Mardiansyah</p>
+          <p className="text-gray-300 text-lg">Konsultan Asuransi Kerugian Batam – Rio</p>
         </div>
       </section>
 
@@ -154,7 +154,7 @@ export default function LokasPage() {
             <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: "Syne, sans-serif", color: "#0a1628" }}>Peta Lokasi</h2>
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm aspect-[4/3]">
               <iframe
-                title="Lokasi Asuransi Batam – Rio Mardiansyah"
+                title="Lokasi Asuransi Batam – Rio"
                 src="https://maps.google.com/maps?q=Batam+Center+Kota+Batam+Kepulauan+Riau&output=embed&z=13"
                 width="100%"
                 height="100%"
@@ -204,7 +204,7 @@ export default function LokasPage() {
         </div>
       </section>
 
-      <CTASection title="Konsultasi Asuransi di Batam" subtitle="Hubungi Rio Mardiansyah untuk konsultasi langsung atau kunjungan ke lokasi Anda." waMsg="Halo Rio, saya ingin konsultasi asuransi di Batam" />
+      <CTASection title="Konsultasi Asuransi di Batam" subtitle="Hubungi Rio untuk konsultasi langsung atau kunjungan ke lokasi Anda." waMsg="Halo Rio, saya ingin konsultasi asuransi di Batam" />
     </>
   );
 }

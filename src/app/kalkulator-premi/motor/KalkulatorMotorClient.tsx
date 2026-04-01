@@ -61,7 +61,7 @@ export default function KalkulatorMotorClient() {
               Dapatkan <span className="text-white font-bold">diskon s/d Rp 1.000.000</span> dengan menghubungi langsung!
             </p>
           </div>
-          <a href="https://wa.me/628131556592" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/6281373336728" target="_blank" rel="noopener noreferrer"
             className="block w-full py-2.5 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center text-sm hover:bg-[#f0d080] transition-colors">
             Hubungi Langsung & Klaim Diskon
           </a>

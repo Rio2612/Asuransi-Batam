@@ -30,7 +30,7 @@ export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
 // ─── CTA Section ─────────────────────────────────────────────
 export function CTASection({
   title = "Siap Melindungi Aset Anda?",
-  subtitle = "Konsultasi gratis dengan Rio Mardiansyah. Dapatkan penawaran terbaik sesuai kebutuhan Anda.",
+  subtitle = "Konsultasi gratis dengan Rio. Dapatkan penawaran terbaik sesuai kebutuhan Anda.",
   waMsg = "Halo Rio, saya ingin konsultasi asuransi",
 }: {
   title?: string;

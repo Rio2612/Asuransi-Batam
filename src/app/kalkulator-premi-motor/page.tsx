@@ -59,7 +59,7 @@ export default function KalkulatorPremiMotorPage() {
                   <div className="bg-[#c9a84c]/20 rounded-xl p-4 text-center border border-[#c9a84c]/40"><div className="text-[#c9a84c] text-xs mb-1">Maksimum</div><div className="font-bold text-xl text-[#f0d080]">{formatRupiah(result.max)}</div></div>
                 </div>
                 <p className="text-white/60 text-xs mb-4">* Estimasi berdasarkan tarif acuan OJK. Tarif final ditentukan perusahaan asuransi.</p>
-                <a href="https://wa.me/628131556592" target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center hover:bg-[#f0d080] transition-colors">
+                <a href="https://wa.me/6281373336728" target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-center hover:bg-[#f0d080] transition-colors">
                   Minta Penawaran via WhatsApp
                 </a>
               </div>

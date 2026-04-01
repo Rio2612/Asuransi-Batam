@@ -18,8 +18,8 @@ export default function KalkulatorPremiMobilPage() {
       <section className="section-padding bg-[#faf8f3]">
         <KalkulatorMobil />
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-2xl border border-[#e2e8f0] text-center">
-          <p className="text-[#64748b] text-sm mb-4">Ingin penawaran resmi dengan harga kompetitif? Hubungi Rio Mardiansyah untuk simulasi polis dari berbagai perusahaan asuransi terkemuka.</p>
-          <a href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20simulasi%20premi%20asuransi%20mobil" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0] text-white font-bold rounded-xl hover:shadow-lg transition-all">
+          <p className="text-[#64748b] text-sm mb-4">Ingin penawaran resmi dengan harga kompetitif? Hubungi Rio untuk simulasi polis dari berbagai perusahaan asuransi terkemuka.</p>
+          <a href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20simulasi%20premi%20asuransi%20mobil" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0] text-white font-bold rounded-xl hover:shadow-lg transition-all">
             Minta Simulasi Resmi
           </a>
         </div>

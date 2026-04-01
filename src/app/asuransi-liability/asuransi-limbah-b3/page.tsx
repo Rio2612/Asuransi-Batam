@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Limbah B3 Batam – Wajib untuk Industri Penghasil Limbah Berbahaya",
-  description: "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum bagi industri. Perlindungan dari tuntutan pencemaran lingkungan. 0813-1556-592.",
+  description: "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum bagi industri. Perlindungan dari tuntutan pencemaran lingkungan. 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3" },
 };
 const benefits = [
@@ -27,7 +27,7 @@ const policyComparison = [
   { feature: "Biaya Respons Darurat", basic: "❌", standard: "✅", comprehensive: "✅" },
   { feature: "Denda Regulatori", basic: "❌", standard: "❌", comprehensive: "Opsional" },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Limbah B3 Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Limbah B3 Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiLimbahB3Page() {
   return (
     <ProductPageLayout title="Asuransi Limbah B3 Batam" subtitle="Kewajiban Hukum & Perlindungan Lingkungan"

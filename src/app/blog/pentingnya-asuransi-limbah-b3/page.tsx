@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Mengapa asuransi limbah B3 wajib dimiliki industri di Batam. Regulasi PP 22/2021, sanksi, dan cara mendapatkan jaminan finansial limbah B3 yang tepat.",
   alternates: { canonical: "https://asuransibatam.biz.id/blog/pentingnya-asuransi-limbah-b3" },
 };
-const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam", datePublished: "2025-02-20", author: { "@type": "Person", name: "Rio Mardiansyah" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
+const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam", datePublished: "2025-02-20", author: { "@type": "Person", name: "Rio" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
 export default function ArticleLimbahB3Page() {
   return (
     <ArticleLayout
@@ -80,10 +80,10 @@ export default function ArticleLimbahB3Page() {
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
         <h3 className="font-display font-bold text-[#0a1628] mb-3">Pastikan Bisnis Anda Patuh Regulasi</h3>
-        <p className="text-[#64748b] mb-4">Konsultasikan kebutuhan asuransi limbah B3 Anda dengan Rio Mardiansyah. Kami membantu industri di Batam memenuhi kewajiban hukum lingkungan.</p>
+        <p className="text-[#64748b] mb-4">Konsultasikan kebutuhan asuransi limbah B3 Anda dengan Rio. Kami membantu industri di Batam memenuhi kewajiban hukum lingkungan.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/asuransi-liability/asuransi-limbah-b3" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm">Info Asuransi Limbah B3</Link>
-          <a href="https://wa.me/628131556592" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl text-sm">Konsultasi Gratis</a>
+          <a href="https://wa.me/6281373336728" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl text-sm">Konsultasi Gratis</a>
         </div>
       </div>
     </ArticleLayout>
