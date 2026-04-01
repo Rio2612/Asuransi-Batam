@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Dump Truck Batam – Perlindungan Kendaraan Berat & Armada",
-  description: "Asuransi dump truck dan kendaraan niaga berat di Batam. Lindungi armada angkutan Anda dari kerusakan, kecelakaan, dan risiko operasional. 0813-1556-592.",
+  description: "Asuransi dump truck dan kendaraan niaga berat di Batam. Lindungi armada angkutan Anda dari kerusakan, kecelakaan, dan risiko operasional. 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-dumptruck" },
 };
 const benefits = [
@@ -18,7 +18,7 @@ const faqs = [
   { q: "Berapa premi asuransi dump truck?", a: "Premi dump truck umumnya lebih tinggi dari kendaraan biasa karena risiko lebih besar. Konsultasi dengan kami untuk penawaran terbaik." },
   { q: "Apakah bisa asuransi untuk armada banyak unit?", a: "Ya, tersedia fleet insurance dengan harga yang lebih kompetitif untuk kepemilikan banyak unit kendaraan." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Dump Truck Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Dump Truck Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiDumpTruckPage() {
   return (
     <ProductPageLayout title="Asuransi Dump Truck Batam" subtitle="Perlindungan Armada Kendaraan Berat"
