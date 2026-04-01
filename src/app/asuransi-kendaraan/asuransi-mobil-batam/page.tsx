@@ -4,7 +4,7 @@ import KalkulatorMobil from "@/components/KalkulatorMobil";
 
 export const metadata: Metadata = {
   title: "Asuransi Mobil Batam – All Risk & TLO | Kalkulator Premi Online",
-  description: "Asuransi mobil All Risk dan TLO di Batam. Hitung premi online gratis. Perlindungan lengkap dari kecelakaan, pencurian, banjir. Konsultasi Rio 0813-1556-592.",
+  description: "Asuransi mobil All Risk dan TLO di Batam. Hitung premi online gratis. Perlindungan lengkap dari kecelakaan, pencurian, banjir. Konsultasi Rio 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-mobil-batam" },
 };
 
@@ -38,7 +38,7 @@ const schema = {
   "@type": "Service",
   name: "Asuransi Mobil Batam",
   description: "Asuransi mobil All Risk dan TLO di Batam dengan kalkulator premi online",
-  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" },
+  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" },
   areaServed: { "@type": "City", name: "Batam" },
 };
 
