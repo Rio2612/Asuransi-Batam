@@ -8,7 +8,7 @@ import { Hammer, CheckCircle2 } from "lucide-react";
 export const metadata: Metadata = generateSEO({
   title: "Erection All Risk (EAR) Insurance Batam – Asuransi Pemasangan Mesin & Plant",
   description:
-    "Erection All Risk Insurance di Batam untuk pemasangan mesin, pabrik, dan plant industri. Perlindungan selama masa erection hingga commissioning. Hubungi Rio Mardiansyah!",
+    "Erection All Risk Insurance di Batam untuk pemasangan mesin, pabrik, dan plant industri. Perlindungan selama masa erection hingga commissioning. Hubungi Rio!",
   canonical: "/asuransi-engineering/erection-all-risk",
 });
 
