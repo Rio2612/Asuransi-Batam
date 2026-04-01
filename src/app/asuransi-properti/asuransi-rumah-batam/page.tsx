@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
   title: "Asuransi Rumah Batam – Lindungi Rumah & Isi Rumah Anda",
-  description: "Asuransi rumah tinggal di Batam. Perlindungan dari kebakaran, banjir, pencurian, dan bencana alam. Premi terjangkau, proses mudah. Hubungi 0813-1556-592.",
+  description: "Asuransi rumah tinggal di Batam. Perlindungan dari kebakaran, banjir, pencurian, dan bencana alam. Premi terjangkau, proses mudah. Hubungi 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-rumah-batam" },
 };
 
@@ -27,7 +27,7 @@ const schema = {
   "@type": "Service",
   name: "Asuransi Rumah Batam",
   description: "Asuransi rumah tinggal di Batam untuk perlindungan bangunan dan isi rumah",
-  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" },
+  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" },
   areaServed: { "@type": "City", name: "Batam" },
 };
 
