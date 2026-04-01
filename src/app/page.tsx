@@ -4,9 +4,9 @@ import { Shield, Star, Clock, Users, ArrowRight, CheckCircle, Phone } from "luci
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio Mardiansyah",
+  title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio",
   description:
-    "Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 10+ tahun. Hubungi 0813-1556-592.",
+    "Rio, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 10+ tahun. Hubungi 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id" },
 };
 
@@ -80,7 +80,7 @@ const faqs = [
   },
   {
     q: "Bagaimana cara mengajukan klaim?",
-    a: "Hubungi kami segera setelah kejadian. Rio Mardiansyah akan memandu Anda melalui proses klaim dari awal hingga selesai.",
+    a: "Hubungi kami segera setelah kejadian. Rio akan memandu Anda melalui proses klaim dari awal hingga selesai.",
   },
   {
     q: "Apakah bisa konsultasi dulu sebelum membeli polis?",
@@ -95,10 +95,10 @@ export default function HomePage() {
       {
         "@type": ["InsuranceAgency", "LocalBusiness"],
         "@id": "https://asuransibatam.biz.id/#organization",
-        name: "Asuransi Batam – Rio Mardiansyah",
+        name: "Asuransi Batam – Rio",
         url: "https://asuransibatam.biz.id",
-        telephone: "+628131556592",
-        email: "marketing.btma@gmail.com",
+        telephone: "+6281373336728",
+        email: "rio@asuransibatam.biz.id",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Batam Center",
@@ -114,7 +114,7 @@ export default function HomePage() {
         openingHours: "Mo-Fr 08:00-17:00",
         employee: {
           "@type": "Person",
-          name: "Rio Mardiansyah",
+          name: "Rio",
           jobTitle: "Konsultan Asuransi",
         },
       },
@@ -157,12 +157,12 @@ export default function HomePage() {
                 di Batam
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
-                Rio Mardiansyah, konsultan asuransi kerugian berpengalaman 10+ tahun di Batam.
+                Rio, konsultan asuransi kerugian berpengalaman 10+ tahun di Batam.
                 Solusi tepat untuk properti, kendaraan, alat berat, liability, dan engineering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <a
-                  href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+                  href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl hover:shadow-[#c9a84c]/30 transition-all text-lg"
@@ -233,8 +233,8 @@ export default function HomePage() {
                   <Phone className="w-5 h-5 text-[#c9a84c]" />
                   <div>
                     <div className="text-[#c9a84c] font-bold text-sm">Hubungi Rio Langsung</div>
-                    <a href="tel:08131556592" className="text-white font-display font-bold text-lg hover:text-[#f0d080] transition-colors">
-                      0813-1556-592
+                    <a href="tel:081373336728" className="text-white font-display font-bold text-lg hover:text-[#f0d080] transition-colors">
+                      0813-7333-6728
                     </a>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export default function HomePage() {
               </h2>
               <p className="text-[#64748b] text-lg leading-relaxed mb-8">
                 Dengan pengalaman lebih dari 10 tahun di industri asuransi kerugian Batam,
-                Rio Mardiansyah hadir sebagai mitra terpercaya yang memahami kebutuhan lokal.
+                Rio hadir sebagai mitra terpercaya yang memahami kebutuhan lokal.
               </p>
               <div className="space-y-5">
                 {[

@@ -20,11 +20,11 @@ const syne = Syne({
 export const metadata: Metadata = {
   metadataBase: new URL("https://asuransibatam.biz.id"),
   title: {
-    default: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio Mardiansyah",
+    default: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio",
     template: "%s | Asuransi Batam",
   },
   description:
-    "Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 10+ tahun.",
+    "Rio, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 10+ tahun.",
   keywords: [
     "asuransi batam",
     "konsultan asuransi batam",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     "asuransi properti batam",
     "asuransi alat berat batam",
   ],
-  authors: [{ name: "Rio Mardiansyah" }],
-  creator: "Rio Mardiansyah",
+  authors: [{ name: "Rio" }],
+  creator: "Rio",
   openGraph: {
     type: "website",
     locale: "id_ID",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Asuransi Batam – Rio Mardiansyah",
+    title: "Asuransi Batam – Rio",
     description: "Konsultan asuransi kerugian profesional di Batam",
   },
   robots: { index: true, follow: true },
