@@ -42,13 +42,13 @@ export default function Footer() {
               Konsultan asuransi kerugian profesional di Batam. Melindungi aset & bisnis Anda dengan solusi asuransi terpercaya.
             </p>
             <div className="space-y-3">
-              <a href="tel:08131556592" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
+              <a href="tel:081373336728" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Phone className="w-4 h-4 text-[#c9a84c]" />
-                0813-1556-592
+                0813-7333-6728
               </a>
-              <a href="mailto:marketing.btma@gmail.com" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
+              <a href="mailto:rio@asuransibatam.biz.id" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Mail className="w-4 h-4 text-[#c9a84c]" />
-                marketing.btma@gmail.com
+                rio@asuransibatam.biz.id
               </a>
               <div className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin className="w-4 h-4 text-[#c9a84c] mt-0.5 flex-shrink-0" />
@@ -128,7 +128,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} Asuransi Batam – Rio Mardiansyah. Hak cipta dilindungi.
+            © {new Date().getFullYear()} Asuransi Batam – Rio. Hak cipta dilindungi.
           </p>
           <p className="text-white/40 text-xs">
             Konsultan Asuransi Kerugian Terdaftar | Batam, Kepulauan Riau
