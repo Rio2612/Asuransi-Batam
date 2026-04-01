@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Panduan lengkap asuransi mobil di Batam 2025. Tarif premi, perusahaan terbaik, cara klaim, dan tips memilih polis yang tepat untuk kendaraan Anda di Batam.",
   alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-mobil-batam" },
 };
-const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Asuransi Mobil Batam 2025 – Panduan Lengkap", datePublished: "2025-03-01", author: { "@type": "Person", name: "Rio Mardiansyah" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
+const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Asuransi Mobil Batam 2025 – Panduan Lengkap", datePublished: "2025-03-01", author: { "@type": "Person", name: "Rio" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
 export default function ArticleAsuransiMobilBatamPage() {
   return (
     <ArticleLayout
@@ -77,7 +77,7 @@ export default function ArticleAsuransiMobilBatamPage() {
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
         <h3 className="font-display font-bold text-[#0a1628] mb-3">Konsultasi Asuransi Mobil di Batam</h3>
-        <p className="text-[#64748b] mb-4">Rio Mardiansyah membantu Anda menemukan asuransi mobil terbaik di Batam dengan harga kompetitif. Konsultasi gratis, tanpa biaya.</p>
+        <p className="text-[#64748b] mb-4">Rio membantu Anda menemukan asuransi mobil terbaik di Batam dengan harga kompetitif. Konsultasi gratis, tanpa biaya.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/asuransi-kendaraan/asuransi-mobil-batam" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm">Asuransi Mobil Batam</Link>
           <Link href="/kalkulator-premi-mobil" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl text-sm">Kalkulator Premi</Link>
