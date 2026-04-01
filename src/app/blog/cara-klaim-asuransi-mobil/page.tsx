@@ -11,7 +11,7 @@ const schema = {
   "@type": "Article",
   headline: "Cara Klaim Asuransi Mobil yang Benar dan Cepat",
   datePublished: "2025-03-10",
-  author: { "@type": "Person", name: "Rio Mardiansyah" },
+  author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
 export default function ArticleKlaimMobilPage() {
@@ -48,7 +48,7 @@ export default function ArticleKlaimMobilPage() {
 
       <h2>Langkah 3: Hubungi Konsultan atau Call Center Asuransi</h2>
       <p>Segera hubungi konsultan asuransi Anda atau call center perusahaan asuransi. Laporkan kejadian dalam <strong>3×24 jam</strong> – ini adalah batas waktu standar yang berlaku di hampir semua polis asuransi kendaraan.</p>
-      <p>Jika Anda nasabah kami, hubungi Rio Mardiansyah langsung di <strong>0813-1556-592</strong> untuk pendampingan klaim penuh.</p>
+      <p>Jika Anda nasabah kami, hubungi Rio langsung di <strong>0813-7333-6728</strong> untuk pendampingan klaim penuh.</p>
 
       <h2>Langkah 4: Siapkan Dokumen Klaim</h2>
       <p>Dokumen yang umumnya diperlukan:</p>
@@ -84,9 +84,9 @@ export default function ArticleKlaimMobilPage() {
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
         <h3 className="font-display font-bold text-[#0a1628] mb-3">Butuh Bantuan Proses Klaim?</h3>
-        <p className="text-[#64748b] mb-4">Rio Mardiansyah siap mendampingi Anda dari awal hingga klaim selesai. Konsultasi gratis via WhatsApp.</p>
+        <p className="text-[#64748b] mb-4">Rio siap mendampingi Anda dari awal hingga klaim selesai. Konsultasi gratis via WhatsApp.</p>
         <div className="flex flex-wrap gap-3">
-          <a href="https://wa.me/628131556592" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl hover:bg-[#132040] transition-colors text-sm">
+          <a href="https://wa.me/6281373336728" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl hover:bg-[#132040] transition-colors text-sm">
             Chat WhatsApp
           </a>
           <Link href="/asuransi-kendaraan/asuransi-mobil-batam" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl hover:bg-[#0a1628]/5 transition-colors text-sm">
