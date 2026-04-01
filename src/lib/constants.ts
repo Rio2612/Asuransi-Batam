@@ -3,12 +3,12 @@ export const SITE = {
   name: "Asuransi Batam",
   tagline: "Konsultan Asuransi Kerugian Terpercaya di Batam",
   url: "https://asuransibatam.biz.id",
-  phone: "08131556592",
-  phoneWA: "628131556592",
-  email: "marketing.btma@gmail.com",
+  phone: "081373336728",
+  phoneWA: "6281373336728",
+  email: "rio@asuransibatam.biz.id",
   address: "Batam Center, Kepulauan Riau",
   agent: {
-    name: "Rio Mardiansyah",
+    name: "Rio",
     title: "Konsultan Asuransi Kerugian",
     experience: "10+ Tahun",
     photo: "/images/rio-mardiansyah.jpg",
@@ -96,7 +96,7 @@ export const FAQS_HOME = [
   },
   {
     q: "Bagaimana cara menghitung premi asuransi?",
-    a: "Premi dihitung berdasarkan nilai pertanggungan, jenis risiko, lokasi, dan kondisi objek yang diasuransikan. Anda bisa menggunakan kalkulator premi kami atau konsultasi langsung dengan Rio Mardiansyah.",
+    a: "Premi dihitung berdasarkan nilai pertanggungan, jenis risiko, lokasi, dan kondisi objek yang diasuransikan. Anda bisa menggunakan kalkulator premi kami atau konsultasi langsung dengan Rio.",
   },
   {
     q: "Berapa lama proses klaim asuransi?",
@@ -104,7 +104,7 @@ export const FAQS_HOME = [
   },
   {
     q: "Apakah tersedia layanan konsultasi gratis?",
-    a: "Ya! Anda bisa konsultasi gratis via WhatsApp 08131556592 atau mengisi form konsultasi di website kami. Rio Mardiansyah akan membantu memilih polis yang sesuai kebutuhan dan anggaran Anda.",
+    a: "Ya! Anda bisa konsultasi gratis via WhatsApp 081373336728 atau mengisi form konsultasi di website kami. Rio akan membantu memilih polis yang sesuai kebutuhan dan anggaran Anda.",
   },
   {
     q: "Apakah bisa minta penawaran harga terlebih dahulu?",
