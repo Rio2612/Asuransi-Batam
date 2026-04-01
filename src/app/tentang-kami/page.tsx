@@ -4,19 +4,19 @@ import CTASection from "@/components/CTASection";
 import KonsultasiForm from "./KonsultasiForm";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami – Rio Mardiansyah, Konsultan Asuransi Batam",
-  description: "Profil Rio Mardiansyah, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
+  title: "Tentang Kami – Rio, Konsultan Asuransi Batam",
+  description: "Profil Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
   alternates: { canonical: "https://asuransibatam.biz.id/tentang-kami" },
 };
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Rio Mardiansyah",
+  name: "Rio",
   jobTitle: "Konsultan Asuransi Kerugian",
   worksFor: { "@type": "InsuranceAgency", name: "Asuransi Batam" },
-  telephone: "+628131556592",
-  email: "marketing.btma@gmail.com",
+  telephone: "+6281373336728",
+  email: "rio@asuransibatam.biz.id",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Batam Center",
@@ -37,7 +37,7 @@ export default function TentangKamiPage() {
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Tentang Kami</p>
-          <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio Mardiansyah</h1>
+          <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">
             Konsultan Asuransi Kerugian Profesional di Batam dengan pengalaman lebih dari 10 tahun
             melayani klien individu dan korporat.
@@ -55,7 +55,7 @@ export default function TentangKamiPage() {
               <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/rio-mardiansyah.jpg"
-                  alt="Rio Mardiansyah – Konsultan Asuransi Kerugian Batam"
+                  alt="Rio – Konsultan Asuransi Kerugian Batam"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -66,7 +66,7 @@ export default function TentangKamiPage() {
                 {/* Name badge */}
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3">
-                    <p className="font-display font-bold text-white text-lg leading-tight">Rio Mardiansyah</p>
+                    <p className="font-display font-bold text-white text-lg leading-tight">Rio</p>
                     <p className="text-[#c9a84c] text-sm font-medium">Konsultan Asuransi Kerugian</p>
                   </div>
                 </div>
@@ -76,10 +76,10 @@ export default function TentangKamiPage() {
             {/* Bio */}
             <div>
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
-                Profil Rio Mardiansyah
+                Profil Rio
               </h2>
               <p className="text-[#64748b] leading-relaxed mb-6">
-                Rio Mardiansyah adalah konsultan asuransi kerugian berpengalaman yang telah melayani
+                Rio adalah konsultan asuransi kerugian berpengalaman yang telah melayani
                 klien di Batam dan Kepulauan Riau selama lebih dari 10 tahun. Dengan pemahaman mendalam
                 tentang industri asuransi lokal dan kebutuhan bisnis di kawasan industri Batam, Rio
                 hadir sebagai mitra terpercaya untuk solusi perlindungan aset Anda.
@@ -118,8 +118,8 @@ export default function TentangKamiPage() {
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-6">Hubungi Kami</h2>
               <div className="space-y-5">
                 {[
-                  { icon: "📱", label: "WhatsApp / Telepon", value: "0813-1556-592", href: "https://wa.me/628131556592" },
-                  { icon: "📧", label: "Email", value: "marketing.btma@gmail.com", href: "mailto:marketing.btma@gmail.com" },
+                  { icon: "📱", label: "WhatsApp / Telepon", value: "0813-7333-6728", href: "https://wa.me/6281373336728" },
+                  { icon: "📧", label: "Email", value: "rio@asuransibatam.biz.id", href: "mailto:rio@asuransibatam.biz.id" },
                   { icon: "📍", label: "Alamat", value: "Batam Center, Kepulauan Riau", href: null },
                   { icon: "🕐", label: "Jam Operasional", value: "Senin–Jumat, 08:00–17:00", href: null },
                 ].map((c) => (
