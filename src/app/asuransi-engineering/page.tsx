@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Engineering Batam – CAR, EAR, Contractor All Risk",
-  description: "Asuransi engineering di Batam. Contractor All Risk (CAR), Erection All Risk (EAR), dan perlindungan proyek konstruksi. Konsultasi Rio Mardiansyah 0813-1556-592.",
+  description: "Asuransi engineering di Batam. Contractor All Risk (CAR), Erection All Risk (EAR), dan perlindungan proyek konstruksi. Konsultasi Rio 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-engineering" },
 };
 const benefits = [
@@ -25,7 +25,7 @@ const policyComparison = [
   { feature: "Bencana Alam", basic: "❌", standard: "Opsional", comprehensive: "✅" },
   { feature: "Periode Pemeliharaan", basic: "❌", standard: "12 bulan", comprehensive: "24 bulan" },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Engineering Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio Mardiansyah", telephone: "+628131556592" } };
+const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Engineering Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
 export default function AsuransiEngineeringPage() {
   return (
     <ProductPageLayout title="Asuransi Engineering Batam" subtitle="CAR, EAR & Proyek Konstruksi"
