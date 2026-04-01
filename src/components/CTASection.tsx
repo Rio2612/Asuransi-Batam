@@ -11,9 +11,9 @@ interface CTASectionProps {
 
 export default function CTASection({
   title = "Siap Melindungi Aset Anda?",
-  subtitle = "Konsultasikan kebutuhan asuransi Anda bersama Rio Mardiansyah, konsultan asuransi terpercaya di Batam.",
+  subtitle = "Konsultasikan kebutuhan asuransi Anda bersama Rio, konsultan asuransi terpercaya di Batam.",
   primaryLabel = "Konsultasi Gratis via WhatsApp",
-  primaryHref = "https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
+  primaryHref = "https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
   secondaryLabel = "Hitung Premi Mobil",
   secondaryHref = "/kalkulator-premi-mobil",
 }: CTASectionProps) {

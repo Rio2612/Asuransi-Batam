@@ -127,14 +127,14 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:08131556592"
+              href="tel:081373336728"
               className="flex items-center gap-1.5 text-sm text-[#c9a84c] font-medium hover:text-[#f0d080] transition-colors"
             >
               <Phone className="w-4 h-4" />
-              0813-1556-592
+              0813-7333-6728
             </a>
             <a
-              href="https://wa.me/628131556592?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+              href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#c9a84c]/30 transition-all"
@@ -194,7 +194,7 @@ export default function Navbar() {
           </Link>
           <div className="pt-3 border-t border-white/10">
             <a
-              href="https://wa.me/628131556592"
+              href="https://wa.me/6281373336728"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-3 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-lg text-center"

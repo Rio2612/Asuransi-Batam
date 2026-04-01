@@ -38,7 +38,7 @@ export default function ArticleLayout({ title, description, date, category, read
           <div className="flex items-center gap-3 mt-6 pt-6 border-t border-white/10">
             <div className="w-10 h-10 bg-gradient-to-br from-[#c9a84c] to-[#f0d080] rounded-full flex items-center justify-center text-[#0a1628] font-bold">R</div>
             <div>
-              <div className="text-white font-medium text-sm">Rio Mardiansyah</div>
+              <div className="text-white font-medium text-sm">Rio</div>
               <div className="text-white/50 text-xs">Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman</div>
             </div>
           </div>
