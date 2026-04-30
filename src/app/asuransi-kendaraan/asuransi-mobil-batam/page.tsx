@@ -3,25 +3,61 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 import KalkulatorMobil from "@/components/KalkulatorMobil";
 
 export const metadata: Metadata = {
-  title: "Asuransi Mobil Batam – All Risk & TLO | Kalkulator Premi Online",
-  description: "Asuransi mobil All Risk dan TLO di Batam. Hitung premi online gratis. Perlindungan lengkap dari kecelakaan, pencurian, banjir. Konsultasi Rio 0813-7333-6728.",
+  title: "Asuransi Mobil Batam Terpercaya – All Risk & TLO | Hitung Premi Gratis",
+  description: "Cari asuransi mobil di Batam? Pilih All Risk atau TLO dengan premi terjangkau, klaim mudah, dan bengkel rekanan resmi. Hitung estimasi premi Anda secara online sekarang — gratis, cepat, tanpa ribet. Hubungi Rio: 0813-7333-6728.",
   alternates: { canonical: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-mobil-batam" },
 };
 
 const benefits = [
-  { icon: "🛡️", title: "All Risk / Comprehensive", desc: "Menanggung semua kerusakan fisik kendaraan, baik ringan maupun berat, akibat kecelakaan." },
-  { icon: "🔑", title: "TLO (Total Loss Only)", desc: "Premi lebih hemat, menanggung kehilangan/kerusakan total lebih dari 75% nilai kendaraan." },
-  { icon: "🌊", title: "Perluasan Banjir", desc: "Kerusakan akibat banjir bisa ditambahkan sebagai perluasan perlindungan." },
-  { icon: "👤", title: "Tanggung Jawab Pihak Ketiga", desc: "Biaya kerusakan kendaraan, properti, atau cedera pihak ketiga yang disebabkan kendaraan Anda." },
-  { icon: "🚑", title: "Kecelakaan Diri", desc: "Santunan untuk pengemudi dan penumpang yang mengalami kecelakaan." },
-  { icon: "🔧", title: "Bengkel Rekanan", desc: "Akses ke jaringan bengkel rekanan terpercaya di seluruh Indonesia." },
+  {
+    icon: "🛡️",
+    title: "All Risk / Comprehensive",
+    desc: "Perlindungan paling menyeluruh untuk kendaraan Anda. Menanggung kerusakan fisik dalam kondisi apapun — dari goresan kecil di parkiran hingga kerusakan parah akibat tabrakan. Cocok untuk mobil baru atau kendaraan dengan nilai tinggi yang butuh proteksi maksimal.",
+  },
+  {
+    icon: "🔑",
+    title: "TLO (Total Loss Only)",
+    desc: "Solusi hemat untuk perlindungan dasar kendaraan Anda. Menanggung kerugian akibat kehilangan (pencurian) dan kerusakan total yang melebihi 75% nilai kendaraan. Ideal untuk mobil dengan usia di atas 5 tahun atau anggaran premi yang lebih terbatas.",
+  },
+  {
+    icon: "🌊",
+    title: "Perluasan Banjir",
+    desc: "Batam berada di wilayah kepulauan dengan curah hujan tinggi. Risiko banjir dan genangan air bisa datang kapan saja. Dengan perluasan ini, kerusakan mesin atau kelistrikan akibat terendam air ditanggung sepenuhnya — perlindungan ekstra yang sangat dianjurkan.",
+  },
+  {
+    icon: "👤",
+    title: "Tanggung Jawab Pihak Ketiga (TPL)",
+    desc: "Jika kendaraan Anda menyebabkan kerusakan pada kendaraan lain, properti, atau cedera orang lain di jalan, biaya ganti rugi akan ditanggung oleh polis ini. Lindungi diri Anda dari tuntutan finansial yang tak terduga akibat insiden lalu lintas.",
+  },
+  {
+    icon: "🚑",
+    title: "Kecelakaan Diri Pengemudi & Penumpang",
+    desc: "Perlindungan jiwa dan kesehatan bukan hanya untuk kendaraan. Dengan manfaat ini, pengemudi dan penumpang yang mengalami kecelakaan akan mendapatkan santunan biaya pengobatan maupun santunan kematian — karena keselamatan manusia adalah prioritas utama.",
+  },
+  {
+    icon: "🔧",
+    title: "Jaringan Bengkel Rekanan Resmi",
+    desc: "Nikmati kemudahan klaim dengan akses ke ratusan bengkel rekanan resmi yang tersebar di seluruh Indonesia, termasuk di Batam. Proses perbaikan transparan, bergaransi, dan tanpa biaya tambahan dari kantong Anda — cukup tunjukkan kartu polis, semua diurus.",
+  },
 ];
 
 const faqs = [
-  { q: "Berapa premi asuransi mobil All Risk di Batam?", a: "Premi All Risk berkisar 1.5% - 3.5% dari nilai kendaraan per tahun, tergantung wilayah dan jenis kendaraan. Gunakan kalkulator di bawah untuk estimasi." },
-  { q: "Apa itu wilayah rating dalam asuransi mobil?", a: "OJK membagi Indonesia menjadi 3 wilayah. Batam termasuk Wilayah 1 (Sumatera & sekitarnya). Setiap wilayah memiliki tarif premi berbeda berdasarkan tingkat risiko." },
-  { q: "Apakah bisa klaim tanpa surat polisi jika kecelakaan ringan?", a: "Untuk kerusakan ringan (bumper lecet, dll) biasanya tidak perlu surat polisi. Namun untuk kerusakan berat atau tabrakan pihak ketiga, laporan polisi diperlukan." },
-  { q: "Berapa lama proses klaim asuransi mobil?", a: "Proses survey 1-2 hari kerja, persetujuan klaim 3-7 hari kerja, perbaikan di bengkel sesuai kerusakan." },
+  {
+    q: "Berapa kisaran premi asuransi mobil All Risk di Batam?",
+    a: "Berdasarkan regulasi OJK, premi All Risk untuk Batam (Wilayah 1) berkisar antara 1,05% hingga 3,46% dari harga pertanggungan per tahun, tergantung harga dan jenis kendaraan. Sebagai contoh, mobil seharga Rp 200 juta bisa dikenai premi sekitar Rp 2,1 juta – Rp 5 juta per tahun. Gunakan kalkulator premi di halaman ini untuk mendapatkan estimasi lebih akurat sesuai kendaraan Anda.",
+  },
+  {
+    q: "Apa itu wilayah rating OJK dan Batam masuk wilayah mana?",
+    a: "OJK membagi Indonesia menjadi 3 wilayah rating berdasarkan tingkat risiko lalu lintas dan kepadatan kendaraan. Batam masuk dalam Wilayah 1 bersama wilayah Sumatera dan sekitarnya. Setiap wilayah memiliki tarif dasar berbeda — Wilayah 1 umumnya memiliki tarif lebih rendah dibanding Wilayah 2 (Jawa, Madura, Bali) sehingga premi di Batam relatif kompetitif.",
+  },
+  {
+    q: "Apakah perlu surat polisi untuk mengajukan klaim asuransi mobil?",
+    a: "Tidak selalu. Untuk kerusakan ringan seperti lecet, penyok kecil, atau kerusakan akibat parkir, kebanyakan perusahaan asuransi tidak mewajibkan surat polisi. Namun untuk kerusakan berat, tabrakan yang melibatkan pihak ketiga, atau kasus kehilangan kendaraan, laporan polisi wajib dilampirkan sebagai dokumen klaim. Kami akan memandu Anda langkah demi langkah saat klaim.",
+  },
+  {
+    q: "Berapa lama proses klaim asuransi mobil diselesaikan?",
+    a: "Secara umum, proses klaim berjalan cukup cepat: survei kendaraan dilakukan dalam 1–2 hari kerja setelah laporan masuk, persetujuan klaim membutuhkan 3–7 hari kerja tergantung kompleksitas kerusakan, dan perbaikan di bengkel rekanan dilakukan sesuai estimasi waktu yang disepakati. Kami membantu koordinasi proses klaim Anda agar berjalan lancar dari awal hingga selesai.",
+  },
 ];
 
 const policyComparison = [
@@ -46,8 +82,8 @@ export default function AsuransiMobilBatamPage() {
   return (
     <ProductPageLayout
       title="Asuransi Mobil Batam"
-      subtitle="All Risk & TLO – Perlindungan Kendaraan Terlengkap"
-      description="Lindungi mobil Anda di Batam dengan asuransi All Risk atau TLO terpercaya. Hitung estimasi premi Anda sekarang dengan kalkulator online kami, gratis dan mudah."
+      subtitle="Proteksi All Risk & TLO – Tenang Berkendara, Klaim Tanpa Ribet"
+      description="Mobil adalah aset berharga yang menemani aktivitas harian Anda di Batam. Satu kecelakaan, satu kejadian tak terduga, bisa menguras biaya jutaan rupiah. Dengan asuransi mobil yang tepat — All Risk untuk perlindungan menyeluruh atau TLO untuk proteksi hemat — Anda tidak perlu khawatir lagi. Hitung estimasi premi kendaraan Anda sekarang menggunakan kalkulator online kami, gratis dan hasilnya langsung tampil tanpa perlu daftar."
       benefits={benefits}
       faqs={faqs}
       policyComparison={policyComparison}
