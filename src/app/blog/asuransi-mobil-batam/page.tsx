@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 export const metadata: Metadata = {
-  title: "Asuransi Mobil Batam 2025 – Panduan Lengkap, Tarif & Tips Klaim",
+  title: "Asuransi Mobil Batam 2026 – Panduan Lengkap, Tarif & Tips Klaim",
   description: "Panduan lengkap asuransi mobil di Batam 2025. Tarif premi, perusahaan terbaik, cara klaim, dan tips memilih polis yang tepat untuk kendaraan Anda di Batam.",
   alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-mobil-batam" },
 };
