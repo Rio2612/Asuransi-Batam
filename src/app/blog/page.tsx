@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://asuransibatam.biz.id/blog" },
 };
 const articles = [
-  { title: "Cara Klaim Asuransi Mobil yang Benar dan Cepat", slug: "cara-klaim-asuransi-mobil", date: "10 Maret 2025", category: "Kendaraan", excerpt: "Panduan lengkap langkah demi langkah cara mengajukan klaim asuransi mobil, dokumen yang dibutuhkan, dan tips agar klaim disetujui lebih cepat.", readTime: "7 menit" },
-  { title: "Perbedaan Asuransi All Risk dan TLO: Mana yang Lebih Baik?", slug: "perbedaan-all-risk-dan-tlo", date: "5 Maret 2025", category: "Kendaraan", excerpt: "Penjelasan lengkap perbedaan All Risk (Comprehensive) dan TLO (Total Loss Only) beserta rekomendasi berdasarkan nilai dan usia kendaraan.", readTime: "6 menit" },
-  { title: "Asuransi Mobil Batam: Panduan Lengkap 2025", slug: "asuransi-mobil-batam", date: "1 Maret 2025", category: "Kendaraan", excerpt: "Semua yang perlu Anda ketahui tentang asuransi mobil di Batam – tarif OJK, perusahaan terbaik, proses klaim, dan tips memilih polis.", readTime: "10 menit" },
-  { title: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam", slug: "pentingnya-asuransi-limbah-b3", date: "20 Februari 2025", category: "Liability", excerpt: "Mengapa asuransi limbah B3 bukan pilihan tapi kewajiban hukum bagi industri di Batam. Regulasi, sanksi, dan cara mendapatkan polis yang tepat.", readTime: "8 menit" },
+  { title: "Cara Klaim Asuransi Mobil yang Benar dan Cepat", slug: "cara-klaim-asuransi-mobil", date: "10 Maret 2026", category: "Kendaraan", excerpt: "Panduan lengkap langkah demi langkah cara mengajukan klaim asuransi mobil, dokumen yang dibutuhkan, dan tips agar klaim disetujui lebih cepat.", readTime: "7 menit" },
+  { title: "Perbedaan Asuransi All Risk dan TLO: Mana yang Lebih Baik?", slug: "perbedaan-all-risk-dan-tlo", date: "5 Maret 2026", category: "Kendaraan", excerpt: "Penjelasan lengkap perbedaan All Risk (Comprehensive) dan TLO (Total Loss Only) beserta rekomendasi berdasarkan nilai dan usia kendaraan.", readTime: "6 menit" },
+  { title: "Asuransi Mobil Batam: Panduan Lengkap 2026", slug: "asuransi-mobil-batam", date: "1 Maret 2026", category: "Kendaraan", excerpt: "Semua yang perlu Anda ketahui tentang asuransi mobil di Batam – tarif OJK, perusahaan terbaik, proses klaim, dan tips memilih polis.", readTime: "10 menit" },
+  { title: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam", slug: "pentingnya-asuransi-limbah-b3", date: "20 Februari 2026", category: "Liability", excerpt: "Mengapa asuransi limbah B3 bukan pilihan tapi kewajiban hukum bagi industri di Batam. Regulasi, sanksi, dan cara mendapatkan polis yang tepat.", readTime: "8 menit" },
 ];
 const categoryColors: Record<string, string> = {
   "Kendaraan": "bg-blue-100 text-blue-800",
