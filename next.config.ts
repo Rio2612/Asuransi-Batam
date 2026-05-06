@@ -19,8 +19,7 @@ const nextConfig: NextConfig = {
       // EN pages not yet built
       { source: "/en/motorcycle-premium-calculator", destination: "/en/car-premium-calculator", permanent: false },
       { source: "/en/blog/:slug", destination: "/en/blog", permanent: false },
-      { source: "/en/engineering-insurance/contractor-all-risk", destination: "/en/engineering-insurance", permanent: false },
-      { source: "/en/engineering-insurance/erection-all-risk",   destination: "/en/engineering-insurance", permanent: false },
+      
     ];
   },
 };
