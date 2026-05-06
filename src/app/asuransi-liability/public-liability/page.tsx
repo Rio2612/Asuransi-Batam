@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
-import type { Metadata } from "next";
-import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
   title: "Asuransi Public Liability Batam – Tanggung Gugat Publik & Pihak Ketiga",
