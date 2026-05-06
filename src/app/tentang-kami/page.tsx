@@ -6,7 +6,13 @@ import KonsultasiForm from "./KonsultasiForm";
 export const metadata: Metadata = {
   title: "Tentang Kami – Rio, Konsultan Asuransi Batam",
   description: "Profil Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
-  alternates: { canonical: "https://asuransibatam.biz.id/tentang-kami" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/tentang-kami",
+    languages: {
+      id: "https://asuransibatam.biz.id/tentang-kami",
+      en: "https://asuransibatam.biz.id/en/about-us",
+    },
+  },
 };
 
 const schema = {
