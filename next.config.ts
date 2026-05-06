@@ -33,31 +33,7 @@ const nextConfig: NextConfig = {
       // ── English: halaman yang belum dibuat → fallback ke /en ──────────────
       // Hapus baris ini satu per satu setelah halaman English-nya dibuat.
       // Ini mencegah 404 sementara Anda masih membangun halaman English.
-      {
-        source: "/en/property-insurance",
-        destination: "/en",
-        permanent: false, // temporary (307) — ubah ke true setelah halaman jadi
-      },
-      {
-        source: "/en/vehicle-insurance",
-        destination: "/en",
-        permanent: false,
-      },
-      {
-        source: "/en/machinery-insurance",
-        destination: "/en",
-        permanent: false,
-      },
-      {
-        source: "/en/liability-insurance",
-        destination: "/en",
-        permanent: false,
-      },
-      {
-        source: "/en/engineering-insurance",
-        destination: "/en",
-        permanent: false,
-      },
+
       {
         source: "/en/about-us",
         destination: "/en",
