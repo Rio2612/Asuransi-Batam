@@ -5,7 +5,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Mobil di Batam – Panduan Lengkap Agar Tidak Ditolak",
   description: "Proses klaim asuransi mobil di Batam sering gagal karena dokumen kurang atau prosedur salah. Pelajari langkah klaim yang benar, dokumen wajib, dan tips agar klaim Anda disetujui cepat.",
-  alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-mobil-batam" },
+  alternates: { canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-mobil-batam" },
 };
 
 const schema = {
