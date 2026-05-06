@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
-export const metadata: Metadata = {
+import type { Metadata } from "next";
+import ProductPageLayout from "@/components/ProductPageLayout";
+
 export const metadata: Metadata = {
   title: "Asuransi Public Liability Batam – Tanggung Gugat Publik & Pihak Ketiga",
   description: "Public Liability Insurance di Batam untuk restoran, hotel, pusat perbelanjaan, dan bisnis umum. Lindungi dari tuntutan cedera pengunjung. 0813-7333-6728.",
@@ -12,6 +14,7 @@ export const metadata: Metadata = {
     },
   },
 };
+
 const benefits = [
   { icon: "👤", title: "Cedera Pengunjung/Tamu", desc: "Biaya medis dan ganti rugi jika pengunjung terluka di area bisnis Anda." },
   { icon: "🏗️", title: "Kerusakan Properti Pihak Ketiga", desc: "Kompensasi kerusakan properti milik orang lain yang disebabkan operasional Anda." },
