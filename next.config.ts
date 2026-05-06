@@ -27,6 +27,16 @@ const nextConfig: NextConfig = {
       { source: "/about.html", destination: "/tentang-kami", permanent: true },
       { source: "/contact.html", destination: "/kontak", permanent: true },
       { source: "/:path*.html", destination: "/", permanent: true },
+
+      // ── Blog slug fix – pisahkan konten klaim dari halaman produk ────────
+      // Sebelumnya /blog/asuransi-mobil-batam bersaing di GSC dengan
+      // /asuransi-kendaraan/asuransi-mobil-batam (slug terlalu mirip).
+      // Slug baru lebih deskriptif sesuai isi artikel (cara klaim).
+      {
+        source: "/blog/asuransi-mobil-batam",
+        destination: "/blog/cara-klaim-asuransi-mobil-batam",
+        permanent: true, // → 308, PageRank ikut berpindah
+      },
     ];
   },
 };
