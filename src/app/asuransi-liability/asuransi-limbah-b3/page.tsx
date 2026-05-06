@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
+import type { Metadata } from "next";
+import ProductPageLayout from "@/components/ProductPageLayout";
+
 export const metadata: Metadata = {
-  title: "Asuransi Limbah B3 Batam – Wajib untuk Industri Penghasil Limbah Berbahaya",
-  description: "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum bagi industri. Perlindungan dari tuntutan pencemaran lingkungan. 0813-7333-6728.",
+  title: "Asuransi Public Liability Batam – Tanggung Gugat Publik & Pihak Ketiga",
+  description: "Public Liability Insurance di Batam untuk restoran, hotel, pusat perbelanjaan, dan bisnis umum. Lindungi dari tuntutan cedera pengunjung. 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3",
+    canonical: "https://asuransibatam.biz.id/asuransi-liability/public-liability",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3",
-      en: "https://asuransibatam.biz.id/en/liability-insurance/b3-waste-insurance",
+      id: "https://asuransibatam.biz.id/asuransi-liability/public-liability",
+      en: "https://asuransibatam.biz.id/en/liability-insurance/public-liability",
     },
   },
 };
+
+// ... sisa komponen di bawah
 const benefits = [
   { icon: "☣️", title: "Pencemaran Tanah & Air", desc: "Biaya pembersihan dan pemulihan lingkungan akibat tumpahan atau kebocoran limbah B3." },
   { icon: "⚖️", title: "Tuntutan Hukum Lingkungan", desc: "Biaya hukum dan ganti rugi akibat tuntutan dari masyarakat atau pemerintah." },
