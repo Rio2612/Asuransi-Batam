@@ -1,9 +1,45 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, Phone } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown, Phone, Globe } from "lucide-react";
 
-const products = [
+// ─── URL mapping: Indonesian ↔ English ───────────────────────────────────────
+const URL_MAP: Record<string, string> = {
+  // ID → EN
+  "/": "/en",
+  "/asuransi-properti": "/en/property-insurance",
+  "/asuransi-properti/asuransi-hotel-batam": "/en/property-insurance/hotel-insurance-batam",
+  "/asuransi-properti/asuransi-rumah-batam": "/en/property-insurance/home-insurance-batam",
+  "/asuransi-kendaraan": "/en/vehicle-insurance",
+  "/asuransi-kendaraan/asuransi-mobil-batam": "/en/vehicle-insurance/car-insurance-batam",
+  "/asuransi-kendaraan/asuransi-dumptruck": "/en/vehicle-insurance/dump-truck-insurance",
+  "/asuransi-machinery": "/en/machinery-insurance",
+  "/asuransi-machinery/asuransi-alat-berat": "/en/machinery-insurance/heavy-equipment-insurance",
+  "/asuransi-machinery/asuransi-crane": "/en/machinery-insurance/crane-insurance",
+  "/asuransi-liability": "/en/liability-insurance",
+  "/asuransi-liability/asuransi-limbah-b3": "/en/liability-insurance/b3-waste-insurance",
+  "/asuransi-liability/public-liability": "/en/liability-insurance/public-liability",
+  "/asuransi-engineering": "/en/engineering-insurance",
+  "/blog": "/en/blog",
+  "/tentang-kami": "/en/about-us",
+  "/kontak": "/en/contact",
+  "/kalkulator-premi-mobil": "/en/car-premium-calculator",
+  "/kalkulator-premi-motor": "/en/motorcycle-premium-calculator",
+};
+
+// Build reverse map (EN → ID) automatically
+const REVERSE_MAP = Object.fromEntries(
+  Object.entries(URL_MAP).map(([id, en]) => [en, id])
+);
+
+function getOtherLangUrl(pathname: string, currentLang: "id" | "en"): string {
+  if (currentLang === "id") return URL_MAP[pathname] ?? "/en";
+  return REVERSE_MAP[pathname] ?? "/";
+}
+
+// ─── Nav items per language ───────────────────────────────────────────────────
+const productsID = [
   {
     label: "Asuransi Properti",
     href: "/asuransi-properti",
@@ -36,17 +72,72 @@ const products = [
       { label: "Public Liability", href: "/asuransi-liability/public-liability" },
     ],
   },
-  {
-    label: "Engineering",
-    href: "/asuransi-engineering",
-    children: [],
-  },
+  { label: "Engineering", href: "/asuransi-engineering", children: [] },
 ];
 
+const productsEN = [
+  {
+    label: "Property Insurance",
+    href: "/en/property-insurance",
+    children: [
+      { label: "Hotel Insurance Batam", href: "/en/property-insurance/hotel-insurance-batam" },
+      { label: "Home Insurance Batam", href: "/en/property-insurance/home-insurance-batam" },
+    ],
+  },
+  {
+    label: "Vehicle Insurance",
+    href: "/en/vehicle-insurance",
+    children: [
+      { label: "Car Insurance Batam", href: "/en/vehicle-insurance/car-insurance-batam" },
+      { label: "Dump Truck Insurance", href: "/en/vehicle-insurance/dump-truck-insurance" },
+    ],
+  },
+  {
+    label: "Machinery Insurance",
+    href: "/en/machinery-insurance",
+    children: [
+      { label: "Heavy Equipment Insurance", href: "/en/machinery-insurance/heavy-equipment-insurance" },
+      { label: "Crane Insurance", href: "/en/machinery-insurance/crane-insurance" },
+    ],
+  },
+  {
+    label: "Liability",
+    href: "/en/liability-insurance",
+    children: [
+      { label: "B3 Waste Insurance", href: "/en/liability-insurance/b3-waste-insurance" },
+      { label: "Public Liability", href: "/en/liability-insurance/public-liability" },
+    ],
+  },
+  { label: "Engineering", href: "/en/engineering-insurance", children: [] },
+];
+
+// ─── Component ────────────────────────────────────────────────────────────────
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  // Detect language from URL
+  const isEN = pathname.startsWith("/en");
+  const lang: "id" | "en" = isEN ? "en" : "id";
+  const products = isEN ? productsEN : productsID;
+
+  const otherLangUrl = getOtherLangUrl(pathname, lang);
+
+  const t = {
+    blog: lang === "id" ? "Blog" : "Blog",
+    about: lang === "id" ? "Tentang" : "About",
+    cta: lang === "id" ? "Konsultasi Gratis" : "Free Consultation",
+    ctaMobile: lang === "id" ? "Konsultasi via WhatsApp" : "Consult via WhatsApp",
+    aboutFull: lang === "id" ? "Tentang Kami" : "About Us",
+    blogHref: lang === "id" ? "/blog" : "/en/blog",
+    aboutHref: lang === "id" ? "/tentang-kami" : "/en/about-us",
+  };
+
+  const waText = lang === "id"
+    ? "Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+    : "Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -65,7 +156,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href={lang === "id" ? "/" : "/en"} className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-gradient-to-br from-[#c9a84c] to-[#f0d080] rounded-lg flex items-center justify-center">
               <span className="text-[#0a1628] font-display font-bold text-sm">AB</span>
             </div>
@@ -95,7 +186,7 @@ export default function Navbar() {
                     onMouseEnter={() => setOpenDropdown(item.label)}
                     onMouseLeave={() => setOpenDropdown(null)}
                   >
-                    <div className="bg-[#0a1628] border border-[#c9a84c]/20 rounded-xl shadow-2xl p-2 min-w-[200px]">
+                    <div className="bg-[#0a1628] border border-[#c9a84c]/20 rounded-xl shadow-2xl p-2 min-w-[220px]">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
@@ -111,20 +202,20 @@ export default function Navbar() {
               </div>
             ))}
             <Link
-              href="/blog"
+              href={t.blogHref}
               className="px-3 py-2 text-sm text-white/80 hover:text-[#c9a84c] transition-colors font-medium"
             >
-              Blog
+              {t.blog}
             </Link>
             <Link
-              href="/tentang-kami"
+              href={t.aboutHref}
               className="px-3 py-2 text-sm text-white/80 hover:text-[#c9a84c] transition-colors font-medium"
             >
-              Tentang
+              {t.about}
             </Link>
           </div>
 
-          {/* CTA */}
+          {/* CTA + Language Switcher */}
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:081373336728"
@@ -133,13 +224,24 @@ export default function Navbar() {
               <Phone className="w-4 h-4" />
               0813-7333-6728
             </a>
+
+            {/* ── Language Switcher ── */}
+            <Link
+              href={otherLangUrl}
+              className="flex items-center gap-1.5 px-3 py-1.5 border border-[#c9a84c]/40 text-[#c9a84c] text-xs font-bold rounded-lg hover:bg-[#c9a84c]/10 transition-all"
+              title={lang === "id" ? "Switch to English" : "Ganti ke Bahasa Indonesia"}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {lang === "id" ? "EN" : "ID"}
+            </Link>
+
             <a
-              href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
+              href={`https://wa.me/6281373336728?text=${waText}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] text-sm font-bold rounded-lg hover:shadow-lg hover:shadow-[#c9a84c]/30 transition-all"
             >
-              Konsultasi Gratis
+              {t.cta}
             </a>
           </div>
 
@@ -179,27 +281,38 @@ export default function Navbar() {
             </div>
           ))}
           <Link
-            href="/blog"
+            href={t.blogHref}
             className="block px-3 py-2.5 text-white/80 font-medium hover:text-[#c9a84c] transition-colors"
             onClick={() => setMobileOpen(false)}
           >
-            Blog
+            {t.blog}
           </Link>
           <Link
-            href="/tentang-kami"
+            href={t.aboutHref}
             className="block px-3 py-2.5 text-white/80 font-medium hover:text-[#c9a84c] transition-colors"
             onClick={() => setMobileOpen(false)}
           >
-            Tentang Kami
+            {t.aboutFull}
           </Link>
+
+          {/* Language switcher mobile */}
+          <Link
+            href={otherLangUrl}
+            className="flex items-center gap-2 px-3 py-2.5 text-[#c9a84c] font-medium border border-[#c9a84c]/30 rounded-lg"
+            onClick={() => setMobileOpen(false)}
+          >
+            <Globe className="w-4 h-4" />
+            {lang === "id" ? "Switch to English" : "Ganti ke Bahasa Indonesia"}
+          </Link>
+
           <div className="pt-3 border-t border-white/10">
             <a
-              href="https://wa.me/6281373336728"
+              href={`https://wa.me/6281373336728?text=${waText}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-3 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-lg text-center"
             >
-              Konsultasi via WhatsApp
+              {t.ctaMobile}
             </a>
           </div>
         </div>
