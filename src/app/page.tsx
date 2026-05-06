@@ -6,7 +6,13 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Asuransi Batam Terpercaya – Properti, Kendaraan, Alat Berat & Liability | Rio",
   description: "Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, dan engineering. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
-  alternates: { canonical: "https://asuransibatam.biz.id" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id",
+    languages: {
+      id: "https://asuransibatam.biz.id",
+      en: "https://asuransibatam.biz.id/en",
+    },
+  },
 };
 
 const products = [
