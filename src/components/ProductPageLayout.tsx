@@ -1,23 +1,10 @@
+// components/ProductPageLayout.tsx
 import Link from "next/link";
 import CTASection from "./CTASection";
 
-interface FAQ {
-  q: string;
-  a: string;
-}
-
-interface Benefit {
-  icon: string;
-  title: string;
-  desc: string;
-}
-
-interface PolicyComparison {
-  feature: string;
-  basic: string;
-  standard: string;
-  comprehensive: string;
-}
+interface FAQ { q: string; a: string; }
+interface Benefit { icon: string; title: string; desc: string; }
+interface PolicyComparison { feature: string; basic: string; standard: string; comprehensive: string; }
 
 interface ProductPageProps {
   title: string;
@@ -32,16 +19,30 @@ interface ProductPageProps {
 }
 
 export default function ProductPageLayout({
-  title,
-  subtitle,
-  description,
-  benefits,
-  faqs,
-  policyComparison,
-  breadcrumbs,
-  schema,
-  children,
+  title, subtitle, description,
+  benefits, faqs, policyComparison,
+  breadcrumbs, schema, children,
 }: ProductPageProps) {
+  // Detect language from first breadcrumb href
+  const isEN = breadcrumbs[0]?.href?.startsWith("/en");
+
+  const t = {
+    home: isEN ? "Home" : "Beranda",
+    homeHref: isEN ? "/en" : "/",
+    benefitsTitle: isEN ? "Benefits & Coverage" : "Manfaat & Perlindungan",
+    benefitsSubtitle: isEN ? "What does this insurance policy cover?" : "Apa saja yang dicakup dalam polis asuransi ini?",
+    compareTitle: isEN ? "Policy Comparison" : "Perbandingan Polis",
+    compareSubtitle: isEN ? "Choose the package that suits your needs" : "Pilih paket yang sesuai dengan kebutuhan Anda",
+    compareNote: isEN ? "* Contact us for the best offer tailored to your needs" : "* Hubungi kami untuk penawaran terbaik sesuai kebutuhan Anda",
+    faqTitle: isEN ? "Frequently Asked Questions" : "Pertanyaan Umum",
+    faqSubtitle: isEN ? "Answers to commonly asked questions" : "Jawaban untuk pertanyaan yang sering ditanyakan",
+    feature: isEN ? "Feature" : "Fitur",
+    cta: isEN ? "Free Consultation" : "Konsultasi Gratis",
+    phone: isEN
+      ? "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance"
+      : "https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
+  };
+
   return (
     <>
       <script
@@ -54,7 +55,7 @@ export default function ProductPageLayout({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-[#c9a84c] transition-colors">Beranda</Link>
+            <Link href={t.homeHref} className="hover:text-[#c9a84c] transition-colors">{t.home}</Link>
             {breadcrumbs.map((crumb, i) => (
               <span key={crumb.href} className="flex items-center gap-2">
                 <span>/</span>
@@ -71,18 +72,15 @@ export default function ProductPageLayout({
 
           <div className="max-w-3xl">
             <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-3">{subtitle}</p>
-            <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">
-              {title}
-            </h1>
+            <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">{title}</h1>
             <p className="text-white/70 text-lg leading-relaxed mb-8">{description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={t.phone}
+                target="_blank" rel="noopener noreferrer"
                 className="px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl transition-all text-center"
               >
-                Konsultasi Gratis
+                {t.cta}
               </a>
               <a
                 href="tel:081373336728"
@@ -98,12 +96,8 @@ export default function ProductPageLayout({
       {/* Benefits */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">
-            Manfaat & Perlindungan
-          </h2>
-          <p className="text-center text-[#64748b] mb-12 max-w-2xl mx-auto">
-            Apa saja yang dicakup dalam polis asuransi ini?
-          </p>
+          <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.benefitsTitle}</h2>
+          <p className="text-center text-[#64748b] mb-12 max-w-2xl mx-auto">{t.benefitsSubtitle}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => (
               <div key={i} className="p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
@@ -116,12 +110,10 @@ export default function ProductPageLayout({
         </div>
       </section>
 
-      {/* Additional content */}
+      {/* Additional content (children) */}
       {children && (
         <section className="section-padding bg-[#faf8f3]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {children}
-          </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
         </section>
       )}
 
@@ -129,15 +121,13 @@ export default function ProductPageLayout({
       {policyComparison && (
         <section className="section-padding bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">
-              Perbandingan Polis
-            </h2>
-            <p className="text-center text-[#64748b] mb-10">Pilih paket yang sesuai dengan kebutuhan Anda</p>
+            <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.compareTitle}</h2>
+            <p className="text-center text-[#64748b] mb-10">{t.compareSubtitle}</p>
             <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0] shadow-sm">
               <table className="w-full">
                 <thead>
                   <tr className="bg-[#0a1628]">
-                    <th className="text-left py-4 px-6 text-white/70 font-medium text-sm">Fitur</th>
+                    <th className="text-left py-4 px-6 text-white/70 font-medium text-sm">{t.feature}</th>
                     <th className="py-4 px-6 text-white font-display font-bold text-center">Basic</th>
                     <th className="py-4 px-6 text-[#c9a84c] font-display font-bold text-center">Standard</th>
                     <th className="py-4 px-6 text-[#f0d080] font-display font-bold text-center">Comprehensive</th>
@@ -155,9 +145,7 @@ export default function ProductPageLayout({
                 </tbody>
               </table>
             </div>
-            <p className="text-center text-sm text-[#64748b] mt-4">
-              * Hubungi kami untuk penawaran terbaik sesuai kebutuhan Anda
-            </p>
+            <p className="text-center text-sm text-[#64748b] mt-4">{t.compareNote}</p>
           </div>
         </section>
       )}
@@ -165,10 +153,8 @@ export default function ProductPageLayout({
       {/* FAQ */}
       <section className="section-padding bg-[#faf8f3]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">
-            Pertanyaan Umum
-          </h2>
-          <p className="text-center text-[#64748b] mb-10">Jawaban untuk pertanyaan yang sering ditanyakan</p>
+          <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.faqTitle}</h2>
+          <p className="text-center text-[#64748b] mb-10">{t.faqSubtitle}</p>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <details key={i} className="group bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden">

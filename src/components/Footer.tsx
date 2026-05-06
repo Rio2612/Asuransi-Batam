@@ -1,46 +1,104 @@
+// components/Footer.tsx
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const productLinks = [
-  { label: "Asuransi Properti", href: "/asuransi-properti" },
+// ── ID product links ──────────────────────────────────────────────────────────
+const productLinksID = [
+  { label: "Asuransi Properti",    href: "/asuransi-properti" },
   { label: "Asuransi Hotel Batam", href: "/asuransi-properti/asuransi-hotel-batam" },
   { label: "Asuransi Rumah Batam", href: "/asuransi-properti/asuransi-rumah-batam" },
-  { label: "Asuransi Kendaraan", href: "/asuransi-kendaraan" },
+  { label: "Asuransi Kendaraan",   href: "/asuransi-kendaraan" },
   { label: "Asuransi Mobil Batam", href: "/asuransi-kendaraan/asuransi-mobil-batam" },
-  { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck" },
-  { label: "Asuransi Alat Berat", href: "/asuransi-machinery/asuransi-alat-berat" },
-  { label: "Asuransi Crane", href: "/asuransi-machinery/asuransi-crane" },
-  { label: "Asuransi Limbah B3", href: "/asuransi-liability/asuransi-limbah-b3" },
-  { label: "Public Liability", href: "/asuransi-liability/public-liability" },
-  { label: "Asuransi Engineering", href: "/asuransi-engineering" },
+  { label: "Asuransi Dump Truck",  href: "/asuransi-kendaraan/asuransi-dumptruck" },
 ];
-
-const blogLinks = [
-  { label: "Cara Klaim Asuransi Mobil", href: "/blog/cara-klaim-asuransi-mobil" },
-  { label: "Perbedaan All Risk dan TLO", href: "/blog/perbedaan-all-risk-dan-tlo" },
-  { label: "Asuransi Mobil Batam", href: "/blog/asuransi-mobil-batam" },
+const productLinksID2 = [
+  { label: "Asuransi Alat Berat",  href: "/asuransi-machinery/asuransi-alat-berat" },
+  { label: "Asuransi Crane",       href: "/asuransi-machinery/asuransi-crane" },
+  { label: "Asuransi Limbah B3",   href: "/asuransi-liability/asuransi-limbah-b3" },
+  { label: "Public Liability",     href: "/asuransi-liability/public-liability" },
+  { label: "Asuransi Engineering", href: "/asuransi-engineering" },
+  { label: "Kalkulator Premi Mobil", href: "/kalkulator-premi-mobil" },
+  { label: "Kalkulator Premi Motor", href: "/kalkulator-premi-motor" },
+];
+const blogLinksID = [
+  { label: "Cara Klaim Asuransi Mobil",     href: "/blog/cara-klaim-asuransi-mobil" },
+  { label: "Perbedaan All Risk dan TLO",    href: "/blog/perbedaan-all-risk-dan-tlo" },
+  { label: "Asuransi Mobil Batam",          href: "/blog/asuransi-mobil-batam" },
   { label: "Pentingnya Asuransi Limbah B3", href: "/blog/pentingnya-asuransi-limbah-b3" },
 ];
 
+// ── EN product links ──────────────────────────────────────────────────────────
+const productLinksEN = [
+  { label: "Property Insurance",     href: "/en/property-insurance" },
+  { label: "Hotel Insurance Batam",  href: "/en/property-insurance/hotel-insurance-batam" },
+  { label: "Home Insurance Batam",   href: "/en/property-insurance/home-insurance-batam" },
+  { label: "Vehicle Insurance",      href: "/en/vehicle-insurance" },
+  { label: "Car Insurance Batam",    href: "/en/vehicle-insurance/car-insurance-batam" },
+  { label: "Dump Truck Insurance",   href: "/en/vehicle-insurance/dump-truck-insurance" },
+];
+const productLinksEN2 = [
+  { label: "Heavy Equipment Insurance", href: "/en/machinery-insurance/heavy-equipment-insurance" },
+  { label: "Crane Insurance",           href: "/en/machinery-insurance/crane-insurance" },
+  { label: "B3 Waste Insurance",        href: "/en/liability-insurance/b3-waste-insurance" },
+  { label: "Public Liability",          href: "/en/liability-insurance/public-liability" },
+  { label: "Engineering Insurance",     href: "/en/engineering-insurance" },
+  { label: "Car Premium Calculator",    href: "/en/car-premium-calculator" },
+];
+const blogLinksEN = [
+  { label: "How to File a Car Insurance Claim",  href: "/en/blog/how-to-claim-car-insurance" },
+  { label: "All Risk vs TLO Insurance",          href: "/en/blog/all-risk-vs-tlo-insurance" },
+  { label: "Car Insurance in Batam 2025",        href: "/en/blog/car-insurance-batam" },
+  { label: "Importance of B3 Waste Insurance",  href: "/en/blog/b3-hazardous-waste-insurance-importance" },
+];
+
 export default function Footer() {
+  const pathname = usePathname();
+  const isEN = pathname.startsWith("/en");
+
+  const products1 = isEN ? productLinksEN : productLinksID;
+  const products2 = isEN ? productLinksEN2 : productLinksID2;
+  const blogLinks = isEN ? blogLinksEN : blogLinksID;
+
+  const t = {
+    brand: isEN ? "Batam Insurance" : "AsuransiBatam",
+    tagline: isEN
+      ? "Professional general insurance consultant in Batam. Protecting your assets & business with trusted insurance solutions."
+      : "Konsultan asuransi kerugian profesional di Batam. Melindungi aset & bisnis Anda dengan solusi asuransi terpercaya.",
+    products: isEN ? "Insurance Products" : "Produk Asuransi",
+    more: isEN ? "Other Products" : "Produk Lainnya",
+    articles: isEN ? "Education Articles" : "Artikel Edukasi",
+    info: isEN ? "Information" : "Informasi",
+    about: isEN ? "About Us" : "Tentang Kami",
+    aboutHref: isEN ? "/en/about-us" : "/tentang-kami",
+    contact: isEN ? "Contact" : "Kontak",
+    contactHref: isEN ? "/en/contact" : "/kontak",
+    copyright: isEN
+      ? `© ${new Date().getFullYear()} Batam Insurance – Rio. All rights reserved.`
+      : `© ${new Date().getFullYear()} Asuransi Batam – Rio. Hak cipta dilindungi.`,
+    tagline2: isEN
+      ? "Registered General Insurance Consultant | Batam, Kepulauan Riau"
+      : "Konsultan Asuransi Kerugian Terdaftar | Batam, Kepulauan Riau",
+    homeHref: isEN ? "/en" : "/",
+  };
+
   return (
     <footer className="bg-[#0a1628] text-white">
-      {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
+            <Link href={t.homeHref} className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-br from-[#c9a84c] to-[#f0d080] rounded-lg flex items-center justify-center">
                 <span className="text-[#0a1628] font-display font-bold text-sm">AB</span>
               </div>
               <span className="font-display font-bold text-xl">
-                Asuransi<span className="text-[#c9a84c]">Batam</span>
+                {isEN ? <>Batam<span className="text-[#c9a84c]">Insurance</span></> : <>Asuransi<span className="text-[#c9a84c]">Batam</span></>}
               </span>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Konsultan asuransi kerugian profesional di Batam. Melindungi aset & bisnis Anda dengan solusi asuransi terpercaya.
-            </p>
+            <p className="text-white/60 text-sm leading-relaxed mb-6">{t.tagline}</p>
             <div className="space-y-3">
               <a href="tel:081373336728" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Phone className="w-4 h-4 text-[#c9a84c]" />
@@ -59,9 +117,9 @@ export default function Footer() {
 
           {/* Products col 1 */}
           <div>
-            <h3 className="font-display font-bold text-[#c9a84c] mb-4">Produk Asuransi</h3>
+            <h3 className="font-display font-bold text-[#c9a84c] mb-4">{t.products}</h3>
             <ul className="space-y-2">
-              {productLinks.slice(0, 6).map((link) => (
+              {products1.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
                     {link.label}
@@ -73,31 +131,21 @@ export default function Footer() {
 
           {/* Products col 2 */}
           <div>
-            <h3 className="font-display font-bold text-[#c9a84c] mb-4">Produk Lainnya</h3>
+            <h3 className="font-display font-bold text-[#c9a84c] mb-4">{t.more}</h3>
             <ul className="space-y-2">
-              {productLinks.slice(6).map((link) => (
+              {products2.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
                     {link.label}
                   </Link>
                 </li>
               ))}
-              <li className="pt-2 border-t border-white/10">
-                <Link href="/kalkulator-premi-mobil" className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
-                  Kalkulator Premi Mobil
-                </Link>
-              </li>
-              <li>
-                <Link href="/kalkulator-premi-motor" className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
-                  Kalkulator Premi Motor
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Blog & Info */}
           <div>
-            <h3 className="font-display font-bold text-[#c9a84c] mb-4">Artikel Edukasi</h3>
+            <h3 className="font-display font-bold text-[#c9a84c] mb-4">{t.articles}</h3>
             <ul className="space-y-2 mb-6">
               {blogLinks.map((link) => (
                 <li key={link.href}>
@@ -107,16 +155,16 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h3 className="font-display font-bold text-[#c9a84c] mb-4">Informasi</h3>
+            <h3 className="font-display font-bold text-[#c9a84c] mb-4">{t.info}</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/tentang-kami" className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
-                  Tentang Kami
+                <Link href={t.aboutHref} className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
+                  {t.about}
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
-                  Kontak
+                <Link href={t.contactHref} className="text-sm text-white/60 hover:text-[#c9a84c] transition-colors">
+                  {t.contact}
                 </Link>
               </li>
             </ul>
@@ -127,12 +175,8 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/40 text-sm">
-            © {new Date().getFullYear()} Asuransi Batam – Rio. Hak cipta dilindungi.
-          </p>
-          <p className="text-white/40 text-xs">
-            Konsultan Asuransi Kerugian Terdaftar | Batam, Kepulauan Riau
-          </p>
+          <p className="text-white/40 text-sm">{t.copyright}</p>
+          <p className="text-white/40 text-xs">{t.tagline2}</p>
         </div>
       </div>
     </footer>
