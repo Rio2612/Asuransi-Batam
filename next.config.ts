@@ -17,7 +17,6 @@ const nextConfig: NextConfig = {
       // Blog slug fix
       { source: "/blog/asuransi-mobil-batam", destination: "/blog/cara-klaim-asuransi-mobil-batam", permanent: true },
       // EN pages not yet built
-      { source: "/en/motorcycle-premium-calculator", destination: "/en/car-premium-calculator", permanent: false },
       { source: "/en/blog/:slug", destination: "/en/blog", permanent: false },
       
     ];
