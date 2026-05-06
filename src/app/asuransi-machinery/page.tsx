@@ -4,7 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Machinery Batam – Lindungi Mesin & Alat Berat dari Breakdown",
   description: "Mesin rusak = operasional berhenti = kerugian besar. Proteksi asuransi machinery di Batam untuk excavator, crane, dan mesin industri. Klaim mudah, premi kompetitif. Konsultasi gratis dengan Rio: 0813-7333-6728.",
-  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-machinery" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/asuransi-machinery",
+    languages: {
+      id: "https://asuransibatam.biz.id/asuransi-machinery",
+      en: "https://asuransibatam.biz.id/en/machinery-insurance",
+    },
+  },
 };
 const benefits = [
   { icon: "⚙️", title: "Kerusakan Mesin (MB)", desc: "Machinery Breakdown – perlindungan kerusakan mesin akibat kegagalan operasional." },
