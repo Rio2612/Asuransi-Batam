@@ -70,20 +70,3 @@ npm start
 ✅ Structured data per halaman produk
 ✅ Internal linking antar halaman
 
-## Menambahkan Foto Rio Mardiansyah
-
-Letakkan file foto di:
-```
-public/images/rio-mardiansyah.jpg
-```
-
-Kemudian update `/tentang-kami/page.tsx` untuk menggunakan:
-```tsx
-import Image from "next/image";
-<Image src="/images/rio-mardiansyah.jpg" alt="Rio Mardiansyah – Konsultan Asuransi Batam" width={500} height={500} />
-```
-
-## Kontak Developer
-Website ini dibuat sesuai permintaan Rio Mardiansyah.
-- WhatsApp: 0813-1556-592
-- Email: marketing.btma@gmail.com
