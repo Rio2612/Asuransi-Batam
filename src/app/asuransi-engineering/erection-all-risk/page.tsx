@@ -5,12 +5,17 @@ import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Hammer, CheckCircle2 } from "lucide-react";
 
-export const metadata: Metadata = generateSEO({
+export const metadata: Metadata = {
   title: "Erection All Risk (EAR) Insurance Batam – Asuransi Pemasangan Mesin & Plant",
-  description:
-    "Erection All Risk Insurance di Batam untuk pemasangan mesin, pabrik, dan plant industri. Perlindungan selama masa erection hingga commissioning. Hubungi Rio!",
-  canonical: "/asuransi-engineering/erection-all-risk",
-});
+  description: "Erection All Risk Insurance di Batam untuk pemasangan mesin, pabrik, dan plant industri. Perlindungan selama masa erection hingga commissioning. Hubungi Rio!",
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/asuransi-engineering/erection-all-risk",
+    languages: {
+      id: "https://asuransibatam.biz.id/asuransi-engineering/erection-all-risk",
+      en: "https://asuransibatam.biz.id/en/engineering-insurance/erection-all-risk",
+    },
+  },
+};
 
 const FAQS = [
   {
