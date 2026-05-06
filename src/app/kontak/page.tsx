@@ -3,7 +3,13 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Kontak – Hubungi Rio Konsultan Asuransi Batam",
   description: "Hubungi Rio untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-7333-6728, email rio@asuransibatam.biz.id. Batam Center.",
-  alternates: { canonical: "https://asuransibatam.biz.id/kontak" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/kontak",
+    languages: {
+      id: "https://asuransibatam.biz.id/kontak",
+      en: "https://asuransibatam.biz.id/en/contact",
+    },
+  },
 };
 export default function KontakPage() {
   return (
