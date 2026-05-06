@@ -1,3 +1,4 @@
+// app/layout.tsx  ← GANTI file yang lama dengan ini
 import type { Metadata } from "next";
 import { DM_Sans, Syne } from "next/font/google";
 import "./globals.css";
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
+    alternateLocale: "en_US",          // ← tambahan bilingual
     url: "https://asuransibatam.biz.id",
     siteName: "Asuransi Batam",
     title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya",
@@ -66,7 +68,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    // lang="id" tetap di sini — halaman English akan override via <head> hreflang
     <html lang="id" className={`${dmSans.variable} ${syne.variable}`}>
+      <head>
+        {/*
+          hreflang global — Google pakai ini untuk mendeteksi versi bahasa.
+          Untuk halaman tertentu, override di metadata.alternates masing-masing page.
+        */}
+        <link rel="alternate" hrefLang="id" href="https://asuransibatam.biz.id/" />
+        <link rel="alternate" hrefLang="en" href="https://asuransibatam.biz.id/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://asuransibatam.biz.id/" />
+      </head>
       <body className="font-sans antialiased">
         <Navbar />
         <main>{children}</main>
