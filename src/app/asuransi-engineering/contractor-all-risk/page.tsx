@@ -6,7 +6,7 @@ import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Hammer, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi",
+  title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi | Asuransi Batam",
   description: "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
   alternates: {
     canonical: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
@@ -14,6 +14,21 @@ export const metadata: Metadata = {
       id: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
       en: "https://asuransibatam.biz.id/en/engineering-insurance/contractor-all-risk",
     },
+  },
+  openGraph: {
+    title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi | Asuransi Batam",
+    description: "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
+    url: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
+    siteName: "Asuransi Batam",
+    type: "website",
+    locale: "id_ID",
+    images: [{ url: "https://asuransibatam.biz.id/images/og-default.jpg", width: 1200, height: 630, alt: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi | Asuransi Batam" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi | Asuransi Batam",
+    description: "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
+    images: ["https://asuransibatam.biz.id/images/og-default.jpg"],
   },
 };
 
