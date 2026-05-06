@@ -19,7 +19,7 @@ const articles = [
   {
     title: "How to File a Car Insurance Claim Correctly and Quickly",
     slug: "how-to-claim-car-insurance",
-    date: "March 10, 2025",
+    date: "March 10, 2026",
     category: "Vehicle",
     excerpt:
       "A complete step-by-step guide on how to file a car insurance claim, the documents required, and tips to get your claim approved faster.",
@@ -28,7 +28,7 @@ const articles = [
   {
     title: "All Risk vs TLO Insurance: Which is Better?",
     slug: "all-risk-vs-tlo-insurance",
-    date: "March 5, 2025",
+    date: "March 5, 2026",
     category: "Vehicle",
     excerpt:
       "A complete explanation of the differences between All Risk (Comprehensive) and TLO (Total Loss Only) with recommendations based on vehicle value and age.",
@@ -37,7 +37,7 @@ const articles = [
   {
     title: "Car Insurance in Batam: Complete Guide 2025",
     slug: "car-insurance-batam",
-    date: "March 1, 2025",
+    date: "March 1, 2026",
     category: "Vehicle",
     excerpt:
       "Everything you need to know about car insurance in Batam – OJK rates, best companies, claims process, and tips for choosing a policy.",
@@ -46,7 +46,7 @@ const articles = [
   {
     title: "The Importance of B3 Hazardous Waste Insurance for Industry in Batam",
     slug: "b3-hazardous-waste-insurance-importance",
-    date: "February 20, 2025",
+    date: "February 20, 2026",
     category: "Liability",
     excerpt:
       "Why B3 waste insurance is not optional but a legal obligation for industry in Batam. Regulations, penalties, and how to get the right policy.",
