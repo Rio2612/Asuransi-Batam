@@ -5,12 +5,17 @@ import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Hammer, CheckCircle2 } from "lucide-react";
 
-export const metadata: Metadata = generateSEO({
+export const metadata: Metadata = {
   title: "Contractor All Risk (CAR) Insurance Batam – Asuransi Proyek Konstruksi",
-  description:
-    "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
-  canonical: "/asuransi-engineering/contractor-all-risk",
-});
+  description: "Contractor All Risk Insurance di Batam untuk proyek konstruksi gedung, jalan, jembatan, dan infrastruktur. Perlindungan material & TPL. Konsultasi dengan Rio!",
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
+    languages: {
+      id: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
+      en: "https://asuransibatam.biz.id/en/engineering-insurance/contractor-all-risk",
+    },
+  },
+};
 
 const FAQS = [
   {
