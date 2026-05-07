@@ -5,7 +5,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Marine Batam – Marine Hull, Cargo & Builder's Risk",
   description:
-    "Asuransi marine di Batam mencakup Marine Hull, Marine Cargo, dan Builder's Risk. Perlindungan kapal, muatan, dan pembangunan kapal. Konsultasi Rio 0813-7333-6728.",
+    "Asuransi marine di Batam mencakup Marine Hull, Marine Cargo, dan Builder's Risk. Perlindungan kapal, muatan, dan pembangunan kapal.",
   alternates: {
     canonical: "https://asuransibatam.biz.id/asuransi-marine",
     languages: {
