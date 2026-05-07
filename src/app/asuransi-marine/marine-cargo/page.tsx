@@ -1,6 +1,6 @@
 // app/asuransi-marine/marine-cargo/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -17,7 +17,40 @@ export const metadata: Metadata = generateSEO({
   },
 });
 
-const FAQS = [
+// ─── Schema: Service — tidak mensyaratkan image/price seperti Product ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Marine Cargo Insurance Batam",
+  description:
+    "Asuransi pengiriman barang laut di Batam mencakup perlindungan muatan selama pengiriman ekspor, impor, dan domestik.",
+  url: "https://asuransibatam.biz.id/asuransi-marine/marine-cargo",
+  serviceType: "Asuransi Marine – Marine Cargo",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Produk Asuransi Marine",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Marine Cargo Insurance",
+        },
+      },
+    ],
+  },
+}; = [
   {
     q: "Apa itu Marine Cargo Insurance?",
     a: "Marine Cargo Insurance adalah asuransi yang melindungi barang atau muatan selama proses pengiriman dari satu tempat ke tempat lain — baik melalui jalur laut, udara, maupun darat. Perlindungan mencakup risiko kerusakan, kehilangan, maupun pencurian selama perjalanan.",
@@ -56,19 +89,10 @@ const BENEFITS = [
 export default function MarineCargoPage() {
   return (
     <>
+      {/* Schema: Service — tidak mensyaratkan image/price seperti Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Marine Cargo Insurance Batam",
-              description:
-                "Asuransi pengiriman barang laut di Batam mencakup perlindungan muatan selama pengiriman ekspor, impor, dan domestik.",
-              url: "/asuransi-marine/marine-cargo",
-              category: "Asuransi Marine",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
