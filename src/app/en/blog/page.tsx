@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const articles = [
   {
     title: "How to File a Car Insurance Claim Correctly and Quickly",
-    slug: "how-to-claim-car-insurance",
+    slug: "how-to-claim-car-insurance-batam",
     date: "March 10, 2026",
     category: "Vehicle",
     excerpt:
