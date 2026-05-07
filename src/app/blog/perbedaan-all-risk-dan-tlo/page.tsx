@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     en: "https://asuransibatam.biz.id/en/blog/all-risk-vs-tlo-car-insurance",
   },
 },
+  } 
 const schema = { "@context": "https://schema.org", "@type": "Article", headline: "Perbedaan Asuransi All Risk dan TLO", datePublished: "2025-03-05", author: { "@type": "Person", name: "Rio" }, publisher: { "@type": "Organization", name: "Asuransi Batam" } };
 export default function ArticleAllRiskTLOPage() {
   return (
