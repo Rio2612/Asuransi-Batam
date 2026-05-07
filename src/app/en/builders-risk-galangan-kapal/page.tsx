@@ -1,0 +1,157 @@
+// app/en/blog/builders-risk-shipyard-insurance-batam/page.tsx
+import type { Metadata } from "next";
+import ArticleLayout from "@/components/ArticleLayout";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
+  description:
+    "Marine builders risk insurance explained: what it covers during vessel construction, how it differs from hull insurance, and who needs it in Batam's shipyard industry. Call Rio +62813-7333-6728.",
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+    languages: {
+      en: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+      id: "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal",
+    },
+  },
+  openGraph: {
+    title: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
+    description: "Builders risk covers vessels under construction or major repair — not operational hull insurance. A practical guide for Batam shipyards and vessel owners.",
+    url: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+    type: "article",
+  },
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
+  description: "Marine builders risk insurance explained: what it covers during vessel construction, how it differs from hull insurance, and who needs it in Batam's shipyard industry.",
+  datePublished: "2026-05-07",
+  dateModified: "2026-05-07",
+  inLanguage: "en",
+  author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam" },
+};
+
+export default function BuildersRiskShipyardPage() {
+  return (
+    <ArticleLayout
+      title="Builders Risk Insurance for Shipyards in Batam – Complete Guide"
+      description="A vessel under construction is at its most physically vulnerable. Builders Risk is the only product designed specifically for this phase."
+      date="May 7, 2026"
+      readTime="10 min read"
+      category="Marine"
+      breadcrumbs={[{ label: "Builders Risk Shipyard Insurance Batam", href: "/en/blog/builders-risk-shipyard-insurance-batam" }]}
+      schema={schema}
+    >
+      <h2>Batam: One of Indonesia&apos;s Leading Shipyard Hubs</h2>
+      <p>
+        Batam is far more than an electronics manufacturing and logistics centre — it is also one of Indonesia&apos;s most significant shipbuilding locations. Positioned at the intersection of the Malacca Strait and the Singapore Strait, dozens of shipyards operate in Batam — from small facilities repairing fishing vessels to internationally certified yards building offshore support vessels and crane barges.
+      </p>
+      <p>
+        Every vessel under construction, conversion, or major repair exists in its most <strong>physically vulnerable state</strong> — incomplete, with heavy human activity across its structure, and located in a facility that stores hazardous materials including welding gases, marine coatings, and fuel. This is precisely when a vessel needs dedicated protection: <strong>Builders Risk Insurance</strong>.
+      </p>
+
+      <h2>What Is Marine Builders Risk Insurance?</h2>
+      <p>
+        Builders Risk Insurance protects a <strong>vessel during the construction or major repair process</strong> — from the moment the keel is laid or work commences, through to the vessel&apos;s completion and delivery to its owner.
+      </p>
+      <p>This is not standard hull insurance. An operational vessel is covered by Marine Hull Insurance. Builders Risk is specifically designed for the construction phase — when the vessel has no operational certificate and cannot sail independently.</p>
+
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-[#0a1628] text-white">
+              <th className="text-left px-4 py-3 rounded-tl-lg">Aspect</th>
+              <th className="text-left px-4 py-3">Builders Risk</th>
+              <th className="text-left px-4 py-3 rounded-tr-lg">Marine Hull</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Phase", "Construction / repair", "Operational"],
+              ["Vessel status", "Incomplete / not sailing", "Actively in service"],
+              ["Valuation basis", "Progressive contract value", "Market value of vessel"],
+              ["Primary insured", "Shipyard and/or vessel owner", "Vessel owner / operator"],
+              ["Sea trial coverage", "Included", "Not applicable"],
+            ].map(([aspect, br, hull], i) => (
+              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
+                <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspect}</td>
+                <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{br}</td>
+                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Who Needs Builders Risk Insurance?</h2>
+      <p><strong>Shipyards:</strong> A shipyard carries responsibility for a vessel throughout the construction process. If fire breaks out, the vessel sinks during launching, or a structural accident occurs, the shipyard bears the financial consequences — unless a Builders Risk policy is in place.</p>
+      <p><strong>Vessel Owners Commissioning a New Build:</strong> An owner who has commissioned a new vessel has a financial stake from the moment the first instalment is paid. Their investment is exposed throughout the build period — long before a hull policy can be activated.</p>
+      <p><strong>Vessel Owners Undergoing Major Conversion or Drydock Repair:</strong> Vessels entering the yard for substantial work — structural modifications, engine replacement, or full conversion — can be covered under a Builders Risk policy for the duration of the drydock period.</p>
+
+      <h2>What Does Builders Risk Cover?</h2>
+      <ul>
+        <li><strong>Physical Damage to Materials and Components:</strong> All materials incorporated into the vessel — steel plates, piping, electrical systems, machinery — as well as materials stored on the yard premises awaiting installation.</li>
+        <li><strong>Construction Defect Consequential Damage:</strong> If a design flaw or installation error causes damage to another part of the vessel, that consequential damage is covered. Note: the cost of repairing the defective part itself is generally excluded.</li>
+        <li><strong>Fire and Explosion:</strong> The single highest risk in a working shipyard — arising from welding, sandblasting, and painting operations.</li>
+        <li><strong>Launching Risk:</strong> The moment a vessel enters the water for the first time — risk of listing, flooding, or striking yard infrastructure during launching.</li>
+        <li><strong>Sea Trial Coverage:</strong> The period after construction during which the vessel undergoes sea trials, typically 30–90 days, before the policy closes and a Marine Hull policy takes over.</li>
+        <li><strong>Third-Party Liability:</strong> Damage to other vessels or property within the yard caused by the vessel under construction.</li>
+      </ul>
+
+      <h2>What Is Not Covered (Standard Exclusions)?</h2>
+      <ul>
+        <li>Normal wear and tear</li>
+        <li>Cost of repairing the defective part itself — only consequential damage is covered</li>
+        <li>Strike and riot damage (unless a specific endorsement is added)</li>
+        <li>Financial loss from delayed delivery — this requires a separate Delay in Start-Up policy</li>
+        <li>Pre-existing damage present before the policy inception date</li>
+      </ul>
+
+      <h2>How Is the Sum Insured Calculated?</h2>
+      <p><strong>Agreed Value / Contract Price:</strong> The sum insured equals the full contract price from day one. Coverage is in full from the moment the policy commences. Most common method in Batam shipyards due to administrative simplicity.</p>
+      <p><strong>Progressive Value:</strong> The sum insured increases in stages aligned to construction milestones. More actuarially precise but administratively complex.</p>
+
+      <h2>What Determines the Premium?</h2>
+      <p>Key rating factors: vessel type, contract value, construction duration, shipyard credentials and safety record, and coverage scope selected. As a general reference, Builders Risk premiums typically range from <strong>0.5% to 1.5% of the contract value</strong> per project — considerably higher than standard Marine Hull rates, reflecting the elevated risk profile of the construction phase.</p>
+
+      <h2>Who Should Be the Named Insured?</h2>
+      <p><strong>Option 1 — Shipyard as primary insured:</strong> The yard holds the policy and includes the vessel owner&apos;s interest as an additional insured. Common where the yard retains full control throughout the build.</p>
+      <p><strong>Option 2 — Vessel owner as primary insured:</strong> The vessel owner holds their own policy, listing the yard as additional insured. Gives the owner greater control over the claims process.</p>
+      <p><strong>Option 3 — Joint Policy:</strong> Both parties are co-insureds. Most common for high-value builds. The appropriate structure depends on the build contract terms and should be agreed before construction commences.</p>
+
+      <h2>When Does the Builders Risk Policy End?</h2>
+      <p>The policy terminates at whichever occurs first: the date of delivery of the vessel to the owner, successful completion of sea trials, or the expiry date in the policy schedule. Immediately upon delivery, the vessel owner must activate a Marine Hull policy to ensure the vessel is covered from the first moment it enters commercial service.</p>
+
+      <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
+        <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Structure Your Shipbuilding Insurance with Confidence</h3>
+        <p className="text-white/70 text-sm mb-4 leading-relaxed">
+          I assist Batam shipyards and vessel buyers in designing the right insurance framework for new builds and major conversions — from Builders Risk during construction through to Marine Hull for the operational life of the vessel.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20builders%20risk%20insurance%20for%20a%20shipyard%20project"
+            target="_blank" rel="noopener noreferrer"
+            className="px-5 py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-sm text-center hover:bg-[#f0d080] transition-colors">
+            WhatsApp Consultation
+          </a>
+          <Link href="/en/marine-insurance/builders-risk"
+            className="px-5 py-3 border border-white/30 text-white font-semibold rounded-xl text-sm text-center hover:bg-white/10 transition-colors">
+            Builders Risk Insurance
+          </Link>
+        </div>
+      </div>
+
+      <div className="mt-6 p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] not-prose">
+        <p className="text-sm font-display font-semibold text-[#0a1628] mb-3">Related Articles</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/en/blog/marine-hull-vs-cargo-insurance" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Marine Hull vs Cargo Insurance</Link>
+          <Link href="/en/marine-insurance/marine-hull" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Marine Hull Insurance Batam</Link>
+          <Link href="/en/marine-insurance" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ All Marine Insurance Products</Link>
+        </div>
+      </div>
+    </ArticleLayout>
+  );
+}
