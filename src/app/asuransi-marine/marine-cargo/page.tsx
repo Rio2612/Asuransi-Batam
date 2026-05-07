@@ -50,7 +50,9 @@ const schemaService = {
       },
     ],
   },
-}; = [
+};
+
+const FAQS = [
   {
     q: "Apa itu Marine Cargo Insurance?",
     a: "Marine Cargo Insurance adalah asuransi yang melindungi barang atau muatan selama proses pengiriman dari satu tempat ke tempat lain — baik melalui jalur laut, udara, maupun darat. Perlindungan mencakup risiko kerusakan, kehilangan, maupun pencurian selama perjalanan.",
