@@ -1,6 +1,6 @@
 // app/en/marine-insurance/marine-cargo/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -16,6 +16,41 @@ export const metadata: Metadata = generateSEO({
     en: "https://asuransibatam.biz.id/en/marine-insurance/marine-cargo",
   },
 });
+
+// ─── Schema: Service — no image/price required, correct for insurance ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Marine Cargo Insurance Batam",
+  description:
+    "Marine cargo insurance in Batam covering goods in transit for export, import, and domestic shipments by sea.",
+  url: "https://asuransibatam.biz.id/en/marine-insurance/marine-cargo",
+  serviceType: "Marine Insurance – Marine Cargo",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Marine Insurance Products",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Marine Cargo Insurance",
+        },
+      },
+    ],
+  },
+};
 
 const FAQS = [
   {
@@ -56,19 +91,10 @@ const BENEFITS = [
 export default function MarineCargoENPage() {
   return (
     <>
+      {/* Schema: Service — no image/price required unlike Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Marine Cargo Insurance Batam",
-              description:
-                "Marine cargo insurance in Batam covering goods in transit for export, import, and domestic shipments by sea.",
-              url: "/en/marine-insurance/marine-cargo",
-              category: "Marine Insurance",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
