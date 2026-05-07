@@ -36,7 +36,7 @@ const articles = [
   },
   {
     title: "Car Insurance in Batam: Complete Guide 2025",
-    slug: "car-insurance-batam",
+    slug: "how-to-claim-car-insurance-batam",
     date: "March 1, 2026",
     category: "Vehicle",
     excerpt:
