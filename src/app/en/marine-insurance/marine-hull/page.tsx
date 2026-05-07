@@ -1,6 +1,6 @@
 // app/en/marine-insurance/marine-hull/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -16,6 +16,41 @@ export const metadata: Metadata = generateSEO({
     en: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
   },
 });
+
+// ─── Schema: Service — no image/price required, correct for insurance ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Marine Hull Insurance Batam",
+  description:
+    "Vessel hull insurance in Batam providing comprehensive physical protection for ships, engines, and navigation equipment against all marine perils.",
+  url: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
+  serviceType: "Marine Insurance – Marine Hull",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Marine Insurance Products",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Marine Hull Insurance",
+        },
+      },
+    ],
+  },
+};
 
 const FAQS = [
   {
@@ -56,19 +91,10 @@ const BENEFITS = [
 export default function MarineHullENPage() {
   return (
     <>
+      {/* Schema: Service — no image/price required unlike Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Marine Hull Insurance Batam",
-              description:
-                "Vessel hull insurance in Batam providing comprehensive physical protection for ships, engines, and navigation equipment against all marine perils.",
-              url: "/en/marine-insurance/marine-hull",
-              category: "Marine Insurance",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
