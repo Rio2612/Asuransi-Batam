@@ -34,20 +34,28 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
   "/asuransi-marine/marine-cargo": "/en/marine-insurance/marine-cargo",
   "/asuransi-marine/builders-risk": "/en/marine-insurance/builders-risk",
-  // Blog
-  "/blog": "/en/blog",
-  "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
-  "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
-  "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
-  "/blog/asuransi-alat-berat-pertambangan": "/en/blog/mining-heavy-equipment-insurance",
-  "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
-  "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
   // Kalkulator
   "/kalkulator-premi-mobil": "/en/car-premium-calculator",
   "/kalkulator-premi-motor": "/en/motorcycle-premium-calculator",
   // Info
   "/tentang-kami": "/en/about-us",
   "/kontak": "/en/contact",
+  // Blog – index
+  "/blog": "/en/blog",
+  // Blog – Kendaraan
+  "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
+  // Blog – Machinery / Alat Berat
+  "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
+  "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
+  "/blog/asuransi-alat-berat-pertambangan": "/en/blog/mining-heavy-equipment-insurance",
+  // Blog – Properti
+  "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
+  "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
+  // Blog – Marine
+  "/blog/cara-klaim-asuransi-marine-cargo": "/en/blog/how-to-claim-marine-cargo-insurance",
+  "/blog/perbedaan-marine-hull-vs-cargo": "/en/blog/marine-hull-vs-cargo-insurance",
+  "/blog/asuransi-pengiriman-batam-singapore": "/en/blog/batam-singapore-shipping-insurance",
+  "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
 };
 
 // Build reverse map (EN → ID) automatically
@@ -170,6 +178,76 @@ const productsEN: NavItem[] = [
   },
 ];
 
+// ─── Blog articles grouped by category ───────────────────────────────────────
+type BlogLink = { label: string; href: string };
+type BlogCategory = { category: string; articles: BlogLink[] };
+
+const blogCategoriesID: BlogCategory[] = [
+  {
+    category: "Kendaraan",
+    articles: [
+      { label: "Cara Klaim Asuransi Mobil Batam", href: "/blog/cara-klaim-asuransi-mobil-batam" },
+    ],
+  },
+  {
+    category: "Alat Berat",
+    articles: [
+      { label: "Asuransi Excavator & Bulldozer", href: "/blog/asuransi-excavator-dan-bulldozer" },
+      { label: "Alat Berat Proyek Konstruksi", href: "/blog/asuransi-alat-berat-proyek-konstruksi" },
+      { label: "Alat Berat Pertambangan", href: "/blog/asuransi-alat-berat-pertambangan" },
+    ],
+  },
+  {
+    category: "Properti",
+    articles: [
+      { label: "Asuransi Properti Komersial Batam", href: "/blog/asuransi-properti-komersial-batam" },
+      { label: "Cara Klaim Asuransi Kebakaran Rumah", href: "/blog/cara-klaim-asuransi-kebakaran-rumah" },
+    ],
+  },
+  {
+    category: "Marine",
+    articles: [
+      { label: "Cara Klaim Asuransi Marine Cargo", href: "/blog/cara-klaim-asuransi-marine-cargo" },
+      { label: "Perbedaan Marine Hull vs Cargo", href: "/blog/perbedaan-marine-hull-vs-cargo" },
+      { label: "Asuransi Pengiriman Batam–Singapore", href: "/blog/asuransi-pengiriman-batam-singapore" },
+      { label: "Builder's Risk Galangan Kapal", href: "/blog/builders-risk-untuk-galangan-kapal" },
+    ],
+  },
+];
+
+const blogCategoriesEN: BlogCategory[] = [
+  {
+    category: "Vehicle",
+    articles: [
+      { label: "How to Claim Car Insurance in Batam", href: "/en/blog/how-to-claim-car-insurance-batam" },
+    ],
+  },
+  {
+    category: "Heavy Equipment",
+    articles: [
+      { label: "Excavator & Bulldozer Insurance", href: "/en/blog/excavator-and-bulldozer-insurance-batam" },
+      { label: "Construction Heavy Equipment", href: "/en/blog/heavy-equipment-insurance-construction-projects" },
+      { label: "Mining Heavy Equipment", href: "/en/blog/mining-heavy-equipment-insurance" },
+    ],
+  },
+  {
+    category: "Property",
+    articles: [
+      { label: "Commercial Property Insurance Batam", href: "/en/blog/commercial-property-insurance-batam" },
+      { label: "How to Claim Home Fire Insurance", href: "/en/blog/how-to-claim-home-fire-insurance" },
+    ],
+  },
+  {
+    category: "Marine",
+    articles: [
+      { label: "How to Claim Marine Cargo Insurance", href: "/en/blog/how-to-claim-marine-cargo-insurance" },
+      { label: "Marine Hull vs Cargo Insurance", href: "/en/blog/marine-hull-vs-cargo-insurance" },
+      { label: "Batam–Singapore Shipping Insurance", href: "/en/blog/batam-singapore-shipping-insurance" },
+      { label: "Builder's Risk Shipyard Insurance", href: "/en/blog/builders-risk-shipyard-insurance-batam" },
+    ],
+  },
+];
+
 // ─── Mega Menu (Desktop) ──────────────────────────────────────────────────────
 function MegaMenu({ products, lang }: { products: NavItem[]; lang: "id" | "en" }) {
   const [active, setActive] = useState<string | null>(null);
@@ -188,8 +266,8 @@ function MegaMenu({ products, lang }: { products: NavItem[]; lang: "id" | "en" }
 
   const blogHref = lang === "id" ? "/blog" : "/en/blog";
   const aboutHref = lang === "id" ? "/tentang-kami" : "/en/about-us";
-  const blogLabel = "Blog";
   const aboutLabel = lang === "id" ? "Tentang" : "About";
+  const blogCategories = lang === "id" ? blogCategoriesID : blogCategoriesEN;
 
   return (
     <div className="hidden lg:flex items-center gap-0.5">
@@ -247,13 +325,60 @@ function MegaMenu({ products, lang }: { products: NavItem[]; lang: "id" | "en" }
         </div>
       ))}
 
-      {/* Blog & About */}
-      <Link
-        href={blogHref}
-        className="px-3 py-2 text-sm text-white/80 hover:text-[#c9a84c] hover:bg-white/5 font-medium rounded-lg transition-colors"
-      >
-        {blogLabel}
-      </Link>
+      {/* Blog with dropdown */}
+      <div className="relative" onMouseEnter={() => open("Blog")} onMouseLeave={close}>
+        <Link
+          href={blogHref}
+          className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+            active === "Blog"
+              ? "text-[#c9a84c] bg-white/5"
+              : "text-white/80 hover:text-[#c9a84c] hover:bg-white/5"
+          }`}
+        >
+          Blog
+          <ChevronDown
+            className={`w-3 h-3 transition-transform duration-200 opacity-60 ${
+              active === "Blog" ? "rotate-180" : ""
+            }`}
+          />
+        </Link>
+
+        {active === "Blog" && (
+          <div
+            className="absolute top-full right-0 pt-2 z-50"
+            onMouseEnter={stay}
+            onMouseLeave={close}
+          >
+            <div className="bg-[#0d1f3c] border border-[#c9a84c]/20 rounded-2xl shadow-2xl shadow-black/40 p-3 w-[280px]">
+              <Link
+                href={blogHref}
+                className="flex items-center gap-2 px-3 py-2 mb-1 text-xs font-bold uppercase tracking-wider text-[#c9a84c]/70 hover:text-[#c9a84c] hover:bg-white/5 rounded-lg transition-colors"
+              >
+                {lang === "id" ? "Semua Artikel →" : "All Articles →"}
+              </Link>
+              <div className="h-px bg-[#c9a84c]/10 mb-2" />
+              {blogCategories.map((cat) => (
+                <div key={cat.category} className="mb-3 last:mb-0">
+                  <p className="px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#c9a84c]/50">
+                    {cat.category}
+                  </p>
+                  {cat.articles.map((art) => (
+                    <Link
+                      key={art.href}
+                      href={art.href}
+                      className="block px-3 py-1.5 rounded-lg text-sm text-white/70 hover:text-[#c9a84c] hover:bg-white/5 transition-colors"
+                    >
+                      {art.label}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* About */}
       <Link
         href={aboutHref}
         className="px-3 py-2 text-sm text-white/80 hover:text-[#c9a84c] hover:bg-white/5 font-medium rounded-lg transition-colors"
@@ -275,6 +400,7 @@ export default function Navbar() {
   const lang: "id" | "en" = isEN ? "en" : "id";
   const products = isEN ? productsEN : productsID;
   const otherLangUrl = getOtherLangUrl(pathname, lang);
+  const blogCategories = lang === "id" ? blogCategoriesID : blogCategoriesEN;
 
   const waText =
     lang === "id"
@@ -446,14 +572,54 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* Blog & About */}
-            <Link
-              href={t.blogHref}
-              className="block px-3 py-2.5 text-white/85 font-semibold hover:text-[#c9a84c] transition-colors text-sm"
-              onClick={() => setMobileOpen(false)}
-            >
-              Blog
-            </Link>
+            {/* Blog with expandable categories */}
+            <div>
+              <div className="flex items-center justify-between">
+                <Link
+                  href={t.blogHref}
+                  className="flex-1 px-3 py-2.5 text-white/85 font-semibold hover:text-[#c9a84c] transition-colors text-sm"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Blog
+                </Link>
+                <button
+                  className="px-3 py-2.5 text-white/40 hover:text-[#c9a84c] transition-colors"
+                  onClick={() =>
+                    setMobileExpanded(mobileExpanded === "Blog" ? null : "Blog")
+                  }
+                  aria-label="Expand Blog"
+                >
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      mobileExpanded === "Blog" ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+              {mobileExpanded === "Blog" && (
+                <div className="ml-3 mb-1 border-l border-[#c9a84c]/20 pl-3 space-y-0.5">
+                  {blogCategories.map((cat) => (
+                    <div key={cat.category}>
+                      <p className="px-2 pt-2 pb-1 text-[10px] font-bold uppercase tracking-widest text-[#c9a84c]/50">
+                        {cat.category}
+                      </p>
+                      {cat.articles.map((art) => (
+                        <Link
+                          key={art.href}
+                          href={art.href}
+                          className="block py-1.5 px-2 text-sm text-white/60 hover:text-[#c9a84c] transition-colors"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {art.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* About */}
             <Link
               href={t.aboutHref}
               className="block px-3 py-2.5 text-white/85 font-semibold hover:text-[#c9a84c] transition-colors text-sm"
