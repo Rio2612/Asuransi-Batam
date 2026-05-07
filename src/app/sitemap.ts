@@ -74,8 +74,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // SUB-PAGES – ENGINEERING
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/asuransi-engineering/contractor-all-risk`,         lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-
     { url: `${BASE_URL}/en/engineering-insurance/contractor-all-risk`,     lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-engineering/erection-all-risk`,         lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/engineering-insurance/erection-all-risk`,     lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // ────────────────────────────────────────────────────────────────────────
     // SUB-PAGES – MARINE
