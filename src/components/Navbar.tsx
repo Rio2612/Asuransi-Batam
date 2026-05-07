@@ -11,6 +11,8 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-properti": "/en/property-insurance",
   "/asuransi-properti/asuransi-hotel-batam": "/en/property-insurance/hotel-insurance-batam",
   "/asuransi-properti/asuransi-rumah-batam": "/en/property-insurance/home-insurance-batam",
+  "/asuransi-properti/asuransi-ruko-batam": "/en/property-insurance/shophouse-insurance-batam",
+  "/asuransi-properti/asuransi-gudang-batam": "/en/property-insurance/warehouse-insurance-batam",
   "/asuransi-kendaraan": "/en/vehicle-insurance",
   "/asuransi-kendaraan/asuransi-mobil-batam": "/en/vehicle-insurance/car-insurance-batam",
   "/asuransi-kendaraan/asuransi-dumptruck": "/en/vehicle-insurance/dump-truck-insurance",
@@ -21,7 +23,14 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-liability/asuransi-limbah-b3": "/en/liability-insurance/b3-waste-insurance",
   "/asuransi-liability/public-liability": "/en/liability-insurance/public-liability",
   "/asuransi-engineering": "/en/engineering-insurance",
+  "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
   "/blog": "/en/blog",
+  "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
+  "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
+  "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
+  "/blog/asuransi-alat-berat-pertambangan": "/en/blog/mining-heavy-equipment-insurance",
+  "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
+  "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
   "/tentang-kami": "/en/about-us",
   "/kontak": "/en/contact",
   "/kalkulator-premi-mobil": "/en/car-premium-calculator",
@@ -46,6 +55,8 @@ const productsID = [
     children: [
       { label: "Asuransi Hotel Batam", href: "/asuransi-properti/asuransi-hotel-batam" },
       { label: "Asuransi Rumah Batam", href: "/asuransi-properti/asuransi-rumah-batam" },
+      { label: "Asuransi Ruko Batam", href: "/asuransi-properti/asuransi-ruko-batam" },
+      { label: "Asuransi Gudang Batam", href: "/asuransi-properti/asuransi-gudang-batam" },
     ],
   },
   {
@@ -72,7 +83,13 @@ const productsID = [
       { label: "Public Liability", href: "/asuransi-liability/public-liability" },
     ],
   },
-  { label: "Engineering", href: "/asuransi-engineering", children: [] },
+  {
+    label: "Engineering",
+    href: "/asuransi-engineering",
+    children: [
+      { label: "Contractor All Risk", href: "/asuransi-engineering/contractor-all-risk" },
+    ],
+  },
 ];
 
 const productsEN = [
@@ -82,6 +99,8 @@ const productsEN = [
     children: [
       { label: "Hotel Insurance Batam", href: "/en/property-insurance/hotel-insurance-batam" },
       { label: "Home Insurance Batam", href: "/en/property-insurance/home-insurance-batam" },
+      { label: "Shophouse Insurance Batam", href: "/en/property-insurance/shophouse-insurance-batam" },
+      { label: "Warehouse Insurance Batam", href: "/en/property-insurance/warehouse-insurance-batam" },
     ],
   },
   {
@@ -108,7 +127,13 @@ const productsEN = [
       { label: "Public Liability", href: "/en/liability-insurance/public-liability" },
     ],
   },
-  { label: "Engineering", href: "/en/engineering-insurance", children: [] },
+  {
+    label: "Engineering",
+    href: "/en/engineering-insurance",
+    children: [
+      { label: "Contractor All Risk", href: "/en/engineering-insurance/contractor-all-risk" },
+    ],
+  },
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
