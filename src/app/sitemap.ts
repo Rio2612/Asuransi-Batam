@@ -120,6 +120,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/asuransi-alat-berat-pertambangan`,        lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-properti-komersial-batam`,       lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/blog/cara-klaim-asuransi-kebakaran-rumah`,     lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/blog/cara-klaim-asuransi-marine-cargo`,         lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/blog/perbedaan-marine-hull-vs-cargo`,           lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/blog/builders-risk-untuk-galangan-kapal`,       lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+    
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – EN
@@ -131,6 +136,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/blog/mining-heavy-equipment-insurance`,                             lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/commercial-property-insurance-batam`,                          lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/how-to-claim-home-fire-insurance`,                             lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/how-to-claim-marine-cargo-insurance`,   lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/en/blog/marine-hull-vs-cargo-insurance`,        lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/en/blog/batam-singapore-shipping-insurance`,    lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+{ url: `${BASE_URL}/en/blog/builders-risk-shipyard-insurance-batam`,lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // INFO PAGES
