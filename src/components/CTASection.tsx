@@ -5,6 +5,7 @@ interface CTASectionProps {
   subtitle?: string;
   primaryLabel?: string;
   primaryHref?: string;
+  waMsg?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
 }
@@ -13,10 +14,14 @@ export default function CTASection({
   title = "Siap Melindungi Aset Anda?",
   subtitle = "Konsultasikan kebutuhan asuransi Anda bersama Rio, konsultan asuransi terpercaya di Batam.",
   primaryLabel = "Konsultasi Gratis via WhatsApp",
-  primaryHref = "https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
+  primaryHref,
+  waMsg = "Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
   secondaryLabel = "Hitung Premi Mobil",
   secondaryHref = "/kalkulator-premi-mobil",
 }: CTASectionProps) {
+  const resolvedHref =
+    primaryHref ?? `https://wa.me/6281373336728?text=${waMsg}`;
+
   return (
     <section className="py-20 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0] relative overflow-hidden">
       {/* Decorative */}
@@ -30,9 +35,9 @@ export default function CTASection({
         <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">{subtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href={primaryHref}
-            target={primaryHref.startsWith("http") ? "_blank" : undefined}
-            rel={primaryHref.startsWith("http") ? "noopener noreferrer" : undefined}
+            href={resolvedHref}
+            target={resolvedHref.startsWith("http") ? "_blank" : undefined}
+            rel={resolvedHref.startsWith("http") ? "noopener noreferrer" : undefined}
             className="px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl hover:shadow-[#c9a84c]/30 transition-all text-center"
           >
             {primaryLabel}
