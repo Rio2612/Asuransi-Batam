@@ -4,7 +4,13 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Gudang Batam – Proteksi Stok, Bangunan & Risiko Logistik",
   description: "Gudang di Batam menyimpan aset bernilai miliaran. Lindungi dari kebakaran, banjir, dan pencurian dengan asuransi gudang yang mencakup bangunan, isi, dan tanggung jawab pihak ketiga. Hubungi Rio sekarang.",
-  alternates: { canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-gudang-batam" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-gudang-batam",
+    languages: {
+      id: "https://asuransibatam.biz.id/asuransi-properti/asuransi-gudang-batam",
+      en: "https://asuransibatam.biz.id/en/property-insurance/warehouse-insurance-batam",
+    },
+  },
 };
 
 const benefits = [
