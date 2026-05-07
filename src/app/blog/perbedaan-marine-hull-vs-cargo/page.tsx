@@ -1,6 +1,7 @@
 // app/blog/perbedaan-marine-hull-vs-cargo/page.tsx
 import type { Metadata } from "next";
-import BlogLayout from "@/components/BlogLayout";
+import ArticleLayout from "@/components/ArticleLayout";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
@@ -15,8 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
-    description:
-      "Asuransi kapal vs asuransi muatan: objek, tertanggung, dan kasus klaim yang berbeda. Panduan memilih yang tepat untuk bisnis Anda.",
+    description: "Asuransi kapal vs asuransi muatan: objek, tertanggung, dan kasus klaim yang berbeda.",
     url: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
     type: "article",
   },
@@ -26,180 +26,144 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
-  description:
-    "Penjelasan lengkap perbedaan asuransi marine hull (kapal) dan marine cargo (muatan). Siapa yang wajib beli, berapa preminya, dan bagaimana keduanya bekerja bersama.",
+  description: "Penjelasan lengkap perbedaan asuransi marine hull (kapal) dan marine cargo (muatan). Siapa yang wajib beli, berapa preminya, dan bagaimana keduanya bekerja bersama.",
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
-  author: {
-    "@type": "Person",
-    name: "Rio",
-    jobTitle: "Konsultan Asuransi",
-    telephone: "+6281373336728",
-  },
-  publisher: {
-    "@type": "InsuranceAgency",
-    name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
-  },
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
-  },
-  breadcrumb: {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.biz.id" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/blog" },
-      { "@type": "ListItem", position: 3, name: "Perbedaan Marine Hull vs Cargo", item: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo" },
-    ],
-  },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo" },
 };
-
-const content = `
-## Salah Kaprah yang Mahal: "Kapal Sudah Diasuransikan, Muatan Pasti Aman"
-
-Ini salah satu kesalahpahaman paling umum yang saya temui saat konsultasi dengan pengusaha di Batam. Pemilik kargo sering berasumsi bahwa karena kapal yang mengangkut barang mereka punya asuransi, otomatis muatan mereka terlindungi juga.
-
-Kenyataannya: **asuransi kapal (marine hull) dan asuransi muatan (marine cargo) adalah dua produk yang sepenuhnya terpisah**, melindungi objek berbeda, untuk pihak yang berbeda, dengan mekanisme klaim yang berbeda pula.
-
----
-
-## Apa Itu Marine Hull Insurance?
-
-Marine hull insurance adalah asuransi yang melindungi **fisik kapal beserta perlengkapannya** — lambung, mesin, peralatan navigasi, dan segala yang menjadi bagian permanen dari kapal.
-
-**Siapa yang membeli:** Pemilik kapal (ship owner) atau operator armada. Di Batam, ini mencakup perusahaan pelayaran, pemilik kapal feri penyeberangan, operator tug boat, dan pemilik kapal patroli.
-
-**Yang dilindungi:**
-- Kerusakan lambung akibat tabrakan, kandas, atau cuaca ekstrem
-- Kerusakan mesin yang tidak terduga (machinery breakdown — opsional)
-- Tanggung jawab kepada kapal lain dalam insiden tabrakan (collision liability)
-- Kerugian total kapal (total loss) akibat tenggelam atau kebakaran
-
-**Yang tidak dilindungi:**
-- Isi muatan/kargo di atas kapal
-- Kerusakan akibat kelalaian kru yang sudah diketahui
-- Kapal yang beroperasi di luar wilayah navigasi yang dinyatakan dalam polis
-
-**Dasar perhitungan premi:** Nilai kapal (hull value), usia kapal, rute operasi, jenis kapal, dan rekam jejak klaim sebelumnya.
-
----
-
-## Apa Itu Marine Cargo Insurance?
-
-Marine cargo insurance melindungi **barang atau muatan** yang diangkut, bukan kendaraan pengangkutnya. Polis ini mengikuti barang dari gudang pengirim hingga gudang penerima — termasuk saat di dermaga, dalam kontainer, atau berpindah moda transportasi.
-
-**Siapa yang membeli:** Pemilik barang (shipper, importer, eksporter, trading company). Dalam kontrak perdagangan internasional, siapa yang menanggung risiko tergantung pada Incoterms yang disepakati.
-
-**Yang dilindungi (tergantung klausa yang dipilih):**
-- Kerusakan fisik barang selama perjalanan laut, udara, atau darat
-- Kehilangan atau pencurian sebagian atau seluruh muatan
-- Basah akibat air laut atau air hujan yang masuk
-- Kontaminasi atau kerusakan akibat kondisi penyimpanan di kapal
-- Biaya general average (kontribusi bersama jika kapal dalam bahaya)
-
-**Tiga tingkat coverage berdasarkan ICC (Institute Cargo Clauses):**
-
-| Klausa | Cakupan | Cocok untuk |
-|---|---|---|
-| ICC (A) | All risks – semua risiko kecuali yang dikecualikan | Barang bernilai tinggi, elektronik, mesin |
-| ICC (B) | Named perils – risiko tertentu seperti kebakaran, tabrakan, tenggelam | Barang bulk, komoditas |
-| ICC (C) | Risiko terbatas – hanya kerugian besar dan total loss | Kargo berisiko rendah, harga murah |
-
----
-
-## Perbandingan Langsung: Hull vs Cargo
-
-| Aspek | Marine Hull | Marine Cargo |
-|---|---|---|
-| Objek pertanggungan | Fisik kapal | Barang/muatan |
-| Tertanggung | Pemilik kapal | Pemilik barang |
-| Mengikuti | Kapal | Perjalanan barang |
-| Berlaku saat | Kapal beroperasi | Barang dalam transit |
-| Dasar nilai | Nilai pasar kapal | Nilai invoice + % |
-| Klaim diajukan oleh | Pemilik/operator kapal | Shipper/consignee |
-| Hubungan antar keduanya | Independen | Independen |
-
----
-
-## Bagaimana Keduanya Bekerja Bersama dalam Satu Insiden?
-
-Bayangkan kapal kargo kecil rute Batam–Jakarta mengalami kebakaran di dek dan sebagian muatan hangus.
-
-- **Marine hull claim:** Pemilik kapal mengklaim kerusakan dek dan bangunan kapal ke asuransi hull-nya
-- **Marine cargo claim:** Pemilik muatan masing-masing mengklaim kerusakan barang mereka ke asuransi cargo masing-masing
-- Kedua klaim berjalan **paralel dan independen** — satu tidak mempengaruhi yang lain
-
-Inilah mengapa dalam satu insiden yang sama, bisa ada puluhan klaim cargo terpisah dari berbagai pemilik barang, sementara hanya ada satu klaim hull dari pemilik kapal.
-
----
-
-## Apakah Carrier Bertanggung Jawab atas Kerusakan Muatan?
-
-Secara hukum, carrier (pemilik/operator kapal) memang punya tanggung jawab terbatas terhadap kerusakan muatan berdasarkan Konvensi Hague-Visby. Namun ada tiga masalah praktis:
-
-1. **Liability carrier sangat terbatas** — dihitung per package atau per kilogram, sering jauh di bawah nilai aktual barang
-2. **Proses tuntutan ke carrier panjang** — bisa berbulan-bulan bahkan tahun, melibatkan proses hukum
-3. **Carrier bisa punya pengecualian** — *act of God*, force majeure, atau kesalahan kemasan
-
-Itulah mengapa pemilik barang dianjurkan memiliki asuransi cargo sendiri daripada hanya mengandalkan tanggung jawab carrier.
-
----
-
-## Siapa yang Perlu Beli Apa?
-
-**Beli Marine Hull jika Anda:**
-- Memiliki atau mengoperasikan kapal komersial
-- Pemilik armada tug boat, feri, atau kapal patroli
-- Mengoperasikan kapal di perairan Batam dan sekitarnya
-
-**Beli Marine Cargo jika Anda:**
-- Importir atau eksportir yang rutin mengirim barang lewat laut/udara
-- Trading company yang membeli barang FOB atau CIF
-- Perusahaan manufaktur yang mengimpor bahan baku atau mengekspor produk jadi
-- Distributor yang menerima pengiriman dalam jumlah besar
-
-**Beli Keduanya jika Anda:**
-- Pemilik kapal sekaligus mengangkut muatan milik sendiri (own cargo)
-
----
-
-## Berapa Premi yang Wajar?
-
-Premi marine cargo umumnya berkisar antara **0,1% hingga 0,5% dari nilai kargo** tergantung jenis barang, rute, dan klausa yang dipilih. Untuk rute pendek seperti Batam–Singapura atau Batam–Jakarta, tarif cenderung lebih rendah dibanding rute internasional jarak jauh.
-
-Premi marine hull lebih kompleks karena bergantung pada nilai kapal, usia, dan rekam jejak operasi — konsultasikan langsung untuk penawaran yang akurat.
-
----
-
-## Konsultasi Gratis – Pilih Polis yang Tepat untuk Bisnis Anda
-
-Saya sering membantu klien di Batam yang tidak yakin harus membeli hull, cargo, atau keduanya — tergantung model bisnis dan posisi mereka dalam rantai pengiriman.
-
-**Rio – Konsultan Asuransi Marine Batam**  
-📞 0813-7333-6728 (WhatsApp/Call)  
-🌐 [asuransibatam.biz.id/asuransi-marine](/asuransi-marine)
-`;
 
 export default function PerbedaanMarineHullVsCargoPage() {
   return (
-    <BlogLayout
+    <ArticleLayout
       title="Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?"
+      description="Kapal sudah diasuransikan belum tentu muatannya aman. Pahami perbedaan mendasar dua produk ini sebelum memilih."
       date="7 Mei 2026"
       readTime="7 menit"
       category="Marine"
-      categoryHref="/asuransi-marine"
-      breadcrumbs={[
-        { label: "Blog", href: "/blog" },
-        { label: "Perbedaan Marine Hull vs Cargo", href: "/blog/perbedaan-marine-hull-vs-cargo" },
-      ]}
+      breadcrumbs={[{ label: "Perbedaan Marine Hull vs Cargo", href: "/blog/perbedaan-marine-hull-vs-cargo" }]}
       schema={schema}
-      content={content}
-      relatedLinks={[
-        { label: "Asuransi Marine Hull Batam", href: "/asuransi-marine/marine-hull" },
-        { label: "Asuransi Marine Cargo Batam", href: "/asuransi-marine/marine-cargo" },
-        { label: "Cara Klaim Asuransi Marine Cargo", href: "/blog/cara-klaim-asuransi-marine-cargo" },
-      ]}
-    />
+    >
+      <h2>Salah Kaprah yang Mahal: &quot;Kapal Sudah Diasuransikan, Muatan Pasti Aman&quot;</h2>
+      <p>
+        Ini salah satu kesalahpahaman paling umum yang saya temui saat konsultasi dengan pengusaha di Batam. Pemilik kargo sering berasumsi bahwa karena kapal yang mengangkut barang mereka punya asuransi, otomatis muatan mereka terlindungi juga.
+      </p>
+      <p>
+        Kenyataannya: <strong>asuransi kapal (marine hull) dan asuransi muatan (marine cargo) adalah dua produk yang sepenuhnya terpisah</strong> — melindungi objek berbeda, untuk pihak yang berbeda, dengan mekanisme klaim yang berbeda pula.
+      </p>
+
+      <h2>Apa Itu Marine Hull Insurance?</h2>
+      <p>
+        Marine hull insurance adalah asuransi yang melindungi <strong>fisik kapal beserta perlengkapannya</strong> — lambung, mesin, peralatan navigasi, dan segala yang menjadi bagian permanen dari kapal.
+      </p>
+      <p><strong>Siapa yang membeli:</strong> Pemilik kapal (ship owner) atau operator armada. Di Batam, ini mencakup perusahaan pelayaran, pemilik kapal feri, operator tug boat, dan pemilik kapal patroli.</p>
+      <p><strong>Yang dilindungi:</strong> kerusakan lambung akibat tabrakan, kandas, atau cuaca ekstrem; kerusakan mesin tak terduga (opsional); tanggung jawab kepada kapal lain dalam insiden tabrakan; dan kerugian total kapal.</p>
+      <p><strong>Yang tidak dilindungi:</strong> isi muatan atau kargo di atas kapal.</p>
+
+      <h2>Apa Itu Marine Cargo Insurance?</h2>
+      <p>
+        Marine cargo insurance melindungi <strong>barang atau muatan</strong> yang diangkut, bukan kendaraan pengangkutnya. Polis ini mengikuti barang dari gudang pengirim hingga gudang penerima — termasuk saat di dermaga, dalam kontainer, atau berpindah moda transportasi.
+      </p>
+      <p><strong>Siapa yang membeli:</strong> Pemilik barang — shipper, importir, eksportir, atau trading company. Dalam kontrak perdagangan internasional, siapa yang menanggung risiko bergantung pada Incoterms yang disepakati.</p>
+
+      <p><strong>Tiga tingkat coverage berdasarkan ICC (Institute Cargo Clauses):</strong></p>
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-[#0a1628] text-white">
+              <th className="text-left px-4 py-3 rounded-tl-lg">Klausa</th>
+              <th className="text-left px-4 py-3">Cakupan</th>
+              <th className="text-left px-4 py-3 rounded-tr-lg">Cocok untuk</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["ICC (A)", "All risks – semua risiko kecuali yang dikecualikan", "Barang bernilai tinggi, elektronik, mesin"],
+              ["ICC (B)", "Named perils – kebakaran, tabrakan, tenggelam, dll.", "Barang bulk, komoditas"],
+              ["ICC (C)", "Risiko terbatas – hanya kerugian besar dan total loss", "Kargo berisiko rendah, harga murah"],
+            ].map(([klausa, cakupan, cocok], i) => (
+              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
+                <td className="px-4 py-3 font-bold text-[#1a4fa0] border-b border-[#e2e8f0]">{klausa}</td>
+                <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{cakupan}</td>
+                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{cocok}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Perbandingan Langsung: Hull vs Cargo</h2>
+      <div className="overflow-x-auto my-6">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="bg-[#0a1628] text-white">
+              <th className="text-left px-4 py-3 rounded-tl-lg">Aspek</th>
+              <th className="text-left px-4 py-3">Marine Hull</th>
+              <th className="text-left px-4 py-3 rounded-tr-lg">Marine Cargo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Objek pertanggungan", "Fisik kapal", "Barang/muatan"],
+              ["Tertanggung", "Pemilik kapal", "Pemilik barang"],
+              ["Mengikuti", "Kapal", "Perjalanan barang"],
+              ["Berlaku saat", "Kapal beroperasi", "Barang dalam transit"],
+              ["Dasar nilai", "Nilai pasar kapal", "Nilai invoice + %"],
+              ["Klaim diajukan oleh", "Pemilik/operator kapal", "Shipper/consignee"],
+            ].map(([aspek, hull, cargo], i) => (
+              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
+                <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspek}</td>
+                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
+                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{cargo}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Bagaimana Keduanya Bekerja Bersama dalam Satu Insiden?</h2>
+      <p>
+        Bayangkan kapal kargo kecil rute Batam–Jakarta mengalami kebakaran di dek dan sebagian muatan hangus. Pemilik kapal mengklaim kerusakan dek ke asuransi hull-nya. Pemilik muatan masing-masing mengklaim kerusakan barang mereka ke asuransi cargo masing-masing. Kedua klaim berjalan <strong>paralel dan independen</strong> — satu tidak mempengaruhi yang lain.
+      </p>
+      <p>Inilah mengapa dalam satu insiden yang sama, bisa ada puluhan klaim cargo terpisah dari berbagai pemilik barang, sementara hanya ada satu klaim hull dari pemilik kapal.</p>
+
+      <h2>Apakah Carrier Bertanggung Jawab atas Kerusakan Muatan?</h2>
+      <p>
+        Secara hukum, carrier memang punya tanggung jawab terbatas berdasarkan Konvensi Hague-Visby. Namun ada tiga masalah praktis: liability carrier sangat terbatas (dihitung per package atau per kilogram), proses tuntutan ke carrier panjang dan tidak pasti, serta carrier punya banyak pengecualian seperti <em>act of God</em> dan force majeure.
+      </p>
+      <p>Itulah mengapa pemilik barang dianjurkan memiliki asuransi cargo sendiri daripada hanya mengandalkan tanggung jawab carrier.</p>
+
+      <h2>Siapa yang Perlu Beli Apa?</h2>
+      <p><strong>Beli Marine Hull jika Anda</strong> memiliki atau mengoperasikan kapal komersial, armada tug boat, feri, atau kapal patroli di perairan Batam.</p>
+      <p><strong>Beli Marine Cargo jika Anda</strong> adalah importir atau eksportir yang rutin mengirim barang lewat laut atau udara, trading company, atau distributor yang menerima pengiriman dalam jumlah besar.</p>
+      <p><strong>Beli keduanya</strong> jika Anda pemilik kapal sekaligus mengangkut muatan milik sendiri.</p>
+
+      <h2>Berapa Premi yang Wajar?</h2>
+      <p>
+        Premi marine cargo umumnya berkisar antara <strong>0,1% hingga 0,5% dari nilai kargo</strong> tergantung jenis barang, rute, dan klausa yang dipilih. Untuk rute pendek seperti Batam–Singapura atau Batam–Jakarta, tarif cenderung lebih rendah dibanding rute internasional jarak jauh.
+      </p>
+
+      <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
+        <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Konsultasi Gratis – Pilih Polis yang Tepat</h3>
+        <p className="text-white/70 text-sm mb-4 leading-relaxed">
+          Tidak yakin harus membeli hull, cargo, atau keduanya? Tergantung model bisnis dan posisi Anda dalam rantai pengiriman. Saya bantu analisis dari awal.
+        </p>
+        <a href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi%20marine"
+          target="_blank" rel="noopener noreferrer"
+          className="inline-block px-5 py-3 bg-[#c9a84c] text-[#0a1628] font-bold rounded-xl text-sm text-center hover:bg-[#f0d080] transition-colors">
+          Konsultasi via WhatsApp
+        </a>
+      </div>
+
+      <div className="mt-6 p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] not-prose">
+        <p className="text-sm font-display font-semibold text-[#0a1628] mb-3">Artikel Terkait</p>
+        <div className="flex flex-col gap-2">
+          <Link href="/blog/cara-klaim-asuransi-marine-cargo" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Cara Klaim Asuransi Marine Cargo</Link>
+          <Link href="/blog/asuransi-pengiriman-batam-singapore" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Asuransi Pengiriman Batam–Singapura</Link>
+          <Link href="/asuransi-marine" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Semua Produk Asuransi Marine</Link>
+        </div>
+      </div>
+    </ArticleLayout>
   );
 }
