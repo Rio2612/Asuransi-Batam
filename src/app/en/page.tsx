@@ -173,39 +173,38 @@ export default function HomePageEN() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl hover:shadow-[#c9a84c]/30 transition-all text-lg"
                 >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.117 1.522 5.852L.044 23.956l6.249-1.46A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.027-1.383l-.36-.214-3.733.872.94-3.626-.235-.372A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z" />
-                  </svg>
+                  <Phone className="w-5 h-5" />
                   Free Consultation via WhatsApp
                 </a>
                 <Link
-                  href="/en/property-insurance"
-                  className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-bold rounded-xl hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all text-lg"
+                  href="/en/car-premium-calculator"
+                  className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all text-lg"
                 >
-                  View Products
+                  Calculate Premium
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
-              <div className="flex flex-wrap gap-6 text-white/60 text-sm">
-                {["OJK Registered Partners", "10+ Years Experience", "Free Consultation"].map((item) => (
-                  <div key={item} className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-[#c9a84c]" />
-                    {item}
+              <div className="flex flex-wrap gap-6">
+                {[
+                  { icon: <CheckCircle className="w-4 h-4" />, text: "OJK-Registered" },
+                  { icon: <CheckCircle className="w-4 h-4" />, text: "10+ Years Experience" },
+                  { icon: <CheckCircle className="w-4 h-4" />, text: "Fast Claim Process" },
+                ].map((item) => (
+                  <div key={item.text} className="flex items-center gap-2 text-white/70 text-sm">
+                    <span className="text-[#c9a84c]">{item.icon}</span>
+                    {item.text}
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Hero right side — stats */}
             <div className="hidden lg:grid grid-cols-2 gap-4">
               {[
-                { val: "10+", label: "Years of Experience", bg: "bg-white/10", color: "text-[#c9a84c]" },
-                { val: "200+", label: "Active Clients", bg: "bg-[#c9a84c]/20", color: "text-[#f0d080]" },
-                { val: "98%", label: "Claim Success Rate", bg: "bg-white/5", color: "text-white" },
-                { val: "24/7", label: "Emergency Service", bg: "bg-[#1a4fa0]/50", color: "text-[#f0d080]" },
+                { val: "10+", label: "Years of Experience", bg: "bg-[#c9a84c]/20", color: "text-[#c9a84c]" },
+                { val: "200+", label: "Active Clients", bg: "bg-white/10", color: "text-white" },
+                { val: "98%", label: "Claim Success Rate", bg: "bg-white/10", color: "text-white" },
+                { val: "24/7", label: "Emergency Service", bg: "bg-[#c9a84c]/20", color: "text-[#c9a84c]" },
               ].map((s) => (
-                <div key={s.label} className={`${s.bg} backdrop-blur-sm rounded-2xl p-8 text-center border border-white/10`}>
+                <div key={s.label} className={`${s.bg} backdrop-blur rounded-2xl p-8 text-center`}>
                   <div className={`font-display font-black text-5xl ${s.color} mb-2`}>{s.val}</div>
                   <div className="text-white/60 text-sm">{s.label}</div>
                 </div>
@@ -384,9 +383,14 @@ export default function HomePageEN() {
         </div>
       </section>
 
+      {/* ── CTA ── */}
       <CTASection
         title="Protect Your Assets in Batam"
+        subtitle="Consult your insurance needs with Rio, a trusted insurance consultant in Batam."
+        primaryLabel="Free Consultation via WhatsApp"
         waMsg="Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance"
+        secondaryLabel="Calculate Car Premium"
+        secondaryHref="/en/car-premium-calculator"
       />
     </>
   );
