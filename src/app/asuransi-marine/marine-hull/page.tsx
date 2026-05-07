@@ -1,6 +1,6 @@
 // app/asuransi-marine/marine-hull/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -16,6 +16,41 @@ export const metadata: Metadata = generateSEO({
     en: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
   },
 });
+
+// ─── Schema: Service — tidak mensyaratkan image/price seperti Product ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Marine Hull Insurance Batam",
+  description:
+    "Asuransi lambung kapal di Batam mencakup perlindungan fisik kapal, mesin, dan peralatan navigasi dari semua risiko laut.",
+  url: "https://asuransibatam.biz.id/asuransi-marine/marine-hull",
+  serviceType: "Asuransi Marine – Marine Hull",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Produk Asuransi Marine",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Marine Hull Insurance",
+        },
+      },
+    ],
+  },
+};
 
 const FAQS = [
   {
@@ -56,19 +91,10 @@ const BENEFITS = [
 export default function MarineHullPage() {
   return (
     <>
+      {/* Schema: Service — tidak mensyaratkan image/price seperti Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Marine Hull Insurance Batam",
-              description:
-                "Asuransi lambung kapal di Batam mencakup perlindungan fisik kapal, mesin, dan peralatan navigasi dari semua risiko laut.",
-              url: "/asuransi-marine/marine-hull",
-              category: "Asuransi Marine",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
