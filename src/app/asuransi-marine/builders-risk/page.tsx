@@ -1,6 +1,6 @@
 // app/asuransi-marine/builders-risk/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -16,6 +16,41 @@ export const metadata: Metadata = generateSEO({
     en: "https://asuransibatam.biz.id/en/marine-insurance/builders-risk",
   },
 });
+
+// ─── Schema: Service (lebih tepat untuk asuransi, tidak mensyaratkan price/image) ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Builder's Risk Insurance Batam",
+  description:
+    "Asuransi pembangunan kapal di Batam mencakup perlindungan selama proses konstruksi di galangan dari keel laying hingga sea trial.",
+  url: "https://asuransibatam.biz.id/asuransi-marine/builders-risk",
+  serviceType: "Asuransi Marine – Builder's Risk",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Produk Asuransi Marine",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Builder's Risk Insurance",
+        },
+      },
+    ],
+  },
+};
 
 const FAQS = [
   {
@@ -79,19 +114,10 @@ const STAGES = [
 export default function BuildersRiskPage() {
   return (
     <>
+      {/* Schema: Service — tidak mensyaratkan image/price seperti Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Builder's Risk Insurance Batam",
-              description:
-                "Asuransi pembangunan kapal di Batam mencakup perlindungan selama proses konstruksi di galangan dari keel laying hingga sea trial.",
-              url: "/asuransi-marine/builders-risk",
-              category: "Asuransi Marine",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
@@ -146,10 +172,14 @@ export default function BuildersRiskPage() {
             Builder&apos;s Risk Insurance
           </h1>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl">
-            Pembangunan kapal adalah investasi besar yang penuh risiko. Dari keel laying hingga sea trial, setiap tahap konstruksi kapal Anda di Batam terlindungi dengan Builder's Risk Insurance.
+            Pembangunan kapal adalah investasi besar yang penuh risiko. Dari keel laying hingga sea
+            trial, setiap tahap konstruksi kapal Anda di Batam terlindungi dengan Builder&apos;s
+            Risk Insurance.
           </p>
           <a
-            href={WHATSAPP_URL("Halo Rio, saya butuh Builder's Risk Insurance untuk pembangunan kapal di Batam")}
+            href={WHATSAPP_URL(
+              "Halo Rio, saya butuh Builder's Risk Insurance untuk pembangunan kapal di Batam"
+            )}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold rounded-xl text-navy"
@@ -169,11 +199,11 @@ export default function BuildersRiskPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
             {STAGES.map((s) => (
-              <div key={s.no} className="relative p-6 rounded-2xl border border-gray-100 bg-gray-50">
-                <div
-                  className="text-3xl font-black mb-3 opacity-20"
-                  style={{ color: "#1a4fa0" }}
-                >
+              <div
+                key={s.no}
+                className="relative p-6 rounded-2xl border border-gray-100 bg-gray-50"
+              >
+                <div className="text-3xl font-black mb-3 opacity-20" style={{ color: "#1a4fa0" }}>
                   {s.no}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
