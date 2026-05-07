@@ -342,8 +342,17 @@ export default function Navbar() {
               className="flex items-center gap-1.5 px-3 py-1.5 border border-[#c9a84c]/40 text-[#c9a84c] text-xs font-bold rounded-lg hover:bg-[#c9a84c]/10 transition-all"
               title={t.langSwitch}
             >
-              <Globe className="w-3.5 h-3.5" />
-              {lang === "id" ? "EN" : "ID"}
+              {lang === "id" ? (
+                <>
+                  <span className="text-sm leading-none">🇬🇧</span>
+                  <span>EN</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-sm leading-none">🇮🇩</span>
+                  <span>ID</span>
+                </>
+              )}
             </Link>
 
             <a
@@ -356,14 +365,33 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* ── Mobile Toggle ── */}
-          <button
-            className="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          {/* ── Mobile: Lang Switch + Hamburger ── */}
+          <div className="lg:hidden flex items-center gap-1">
+            <Link
+              href={otherLangUrl}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 border border-[#c9a84c]/40 text-[#c9a84c] text-xs font-bold rounded-lg hover:bg-[#c9a84c]/10 transition-all"
+              title={t.langSwitch}
+            >
+              {lang === "id" ? (
+                <>
+                  <span className="text-base leading-none">🇬🇧</span>
+                  <span>EN</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-base leading-none">🇮🇩</span>
+                  <span>ID</span>
+                </>
+              )}
+            </Link>
+            <button
+              className="text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -441,8 +469,17 @@ export default function Navbar() {
                 className="flex items-center gap-2 px-3 py-2.5 text-[#c9a84c] text-sm font-medium border border-[#c9a84c]/30 rounded-xl"
                 onClick={() => setMobileOpen(false)}
               >
-                <Globe className="w-4 h-4" />
-                {t.langSwitch}
+                {lang === "id" ? (
+                  <>
+                    <span className="text-base leading-none">🇬🇧</span>
+                    <span>{t.langSwitch}</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-base leading-none">🇮🇩</span>
+                    <span>{t.langSwitch}</span>
+                  </>
+                )}
               </Link>
             </div>
 
