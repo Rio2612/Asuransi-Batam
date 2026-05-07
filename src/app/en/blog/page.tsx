@@ -27,7 +27,7 @@ const articles = [
   },
   {
     title: "All Risk vs TLO Insurance: Which is Better?",
-    slug: "all-risk-vs-tlo-insurance",
+    slug: "all-risk-vs-tlo-car-insurance",
     date: "March 5, 2026",
     category: "Vehicle",
     excerpt:
