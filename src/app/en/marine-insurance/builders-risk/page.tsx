@@ -1,15 +1,15 @@
 // app/en/marine-insurance/builders-risk/page.tsx
 import type { Metadata } from "next";
-import { generateSEO, schemaInsuranceProduct, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Wrench, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = generateSEO({
-  title: "Builder's Risk Insurance Batam – Shipbuilding & Vessel Construction Cover | Batam Insurance",
+  title: "Builder's Risk Insurance Batam – Shipbuilding & Repair Coverage | Batam Insurance",
   description:
-    "Builder's Risk Insurance in Batam for vessel construction and repair at shipyards. Coverage from keel laying through sea trials and delivery. Consult Rio!",
+    "Builder's Risk Insurance in Batam for vessel construction and repair at shipyards. From keel laying to sea trial — every stage is covered. Consult Rio!",
   canonical: "/en/marine-insurance/builders-risk",
   languages: {
     id: "https://asuransibatam.biz.id/asuransi-marine/builders-risk",
@@ -17,81 +17,107 @@ export const metadata: Metadata = generateSEO({
   },
 });
 
+// ─── Schema: Service — no image/price required, correct for insurance ───
+const schemaService = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Builder's Risk Insurance Batam",
+  description:
+    "Vessel construction insurance in Batam covering all stages from keel laying to sea trial and handover.",
+  url: "https://asuransibatam.biz.id/en/marine-insurance/builders-risk",
+  serviceType: "Marine Insurance – Builder's Risk",
+  areaServed: {
+    "@type": "City",
+    name: "Batam",
+    addressCountry: "ID",
+  },
+  provider: {
+    "@type": "InsuranceAgency",
+    name: "Asuransi Batam",
+    telephone: "081373336728",
+    url: "https://asuransibatam.biz.id",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Marine Insurance Products",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Builder's Risk Insurance",
+        },
+      },
+    ],
+  },
+};
+
 const FAQS = [
   {
     q: "What is Builder's Risk Insurance for vessels?",
-    a: "Builder's Risk Insurance (also known as Marine Builder's Risk or DSU – Delay in Start-Up) protects a vessel under construction at a shipyard. Coverage commences at keel laying and extends through sea trials and final delivery to the vessel owner.",
+    a: "Builder's Risk Insurance (also known as Marine Builder's Risk or DSU – Delay in Start-Up) protects a vessel during construction at the shipyard. Coverage begins at keel laying and extends through sea trials and formal handover to the owner.",
   },
   {
     q: "Who needs Builder's Risk Insurance?",
-    a: "Both the vessel owner commissioning a new build and the shipyard carrying out the construction have insurable interests that need protection. Builder's Risk policies can be structured to cover either or both parties depending on the contractual arrangement.",
+    a: "Both the vessel owner commissioning the new build and the shipyard bearing construction risk need this coverage. Each party has an insurable interest that Builder's Risk is designed to protect.",
   },
   {
     q: "Does Builder's Risk cover damage during sea trials?",
-    a: "Yes. Most Builder's Risk policies include the sea trial period as part of the overall coverage, since damage during sea trials is considered an inherent part of the construction and commissioning process.",
+    a: "Yes. Most Builder's Risk policies include the sea trial period as part of the coverage period, since damage during trials is considered part of the construction process.",
   },
   {
-    q: "Can major vessel repair or conversion work also be covered?",
-    a: "Yes. In addition to new builds, Builder's Risk policies can be arranged to protect vessels undergoing major renovation, ship conversion, or heavy repair (major refit) that requires extended drydocking.",
+    q: "Can major repair or drydocking work also be insured?",
+    a: "Yes. In addition to new builds, Builder's Risk policies can cover major renovation, vessel conversion, or heavy refit work at a shipyard requiring extended drydocking.",
   },
   {
-    q: "What is Increased Value (IV) in a Builder's Risk policy?",
-    a: "Increased Value is a supplemental coverage that compensates for the difference between the completed vessel's worth and the primary insured value — particularly relevant when the vessel's market value rises significantly during the construction period.",
+    q: "What is Increased Value (IV) in Builder's Risk?",
+    a: "Increased Value is supplementary coverage that compensates for the difference between the vessel's completed value and the primary sum insured — particularly relevant when the vessel's value grows significantly during construction.",
   },
 ];
 
 const BENEFITS = [
   "Physical damage during construction",
   "Fire and explosion at the shipyard",
-  "Flood and extreme weather",
-  "Design and construction errors",
+  "Flooding and extreme weather",
+  "Design and construction defects",
   "Damage during sea trials",
-  "Third-Party Liability (shipyard)",
+  "Third Party Liability (TPL) for shipyard",
   "Worker negligence damage",
-  "Demolition and repair costs",
+  "Dismantling and repair costs",
   "Increased Value coverage",
-  "Launching risk coverage",
+  "Launching risks",
 ];
 
 const STAGES = [
   {
     no: "01",
     title: "Keel Laying",
-    desc: "Coverage begins at the moment the keel — the vessel's primary structural foundation — is laid down in the shipyard.",
+    desc: "Coverage begins at keel laying — the foundational stage of vessel construction.",
   },
   {
     no: "02",
     title: "Construction Phase",
-    desc: "All stages of building the frame, hull, decks, and installation of on-board systems are covered throughout the construction period.",
+    desc: "All stages of framing, hull plating, deck installation, and systems fit-out are covered.",
   },
   {
     no: "03",
     title: "Launching",
-    desc: "Risks at the moment the vessel first enters the water, including capsize and hull damage during launch, are fully covered.",
+    desc: "Coverage includes the moment the vessel first enters the water, including capsize and hull damage risks.",
   },
   {
     no: "04",
-    title: "Sea Trial & Delivery",
-    desc: "Extended coverage through sea trials until the vessel is formally accepted and delivered to the owner.",
+    title: "Sea Trial & Handover",
+    desc: "Extended protection through sea trials until formal delivery of the vessel to its owner.",
   },
 ];
 
 export default function BuildersRiskENPage() {
   return (
     <>
+      {/* Schema: Service — no image/price required unlike Product */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            schemaInsuranceProduct({
-              name: "Builder's Risk Insurance Batam",
-              description:
-                "Shipbuilding insurance in Batam covering the vessel construction process from keel laying through sea trials and delivery.",
-              url: "/en/marine-insurance/builders-risk",
-              category: "Marine Insurance",
-            })
-          ),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }}
       />
       <script
         type="application/ld+json"
@@ -146,16 +172,20 @@ export default function BuildersRiskENPage() {
             Builder&apos;s Risk Insurance
           </h1>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl">
-            Vessel construction is a major investment carrying significant risk. From keel laying to sea trials, every stage of your shipbuilding project in Batam is protected under Builder's Risk Insurance.
+            Shipbuilding is a major investment at every stage. From keel laying to sea trial, every
+            phase of your vessel&apos;s construction in Batam is protected with Builder&apos;s Risk
+            Insurance.
           </p>
           <a
-            href={WHATSAPP_URL("Hello Rio, I need Builder's Risk Insurance for a vessel construction project in Batam")}
+            href={WHATSAPP_URL(
+              "Hello Rio, I need Builder's Risk Insurance for vessel construction in Batam"
+            )}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold rounded-xl text-navy"
             style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}
           >
-            Consult Builder&apos;s Risk Cover
+            Consult Builder&apos;s Risk Coverage
           </a>
         </div>
       </section>
@@ -165,7 +195,7 @@ export default function BuildersRiskENPage() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader
             eyebrow="Coverage Period"
-            title="Protection at Every Stage of Vessel Construction"
+            title="Protection at Every Stage of Construction"
           />
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
             {STAGES.map((s) => (
@@ -173,10 +203,7 @@ export default function BuildersRiskENPage() {
                 key={s.no}
                 className="relative p-6 rounded-2xl border border-gray-100 bg-gray-50"
               >
-                <div
-                  className="text-3xl font-black mb-3 opacity-20"
-                  style={{ color: "#1a4fa0" }}
-                >
+                <div className="text-3xl font-black mb-3 opacity-20" style={{ color: "#1a4fa0" }}>
                   {s.no}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
@@ -226,7 +253,7 @@ export default function BuildersRiskENPage() {
 
       <CTASection
         title="Secure Your Shipbuilding Project"
-        waMsg="Hello Rio, I would like Builder's Risk Insurance for a vessel construction project in Batam"
+        waMsg="Hello Rio, I would like Builder's Risk Insurance for vessel construction in Batam"
       />
     </>
   );
