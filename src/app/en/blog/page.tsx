@@ -45,7 +45,7 @@ const articles = [
   },
   {
     title: "The Importance of B3 Hazardous Waste Insurance for Industry in Batam",
-    slug: "b3-hazardous-waste-insurance-importance",
+    slug: "hazardous-waste-insurance-batam",
     date: "February 20, 2026",
     category: "Liability",
     excerpt:
