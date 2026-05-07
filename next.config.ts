@@ -16,9 +16,6 @@ const nextConfig: NextConfig = {
       { source: "/:path*.html",  destination: "/",             permanent: true },
       // Blog slug fix
       { source: "/blog/asuransi-mobil-batam", destination: "/blog/cara-klaim-asuransi-mobil-batam", permanent: true },
-      // EN pages not yet built
-      { source: "/en/blog/:slug", destination: "/en/blog", permanent: false },
-      
     ];
   },
 };
