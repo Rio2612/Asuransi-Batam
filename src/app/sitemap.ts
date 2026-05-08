@@ -123,6 +123,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/en/blog`,                                                          lastModified: now,                    changeFrequency: "weekly", priority: 0.8 },
     { url: `${BASE_URL}/en/blog/how-to-claim-car-insurance-batam`,                         lastModified: new Date("2026-04-30"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/how-to-claim-car-insurance-project`,                         lastModified: new Date("2026-04-30"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/how-to-claim-marine-cargo-insurance`,                         lastModified: new Date("2026-04-30"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/how-to-claim-home-fire-insurance`,                         lastModified: new Date("2026-04-30"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/excavator-and-bulldozer-insurance-batam`,                  lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/heavy-equipment-insurance-construction-projects`,          lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/mining-heavy-equipment-insurance`,                         lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
@@ -130,6 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/blog/how-to-claim-home-fire-insurance`,                         lastModified: new Date("2026-05-06"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/how-to-claim-marine-cargo-insurance`,                      lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/marine-hull-vs-cargo-insurance`,                           lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/all-risk-vs-tlo-car-insurance`,                           lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/batam-singapore-shipping-insurance`,                       lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/builders-risk-shipyard-insurance-batam`,                   lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
 
