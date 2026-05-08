@@ -85,8 +85,8 @@ export default function CarPremiumCalculatorPage() {
       </section>
 
       <section className="section-padding bg-[#faf8f3]">
-        {/* Reuse the same KalkulatorMobil component — UI is number-based, language-agnostic */}
-        <KalkulatorMobil />
+        {/* ✅ lang="en" passed — all UI text will render in English */}
+        <KalkulatorMobil lang="en" />
 
         {/* CTA */}
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-2xl border border-[#e2e8f0] text-center">
