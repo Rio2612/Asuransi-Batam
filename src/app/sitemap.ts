@@ -44,6 +44,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/property-insurance/home-insurance-batam`,       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/property-insurance/shophouse-insurance-batam`,  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/property-insurance/warehouse-insurance-batam`,  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/property-insurance/apartment-insurance-batam`,  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/property-insurance/factory-industrial-insurance-batam`,  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
 
     // ────────────────────────────────────────────────────────────────────────
     // SUB-PAGES – KENDARAAN / VEHICLE
