@@ -61,6 +61,39 @@ const schema = {
   areaServed: { "@type": "City", name: "Batam" },
 };
 
+const products = [
+  {
+    title: "Hotel Insurance Batam",
+    desc: "Comprehensive protection for all your hotel assets against fire, disasters, and third-party liability.",
+    href: "/en/property-insurance/hotel-insurance-batam",
+  },
+  {
+    title: "Home Insurance Batam",
+    desc: "Protect your home and contents from a wide range of risks including fire, flood, and theft.",
+    href: "/en/property-insurance/home-insurance-batam",
+  },
+  {
+    title: "Shophouse Insurance Batam",
+    desc: "Coverage for your shophouse and business premises against financial losses from disasters or damage.",
+    href: "/en/property-insurance/shophouse-insurance-batam",
+  },
+  {
+    title: "Warehouse Insurance Batam",
+    desc: "Secure your warehouse and stock inventory from fire, flood, and structural damage risks.",
+    href: "/en/property-insurance/warehouse-insurance-batam",
+  },
+  {
+    title: "Factory & Industrial Insurance Batam",
+    desc: "Industrial property insurance solutions for factories and production facilities in Batam's industrial estates.",
+    href: "/en/property-insurance/factory-industrial-insurance-batam",
+  },
+  {
+    title: "Apartment Insurance Batam",
+    desc: "Protect your apartment unit and its contents from various risks that could jeopardise your property investment.",
+    href: "/en/property-insurance/apartment-insurance-batam",
+  },
+];
+
 export default function PropertyInsurancePage() {
   return (
     <ProductPageLayout
@@ -74,19 +107,8 @@ export default function PropertyInsurancePage() {
       schema={schema}
     >
       <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-6 text-center">Our Property Products</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        {[
-          {
-            title: "Hotel Insurance Batam",
-            desc: "Comprehensive protection for all your hotel assets.",
-            href: "/en/property-insurance/hotel-insurance-batam",
-          },
-          {
-            title: "Home Insurance Batam",
-            desc: "Protect your home and contents from a wide range of risks.",
-            href: "/en/property-insurance/home-insurance-batam",
-          },
-        ].map((p) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {products.map((p) => (
           <Link
             key={p.href}
             href={p.href}
@@ -100,3 +122,4 @@ export default function PropertyInsurancePage() {
     </ProductPageLayout>
   );
 }
+
