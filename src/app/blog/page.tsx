@@ -35,6 +35,33 @@ const articles: Article[] = [
       "Panduan lengkap langkah demi langkah cara mengajukan klaim asuransi mobil di Batam, dokumen yang dibutuhkan, dan tips agar klaim disetujui lebih cepat.",
     readTime: "7 menit",
   },
+  {
+    title: "Cara Klaim Asuransi Mobil yang Benar",
+    slug: "cara-klaim-asuransi-mobil",
+    date: "10 Maret 2025",
+    category: "Kendaraan",
+    excerpt:
+      "Panduan umum cara mengajukan klaim asuransi mobil: dokumen yang diperlukan, prosedur pelaporan, dan tips agar proses klaim berjalan lancar.",
+    readTime: "6 menit",
+  },
+  {
+    title: "Perbedaan Asuransi All Risk dan TLO",
+    slug: "perbedaan-all-risk-dan-tlo",
+    date: "5 Maret 2025",
+    category: "Kendaraan",
+    excerpt:
+      "Apa beda asuransi mobil All Risk dan TLO? Pelajari cakupan, premi, dan mana yang paling sesuai untuk kebutuhan kendaraan Anda.",
+    readTime: "5 menit",
+  },
+  {
+    title: "Asuransi Mobil di Batam",
+    slug: "asuransi-mobil-batam",
+    date: "1 Maret 2025",
+    category: "Kendaraan",
+    excerpt:
+      "Informasi lengkap asuransi mobil di Batam: perusahaan terpercaya, tarif premi OJK, jenis perlindungan, dan cara memilih polis yang tepat.",
+    readTime: "7 menit",
+  },
   // ── Alat Berat ──────────────────────────────────────────────────────────────
   {
     title: "Asuransi Excavator dan Bulldozer di Batam",
@@ -81,6 +108,16 @@ const articles: Article[] = [
     excerpt:
       "Langkah-langkah klaim asuransi kebakaran rumah yang benar: dokumen yang diperlukan, tenggat waktu pelaporan, dan tips agar klaim tidak ditolak.",
     readTime: "6 menit",
+  },
+  // ── Liability ───────────────────────────────────────────────────────────────
+  {
+    title: "Pentingnya Asuransi Limbah B3 bagi Industri",
+    slug: "pentingnya-asuransi-limbah-b3",
+    date: "20 Februari 2025",
+    category: "Liability",
+    excerpt:
+      "Mengapa perusahaan yang mengelola limbah B3 wajib memiliki asuransi? Pelajari risiko hukum, regulasi OJK, dan perlindungan yang tersedia.",
+    readTime: "7 menit",
   },
   // ── Marine ──────────────────────────────────────────────────────────────────
   {
@@ -130,7 +167,7 @@ const categoryColors: Record<string, string> = {
 };
 
 // Group articles by category for display
-const categories = ["Kendaraan", "Alat Berat", "Properti", "Marine"];
+const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Marine"];
 
 export default function BlogPage() {
   return (
