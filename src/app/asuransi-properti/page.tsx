@@ -1,3 +1,4 @@
+// app/asuransi-properti/page.tsx
 import type { Metadata } from "next";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
@@ -50,6 +51,39 @@ const schema = {
   areaServed: { "@type": "City", name: "Batam" },
 };
 
+const products = [
+  {
+    title: "Asuransi Hotel Batam",
+    desc: "Perlindungan komprehensif untuk aset hotel Anda dari kebakaran, bencana, dan tanggung jawab pihak ketiga.",
+    href: "/asuransi-properti/asuransi-hotel-batam",
+  },
+  {
+    title: "Asuransi Rumah Batam",
+    desc: "Lindungi rumah & isi rumah dari berbagai risiko termasuk kebakaran, banjir, dan pencurian.",
+    href: "/asuransi-properti/asuransi-rumah-batam",
+  },
+  {
+    title: "Asuransi Ruko Batam",
+    desc: "Perlindungan untuk ruko dan properti usaha Anda dari kerugian finansial akibat bencana atau kerusakan.",
+    href: "/asuransi-properti/asuransi-ruko-batam",
+  },
+  {
+    title: "Asuransi Gudang Batam",
+    desc: "Amankan gudang dan isi stok Anda dari risiko kebakaran, banjir, dan kerusakan struktural.",
+    href: "/asuransi-properti/asuransi-gudang-batam",
+  },
+  {
+    title: "Asuransi Pabrik & Kawasan Industri Batam",
+    desc: "Solusi asuransi properti industri untuk pabrik dan fasilitas produksi di kawasan industri Batam.",
+    href: "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
+  },
+  {
+    title: "Asuransi Apartemen Batam",
+    desc: "Lindungi unit apartemen dan isinya dari berbagai risiko yang dapat merugikan investasi properti Anda.",
+    href: "/asuransi-properti/asuransi-apartemen-batam",
+  },
+];
+
 export default function AsuransiPropertiPage() {
   return (
     <ProductPageLayout
@@ -63,12 +97,13 @@ export default function AsuransiPropertiPage() {
       schema={schema}
     >
       <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-6 text-center">Produk Properti Kami</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-        {[
-          { title: "Asuransi Hotel Batam", desc: "Perlindungan komprehensif untuk aset hotel Anda.", href: "/asuransi-properti/asuransi-hotel-batam" },
-          { title: "Asuransi Rumah Batam", desc: "Lindungi rumah & isi rumah dari berbagai risiko.", href: "/asuransi-properti/asuransi-rumah-batam" },
-        ].map((p) => (
-          <Link key={p.href} href={p.href} className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {products.map((p) => (
+          <Link
+            key={p.href}
+            href={p.href}
+            className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all"
+          >
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>
             <p className="text-[#64748b] text-sm">{p.desc}</p>
           </Link>
