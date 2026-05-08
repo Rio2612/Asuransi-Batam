@@ -120,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/perbedaan-marine-hull-vs-cargo`,          lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore`,     lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/builders-risk-untuk-galangan-kapal`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
-    { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore"`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – EN
