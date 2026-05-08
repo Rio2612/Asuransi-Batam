@@ -37,6 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/asuransi-properti/asuransi-rumah-batam`,           lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-properti/asuransi-ruko-batam`,            lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-properti/asuransi-gudang-batam`,          lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-properti/asuransi-pabrik-kawasan-industri-batam`,            lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-properti/asuransi-apartemen-batam`,          lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     { url: `${BASE_URL}/en/property-insurance/hotel-insurance-batam`,      lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/property-insurance/home-insurance-batam`,       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
