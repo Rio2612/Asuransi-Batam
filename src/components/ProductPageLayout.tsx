@@ -25,6 +25,7 @@ export default function ProductPageLayout({
 }: ProductPageProps) {
   // Detect language from first breadcrumb href
   const isEN = breadcrumbs[0]?.href?.startsWith("/en");
+  const lang = isEN ? "en" : "id";
 
   const t = {
     home: isEN ? "Home" : "Beranda",
@@ -171,7 +172,8 @@ export default function ProductPageLayout({
         </div>
       </section>
 
-      <CTASection />
+      {/* ✅ lang prop now passed so CTA defaults to correct language */}
+      <CTASection lang={lang} />
     </>
   );
 }

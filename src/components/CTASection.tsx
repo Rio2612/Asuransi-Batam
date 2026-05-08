@@ -8,19 +8,48 @@ interface CTASectionProps {
   waMsg?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
+  /** Pass "en" to use English defaults. All explicit props still override. */
+  lang?: "id" | "en";
 }
 
+const DEFAULTS = {
+  id: {
+    title: "Siap Melindungi Aset Anda?",
+    subtitle: "Konsultasikan kebutuhan asuransi Anda bersama Rio, konsultan asuransi terpercaya di Batam.",
+    primaryLabel: "Konsultasi Gratis via WhatsApp",
+    secondaryLabel: "Hitung Premi Mobil",
+    secondaryHref: "/kalkulator-premi-mobil",
+    waMsg: "Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
+  },
+  en: {
+    title: "Ready to Protect Your Assets?",
+    subtitle: "Consult with Rio, your trusted insurance consultant in Batam. Free, fast, and tailored to your needs.",
+    primaryLabel: "Free Consultation via WhatsApp",
+    secondaryLabel: "Calculate Car Premium",
+    secondaryHref: "/en/car-premium-calculator",
+    waMsg: "Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance",
+  },
+};
+
 export default function CTASection({
-  title = "Siap Melindungi Aset Anda?",
-  subtitle = "Konsultasikan kebutuhan asuransi Anda bersama Rio, konsultan asuransi terpercaya di Batam.",
-  primaryLabel = "Konsultasi Gratis via WhatsApp",
+  lang = "id",
+  title,
+  subtitle,
+  primaryLabel,
   primaryHref,
-  waMsg = "Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
-  secondaryLabel = "Hitung Premi Mobil",
-  secondaryHref = "/kalkulator-premi-mobil",
+  waMsg,
+  secondaryLabel,
+  secondaryHref,
 }: CTASectionProps) {
-  const resolvedHref =
-    primaryHref ?? `https://wa.me/6281373336728?text=${waMsg}`;
+  const d = DEFAULTS[lang];
+
+  const resolvedTitle         = title         ?? d.title;
+  const resolvedSubtitle      = subtitle      ?? d.subtitle;
+  const resolvedPrimaryLabel  = primaryLabel  ?? d.primaryLabel;
+  const resolvedSecondaryLabel = secondaryLabel ?? d.secondaryLabel;
+  const resolvedSecondaryHref  = secondaryHref ?? d.secondaryHref;
+  const resolvedWaMsg         = waMsg         ?? d.waMsg;
+  const resolvedHref          = primaryHref   ?? `https://wa.me/6281373336728?text=${resolvedWaMsg}`;
 
   return (
     <section className="py-20 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0] relative overflow-hidden">
@@ -30,9 +59,9 @@ export default function CTASection({
 
       <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
         <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-4">
-          {title}
+          {resolvedTitle}
         </h2>
-        <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">{subtitle}</p>
+        <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">{resolvedSubtitle}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={resolvedHref}
@@ -40,13 +69,13 @@ export default function CTASection({
             rel={resolvedHref.startsWith("http") ? "noopener noreferrer" : undefined}
             className="px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl hover:shadow-[#c9a84c]/30 transition-all text-center"
           >
-            {primaryLabel}
+            {resolvedPrimaryLabel}
           </a>
           <Link
-            href={secondaryHref}
+            href={resolvedSecondaryHref}
             className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all text-center"
           >
-            {secondaryLabel}
+            {resolvedSecondaryLabel}
           </Link>
         </div>
       </div>
