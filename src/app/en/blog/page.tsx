@@ -35,6 +35,24 @@ const articles: Article[] = [
       "A complete step-by-step guide on how to file a car insurance claim in Batam, the documents required, and tips to get your claim approved faster.",
     readTime: "7 min",
   },
+  {
+    title: "How to File a Car Insurance Claim for Construction Projects",
+    slug: "how-to-claim-car-insurance-project",
+    date: "April 30, 2026",
+    category: "Vehicle",
+    excerpt:
+      "A guide to filing car insurance claims for vehicles used in construction projects: required documents, procedures, and tips for a smooth claims process.",
+    readTime: "6 min",
+  },
+  {
+    title: "All Risk vs TLO Car Insurance: Which One Is Right for You?",
+    slug: "all-risk-vs-tlo-car-insurance",
+    date: "May 7, 2026",
+    category: "Vehicle",
+    excerpt:
+      "Understand the difference between All Risk and TLO (Total Loss Only) car insurance – coverage scope, premium costs, and which policy suits your needs.",
+    readTime: "5 min",
+  },
   // ── Heavy Equipment ─────────────────────────────────────────────────────────
   {
     title: "Excavator and Bulldozer Insurance in Batam",
@@ -63,6 +81,24 @@ const articles: Article[] = [
       "Specialized insurance for mining heavy equipment: operational risks in tough terrain, available protection, and tips for choosing a policy that meets regulations.",
     readTime: "8 min",
   },
+  {
+    title: "Construction Project Insurance in Batam",
+    slug: "construction-project-insurance-batam",
+    date: "May 7, 2026",
+    category: "Heavy Equipment",
+    excerpt:
+      "Everything you need to know about insuring construction projects in Batam – CAR/EAR policies, coverage scope, and how to protect your investment from start to finish.",
+    readTime: "8 min",
+  },
+  {
+    title: "Difference Between CAR and EAR Insurance",
+    slug: "difference-between-car-and-ear-insurance",
+    date: "May 7, 2026",
+    category: "Heavy Equipment",
+    excerpt:
+      "What separates Contractor's All Risk (CAR) from Erection All Risk (EAR) insurance? Learn which policy applies to your project type and what each covers.",
+    readTime: "6 min",
+  },
   // ── Property ────────────────────────────────────────────────────────────────
   {
     title: "Commercial Property Insurance in Batam",
@@ -81,6 +117,16 @@ const articles: Article[] = [
     excerpt:
       "Step-by-step guide to filing a home fire insurance claim: required documents, reporting deadlines, and tips to prevent your claim from being rejected.",
     readTime: "6 min",
+  },
+  // ── Liability ───────────────────────────────────────────────────────────────
+  {
+    title: "Hazardous Waste (B3) Insurance in Batam",
+    slug: "hazardous-waste-insurance-batam",
+    date: "May 7, 2026",
+    category: "Liability",
+    excerpt:
+      "Why do companies handling B3 hazardous waste need liability insurance? Explore legal risks, regulatory requirements, and available coverage in Batam.",
+    readTime: "7 min",
   },
   // ── Marine ──────────────────────────────────────────────────────────────────
   {
@@ -129,7 +175,7 @@ const categoryColors: Record<string, string> = {
   Marine: "bg-cyan-100 text-cyan-800",
 };
 
-const categories = ["Vehicle", "Heavy Equipment", "Property", "Marine"];
+const categories = ["Vehicle", "Heavy Equipment", "Property", "Liability", "Marine"];
 
 export default function BlogPageEN() {
   return (
@@ -210,4 +256,4 @@ export default function BlogPageEN() {
       </section>
     </div>
   );
-}
+      }
