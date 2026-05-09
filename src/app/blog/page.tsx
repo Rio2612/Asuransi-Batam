@@ -90,6 +90,15 @@ const articles: Article[] = [
       "Asuransi khusus alat berat pertambangan: risiko operasional di medan berat, perlindungan yang tersedia, dan tips memilih polis yang sesuai regulasi.",
     readTime: "8 menit",
   },
+  {
+    title: "Asuransi Pengiriman Mesin dan Alat Berat",
+    slug: "asuransi-pengiriman-mesin-alat-berat",
+    date: "8 Mei 2026",
+    category: "Alat Berat",
+    excerpt:
+      "Panduan asuransi pengiriman mesin dan alat berat: risiko transit, jenis perlindungan yang tersedia, dan cara memastikan perlindungan optimal selama pengiriman.",
+    readTime: "7 menit",
+  },
   // ── Properti ────────────────────────────────────────────────────────────────
   {
     title: "Asuransi Properti Komersial di Batam",
@@ -118,6 +127,25 @@ const articles: Article[] = [
     excerpt:
       "Mengapa perusahaan yang mengelola limbah B3 wajib memiliki asuransi? Pelajari risiko hukum, regulasi OJK, dan perlindungan yang tersedia.",
     readTime: "7 menit",
+  },
+  // ── Engineering ─────────────────────────────────────────────────────────────
+  {
+    title: "Asuransi Proyek Konstruksi di Batam",
+    slug: "asuransi-proyek-konstruksi-batam",
+    date: "7 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Semua yang perlu Anda ketahui tentang asuransi proyek konstruksi di Batam – polis CAR/EAR, cakupan perlindungan, dan cara melindungi investasi dari awal hingga selesai.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Perbedaan Asuransi CAR dan EAR",
+    slug: "perbedaan-car-dan-ear",
+    date: "7 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Apa yang membedakan Contractor's All Risk (CAR) dan Erection All Risk (EAR)? Pelajari polis mana yang berlaku untuk jenis proyek Anda dan apa saja yang dicakup.",
+    readTime: "6 menit",
   },
   // ── Marine ──────────────────────────────────────────────────────────────────
   {
@@ -148,6 +176,33 @@ const articles: Article[] = [
     readTime: "8 menit",
   },
   {
+    title: "Asuransi Pengiriman Batam–Jakarta",
+    slug: "asuransi-pengiriman-batam-jakarta",
+    date: "8 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan asuransi kargo untuk jalur pengiriman Batam–Jakarta: risiko selama transit laut, jenis perlindungan, dan tips memilih polis yang sesuai kebutuhan bisnis.",
+    readTime: "7 menit",
+  },
+  {
+    title: "Premi Asuransi Marine Cargo di Batam",
+    slug: "premi-asuransi-marine-cargo-batam",
+    date: "8 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan lengkap tarif premi asuransi marine cargo di Batam: faktor penentu premi, cara menghitung biaya perlindungan, dan tips mendapatkan premi kompetitif.",
+    readTime: "7 menit",
+  },
+  {
+    title: "Asuransi Cargo Ekspor Batam",
+    slug: "asuransi-cargo-ekspor-batam",
+    date: "8 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan asuransi cargo ekspor dari Batam: persyaratan regulasi, jenis perlindungan untuk pengiriman internasional, dan cara memastikan kargo ekspor Anda terlindungi.",
+    readTime: "8 menit",
+  },
+  {
     title: "Builder's Risk untuk Galangan Kapal di Batam",
     slug: "builders-risk-untuk-galangan-kapal",
     date: "7 Mei 2026",
@@ -163,11 +218,11 @@ const categoryColors: Record<string, string> = {
   "Alat Berat": "bg-yellow-100 text-yellow-800",
   Properti: "bg-green-100 text-green-800",
   Liability: "bg-orange-100 text-orange-800",
+  Engineering: "bg-purple-100 text-purple-800",
   Marine: "bg-cyan-100 text-cyan-800",
 };
 
-// Group articles by category for display
-const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Marine"];
+const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine"];
 
 export default function BlogPage() {
   return (
