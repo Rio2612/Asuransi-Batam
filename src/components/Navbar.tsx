@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown, Phone, Globe } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 
 // ─── URL mapping: Indonesian ↔ English ───────────────────────────────────────
 const URL_MAP: Record<string, string> = {
@@ -14,6 +14,8 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-properti/asuransi-rumah-batam": "/en/property-insurance/home-insurance-batam",
   "/asuransi-properti/asuransi-ruko-batam": "/en/property-insurance/shophouse-insurance-batam",
   "/asuransi-properti/asuransi-gudang-batam": "/en/property-insurance/warehouse-insurance-batam",
+  "/asuransi-properti/asuransi-apartemen-batam": "/en/property-insurance/apartment-insurance-batam",
+  "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam": "/en/property-insurance/factory-industrial-insurance-batam",
   // Kendaraan
   "/asuransi-kendaraan": "/en/vehicle-insurance",
   "/asuransi-kendaraan/asuransi-mobil-batam": "/en/vehicle-insurance/car-insurance-batam",
@@ -29,6 +31,7 @@ const URL_MAP: Record<string, string> = {
   // Engineering
   "/asuransi-engineering": "/en/engineering-insurance",
   "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
+  "/asuransi-engineering/erection-all-risk": "/en/engineering-insurance/erection-all-risk",
   // Marine
   "/asuransi-marine": "/en/marine-insurance",
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
@@ -43,19 +46,30 @@ const URL_MAP: Record<string, string> = {
   // Blog – index
   "/blog": "/en/blog",
   // Blog – Kendaraan
+  "/blog/cara-klaim-asuransi-mobil": "/en/blog/how-to-claim-car-insurance-project",
   "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
+  "/blog/perbedaan-all-risk-dan-tlo": "/en/blog/all-risk-vs-tlo-car-insurance",
+  "/blog/asuransi-mobil-batam": "/en/blog/all-risk-vs-tlo-car-insurance",
   // Blog – Machinery / Alat Berat
   "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
   "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
   "/blog/asuransi-alat-berat-pertambangan": "/en/blog/mining-heavy-equipment-insurance",
+  "/blog/asuransi-pengiriman-mesin-alat-berat": "/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   // Blog – Properti
   "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
   "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
+  // Blog – Liability
+  "/blog/pentingnya-asuransi-limbah-b3": "/en/blog/hazardous-waste-insurance-batam",
+  // Blog – Engineering
+  "/blog/asuransi-engineering/contractor-all-risk": "/en/blog/construction-project-insurance-batam",
   // Blog – Marine
   "/blog/cara-klaim-asuransi-marine-cargo": "/en/blog/how-to-claim-marine-cargo-insurance",
   "/blog/perbedaan-marine-hull-vs-cargo": "/en/blog/marine-hull-vs-cargo-insurance",
   "/blog/asuransi-pengiriman-batam-singapore": "/en/blog/batam-singapore-shipping-insurance",
   "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
+  "/blog/asuransi-pengiriman-batam-jakarta": "/en/blog/batam-jakarta-cargo-insurance",
+  "/blog/premi-asuransi-marine-cargo-batam": "/en/blog/marine-cargo-insurance-premium-batam",
+  "/blog/asuransi-cargo-ekspor-batam": "/en/blog/batam-export-cargo-insurance",
 };
 
 // Build reverse map (EN → ID) automatically
@@ -81,6 +95,8 @@ const productsID: NavItem[] = [
       { label: "Asuransi Rumah", href: "/asuransi-properti/asuransi-rumah-batam", desc: "Hunian & vila" },
       { label: "Asuransi Ruko", href: "/asuransi-properti/asuransi-ruko-batam", desc: "Ruko & komersial" },
       { label: "Asuransi Gudang", href: "/asuransi-properti/asuransi-gudang-batam", desc: "Gudang & logistik" },
+      { label: "Asuransi Apartemen", href: "/asuransi-properti/asuransi-apartemen-batam", desc: "Apartemen & kondominium" },
+      { label: "Asuransi Pabrik", href: "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam", desc: "Pabrik & kawasan industri" },
     ],
   },
   {
@@ -111,7 +127,8 @@ const productsID: NavItem[] = [
     label: "Engineering",
     href: "/asuransi-engineering",
     children: [
-      { label: "Contractor All Risk", href: "/asuransi-engineering/contractor-all-risk", desc: "CAR & EAR proyek" },
+      { label: "Contractor All Risk", href: "/asuransi-engineering/contractor-all-risk", desc: "CAR proyek konstruksi" },
+      { label: "Erection All Risk", href: "/asuransi-engineering/erection-all-risk", desc: "EAR instalasi mesin" },
     ],
   },
   {
@@ -134,6 +151,8 @@ const productsEN: NavItem[] = [
       { label: "Home Insurance", href: "/en/property-insurance/home-insurance-batam", desc: "Residences & villas" },
       { label: "Shophouse Insurance", href: "/en/property-insurance/shophouse-insurance-batam", desc: "Shophouses & retail" },
       { label: "Warehouse Insurance", href: "/en/property-insurance/warehouse-insurance-batam", desc: "Warehouses & logistics" },
+      { label: "Apartment Insurance", href: "/en/property-insurance/apartment-insurance-batam", desc: "Apartments & condominiums" },
+      { label: "Factory Insurance", href: "/en/property-insurance/factory-industrial-insurance-batam", desc: "Factories & industrial estates" },
     ],
   },
   {
@@ -164,7 +183,8 @@ const productsEN: NavItem[] = [
     label: "Engineering",
     href: "/en/engineering-insurance",
     children: [
-      { label: "Contractor All Risk", href: "/en/engineering-insurance/contractor-all-risk", desc: "CAR & EAR projects" },
+      { label: "Contractor All Risk", href: "/en/engineering-insurance/contractor-all-risk", desc: "CAR construction projects" },
+      { label: "Erection All Risk", href: "/en/engineering-insurance/erection-all-risk", desc: "EAR machinery installation" },
     ],
   },
   {
@@ -187,6 +207,9 @@ const blogCategoriesID: BlogCategory[] = [
     category: "Kendaraan",
     articles: [
       { label: "Cara Klaim Asuransi Mobil Batam", href: "/blog/cara-klaim-asuransi-mobil-batam" },
+      { label: "Cara Klaim Asuransi Mobil", href: "/blog/cara-klaim-asuransi-mobil" },
+      { label: "Perbedaan All Risk dan TLO", href: "/blog/perbedaan-all-risk-dan-tlo" },
+      { label: "Asuransi Mobil Batam", href: "/blog/asuransi-mobil-batam" },
     ],
   },
   {
@@ -195,6 +218,7 @@ const blogCategoriesID: BlogCategory[] = [
       { label: "Asuransi Excavator & Bulldozer", href: "/blog/asuransi-excavator-dan-bulldozer" },
       { label: "Alat Berat Proyek Konstruksi", href: "/blog/asuransi-alat-berat-proyek-konstruksi" },
       { label: "Alat Berat Pertambangan", href: "/blog/asuransi-alat-berat-pertambangan" },
+      { label: "Pengiriman Mesin & Alat Berat", href: "/blog/asuransi-pengiriman-mesin-alat-berat" },
     ],
   },
   {
@@ -205,11 +229,20 @@ const blogCategoriesID: BlogCategory[] = [
     ],
   },
   {
+    category: "Liability",
+    articles: [
+      { label: "Pentingnya Asuransi Limbah B3", href: "/blog/pentingnya-asuransi-limbah-b3" },
+    ],
+  },
+  {
     category: "Marine",
     articles: [
       { label: "Cara Klaim Asuransi Marine Cargo", href: "/blog/cara-klaim-asuransi-marine-cargo" },
       { label: "Perbedaan Marine Hull vs Cargo", href: "/blog/perbedaan-marine-hull-vs-cargo" },
       { label: "Asuransi Pengiriman Batam–Singapore", href: "/blog/asuransi-pengiriman-batam-singapore" },
+      { label: "Asuransi Pengiriman Batam–Jakarta", href: "/blog/asuransi-pengiriman-batam-jakarta" },
+      { label: "Premi Asuransi Marine Cargo Batam", href: "/blog/premi-asuransi-marine-cargo-batam" },
+      { label: "Asuransi Cargo Ekspor Batam", href: "/blog/asuransi-cargo-ekspor-batam" },
       { label: "Builder's Risk Galangan Kapal", href: "/blog/builders-risk-untuk-galangan-kapal" },
     ],
   },
@@ -219,7 +252,9 @@ const blogCategoriesEN: BlogCategory[] = [
   {
     category: "Vehicle",
     articles: [
-      { label: "How to Claim Car Insurance in Batam", href: "/en/blog/how-to-claim-car-insurance-batam" },
+      { label: "How to Claim Car Insurance Batam", href: "/en/blog/how-to-claim-car-insurance-batam" },
+      { label: "How to Claim Car Insurance (Project)", href: "/en/blog/how-to-claim-car-insurance-project" },
+      { label: "All Risk vs TLO Car Insurance", href: "/en/blog/all-risk-vs-tlo-car-insurance" },
     ],
   },
   {
@@ -228,6 +263,7 @@ const blogCategoriesEN: BlogCategory[] = [
       { label: "Excavator & Bulldozer Insurance", href: "/en/blog/excavator-and-bulldozer-insurance-batam" },
       { label: "Construction Heavy Equipment", href: "/en/blog/heavy-equipment-insurance-construction-projects" },
       { label: "Mining Heavy Equipment", href: "/en/blog/mining-heavy-equipment-insurance" },
+      { label: "Machinery & Equipment Shipping", href: "/en/blog/machinery-heavy-equipment-shipping-insurance-batam" },
     ],
   },
   {
@@ -238,11 +274,27 @@ const blogCategoriesEN: BlogCategory[] = [
     ],
   },
   {
+    category: "Liability",
+    articles: [
+      { label: "Hazardous Waste Insurance Batam", href: "/en/blog/hazardous-waste-insurance-batam" },
+    ],
+  },
+  {
+    category: "Engineering",
+    articles: [
+      { label: "Construction Project Insurance Batam", href: "/en/blog/construction-project-insurance-batam" },
+      { label: "CAR vs EAR Insurance", href: "/en/blog/difference-between-car-and-ear-insurance" },
+    ],
+  },
+  {
     category: "Marine",
     articles: [
       { label: "How to Claim Marine Cargo Insurance", href: "/en/blog/how-to-claim-marine-cargo-insurance" },
       { label: "Marine Hull vs Cargo Insurance", href: "/en/blog/marine-hull-vs-cargo-insurance" },
       { label: "Batam–Singapore Shipping Insurance", href: "/en/blog/batam-singapore-shipping-insurance" },
+      { label: "Batam–Jakarta Cargo Insurance", href: "/en/blog/batam-jakarta-cargo-insurance" },
+      { label: "Marine Cargo Premium Batam", href: "/en/blog/marine-cargo-insurance-premium-batam" },
+      { label: "Batam Export Cargo Insurance", href: "/en/blog/batam-export-cargo-insurance" },
       { label: "Builder's Risk Shipyard Insurance", href: "/en/blog/builders-risk-shipyard-insurance-batam" },
     ],
   },
@@ -349,7 +401,7 @@ function MegaMenu({ products, lang }: { products: NavItem[]; lang: "id" | "en" }
             onMouseEnter={stay}
             onMouseLeave={close}
           >
-            <div className="bg-[#0d1f3c] border border-[#c9a84c]/20 rounded-2xl shadow-2xl shadow-black/40 p-3 w-[280px]">
+            <div className="bg-[#0d1f3c] border border-[#c9a84c]/20 rounded-2xl shadow-2xl shadow-black/40 p-3 w-[300px]">
               <Link
                 href={blogHref}
                 className="flex items-center gap-2 px-3 py-2 mb-1 text-xs font-bold uppercase tracking-wider text-[#c9a84c]/70 hover:text-[#c9a84c] hover:bg-white/5 rounded-lg transition-colors"
