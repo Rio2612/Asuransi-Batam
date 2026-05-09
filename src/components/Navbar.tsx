@@ -57,11 +57,11 @@ const URL_MAP: Record<string, string> = {
   "/blog/asuransi-pengiriman-mesin-alat-berat": "/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   // Blog – Properti
   "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
-  "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
+  "/blog/asuransi-properti/asuransi-rumah-batam": "/en/blog/how-to-claim-home-fire-insurance",
   // Blog – Liability
   "/blog/pentingnya-asuransi-limbah-b3": "/en/blog/hazardous-waste-insurance-batam",
   // Blog – Engineering
-  "/blog/asuransi-engineering/contractor-all-risk": "/en/blog/construction-project-insurance-batam",
+  "/blog/asuransi-proyek-konstruksi-batam": "/en/blog/construction-project-insurance-batam",
   // Blog – Marine
   "/blog/cara-klaim-asuransi-marine-cargo": "/en/blog/how-to-claim-marine-cargo-insurance",
   "/blog/perbedaan-marine-hull-vs-cargo": "/en/blog/marine-hull-vs-cargo-insurance",
