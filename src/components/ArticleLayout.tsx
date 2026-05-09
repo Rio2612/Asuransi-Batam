@@ -30,7 +30,7 @@ export default function ArticleLayout({
     blogHref:       isEN ? "/en/blog" : "/blog",
     readLabel:      isEN ? "read"     : "baca",
     authorSubtitle: isEN
-      ? "Property Insurance Consultant · 10+ Years Experience"
+      ? "General Insurance Consultant · 10+ Years Experience"
       : "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
   };
 
