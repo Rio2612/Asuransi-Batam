@@ -125,7 +125,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/premi-asuransi-marine-cargo-batam`,              lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-cargo-ekspor-batam`,                    lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-pengiriman-mesin-alat-berat`,           lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
-
+    { url: `${BASE_URL}/blog/asuransi-properti-komersial-batam`,                    lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog/cara-klaim-asuransi-kebakaran-rumah`,           lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – EN
