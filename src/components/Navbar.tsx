@@ -32,7 +32,7 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-engineering": "/en/engineering-insurance",
   "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
   "/asuransi-engineering/erection-all-risk": "/en/engineering-insurance/erection-all-risk",
-  // Marine
+    // Marine
   "/asuransi-marine": "/en/marine-insurance",
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
   "/asuransi-marine/marine-cargo": "/en/marine-insurance/marine-cargo",
@@ -62,6 +62,7 @@ const URL_MAP: Record<string, string> = {
   "/blog/pentingnya-asuransi-limbah-b3": "/en/blog/hazardous-waste-insurance-batam",
   // Blog – Engineering
   "/blog/asuransi-proyek-konstruksi-batam": "/en/blog/construction-project-insurance-batam",
+  "/blog/perbedaan-car-dan-ear": "/en/blog/difference-between-car-and-ear-insurance",
   // Blog – Marine
   "/blog/cara-klaim-asuransi-marine-cargo": "/en/blog/how-to-claim-marine-cargo-insurance",
   "/blog/perbedaan-marine-hull-vs-cargo": "/en/blog/marine-hull-vs-cargo-insurance",
