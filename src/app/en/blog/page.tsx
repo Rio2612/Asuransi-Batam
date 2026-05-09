@@ -1,13 +1,13 @@
-// app/en/blog/page.tsx
+// app/blog/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Insurance Education Blog – Tips, Guides & Batam Insurance Info",
+  title: "Blog Edukasi Asuransi – Tips, Panduan & Info Asuransi Batam",
   description:
-    "General insurance education articles. Claims guides, product comparisons, tips for choosing insurance, and the latest insurance information in Batam.",
+    "Artikel edukasi asuransi kerugian. Panduan klaim, perbedaan produk, tips memilih asuransi, dan informasi terkini tentang asuransi di Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog",
+    canonical: "https://asuransibatam.biz.id/blog",
     languages: {
       id: "https://asuransibatam.biz.id/blog",
       en: "https://asuransibatam.biz.id/en/blog",
@@ -25,173 +25,220 @@ type Article = {
 };
 
 const articles: Article[] = [
-  // ── Vehicle ─────────────────────────────────────────────────────────────────
+  // ── Kendaraan ───────────────────────────────────────────────────────────────
   {
-    title: "How to File a Car Insurance Claim in Batam Correctly and Quickly",
-    slug: "how-to-claim-car-insurance-batam",
-    date: "April 30, 2026",
-    category: "Vehicle",
+    title: "Cara Klaim Asuransi Mobil Batam yang Benar dan Cepat",
+    slug: "cara-klaim-asuransi-mobil-batam",
+    date: "30 April 2026",
+    category: "Kendaraan",
     excerpt:
-      "A complete step-by-step guide on how to file a car insurance claim in Batam, the documents required, and tips to get your claim approved faster.",
-    readTime: "7 min",
+      "Panduan lengkap langkah demi langkah cara mengajukan klaim asuransi mobil di Batam, dokumen yang dibutuhkan, dan tips agar klaim disetujui lebih cepat.",
+    readTime: "7 menit",
   },
   {
-    title: "How to File a Car Insurance Claim for Construction Projects",
-    slug: "how-to-claim-car-insurance-project",
-    date: "April 30, 2026",
-    category: "Vehicle",
+    title: "Cara Klaim Asuransi Mobil yang Benar",
+    slug: "cara-klaim-asuransi-mobil",
+    date: "10 Maret 2025",
+    category: "Kendaraan",
     excerpt:
-      "A guide to filing car insurance claims for vehicles used in construction projects: required documents, procedures, and tips for a smooth claims process.",
-    readTime: "6 min",
+      "Panduan umum cara mengajukan klaim asuransi mobil: dokumen yang diperlukan, prosedur pelaporan, dan tips agar proses klaim berjalan lancar.",
+    readTime: "6 menit",
   },
   {
-    title: "All Risk vs TLO Car Insurance: Which One Is Right for You?",
-    slug: "all-risk-vs-tlo-car-insurance",
-    date: "May 7, 2026",
-    category: "Vehicle",
+    title: "Perbedaan Asuransi All Risk dan TLO",
+    slug: "perbedaan-all-risk-dan-tlo",
+    date: "5 Maret 2025",
+    category: "Kendaraan",
     excerpt:
-      "Understand the difference between All Risk and TLO (Total Loss Only) car insurance – coverage scope, premium costs, and which policy suits your needs.",
-    readTime: "5 min",
-  },
-  // ── Heavy Equipment ─────────────────────────────────────────────────────────
-  {
-    title: "Excavator and Bulldozer Insurance in Batam",
-    slug: "excavator-and-bulldozer-insurance-batam",
-    date: "May 6, 2026",
-    category: "Heavy Equipment",
-    excerpt:
-      "A complete guide to excavator and bulldozer insurance – types of coverage, premium rates, and how to choose the right policy for your heavy equipment.",
-    readTime: "8 min",
+      "Apa beda asuransi mobil All Risk dan TLO? Pelajari cakupan, premi, dan mana yang paling sesuai untuk kebutuhan kendaraan Anda.",
+    readTime: "5 menit",
   },
   {
-    title: "Heavy Equipment Insurance for Construction Projects",
-    slug: "heavy-equipment-insurance-construction-projects",
-    date: "May 6, 2026",
-    category: "Heavy Equipment",
+    title: "Asuransi Mobil di Batam",
+    slug: "asuransi-mobil-batam",
+    date: "1 Maret 2025",
+    category: "Kendaraan",
     excerpt:
-      "Why must heavy equipment on construction sites be insured? Discover the types of coverage, risks covered, and how to file claims efficiently.",
-    readTime: "7 min",
+      "Informasi lengkap asuransi mobil di Batam: perusahaan terpercaya, tarif premi OJK, jenis perlindungan, dan cara memilih polis yang tepat.",
+    readTime: "7 menit",
+  },
+  // ── Alat Berat ──────────────────────────────────────────────────────────────
+  {
+    title: "Asuransi Excavator dan Bulldozer di Batam",
+    slug: "asuransi-excavator-dan-bulldozer",
+    date: "6 Mei 2026",
+    category: "Alat Berat",
+    excerpt:
+      "Panduan lengkap asuransi excavator dan bulldozer – jenis perlindungan, tarif premi, dan cara memilih polis yang tepat untuk alat berat Anda.",
+    readTime: "8 menit",
   },
   {
-    title: "Mining Heavy Equipment Insurance",
-    slug: "mining-heavy-equipment-insurance",
-    date: "May 6, 2026",
-    category: "Heavy Equipment",
+    title: "Asuransi Alat Berat untuk Proyek Konstruksi",
+    slug: "asuransi-alat-berat-proyek-konstruksi",
+    date: "6 Mei 2026",
+    category: "Alat Berat",
     excerpt:
-      "Specialized insurance for mining heavy equipment: operational risks in tough terrain, available protection, and tips for choosing a policy that meets regulations.",
-    readTime: "8 min",
+      "Kenapa alat berat di proyek konstruksi wajib diasuransikan? Cari tahu jenis coverage, risiko yang ditanggung, dan cara klaim yang efisien.",
+    readTime: "7 menit",
   },
   {
-    title: "Construction Project Insurance in Batam",
-    slug: "construction-project-insurance-batam",
-    date: "May 7, 2026",
-    category: "Heavy Equipment",
+    title: "Asuransi Alat Berat Pertambangan",
+    slug: "asuransi-alat-berat-pertambangan",
+    date: "6 Mei 2026",
+    category: "Alat Berat",
     excerpt:
-      "Everything you need to know about insuring construction projects in Batam – CAR/EAR policies, coverage scope, and how to protect your investment from start to finish.",
-    readTime: "8 min",
+      "Asuransi khusus alat berat pertambangan: risiko operasional di medan berat, perlindungan yang tersedia, dan tips memilih polis yang sesuai regulasi.",
+    readTime: "8 menit",
   },
   {
-    title: "Difference Between CAR and EAR Insurance",
-    slug: "difference-between-car-and-ear-insurance",
-    date: "May 7, 2026",
-    category: "Heavy Equipment",
+    title: "Asuransi Pengiriman Mesin dan Alat Berat",
+    slug: "asuransi-pengiriman-mesin-alat-berat",
+    date: "8 Mei 2026",
+    category: "Alat Berat",
     excerpt:
-      "What separates Contractor's All Risk (CAR) from Erection All Risk (EAR) insurance? Learn which policy applies to your project type and what each covers.",
-    readTime: "6 min",
+      "Panduan asuransi pengiriman mesin dan alat berat: risiko transit, jenis perlindungan yang tersedia, dan cara memastikan perlindungan optimal selama pengiriman.",
+    readTime: "7 menit",
   },
-  // ── Property ────────────────────────────────────────────────────────────────
+  // ── Properti ────────────────────────────────────────────────────────────────
   {
-    title: "Commercial Property Insurance in Batam",
-    slug: "commercial-property-insurance-batam",
-    date: "May 6, 2026",
-    category: "Property",
+    title: "Asuransi Properti Komersial di Batam",
+    slug: "asuransi-properti-komersial-batam",
+    date: "6 Mei 2026",
+    category: "Properti",
     excerpt:
-      "A guide to choosing commercial property insurance in Batam – shophouses, warehouses, hotels, and office buildings. OJK rates, coverage types, and claims.",
-    readTime: "9 min",
+      "Panduan memilih asuransi properti komersial di Batam – ruko, gudang, hotel, dan gedung kantor. Tarif OJK, jenis coverage, dan cara klaim.",
+    readTime: "9 menit",
   },
   {
-    title: "How to File a Home Fire Insurance Claim",
-    slug: "how-to-claim-home-fire-insurance",
-    date: "May 6, 2026",
-    category: "Property",
+    title: "Cara Klaim Asuransi Kebakaran Rumah",
+    slug: "cara-klaim-asuransi-kebakaran-rumah",
+    date: "6 Mei 2026",
+    category: "Properti",
     excerpt:
-      "Step-by-step guide to filing a home fire insurance claim: required documents, reporting deadlines, and tips to prevent your claim from being rejected.",
-    readTime: "6 min",
+      "Langkah-langkah klaim asuransi kebakaran rumah yang benar: dokumen yang diperlukan, tenggat waktu pelaporan, dan tips agar klaim tidak ditolak.",
+    readTime: "6 menit",
   },
   // ── Liability ───────────────────────────────────────────────────────────────
   {
-    title: "Hazardous Waste (B3) Insurance in Batam",
-    slug: "hazardous-waste-insurance-batam",
-    date: "May 7, 2026",
+    title: "Pentingnya Asuransi Limbah B3 bagi Industri",
+    slug: "pentingnya-asuransi-limbah-b3",
+    date: "20 Februari 2025",
     category: "Liability",
     excerpt:
-      "Why do companies handling B3 hazardous waste need liability insurance? Explore legal risks, regulatory requirements, and available coverage in Batam.",
-    readTime: "7 min",
+      "Mengapa perusahaan yang mengelola limbah B3 wajib memiliki asuransi? Pelajari risiko hukum, regulasi OJK, dan perlindungan yang tersedia.",
+    readTime: "7 menit",
+  },
+  // ── Engineering ─────────────────────────────────────────────────────────────
+  {
+    title: "Asuransi Proyek Konstruksi di Batam",
+    slug: "asuransi-proyek-konstruksi-batam",
+    date: "7 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Semua yang perlu Anda ketahui tentang asuransi proyek konstruksi di Batam – polis CAR/EAR, cakupan perlindungan, dan cara melindungi investasi dari awal hingga selesai.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Perbedaan Asuransi CAR dan EAR",
+    slug: "perbedaan-car-dan-ear",
+    date: "7 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Apa yang membedakan Contractor's All Risk (CAR) dan Erection All Risk (EAR)? Pelajari polis mana yang berlaku untuk jenis proyek Anda dan apa saja yang dicakup.",
+    readTime: "6 menit",
   },
   // ── Marine ──────────────────────────────────────────────────────────────────
   {
-    title: "How to File a Marine Cargo Insurance Claim",
-    slug: "how-to-claim-marine-cargo-insurance",
-    date: "May 7, 2026",
+    title: "Cara Klaim Asuransi Marine Cargo",
+    slug: "cara-klaim-asuransi-marine-cargo",
+    date: "7 Mei 2026",
     category: "Marine",
     excerpt:
-      "A complete guide to marine cargo insurance claims – damage survey documents, reporting procedures, and how to speed up claim payments.",
-    readTime: "7 min",
+      "Panduan lengkap klaim asuransi pengiriman laut (marine cargo) – dokumen survey kerusakan, prosedur pelaporan, dan cara mempercepat pembayaran klaim.",
+    readTime: "7 menit",
   },
   {
-    title: "Marine Hull vs Marine Cargo Insurance: What's the Difference?",
-    slug: "marine-hull-vs-cargo-insurance",
-    date: "May 7, 2026",
+    title: "Perbedaan Marine Hull vs Marine Cargo",
+    slug: "perbedaan-marine-hull-vs-cargo",
+    date: "7 Mei 2026",
     category: "Marine",
     excerpt:
-      "What's the difference between Marine Hull and Marine Cargo insurance? Learn the coverage, who needs it, and how both policies work together.",
-    readTime: "6 min",
+      "Apa bedanya asuransi Marine Hull dan Marine Cargo? Pelajari cakupan, siapa yang perlu membelinya, dan bagaimana keduanya bekerja bersama.",
+    readTime: "6 menit",
   },
   {
-    title: "Batam–Singapore Shipping Insurance",
-    slug: "batam-singapore-shipping-insurance",
-    date: "May 7, 2026",
+    title: "Asuransi Pengiriman Batam–Singapore",
+    slug: "asuransi-pengiriman-batam-singapore",
+    date: "7 Mei 2026",
     category: "Marine",
     excerpt:
-      "A guide to cargo insurance for the Batam–Singapore shipping route: import-export regulations, key risks, and how to get the right policy.",
-    readTime: "8 min",
+      "Panduan asuransi kargo untuk jalur pengiriman Batam–Singapore: regulasi ekspor-impor, risiko utama, dan cara mendapatkan polis yang tepat.",
+    readTime: "8 menit",
   },
   {
-    title: "Builder's Risk Insurance for Shipyards in Batam",
-    slug: "builders-risk-shipyard-insurance-batam",
-    date: "May 7, 2026",
+    title: "Asuransi Pengiriman Batam–Jakarta",
+    slug: "asuransi-pengiriman-batam-jakarta",
+    date: "8 Mei 2026",
     category: "Marine",
     excerpt:
-      "Builder's Risk insurance for shipyards: protection during construction, risks covered, and policy requirements in Batam's shipbuilding industry.",
-    readTime: "8 min",
+      "Panduan asuransi kargo untuk jalur pengiriman Batam–Jakarta: risiko selama transit laut, jenis perlindungan, dan tips memilih polis yang sesuai kebutuhan bisnis.",
+    readTime: "7 menit",
+  },
+  {
+    title: "Premi Asuransi Marine Cargo di Batam",
+    slug: "premi-asuransi-marine-cargo-batam",
+    date: "8 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan lengkap tarif premi asuransi marine cargo di Batam: faktor penentu premi, cara menghitung biaya perlindungan, dan tips mendapatkan premi kompetitif.",
+    readTime: "7 menit",
+  },
+  {
+    title: "Asuransi Cargo Ekspor Batam",
+    slug: "asuransi-cargo-ekspor-batam",
+    date: "8 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan asuransi cargo ekspor dari Batam: persyaratan regulasi, jenis perlindungan untuk pengiriman internasional, dan cara memastikan kargo ekspor Anda terlindungi.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Builder's Risk untuk Galangan Kapal di Batam",
+    slug: "builders-risk-untuk-galangan-kapal",
+    date: "7 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Asuransi Builder's Risk khusus galangan kapal: perlindungan selama masa pembangunan, risiko yang ditanggung, dan syarat polis di industri perkapalan Batam.",
+    readTime: "8 menit",
   },
 ];
 
 const categoryColors: Record<string, string> = {
-  Vehicle: "bg-blue-100 text-blue-800",
-  "Heavy Equipment": "bg-yellow-100 text-yellow-800",
-  Property: "bg-green-100 text-green-800",
+  Kendaraan: "bg-blue-100 text-blue-800",
+  "Alat Berat": "bg-yellow-100 text-yellow-800",
+  Properti: "bg-green-100 text-green-800",
   Liability: "bg-orange-100 text-orange-800",
+  Engineering: "bg-purple-100 text-purple-800",
   Marine: "bg-cyan-100 text-cyan-800",
 };
 
-const categories = ["Vehicle", "Heavy Equipment", "Property", "Liability", "Marine"];
+const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine"];
 
-export default function BlogPageEN() {
+export default function BlogPage() {
   return (
     <div className="min-h-screen">
       {/* ── Hero ── */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
-            Blog & Education
+            Blog & Edukasi
           </p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">
-            Insurance Education Articles
+            Artikel Edukasi Asuransi
           </h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Reliable guides, tips, and information about general insurance to protect your assets
-            in Batam.
+            Panduan, tips, dan informasi terpercaya tentang asuransi kerugian untuk melindungi
+            aset Anda di Batam.
           </p>
         </div>
       </section>
@@ -220,7 +267,7 @@ export default function BlogPageEN() {
                   {catArticles.map((a) => (
                     <Link
                       key={a.slug}
-                      href={`/en/blog/${a.slug}`}
+                      href={`/blog/${a.slug}`}
                       className="group bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden hover:shadow-xl transition-all card-hover"
                     >
                       <div className="h-3 bg-gradient-to-r from-[#0a1628] to-[#1a4fa0]" />
@@ -233,7 +280,7 @@ export default function BlogPageEN() {
                           >
                             {a.category}
                           </span>
-                          <span className="text-[#64748b] text-xs">{a.readTime} read</span>
+                          <span className="text-[#64748b] text-xs">{a.readTime} baca</span>
                         </div>
                         <h2 className="font-display font-bold text-base text-[#0a1628] mb-2 group-hover:text-[#1a4fa0] transition-colors leading-tight">
                           {a.title}
@@ -242,7 +289,7 @@ export default function BlogPageEN() {
                         <div className="flex items-center justify-between">
                           <span className="text-[#64748b] text-xs">{a.date}</span>
                           <span className="text-[#1a4fa0] text-sm font-semibold group-hover:text-[#c9a84c] transition-colors">
-                            Read →
+                            Baca →
                           </span>
                         </div>
                       </div>
@@ -256,4 +303,4 @@ export default function BlogPageEN() {
       </section>
     </div>
   );
-      }
+}
