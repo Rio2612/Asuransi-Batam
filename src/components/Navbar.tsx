@@ -32,7 +32,7 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-engineering": "/en/engineering-insurance",
   "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
   "/asuransi-engineering/erection-all-risk": "/en/engineering-insurance/erection-all-risk",
-    // Marine
+  // Marine
   "/asuransi-marine": "/en/marine-insurance",
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
   "/asuransi-marine/marine-cargo": "/en/marine-insurance/marine-cargo",
@@ -46,18 +46,18 @@ const URL_MAP: Record<string, string> = {
   // Blog – index
   "/blog": "/en/blog",
   // Blog – Kendaraan
-  "/blog/cara-klaim-asuransi-mobil": "/en/blog/how-to-claim-car-insurance-project",
   "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
+  "/blog/cara-klaim-asuransi-mobil": "/en/blog/how-to-claim-car-insurance-project",
   "/blog/perbedaan-all-risk-dan-tlo": "/en/blog/all-risk-vs-tlo-car-insurance",
   "/blog/asuransi-mobil-batam": "/en/blog/all-risk-vs-tlo-car-insurance",
-  // Blog – Machinery / Alat Berat
+  // Blog – Alat Berat / Machinery
   "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
   "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
   "/blog/asuransi-alat-berat-pertambangan": "/en/blog/mining-heavy-equipment-insurance",
   "/blog/asuransi-pengiriman-mesin-alat-berat": "/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   // Blog – Properti
   "/blog/asuransi-properti-komersial-batam": "/en/blog/commercial-property-insurance-batam",
-  "/blog/asuransi-properti/asuransi-rumah-batam": "/en/blog/how-to-claim-home-fire-insurance",
+  "/blog/cara-klaim-asuransi-kebakaran-rumah": "/en/blog/how-to-claim-home-fire-insurance",
   // Blog – Liability
   "/blog/pentingnya-asuransi-limbah-b3": "/en/blog/hazardous-waste-insurance-batam",
   // Blog – Engineering
@@ -67,10 +67,10 @@ const URL_MAP: Record<string, string> = {
   "/blog/cara-klaim-asuransi-marine-cargo": "/en/blog/how-to-claim-marine-cargo-insurance",
   "/blog/perbedaan-marine-hull-vs-cargo": "/en/blog/marine-hull-vs-cargo-insurance",
   "/blog/asuransi-pengiriman-batam-singapore": "/en/blog/batam-singapore-shipping-insurance",
-  "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
   "/blog/asuransi-pengiriman-batam-jakarta": "/en/blog/batam-jakarta-cargo-insurance",
   "/blog/premi-asuransi-marine-cargo-batam": "/en/blog/marine-cargo-insurance-premium-batam",
   "/blog/asuransi-cargo-ekspor-batam": "/en/blog/batam-export-cargo-insurance",
+  "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
 };
 
 // Build reverse map (EN → ID) automatically
@@ -233,6 +233,13 @@ const blogCategoriesID: BlogCategory[] = [
     category: "Liability",
     articles: [
       { label: "Pentingnya Asuransi Limbah B3", href: "/blog/pentingnya-asuransi-limbah-b3" },
+    ],
+  },
+  {
+    category: "Engineering",
+    articles: [
+      { label: "Asuransi Proyek Konstruksi Batam", href: "/blog/asuransi-proyek-konstruksi-batam" },
+      { label: "Perbedaan CAR dan EAR", href: "/blog/perbedaan-car-dan-ear" },
     ],
   },
   {
