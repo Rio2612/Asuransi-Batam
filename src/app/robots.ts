@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://asuransibatam.biz.id/sitemap.xml",
-    host: "https://asuransibatam.biz.id",
+    
   };
 }
