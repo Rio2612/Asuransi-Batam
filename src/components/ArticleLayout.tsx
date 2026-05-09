@@ -1,3 +1,4 @@
+// components/ArticleLayout.tsx
 import Link from "next/link";
 import CTASection from "./CTASection";
 import AuthorAvatar from "./AuthorAvatar";
@@ -13,25 +14,26 @@ interface ArticleLayoutProps {
   breadcrumbs: Breadcrumb[];
   schema: Record<string, unknown>;
   children: React.ReactNode;
-  /** Label "baca" / "read" — sesuaikan per bahasa di masing-masing halaman */
-  readLabel?: string;
-  /** Subtitle penulis, e.g. "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman"
-   *  atau "Property Insurance Consultant · 10+ Years Experience" */
-  authorSubtitle?: string;
 }
 
 export default function ArticleLayout({
-  title,
-  description,
-  date,
-  category,
-  readTime,
-  breadcrumbs,
-  schema,
-  children,
-  readLabel = "baca",
-  authorSubtitle = "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
+  title, description, date, category, readTime,
+  breadcrumbs, schema, children,
 }: ArticleLayoutProps) {
+  // Auto-detect language from breadcrumb href — same pattern as ProductPageLayout & Footer
+  const isEN = breadcrumbs[0]?.href?.startsWith("/en");
+
+  const t = {
+    home:           isEN ? "Home"     : "Beranda",
+    homeHref:       isEN ? "/en"      : "/",
+    blog:           isEN ? "Blog"     : "Blog",
+    blogHref:       isEN ? "/en/blog" : "/blog",
+    readLabel:      isEN ? "read"     : "baca",
+    authorSubtitle: isEN
+      ? "Property Insurance Consultant · 10+ Years Experience"
+      : "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -41,9 +43,9 @@ export default function ArticleLayout({
 
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap">
-            <Link href="/" className="hover:text-[#c9a84c]">Beranda</Link>
+            <Link href={t.homeHref} className="hover:text-[#c9a84c]">{t.home}</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-[#c9a84c]">Blog</Link>
+            <Link href={t.blogHref} className="hover:text-[#c9a84c]">{t.blog}</Link>
             {breadcrumbs.map((b, i) => (
               <span key={b.href} className="flex items-center gap-2">
                 <span>/</span>
@@ -60,7 +62,7 @@ export default function ArticleLayout({
               {category}
             </span>
             <span className="text-white/50 text-sm">{date}</span>
-            <span className="text-white/50 text-sm">· {readTime} {readLabel}</span>
+            <span className="text-white/50 text-sm">· {readTime} {t.readLabel}</span>
           </div>
 
           {/* Heading */}
@@ -74,7 +76,7 @@ export default function ArticleLayout({
             <AuthorAvatar />
             <div>
               <div className="text-white font-medium text-sm">Rio Mardiansyah</div>
-              <div className="text-white/50 text-xs">{authorSubtitle}</div>
+              <div className="text-white/50 text-xs">{t.authorSubtitle}</div>
             </div>
           </div>
 
@@ -89,7 +91,7 @@ export default function ArticleLayout({
         </div>
       </section>
 
-      <CTASection />
+      <CTASection lang={isEN ? "en" : "id"} />
     </>
   );
 }
