@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CTASection from "./CTASection";
+import AuthorAvatar from "./AuthorAvatar";
 
 interface Breadcrumb { label: string; href: string; }
 
@@ -70,23 +71,7 @@ export default function ArticleLayout({
 
           {/* Author */}
           <div className="flex items-center gap-3 mt-6 pt-6 border-t border-white/10">
-            {/* Foto avatar — fallback ke inisial "R" jika gambar gagal load */}
-            <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-[#c9a84c] to-[#f0d080]">
-              <img
-                src="/images/rio-mardiansyah.jpg"
-                alt="Rio Mardiansyah"
-                width={40}
-                height={40}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  // Fallback: sembunyikan img, tampilkan inisial via parent
-                  const el = e.currentTarget as HTMLImageElement;
-                  el.style.display = "none";
-                  el.parentElement!.innerHTML =
-                    '<span class="w-full h-full flex items-center justify-center text-[#0a1628] font-bold text-sm">R</span>';
-                }}
-              />
-            </div>
+            <AuthorAvatar />
             <div>
               <div className="text-white font-medium text-sm">Rio Mardiansyah</div>
               <div className="text-white/50 text-xs">{authorSubtitle}</div>
