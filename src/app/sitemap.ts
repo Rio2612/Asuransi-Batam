@@ -121,6 +121,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore`,     lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/builders-risk-untuk-galangan-kapal`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-singapore`,      lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-pengiriman-batam-jakarta`,              lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog/premi-asuransi-marine-cargo-batam`,              lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-cargo-ekspor-batam`,                    lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-pengiriman-mesin-alat-berat`,           lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – EN
@@ -141,6 +146,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/blog/construction-project-insurance-batam`,                           lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/difference-between-car-and-ear-insurance`,                       lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/hazardous-waste-insurance-batam`,                   lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/batam-jakarta-cargo-insurance`,               lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/marine-cargo-insurance-premium-batam`,        lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/batam-export-cargo-insurance`,                lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/machinery-heavy-equipment-shipping-insurance-batam`, lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
 
     
     // ────────────────────────────────────────────────────────────────────────
