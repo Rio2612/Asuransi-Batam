@@ -1,6 +1,8 @@
 import Link from "next/link";
 import CTASection from "./CTASection";
+
 interface Breadcrumb { label: string; href: string; }
+
 interface ArticleLayoutProps {
   title: string;
   description: string;
@@ -10,13 +12,33 @@ interface ArticleLayoutProps {
   breadcrumbs: Breadcrumb[];
   schema: Record<string, unknown>;
   children: React.ReactNode;
+  /** Label "baca" / "read" — sesuaikan per bahasa di masing-masing halaman */
+  readLabel?: string;
+  /** Subtitle penulis, e.g. "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman"
+   *  atau "Property Insurance Consultant · 10+ Years Experience" */
+  authorSubtitle?: string;
 }
-export default function ArticleLayout({ title, description, date, category, readTime, breadcrumbs, schema, children }: ArticleLayoutProps) {
+
+export default function ArticleLayout({
+  title,
+  description,
+  date,
+  category,
+  readTime,
+  breadcrumbs,
+  schema,
+  children,
+  readLabel = "baca",
+  authorSubtitle = "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
+}: ArticleLayoutProps) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap">
             <Link href="/" className="hover:text-[#c9a84c]">Beranda</Link>
             <span>/</span>
@@ -24,26 +46,56 @@ export default function ArticleLayout({ title, description, date, category, read
             {breadcrumbs.map((b, i) => (
               <span key={b.href} className="flex items-center gap-2">
                 <span>/</span>
-                {i === breadcrumbs.length - 1 ? <span className="text-[#c9a84c]">{b.label}</span> : <Link href={b.href} className="hover:text-[#c9a84c]">{b.label}</Link>}
+                {i === breadcrumbs.length - 1
+                  ? <span className="text-[#c9a84c]">{b.label}</span>
+                  : <Link href={b.href} className="hover:text-[#c9a84c]">{b.label}</Link>}
               </span>
             ))}
           </nav>
+
+          {/* Meta */}
           <div className="flex items-center gap-3 mb-4">
-            <span className="px-3 py-1 bg-[#c9a84c]/20 text-[#c9a84c] text-sm font-semibold rounded-full border border-[#c9a84c]/30">{category}</span>
+            <span className="px-3 py-1 bg-[#c9a84c]/20 text-[#c9a84c] text-sm font-semibold rounded-full border border-[#c9a84c]/30">
+              {category}
+            </span>
             <span className="text-white/50 text-sm">{date}</span>
-            <span className="text-white/50 text-sm">· {readTime} baca</span>
+            <span className="text-white/50 text-sm">· {readTime} {readLabel}</span>
           </div>
-          <h1 className="font-display font-bold text-3xl md:text-4xl text-white mb-4 leading-tight">{title}</h1>
+
+          {/* Heading */}
+          <h1 className="font-display font-bold text-3xl md:text-4xl text-white mb-4 leading-tight">
+            {title}
+          </h1>
           <p className="text-white/70 text-lg">{description}</p>
+
+          {/* Author */}
           <div className="flex items-center gap-3 mt-6 pt-6 border-t border-white/10">
-            <div className="w-10 h-10 bg-gradient-to-br from-[#c9a84c] to-[#f0d080] rounded-full flex items-center justify-center text-[#0a1628] font-bold">R</div>
+            {/* Foto avatar — fallback ke inisial "R" jika gambar gagal load */}
+            <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-[#c9a84c] to-[#f0d080]">
+              <img
+                src="/images/rio-mardiansyah.jpg"
+                alt="Rio Mardiansyah"
+                width={40}
+                height={40}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  // Fallback: sembunyikan img, tampilkan inisial via parent
+                  const el = e.currentTarget as HTMLImageElement;
+                  el.style.display = "none";
+                  el.parentElement!.innerHTML =
+                    '<span class="w-full h-full flex items-center justify-center text-[#0a1628] font-bold text-sm">R</span>';
+                }}
+              />
+            </div>
             <div>
-              <div className="text-white font-medium text-sm">Rio</div>
-              <div className="text-white/50 text-xs">Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman</div>
+              <div className="text-white font-medium text-sm">Rio Mardiansyah</div>
+              <div className="text-white/50 text-xs">{authorSubtitle}</div>
             </div>
           </div>
+
         </div>
       </section>
+
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none prose-headings:font-display prose-headings:text-[#0a1628] prose-p:text-[#374151] prose-p:leading-relaxed prose-a:text-[#1a4fa0] prose-strong:text-[#0a1628]">
@@ -51,6 +103,7 @@ export default function ArticleLayout({ title, description, date, category, read
           </div>
         </div>
       </section>
+
       <CTASection />
     </>
   );
