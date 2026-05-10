@@ -32,6 +32,7 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-engineering": "/en/engineering-insurance",
   "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
   "/asuransi-engineering/erection-all-risk": "/en/engineering-insurance/erection-all-risk",
+  
   // Marine
   "/asuransi-marine": "/en/marine-insurance",
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
@@ -133,6 +134,16 @@ const productsID: NavItem[] = [
     ],
   },
   {
+    {
+  label: "Surety Bond",
+  href: "/asuransi-surety-bond",
+  children: [
+    { label: "Bid Bond", href: "/asuransi-surety-bond/bid-bond", desc: "Jaminan penawaran tender" },
+    { label: "Performance Bond", href: "/asuransi-surety-bond/performance-bond", desc: "Jaminan pelaksanaan proyek" },
+    { label: "Advance Payment Bond", href: "/asuransi-surety-bond/advance-payment-bond", desc: "Jaminan uang muka" },
+    { label: "Maintenance Bond", href: "/asuransi-surety-bond/maintenance-bond", desc: "Jaminan masa pemeliharaan" },
+  ],
+},
     label: "Marine",
     href: "/asuransi-marine",
     children: [
@@ -189,6 +200,16 @@ const productsEN: NavItem[] = [
     ],
   },
   {
+    {
+  label: "Surety Bond",
+  href: "/en/surety-bond-insurance",
+  children: [
+    { label: "Bid Bond", href: "/en/surety-bond-insurance/bid-bond", desc: "Tender guarantee" },
+    { label: "Performance Bond", href: "/en/surety-bond-insurance/performance-bond", desc: "Contract execution guarantee" },
+    { label: "Advance Payment Bond", href: "/en/surety-bond-insurance/advance-payment-bond", desc: "Down payment guarantee" },
+    { label: "Maintenance Bond", href: "/en/surety-bond-insurance/maintenance-bond", desc: "Post-project defect guarantee" },
+  ],
+},
     label: "Marine",
     href: "/en/marine-insurance",
     children: [
