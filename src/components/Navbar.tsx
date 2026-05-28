@@ -88,93 +88,80 @@ function getOtherLangUrl(pathname: string, currentLang: "id" | "en"): string {
 type NavChild = { label: string; href: string; desc?: string };
 type NavItem = { label: string; href: string; children: NavChild[] };
 
-const productsID: NavItem[] = [
+// ─── Navigation Items Configuration ─────────────────────────────────────────
+interface NavItem {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+}
+
+const NAV_ITEMS_ID: NavItem[] = [
+  { url: "/" } as any, // Placeholder untuk mencocokkan indeks dengan versi EN jika diperlukan, atau bisa disesuaikan
   {
-    label: "Properti",
+    label: "Asuransi Properti",
     href: "/asuransi-properti",
     children: [
-      { label: "Asuransi Hotel", href: "/asuransi-properti/asuransi-hotel-batam", desc: "Hotel & penginapan" },
-      { label: "Asuransi Rumah", href: "/asuransi-properti/asuransi-rumah-batam", desc: "Hunian & vila" },
-      { label: "Asuransi Ruko", href: "/asuransi-properti/asuransi-ruko-batam", desc: "Ruko & komersial" },
-      { label: "Asuransi Gudang", href: "/asuransi-properti/asuransi-gudang-batam", desc: "Gudang & logistik" },
-      { label: "Asuransi Apartemen", href: "/asuransi-properti/asuransi-apartemen-batam", desc: "Apartemen & kondominium" },
-      { label: "Asuransi Pabrik", href: "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam", desc: "Pabrik & kawasan industri" },
+      { label: "Asuransi Hotel", href: "/asuransi-properti/asuransi-hotel-batam" },
+      { label: "Asuransi Rumah", href: "/asuransi-properti/asuransi-rumah-batam" },
+      { label: "Asuransi Ruko", href: "/asuransi-properti/asuransi-ruko-batam" },
+      { label: "Asuransi Gudang", href: "/asuransi-properti/asuransi-gudang-batam" },
+      { label: "Asuransi Apartemen", href: "/asuransi-properti/asuransi-apartemen-batam" },
+      { label: "Asuransi Pabrik", href: "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" },
     ],
   },
   {
-    label: "Kendaraan",
+    label: "Asuransi Kendaraan",
     href: "/asuransi-kendaraan",
     children: [
-      { label: "Asuransi Mobil", href: "/asuransi-kendaraan/asuransi-mobil-batam", desc: "All risk & TLO" },
-      { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck", desc: "Truk & armada" },
+      { label: "Asuransi Mobil", href: "/asuransi-kendaraan/asuransi-mobil-batam" },
+      { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dump-truck" },
     ],
   },
   {
-    label: "Machinery",
+    label: "Asuransi Machinery",
     href: "/asuransi-machinery",
     children: [
-      { label: "Asuransi Alat Berat", href: "/asuransi-machinery/asuransi-alat-berat", desc: "Excavator, bulldozer" },
-      { label: "Asuransi Crane", href: "/asuransi-machinery/asuransi-crane", desc: "Tower & mobile crane" },
+      { label: "Asuransi Alat Berat", href: "/asuransi-machinery/asuransi-alat-berat" },
+      { label: "Asuransi Crane", href: "/asuransi-machinery/asuransi-crane" },
     ],
   },
   {
-    label: "Liability",
+    label: "Asuransi Liability",
     href: "/asuransi-liability",
     children: [
-      { label: "Asuransi Limbah B3", href: "/asuransi-liability/asuransi-limbah-b3", desc: "Pencemaran lingkungan" },
-      { label: "Public Liability", href: "/asuransi-liability/public-liability", desc: "Tanggung jawab publik" },
+      { label: "Asuransi Limbah B3", href: "/asuransi-liability/asuransi-limbah-b3" },
+      { label: "Public Liability", href: "/asuransi-liability/public-liability" },
     ],
   },
   {
-    label: "Engineering",
+    label: "Asuransi Engineering",
     href: "/asuransi-engineering",
     children: [
-      { label: "Contractor All Risk", href: "/asuransi-engineering/contractor-all-risk", desc: "CAR proyek konstruksi" },
-      { label: "Erection All Risk", href: "/asuransi-engineering/erection-all-risk", desc: "EAR instalasi mesin" },
+      { label: "Contractor All Risk (CAR)", href: "/asuransi-engineering/contractor-all-risk" },
+      { label: "Erection All Risk (EAR)", href: "/asuransi-engineering/erection-all-risk" },
     ],
   },
   {
-    
-  label: "Surety Bond",
-  href: "/asuransi-surety-bond",
-  children: [
-    { label: "Bid Bond", href: "/asuransi-surety-bond/bid-bond", desc: "Jaminan penawaran tender" },
-    { label: "Performance Bond", href: "/asuransi-surety-bond/performance-bond", desc: "Jaminan pelaksanaan proyek" },
-    { label: "Advance Payment Bond", href: "/asuransi-surety-bond/advance-payment-bond", desc: "Jaminan uang muka" },
-    { label: "Maintenance Bond", href: "/asuransi-surety-bond/maintenance-bond", desc: "Jaminan masa pemeliharaan" },
-  ],
-},
-    label: "Marine",
+    label: "Asuransi Marine",
     href: "/asuransi-marine",
     children: [
-      { label: "Marine Hull", href: "/asuransi-marine/marine-hull", desc: "Lambung & mesin kapal" },
-      { label: "Marine Cargo", href: "/asuransi-marine/marine-cargo", desc: "Muatan & pengiriman laut" },
-      { label: "Builder's Risk", href: "/asuransi-marine/builders-risk", desc: "Pembangunan kapal" },
+      { label: "Marine Hull", href: "/asuransi-marine/marine-hull" },
+      { label: "Marine Cargo", href: "/asuransi-marine/marine-cargo" },
+      { label: "Builders Risk", href: "/asuransi-marine/builders-risk" },
+    ],
+  },
+  {
+    label: "Surety Bond",
+    href: "/asuransi-surety-bond",
+    children: [
+      { label: "Advance Payment Bond", href: "/asuransi-surety-bond/advance-payment-bond" },
+      { label: "Bid Bond", href: "/asuransi-surety-bond/bid-bond" },
+      { label: "Maintenance Bond", href: "/asuransi-surety-bond/maintenance-bond" },
+      { label: "Performance Bond", href: "/asuransi-surety-bond/performance-bond" },
     ],
   },
 ];
-
-const productsEN: NavItem[] = [
-  {
-    label: "Property",
-    href: "/en/property-insurance",
-    children: [
-      { label: "Hotel Insurance", href: "/en/property-insurance/hotel-insurance-batam", desc: "Hotels & lodging" },
-      { label: "Home Insurance", href: "/en/property-insurance/home-insurance-batam", desc: "Residences & villas" },
-      { label: "Shophouse Insurance", href: "/en/property-insurance/shophouse-insurance-batam", desc: "Shophouses & retail" },
-      { label: "Warehouse Insurance", href: "/en/property-insurance/warehouse-insurance-batam", desc: "Warehouses & logistics" },
-      { label: "Apartment Insurance", href: "/en/property-insurance/apartment-insurance-batam", desc: "Apartments & condominiums" },
-      { label: "Factory Insurance", href: "/en/property-insurance/factory-industrial-insurance-batam", desc: "Factories & industrial estates" },
-    ],
-  },
-  {
-    label: "Vehicle",
-    href: "/en/vehicle-insurance",
-    children: [
-      { label: "Car Insurance", href: "/en/vehicle-insurance/car-insurance-batam", desc: "All risk & TLO" },
-      { label: "Dump Truck Insurance", href: "/en/vehicle-insurance/dump-truck-insurance", desc: "Trucks & fleets" },
-    ],
-  },
+    
   {
     label: "Machinery",
     href: "/en/machinery-insurance",
