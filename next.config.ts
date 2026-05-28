@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
       { source: "/about.html",   destination: "/tentang-kami", permanent: true },
       { source: "/contact.html", destination: "/kontak",       permanent: true },
       { source: "/:path*.html",  destination: "/",             permanent: true },
+      {source: "/asuransi-kendaraan/asuransi-dumptruck",     destination: "/asuransi-kendaraan/asuransi-dump-truck", permanent: true}, // Menggunakan 301 permanent redirect untuk SEO
       // Blog slug fix
       { source: "/blog/asuransi-mobil-batam", destination: "/blog/cara-klaim-asuransi-mobil-batam", permanent: true },
     ];
