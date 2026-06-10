@@ -129,23 +129,15 @@ export function schemaInsuranceProduct(data: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Service",
     name: data.name,
     description: data.description,
     url: `${SITE.url}${data.url}`,
-    category: data.category,
-    brand: {
-      "@type": "Brand",
+    serviceType: data.category,
+    provider: {
+      "@type": "InsuranceAgency",
       name: SITE.name,
-    },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "InsuranceAgency",
-        name: SITE.name,
-        telephone: SITE.phone,
-      },
+      telephone: SITE.phone,
     },
   };
 }
