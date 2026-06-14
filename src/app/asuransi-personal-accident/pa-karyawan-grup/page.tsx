@@ -7,10 +7,12 @@ import {
   FileText, 
   CheckCircle2, 
   ChevronRight, 
-  PhoneCall 
+  PhoneCall,
+  AlertTriangle,
+  FileCheck,
+  Briefcase
 } from 'lucide-react';
 
-// --- METADATA SEO & HREFLANG ---
 export const metadata: Metadata = {
   title: 'Asuransi Kecelakaan Kerja Kumpulan (Group PA) Batam | Proteksi Karyawan',
   description: 'Solusi Asuransi Kecelakaan Diri Kumpulan (Group Personal Accident) untuk perusahaan, pabrik manufaktur, dan galangan kapal di Batam. Premi ekonomis, suplemen BPJS TK, perlindungan proyek 24 jam.',
@@ -31,7 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-// --- JSON-LD SCHEMA ---
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -74,9 +75,9 @@ export default function GroupPAPage() {
       <main className="bg-cream text-navy font-sans">
         
         {/* HERO */}
-        <section className="gradient-navy text-cream section-padding min-h-[50vh] flex items-center relative">
+        <section className="gradient-navy text-cream section-padding min-h-[55vh] flex items-center relative">
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl">
+            <div className="max-w-4xl">
               <nav className="text-sm mb-4 opacity-80">
                 <Link href="/" className="hover:text-gold">Home</Link> 
                 <ChevronRight className="inline w-4 h-4 mx-1" /> 
@@ -85,21 +86,72 @@ export default function GroupPAPage() {
                 <span className="text-gold">Karyawan Grup</span>
               </nav>
               
-              <h1 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">
+              <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Asuransi Kecelakaan Kumpulan <span className="text-gradient-gold">(Group PA)</span> untuk Korporat Batam
               </h1>
-              <p className="text-base md:text-lg text-cream/90 mb-8 leading-relaxed">
-                Optimalkan manajemen risiko perusahaan Anda. Perlindungan finansial kolektif untuk staf kantor hingga buruh lapangan rig, galangan kapal, dan manufaktur berat di seluruh kawasan FTZ Batam.
+              <p className="text-base md:text-xl text-cream/90 mb-8 leading-relaxed max-w-3xl">
+                Optimalkan manajemen risiko logistik dan ketenagakerjaan perusahaan Anda. Perlindungan finansial kolektif untuk staf kantor hingga buruh lapangan rig, galangan kapal, dan manufaktur berat di seluruh kawasan FTZ Batam.
               </p>
-              <Link href="#konsultasi-b2b" className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-navy font-bold py-3 px-8 rounded-full transition-all duration-300 shadow-lg">
-                <Building2 size={20} /> Minta Penawaran Corporate
-              </Link>
+              <div className="flex flex-wrap gap-4">
+                <Link href="#konsultasi-b2b" className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-navy font-bold py-3.5 px-8 rounded-full transition-all duration-300 shadow-lg">
+                  <Building2 size={20} /> Minta Penawaran Corporate
+                </Link>
+                <Link href="#edukasi-risiko" className="inline-flex items-center justify-center gap-2 border border-cream/30 hover:border-cream text-cream py-3.5 px-6 rounded-full text-sm transition-all">
+                  Pelajari Klasifikasi Risiko
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* MANFAAT UTAMA UTK PERUSAHAAN */}
-        <section className="section-padding bg-cream">
+        {/* SECTION EEAT 1: KONTEKS MANAJEMEN RISIKO DI BATAM */}
+        <section id="edukasi-risiko" className="section-padding bg-cream">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="text-gold font-bold text-sm tracking-widest uppercase block mb-2">Mitigasi Risiko Perusahaan</span>
+                <h2 className="font-display text-3xl font-bold text-navy mb-6">
+                  Mengapa BPJS Ketenagakerjaan Saja Tidak Cukup bagi Vendor Industri?
+                </h2>
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed mb-4">
+                  Batam bertindak sebagai poros manufaktur dan galangan kapal dengan regulasi keselamatan kerja yang ketat (HSE standar internasional). Ketika kecelakaan fatal terjadi, beban keuangan perusahaan tidak hanya terbatas pada biaya medis, melainkan tuntutan hukum keluarga, hilangnya produktivitas, hingga denda tenggat waktu proyek.
+                </p>
+                <p className="text-navy/80 text-sm md:text-base leading-relaxed">
+                  Asuransi Group Personal Accident (PA) bertindak sebagai **suplemen likuiditas**. Berbeda dengan dana BPJS yang memerlukan verifikasi birokrasi ketenagakerjaan yang rigid, dana santunan PA cair secara tunai (lump-sum) langsung ke korporasi atau ahli waris untuk meredam sengketa industrial.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-navy/5 space-y-6">
+                <h4 className="font-display font-bold text-navy text-lg border-b pb-3">Parameter Penilaian Risiko Underwriting:</h4>
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <div className="bg-gold/10 text-gold p-2 rounded-lg h-10 w-10 flex items-center justify-center font-bold">I</div>
+                    <div>
+                      <h5 className="font-bold text-navy text-sm">Kelas Risiko Rendah (Class I)</h5>
+                      <p className="text-xs text-navy/60">Staf administrasi, akuntan, manajemen internal gudang, direksi FTZ.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="bg-gold/10 text-gold p-2 rounded-lg h-10 w-10 flex items-center justify-center font-bold">II</div>
+                    <div>
+                      <h5 className="font-bold text-navy text-sm">Kelas Risiko Sedang (Class II)</h5>
+                      <p className="text-xs text-navy/60">Supervisor lapangan pabrik elektronik, kurir logistik darat, teknisi *maintenance* presisi.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="bg-gold/10 text-gold p-2 rounded-lg h-10 w-10 flex items-center justify-center font-bold">III</div>
+                    <div>
+                      <h5 className="font-bold text-navy text-sm">Kelas Risiko Tinggi (Class III & IV)</h5>
+                      <p className="text-xs text-navy/60">Welder galangan kapal, operator crane pelabuhan, supir truk kontainer, pekerja ketinggian & *offshore*.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* KEUNGGULAN FITUR */}
+        <section className="section-padding bg-navy-light/5">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="font-display text-2xl md:text-4xl font-bold text-navy mb-4">
@@ -112,10 +164,10 @@ export default function GroupPAPage() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-2xl shadow-sm card-hover border border-navy/5">
-                <HardHat className="text-gold w-12 h-12 mb-6" />
-                <h3 className="font-display text-xl font-bold mb-3">Kustomisasi Kelas Risiko</h3>
+                <Briefcase className="text-gold w-12 h-12 mb-6" />
+                <h3 className="font-display text-xl font-bold mb-3">Sistem Unnamed Basis</h3>
                 <p className="text-navy/70 text-sm leading-relaxed">
-                  Penentuan kategori premi yang adil berdasarkan penempatan kerja karyawan, mulai dari administrasi kantor, operator mesin pabrik, hingga welder di area shipyard.
+                  Perusahaan dengan tingkat *turn-over* karyawan lapangan yang tinggi dapat mendaftarkan kuota posisi jabatan tanpa harus menyetor nama per kepala secara real-time. Memudahkan administrasi HRD.
                 </p>
               </div>
 
@@ -123,7 +175,7 @@ export default function GroupPAPage() {
                 <FileText className="text-gold w-12 h-12 mb-6" />
                 <h3 className="font-display text-xl font-bold mb-3">Bulk Premium Discount</h3>
                 <p className="text-navy/70 text-sm leading-relaxed">
-                  Makin besar jumlah tenaga kerja yang didaftarkan, skema tarif premi per kepala menjadi jauh lebih ekonomis dibandingkan asuransi retail konvensional.
+                  Makin besar jumlah tenaga kerja yang didaftarkan, skema tarif premi per kepala menjadi jauh lebih ekonomis dibandingkan asuransi retail konvensional dengan metode pembayaran fleksibel.
                 </p>
               </div>
 
@@ -131,47 +183,66 @@ export default function GroupPAPage() {
                 <ShieldCheck className="text-gold w-12 h-12 mb-6" />
                 <h3 className="font-display text-xl font-bold mb-3">Menjaga Stabilitas Cashflow</h3>
                 <p className="text-navy/70 text-sm leading-relaxed">
-                  Melindungi keuangan perusahaan dari pengeluaran mendadak yang besar akibat kewajiban santunan kecelakaan fatal di luar jaminan normatif pemerintah.
+                  Melindungi keuangan perusahaan dari pengeluaran mendadak yang besar akibat kewajiban santunan kecelakaan fatal di luar jaminan normatif pemerintah atau tuntutan tak terduga.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* CAKUPAN JAMINAN */}
+        {/* CAKUPAN JAMINAN & PENGECUALIAN (EEAT TRANSMISSION) */}
+        <section className="section-padding bg-cream">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-12 text-center">
+              Struktur Pertanggungan & Transparansi Polis
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-navy/5">
+                <h3 className="font-display text-xl font-bold text-navy mb-6 flex items-center gap-2">
+                  <CheckCircle2 className="text-green-600" /> Manfaat Jaminan Utama
+                </h3>
+                <ul className="space-y-4 text-sm text-navy/80">
+                  <li className="border-b pb-2"><strong>Kematian Akibat Kecelakaan:</strong> Pembayaran 100% nilai santunan jika kematian terjadi dalam batas waktu 12 bulan sejak tanggal insiden.</li>
+                  <li className="border-b pb-2"><strong>Cacat Tetap Permanen:</strong> Kehilangan fungsi anggota tubuh secara total/sebagian dihitung proporsional sesuai tabel skala medis internasional (OJK approved).</li>
+                  <li className="border-b pb-2"><strong>Biaya Medis & Ambulans:</strong> Penggantian kuitansi pengobatan rumah sakit swasta kelas utama di Batam akibat trauma fisik kecelakaan kerja.</li>
+                </ul>
+              </div>
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-navy/5">
+                <h3 className="font-display text-xl font-bold text-navy mb-6 flex items-center gap-2">
+                  <AlertTriangle className="text-amber-500" /> Pengecualian Umum Polis (Exclusions)
+                </h3>
+                <ul className="space-y-4 text-sm text-navy/80">
+                  <li className="border-b pb-2">Kecelakaan yang dipicu oleh penyakit bawaan laten (*occupational illness*) atau serangan jantung mendadak tanpa trauma eksternal fisik.</li>
+                  <li className="border-b pb-2">Keterlibatan langsung tenaga kerja dalam aksi kejahatan, huru-hara politik, atau mengemudi di bawah pengaruh alkohol/zat narkotika ilegal.</li>
+                  <li className="border-b pb-2">Partisipasi aktif dalam olahraga dirgantara ekstrem atau penugasan militer aktif kecuali ada endorsement klausul tambahan.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION EEAT 2: ALUR KLAIM B2B */}
         <section className="section-padding bg-navy-light/5">
           <div className="container mx-auto px-6 max-w-4xl">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-8 text-center">
-              Cakupan Standar Jaminan Polis
-            </h2>
-            <div className="bg-white p-8 rounded-3xl shadow-sm border border-navy/5 grid md:grid-cols-2 gap-6">
-              <div className="flex gap-3 items-start">
-                <CheckCircle2 className="text-gold w-6 h-6 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-bold text-navy mb-1">Santunan Meninggal Dunia</h4>
-                  <p className="text-navy/70 text-sm">Santunan tunai 100% nilai pertanggungan akibat kecelakaan kerja maupun selama masa aktif jaminan.</p>
-                </div>
+            <div className="text-center mb-12">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-2">Alur & Administrasi Klaim Korporasi</h2>
+              <p className="text-sm text-navy/60">Transparansi tata kelola klaim demi percepatan pencairan dana hak pekerja</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6 relative">
+              <div className="bg-white p-6 rounded-xl border border-navy/5 relative">
+                <div className="text-xs font-bold text-gold mb-2">Langkah 01</div>
+                <h4 className="font-bold text-sm text-navy mb-2">Pelaporan Awal</h4>
+                <p className="text-xs text-navy/70 leading-relaxed">Pihak HRD atau perwakilan K3 (HSE) wajib melaporkan insiden secara tertulis / WhatsApp dalam kurun waktu maksimal 3x24 jam.</p>
               </div>
-              <div className="flex gap-3 items-start">
-                <CheckCircle2 className="text-gold w-6 h-6 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-bold text-navy mb-1">Cacat Tetap Keseluruhan/Sebagian</h4>
-                  <p className="text-navy/70 text-sm">Kompensasi finansial terstruktur sesuai persentase kehilangan fungsi organ akibat insiden industri.</p>
-                </div>
+              <div className="bg-white p-6 rounded-xl border border-navy/5 relative">
+                <div className="text-xs font-bold text-gold mb-2">Langkah 02</div>
+                <h4 className="font-bold text-sm text-navy mb-2">Dokumentasi Medis</h4>
+                <p className="text-xs text-navy/70 leading-relaxed">Melampirkan Visum et Repertum, resume medis dokter dari RS Batam, kronologi internal bertanda tangan manajemen, dan absensi kerja.</p>
               </div>
-              <div className="flex gap-3 items-start">
-                <CheckCircle2 className="text-gold w-6 h-6 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-bold text-navy mb-1">Biaya Perawatan Medis Swasta</h4>
-                  <p className="text-navy/70 text-sm">Reimbursement atau cashless di rumah sakit rekanan atas penanganan medis darurat pasca kecelakaan.</p>
-                </div>
-              </div>
-              <div className="flex gap-3 items-start">
-                <CheckCircle2 className="text-gold w-6 h-6 flex-shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-bold text-navy mb-1">Santunan Harian Rawat Inap</h4>
-                  <p className="text-navy/70 text-sm">Pengganti pendapatan harian (income protection) yang hilang selama karyawan menjalani opname.</p>
-                </div>
+              <div className="bg-white p-6 rounded-xl border border-navy/5 relative">
+                <div className="text-xs font-bold text-gold mb-2">Langkah 03</div>
+                <h4 className="font-bold text-sm text-navy mb-2">Pencairan Likuiditas</h4>
+                <p className="text-xs text-navy/70 leading-relaxed">Proses analisa *loss adjuster* rampung dalam waktu 14 hari kerja setelah berkas dokumen dinyatakan lengkap secara hukum.</p>
               </div>
             </div>
           </div>
@@ -184,7 +255,7 @@ export default function GroupPAPage() {
               Diskusikan Kebutuhan Polis Kumpulan Perusahaan Anda
             </h2>
             <p className="text-navy/85 text-sm md:text-base mb-8 max-w-xl mx-auto">
-              Kirimkan representasi data jumlah karyawan dan klasifikasi pekerjaan kepada account manager kami untuk kalkulasi penawaran premi terbaik.
+              Kirimkan representasi data jumlah karyawan dan klasifikasi pekerjaan kepada corporate consultant kami untuk kalkulasi premi terbaik.
             </p>
             <Link href="https://wa.me/6281234567890?text=Halo,%20perusahaan%20kami%20tertarik%20dengan%20skema%20Group%20PA%20Batam" target="_blank" className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-cream font-bold py-3.5 px-8 rounded-full transition-all shadow-md">
               <PhoneCall size={18} /> Hubungi Corporate Consultant
