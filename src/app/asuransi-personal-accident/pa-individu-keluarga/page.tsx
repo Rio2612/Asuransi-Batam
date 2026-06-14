@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { 
-  HeartHandshake, Car, Ferry, ShieldAlert, ChevronRight, 
+  HeartHandshake, Car, Ship, ShieldAlert, ChevronRight, 
   PhoneCall, MapPin, Clock, FileText, CheckCircle, AlertTriangle,
   UserCheck, Home, Wallet 
 } from 'lucide-react';
@@ -135,7 +135,7 @@ export default function IndividualFamilyPA_ID() {
                     </div>
                     <div className="flex gap-4 items-start">
                       <div className="bg-gold/20 p-3 rounded-full">
-                        <Ferry className="w-6 h-6 text-gold" />
+                        <Ship className="w-6 h-6 text-gold" />
                       </div>
                       <div>
                         <h4 className="font-bold text-cream">Aktivitas Komuter & Maritim</h4>
@@ -174,7 +174,7 @@ export default function IndividualFamilyPA_ID() {
               {/* Card 1: Pekerja Komuter */}
               <div className="bg-cream p-6 rounded-2xl border border-navy/10 card-hover group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gold/10 rounded-bl-full group-hover:scale-150 transition-transform"></div>
-                <Ferry className="text-gold w-10 h-10 mb-4" />
+                <Ship className="text-gold w-10 h-10 mb-4" />
                 <h3 className="font-display font-bold text-xl mb-2">Pekerja Komuter (Singapore/Bintan)</h3>
                 <p className="text-navy/60 text-sm mb-4">
                   Setiap hari menyeberang via Batam Centre atau Harbour Bay? Risiko kapal, pelabuhan, dan transportasi darat negara tetangga memerlukan polis yang cover **Regional/Worldwide**.
@@ -212,7 +212,7 @@ export default function IndividualFamilyPA_ID() {
           <div className="container mx-auto px-6">
             <h2 className="font-display text-3xl font-bold text-center text-navy mb-4">Rincian Manfaat Proteksi PA Individu</h2>
             <p className="text-navy/70 text-center mb-12 max-w-3xl mx-auto">
-              Kami menjelaskan transparan apa yang Anda dapatkan. Bukan sekadar janji manis, tapi mekanisme klaim yang jelas.
+              Kami menjelaskan transparan apa yang Anda dapatkan. Bukan sekedar janji manis, tapi mekanisme klaim yang jelas.
             </p>
 
             <div className="grid lg:grid-cols-2 gap-8">
