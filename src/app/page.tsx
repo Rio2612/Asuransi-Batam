@@ -5,7 +5,8 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "Asuransi Batam Terpercaya – Properti, Kendaraan, Alat Berat & Liability | Rio",
-  description: "Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, dan engineering. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
+  description:
+    "Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
   alternates: {
     canonical: "https://asuransibatam.biz.id",
     languages: {
@@ -19,37 +20,58 @@ const products = [
   {
     icon: "🏠",
     title: "Asuransi Properti",
-    desc: "Perlindungan hotel, rumah, dan properti komersial dari risiko kebakaran, bencana, dan kerusakan.",
+    desc: "Perlindungan hotel, rumah, gudang, pabrik, dan properti komersial dari risiko kebakaran, bencana, dan kerusakan.",
     href: "/asuransi-properti",
-    tags: ["Hotel", "Rumah", "Komersial"],
+    tags: ["Hotel", "Gudang", "Pabrik", "Ruko"],
   },
   {
     icon: "🚗",
     title: "Asuransi Kendaraan",
-    desc: "All Risk & TLO untuk mobil, dump truck, dan kendaraan niaga. Kalkulator premi online.",
+    desc: "All Risk & TLO untuk mobil, dump truck, dan kendaraan niaga. Kalkulator premi online tersedia.",
     href: "/asuransi-kendaraan",
     tags: ["Mobil", "Dump Truck", "All Risk"],
   },
   {
     icon: "⚙️",
     title: "Asuransi Machinery",
-    desc: "Perlindungan alat berat, crane, dan mesin industri dari kerusakan operasional.",
+    desc: "Perlindungan alat berat, crane, dan mesin industri dari kerusakan operasional dan kecelakaan.",
     href: "/asuransi-machinery",
     tags: ["Alat Berat", "Crane", "Mesin"],
   },
   {
     icon: "⚖️",
     title: "Asuransi Liability",
-    desc: "Perlindungan tanggung gugat pihak ketiga, limbah B3, dan public liability.",
+    desc: "Perlindungan tanggung gugat pihak ketiga, limbah B3, dan public liability untuk usaha Anda.",
     href: "/asuransi-liability",
     tags: ["Limbah B3", "Public Liability"],
   },
   {
     icon: "🔧",
     title: "Asuransi Engineering",
-    desc: "Perlindungan proyek konstruksi, pemasangan mesin, dan infrastruktur.",
+    desc: "Perlindungan proyek konstruksi (CAR), pemasangan mesin (EAR), dan infrastruktur dari risiko pembangunan.",
     href: "/asuransi-engineering",
     tags: ["CAR", "EAR", "Konstruksi"],
+  },
+  {
+    icon: "⚓",
+    title: "Asuransi Marine",
+    desc: "Perlindungan pengiriman kargo, rangka kapal (hull), dan proyek bangunan kapal (builders risk) di jalur laut Batam.",
+    href: "/asuransi-marine",
+    tags: ["Cargo", "Hull", "Builders Risk"],
+  },
+  {
+    icon: "📜",
+    title: "Surety Bond",
+    desc: "Jaminan proyek pemerintah & swasta: bid bond, performance bond, advance payment bond, dan maintenance bond.",
+    href: "/asuransi-surety-bond",
+    tags: ["Bid Bond", "Performance", "Advance"],
+  },
+  {
+    icon: "🧑‍⚕️",
+    title: "Asuransi Personal Accident",
+    desc: "Perlindungan kecelakaan diri untuk karyawan (Group PA) maupun individu & keluarga dengan premi terjangkau.",
+    href: "/asuransi-personal-accident",
+    tags: ["Group PA", "Individu", "Keluarga"],
   },
 ];
 
@@ -163,7 +185,8 @@ export default function HomePage() {
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
                 Rio, konsultan asuransi kerugian berpengalaman 10+ tahun di Batam.
-                Solusi tepat untuk properti, kendaraan, alat berat, liability, dan engineering.
+                Solusi lengkap untuk properti, kendaraan, alat berat, liability, engineering,
+                marine, surety bond, dan personal accident.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
                 <a
@@ -173,7 +196,7 @@ export default function HomePage() {
                   className="flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#f0d080] text-[#0a1628] font-bold rounded-xl hover:shadow-xl hover:shadow-[#c9a84c]/30 transition-all text-lg"
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                   </svg>
                   Konsultasi Gratis
                 </a>
@@ -187,15 +210,20 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-6">
                 <div className="flex -space-x-2">
-                  {["B","S","H","R"].map((l) => (
-                    <div key={l} className="w-9 h-9 rounded-full bg-gradient-to-br from-[#1a4fa0] to-[#0a1628] border-2 border-[#c9a84c]/40 flex items-center justify-center text-white text-xs font-bold">
+                  {["B", "S", "H", "R"].map((l) => (
+                    <div
+                      key={l}
+                      className="w-9 h-9 rounded-full bg-gradient-to-br from-[#1a4fa0] to-[#0a1628] border-2 border-[#c9a84c]/40 flex items-center justify-center text-white text-xs font-bold"
+                    >
                       {l}
                     </div>
                   ))}
                 </div>
                 <div>
                   <div className="flex text-[#c9a84c] mb-0.5">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
                   </div>
                   <p className="text-white/60 text-sm">200+ klien puas di Batam</p>
                 </div>
@@ -216,7 +244,9 @@ export default function HomePage() {
                     { label: "Produk Tersedia", value: "20+" },
                   ].map((stat) => (
                     <div key={stat.label} className="bg-white/5 rounded-2xl p-4 text-center">
-                      <div className="font-display font-bold text-2xl text-[#c9a84c]">{stat.value}</div>
+                      <div className="font-display font-bold text-2xl text-[#c9a84c]">
+                        {stat.value}
+                      </div>
                       <div className="text-white/60 text-xs mt-1">{stat.label}</div>
                     </div>
                   ))}
@@ -238,7 +268,10 @@ export default function HomePage() {
                   <Phone className="w-5 h-5 text-[#c9a84c]" />
                   <div>
                     <div className="text-[#c9a84c] font-bold text-sm">Hubungi Rio Langsung</div>
-                    <a href="tel:081373336728" className="text-white font-display font-bold text-lg hover:text-[#f0d080] transition-colors">
+                    <a
+                      href="tel:081373336728"
+                      className="text-white font-display font-bold text-lg hover:text-[#f0d080] transition-colors"
+                    >
                       0813-7333-6728
                     </a>
                   </div>
@@ -253,12 +286,15 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Produk Unggulan</p>
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
+              Produk Unggulan
+            </p>
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               Semua Kebutuhan Asuransi Anda
             </h2>
             <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
-              Dari properti hingga engineering – kami menyediakan solusi asuransi kerugian lengkap untuk individu dan bisnis di Batam.
+              Dari properti hingga surety bond – kami menyediakan solusi asuransi kerugian
+              lengkap untuk individu dan bisnis di Batam.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -272,7 +308,10 @@ export default function HomePage() {
                   <p className="text-[#64748b] text-sm leading-relaxed mb-4">{p.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.tags.map((tag) => (
-                      <span key={tag} className="px-3 py-1 bg-[#faf8f3] text-[#1a4fa0] text-xs font-semibold rounded-full border border-[#e2e8f0]">
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-[#faf8f3] text-[#1a4fa0] text-xs font-semibold rounded-full border border-[#e2e8f0]"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -284,7 +323,9 @@ export default function HomePage() {
             <Link href="/kalkulator-premi-mobil" className="group">
               <div className="h-full p-7 rounded-2xl bg-gradient-to-br from-[#0a1628] to-[#1a4fa0] group-hover:shadow-xl transition-all card-hover">
                 <div className="text-4xl mb-4">🧮</div>
-                <h3 className="font-display font-bold text-xl text-white mb-3">Kalkulator Premi</h3>
+                <h3 className="font-display font-bold text-xl text-white mb-3">
+                  Kalkulator Premi
+                </h3>
                 <p className="text-white/70 text-sm leading-relaxed mb-4">
                   Hitung estimasi premi mobil dan motor Anda secara online, cepat dan akurat.
                 </p>
@@ -307,7 +348,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Keunggulan Kami</p>
+              <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
+                Keunggulan Kami
+              </p>
               <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-6">
                 Mengapa Percayakan Asuransi ke Kami?
               </h2>
@@ -357,8 +400,15 @@ export default function HomePage() {
                 { val: "98%", label: "Tingkat Klaim Sukses", bg: "bg-[#1a4fa0]", color: "text-white" },
                 { val: "24/7", label: "Layanan Darurat", bg: "bg-[#132040]", color: "text-[#f0d080]" },
               ].map((s) => (
-                <div key={s.label} className={`${s.bg} rounded-2xl p-4 sm:p-6 lg:p-8 text-center overflow-hidden`}>
-                  <div className={`font-display font-black text-3xl sm:text-4xl lg:text-5xl ${s.color} mb-2 leading-none`}>{s.val}</div>
+                <div
+                  key={s.label}
+                  className={`${s.bg} rounded-2xl p-4 sm:p-6 lg:p-8 text-center overflow-hidden`}
+                >
+                  <div
+                    className={`font-display font-black text-3xl sm:text-4xl lg:text-5xl ${s.color} mb-2 leading-none`}
+                  >
+                    {s.val}
+                  </div>
                   <div className="text-white/60 text-xs sm:text-sm mt-1">{s.label}</div>
                 </div>
               ))}
@@ -371,14 +421,19 @@ export default function HomePage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Testimoni</p>
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
+              Testimoni
+            </p>
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               Kata Klien Kami
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div key={t.name} className="p-7 rounded-2xl bg-[#faf8f3] border border-[#e2e8f0] hover:shadow-lg transition-all">
+              <div
+                key={t.name}
+                className="p-7 rounded-2xl bg-[#faf8f3] border border-[#e2e8f0] hover:shadow-lg transition-all"
+              >
                 <div className="flex text-[#c9a84c] mb-4">
                   {[...Array(t.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
@@ -399,15 +454,24 @@ export default function HomePage() {
       <section className="section-padding bg-[#faf8f3]">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">FAQ</p>
-            <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">Pertanyaan Umum</h2>
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
+              FAQ
+            </p>
+            <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
+              Pertanyaan Umum
+            </h2>
           </div>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <details key={i} className="group bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden">
+              <details
+                key={i}
+                className="group bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden"
+              >
                 <summary className="flex items-center justify-between p-5 cursor-pointer font-display font-semibold text-[#0a1628] hover:text-[#1a4fa0] transition-colors list-none">
                   {faq.q}
-                  <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform">+</span>
+                  <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform">
+                    +
+                  </span>
                 </summary>
                 <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
