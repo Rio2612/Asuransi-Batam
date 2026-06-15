@@ -122,11 +122,11 @@ export default function IndividualFamilyPA_EN() {
                     </div>
                     <div className="flex gap-4 items-start">
                       <div className="bg-gold/20 p-3 rounded-full">
-                        <Ferry className="w-6 h-6 text-gold" />
+                        <Ship className="w-6 h-6 text-gold" />
                       </div>
                       <div>
                         <h4 className="font-bold text-cream">Commuter & Maritime Activity</h4>
-                        <p className="text-cream/60 text-sm">High frequency of ferry crossings to Singapore/Malaysia requires extra protection.</p>
+                        <p className="text-cream/60 text-sm">High frequency of Ship crossings to Singapore/Malaysia requires extra protection.</p>
                       </div>
                     </div>
                     <div className="flex gap-4 items-start">
@@ -160,7 +160,7 @@ export default function IndividualFamilyPA_EN() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-cream p-6 rounded-2xl border border-navy/10 card-hover group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gold/10 rounded-bl-full group-hover:scale-150 transition-transform"></div>
-                <Ferry className="text-gold w-10 h-10 mb-4" />
+                <Ship className="text-gold w-10 h-10 mb-4" />
                 <h3 className="font-display font-bold text-xl mb-2">Commuter (Singapore/Bintan)</h3>
                 <p className="text-navy/60 text-sm mb-4">
                   Crossing daily via Batam Centre or Harbour Bay? Risks at sea and cross-border transport require **Regional/Worldwide** coverage.
