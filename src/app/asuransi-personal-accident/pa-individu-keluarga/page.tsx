@@ -139,7 +139,7 @@ export default function IndividualFamilyPA_ID() {
                       </div>
                       <div>
                         <h4 className="font-bold text-cream">Aktivitas Komuter & Maritim</h4>
-                        <p className="text-cream/60 text-sm">Frekuensi penyeberangan ferry ke Singapore/Malaysia & aktivitas di pelabuhan butuh proteksi ekstra.</p>
+                        <p className="text-cream/60 text-sm">Frekuensi penyeberangan Ship ke Singapore/Malaysia & aktivitas di pelabuhan butuh proteksi ekstra.</p>
                       </div>
                     </div>
                     <div className="flex gap-4 items-start">
