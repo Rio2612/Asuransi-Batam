@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { 
-  HeartHandshake, Car,ship, ShieldAlert, ChevronRight, 
+  HeartHandshake, Car, ship, ShieldAlert, ChevronRight, 
   PhoneCall, MapPin, Clock, FileText, CheckCircle, AlertTriangle,
   UserCheck, Home, Wallet 
 } from 'lucide-react';
