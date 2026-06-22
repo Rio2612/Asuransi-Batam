@@ -129,6 +129,9 @@ export default function CaraMendapatkanBuildersRiskPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
+      <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
+        Mengenal Risiko Proyek
+      </p>
       <h2>Mengapa Builders Risk Sering Diabaikan, Padahal Risikonya Besar</h2>
       <p>
         Saat sebuah proyek konstruksi atau pekerjaan reparasi kapal dimulai, perhatian biasanya tersedot habis ke jadwal, anggaran, dan teknis pengerjaan. Asuransi sering dianggap urusan administratif yang bisa diurus &quot;belakangan&quot; — sampai sebuah insiden terjadi di tengah proyek dan baru disadari bahwa aset senilai miliaran rupiah belum punya perlindungan yang memadai.
@@ -137,7 +140,14 @@ export default function CaraMendapatkanBuildersRiskPage() {
         Builders Risk Insurance (di beberapa wording juga disebut Contractors&apos; All Risks atau Erection All Risks) dirancang khusus untuk mengisi celah ini: melindungi proyek yang sedang dibangun, bukan aset yang sudah jadi. Untuk proyek seperti pembangunan gedung, instalasi pabrik, hingga konstruksi dan reparasi kapal di galangan, periode pengerjaan inilah yang justru paling rentan terhadap kerugian besar.
       </p>
 
-      <h2>Studi Kasus: Klaim Builders Risk di Galangan Kapal Batam</h2>
+      <div className="mt-14 mb-3 flex items-center gap-3">
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+          Pengalaman Lapangan
+        </p>
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+      </div>
+      <h2 className="text-center">Studi Kasus: Klaim Builders Risk di Galangan Kapal Batam</h2>
       <p>
         Salah satu kasus yang pernah saya tangani langsung melibatkan sebuah galangan kapal di Batam yang sedang mengerjakan proyek reparasi dan modifikasi struktur kapal niaga. Pekerjaan melibatkan proses pengelasan, penggantian pelat lambung, serta instalasi ulang sebagian sistem mekanikal di area dok.
       </p>
@@ -145,26 +155,34 @@ export default function CaraMendapatkanBuildersRiskPage() {
         Di tengah proses pengerjaan, terjadi insiden kebakaran kecil yang berasal dari aktivitas pengelasan di area yang berdekatan dengan material mudah terbakar. Api berhasil dipadamkan dengan cepat oleh tim galangan, namun kerusakan tetap terjadi pada sebagian struktur yang sedang dikerjakan serta beberapa peralatan kerja yang berada di lokasi.
       </p>
 
-      <div className="my-8">
-        <Image
-          src="/images/potoartikel/klaimbuilderisk.webp"
-          alt="Dokumentasi proses penanganan klaim asuransi Builders Risk di galangan kapal, Batam"
-          width={1200}
-          height={800}
-          className="rounded-2xl w-full h-auto"
-        />
-        <p className="text-sm text-[#64748b] mt-2 text-center italic">
-          Dokumentasi proses penanganan klaim Builders Risk di salah satu galangan kapal, Batam.
-        </p>
-      </div>
+      <figure className="not-prose my-10 rounded-2xl border border-[#e2e8f0] bg-white p-3 shadow-[0_20px_48px_-12px_rgba(10,22,40,0.15)]">
+        <div className="overflow-hidden rounded-xl">
+          <Image
+            src="/images/potoartikel/klaimbuilderisk.webp"
+            alt="Dokumentasi proses penanganan klaim asuransi Builders Risk di galangan kapal, Batam"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+          />
+        </div>
+        <figcaption className="flex items-center gap-2 px-2 pt-4 pb-1">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#c9a84c]" />
+          <span className="font-display text-xs font-semibold uppercase tracking-wider text-[#0a1628]">
+            Dokumentasi Lapangan
+          </span>
+          <span className="text-xs text-[#64748b]">
+            — Penanganan klaim Builders Risk di salah satu galangan kapal, Batam
+          </span>
+        </figcaption>
+      </figure>
 
       <p>Berikut alur penanganan klaim yang berjalan pada kasus tersebut:</p>
-      <div className="overflow-x-auto my-6">
+      <div className="not-prose my-7 overflow-hidden rounded-2xl border border-[#e2e8f0] shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)]">
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="bg-[#0a1628] text-white">
-              <th className="text-left px-4 py-3 rounded-tl-lg">Tahap</th>
-              <th className="text-left px-4 py-3 rounded-tr-lg">Yang Dilakukan</th>
+              <th className="text-left px-5 py-4 font-display tracking-wide">Tahap</th>
+              <th className="text-left px-5 py-4 font-display tracking-wide">Yang Dilakukan</th>
             </tr>
           </thead>
           <tbody>
@@ -198,10 +216,10 @@ export default function CaraMendapatkanBuildersRiskPage() {
                 key={i}
                 className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}
               >
-                <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">
+                <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">
                   {tahap}
                 </td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">
+                <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">
                   {ket}
                 </td>
               </tr>
@@ -210,106 +228,161 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </table>
       </div>
 
-      <p>
-        Faktor yang membuat klaim ini dapat diproses relatif lancar bukan kebetulan. Galangan tersebut, atas saran konsultan asuransi, sudah menetapkan sum insured yang disesuaikan secara berkala dengan progress proyek (bukan nilai tetap di awal kontrak), dan polis mereka secara eksplisit mencantumkan seluruh subkontraktor yang bekerja di area dok sebagai pihak yang dijamin. Dua hal inilah yang paling sering menjadi sumber sengketa pada klaim Builders Risk lain yang tidak dipersiapkan dengan baik.
-      </p>
-
-      <h2>Apa yang Dijamin dan Tidak Dijamin dalam Polis Builders Risk</h2>
-      <p>Secara umum, polis Builders Risk menjamin kerugian fisik selama periode konstruksi akibat:</p>
-      <ul>
-        <li>Kebakaran, ledakan, dan sambaran petir di lokasi proyek</li>
-        <li>Kerusakan akibat kecelakaan kerja atau kesalahan operasional alat berat</li>
-        <li>Bencana alam: banjir, angin kencang, gempa (umumnya sebagai extended cover)</li>
-        <li>Pencurian material atau peralatan yang sedang terpasang di lokasi proyek</li>
-        <li>Kerusakan selama proses testing & commissioning, sesuai wording yang disepakati</li>
-      </ul>
-      <p>Sementara itu, pengecualian (exclusion) yang paling umum dan sering jadi titik sengketa:</p>
-      <ul>
-        <li>Kerugian akibat cacat desain (design defect) yang sudah ada sejak awal</li>
-        <li>Keausan wajar (wear and tear) dan kerusakan bertahap akibat korosi normal</li>
-        <li>Denda keterlambatan proyek atau kerugian konsekuensial (kecuali ada extension khusus)</li>
-        <li>Kerugian yang terjadi setelah masa pemeliharaan (maintenance period) berakhir tanpa perpanjangan cover</li>
-      </ul>
-
-      <h2>Langkah Memilih Asuransi Builders Risk yang Tepat</h2>
-
-      <div className="mt-8 mb-8">
-        <h3 className="mb-3">1. Petakan Risiko Spesifik Proyek Anda</h3>
-        <p>
-          Proyek konstruksi gedung, instalasi pabrik, dan reparasi kapal di galangan memiliki profil risiko yang berbeda. Sebelum membeli polis, identifikasi titik-titik rawan: apakah ada pekerjaan hot work (pengelasan, pemotongan), area dengan material mudah terbakar, atau pekerjaan di ketinggian yang berisiko tinggi.
+      <div className="not-prose my-8 rounded-2xl border-l-4 border-[#c9a84c] bg-[#faf8f3] px-6 py-5">
+        <p className="text-[#0a1628] leading-relaxed">
+          <span className="font-display font-bold">Insight dari lapangan:</span> Faktor yang membuat klaim ini dapat diproses relatif lancar bukan kebetulan. Galangan tersebut, atas saran konsultan asuransi, sudah menetapkan sum insured yang disesuaikan secara berkala dengan progress proyek (bukan nilai tetap di awal kontrak), dan polis mereka secara eksplisit mencantumkan seluruh subkontraktor yang bekerja di area dok sebagai pihak yang dijamin. Dua hal inilah yang paling sering menjadi sumber sengketa pada klaim Builders Risk lain yang tidak dipersiapkan dengan baik.
         </p>
       </div>
 
-      <div className="mt-8 mb-8">
-        <h3 className="mb-3">2. Tentukan Sum Insured Berdasarkan Nilai Kontrak Penuh, Bukan Progress Saat Ini</h3>
-        <p>
-          Kesalahan paling sering terjadi: menetapkan sum insured berdasarkan nilai pekerjaan yang sudah selesai, padahal seharusnya berdasarkan <strong>nilai kontrak total proyek</strong> ditambah biaya material dan peralatan yang akan terpasang. Sum insured yang terlalu rendah membuat ganti rugi dipotong proporsional (average clause) saat klaim terjadi.
+      <div className="mt-14 mb-3 flex items-center gap-3">
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+          Cakupan Polis
         </p>
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+      </div>
+      <h2 className="text-center">Apa yang Dijamin dan Tidak Dijamin dalam Polis Builders Risk</h2>
+
+      <div className="not-prose mt-8 mb-10 grid gap-5 sm:grid-cols-2">
+        <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6">
+          <p className="font-display font-bold text-[#0a1628] mb-4 flex items-center gap-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#0a1628] text-[#c9a84c] text-xs">
+              ✓
+            </span>
+            Dijamin Polis
+          </p>
+          <ul className="space-y-3 text-sm text-[#475569] leading-relaxed">
+            <li className="flex gap-2"><span className="text-[#c9a84c]">—</span>Kebakaran, ledakan, dan sambaran petir di lokasi proyek</li>
+            <li className="flex gap-2"><span className="text-[#c9a84c]">—</span>Kerusakan akibat kecelakaan kerja atau kesalahan operasional alat berat</li>
+            <li className="flex gap-2"><span className="text-[#c9a84c]">—</span>Bencana alam: banjir, angin kencang, gempa (umumnya sebagai extended cover)</li>
+            <li className="flex gap-2"><span className="text-[#c9a84c]">—</span>Pencurian material atau peralatan yang sedang terpasang di lokasi proyek</li>
+            <li className="flex gap-2"><span className="text-[#c9a84c]">—</span>Kerusakan selama proses testing & commissioning, sesuai wording yang disepakati</li>
+          </ul>
+        </div>
+
+        <div className="rounded-2xl border border-[#e2e8f0] bg-[#faf8f3] p-6">
+          <p className="font-display font-bold text-[#0a1628] mb-4 flex items-center gap-2">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#0a1628]/10 text-[#0a1628] text-xs">
+              ✕
+            </span>
+            Dikecualikan
+          </p>
+          <ul className="space-y-3 text-sm text-[#475569] leading-relaxed">
+            <li className="flex gap-2"><span className="text-[#94a3b8]">—</span>Kerugian akibat cacat desain (design defect) yang sudah ada sejak awal</li>
+            <li className="flex gap-2"><span className="text-[#94a3b8]">—</span>Keausan wajar (wear and tear) dan kerusakan bertahap akibat korosi normal</li>
+            <li className="flex gap-2"><span className="text-[#94a3b8]">—</span>Denda keterlambatan proyek atau kerugian konsekuensial (kecuali ada extension khusus)</li>
+            <li className="flex gap-2"><span className="text-[#94a3b8]">—</span>Kerugian setelah masa pemeliharaan (maintenance period) berakhir tanpa perpanjangan cover</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="mt-8 mb-8">
-        <h3 className="mb-3">3. Pastikan Seluruh Pihak yang Bekerja Tercakup sebagai Insured</h3>
-        <p>
-          Jika proyek melibatkan subkontraktor, pastikan polis secara eksplisit mencantumkan mereka sebagai joint insured atau additional insured. Tanpa klausul ini, perusahaan asuransi berpotensi menolak klaim atau melakukan recovery (subrogasi) terhadap subkontraktor yang justru merupakan mitra kerja Anda sendiri.
+      <div className="mt-14 mb-3 flex items-center gap-3">
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+          Langkah Praktis
         </p>
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+      </div>
+      <h2 className="text-center">Langkah Memilih Asuransi Builders Risk yang Tepat</h2>
+
+      <div className="not-prose mt-10 mb-12">
+        {[
+          {
+            n: "01",
+            title: "Petakan Risiko Spesifik Proyek Anda",
+            body: "Proyek konstruksi gedung, instalasi pabrik, dan reparasi kapal di galangan memiliki profil risiko yang berbeda. Sebelum membeli polis, identifikasi titik-titik rawan: apakah ada pekerjaan hot work (pengelasan, pemotongan), area dengan material mudah terbakar, atau pekerjaan di ketinggian yang berisiko tinggi.",
+          },
+          {
+            n: "02",
+            title: "Tentukan Sum Insured Berdasarkan Nilai Kontrak Penuh, Bukan Progress Saat Ini",
+            body: "Kesalahan paling sering terjadi: menetapkan sum insured berdasarkan nilai pekerjaan yang sudah selesai, padahal seharusnya berdasarkan nilai kontrak total proyek ditambah biaya material dan peralatan yang akan terpasang. Sum insured yang terlalu rendah membuat ganti rugi dipotong proporsional (average clause) saat klaim terjadi.",
+          },
+          {
+            n: "03",
+            title: "Pastikan Seluruh Pihak yang Bekerja Tercakup sebagai Insured",
+            body: "Jika proyek melibatkan subkontraktor, pastikan polis secara eksplisit mencantumkan mereka sebagai joint insured atau additional insured. Tanpa klausul ini, perusahaan asuransi berpotensi menolak klaim atau melakukan recovery (subrogasi) terhadap subkontraktor yang justru merupakan mitra kerja Anda sendiri.",
+          },
+          {
+            n: "04",
+            title: "Periksa Periode Pertanggungan dan Maintenance Period",
+            body: "Polis Builders Risk umumnya berlaku sejak mobilisasi material ke lokasi sampai serah terima proyek, ditambah periode pemeliharaan (biasanya 12 bulan). Pastikan periode ini sesuai dengan jadwal proyek riil, termasuk jika ada potensi keterlambatan.",
+          },
+          {
+            n: "05",
+            title: "Baca Wording dan Pengecualian dengan Teliti, atau Libatkan Konsultan",
+            body: "Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi.",
+          },
+        ].map((step, i, arr) => (
+          <div key={step.n} className="flex gap-5">
+            <div className="flex flex-col items-center">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0a1628] font-display text-base font-bold text-[#c9a84c]">
+                {step.n}
+              </span>
+              {i < arr.length - 1 && (
+                <span className="mt-1 w-px flex-1 bg-[#e2e8f0]" style={{ minHeight: "2.5rem" }} />
+              )}
+            </div>
+            <div className={i < arr.length - 1 ? "pb-9" : ""}>
+              <h3 className="mt-1.5 mb-2">{step.title}</h3>
+              <p className="text-[#475569] leading-relaxed">{step.body}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
-      <div className="mt-8 mb-8">
-        <h3 className="mb-3">4. Periksa Periode Pertanggungan dan Maintenance Period</h3>
-        <p>
-          Polis Builders Risk umumnya berlaku sejak mobilisasi material ke lokasi sampai serah terima proyek, ditambah periode pemeliharaan (biasanya 12 bulan). Pastikan periode ini sesuai dengan jadwal proyek riil, termasuk jika ada potensi keterlambatan.
+      <div className="mt-14 mb-3 flex items-center gap-3">
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+          Pertanyaan Umum
         </p>
+        <span className="h-px flex-1 bg-[#e2e8f0]" />
+      </div>
+      <h2 className="text-center">FAQ Seputar Asuransi Builders Risk</h2>
+
+      <div className="not-prose mt-8 mb-10 space-y-3">
+        {[
+          {
+            q: "Apa itu asuransi Builders Risk?",
+            a: "Builders Risk (Contractors' All Risks / Erection All Risks) adalah polis yang menjamin kerugian fisik pada proyek yang sedang dibangun — termasuk kapal yang sedang dikonstruksi atau direparasi di galangan — akibat risiko seperti kebakaran, kecelakaan kerja, atau bencana alam selama periode konstruksi.",
+          },
+          {
+            q: "Apakah galangan kapal di Batam butuh asuransi Builders Risk?",
+            a: "Ya. Selama proses pembangunan atau reparasi, kapal belum bisa diasuransikan dengan polis marine hull standar karena belum jadi atau belum berlayar. Builders Risk mengisi celah perlindungan ini dari awal proyek sampai serah terima.",
+          },
+          {
+            q: "Berapa lama proses klaim Builders Risk biasanya selesai?",
+            a: "Bergantung pada kompleksitas kerugian dan kelengkapan dokumen — umumnya beberapa minggu hingga 2-3 bulan untuk kasus dengan nilai kerugian besar yang memerlukan investigasi mendalam dari loss adjuster.",
+          },
+          {
+            q: "Apa kesalahan paling umum saat membeli polis Builders Risk?",
+            a: "Menetapkan sum insured terlalu rendah (under-insurance), tidak memasukkan subkontraktor sebagai pihak yang dijamin, dan tidak memeriksa pengecualian terkait cacat desain yang sering menjadi sumber sengketa klaim.",
+          },
+          {
+            q: "Apakah Builders Risk mencakup pekerjaan subkontraktor?",
+            a: "Tergantung wording polis. Polis perlu secara eksplisit mencantumkan seluruh pihak yang bekerja di proyek sebagai joint insured atau additional insured, agar tidak ada celah tanggung jawab saat klaim terjadi.",
+          },
+        ].map((item) => (
+          <div
+            key={item.q}
+            className="rounded-xl border border-[#e2e8f0] bg-white px-5 py-4"
+          >
+            <p className="font-display font-semibold text-[#0a1628] mb-1.5">
+              {item.q}
+            </p>
+            <p className="text-sm text-[#64748b] leading-relaxed">{item.a}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="mt-8 mb-8">
-        <h3 className="mb-3">5. Baca Wording dan Pengecualian dengan Teliti, atau Libatkan Konsultan</h3>
-        <p>
-          Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi.
+      <div className="mt-4 p-7 sm:p-8 bg-[#0a1628] rounded-2xl text-white not-prose relative overflow-hidden">
+        <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#c9a84c]/10" />
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
+          Konsultasi Gratis
         </p>
-      </div>
-
-      <h2>FAQ Seputar Asuransi Builders Risk</h2>
-
-      <div className="mt-8 mb-7">
-        <h3 className="mb-3">Apa itu asuransi Builders Risk?</h3>
-        <p>
-          Builders Risk (Contractors&apos; All Risks / Erection All Risks) adalah polis yang menjamin kerugian fisik pada proyek yang sedang dibangun — termasuk kapal yang sedang dikonstruksi atau direparasi di galangan — akibat risiko seperti kebakaran, kecelakaan kerja, atau bencana alam selama periode konstruksi.
-        </p>
-      </div>
-
-      <div className="mt-7 mb-7">
-        <h3 className="mb-3">Apakah galangan kapal di Batam butuh asuransi Builders Risk?</h3>
-        <p>
-          Ya. Selama proses pembangunan atau reparasi, kapal belum bisa diasuransikan dengan polis marine hull standar karena belum jadi atau belum berlayar. Builders Risk mengisi celah perlindungan ini dari awal proyek sampai serah terima.
-        </p>
-      </div>
-
-      <div className="mt-7 mb-7">
-        <h3 className="mb-3">Berapa lama proses klaim Builders Risk biasanya selesai?</h3>
-        <p>
-          Bergantung pada kompleksitas kerugian dan kelengkapan dokumen — umumnya beberapa minggu hingga 2-3 bulan untuk kasus dengan nilai kerugian besar yang memerlukan investigasi mendalam dari loss adjuster.
-        </p>
-      </div>
-
-      <div className="mt-7 mb-7">
-        <h3 className="mb-3">Apa kesalahan paling umum saat membeli polis Builders Risk?</h3>
-        <p>
-          Menetapkan sum insured terlalu rendah (under-insurance), tidak memasukkan subkontraktor sebagai pihak yang dijamin, dan tidak memeriksa pengecualian terkait cacat desain yang sering menjadi sumber sengketa klaim.
-        </p>
-      </div>
-
-      <div className="mt-7 mb-8">
-        <h3 className="mb-3">Apakah Builders Risk mencakup pekerjaan subkontraktor?</h3>
-        <p>
-          Tergantung wording polis. Polis perlu secara eksplisit mencantumkan seluruh pihak yang bekerja di proyek sebagai joint insured atau additional insured, agar tidak ada celah tanggung jawab saat klaim terjadi.
-        </p>
-      </div>
-
-      <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
-        <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">
+        <h3 className="font-display font-bold text-xl text-white mb-3">
           Sedang Memulai Proyek Konstruksi atau Pekerjaan di Galangan Kapal?
         </h3>
-        <p className="text-white/70 text-sm mb-4 leading-relaxed">
+        <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-2xl">
           Saya membantu menyusun sum insured yang tepat, memastikan seluruh pihak terkait tercakup dalam polis, dan mendampingi Anda jika suatu saat klaim benar-benar terjadi — berdasarkan pengalaman langsung menangani klaim di lapangan, bukan sekadar membandingkan premi.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
@@ -330,11 +403,11 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </div>
       </div>
 
-      <div className="mt-6 p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] not-prose">
-        <p className="text-sm font-display font-semibold text-[#0a1628] mb-3">
+      <div className="mt-6 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] not-prose">
+        <p className="font-display text-xs font-bold uppercase tracking-[0.15em] text-[#0a1628] mb-4">
           Artikel & Halaman Terkait
         </p>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-3">
           <Link
             href="/asuransi-marine"
             className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors"
