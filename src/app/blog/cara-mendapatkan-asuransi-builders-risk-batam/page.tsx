@@ -137,7 +137,7 @@ export default function CaraMendapatkanBuildersRiskPage() {
         Saat sebuah proyek konstruksi atau pekerjaan reparasi kapal dimulai, perhatian biasanya tersedot habis ke jadwal, anggaran, dan teknis pengerjaan. Asuransi sering dianggap urusan administratif yang bisa diurus &quot;belakangan&quot; — sampai sebuah insiden terjadi di tengah proyek dan baru disadari bahwa aset senilai miliaran rupiah belum punya perlindungan yang memadai.
       </p>
       <p>
-        Builders Risk Insurance (di beberapa wording juga disebut Contractors&apos; All Risks atau Erection All Risks) dirancang khusus untuk mengisi celah ini: melindungi proyek yang sedang dibangun, bukan aset yang sudah jadi. Untuk proyek seperti pembangunan gedung, instalasi pabrik, hingga konstruksi dan reparasi kapal di galangan, periode pengerjaan inilah yang justru paling rentan terhadap kerugian besar.
+        <Link href="/asuransi-marine/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">Builders Risk Insurance</Link> (di beberapa wording juga disebut Contractors&apos; All Risks atau Erection All Risks) dirancang khusus untuk mengisi celah ini: melindungi proyek yang sedang dibangun, bukan aset yang sudah jadi. Untuk proyek seperti pembangunan gedung, instalasi pabrik, hingga konstruksi dan reparasi kapal di galangan, periode pengerjaan inilah yang justru paling rentan terhadap kerugian besar.
       </p>
 
       <div className="mt-14 mb-3 flex items-center gap-3">
@@ -242,6 +242,9 @@ export default function CaraMendapatkanBuildersRiskPage() {
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
       <h2 className="text-center">Apa yang Dijamin dan Tidak Dijamin dalam Polis Builders Risk</h2>
+      <p>
+        Builders Risk merupakan salah satu produk dalam lini <Link href="/asuransi-marine" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">asuransi marine</Link> yang kami tangani di Batam, dengan karakteristik cakupan yang spesifik untuk periode konstruksi. Secara umum, berikut pembagian antara risiko yang dijamin dan yang dikecualikan:
+      </p>
 
       <div className="not-prose mt-8 mb-10 grid gap-5 sm:grid-cols-2">
         <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6">
@@ -310,7 +313,15 @@ export default function CaraMendapatkanBuildersRiskPage() {
           {
             n: "05",
             title: "Baca Wording dan Pengecualian dengan Teliti, atau Libatkan Konsultan",
-            body: "Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi.",
+            body: (
+              <>
+                Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi. Anda bisa melihat detail{" "}
+                <Link href="/asuransi-marine/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">
+                  cakupan polis Builders Risk kami di sini
+                </Link>
+                .
+              </>
+            ),
           },
         ].map((step, i, arr) => (
           <div key={step.n} className="flex gap-5">
