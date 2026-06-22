@@ -233,57 +233,77 @@ export default function CaraMendapatkanBuildersRiskPage() {
 
       <h2>Langkah Memilih Asuransi Builders Risk yang Tepat</h2>
 
-      <h3>1. Petakan Risiko Spesifik Proyek Anda</h3>
-      <p>
-        Proyek konstruksi gedung, instalasi pabrik, dan reparasi kapal di galangan memiliki profil risiko yang berbeda. Sebelum membeli polis, identifikasi titik-titik rawan: apakah ada pekerjaan hot work (pengelasan, pemotongan), area dengan material mudah terbakar, atau pekerjaan di ketinggian yang berisiko tinggi.
-      </p>
+      <div className="mt-8 mb-8">
+        <h3 className="mb-3">1. Petakan Risiko Spesifik Proyek Anda</h3>
+        <p>
+          Proyek konstruksi gedung, instalasi pabrik, dan reparasi kapal di galangan memiliki profil risiko yang berbeda. Sebelum membeli polis, identifikasi titik-titik rawan: apakah ada pekerjaan hot work (pengelasan, pemotongan), area dengan material mudah terbakar, atau pekerjaan di ketinggian yang berisiko tinggi.
+        </p>
+      </div>
 
-      <h3>2. Tentukan Sum Insured Berdasarkan Nilai Kontrak Penuh, Bukan Progress Saat Ini</h3>
-      <p>
-        Kesalahan paling sering terjadi: menetapkan sum insured berdasarkan nilai pekerjaan yang sudah selesai, padahal seharusnya berdasarkan <strong>nilai kontrak total proyek</strong> ditambah biaya material dan peralatan yang akan terpasang. Sum insured yang terlalu rendah membuat ganti rugi dipotong proporsional (average clause) saat klaim terjadi.
-      </p>
+      <div className="mt-8 mb-8">
+        <h3 className="mb-3">2. Tentukan Sum Insured Berdasarkan Nilai Kontrak Penuh, Bukan Progress Saat Ini</h3>
+        <p>
+          Kesalahan paling sering terjadi: menetapkan sum insured berdasarkan nilai pekerjaan yang sudah selesai, padahal seharusnya berdasarkan <strong>nilai kontrak total proyek</strong> ditambah biaya material dan peralatan yang akan terpasang. Sum insured yang terlalu rendah membuat ganti rugi dipotong proporsional (average clause) saat klaim terjadi.
+        </p>
+      </div>
 
-      <h3>3. Pastikan Seluruh Pihak yang Bekerja Tercakup sebagai Insured</h3>
-      <p>
-        Jika proyek melibatkan subkontraktor, pastikan polis secara eksplisit mencantumkan mereka sebagai joint insured atau additional insured. Tanpa klausul ini, perusahaan asuransi berpotensi menolak klaim atau melakukan recovery (subrogasi) terhadap subkontraktor yang justru merupakan mitra kerja Anda sendiri.
-      </p>
+      <div className="mt-8 mb-8">
+        <h3 className="mb-3">3. Pastikan Seluruh Pihak yang Bekerja Tercakup sebagai Insured</h3>
+        <p>
+          Jika proyek melibatkan subkontraktor, pastikan polis secara eksplisit mencantumkan mereka sebagai joint insured atau additional insured. Tanpa klausul ini, perusahaan asuransi berpotensi menolak klaim atau melakukan recovery (subrogasi) terhadap subkontraktor yang justru merupakan mitra kerja Anda sendiri.
+        </p>
+      </div>
 
-      <h3>4. Periksa Periode Pertanggungan dan Maintenance Period</h3>
-      <p>
-        Polis Builders Risk umumnya berlaku sejak mobilisasi material ke lokasi sampai serah terima proyek, ditambah periode pemeliharaan (biasanya 12 bulan). Pastikan periode ini sesuai dengan jadwal proyek riil, termasuk jika ada potensi keterlambatan.
-      </p>
+      <div className="mt-8 mb-8">
+        <h3 className="mb-3">4. Periksa Periode Pertanggungan dan Maintenance Period</h3>
+        <p>
+          Polis Builders Risk umumnya berlaku sejak mobilisasi material ke lokasi sampai serah terima proyek, ditambah periode pemeliharaan (biasanya 12 bulan). Pastikan periode ini sesuai dengan jadwal proyek riil, termasuk jika ada potensi keterlambatan.
+        </p>
+      </div>
 
-      <h3>5. Baca Wording dan Pengecualian dengan Teliti, atau Libatkan Konsultan</h3>
-      <p>
-        Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi.
-      </p>
+      <div className="mt-8 mb-8">
+        <h3 className="mb-3">5. Baca Wording dan Pengecualian dengan Teliti, atau Libatkan Konsultan</h3>
+        <p>
+          Perbedaan satu klausul pengecualian bisa menentukan apakah klaim senilai ratusan juta rupiah dibayar penuh atau ditolak. Melibatkan konsultan asuransi yang memahami karakteristik proyek konstruksi dan industri galangan kapal — bukan sekadar membandingkan premi termurah — adalah langkah yang paling sering menyelamatkan proyek saat insiden benar-benar terjadi.
+        </p>
+      </div>
 
       <h2>FAQ Seputar Asuransi Builders Risk</h2>
 
-      <h3>Apa itu asuransi Builders Risk?</h3>
-      <p>
-        Builders Risk (Contractors&apos; All Risks / Erection All Risks) adalah polis yang menjamin kerugian fisik pada proyek yang sedang dibangun — termasuk kapal yang sedang dikonstruksi atau direparasi di galangan — akibat risiko seperti kebakaran, kecelakaan kerja, atau bencana alam selama periode konstruksi.
-      </p>
+      <div className="mt-8 mb-7">
+        <h3 className="mb-3">Apa itu asuransi Builders Risk?</h3>
+        <p>
+          Builders Risk (Contractors&apos; All Risks / Erection All Risks) adalah polis yang menjamin kerugian fisik pada proyek yang sedang dibangun — termasuk kapal yang sedang dikonstruksi atau direparasi di galangan — akibat risiko seperti kebakaran, kecelakaan kerja, atau bencana alam selama periode konstruksi.
+        </p>
+      </div>
 
-      <h3>Apakah galangan kapal di Batam butuh asuransi Builders Risk?</h3>
-      <p>
-        Ya. Selama proses pembangunan atau reparasi, kapal belum bisa diasuransikan dengan polis marine hull standar karena belum jadi atau belum berlayar. Builders Risk mengisi celah perlindungan ini dari awal proyek sampai serah terima.
-      </p>
+      <div className="mt-7 mb-7">
+        <h3 className="mb-3">Apakah galangan kapal di Batam butuh asuransi Builders Risk?</h3>
+        <p>
+          Ya. Selama proses pembangunan atau reparasi, kapal belum bisa diasuransikan dengan polis marine hull standar karena belum jadi atau belum berlayar. Builders Risk mengisi celah perlindungan ini dari awal proyek sampai serah terima.
+        </p>
+      </div>
 
-      <h3>Berapa lama proses klaim Builders Risk biasanya selesai?</h3>
-      <p>
-        Bergantung pada kompleksitas kerugian dan kelengkapan dokumen — umumnya beberapa minggu hingga 2-3 bulan untuk kasus dengan nilai kerugian besar yang memerlukan investigasi mendalam dari loss adjuster.
-      </p>
+      <div className="mt-7 mb-7">
+        <h3 className="mb-3">Berapa lama proses klaim Builders Risk biasanya selesai?</h3>
+        <p>
+          Bergantung pada kompleksitas kerugian dan kelengkapan dokumen — umumnya beberapa minggu hingga 2-3 bulan untuk kasus dengan nilai kerugian besar yang memerlukan investigasi mendalam dari loss adjuster.
+        </p>
+      </div>
 
-      <h3>Apa kesalahan paling umum saat membeli polis Builders Risk?</h3>
-      <p>
-        Menetapkan sum insured terlalu rendah (under-insurance), tidak memasukkan subkontraktor sebagai pihak yang dijamin, dan tidak memeriksa pengecualian terkait cacat desain yang sering menjadi sumber sengketa klaim.
-      </p>
+      <div className="mt-7 mb-7">
+        <h3 className="mb-3">Apa kesalahan paling umum saat membeli polis Builders Risk?</h3>
+        <p>
+          Menetapkan sum insured terlalu rendah (under-insurance), tidak memasukkan subkontraktor sebagai pihak yang dijamin, dan tidak memeriksa pengecualian terkait cacat desain yang sering menjadi sumber sengketa klaim.
+        </p>
+      </div>
 
-      <h3>Apakah Builders Risk mencakup pekerjaan subkontraktor?</h3>
-      <p>
-        Tergantung wording polis. Polis perlu secara eksplisit mencantumkan seluruh pihak yang bekerja di proyek sebagai joint insured atau additional insured, agar tidak ada celah tanggung jawab saat klaim terjadi.
-      </p>
+      <div className="mt-7 mb-8">
+        <h3 className="mb-3">Apakah Builders Risk mencakup pekerjaan subkontraktor?</h3>
+        <p>
+          Tergantung wording polis. Polis perlu secara eksplisit mencantumkan seluruh pihak yang bekerja di proyek sebagai joint insured atau additional insured, agar tidak ada celah tanggung jawab saat klaim terjadi.
+        </p>
+      </div>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
         <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">
