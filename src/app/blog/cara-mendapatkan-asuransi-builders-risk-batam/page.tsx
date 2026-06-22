@@ -120,10 +120,10 @@ export default function CaraMendapatkanBuildersRiskPage() {
           href: "/blog/cara-mendapatkan-asuransi-builders-risk-batam",
         },
       ]}
-      schema={[articleSchema, faqSchema]}
+      schema={articleSchema}
     >
-      {/* Fallback: jika ArticleLayout hanya merender schema pertama dari array,
-          FAQ schema tetap disuntikkan langsung agar Rich Result FAQ tidak hilang. */}
+      {/* ArticleLayout hanya menerima satu object schema (Article).
+          FAQ schema disuntikkan langsung di sini agar Rich Result FAQ tetap tampil. */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
