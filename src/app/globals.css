@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --navy: #0a1628;
   --navy-mid: #132040;
