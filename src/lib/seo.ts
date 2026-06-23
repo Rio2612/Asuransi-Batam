@@ -25,7 +25,7 @@ export function generateSEO({
     ? title
     : `${title} | ${SITE.name}`;
   const canonicalUrl = canonical
-    ? `${SITE.url}${canonical}`
+    ? canonical.startsWith("http") ? canonical : `${SITE.url}${canonical}`
     : SITE.url;
 
   return {
