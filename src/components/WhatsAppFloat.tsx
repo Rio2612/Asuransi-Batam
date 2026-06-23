@@ -1,6 +1,7 @@
 import { WHATSAPP_URL } from "@/lib/constants";
 import { MessageCircle } from "lucide-react";
 
+
 export function WhatsAppFloat() {
   return (
     <a
