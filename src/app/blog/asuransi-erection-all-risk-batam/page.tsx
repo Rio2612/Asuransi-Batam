@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Shield, Clock, CheckCircle, ArrowRight, AlertCircle } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+ export const metadata: Metadata = {
   title: "Asuransi Erection All Risk (EAR) Batam: Panduan untuk Instalasi Mesin & Proyek Energi",
   description:
     "Panduan lengkap asuransi Erection All Risk (EAR) di Batam untuk instalasi mesin pabrik, proyek energi, dan pemasangan equipment industri. Perbedaan EAR vs CAR, cakupan, premi, dan proses klaim.",
@@ -16,10 +16,15 @@ export const metadata: Metadata = {
     "asuransi engineering Batam",
   ],
   alternates: {
+    // Canonical menunjuk ke URL halaman ini sendiri
     canonical: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
-    languages: { id: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam" },
+    languages: {
+      id: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
+      en: "https://asuransibatam.biz.id/en/blog/erection-all-risk-insurance-batam", // Tambahkan URL versi Inggris di sini
+    },
   },
 };
+
 
 const articleSchema = {
   "@context": "https://schema.org",
