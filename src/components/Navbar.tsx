@@ -78,6 +78,7 @@ const URL_MAP: Record<string, string> = {
   "/blog/premi-asuransi-marine-cargo-batam": "/en/blog/marine-cargo-insurance-premium-batam",
   "/blog/asuransi-cargo-ekspor-batam": "/en/blog/batam-export-cargo-insurance",
   "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
+  "/blog/cara-mendapatkan-asuransi-builders-risk-batam": "/en/blog/how-to-get-builders-risk-insurance-batam",
 };
 
 // Build reverse map (EN → ID) automatically
@@ -279,6 +280,7 @@ const blogCategoriesID: BlogCategory[] = [
       { label: "Premi Asuransi Marine Cargo Batam", href: "/blog/premi-asuransi-marine-cargo-batam" },
       { label: "Asuransi Cargo Ekspor Batam", href: "/blog/asuransi-cargo-ekspor-batam" },
       { label: "Builder's Risk Galangan Kapal", href: "/blog/builders-risk-untuk-galangan-kapal" },
+      { label: "Cara Mendapatkan Asuransi Builders Risk", href: "/blog/cara-mendapatkan-asuransi-builders-risk-batam" },
     ],
   },
 ];
@@ -331,6 +333,7 @@ const blogCategoriesEN: BlogCategory[] = [
       { label: "Marine Cargo Premium Batam", href: "/en/blog/marine-cargo-insurance-premium-batam" },
       { label: "Batam Export Cargo Insurance", href: "/en/blog/batam-export-cargo-insurance" },
       { label: "Builder's Risk Shipyard Insurance", href: "/en/blog/builders-risk-shipyard-insurance-batam" },
+      { label: "How to Get Builders Risk Insurance", href: "/en/blog/how-to-get-builders-risk-insurance-batam" },
     ],
   },
 ];
