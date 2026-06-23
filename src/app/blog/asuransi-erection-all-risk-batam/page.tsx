@@ -20,7 +20,7 @@ import CTASection from "@/components/CTASection";
     canonical: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
     languages: {
       id: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
-      en: "https://asuransibatam.biz.id/en/blog/erection-all-risk-insurance-batam", // Tambahkan URL versi Inggris di sini
+      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam", // Tambahkan URL versi Inggris di sini
     },
   },
 };
