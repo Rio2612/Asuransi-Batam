@@ -10,7 +10,7 @@ export const metadata: Metadata = generateSEO({
   title: "Asuransi Pengiriman Barang Batam ke Jakarta – Marine Cargo Domestik | Asuransi Batam",
   description:
     "Lindungi kiriman barang dari Batam ke Jakarta dengan Marine Cargo Insurance. Ekspedisi laut, Roro, dan kontainer. Premi terjangkau, klaim mudah. Hubungi Rio!",
-  canonical: "/blog/asuransi-pengiriman-batam-jakarta",
+  canonical: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
   languages: {
     id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
     en: "https://asuransibatam.biz.id/en/blog/batam-jakarta-cargo-insurance",
