@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Crane Batam – Perlindungan Tower Crane & Mobile Crane",
