@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  Scale,
+  Truck,
+  Pickaxe,
+  Mountain,
+  Waves,
+  CreditCard,
+  ArrowUpFromLine,
+  Calculator,
+  ClipboardList,
+  Siren,
+  FileSearch,
+  BadgeCheck,
+  ShieldCheck,
+  AlertTriangle,
+  CircleDollarSign,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Asuransi Alat Berat Proyek Konstruksi – Panduan Lengkap untuk Kontraktor",
@@ -18,6 +35,87 @@ const schema = {
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
 
+// FAQPage JSON-LD — sumber tunggal untuk schema & accordion FAQ visual di bawah.
+const faqItems = [
+  {
+    question: "Apakah asuransi alat berat bisa diklaim jika rusak karena banjir di area proyek?",
+    answer:
+      "Bisa, selama polis mencakup risiko bencana alam termasuk banjir — yang umumnya sudah ada dalam polis EAR standar. Yang perlu dipastikan: lokasi kejadian sesuai dengan wilayah yang dideklarasikan dalam polis, dan kerusakan bersifat tiba-tiba bukan akibat unit dibiarkan di area yang sudah diketahui berpotensi banjir tanpa tindakan pencegahan.",
+  },
+  {
+    question: "Bagaimana jika alat berat dicuri dari lokasi proyek?",
+    answer:
+      "Pencurian alat berat umumnya ditanggung dalam polis EAR, tapi dengan syarat ada laporan polisi yang dibuat segera setelah kejadian diketahui. Untuk klaim pencurian, biasanya ada masa tunggu (60–90 hari) sebelum ganti rugi dibayarkan, memberi waktu bagi pihak berwajib melakukan pencarian.",
+  },
+  {
+    question: "Apakah operator alat berat perlu memiliki SIO untuk klaim bisa diproses?",
+    answer:
+      "Ya, di sebagian besar polis. SIO (Surat Izin Operator) adalah bukti operator kompeten dan berlisensi. Jika operator tidak memiliki SIO yang valid saat kecelakaan terjadi, perusahaan asuransi berhak menolak klaim dengan alasan kelalaian prosedur keselamatan.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+
+// --- Helper presentational components (lokal, konsisten dengan artikel limbah B3) ---
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function IconList({ items }: { items: { icon: React.ElementType; title?: string; text: React.ReactNode }[] }) {
+  return (
+    <ul className="not-prose grid sm:grid-cols-2 gap-3 my-5 list-none p-0">
+      {items.map((item, i) => {
+        const Icon = item.icon;
+        return (
+          <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+            <span className="flex items-center justify-center w-7 h-7 rounded-full bg-white border border-[#e2e8f0] shrink-0 mt-0.5">
+              <Icon className="w-[14px] h-[14px] text-[#1a4fa0]" strokeWidth={2} />
+            </span>
+            <span className="text-sm text-[#374151] leading-relaxed">
+              {item.title && <span className="font-semibold text-[#0a1628] block">{item.title}</span>}
+              {item.text}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }) {
+  return (
+    <ol className="not-prose relative my-6 list-none p-0 space-y-5 ml-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-4">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a1628] text-[#c9a84c] font-display font-bold text-sm shrink-0">
+            {i + 1}
+          </span>
+          <div className="pt-0.5">
+            <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
+            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
 export default function ArticleAsuransiAlatBeratKonstruksiPage() {
   return (
     <ArticleLayout
@@ -28,32 +126,41 @@ export default function ArticleAsuransiAlatBeratKonstruksiPage() {
       readTime="11 menit"
       breadcrumbs={[{ label: "Asuransi Alat Berat Proyek Konstruksi", href: "/blog/asuransi-alat-berat-proyek-konstruksi" }]}
       schema={schema}
+      faqSchema={faqSchema}
     >
       <p>
         Di dunia konstruksi, alat berat bukan sekadar kendaraan — mereka adalah tulang punggung
         produktivitas proyek. Tanpa excavator, pekerjaan galian mandek. Tanpa bulldozer, land
         clearing tidak bisa dimulai. Tanpa wheel loader, siklus material terhenti. Satu unit
         yang rusak di tengah proyek bukan hanya masalah biaya perbaikan — tapi juga denda
-        keterlambatan, reputasi kontraktor, dan kepercayaan pemberi kerja.
+        keterlambatan, reputasi kontraktor, dan kepercayaan pemberi kerja. Risiko inilah yang
+        seharusnya ditutup lewat{" "}
+        <Link href="/asuransi-machinery/asuransi-alat-berat" className="font-medium">
+          asuransi alat berat
+        </Link>{" "}
+        yang tepat sejak awal proyek berjalan.
       </p>
       <p>
         Anehnya, masih banyak kontraktor yang mengasuransikan alat berat mereka secara asal-asalan:
         mengambil polis yang murah tanpa memahami apa yang benar-benar dilindungi, atau bahkan
-        tidak mengasuransikan sama sekali dengan asumsi "selama ini belum pernah ada masalah besar."
-        Artikel ini hadir untuk mengubah pendekatan itu menjadi lebih strategis.
+        tidak mengasuransikan sama sekali dengan asumsi &quot;selama ini belum pernah ada masalah
+        besar.&quot; Artikel ini hadir untuk mengubah pendekatan itu menjadi lebih strategis.
       </p>
 
-      <h2>Pengertian Asuransi Alat Berat: EAR vs CAR, Apa Bedanya?</h2>
+      <SectionHeading icon={Scale}>Pengertian Asuransi Alat Berat: EAR vs CAR, Apa Bedanya?</SectionHeading>
       <p>
         Ini adalah titik kebingungan yang paling umum di kalangan kontraktor pemula. Dua istilah
         ini sering dipertukarkan, padahal keduanya melindungi hal yang berbeda.
       </p>
 
-      <h3>CAR — Contractor's All Risk</h3>
+      <h3>CAR — Contractor&apos;s All Risk</h3>
       <p>
         CAR adalah polis yang melindungi <em>proyek konstruksi secara keseluruhan</em> — mulai
         dari material bangunan, pekerjaan permanen yang sudah selesai, hingga alat berat yang
-        digunakan dalam proyek tersebut. Kata kuncinya: <strong>proyek</strong>. Polis CAR
+        digunakan dalam proyek tersebut. Kata kuncinya: <strong>proyek</strong>. Polis{" "}
+        <Link href="/asuransi-engineering/contractor-all-risk" className="font-medium">
+          Contractor&apos;s All Risk (CAR)
+        </Link>{" "}
         terikat pada satu proyek spesifik dengan nilai kontrak, lokasi, dan jangka waktu
         tertentu. Saat proyek selesai, polis berakhir. Jika alat dipindahkan ke proyek lain
         yang tidak masuk dalam polis yang sama, perlindungan gugur.
@@ -108,165 +215,170 @@ export default function ArticleAsuransiAlatBeratKonstruksiPage() {
         yang tidak perlu.
       </p>
 
-      <h2>Alat Berat Apa Saja yang Perlu Diasuransikan?</h2>
+      <SectionHeading icon={Truck}>Alat Berat Apa Saja yang Perlu Diasuransikan?</SectionHeading>
       <p>
         Jawaban singkatnya: semua unit yang nilainya signifikan dan yang jika rusak akan
         mengganggu operasional proyek secara material. Berikut panduan praktisnya berdasarkan
         kategori alat:
       </p>
-      <ul>
-        <li>
-          <strong>Excavator (berbagai kelas):</strong> Dari mini excavator 5 ton hingga
-          excavator kelas 30–50 ton. Semakin besar dan mahal unit, semakin mendesak
-          kebutuhan asuransinya. Excavator adalah alat dengan frekuensi klaim tertinggi
-          karena intensitas penggunaannya.
-        </li>
-        <li>
-          <strong>Bulldozer:</strong> Rentan terhadap kerusakan undercarriage dan kecelakaan
-          saat bekerja di lereng atau tanah lunak. Unit ini juga mahal untuk diperbaiki
-          karena komponen track-nya membutuhkan suku cadang khusus.
-        </li>
-        <li>
-          <strong>Wheel Loader dan Motor Grader:</strong> Sering beroperasi di area lalu
-          lintas padat sehingga risiko benturan dengan kendaraan lain cukup tinggi.
-          Tambahkan TPL (Third Party Liability) untuk antisipasi tuntutan pihak ketiga.
-        </li>
-        <li>
-          <strong>Vibro Roller dan Compactor:</strong> Meski relatif sederhana, unit ini
-          sering mengalami kerusakan akibat operasi di tanah tidak stabil atau tergelincir
-          saat permukaan basah.
-        </li>
-        <li>
-          <strong>Alat berat dalam cicilan pembiayaan:</strong> Ini adalah prioritas mutlak.
-          Jika unit rusak total dan tidak diasuransikan, Anda masih tetap wajib membayar
-          sisa cicilan kepada leasing — tanpa unit yang bisa menghasilkan pendapatan.
-        </li>
-      </ul>
+      <IconList
+        items={[
+          {
+            icon: Pickaxe,
+            title: "Excavator (berbagai kelas)",
+            text: "Dari mini excavator 5 ton hingga kelas 30–50 ton. Alat dengan frekuensi klaim tertinggi karena intensitas penggunaannya.",
+          },
+          {
+            icon: Mountain,
+            title: "Bulldozer",
+            text: "Rentan kerusakan undercarriage dan kecelakaan di lereng atau tanah lunak. Suku cadang track-nya juga mahal.",
+          },
+          {
+            icon: Truck,
+            title: "Wheel Loader & Motor Grader",
+            text: (
+              <>
+                Sering beroperasi di area lalu lintas padat. Tambahkan{" "}
+                <Link href="/asuransi-liability/public-liability" className="font-medium">
+                  Public Liability
+                </Link>{" "}
+                untuk antisipasi tuntutan pihak ketiga.
+              </>
+            ),
+          },
+          {
+            icon: Waves,
+            title: "Vibro Roller & Compactor",
+            text: "Sering rusak akibat operasi di tanah tidak stabil atau tergelincir saat permukaan basah.",
+          },
+          {
+            icon: ArrowUpFromLine,
+            title: "Crane",
+            text: (
+              <>
+                Risiko tinggi saat pengangkatan beban berat. Pelajari ketentuan{" "}
+                <Link href="/asuransi-machinery/asuransi-crane" className="font-medium">
+                  asuransi crane
+                </Link>{" "}
+                secara khusus karena karakteristik risikonya berbeda dari alat berat lain.
+              </>
+            ),
+          },
+          {
+            icon: CreditCard,
+            title: "Alat berat dalam cicilan pembiayaan",
+            text: "Prioritas mutlak — jika unit rusak total dan tidak diasuransikan, Anda tetap wajib membayar sisa cicilan tanpa unit yang menghasilkan pendapatan.",
+          },
+        ]}
+      />
 
-      <h2>Cara Menentukan Nilai Pertanggungan yang Tepat</h2>
+      <SectionHeading icon={Calculator}>Cara Menentukan Nilai Pertanggungan yang Tepat</SectionHeading>
       <p>
         Menentukan nilai pertanggungan (sum insured) yang benar adalah langkah paling kritis
         dalam proses pengambilan polis. Dua kesalahan yang paling umum:
       </p>
-      <ul>
-        <li>
-          <strong>Underinsurance (nilai terlalu rendah):</strong> Misalnya unit bernilai
-          Rp 1,5 miliar tapi diasuransikan hanya Rp 800 juta untuk menghemat premi.
-          Saat terjadi klaim parsial, ganti rugi akan dikurangi secara proporsional sesuai
-          rasio underinsurance — sehingga Anda hanya mendapatkan sebagian dari kerugian
-          aktual yang terjadi.
-        </li>
-        <li>
-          <strong>Overinsurance (nilai terlalu tinggi):</strong> Premi lebih mahal tapi
-          tidak ada manfaat tambahan. Ganti rugi asuransi tidak bisa melebihi kerugian
-          aktual yang terbukti.
-        </li>
-      </ul>
-      <p>
-        Pendekatan yang disarankan untuk menentukan nilai pertanggungan:
-      </p>
-      <ol>
-        <li>
-          <strong>Unit baru atau usia di bawah 2 tahun:</strong> Gunakan harga perolehan
-          (invoice price) sebagai dasar nilai pertanggungan. Ini memastikan ganti rugi
-          cukup untuk mengganti dengan unit setara jika terjadi total loss.
-        </li>
-        <li>
-          <strong>Unit berusia 2–5 tahun:</strong> Gunakan nilai pasar wajar saat ini.
-          Referensi bisa dari harga dealer alat bekas atau appraisal dari lembaga penilai
-          independen (KJPP). Perbarui nilai ini setiap tahun saat memperpanjang polis.
-        </li>
-        <li>
-          <strong>Unit berusia di atas 5 tahun:</strong> Pertimbangkan apakah nilai unit
-          masih cukup signifikan untuk dijustifikasi dengan premi EAR penuh. Untuk unit
-          tua dengan nilai rendah, terkadang lebih efisien mengalokasikan dana ke
-          cadangan perbaikan mandiri daripada membayar premi asuransi.
-        </li>
-      </ol>
+      <IconList
+        items={[
+          {
+            icon: AlertTriangle,
+            title: "Underinsurance (nilai terlalu rendah)",
+            text: "Misalnya unit bernilai Rp 1,5 miliar tapi diasuransikan hanya Rp 800 juta untuk menghemat premi. Saat klaim parsial, ganti rugi dikurangi proporsional sesuai rasio underinsurance.",
+          },
+          {
+            icon: CircleDollarSign,
+            title: "Overinsurance (nilai terlalu tinggi)",
+            text: "Premi lebih mahal tapi tidak ada manfaat tambahan. Ganti rugi tidak bisa melebihi kerugian aktual yang terbukti.",
+          },
+        ]}
+      />
+      <p>Pendekatan yang disarankan untuk menentukan nilai pertanggungan:</p>
+      <Steps
+        items={[
+          {
+            title: "Unit baru atau usia di bawah 2 tahun",
+            desc: "Gunakan harga perolehan (invoice price) sebagai dasar nilai pertanggungan, memastikan ganti rugi cukup untuk unit setara jika terjadi total loss.",
+          },
+          {
+            title: "Unit berusia 2–5 tahun",
+            desc: "Gunakan nilai pasar wajar saat ini, dari harga dealer alat bekas atau appraisal KJPP. Perbarui nilai ini setiap tahun saat memperpanjang polis.",
+          },
+          {
+            title: "Unit berusia di atas 5 tahun",
+            desc: "Pertimbangkan apakah nilai unit masih cukup signifikan untuk dijustifikasi dengan premi EAR penuh, atau lebih efisien dialokasikan ke cadangan perbaikan mandiri.",
+          },
+        ]}
+      />
 
-      <h2>Dokumen yang Perlu Disiapkan Saat Mengajukan Polis</h2>
+      <SectionHeading icon={ClipboardList}>Dokumen yang Perlu Disiapkan Saat Mengajukan Polis</SectionHeading>
       <p>
-        Proses pengambilan polis EAR untuk alat berat konstruksi umumnya membutuhkan
-        dokumen berikut. Menyiapkannya dari awal akan mempercepat proses underwriting
-        dan menghindari permintaan dokumen tambahan yang memperlambat penerbitan polis:
+        Proses pengambilan polis EAR untuk alat berat konstruksi umumnya membutuhkan dokumen
+        berikut. Menyiapkannya dari awal akan mempercepat proses underwriting dan menghindari
+        permintaan dokumen tambahan yang memperlambat penerbitan polis:
       </p>
-      <ul>
-        <li>Faktur pembelian atau BPKB unit (bukti kepemilikan)</li>
-        <li>Foto unit dari 4 sudut (depan, belakang, kiri, kanan) dalam kondisi terkini</li>
-        <li>Foto hour meter / jam operasi mesin</li>
-        <li>Dokumen spesifikasi teknis unit (buku manual atau lembar spesifikasi dari dealer)</li>
-        <li>Profil perusahaan atau identitas pemilik (jika individu)</li>
-        <li>Informasi lokasi operasi utama unit</li>
-      </ul>
+      <IconList
+        items={[
+          { icon: ShieldCheck, text: "Faktur pembelian atau BPKB unit (bukti kepemilikan)" },
+          { icon: ClipboardList, text: "Foto unit dari 4 sudut (depan, belakang, kiri, kanan) dalam kondisi terkini" },
+          { icon: Calculator, text: "Foto hour meter / jam operasi mesin" },
+          { icon: FileSearch, text: "Dokumen spesifikasi teknis unit (buku manual / lembar spesifikasi dealer)" },
+          { icon: BadgeCheck, text: "Profil perusahaan atau identitas pemilik (jika individu)" },
+          { icon: Truck, text: "Informasi lokasi operasi utama unit" },
+        ]}
+      />
 
-      <h2>Apa yang Harus Dilakukan Saat Alat Berat Rusak di Proyek?</h2>
+      <SectionHeading icon={Siren}>Apa yang Harus Dilakukan Saat Alat Berat Rusak di Proyek?</SectionHeading>
       <p>
-        Banyak klaim yang akhirnya ditolak bukan karena kerusakan tidak ditanggung polis,
-        tapi karena prosedur pelaporan yang tidak diikuti dengan benar. Ini urutannya:
+        Banyak klaim yang akhirnya ditolak bukan karena kerusakan tidak ditanggung polis, tapi
+        karena prosedur pelaporan yang tidak diikuti dengan benar. Ini urutannya:
       </p>
-      <ol>
-        <li>
-          <strong>Hentikan operasi unit segera:</strong> Memaksakan penggunaan unit yang
-          sudah rusak bisa memperparah kerusakan dan mempersulit penilaian klaim.
-          Surveyor perlu menilai kerusakan dalam kondisi yang tidak berubah dari
-          saat kejadian.
-        </li>
-        <li>
-          <strong>Dokumentasi visual lengkap:</strong> Foto dan video kondisi unit, lokasi
-          kejadian, dan kondisi medan sekitar. Untuk kerusakan akibat kecelakaan yang
-          melibatkan pihak lain, catat identitas dan plat nomor kendaraan lain.
-        </li>
-        <li>
-          <strong>Hubungi agen asuransi dalam 1 x 24 jam:</strong> Meski batas waktu
-          pelaporan di polis umumnya 3 x 24 jam, melapor lebih cepat mempercepat
-          jadwal survei dan pada akhirnya mempercepat proses klaim.
-        </li>
-        <li>
-          <strong>Jangan lakukan perbaikan sebelum survei:</strong> Ini adalah aturan
-          yang paling sering dilanggar kontraktor karena tekanan untuk segera kembali
-          berproduksi. Jika terpaksa memindahkan unit demi keselamatan, minta izin
-          tertulis dari pihak asuransi terlebih dahulu dan dokumentasikan kondisi
-          sebelum pemindahan.
-        </li>
-        <li>
-          <strong>Siapkan estimasi biaya perbaikan dari bengkel:</strong> Surveyor akan
-          meminta ini sebagai referensi penilaian. Lebih baik dapatkan dari minimal
-          dua bengkel berbeda untuk perbandingan.
-        </li>
-      </ol>
+      <Steps
+        items={[
+          {
+            title: "Hentikan operasi unit segera",
+            desc: "Memaksakan penggunaan unit yang sudah rusak bisa memperparah kerusakan dan mempersulit penilaian klaim. Surveyor perlu menilai kondisi yang tidak berubah dari saat kejadian.",
+          },
+          {
+            title: "Dokumentasi visual lengkap",
+            desc: "Foto dan video kondisi unit, lokasi kejadian, dan kondisi medan sekitar. Untuk kecelakaan yang melibatkan pihak lain, catat identitas dan plat nomor kendaraan lain.",
+          },
+          {
+            title: "Hubungi agen asuransi dalam 1 x 24 jam",
+            desc: "Meski batas pelaporan di polis umumnya 3 x 24 jam, melapor lebih cepat mempercepat jadwal survei dan proses klaim secara keseluruhan.",
+          },
+          {
+            title: "Jangan lakukan perbaikan sebelum survei",
+            desc: "Aturan yang paling sering dilanggar karena tekanan untuk segera berproduksi. Jika terpaksa memindahkan unit demi keselamatan, minta izin tertulis dari pihak asuransi dan dokumentasikan kondisi sebelum pemindahan.",
+          },
+          {
+            title: "Siapkan estimasi biaya perbaikan dari bengkel",
+            desc: "Surveyor akan meminta ini sebagai referensi penilaian. Lebih baik dapatkan dari minimal dua bengkel berbeda untuk perbandingan.",
+          },
+        ]}
+      />
 
-      <h2>Pertanyaan yang Sering Ditanyakan Kontraktor</h2>
-
-      <h3>Apakah asuransi alat berat bisa diklaim jika rusak karena banjir di area proyek?</h3>
-      <p>
-        Bisa, selama polis mencakup risiko bencana alam termasuk banjir — yang umumnya sudah
-        ada dalam polis EAR standar. Yang perlu dipastikan: lokasi kejadian (area proyek)
-        sesuai dengan wilayah yang dideklarasikan dalam polis, dan kerusakan bersifat tiba-tiba
-        bukan akibat unit dibiarkan di area yang sudah diketahui berpotensi banjir tanpa
-        tindakan pencegahan.
-      </p>
-
-      <h3>Bagaimana jika alat berat dicuri dari lokasi proyek?</h3>
-      <p>
-        Pencurian alat berat umumnya ditanggung dalam polis EAR, tapi dengan syarat ada
-        laporan polisi yang dibuat segera setelah kejadian diketahui. Untuk klaim pencurian,
-        biasanya ada masa tunggu (biasanya 60–90 hari) sebelum ganti rugi dibayarkan —
-        memberi waktu bagi pihak berwajib untuk melakukan pencarian.
-      </p>
-
-      <h3>Apakah operator alat berat perlu memiliki SIO untuk klaim bisa diproses?</h3>
-      <p>
-        Ya, di sebagian besar polis. SIO (Surat Izin Operator) adalah bukti bahwa operator
-        kompeten dan berlisensi menjalankan unit tersebut. Jika operator tidak memiliki SIO
-        yang valid saat kecelakaan terjadi, perusahaan asuransi berhak menolak klaim dengan
-        alasan kelalaian prosedur keselamatan. Pastikan SIO semua operator selalu diperbarui
-        sebelum masa berlakunya habis.
-      </p>
+      <SectionHeading icon={FileSearch}>Pertanyaan yang Sering Ditanyakan Kontraktor</SectionHeading>
+      <div className="space-y-3 not-prose">
+        {faqItems.map((item) => (
+          <details key={item.question} className="group p-5 rounded-xl border border-[#e2e8f0] bg-[#faf8f3]">
+            <summary className="font-semibold text-[#0a1628] cursor-pointer list-none flex items-center justify-between gap-3">
+              <span className="flex items-center gap-3">
+                <BadgeCheck className="w-[16px] h-[16px] text-[#c9a84c] shrink-0" strokeWidth={2} />
+                {item.question}
+              </span>
+              <span className="text-[#c9a84c] group-open:rotate-45 transition-transform text-xl leading-none shrink-0">+</span>
+            </summary>
+            <p className="text-[#374151] text-sm mt-3 mb-0 leading-relaxed pl-7">{item.answer}</p>
+          </details>
+        ))}
+      </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Siap Melindungi Armada Alat Berat Proyek Anda?
-        </h3>
+        <div className="flex items-center gap-2.5 mb-3">
+          <ShieldCheck className="w-5 h-5 text-[#c9a84c]" strokeWidth={2} />
+          <h3 className="font-display font-bold text-[#0a1628] m-0">
+            Siap Melindungi Armada Alat Berat Proyek Anda?
+          </h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Tidak perlu bingung memilih antara CAR dan EAR, atau menghitung nilai pertanggungan
           yang tepat sendirian. Rio akan membantu menganalisis kebutuhan proteksi armada Anda,
