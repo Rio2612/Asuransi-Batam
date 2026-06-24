@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       
       // Solusi Kanibalisme Konten: Blog → Halaman Induk Layanan
       { source: "/blog/asuransi-mobil-batam", destination: "/asuransi-kendaraan/asuransi-mobil-batam", permanent: true },
+      { source: "/blog/cara-klaim-asuransi-mobil", destination: "/blog/cara-klaim-asuransi-mobil-batam", permanent: true },
     ];
   },
 };
