@@ -6,7 +6,6 @@ import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { Ship, CheckCircle2 } from "lucide-react";
 
-
 export const metadata: Metadata = generateSEO({
   title: "Marine Hull Insurance Batam – Asuransi Lambung Kapal | Asuransi Batam",
   description:
