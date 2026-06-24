@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Asuransi Excavator dan Bulldozer di Batam – Proteksi, Coverage & Cara Klaim",
   description: "Excavator dan bulldozer adalah aset mahal yang rentan rusak di lapangan. Pelajari jenis perlindungan yang tepat, apa yang ditanggung, dan bagaimana cara mengasuransikan alat berat Anda di Batam.",
   alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer" },
+  languages: {
+      id: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
+      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam", },
   openGraph: {
     title: "Asuransi Excavator dan Bulldozer di Batam – Proteksi, Coverage & Cara Klaim",
     description: "Jenis perlindungan yang tepat, apa yang ditanggung, dan cara mengasuransikan alat berat Anda di Batam.",
