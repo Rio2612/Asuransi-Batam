@@ -1,6 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  Gavel,
+  Scale,
+  ShieldCheck,
+  Cog,
+  Users,
+  Wrench,
+  AlertTriangle,
+  MapPin,
+  Hammer,
+  Calculator,
+  ListChecks,
+  Truck,
+  Repeat,
+  FileSearch,
+  BadgeCheck,
+  Mountain,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Asuransi Alat Berat Pertambangan – Wajib, Apa yang Ditanggung & Cara Pilihnya",
@@ -18,6 +36,101 @@ const schema = {
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
 
+// FAQPage JSON-LD — sumber tunggal untuk schema & accordion FAQ visual di bawah.
+const faqItems = [
+  {
+    question: "Apakah asuransi alat berat tambang wajib secara hukum?",
+    answer:
+      "Tidak ada undang-undang yang secara eksplisit mewajibkan asuransi alat berat tambang. Namun Kepmen ESDM No. 1827 K/30/MEM/2018 mewajibkan manajemen risiko terhadap aset operasional, dan dalam praktiknya lembaga pembiayaan (leasing/KPM) hampir selalu mensyaratkan polis aktif selama masa angsuran — sehingga secara kontraktual menjadi kewajiban.",
+  },
+  {
+    question: "Apakah polis EAR biasa bisa dipakai untuk alat berat yang beroperasi di tambang?",
+    answer:
+      "Sebaiknya tidak tanpa klausul mining tambahan. Polis EAR standar untuk konstruksi umum tidak otomatis mencakup risiko spesifik tambang seperti tertimbun material longsor atau ground subsidence. Klaim berisiko ditolak jika ruang lingkup polis tidak menyebutkan operasi pertambangan secara eksplisit.",
+  },
+  {
+    question: "Apa perbedaan Agreed Value dan Indemnity Value dalam polis alat berat?",
+    answer:
+      "Agreed Value menetapkan nilai pertanggungan tetap yang sudah disepakati di awal polis, sehingga nilai klaim sudah pasti. Indemnity Value menghitung ganti rugi berdasarkan nilai pasar unit saat klaim terjadi, yang bisa lebih rendah akibat depresiasi. Untuk unit mahal dengan nilai fluktuatif, Agreed Value umumnya lebih menguntungkan.",
+  },
+  {
+    question: "Apakah biaya evakuasi alat berat dari lokasi tambang terpencil ditanggung polis?",
+    answer:
+      "Tergantung sublimit yang tercantum dalam polis. Evakuasi unit besar dari area tambang remote bisa sangat mahal, jadi pastikan ada sublimit khusus untuk ongkos evakuasi dan transportasi sebelum menandatangani polis.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+
+// --- Helper presentational components (lokal, konsisten dengan artikel sebelumnya) ---
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function SubHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h3 className="flex items-center gap-2.5 not-prose font-display font-bold text-[#0a1628] text-lg mt-8 mb-3">
+      <Icon className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
+      {children}
+    </h3>
+  );
+}
+
+function IconList({ items }: { items: { icon: React.ElementType; title?: string; text: React.ReactNode }[] }) {
+  return (
+    <ul className="not-prose grid sm:grid-cols-2 gap-3 my-5 list-none p-0">
+      {items.map((item, i) => {
+        const Icon = item.icon;
+        return (
+          <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+            <span className="flex items-center justify-center w-7 h-7 rounded-full bg-white border border-[#e2e8f0] shrink-0 mt-0.5">
+              <Icon className="w-[14px] h-[14px] text-[#1a4fa0]" strokeWidth={2} />
+            </span>
+            <span className="text-sm text-[#374151] leading-relaxed">
+              {item.title && <span className="font-semibold text-[#0a1628] block">{item.title}</span>}
+              {item.text}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }) {
+  return (
+    <ol className="not-prose relative my-6 list-none p-0 space-y-5 ml-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-4">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a1628] text-[#c9a84c] font-display font-bold text-sm shrink-0">
+            {i + 1}
+          </span>
+          <div className="pt-0.5">
+            <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
+            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
 export default function ArticleAsuransiAlatBeratPertambanganPage() {
   return (
     <ArticleLayout
@@ -28,22 +141,31 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
       readTime="10 menit"
       breadcrumbs={[{ label: "Asuransi Alat Berat Pertambangan", href: "/blog/asuransi-alat-berat-pertambangan" }]}
       schema={schema}
+      faqSchema={faqSchema}
     >
       <p>
         Operasi pertambangan — baik tambang nikel, bauksit, pasir kuarsa, maupun batu bara —
-        mengandalkan armada alat berat yang bekerja dalam kondisi ekstrem: debu silika, lumpur
-        tebal, kemiringan tajam, dan siklus operasi 10–20 jam per hari. Satu unit dump truck
-        tambang bisa bernilai Rp 3–5 miliar. Excavator mining class bisa mencapai Rp 5–8 miliar.
-        Ketika unit seperti ini mengalami kerusakan parah atau total loss tanpa perlindungan
-        asuransi, kerugiannya bukan hanya nilai unit — tapi juga kehilangan produksi harian
-        yang bisa mencapai puluhan juta rupiah per hari.
+        mengandalkan armada{" "}
+        <Link href="/asuransi-machinery/asuransi-alat-berat" className="font-medium">
+          alat berat
+        </Link>{" "}
+        yang bekerja dalam kondisi ekstrem: debu silika, lumpur tebal, kemiringan tajam, dan
+        siklus operasi 10–20 jam per hari. Satu unit dump truck tambang bisa bernilai
+        Rp 3–5 miliar. Excavator mining class bisa mencapai Rp 5–8 miliar — pelajari juga
+        karakteristik risiko spesifik{" "}
+        <Link href="/blog/asuransi-excavator-dan-bulldozer" className="font-medium">
+          asuransi excavator dan bulldozer
+        </Link>{" "}
+        sebelum menentukan jenis polis. Ketika unit seperti ini mengalami kerusakan parah atau
+        total loss tanpa perlindungan asuransi, kerugiannya bukan hanya nilai unit — tapi juga
+        kehilangan produksi harian yang bisa mencapai puluhan juta rupiah per hari.
       </p>
       <p>
         Ini bukan sekadar soal bijak atau tidak bijak. Dalam konteks pertambangan Indonesia,
         ada dimensi regulasi yang membuat asuransi alat berat bukan lagi pilihan opsional.
       </p>
 
-      <h2>Regulasi yang Mewajibkan Perlindungan Aset di Area Tambang</h2>
+      <SectionHeading icon={Gavel}>Regulasi yang Mewajibkan Perlindungan Aset di Area Tambang</SectionHeading>
       <p>
         Berdasarkan <strong>Kepmen ESDM No. 1827 K/30/MEM/2018</strong> tentang Pedoman
         Pelaksanaan Kaidah Teknik Pertambangan yang Baik, perusahaan pertambangan wajib
@@ -58,12 +180,15 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
         kontraktual, bukan pilihan.
       </p>
 
-      <h2>Perbedaan Risiko Tambang vs Proyek Konstruksi Biasa</h2>
+      <SectionHeading icon={Scale}>Perbedaan Risiko Tambang vs Proyek Konstruksi Biasa</SectionHeading>
       <p>
         Banyak pemilik alat berat yang mengasuransikan unit tambang mereka dengan polis standar
-        yang sama seperti untuk proyek konstruksi gedung. Ini adalah kesalahan yang berpotensi
-        mahal. Underwriter asuransi membedakan dua konteks ini karena profil risikonya memang
-        berbeda secara signifikan:
+        yang sama seperti untuk{" "}
+        <Link href="/blog/asuransi-alat-berat-proyek-konstruksi" className="font-medium">
+          proyek konstruksi gedung
+        </Link>
+        . Ini adalah kesalahan yang berpotensi mahal. Underwriter asuransi membedakan dua
+        konteks ini karena profil risikonya memang berbeda secara signifikan:
       </p>
 
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
@@ -101,9 +226,9 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
         karena dianggap di luar ruang lingkup yang diperjanjikan.
       </p>
 
-      <h2>Jenis Polis yang Relevan untuk Alat Berat Pertambangan</h2>
+      <SectionHeading icon={ShieldCheck}>Jenis Polis yang Relevan untuk Alat Berat Pertambangan</SectionHeading>
 
-      <h3>1. Equipment All Risk (EAR) dengan Klausul Mining</h3>
+      <SubHeading icon={Cog}>1. Equipment All Risk (EAR) dengan Klausul Mining</SubHeading>
       <p>
         Polis utama yang melindungi unit alat berat dari kerusakan fisik akibat semua risiko
         yang tidak dikecualikan secara eksplisit. Untuk operasi tambang, klausul mining
@@ -111,7 +236,7 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
         kerusakan akibat ground subsidence, dan operasi di area izin tambang (IUP).
       </p>
 
-      <h3>2. Machinery Breakdown (MB)</h3>
+      <SubHeading icon={Wrench}>2. Machinery Breakdown (MB)</SubHeading>
       <p>
         Perlindungan terhadap kerusakan mesin yang terjadi secara tiba-tiba dan tidak terduga
         akibat kegagalan mekanis internal — bukan akibat faktor eksternal. Contohnya: piston
@@ -120,7 +245,7 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
         tinggi mempercepat keausan komponen internal meski mesin tetap dirawat secara rutin.
       </p>
 
-      <h3>3. Third Party Liability (TPL)</h3>
+      <SubHeading icon={Users}>3. Third Party Liability (TPL)</SubHeading>
       <p>
         Di area tambang yang padat dengan pekerja, kendaraan ringan, dan infrastruktur,
         risiko alat berat menabrak atau merusak aset/orang lain cukup tinggi. Polis TPL
@@ -128,87 +253,118 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
         alat berat Anda.
       </p>
 
-      <h2>Yang Sering Tidak Ditanggung — Baca Sebelum Beli Polis</h2>
+      <SectionHeading icon={AlertTriangle}>Yang Sering Tidak Ditanggung — Baca Sebelum Beli Polis</SectionHeading>
       <p>
-        Ini bagian yang paling penting dan paling sering diabaikan. Beberapa pengecualian
-        umum yang perlu Anda pahami sebelum menandatangani polis:
+        Ini bagian yang paling penting dan paling sering diabaikan. Beberapa pengecualian umum
+        yang perlu Anda pahami sebelum menandatangani polis:
       </p>
-      <ul>
-        <li>
-          <strong>Keausan normal dan kerusakan bertahap:</strong> Komponen yang aus secara
-          perlahan karena usia dan penggunaan normal bukan tanggung jawab polis asuransi.
-          Ini termasuk penggantian filter, seal, dan komponen habis pakai lainnya.
-        </li>
-        <li>
-          <strong>Kerusakan akibat overloading yang disengaja:</strong> Jika dump truck
-          dimuati melebihi kapasitas yang tercantum dalam spesifikasi teknis, kerusakan
-          yang timbul biasanya tidak ditanggung.
-        </li>
-        <li>
-          <strong>Operasi di luar area yang dideklarasikan:</strong> Jika polis diterbitkan
-          untuk operasi di Batam namun unit digunakan di Kalimantan tanpa notifikasi,
-          klaim bisa ditolak karena perbedaan lokasi operasi.
-        </li>
-        <li>
-          <strong>Kerusakan saat unit dalam perbaikan atau modifikasi:</strong> Unit yang
-          sedang dibongkar di bengkel untuk perbaikan umumnya tidak dilindungi selama
-          proses tersebut berlangsung.
-        </li>
-      </ul>
+      <IconList
+        items={[
+          {
+            icon: Wrench,
+            title: "Keausan normal dan kerusakan bertahap",
+            text: "Komponen yang aus secara perlahan karena usia dan penggunaan normal bukan tanggung jawab polis asuransi, termasuk filter, seal, dan komponen habis pakai lainnya.",
+          },
+          {
+            icon: AlertTriangle,
+            title: "Kerusakan akibat overloading yang disengaja",
+            text: "Jika dump truck dimuati melebihi kapasitas yang tercantum dalam spesifikasi teknis, kerusakan yang timbul biasanya tidak ditanggung.",
+          },
+          {
+            icon: MapPin,
+            title: "Operasi di luar area yang dideklarasikan",
+            text: "Jika polis diterbitkan untuk operasi di Batam namun unit digunakan di Kalimantan tanpa notifikasi, klaim bisa ditolak karena perbedaan lokasi operasi.",
+          },
+          {
+            icon: Hammer,
+            title: "Kerusakan saat unit dalam perbaikan atau modifikasi",
+            text: "Unit yang sedang dibongkar di bengkel untuk perbaikan umumnya tidak dilindungi selama proses tersebut berlangsung.",
+          },
+        ]}
+      />
 
-      <h2>Cara Menghitung Premi Asuransi Alat Berat Tambang</h2>
+      <SectionHeading icon={Calculator}>Cara Menghitung Premi Asuransi Alat Berat Tambang</SectionHeading>
       <p>
         Tidak ada tarif baku yang dipublikasikan untuk asuransi alat berat seperti halnya
-        asuransi kendaraan bermotor (yang diatur OJK). Premi dihitung secara <em>case by
-        case</em> oleh underwriter berdasarkan sejumlah faktor:
+        asuransi kendaraan bermotor (yang diatur OJK). Premi dihitung secara <em>case by case</em>{" "}
+        oleh underwriter berdasarkan sejumlah faktor:
       </p>
-      <ul>
-        <li><strong>Jenis dan merek unit</strong> — merek dengan suku cadang mudah didapat cenderung premi lebih rendah</li>
-        <li><strong>Usia unit dan jam operasi (hour meter)</strong> — unit lebih tua dan jam tinggi = premi lebih tinggi</li>
-        <li><strong>Lokasi dan jenis operasi</strong> — tambang open pit lebih berisiko dari quarry biasa</li>
-        <li><strong>Nilai pertanggungan</strong> — apakah berdasarkan market value atau replacement value</li>
-        <li><strong>Rekam jejak klaim</strong> — perusahaan dengan histori klaim bersih mendapat rate lebih kompetitif</li>
-        <li><strong>Jumlah unit dalam satu polis</strong> — fleet policy untuk banyak unit biasanya lebih efisien</li>
-      </ul>
+      <IconList
+        items={[
+          { icon: Cog, text: "Jenis dan merek unit — merek dengan suku cadang mudah didapat cenderung premi lebih rendah" },
+          { icon: Repeat, text: "Usia unit dan jam operasi (hour meter) — unit lebih tua dan jam tinggi = premi lebih tinggi" },
+          { icon: Mountain, text: "Lokasi dan jenis operasi — tambang open pit lebih berisiko dari quarry biasa" },
+          { icon: Calculator, text: "Nilai pertanggungan — apakah berdasarkan market value atau replacement value" },
+          { icon: ListChecks, text: "Rekam jejak klaim — perusahaan dengan histori klaim bersih mendapat rate lebih kompetitif" },
+          { icon: Truck, text: "Jumlah unit dalam satu polis — fleet policy untuk banyak unit biasanya lebih efisien" },
+        ]}
+      />
       <p>
-        Sebagai gambaran umum, premi EAR untuk alat berat tambang biasanya berkisar antara
-        <strong> 1,5% hingga 3,5%</strong> dari nilai pertanggungan per tahun, tergantung
-        faktor-faktor di atas. Untuk mendapatkan angka yang akurat sesuai kondisi armada
-        Anda, konsultasi langsung dengan agen asuransi yang berpengalaman di sektor ini
-        adalah langkah yang paling tepat.
+        Sebagai gambaran umum, premi EAR untuk alat berat tambang biasanya berkisar antara{" "}
+        <strong>1,5% hingga 3,5%</strong> dari nilai pertanggungan per tahun, tergantung
+        faktor-faktor di atas. Untuk mendapatkan angka yang akurat sesuai kondisi armada Anda,
+        konsultasi langsung dengan agen asuransi yang berpengalaman di sektor ini adalah
+        langkah yang paling tepat.
       </p>
 
-      <h2>Tips Memilih Polis yang Tepat untuk Operasi Tambang Anda</h2>
-      <ol>
-        <li>
-          <strong>Pastikan ada klausul mining atau heavy equipment untuk tambang</strong> —
-          jangan terima polis standar yang tidak menyebutkan jenis operasi secara eksplisit.
-        </li>
-        <li>
-          <strong>Cek territorial coverage:</strong> Pastikan polis mencakup wilayah di mana
-          unit beroperasi, termasuk rute transit jika unit sering dipindahkan antar lokasi.
-        </li>
-        <li>
-          <strong>Bandingkan basis ganti rugi:</strong> Agreed Value (nilai tetap yang disepakati)
-          lebih menguntungkan dibanding Indemnity Value (nilai pasar saat klaim) untuk unit
-          mahal yang nilainya fluktuatif.
-        </li>
-        <li>
-          <strong>Perhatikan sublimit untuk ongkos evakuasi:</strong> Mengevakuasi excavator
-          dari area tambang terpencil bisa sangat mahal. Pastikan biaya ini masuk dalam
-          coverage atau ada sublimit yang memadai.
-        </li>
-        <li>
-          <strong>Gunakan fleet policy jika punya lebih dari 3 unit:</strong> Mengasuransikan
-          semua unit dalam satu polis fleet biasanya lebih hemat dan lebih mudah dikelola
-          dari sisi administrasi klaim.
-        </li>
-      </ol>
+      <SectionHeading icon={ListChecks}>Tips Memilih Polis yang Tepat untuk Operasi Tambang Anda</SectionHeading>
+      <Steps
+        items={[
+          {
+            title: "Pastikan ada klausul mining atau heavy equipment untuk tambang",
+            desc: "Jangan terima polis standar yang tidak menyebutkan jenis operasi secara eksplisit.",
+          },
+          {
+            title: "Cek territorial coverage",
+            desc: "Pastikan polis mencakup wilayah di mana unit beroperasi, termasuk rute transit jika unit sering dipindahkan antar lokasi.",
+          },
+          {
+            title: "Bandingkan basis ganti rugi",
+            desc: "Agreed Value (nilai tetap yang disepakati) lebih menguntungkan dibanding Indemnity Value (nilai pasar saat klaim) untuk unit mahal yang nilainya fluktuatif.",
+          },
+          {
+            title: "Perhatikan sublimit untuk ongkos evakuasi",
+            desc: (
+              <>
+                Mengevakuasi excavator dari area tambang terpencil bisa sangat mahal — pelajari
+                juga seluk-beluk{" "}
+                <Link href="/blog/asuransi-pengiriman-mesin-alat-berat" className="font-medium">
+                  asuransi pengiriman mesin alat berat
+                </Link>{" "}
+                agar tidak ada celah perlindungan saat unit dipindahkan.
+              </>
+            ),
+          },
+          {
+            title: "Gunakan fleet policy jika punya lebih dari 3 unit",
+            desc: "Mengasuransikan semua unit dalam satu polis fleet biasanya lebih hemat dan lebih mudah dikelola dari sisi administrasi klaim.",
+          },
+        ]}
+      />
+
+      <SectionHeading icon={FileSearch}>Pertanyaan yang Sering Diajukan</SectionHeading>
+      <div className="space-y-3 not-prose">
+        {faqItems.map((item) => (
+          <details key={item.question} className="group p-5 rounded-xl border border-[#e2e8f0] bg-[#faf8f3]">
+            <summary className="font-semibold text-[#0a1628] cursor-pointer list-none flex items-center justify-between gap-3">
+              <span className="flex items-center gap-3">
+                <BadgeCheck className="w-[16px] h-[16px] text-[#c9a84c] shrink-0" strokeWidth={2} />
+                {item.question}
+              </span>
+              <span className="text-[#c9a84c] group-open:rotate-45 transition-transform text-xl leading-none shrink-0">+</span>
+            </summary>
+            <p className="text-[#374151] text-sm mt-3 mb-0 leading-relaxed pl-7">{item.answer}</p>
+          </details>
+        ))}
+      </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Diskusikan Kebutuhan Asuransi Alat Berat Tambang Anda
-        </h3>
+        <div className="flex items-center gap-2.5 mb-3">
+          <ShieldCheck className="w-5 h-5 text-[#c9a84c]" strokeWidth={2} />
+          <h3 className="font-display font-bold text-[#0a1628] m-0">
+            Diskusikan Kebutuhan Asuransi Alat Berat Tambang Anda
+          </h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Setiap armada tambang punya profil risiko yang unik. Rio dapat membantu menganalisis
           kebutuhan coverage yang sesuai, membandingkan penawaran dari beberapa perusahaan
