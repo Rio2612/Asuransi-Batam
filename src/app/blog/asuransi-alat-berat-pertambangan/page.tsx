@@ -23,9 +23,14 @@ import {
 export const metadata: Metadata = {
   title: "Asuransi Alat Berat Pertambangan – Wajib, Apa yang Ditanggung & Cara Pilihnya",
   description: "Operasi tambang tanpa asuransi alat berat adalah risiko finansial yang terlalu besar. Pelajari jenis coverage yang wajib ada, regulasi K3 yang berlaku, dan cara memilih polis yang tepat untuk alat berat di area pertambangan.",
-  alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-pertambangan" },
+  alternates: {
+    canonical: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-pertambangan",
+    languages: {
+      id: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-pertambangan",
+      en: "https://asuransibatam.biz.id/en/blog/mining-heavy-equipment-insurance",
+    },
+  },
 };
-
 const schema = {
   "@context": "https://schema.org",
   "@type": "Article",
