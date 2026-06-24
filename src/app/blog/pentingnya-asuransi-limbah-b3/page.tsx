@@ -1,6 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  AlertTriangle,
+  Beaker,
+  Battery,
+  Droplets,
+  PaintBucket,
+  FlaskConical,
+  Factory,
+  Gavel,
+  ShieldCheck,
+  Landmark,
+  ScrollText,
+  Megaphone,
+  Waves,
+  Fish,
+  Anchor,
+  Globe2,
+  Wallet,
+  Stethoscope,
+  Scale,
+  Siren,
+  FileSearch,
+  ClipboardList,
+  FileSignature,
+  CreditCard,
+  BadgeCheck,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam",
@@ -52,6 +79,55 @@ const faqSchema = {
   })),
 };
 
+// --- Helper presentational components (lokal, tanpa dependensi baru) ---
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function IconList({ items }: { items: { icon: React.ElementType; text: React.ReactNode }[] }) {
+  return (
+    <ul className="not-prose grid sm:grid-cols-2 gap-3 my-5 list-none p-0">
+      {items.map((item, i) => {
+        const Icon = item.icon;
+        return (
+          <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+            <span className="flex items-center justify-center w-7 h-7 rounded-full bg-white border border-[#e2e8f0] shrink-0 mt-0.5">
+              <Icon className="w-[14px] h-[14px] text-[#1a4fa0]" strokeWidth={2} />
+            </span>
+            <span className="text-sm text-[#374151] leading-relaxed">{item.text}</span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function Steps({ items }: { items: { title: string; desc?: string }[] }) {
+  return (
+    <ol className="not-prose relative my-6 list-none p-0 space-y-5 ml-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-4">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a1628] text-[#c9a84c] font-display font-bold text-sm shrink-0">
+            {i + 1}
+          </span>
+          <div className="pt-0.5">
+            <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
+            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
 export default function ArticleLimbahB3Page() {
   return (
     <ArticleLayout
@@ -75,94 +151,119 @@ export default function ArticleLimbahB3Page() {
         yang wajib dipertimbangkan setiap pelaku usaha.
       </p>
 
-      <h2>Apa itu Limbah B3?</h2>
+      <SectionHeading icon={Beaker}>Apa itu Limbah B3?</SectionHeading>
       <p>
         Limbah B3 adalah sisa usaha atau kegiatan yang mengandung bahan berbahaya dan/atau beracun
         yang karena sifat, konsentrasi, dan/atau jumlahnya dapat mencemarkan lingkungan hidup dan
         membahayakan kesehatan manusia.
       </p>
       <p>Contoh limbah B3 yang umum ditemukan di industri Batam:</p>
-      <ul>
-        <li>Oli bekas dan cairan hidrolik</li>
-        <li>Bahan kimia proses industri</li>
-        <li>Baterai dan aki bekas</li>
-        <li>Limbah cat dan solven</li>
-        <li>Limbah dari proses galvanis</li>
-        <li>Sludge IPAL (instalasi pengolahan air limbah)</li>
-      </ul>
+      <IconList
+        items={[
+          { icon: Droplets, text: "Oli bekas dan cairan hidrolik" },
+          { icon: FlaskConical, text: "Bahan kimia proses industri" },
+          { icon: Battery, text: "Baterai dan aki bekas" },
+          { icon: PaintBucket, text: "Limbah cat dan solven" },
+          { icon: Factory, text: "Limbah dari proses galvanis" },
+          { icon: Beaker, text: "Sludge IPAL (instalasi pengolahan air limbah)" },
+        ]}
+      />
 
-      <h2>Regulasi Wajib: PP No. 22 Tahun 2021</h2>
+      <SectionHeading icon={ScrollText}>Regulasi Wajib: PP No. 22 Tahun 2021</SectionHeading>
       <p>
         Berdasarkan Peraturan Pemerintah No. 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan
         Pengelolaan Lingkungan Hidup, setiap pelaku usaha yang menghasilkan atau mengelola limbah B3{" "}
         <strong>wajib memiliki jaminan finansial</strong>.
       </p>
       <p>Jaminan finansial ini dapat berupa salah satu dari tiga bentuk berikut:</p>
-      <ul>
-        <li>Dana jaminan (rekening bank khusus)</li>
-        <li>
-          <Link href="/asuransi-liability/asuransi-limbah-b3" className="font-medium">
-            Asuransi pencemaran lingkungan
-          </Link>
-        </li>
-        <li>Jaminan dari lembaga keuangan lain</li>
-      </ul>
+      <IconList
+        items={[
+          { icon: Landmark, text: "Dana jaminan (rekening bank khusus)" },
+          {
+            icon: ShieldCheck,
+            text: (
+              <Link href="/asuransi-liability/asuransi-limbah-b3" className="font-medium">
+                Asuransi pencemaran lingkungan
+              </Link>
+            ),
+          },
+          { icon: Wallet, text: "Jaminan dari lembaga keuangan lain" },
+        ]}
+      />
       <p>
         Dari ketiga opsi tersebut, asuransi adalah pilihan paling praktis dan{" "}
         <em>cost-effective</em> dibandingkan harus menyisihkan dana tunai dalam jumlah besar yang
         seharusnya bisa digunakan sebagai modal kerja.
       </p>
 
-      <h2>Risiko Jika Tidak Memiliki Asuransi Limbah B3</h2>
+      <SectionHeading icon={AlertTriangle}>Risiko Jika Tidak Memiliki Asuransi Limbah B3</SectionHeading>
       <p>Sanksi bagi industri yang tidak memenuhi kewajiban jaminan finansial cukup berat:</p>
 
-      <div className="my-6 grid sm:grid-cols-2 gap-4">
+      <div className="not-prose my-6 grid sm:grid-cols-2 gap-4">
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
-          <p className="text-sm font-semibold text-[#0a1628] mb-1">Sanksi Administratif</p>
+          <div className="flex items-center gap-2.5 mb-2">
+            <Gavel className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
+            <p className="text-sm font-semibold text-[#0a1628] m-0">Sanksi Administratif</p>
+          </div>
           <p className="text-sm text-[#64748b] m-0">Teguran, paksaan pemerintah, hingga pembekuan izin usaha.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
-          <p className="text-sm font-semibold text-[#0a1628] mb-1">Sanksi Pidana</p>
+          <div className="flex items-center gap-2.5 mb-2">
+            <Scale className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
+            <p className="text-sm font-semibold text-[#0a1628] m-0">Sanksi Pidana</p>
+          </div>
           <p className="text-sm text-[#64748b] m-0">Penjara 1–10 tahun dan denda hingga Rp 10 miliar.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
-          <p className="text-sm font-semibold text-[#0a1628] mb-1">Tuntutan Perdata</p>
+          <div className="flex items-center gap-2.5 mb-2">
+            <FileSignature className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
+            <p className="text-sm font-semibold text-[#0a1628] m-0">Tuntutan Perdata</p>
+          </div>
           <p className="text-sm text-[#64748b] m-0">Klaim ganti rugi dari masyarakat yang terdampak pencemaran.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
-          <p className="text-sm font-semibold text-[#0a1628] mb-1">Reputasi Bisnis</p>
+          <div className="flex items-center gap-2.5 mb-2">
+            <Megaphone className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
+            <p className="text-sm font-semibold text-[#0a1628] m-0">Reputasi Bisnis</p>
+          </div>
           <p className="text-sm text-[#64748b] m-0">Pemberitaan negatif yang merusak citra perusahaan di mata mitra dan investor.</p>
         </div>
       </div>
 
-      <h2>Kenapa Batam Punya Risiko Lebih Tinggi?</h2>
+      <SectionHeading icon={Waves}>Kenapa Batam Punya Risiko Lebih Tinggi?</SectionHeading>
       <p>Batam sebagai pulau yang dikelilingi laut memiliki sensitivitas ekosistem yang tinggi:</p>
-      <ul>
-        <li>Pencemaran yang mencapai laut bisa merusak ekosistem mangrove dan terumbu karang</li>
-        <li>Berdampak pada industri pariwisata dan perikanan lokal</li>
-        <li>Potensi tuntutan dari nelayan dan komunitas pesisir</li>
-        <li>Kedekatan dengan Singapura dan Malaysia membuat regulasi lingkungan lebih diperhatikan</li>
-      </ul>
+      <IconList
+        items={[
+          { icon: Waves, text: "Pencemaran yang mencapai laut bisa merusak ekosistem mangrove dan terumbu karang" },
+          { icon: Anchor, text: "Berdampak pada industri pariwisata dan perikanan lokal" },
+          { icon: Fish, text: "Potensi tuntutan dari nelayan dan komunitas pesisir" },
+          { icon: Globe2, text: "Kedekatan dengan Singapura dan Malaysia membuat regulasi lingkungan lebih diperhatikan" },
+        ]}
+      />
 
-      <h2>Apa yang Ditanggung Asuransi Limbah B3?</h2>
-      <ul>
-        <li>Biaya pembersihan dan pemulihan lahan yang tercemar</li>
-        <li>Biaya pemulihan ekosistem perairan</li>
-        <li>Kompensasi kesehatan masyarakat terdampak</li>
-        <li>Biaya hukum dan pembelaan</li>
-        <li>Biaya respons darurat saat terjadi kebocoran</li>
-        <li>Tuntutan hukum dari pemerintah dan masyarakat</li>
-      </ul>
+      <SectionHeading icon={ShieldCheck}>Apa yang Ditanggung Asuransi Limbah B3?</SectionHeading>
+      <IconList
+        items={[
+          { icon: Droplets, text: "Biaya pembersihan dan pemulihan lahan yang tercemar" },
+          { icon: Waves, text: "Biaya pemulihan ekosistem perairan" },
+          { icon: Stethoscope, text: "Kompensasi kesehatan masyarakat terdampak" },
+          { icon: Scale, text: "Biaya hukum dan pembelaan" },
+          { icon: Siren, text: "Biaya respons darurat saat terjadi kebocoran" },
+          { icon: Gavel, text: "Tuntutan hukum dari pemerintah dan masyarakat" },
+        ]}
+      />
 
-      <h2>Bagaimana Cara Mendapatkan Asuransi Limbah B3?</h2>
+      <SectionHeading icon={ClipboardList}>Bagaimana Cara Mendapatkan Asuransi Limbah B3?</SectionHeading>
       <p>Proses mendapatkan asuransi limbah B3 umumnya melalui lima langkah berikut:</p>
-      <ol>
-        <li>Assessment risiko oleh konsultan asuransi</li>
-        <li>Pengisian questionnaire tentang jenis dan volume limbah</li>
-        <li>Penentuan nilai pertanggungan yang sesuai</li>
-        <li>Penerbitan polis dan pembayaran premi</li>
-        <li>Polis diterima sebagai bukti jaminan finansial</li>
-      </ol>
+      <Steps
+        items={[
+          { title: "Assessment risiko", desc: "Dilakukan oleh konsultan asuransi terhadap operasional perusahaan." },
+          { title: "Pengisian questionnaire", desc: "Mencakup jenis dan volume limbah yang dihasilkan." },
+          { title: "Penentuan nilai pertanggungan", desc: "Disesuaikan dengan skala risiko dan operasional." },
+          { title: "Penerbitan polis & pembayaran premi", desc: "Setelah nilai pertanggungan disepakati." },
+          { title: "Polis diterima", desc: "Menjadi bukti sah pemenuhan jaminan finansial sesuai PP 22/2021." },
+        ]}
+      />
       <p>
         Jika perusahaan Anda belum yakin jenis perlindungan liability apa yang paling sesuai,
         Anda bisa mempelajari lebih lanjut ragam{" "}
@@ -172,21 +273,27 @@ export default function ArticleLimbahB3Page() {
         yang tersedia sebelum menentukan nilai pertanggungan.
       </p>
 
-      <h2>Pertanyaan yang Sering Diajukan</h2>
-      <div className="space-y-4 not-prose">
+      <SectionHeading icon={FileSearch}>Pertanyaan yang Sering Diajukan</SectionHeading>
+      <div className="space-y-3 not-prose">
         {faqItems.map((item) => (
           <details key={item.question} className="group p-5 rounded-xl border border-[#e2e8f0] bg-[#faf8f3]">
             <summary className="font-semibold text-[#0a1628] cursor-pointer list-none flex items-center justify-between gap-3">
-              {item.question}
-              <span className="text-[#c9a84c] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+              <span className="flex items-center gap-3">
+                <BadgeCheck className="w-[16px] h-[16px] text-[#c9a84c] shrink-0" strokeWidth={2} />
+                {item.question}
+              </span>
+              <span className="text-[#c9a84c] group-open:rotate-45 transition-transform text-xl leading-none shrink-0">+</span>
             </summary>
-            <p className="text-[#374151] text-sm mt-3 mb-0 leading-relaxed">{item.answer}</p>
+            <p className="text-[#374151] text-sm mt-3 mb-0 leading-relaxed pl-7">{item.answer}</p>
           </details>
         ))}
       </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">Pastikan Bisnis Anda Patuh Regulasi</h3>
+        <div className="flex items-center gap-2.5 mb-3">
+          <CreditCard className="w-5 h-5 text-[#c9a84c]" strokeWidth={2} />
+          <h3 className="font-display font-bold text-[#0a1628] m-0">Pastikan Bisnis Anda Patuh Regulasi</h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Konsultasikan kebutuhan asuransi limbah B3 Anda dengan Rio. Kami membantu industri di
           Batam memenuhi kewajiban hukum lingkungan.
