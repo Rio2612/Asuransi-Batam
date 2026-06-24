@@ -13,12 +13,14 @@ interface ArticleLayoutProps {
   readTime: string;
   breadcrumbs: Breadcrumb[];
   schema: Record<string, unknown>;
+  /** Optional FAQPage JSON-LD. Pass the same object used for the visual FAQ list. */
+  faqSchema?: Record<string, unknown>;
   children: React.ReactNode;
 }
 
 export default function ArticleLayout({
   title, description, date, category, readTime,
-  breadcrumbs, schema, children,
+  breadcrumbs, schema, faqSchema, children,
 }: ArticleLayoutProps) {
   // Auto-detect language from breadcrumb href — same pattern as ProductPageLayout & Footer
   const isEN = breadcrumbs[0]?.href?.startsWith("/en");
@@ -34,9 +36,41 @@ export default function ArticleLayout({
       : "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
   };
 
+  // BreadcrumbList JSON-LD — generated from the same breadcrumbs prop used for the visual nav,
+  // so the two can never drift out of sync. Includes Home + Blog as the first two items,
+  // matching what is actually rendered in the <nav> below.
+  const breadcrumbListSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: t.home,
+        item: `https://asuransibatam.biz.id${t.homeHref === "/" ? "" : t.homeHref}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: t.blog,
+        item: `https://asuransibatam.biz.id${t.blogHref}`,
+      },
+      ...breadcrumbs.map((b, i) => ({
+        "@type": "ListItem",
+        position: i + 3,
+        name: b.label,
+        item: `https://asuransibatam.biz.id${b.href}`,
+      })),
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      )}
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
