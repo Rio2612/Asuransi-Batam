@@ -21,12 +21,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer" },
   languages: {
       id: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
-      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam", },
+      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam", 
   openGraph: {
     title: "Asuransi Excavator dan Bulldozer di Batam – Proteksi, Coverage & Cara Klaim",
     description: "Jenis perlindungan yang tepat, apa yang ditanggung, dan cara mengasuransikan alat berat Anda di Batam.",
     url: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
     type: "article",
+    },
   },
 };
 
