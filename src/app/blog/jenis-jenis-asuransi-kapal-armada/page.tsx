@@ -49,34 +49,28 @@ const breadcrumbSchema = schemaBreadcrumb([
 
 const faqData = [
   {
-    question: "Apa perbedaan Marine Hull dan Marine Cargo Insurance?",
-    answer:
-      "Marine Hull Insurance melindungi fisik kapal itu sendiri — lambung, mesin, peralatan navigasi — dari risiko kerusakan atau kehilangan. Sementara Marine Cargo Insurance melindungi muatan atau barang yang diangkut di dalam kapal. Pemilik armada idealnya memiliki keduanya agar perlindungan bersifat menyeluruh.",
+    q: "Apa perbedaan Marine Hull dan Marine Cargo Insurance?",
+    a: "Marine Hull Insurance melindungi fisik kapal itu sendiri — lambung, mesin, peralatan navigasi — dari risiko kerusakan atau kehilangan. Sementara Marine Cargo Insurance melindungi muatan atau barang yang diangkut di dalam kapal. Pemilik armada idealnya memiliki keduanya agar perlindungan bersifat menyeluruh.",
   },
   {
-    question: "Apakah kapal tongkang wajib diasuransikan di Batam?",
-    answer:
-      "Secara regulasi, kapal komersial termasuk tongkang yang beroperasi di perairan Indonesia wajib memiliki asuransi P&I (Protection & Indemnity) minimal untuk menanggung kewajiban kepada pihak ketiga. Selain itu, perbankan dan lembaga pembiayaan umumnya mensyaratkan Marine Hull Insurance sebagai jaminan kredit.",
+    q: "Apakah kapal tongkang wajib diasuransikan di Batam?",
+    a: "Secara regulasi, kapal komersial termasuk tongkang yang beroperasi di perairan Indonesia wajib memiliki asuransi P&I (Protection & Indemnity) minimal untuk menanggung kewajiban kepada pihak ketiga. Selain itu, perbankan dan lembaga pembiayaan umumnya mensyaratkan Marine Hull Insurance sebagai jaminan kredit.",
   },
   {
-    question: "Berapa kisaran premi asuransi kapal di Batam?",
-    answer:
-      "Premi Marine Hull Insurance umumnya berkisar 0,5% – 1,5% dari nilai kapal per tahun, tergantung usia kapal, jenis operasi, rute pelayaran, dan rekam jejak klaim. Untuk tongkang dengan nilai Rp 10 miliar, premi bisa berkisar Rp 50–150 juta per tahun. Konsultasikan kebutuhan spesifik armada Anda untuk mendapatkan penawaran yang kompetitif.",
+    q: "Berapa kisaran premi asuransi kapal di Batam?",
+    a: "Premi Marine Hull Insurance umumnya berkisar 0,5% – 1,5% dari nilai kapal per tahun, tergantung usia kapal, jenis operasi, rute pelayaran, dan rekam jejak klaim. Untuk tongkang dengan nilai Rp 10 miliar, premi bisa berkisar Rp 50–150 juta per tahun. Konsultasikan kebutuhan spesifik armada Anda untuk mendapatkan penawaran yang kompetitif.",
   },
   {
-    question: "Apa itu P&I Insurance dan apakah pemilik kapal di Batam membutuhkannya?",
-    answer:
-      "P&I (Protection & Indemnity) Insurance adalah asuransi tanggung gugat pihak ketiga untuk pemilik kapal, mencakup kewajiban atas kecelakaan awak, kerusakan pelabuhan, pencemaran lingkungan, dan tabrakan. Di Batam yang memiliki lalu lintas pelayaran internasional tinggi, P&I sangat direkomendasikan — bahkan wajib bagi kapal yang memasuki terminal internasional.",
+    q: "Apa itu P&I Insurance dan apakah pemilik kapal di Batam membutuhkannya?",
+    a: "P&I (Protection & Indemnity) Insurance adalah asuransi tanggung gugat pihak ketiga untuk pemilik kapal, mencakup kewajiban atas kecelakaan awak, kerusakan pelabuhan, pencemaran lingkungan, dan tabrakan. Di Batam yang memiliki lalu lintas pelayaran internasional tinggi, P&I sangat direkomendasikan — bahkan wajib bagi kapal yang memasuki terminal internasional.",
   },
   {
-    question: "Apakah asuransi kapal menanggung risiko pembajakan di perairan Batam?",
-    answer:
-      "Risiko pembajakan dan perampasan (piracy) umumnya termasuk dalam klausul War Risk atau War, Strikes, Riots and Civil Commotions (WSRCC) yang merupakan polis terpisah. Perairan Batam dan Selat Malaka masuk dalam kategori area risiko tinggi, sehingga War Risk sangat direkomendasikan untuk armada yang beroperasi di jalur ini.",
+    q: "Apakah asuransi kapal menanggung risiko pembajakan di perairan Batam?",
+    a: "Risiko pembajakan dan perampasan (piracy) umumnya termasuk dalam klausul War Risk atau War, Strikes, Riots and Civil Commotions (WSRCC) yang merupakan polis terpisah. Perairan Batam dan Selat Malaka masuk dalam kategori area risiko tinggi, sehingga War Risk sangat direkomendasikan untuk armada yang beroperasi di jalur ini.",
   },
   {
-    question: "Bagaimana cara klaim asuransi kapal jika terjadi kecelakaan di Batam?",
-    answer:
-      "Segera laporkan insiden ke perusahaan asuransi dalam 24–48 jam setelah kejadian. Dokumentasikan kerusakan dengan foto dan video, buat laporan Berita Acara Kecelakaan, hubungi Syahbandar setempat untuk membuat laporan resmi, dan koordinasikan dengan surveyor asuransi. Sebagai konsultan, saya siap mendampingi proses klaim dari awal hingga selesai.",
+    q: "Bagaimana cara klaim asuransi kapal jika terjadi kecelakaan di Batam?",
+    a: "Segera laporkan insiden ke perusahaan asuransi dalam 24–48 jam setelah kejadian. Dokumentasikan kerusakan dengan foto dan video, buat laporan Berita Acara Kecelakaan, hubungi Syahbandar setempat untuk membuat laporan resmi, dan koordinasikan dengan surveyor asuransi. Sebagai konsultan, saya siap mendampingi proses klaim dari awal hingga selesai.",
   },
 ];
 
