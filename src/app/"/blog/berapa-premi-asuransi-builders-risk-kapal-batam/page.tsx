@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { generateSEO, schemaArticle, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
-import { WHATSAPP_URL, SITE } from "@/lib/constants";
+import { WHATSAPP_URL } from "@/lib/constants";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
   Calculator,
@@ -267,6 +267,7 @@ export default function Page() {
           alt="Rio menangani proses klaim Builder's Risk Insurance di galangan kapal Batam"
           width={1200}
           height={800}
+          sizes="(max-width: 768px) 100vw, 896px"
           className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
         />
         <p className="text-center text-sm text-gray-500 mt-3">
@@ -292,6 +293,7 @@ export default function Page() {
           alt="Rio bersama owner kapal dan pihak asuransi di depan kapal yang sedang dibangun di galangan Tanjung Uncang, Batam"
           width={1200}
           height={800}
+          sizes="(max-width: 768px) 100vw, 896px"
           className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
         />
         <p className="text-center text-sm text-gray-500 mt-3">
@@ -313,6 +315,7 @@ export default function Page() {
           alt="Kapal dalam proses pembangunan di galangan kapal Batam, ilustrasi proyek yang membutuhkan Builder's Risk Insurance"
           width={1200}
           height={800}
+          sizes="(max-width: 768px) 100vw, 896px"
           className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
         />
         <p className="text-center text-sm text-gray-500 mt-3">
@@ -455,7 +458,9 @@ export default function Page() {
           akurat.
         </p>
         <a
-          href={WHATSAPP_URL}
+          href={WHATSAPP_URL(
+            "Halo Rio, saya ingin konsultasi estimasi premi Builder's Risk Insurance untuk proyek kapal saya di Batam."
+          )}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-[#c9a84c] hover:bg-[#f0d080] text-[#0a1628] font-semibold px-6 py-3 rounded-xl transition-colors relative z-10"
