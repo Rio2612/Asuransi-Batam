@@ -1,10 +1,19 @@
 // app/asuransi-marine/builders-risk/page.tsx
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
-import { Wrench, CheckCircle2 } from "lucide-react";
+import {
+  Wrench,
+  CheckCircle2,
+  ShieldCheck,
+  FileSignature,
+  HandCoins,
+  ClipboardCheck,
+} from "lucide-react";
 
 export const metadata: Metadata = generateSEO({
   title: "Builder's Risk Insurance Batam – Asuransi Pembangunan Kapal | Asuransi Batam",
@@ -73,6 +82,14 @@ const FAQS = [
     q: "Apa yang dimaksud dengan Increased Value (IV) dalam Builder's Risk?",
     a: "Increased Value adalah tambahan pertanggungan yang memberikan kompensasi atas selisih antara nilai kapal setelah selesai dibangun dan nilai pertanggungan utama, terutama jika nilai kapal meningkat secara signifikan selama proses pembangunan.",
   },
+  {
+    q: "Apa hubungan Builder's Risk Insurance dengan Performance Bond pada kontrak galangan?",
+    a: "Builder's Risk Insurance melindungi objek fisik kapal dari risiko kerusakan selama konstruksi, sedangkan Performance Bond menjamin bahwa galangan akan menyelesaikan pekerjaan sesuai kontrak. Keduanya sering disyaratkan bersamaan dalam kontrak pembangunan kapal karena melindungi risiko yang berbeda — satu pada aset, satu pada kepastian penyelesaian proyek.",
+  },
+  {
+    q: "Apakah saya perlu Advance Payment Bond jika sudah memiliki Builder's Risk Insurance?",
+    a: "Keduanya melindungi hal berbeda dan tidak saling menggantikan. Advance Payment Bond melindungi pemilik kapal apabila galangan gagal mengembalikan uang muka (down payment) yang sudah dibayarkan, sementara Builder's Risk Insurance melindungi nilai fisik kapal itu sendiri selama proses pembangunan. Banyak kontrak pembangunan kapal mensyaratkan kombinasi keduanya untuk perlindungan menyeluruh.",
+  },
 ];
 
 const BENEFITS = [
@@ -108,6 +125,33 @@ const STAGES = [
     no: "04",
     title: "Sea Trial & Penyerahan",
     desc: "Perlindungan extended hingga uji coba laut selesai dan kapal diserahkan kepada pemilik.",
+  },
+];
+
+const HOW_TO_GET = [
+  {
+    no: "01",
+    icon: ClipboardCheck,
+    title: "Konsultasi & Penilaian Risiko Awal",
+    desc: "Sampaikan spesifikasi proyek — jenis kapal, total contract value, durasi konstruksi, dan metode kerja galangan — agar kebutuhan cakupan bisa dipetakan secara akurat sejak awal.",
+  },
+  {
+    no: "02",
+    icon: ShieldCheck,
+    title: "Penentuan Sum Insured & Scope of Cover",
+    desc: "Nilai pertanggungan ditentukan berdasarkan total contract value, bukan estimasi kasar. Scope of cover juga disesuaikan apakah mencakup sea trial dan Increased Value atau tidak.",
+  },
+  {
+    no: "03",
+    icon: FileSignature,
+    title: "Survey Teknis & Penerbitan Polis",
+    desc: "Underwriter atau surveyor menilai kondisi galangan dan metode konstruksi sebelum menerbitkan polis — idealnya selesai sebelum tahap keel laying dimulai agar tidak ada gap perlindungan.",
+  },
+  {
+    no: "04",
+    icon: HandCoins,
+    title: "Monitoring Selama Proyek Berjalan",
+    desc: "Laporkan perubahan scope, perpanjangan durasi, atau penambahan sea trial kepada pihak asuransi agar cakupan polis tetap relevan hingga kapal diserahkan.",
   },
 ];
 
@@ -235,6 +279,229 @@ export default function BuildersRiskPage() {
                 <span className="text-sm text-gray-700">{b}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Studi Kasus Nyata (E-E-A-T: Experience) ─── */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <SectionHeader
+            eyebrow="Studi Kasus Nyata"
+            title="Pengalaman Langsung Menangani Klaim Builder's Risk di Batam"
+            subtitle="Bukan teori semata — berikut proses nyata penanganan klaim Builder's Risk Insurance yang pernah saya tangani langsung di salah satu galangan kapal Tanjung Uncang, Batam."
+          />
+
+          <div className="space-y-10">
+            <div>
+              <Image
+                src="/images/potoartikel/klaimbuilderisk.webp"
+                alt="Rio menangani proses klaim Builder's Risk Insurance di galangan kapal Batam"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 896px"
+                className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
+              />
+              <p className="text-center text-sm text-gray-500 mt-3">
+                Proses dokumentasi dan penanganan klaim Builder&apos;s Risk langsung di lokasi
+                galangan, Batam.
+              </p>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed">
+              Pada proyek pembangunan kapal yang sedang berjalan di salah satu galangan Tanjung
+              Uncang, terjadi insiden teknis pada tahap konstruksi yang menyebabkan kerusakan pada
+              sebagian struktur kapal. Sebagai konsultan yang mendampingi proses asuransinya,
+              langkah pertama yang dilakukan adalah memastikan dokumentasi kerusakan — foto, video,
+              dan kronologi kejadian — dilakukan secepat mungkin sebelum proses perbaikan dimulai.
+              Dokumentasi awal ini krusial karena surveyor asuransi memerlukan bukti kondisi riil di
+              lapangan untuk menilai cakupan klaim sesuai polis yang berlaku.
+            </p>
+
+            <div>
+              <Image
+                src="/images/potoartikel/Potobersamabuilderisk.webp"
+                alt="Rio bersama owner kapal dan pihak asuransi di depan kapal yang sedang dibangun di galangan Tanjung Uncang, Batam"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 896px"
+                className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
+              />
+              <p className="text-center text-sm text-gray-500 mt-3">
+                Koordinasi langsung bersama owner kapal dan pihak asuransi di galangan Tanjung
+                Uncang, Batam.
+              </p>
+            </div>
+
+            <p className="text-gray-700 leading-relaxed">
+              Setelah dokumentasi awal selesai, koordinasi dilakukan bersama pihak galangan, owner
+              kapal, dan tim asuransi untuk menyamakan kronologi kejadian serta estimasi nilai
+              kerugian. Diskusi teknis ini dilakukan langsung di lokasi proyek agar seluruh pihak
+              memiliki pemahaman yang sama terhadap kondisi kapal dan cakupan polis yang berlaku.
+              Hasil akhirnya, klaim dapat diproses dan disetujui karena polis Builder&apos;s Risk
+              yang digunakan mencakup risiko konstruksi sejak tahap awal pembangunan — sehingga
+              kerugian akibat insiden teknis tersebut tertanggung sesuai ketentuan polis.
+            </p>
+
+            <div>
+              <Image
+                src="/images/potoartikel/kapalsedangdibangun.webp"
+                alt="Kapal dalam proses pembangunan di galangan kapal Batam, ilustrasi proyek yang membutuhkan Builder's Risk Insurance"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 896px"
+                className="rounded-2xl shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] w-full object-cover"
+              />
+              <p className="text-center text-sm text-gray-500 mt-3">
+                Tahap konstruksi kapal — periode paling kritis yang membutuhkan perlindungan
+                Builder&apos;s Risk sejak hari pertama.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-[#c9a84c] bg-[#faf8f3] px-6 py-5 rounded-r-lg">
+              <p className="font-semibold text-[#0a1628] mb-1">Insight Konsultan</p>
+              <p className="text-gray-700 text-sm leading-relaxed m-0">
+                Kasus ini menjadi bukti nyata betapa pentingnya menentukan cakupan polis (scope of
+                cover) secara tepat sejak awal proyek — bukan sekadar memenuhi syarat administratif
+                kontrak. Premi murah bukan selalu pilihan terbaik; gap cakupan yang tidak terdeteksi
+                sejak awal sering menjadi penyebab klaim ditolak sebagian atau seluruhnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Cara Mendapatkan Builder's Risk (timeline langkah) ─── */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader
+            eyebrow="Langkah Praktis"
+            title="Cara Mendapatkan Builder's Risk Insurance dengan Tepat"
+            subtitle="Empat langkah yang saya rekomendasikan berdasarkan pengalaman mendampingi berbagai proyek pembangunan kapal di galangan Batam."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            {HOW_TO_GET.map((step) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={step.no}
+                  className="p-6 rounded-2xl bg-white border border-gray-100 shadow-[0_8px_24px_-8px_rgba(10,22,40,0.08)]"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-xs font-bold"
+                      style={{ background: "#0a1628", color: "#c9a84c" }}
+                    >
+                      {step.no}
+                    </div>
+                    <Icon size={20} style={{ color: "#1a4fa0" }} />
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{step.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Produk Terkait: Surety Bond ─── */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader
+            eyebrow="Lindungi Proyek Secara Menyeluruh"
+            title="Jaminan Pelaksanaan & Uang Muka untuk Proyek Galangan"
+            subtitle="Builder's Risk Insurance melindungi fisik kapal, namun kontrak pembangunan kapal modern umumnya juga mensyaratkan jaminan kepastian proyek berikut ini."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <Link
+              href="/asuransi-surety-bond/performance-bond"
+              className="group p-6 rounded-2xl border border-gray-100 bg-gray-50 hover:border-[#c9a84c] hover:shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] transition-all"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center"
+                  style={{ background: "#1a4fa015" }}
+                >
+                  <ShieldCheck size={20} style={{ color: "#1a4fa0" }} />
+                </div>
+                <h3 className="font-bold text-gray-900 m-0">Performance Bond</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Jaminan pelaksanaan yang melindungi pemilik kapal apabila galangan gagal
+                menyelesaikan pembangunan sesuai kontrak — pelengkap penting di samping Builder&apos;s
+                Risk Insurance.
+              </p>
+              <span className="inline-flex items-center gap-1 text-sm font-semibold mt-4 text-[#1a4fa0] group-hover:text-[#c9a84c]">
+                Pelajari Performance Bond →
+              </span>
+            </Link>
+
+            <Link
+              href="/asuransi-surety-bond/advance-payment-bond"
+              className="group p-6 rounded-2xl border border-gray-100 bg-gray-50 hover:border-[#c9a84c] hover:shadow-[0_8px_24px_-8px_rgba(10,22,40,0.12)] transition-all"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center"
+                  style={{ background: "#1a4fa015" }}
+                >
+                  <HandCoins size={20} style={{ color: "#1a4fa0" }} />
+                </div>
+                <h3 className="font-bold text-gray-900 m-0">Advance Payment Bond</h3>
+              </div>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Jaminan uang muka yang melindungi pengembalian down payment apabila galangan tidak
+                dapat melanjutkan proyek pembangunan kapal sesuai kesepakatan.
+              </p>
+              <span className="inline-flex items-center gap-1 text-sm font-semibold mt-4 text-[#1a4fa0] group-hover:text-[#c9a84c]">
+                Pelajari Advance Payment Bond →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Bacaan Terkait (internal link artikel blog) ─── */}
+      <section className="py-16 px-4 bg-[#faf8f3]">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-xs font-semibold uppercase tracking-widest text-[#a07830]">
+            Bacaan Terkait
+          </span>
+          <h2
+            className="text-2xl md:text-3xl font-bold mt-2 mb-6"
+            style={{ fontFamily: "Syne, sans-serif", color: "#0a1628" }}
+          >
+            Pelajari Lebih Lanjut Tentang Builder&apos;s Risk
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <Link
+              href="/blog/berapa-premi-asuransi-builders-risk-kapal-batam"
+              className="block p-5 rounded-xl bg-white border border-gray-100 hover:border-[#c9a84c] transition-all"
+            >
+              <p className="text-sm font-semibold text-[#0a1628]">
+                Berapa Premi Asuransi Builder&apos;s Risk untuk Proyek Kapal di Batam?
+              </p>
+              <span className="text-xs text-[#1a4fa0] mt-2 inline-block">Baca artikel →</span>
+            </Link>
+            <Link
+              href="/blog/builders-risk-untuk-galangan-kapal"
+              className="block p-5 rounded-xl bg-white border border-gray-100 hover:border-[#c9a84c] transition-all"
+            >
+              <p className="text-sm font-semibold text-[#0a1628]">
+                Builder&apos;s Risk untuk Galangan Kapal
+              </p>
+              <span className="text-xs text-[#1a4fa0] mt-2 inline-block">Baca artikel →</span>
+            </Link>
+            <Link
+              href="/blog/cara-mendapatkan-asuransi-builders-risk-batam"
+              className="block p-5 rounded-xl bg-white border border-gray-100 hover:border-[#c9a84c] transition-all"
+            >
+              <p className="text-sm font-semibold text-[#0a1628]">
+                Cara Mendapatkan Asuransi Builder&apos;s Risk di Batam
+              </p>
+              <span className="text-xs text-[#1a4fa0] mt-2 inline-block">Baca artikel →</span>
+            </Link>
           </div>
         </div>
       </section>
