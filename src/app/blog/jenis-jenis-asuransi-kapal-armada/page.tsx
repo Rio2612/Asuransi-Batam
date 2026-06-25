@@ -651,7 +651,7 @@ export default function ArticleJenisAsuransiKapal() {
         Pertanyaan yang Sering Diajukan
       </h2>
       <div className="not-prose mt-6">
-        <FAQAccordion items={faqData} />
+        <FAQAccordion faqs={faqData} />
       </div>
 
     </ArticleLayout>
