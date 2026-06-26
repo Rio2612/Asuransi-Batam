@@ -222,7 +222,7 @@ export default function CECRPage() {
               polis CECR diterbitkan. Pada kunjungan ini, dilakukan pemeriksaan
               langsung terhadap kemiringan pasangan batu, kepadatan susunan,
               dan titik-titik yang berpotensi tergerus arus — salah satu proyek
-              perkuatan tepi dermaga di kawasan Batu Ampar, Batam.
+              perkuatan tepi tebing di daerah Batu Ampar, Batam.
             </div>
           </div>
         </section>
