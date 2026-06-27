@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "B3 hazardous waste insurance in Batam. A legal obligation for industries producing hazardous waste. Protection from environmental pollution claims. +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/liability-insurance/b3-waste-insurance",
+    canonical: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3",
-      en: "https://asuransibatam.biz.id/en/liability-insurance/b3-waste-insurance",
+      id: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
+      en: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
     },
   },
 };

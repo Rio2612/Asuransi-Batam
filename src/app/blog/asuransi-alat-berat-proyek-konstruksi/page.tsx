@@ -23,10 +23,10 @@ export const metadata: Metadata = {
   title: "Asuransi Alat Berat Proyek Konstruksi – Panduan Lengkap untuk Kontraktor",
   description: "Kontraktor yang tidak mengasuransikan alat berat mereka menanggung risiko yang tidak perlu. Pahami pengertian EAR vs CAR, alat apa yang wajib diasuransikan, cara hitung nilai pertanggungan, dan tips klaim yang benar.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-proyek-konstruksi",
+    canonical: "https://asuransibatam.com/blog/asuransi-alat-berat-proyek-konstruksi",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-proyek-konstruksi",
-      en: "https://asuransibatam.biz.id/en/blog/heavy-equipment-insurance-construction-projects",
+      id: "https://asuransibatam.com/blog/asuransi-alat-berat-proyek-konstruksi",
+      en: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
     },
   },
 };

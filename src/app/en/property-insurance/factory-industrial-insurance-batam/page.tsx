@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Industrial property insurance in Batam covering factory buildings, production machinery, raw material stocks, and third-party liability. Serving Batamindo, Kabil, and Muka Kuning industrial estates. Contact Rio: +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/property-insurance/factory-industrial-insurance-batam",
+    canonical: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
-      en: "https://asuransibatam.biz.id/en/property-insurance/factory-industrial-insurance-batam",
+      id: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
+      en: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
     },
   },
 };
@@ -111,9 +111,9 @@ const schema = {
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.biz.id/en" },
-      { "@type": "ListItem", position: 2, name: "Property Insurance", item: "https://asuransibatam.biz.id/en/property-insurance" },
-      { "@type": "ListItem", position: 3, name: "Factory & Industrial Insurance Batam", item: "https://asuransibatam.biz.id/en/property-insurance/factory-industrial-insurance-batam" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+      { "@type": "ListItem", position: 2, name: "Property Insurance", item: "https://asuransibatam.com/en/property-insurance" },
+      { "@type": "ListItem", position: 3, name: "Factory & Industrial Insurance Batam", item: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam" },
     ],
   },
 };

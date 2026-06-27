@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: "Asuransi Dump Truck Batam – Perlindungan Kendaraan Berat & Armada",
   description: "Asuransi dump truck dan kendaraan niaga berat di Batam. Lindungi armada angkutan Anda dari kerusakan, kecelakaan, dan risiko operasional. 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-dumptruck",
+    canonical: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-dumptruck",
-      en: "https://asuransibatam.biz.id/en/vehicle-insurance/dump-truck-insurance",
+      id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
+      en: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
     },
   },
 };

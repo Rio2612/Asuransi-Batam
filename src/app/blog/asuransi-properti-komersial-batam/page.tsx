@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   title: "Asuransi Properti Komersial Batam – Panduan untuk Pemilik Ruko, Gudang & Gedung",
   description: "Properti komersial di Batam memiliki profil risiko yang berbeda dari rumah tinggal. Pelajari jenis polis yang tepat, apa saja yang wajib dilindungi, dan cara memilih perlindungan yang sesuai untuk bisnis Anda.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-properti-komersial-batam",
+    canonical: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-properti-komersial-batam",
-      en: "https://asuransibatam.biz.id/en/blog/commercial-property-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
+      en: "https://asuransibatam.com/en/blog/commercial-property-insurance-batam",
     },
   },
 };

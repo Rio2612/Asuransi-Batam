@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "Asuransi Liability Batam – Tanggung Gugat Pihak Ketiga & Limbah B3",
   description: "Asuransi liability di Batam. Perlindungan public liability, produk liability, dan asuransi khusus limbah B3. Wajib untuk industri di Batam. 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-liability",
+    canonical: "https://asuransibatam.com/asuransi-liability",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability",
-      en: "https://asuransibatam.biz.id/en/liability-insurance",
+      id: "https://asuransibatam.com/asuransi-liability",
+      en: "https://asuransibatam.com/en/liability-insurance",
     },
   },
 };

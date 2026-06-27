@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     "asuransi surety bond batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-surety-bond",
+    canonical: "https://asuransibatam.com/asuransi-surety-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance",
+      id: "https://asuransibatam.com/asuransi-surety-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance",
     },
   },
 };

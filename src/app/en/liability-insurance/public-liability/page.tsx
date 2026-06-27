@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Public Liability Insurance in Batam for restaurants, hotels, shopping centres, and general businesses. Protection from visitor injury claims. +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/liability-insurance/public-liability",
+    canonical: "https://asuransibatam.com/en/liability-insurance/public-liability",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability/public-liability",
-      en: "https://asuransibatam.biz.id/en/liability-insurance/public-liability",
+      id: "https://asuransibatam.com/asuransi-liability/public-liability",
+      en: "https://asuransibatam.com/en/liability-insurance/public-liability",
     },
   },
 };

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Asuransi marine di Batam mencakup Marine Hull, Marine Cargo, dan Builder's Risk. Perlindungan kapal, muatan, dan pembangunan kapal.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-marine",
+    canonical: "https://asuransibatam.com/asuransi-marine",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-marine",
-      en: "https://asuransibatam.biz.id/en/marine-insurance",
+      id: "https://asuransibatam.com/asuransi-marine",
+      en: "https://asuransibatam.com/en/marine-insurance",
     },
   },
 };

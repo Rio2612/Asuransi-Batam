@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Protect your goods shipped from Batam to Jakarta with Marine Cargo Insurance. Covers sea freight, RoRo, and container routes. Affordable premiums. Contact Rio!",
   canonical: "/en/blog/batam-jakarta-cargo-insurance",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
-    en: "https://asuransibatam.biz.id/en/blog/batam-jakarta-cargo-insurance",
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-jakarta",
+    en: "https://asuransibatam.com/en/blog/batam-jakarta-cargo-insurance",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Cargo Insurance for Shipments from Batam to Jakarta",
   description:
     "A complete guide to marine cargo insurance for domestic shipments from Batam to Jakarta, covering risks, ICC clauses, and how to choose the right policy.",
-  url: "https://asuransibatam.biz.id/en/blog/batam-jakarta-cargo-insurance",
+  url: "https://asuransibatam.com/en/blog/batam-jakarta-cargo-insurance",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/en/about-us",
+    url: "https://asuransibatam.com/en/about-us",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Builder's Risk Insurance in Batam for vessel construction and repair at shipyards. From keel laying to sea trial — every stage is covered. Consult Rio!",
   canonical: "/en/marine-insurance/builders-risk",
   languages: {
-    id: "https://asuransibatam.biz.id/asuransi-marine/builders-risk",
-    en: "https://asuransibatam.biz.id/en/marine-insurance/builders-risk",
+    id: "https://asuransibatam.com/asuransi-marine/builders-risk",
+    en: "https://asuransibatam.com/en/marine-insurance/builders-risk",
   },
 });
 
@@ -24,7 +24,7 @@ const schemaService = {
   name: "Builder's Risk Insurance Batam",
   description:
     "Vessel construction insurance in Batam covering all stages from keel laying to sea trial and handover.",
-  url: "https://asuransibatam.biz.id/en/marine-insurance/builders-risk",
+  url: "https://asuransibatam.com/en/marine-insurance/builders-risk",
   serviceType: "Marine Insurance – Builder's Risk",
   areaServed: {
     "@type": "City",
@@ -35,7 +35,7 @@ const schemaService = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
     telephone: "081373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

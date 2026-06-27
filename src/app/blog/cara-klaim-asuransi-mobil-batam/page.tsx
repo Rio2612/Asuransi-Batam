@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Mobil di Batam – Panduan Lengkap Agar Tidak Ditolak",
   description: "Proses klaim asuransi mobil di Batam sering gagal karena dokumen kurang atau prosedur salah. Pelajari langkah klaim yang benar, dokumen wajib, dan tips agar klaim Anda disetujui cepat.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-mobil-batam",
+    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-mobil-batam",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-batam",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-batam",
     },
   },
 };
@@ -23,8 +23,8 @@ const articleSchema = {
   datePublished: "2026-04-30",
   dateModified: "2026-04-30",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-mobil-batam" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam" },
 };
 
 // FAQ schema (wajib — disuntikkan terpisah dari Article schema)

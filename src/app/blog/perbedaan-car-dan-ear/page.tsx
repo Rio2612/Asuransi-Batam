@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Bingung memilih antara Contractor All Risk (CAR) dan Erection All Risk (EAR)? Pelajari perbedaan mendasar keduanya, cakupan risiko, dan mana yang tepat untuk proyek Anda di Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/perbedaan-car-dan-ear",
+    canonical: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/perbedaan-car-dan-ear",
-      en: "https://asuransibatam.biz.id/en/blog/difference-between-car-and-ear-insurance",
+      id: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
+      en: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
     },
   },
 };
@@ -30,19 +30,19 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/blog/perbedaan-car-dan-ear",
+    "@id": "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
   },
   inLanguage: "id-ID",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.biz.id" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/blog" },
-      { "@type": "ListItem", position: 3, name: "Perbedaan CAR dan EAR", item: "https://asuransibatam.biz.id/blog/perbedaan-car-dan-ear" },
+      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/blog" },
+      { "@type": "ListItem", position: 3, name: "Perbedaan CAR dan EAR", item: "https://asuransibatam.com/blog/perbedaan-car-dan-ear" },
     ],
   },
 };

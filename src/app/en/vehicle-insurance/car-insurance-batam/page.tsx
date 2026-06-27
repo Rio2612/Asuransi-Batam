@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Looking for car insurance in Batam? Choose All Risk or TLO with affordable premiums, easy claims, and authorised repair workshops. Calculate your estimated premium online now — free and instant. Contact Rio: +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/vehicle-insurance/car-insurance-batam",
+    canonical: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-mobil-batam",
-      en: "https://asuransibatam.biz.id/en/vehicle-insurance/car-insurance-batam",
+      id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-mobil-batam",
+      en: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
     },
   },
 };

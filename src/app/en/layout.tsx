@@ -7,7 +7,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asuransibatam.biz.id"),
+  metadataBase: new URL("https://asuransibatam.com"),
   title: {
     default: "Batam Insurance – Trusted General Insurance Consultant | Rio",
     template: "%s | Batam Insurance",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: "id_ID",
-    url: "https://asuransibatam.biz.id/en",
+    url: "https://asuransibatam.com/en",
     siteName: "Batam Insurance",
     title: "Batam Insurance – Trusted General Insurance Consultant",
     description:

@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Asuransi Kendaraan Batam – All Risk & TLO untuk Mobil, Dump Truck & Kendaraan Niaga",
   description: "Cari asuransi kendaraan terpercaya di Batam? Kami melayani proteksi All Risk dan TLO untuk mobil pribadi, dump truck, hingga armada niaga. Premi bersaing, proses klaim cepat. Hitung premi online atau hubungi Rio: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-kendaraan",
+    canonical: "https://asuransibatam.com/asuransi-kendaraan",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-kendaraan",
-      en: "https://asuransibatam.biz.id/en/vehicle-insurance",
+      id: "https://asuransibatam.com/asuransi-kendaraan",
+      en: "https://asuransibatam.com/en/vehicle-insurance",
     },
   },
 };

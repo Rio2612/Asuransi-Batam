@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   description:
     "Find the office of a trusted general insurance consultant in Batam Center. Rio serves all areas of Batam and the Riau Islands. Contact us now!",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/location",
+    canonical: "https://asuransibatam.com/en/location",
     languages: {
-      id: "https://asuransibatam.biz.id/lokasi",
-      en: "https://asuransibatam.biz.id/en/location",
+      id: "https://asuransibatam.com/lokasi",
+      en: "https://asuransibatam.com/en/location",
     },
   },
 };

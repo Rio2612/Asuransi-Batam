@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Excavator and Bulldozer Insurance in Batam – Coverage, Protection & How to Claim",
   description: "Excavators and bulldozers are expensive assets highly vulnerable to damage in the field. Learn about the right type of protection, what is covered, and how to insure your heavy equipment in Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam",
+    canonical: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
-      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
+      en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam",
     },
   },
 };

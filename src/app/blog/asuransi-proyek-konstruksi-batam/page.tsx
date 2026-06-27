@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Panduan lengkap asuransi proyek konstruksi di Batam: jenis polis yang dibutuhkan, persyaratan tender, risiko khas kawasan industri Batam, dan cara memilih perlindungan yang tepat.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-proyek-konstruksi-batam",
+    canonical: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-proyek-konstruksi-batam",
-      en: "https://asuransibatam.biz.id/en/blog/construction-project-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
+      en: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
     },
   },
 };
@@ -30,11 +30,11 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/blog/asuransi-proyek-konstruksi-batam",
+    "@id": "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
   },
   inLanguage: "id-ID",
   about: {
@@ -46,9 +46,9 @@ const schema = {
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.biz.id" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/blog" },
-      { "@type": "ListItem", position: 3, name: "Asuransi Proyek Konstruksi Batam", item: "https://asuransibatam.biz.id/blog/asuransi-proyek-konstruksi-batam" },
+      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/blog" },
+      { "@type": "ListItem", position: 3, name: "Asuransi Proyek Konstruksi Batam", item: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam" },
     ],
   },
 };

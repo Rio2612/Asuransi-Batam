@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Protect your property in Batam from fire, natural disaster, and structural damage. Free consultation with Rio, a trusted property insurance consultant in Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/property-insurance",
+    canonical: "https://asuransibatam.com/en/property-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti",
-      en: "https://asuransibatam.biz.id/en/property-insurance",
+      id: "https://asuransibatam.com/asuransi-properti",
+      en: "https://asuransibatam.com/en/property-insurance",
     },
   },
 };

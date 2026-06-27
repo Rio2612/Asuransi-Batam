@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Lindungi ekspor Anda dari Batam ke Singapura, Malaysia, dan mancanegara. Marine Cargo Insurance untuk eksportir Batam. Proses mudah, klaim cepat. Hubungi Rio!",
   canonical: "/blog/asuransi-cargo-ekspor-batam",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-cargo-ekspor-batam",
-    en: "https://asuransibatam.biz.id/en/blog/batam-export-cargo-insurance",
+    id: "https://asuransibatam.com/blog/asuransi-cargo-ekspor-batam",
+    en: "https://asuransibatam.com/en/blog/batam-export-cargo-insurance",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Asuransi Pengiriman Barang Ekspor dari Batam",
   description:
     "Panduan asuransi cargo untuk eksportir di Batam, termasuk rute ke Singapura, Malaysia, dan negara lainnya, serta pemilihan klausul ICC yang tepat.",
-  url: "https://asuransibatam.biz.id/blog/asuransi-cargo-ekspor-batam",
+  url: "https://asuransibatam.com/blog/asuransi-cargo-ekspor-batam",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   title: "Trusted Insurance Batam – Property, Vehicle, Heavy Equipment & Liability | Rio",
   description: "Rio, a professional non-life insurance consultant in Batam with 10+ years of experience. Serving property, vehicle, heavy equipment, liability, and engineering insurance. Free consultation, fast response via WhatsApp. Call now: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en",
+    canonical: "https://asuransibatam.com/en",
     languages: {
-      id: "https://asuransibatam.biz.id",
-      en: "https://asuransibatam.biz.id/en",
+      id: "https://asuransibatam.com",
+      en: "https://asuransibatam.com/en",
     },
   },
 };
@@ -100,11 +100,11 @@ export default function HomePageEN() {
     "@graph": [
       {
         "@type": ["InsuranceAgency", "LocalBusiness"],
-        "@id": "https://asuransibatam.biz.id/#organization",
+        "@id": "https://asuransibatam.com/#organization",
         name: "Asuransi Batam – Rio",
-        url: "https://asuransibatam.biz.id",
+        url: "https://asuransibatam.com",
         telephone: "+6281373336728",
-        email: "rio@asuransibatam.biz.id",
+        email: "rio@asuransibatam.com",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Batam Center",

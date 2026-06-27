@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Commercial Property Insurance Batam – Guide for Shophouse, Warehouse & Building Owners",
   description: "Commercial properties in Batam have a different risk profile from residential homes. Learn the right type of policy, what must be covered, and how to choose appropriate coverage for your business.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/commercial-property-insurance-batam",
+    canonical: "https://asuransibatam.com/en/blog/commercial-property-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-properti-komersial-batam",
-      en: "https://asuransibatam.biz.id/en/blog/commercial-property-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
+      en: "https://asuransibatam.com/en/blog/commercial-property-insurance-batam",
     },
   },
 };

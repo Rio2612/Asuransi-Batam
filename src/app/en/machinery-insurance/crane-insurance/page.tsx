@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Crane insurance in Batam for all types of cranes and lifting equipment. Protection from operational damage, collapse, and third-party liability. Contact Rio: +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/machinery-insurance/crane-insurance",
+    canonical: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-crane",
-      en: "https://asuransibatam.biz.id/en/machinery-insurance/crane-insurance",
+      id: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
+      en: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
     },
   },
 };

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "General insurance education articles. Claims guides, product comparisons, tips for choosing insurance, and the latest insurance information in Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog",
+    canonical: "https://asuransibatam.com/en/blog",
     languages: {
-      id: "https://asuransibatam.biz.id/blog",
-      en: "https://asuransibatam.biz.id/en/blog",
+      id: "https://asuransibatam.com/blog",
+      en: "https://asuransibatam.com/en/blog",
     },
   },
 };

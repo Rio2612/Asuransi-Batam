@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "A clear explanation of the difference between Comprehensive (All Risk) and Total Loss Only (TLO) car insurance in Batam — what each covers, their pros and cons, and how to choose the right one for your vehicle.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/all-risk-vs-tlo-car-insurance",
+    canonical: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/perbedaan-all-risk-dan-tlo",
-      en: "https://asuransibatam.biz.id/en/blog/all-risk-vs-tlo-car-insurance",
+      id: "https://asuransibatam.com/blog/perbedaan-all-risk-dan-tlo",
+      en: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
     },
   },
 };

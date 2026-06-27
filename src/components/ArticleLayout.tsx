@@ -47,19 +47,19 @@ export default function ArticleLayout({
         "@type": "ListItem",
         position: 1,
         name: t.home,
-        item: `https://asuransibatam.biz.id${t.homeHref === "/" ? "" : t.homeHref}`,
+        item: `https://asuransibatam.com${t.homeHref === "/" ? "" : t.homeHref}`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: t.blog,
-        item: `https://asuransibatam.biz.id${t.blogHref}`,
+        item: `https://asuransibatam.com${t.blogHref}`,
       },
       ...breadcrumbs.map((b, i) => ({
         "@type": "ListItem",
         position: i + 3,
         name: b.label,
-        item: `https://asuransibatam.biz.id${b.href}`,
+        item: `https://asuransibatam.com${b.href}`,
       })),
     ],
   };

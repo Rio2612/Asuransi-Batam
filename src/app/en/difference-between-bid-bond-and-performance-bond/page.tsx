@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/en/blog/difference-between-bid-bond-and-performance-bond",
+      "https://asuransibatam.com/en/blog/difference-between-bid-bond-and-performance-bond",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/difference-between-bid-bond-and-performance-bond",
-      id: "https://asuransibatam.biz.id/blog/perbedaan-bid-bond-performance-bond",
+      en: "https://asuransibatam.com/en/blog/difference-between-bid-bond-and-performance-bond",
+      id: "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     },
   },
 };
@@ -39,12 +39,12 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     name: "Asuransi Batam Team",
-    url: "https://asuransibatam.biz.id/en",
+    url: "https://asuransibatam.com/en",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

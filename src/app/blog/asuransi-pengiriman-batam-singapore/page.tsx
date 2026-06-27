@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Panduan asuransi marine cargo rute Batam–Singapura: Incoterms, jenis polis, waktu tempuh, dan risiko spesifik di Selat Singapura. Konsultasi Rio 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-singapore",
+    canonical: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-singapore",
-      en: "https://asuransibatam.biz.id/en/blog/batam-singapore-shipping-insurance",
+      id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
+      en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
     },
   },
   openGraph: {
     title: "Asuransi Pengiriman Barang Batam–Singapura – Panduan Lengkap untuk Eksportir",
     description: "Semua yang perlu diketahui eksportir dan importir tentang asuransi kargo rute Batam–Singapura.",
-    url: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-singapore",
+    url: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
     type: "article",
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-singapore" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore" },
 };
 
 export default function AsuransiPengirimanBatamSingapurePage() {

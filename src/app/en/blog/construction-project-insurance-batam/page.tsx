@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Everything contractors and developers need to know about construction insurance in Batam: policy types, tender requirements, Batam-specific risks, and how to choose the right coverage.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/construction-project-insurance-batam",
+    canonical: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-proyek-konstruksi-batam",
-      en: "https://asuransibatam.biz.id/en/blog/construction-project-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
+      en: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
     },
   },
 };
@@ -30,11 +30,11 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Batam Insurance – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/en/blog/construction-project-insurance-batam",
+    "@id": "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
   },
   inLanguage: "en-ID",
   about: {
@@ -46,9 +46,9 @@ const schema = {
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.biz.id/en" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/en/blog" },
-      { "@type": "ListItem", position: 3, name: "Construction Insurance Batam", item: "https://asuransibatam.biz.id/en/blog/construction-project-insurance-batam" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/en/blog" },
+      { "@type": "ListItem", position: 3, name: "Construction Insurance Batam", item: "https://asuransibatam.com/en/blog/construction-project-insurance-batam" },
     ],
   },
 };

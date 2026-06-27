@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description:
     "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum PP No. 22/2021 bagi industri manufaktur, galangan kapal & rumah sakit. Lindungi bisnis dari tuntutan pencemaran miliaran rupiah. Konsultasi gratis: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3",
+    canonical: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability/asuransi-limbah-b3",
-      en: "https://asuransibatam.biz.id/en/liability-insurance/b3-waste-insurance",
+      id: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
+      en: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
     },
   },
 };
@@ -121,7 +121,7 @@ const schema = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
     telephone: "+6281373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Batam",

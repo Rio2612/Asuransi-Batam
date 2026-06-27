@@ -6,8 +6,16 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
-      // www → non-www
-      { source: "/:path*", has: [{ type: "host", value: "www.asuransibatam.biz.id" }], destination: "https://asuransibatam.biz.id/:path*", permanent: true },
+      // Migrasi domain lama (.biz.id) → domain baru (.com)
+      // CATATAN: rule ini hanya akan bekerja jika domain asuransibatam.biz.id
+      // dan www.asuransibatam.biz.id di-assign ke project Vercel yang SAMA
+      // dengan project ini. Jika tidak, redirect harus dikonfigurasi di
+      // tempat domain lama itu di-hosting (DNS/hosting provider domain lama).
+      { source: "/:path*", has: [{ type: "host", value: "asuransibatam.biz.id" }], destination: "https://asuransibatam.com/:path*", permanent: true },
+      { source: "/:path*", has: [{ type: "host", value: "www.asuransibatam.biz.id" }], destination: "https://asuransibatam.com/:path*", permanent: true },
+
+      // www → non-www (domain baru)
+      { source: "/:path*", has: [{ type: "host", value: "www.asuransibatam.com" }], destination: "https://asuransibatam.com/:path*", permanent: true },
       
       // Legacy HTML
       { source: "/index.html",   destination: "/",             permanent: true },

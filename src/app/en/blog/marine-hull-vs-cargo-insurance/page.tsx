@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Clear explanation of marine hull (vessel) and marine cargo (goods) insurance: who buys each, what they cover, and how they work together. Consult Rio +62813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/marine-hull-vs-cargo-insurance",
+    canonical: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/marine-hull-vs-cargo-insurance",
-      id: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
+      en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
+      id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
     },
   },
   openGraph: {
     title: "Marine Hull vs Marine Cargo Insurance – What's the Difference?",
     description: "Vessel insurance vs goods insurance: different objects, different policyholders, different claims.",
-    url: "https://asuransibatam.biz.id/en/blog/marine-hull-vs-cargo-insurance",
+    url: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
     type: "article",
   },
 };
@@ -31,8 +31,8 @@ const schema = {
   dateModified: "2026-05-07",
   inLanguage: "en",
   author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/en/blog/marine-hull-vs-cargo-insurance" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance" },
 };
 
 export default function MarineHullVsCargoPage() {

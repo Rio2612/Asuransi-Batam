@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Kebakaran Rumah – Dokumen, Prosedur & Kesalahan Fatal yang Harus Dihindari",
   description: "Mengklaim asuransi kebakaran rumah tidak semudah kelihatannya. Pelajari dokumen yang diperlukan, prosedur yang benar, dan kesalahan umum yang menyebabkan klaim ditolak — panduan lengkap untuk pemilik rumah di Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-kebakaran-rumah",
+    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-kebakaran-rumah",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-home-fire-insurance",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-home-fire-insurance",
     },
   },
 };

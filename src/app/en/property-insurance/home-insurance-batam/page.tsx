@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Home insurance in Batam. Protection from fire, flood, theft, and natural disasters. Affordable premiums, easy process. Contact +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/property-insurance/home-insurance-batam",
+    canonical: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti/asuransi-rumah-batam",
-      en: "https://asuransibatam.biz.id/en/property-insurance/home-insurance-batam",
+      id: "https://asuransibatam.com/asuransi-properti/asuransi-rumah-batam",
+      en: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
     },
   },
 };

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Indonesian law requires industries handling hazardous waste (B3) to hold financial guarantees. Learn what the regulations say, what the penalties are for non-compliance, and how insurance is the most practical solution for industries in Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/hazardous-waste-insurance-batam",
+    canonical: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/pentingnya-asuransi-limbah-b3",
-      en: "https://asuransibatam.biz.id/en/blog/hazardous-waste-insurance-batam",
+      id: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3",
+      en: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
     },
   },
 };

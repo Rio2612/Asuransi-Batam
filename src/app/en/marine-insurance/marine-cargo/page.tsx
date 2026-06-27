@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Marine Cargo Insurance in Batam for goods shipped by sea, air, or land. Export, import, and domestic shipment coverage. Consult Rio at +62-813-7333-6728!",
   canonical: "/en/marine-insurance/marine-cargo",
   languages: {
-    id: "https://asuransibatam.biz.id/asuransi-marine/marine-cargo",
-    en: "https://asuransibatam.biz.id/en/marine-insurance/marine-cargo",
+    id: "https://asuransibatam.com/asuransi-marine/marine-cargo",
+    en: "https://asuransibatam.com/en/marine-insurance/marine-cargo",
   },
 });
 
@@ -24,7 +24,7 @@ const schemaService = {
   name: "Marine Cargo Insurance Batam",
   description:
     "Marine cargo insurance in Batam covering goods in transit for export, import, and domestic shipments by sea.",
-  url: "https://asuransibatam.biz.id/en/marine-insurance/marine-cargo",
+  url: "https://asuransibatam.com/en/marine-insurance/marine-cargo",
   serviceType: "Marine Insurance – Marine Cargo",
   areaServed: {
     "@type": "City",
@@ -35,7 +35,7 @@ const schemaService = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
     telephone: "081373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

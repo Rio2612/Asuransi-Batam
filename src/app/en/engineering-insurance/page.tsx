@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Engineering insurance in Batam. Contractor All Risk (CAR), Erection All Risk (EAR), and construction project protection. Consult Rio at +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/engineering-insurance",
+    canonical: "https://asuransibatam.com/en/engineering-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-engineering",
-      en: "https://asuransibatam.biz.id/en/engineering-insurance",
+      id: "https://asuransibatam.com/asuransi-engineering",
+      en: "https://asuransibatam.com/en/engineering-insurance",
     },
   },
 };

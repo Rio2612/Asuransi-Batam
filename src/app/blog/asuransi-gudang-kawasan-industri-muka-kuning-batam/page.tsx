@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "asuransi properti komersial Batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam",
-    languages: { id: "https://asuransibatam.biz.id/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" },
+    canonical: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam",
+    languages: { id: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" },
   },
 };
 
@@ -27,8 +27,8 @@ const articleSchema = {
   headline: "Asuransi Gudang Kawasan Industri Muka Kuning & Batam: Panduan Lengkap 2026",
   datePublished: "2026-05-29",
   dateModified: "2026-05-29",
-  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.com" },
+  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
 };
 
 const faqSchema = {

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://asuransibatam.biz.id/sitemap.xml"
+    sitemap: "https://asuransibatam.com/sitemap.xml"
   };
 }

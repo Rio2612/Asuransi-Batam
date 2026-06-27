@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Marine Hull Insurance di Batam untuk perlindungan lambung kapal, mesin, dan peralatan navigasi dari risiko tabrakan, kandas, kebakaran, dan tenggelam. Konsultasi dengan Rio!",
   canonical: "/asuransi-marine/marine-hull",
   languages: {
-    id: "https://asuransibatam.biz.id/asuransi-marine/marine-hull",
-    en: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
+    id: "https://asuransibatam.com/asuransi-marine/marine-hull",
+    en: "https://asuransibatam.com/en/marine-insurance/marine-hull",
   },
 });
 
@@ -24,7 +24,7 @@ const schemaService = {
   name: "Marine Hull Insurance Batam",
   description:
     "Asuransi lambung kapal di Batam mencakup perlindungan fisik kapal, mesin, dan peralatan navigasi dari semua risiko laut.",
-  url: "https://asuransibatam.biz.id/asuransi-marine/marine-hull",
+  url: "https://asuransibatam.com/asuransi-marine/marine-hull",
   serviceType: "Asuransi Marine – Marine Hull",
   areaServed: {
     "@type": "City",
@@ -35,7 +35,7 @@ const schemaService = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
     telephone: "081373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

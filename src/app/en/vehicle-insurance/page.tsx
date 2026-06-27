@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Looking for trusted vehicle insurance in Batam? We provide All Risk and TLO protection for private cars, dump trucks, and commercial fleets. Competitive premiums, fast claims. Calculate online or contact Rio: +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/vehicle-insurance",
+    canonical: "https://asuransibatam.com/en/vehicle-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-kendaraan",
-      en: "https://asuransibatam.biz.id/en/vehicle-insurance",
+      id: "https://asuransibatam.com/asuransi-kendaraan",
+      en: "https://asuransibatam.com/en/vehicle-insurance",
     },
   },
 };

@@ -16,16 +16,16 @@ export const metadata: Metadata = {
   title: 'Asuransi Kecelakaan Diri (PA) Batam | Proteksi Pekerja Industri & Galangan',
   description: 'Layanan Asuransi Kecelakaan Diri (Personal Accident) di Batam. Proteksi komprehensif untuk pekerja industri, galangan kapal (shipyard), dan logistik. Solusi Group PA & Individu untuk melengkapi BPJS Ketenagakerjaan.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/asuransi-personal-accident',
+    canonical: 'https://asuransibatam.com/asuransi-personal-accident',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance',
     },
   },
   openGraph: {
     title: 'Asuransi Kecelakaan Diri (PA) Batam | Proteksi Pekerja Industri',
     description: 'Solusi Asuransi PA Group & Individu di Batam. Fokus klaim cepat & proteksi risiko tinggi pekerja shipyard & manufaktur.',
-    url: 'https://asuransibatam.biz.id/asuransi-personal-accident',
+    url: 'https://asuransibatam.com/asuransi-personal-accident',
     siteName: 'Asuransi Batam',
     locale: 'id_ID',
     type: 'website',
@@ -37,8 +37,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.biz.id/asuransi-personal-accident" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.com/asuransi-personal-accident" }
   ]
 };
 

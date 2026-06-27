@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Dump truck insurance in Batam for heavy commercial vehicles. All Risk and TLO available. Comprehensive protection, fast claims, competitive premiums. Contact Rio!",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/vehicle-insurance/dump-truck-insurance",
+    canonical: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-kendaraan/asuransi-dumptruck",
-      en: "https://asuransibatam.biz.id/en/vehicle-insurance/dump-truck-insurance",
+      id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
+      en: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
     },
   },
 };

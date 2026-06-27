@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Panduan langkah demi langkah mengajukan klaim Contractor All Risk (CAR) di Indonesia. Dari pelaporan awal hingga pencairan ganti rugi — termasuk dokumen yang wajib disiapkan.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-car",
+    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-car",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-project",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
     },
   },
 };
@@ -30,19 +30,19 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-car",
+    "@id": "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
   },
   inLanguage: "id-ID",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.biz.id" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/blog" },
-      { "@type": "ListItem", position: 3, name: "Cara Klaim Asuransi CAR", item: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-car" },
+      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/blog" },
+      { "@type": "ListItem", position: 3, name: "Cara Klaim Asuransi CAR", item: "https://asuransibatam.com/blog/cara-klaim-asuransi-car" },
     ],
   },
   "HowTo": {

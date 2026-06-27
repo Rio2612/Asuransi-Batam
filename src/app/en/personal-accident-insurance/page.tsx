@@ -16,16 +16,16 @@ export const metadata: Metadata = {
   title: 'Personal Accident Insurance (PA) Batam | Industrial & Shipyard Workers',
   description: 'Comprehensive Personal Accident Insurance in Batam. Specialized protection for shipyard, manufacturing, and logistics workers. Group PA & Individual solutions to supplement BPJS/Workman Compensation.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/en/personal-accident-insurance',
+    canonical: 'https://asuransibatam.com/en/personal-accident-insurance',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance',
     },
   },
   openGraph: {
     title: 'Personal Accident Insurance Batam | Industrial Worker Protection',
     description: 'Group & Individual PA Insurance Solutions in Batam. Fast claims process & high-risk coverage for shipyard & manufacturing sectors.',
-    url: 'https://asuransibatam.biz.id/en/personal-accident-insurance',
+    url: 'https://asuransibatam.com/en/personal-accident-insurance',
     siteName: 'Asuransi Batam',
     locale: 'en_US',
     type: 'website',
@@ -37,8 +37,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.biz.id/en/personal-accident-insurance" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.com/en/personal-accident-insurance" }
   ]
 };
 

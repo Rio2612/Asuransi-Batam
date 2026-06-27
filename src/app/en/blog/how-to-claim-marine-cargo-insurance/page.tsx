@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Step-by-step guide to filing a marine cargo insurance claim in Indonesia: required documents, reporting deadlines, and common mistakes that get claims rejected. Call Rio +62813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/how-to-claim-marine-cargo-insurance",
+    canonical: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-marine-cargo-insurance",
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-marine-cargo",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
     },
   },
   openGraph: {
     title: "How to Claim Marine Cargo Insurance the Right Way – Complete Guide",
     description: "Required documents, deadlines, and step-by-step process to get your marine cargo claim paid.",
-    url: "https://asuransibatam.biz.id/en/blog/how-to-claim-marine-cargo-insurance",
+    url: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
     type: "article",
   },
 };
@@ -31,8 +31,8 @@ const schema = {
   dateModified: "2026-05-07",
   inLanguage: "en",
   author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/en/blog/how-to-claim-marine-cargo-insurance" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance" },
 };
 
 export default function HowToClaimMarineCargoPage() {

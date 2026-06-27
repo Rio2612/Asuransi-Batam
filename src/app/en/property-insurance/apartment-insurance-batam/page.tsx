@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Apartment and condotel insurance in Batam covering fire, flood, contents, and third-party liability. Suitable for unit owners, investors, and tenants. Contact Rio: +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/property-insurance/apartment-insurance-batam",
+    canonical: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti/asuransi-apartemen-batam",
-      en: "https://asuransibatam.biz.id/en/property-insurance/apartment-insurance-batam",
+      id: "https://asuransibatam.com/asuransi-properti/asuransi-apartemen-batam",
+      en: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
     },
   },
 };
@@ -111,9 +111,9 @@ const schema = {
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.biz.id/en" },
-      { "@type": "ListItem", position: 2, name: "Property Insurance", item: "https://asuransibatam.biz.id/en/property-insurance" },
-      { "@type": "ListItem", position: 3, name: "Apartment Insurance Batam", item: "https://asuransibatam.biz.id/en/property-insurance/apartment-insurance-batam" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+      { "@type": "ListItem", position: 2, name: "Property Insurance", item: "https://asuransibatam.com/en/property-insurance" },
+      { "@type": "ListItem", position: 3, name: "Apartment Insurance Batam", item: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam" },
     ],
   },
 };

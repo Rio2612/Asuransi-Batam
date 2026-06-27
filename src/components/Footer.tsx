@@ -104,9 +104,9 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-[#c9a84c]" />
                 0813-7333-6728
               </a>
-              <a href="mailto:rio@asuransibatam.biz.id" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
+              <a href="mailto:rio@asuransibatam.com" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Mail className="w-4 h-4 text-[#c9a84c]" />
-                rio@asuransibatam.biz.id
+                rio@asuransibatam.com
               </a>
               <div className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin className="w-4 h-4 text-[#c9a84c] mt-0.5 flex-shrink-0" />

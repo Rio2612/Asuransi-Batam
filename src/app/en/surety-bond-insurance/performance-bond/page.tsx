@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "project completion guarantee batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/surety-bond-insurance/performance-bond",
+    canonical: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/performance-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/performance-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
     },
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   description:
     "Complete guide to performance bonds in Batam: definition, who needs one, value, validity, required documents, and the claims process.",
   author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: "https://asuransibatam.biz.id/en/surety-bond-insurance/performance-bond",
+  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
+  mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
 };
 
 export default function PerformanceBondENPage() {

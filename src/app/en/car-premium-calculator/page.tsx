@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "How much is your car insurance premium in Batam? Calculate instantly using official OJK rates — All Risk from 2.08%, TLO from 0.37%. Instant results, no registration required.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/car-premium-calculator",
+    canonical: "https://asuransibatam.com/en/car-premium-calculator",
     languages: {
-      id: "https://asuransibatam.biz.id/kalkulator-premi-mobil",
-      en: "https://asuransibatam.biz.id/en/car-premium-calculator",
+      id: "https://asuransibatam.com/kalkulator-premi-mobil",
+      en: "https://asuransibatam.com/en/car-premium-calculator",
     },
   },
 };

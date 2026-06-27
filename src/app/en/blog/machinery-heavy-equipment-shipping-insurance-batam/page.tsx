@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Cargo insurance for machinery and heavy equipment shipped from Batam. Protection for excavators, cranes, generators, and industrial machines in transit. Contact Rio!",
   canonical: "/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-mesin-alat-berat",
-    en: "https://asuransibatam.biz.id/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-mesin-alat-berat",
+    en: "https://asuransibatam.com/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Machinery and Heavy Equipment Shipping Insurance from Batam",
   description:
     "A guide to marine cargo insurance for shipping industrial machinery and heavy equipment from Batam, covering unique transit risks, policy types, and claims procedures.",
-  url: "https://asuransibatam.biz.id/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
+  url: "https://asuransibatam.com/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/en/about-us",
+    url: "https://asuransibatam.com/en/about-us",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

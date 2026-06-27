@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Protect your export shipments from Batam to Singapore, Malaysia, and beyond. Marine Cargo Insurance for Batam exporters. Easy process, fast claims. Contact Rio!",
   canonical: "/en/blog/batam-export-cargo-insurance",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-cargo-ekspor-batam",
-    en: "https://asuransibatam.biz.id/en/blog/batam-export-cargo-insurance",
+    id: "https://asuransibatam.com/blog/asuransi-cargo-ekspor-batam",
+    en: "https://asuransibatam.com/en/blog/batam-export-cargo-insurance",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Export Cargo Insurance from Batam",
   description:
     "A guide to marine cargo insurance for exporters in Batam, covering routes to Singapore, Malaysia, and other destinations, and how to choose the right ICC clause.",
-  url: "https://asuransibatam.biz.id/en/blog/batam-export-cargo-insurance",
+  url: "https://asuransibatam.com/en/blog/batam-export-cargo-insurance",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/en/about-us",
+    url: "https://asuransibatam.com/en/about-us",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Asuransi Properti Batam – Rumah, Hotel, Gedung Komersial",
   description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio, konsultan asuransi properti terpercaya.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-properti",
+    canonical: "https://asuransibatam.com/asuransi-properti",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti",
-      en: "https://asuransibatam.biz.id/en/property-insurance",
+      id: "https://asuransibatam.com/asuransi-properti",
+      en: "https://asuransibatam.com/en/property-insurance",
     },
   },
 };

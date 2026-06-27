@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Tentang Kami – Rio, Konsultan Asuransi Batam",
   description: "Profil Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/tentang-kami",
+    canonical: "https://asuransibatam.com/tentang-kami",
     languages: {
-      id: "https://asuransibatam.biz.id/tentang-kami",
-      en: "https://asuransibatam.biz.id/en/about-us",
+      id: "https://asuransibatam.com/tentang-kami",
+      en: "https://asuransibatam.com/en/about-us",
     },
   },
 };
@@ -22,7 +22,7 @@ const schema = {
   jobTitle: "Konsultan Asuransi Kerugian",
   worksFor: { "@type": "InsuranceAgency", name: "Asuransi Batam" },
   telephone: "+6281373336728",
-  email: "rio@asuransibatam.biz.id",
+  email: "rio@asuransibatam.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Batam Center",
@@ -125,7 +125,7 @@ export default function TentangKamiPage() {
               <div className="space-y-5">
                 {[
                   { icon: "📱", label: "WhatsApp / Telepon", value: "0813-7333-6728", href: "https://wa.me/6281373336728" },
-                  { icon: "📧", label: "Email", value: "rio@asuransibatam.biz.id", href: "mailto:rio@asuransibatam.biz.id" },
+                  { icon: "📧", label: "Email", value: "rio@asuransibatam.com", href: "mailto:rio@asuransibatam.com" },
                   { icon: "📍", label: "Alamat", value: "Batam Center, Kepulauan Riau", href: null },
                   { icon: "🕐", label: "Jam Operasional", value: "Senin–Jumat, 08:00–17:00", href: null },
                 ].map((c) => (

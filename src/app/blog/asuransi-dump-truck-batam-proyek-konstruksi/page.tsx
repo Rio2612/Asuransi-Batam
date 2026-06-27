@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "asuransi alat berat kendaraan Batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-dump-truck-batam-proyek-konstruksi",
-    languages: { id: "https://asuransibatam.biz.id/blog/asuransi-dump-truck-batam-proyek-konstruksi" },
+    canonical: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi",
+    languages: { id: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi" },
   },
 };
 
@@ -27,8 +27,8 @@ const articleSchema = {
   headline: "Asuransi Dump Truck Batam untuk Proyek Konstruksi: Premi, Risiko & Proses Klaim",
   datePublished: "2026-05-29",
   dateModified: "2026-05-29",
-  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.com" },
+  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
 };
 
 const faqSchema = {

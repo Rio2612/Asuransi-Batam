@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/blog/perbedaan-bid-bond-performance-bond",
+      "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/perbedaan-bid-bond-performance-bond",
+      id: "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     },
   },
 };
@@ -38,12 +38,12 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     name: "Tim Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

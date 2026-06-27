@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Profile of Rio, a professional general insurance consultant in Batam with 10+ years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/about-us",
+    canonical: "https://asuransibatam.com/en/about-us",
     languages: {
-      id: "https://asuransibatam.biz.id/tentang-kami",
-      en: "https://asuransibatam.biz.id/en/about-us",
+      id: "https://asuransibatam.com/tentang-kami",
+      en: "https://asuransibatam.com/en/about-us",
     },
   },
 };
@@ -23,7 +23,7 @@ const schema = {
   jobTitle: "General Insurance Consultant",
   worksFor: { "@type": "InsuranceAgency", name: "Batam Insurance" },
   telephone: "+6281373336728",
-  email: "rio@asuransibatam.biz.id",
+  email: "rio@asuransibatam.com",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Batam Center",
@@ -113,7 +113,7 @@ export default function AboutUsPageEN() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-2xl mx-auto">
             {[
               { icon: "📱", label: "WhatsApp / Phone", value: "+62-813-7333-6728", href: "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance" },
-              { icon: "📧", label: "Email", value: "rio@asuransibatam.biz.id", href: "mailto:rio@asuransibatam.biz.id" },
+              { icon: "📧", label: "Email", value: "rio@asuransibatam.com", href: "mailto:rio@asuransibatam.com" },
               { icon: "📍", label: "Address", value: "Batam Center, Kepulauan Riau", href: null },
               { icon: "🕐", label: "Office Hours", value: "Mon–Fri, 08:00–17:00 WIB", href: null },
             ].map((c) => (

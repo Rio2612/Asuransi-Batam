@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Marine builders risk insurance explained: what it covers during vessel construction, how it differs from hull insurance, and who needs it in Batam's shipyard industry. Call Rio +62813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+    canonical: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
-      id: "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal",
+      en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
+      id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
     },
   },
   openGraph: {
     title: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
     description: "Builders risk covers vessels under construction or major repair — not operational hull insurance. A practical guide for Batam shipyards and vessel owners.",
-    url: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+    url: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
     type: "article",
   },
 };
@@ -31,8 +31,8 @@ const schema = {
   dateModified: "2026-05-07",
   inLanguage: "en",
   author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam" },
 };
 
 export default function BuildersRiskShipyardPage() {

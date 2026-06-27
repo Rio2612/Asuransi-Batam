@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Penjelasan lengkap perbedaan asuransi marine hull (kapal) dan marine cargo (muatan). Siapa yang wajib beli, berapa preminya, dan bagaimana keduanya bekerja bersama. Konsultasi Rio 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
+    canonical: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
-      en: "https://asuransibatam.biz.id/en/blog/marine-hull-vs-cargo-insurance",
+      id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
+      en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
     },
   },
   openGraph: {
     title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
     description: "Asuransi kapal vs asuransi muatan: objek, tertanggung, dan kasus klaim yang berbeda.",
-    url: "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo",
+    url: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
     type: "article",
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/perbedaan-marine-hull-vs-cargo" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo" },
 };
 
 export default function PerbedaanMarineHullVsCargoPage() {

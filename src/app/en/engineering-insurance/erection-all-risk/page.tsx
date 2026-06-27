@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Erection All Risk Insurance in Batam for machinery installation, factories, and industrial plant. Protection from mobilisation through commissioning. Contact Rio!",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/engineering-insurance/erection-all-risk",
+    canonical: "https://asuransibatam.com/en/engineering-insurance/erection-all-risk",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-engineering/erection-all-risk",
-      en: "https://asuransibatam.biz.id/en/engineering-insurance/erection-all-risk",
+      id: "https://asuransibatam.com/asuransi-engineering/erection-all-risk",
+      en: "https://asuransibatam.com/en/engineering-insurance/erection-all-risk",
     },
   },
 };

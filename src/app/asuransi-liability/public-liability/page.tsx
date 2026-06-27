@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description:
     "Public Liability Insurance di Batam untuk subkontraktor galangan kapal (PT. Paxocean & lainnya), hotel, restoran, dan pusat perbelanjaan. Perlindungan tuntutan cedera pengunjung & pihak ketiga. Proses cepat, harga kompetitif. Hubungi: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-liability/public-liability",
+    canonical: "https://asuransibatam.com/asuransi-liability/public-liability",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability/public-liability",
-      en: "https://asuransibatam.biz.id/en/liability-insurance/public-liability",
+      id: "https://asuransibatam.com/asuransi-liability/public-liability",
+      en: "https://asuransibatam.com/en/liability-insurance/public-liability",
     },
   },
 };
@@ -121,7 +121,7 @@ const schema = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
     telephone: "+6281373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Batam",

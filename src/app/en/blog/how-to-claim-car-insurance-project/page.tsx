@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "A step-by-step guide to filing a Contractor All Risk (CAR) insurance claim in Indonesia — from the first notification to receiving your settlement payment, including the documents you need.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-project",
+    canonical: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-car",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-project",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
     },
   },
 };
@@ -30,19 +30,19 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Batam Insurance – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-project",
+    "@id": "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
   },
   inLanguage: "en-ID",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.biz.id/en" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/en/blog" },
-      { "@type": "ListItem", position: 3, name: "How to Claim CAR Insurance", item: "https://asuransibatam.biz.id/en/blog/how-to-claim-car-insurance-project" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/en/blog" },
+      { "@type": "ListItem", position: 3, name: "How to Claim CAR Insurance", item: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project" },
     ],
   },
   "HowTo": {

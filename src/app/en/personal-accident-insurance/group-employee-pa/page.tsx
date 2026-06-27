@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: 'Group Personal Accident Insurance Batam | Employee Protection (2024)',
   description: 'Group Personal Accident (PA) Insurance for companies in Batam, Batamindo, Mukakuning, and KIKN. Coverage for factory, shipyard, & project workers. Fast claims process (1 working day), supplementing BPJS JKK.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa',
+    canonical: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
     },
   },
   openGraph: {
     title: 'Group PA Insurance Batam: Industrial Employee Protection Solutions',
     description: 'Manage workplace risks in Batam with Group PA. Coverage for work accidents & travel. Free consultation for HR Managers.',
-    url: 'https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa',
+    url: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
     locale: 'en_US',
     type: 'website',
   },
@@ -31,9 +31,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.biz.id/en/personal-accident-insurance" },
-    { "@type": "ListItem", "position": 3, "name": "Group Employee PA", "item": "https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.com/en/personal-accident-insurance" },
+    { "@type": "ListItem", "position": 3, "name": "Group Employee PA", "item": "https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa" }
   ]
 };
 
@@ -41,8 +41,8 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "Group Personal Accident Insurance - Asuransi Batam",
-  "image": "https://asuransibatam.biz.id/images/group-pa-batam.jpg",
-  "url": "https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa",
+  "image": "https://asuransibatam.com/images/group-pa-batam.jpg",
+  "url": "https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa",
   "areaServed": {
     "@type": "City",
     "name": "Batam",

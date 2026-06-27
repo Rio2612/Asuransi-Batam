@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Everything importers and exporters need to know about marine cargo insurance on the Batam–Singapore route: Incoterms, policy clauses, route risks, and open cover. Call Rio +62813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/batam-singapore-shipping-insurance",
+    canonical: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/batam-singapore-shipping-insurance",
-      id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-singapore",
+      en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
+      id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
     },
   },
   openGraph: {
     title: "Batam–Singapore Cargo Shipping Insurance – Complete Guide for Exporters",
     description: "Cargo insurance for the Batam–Singapore corridor: right clauses, Incoterms responsibilities, and route-specific risks.",
-    url: "https://asuransibatam.biz.id/en/blog/batam-singapore-shipping-insurance",
+    url: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
     type: "article",
   },
 };
@@ -31,8 +31,8 @@ const schema = {
   dateModified: "2026-05-07",
   inLanguage: "en",
   author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/en/blog/batam-singapore-shipping-insurance" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance" },
 };
 
 export default function BatamSingaporeShippingInsurancePage() {

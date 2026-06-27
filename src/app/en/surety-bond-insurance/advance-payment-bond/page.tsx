@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "project advance guarantee batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/surety-bond-insurance/advance-payment-bond",
+    canonical: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/advance-payment-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/advance-payment-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
     },
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   description:
     "Complete guide to advance payment bonds in Batam: how they work, the reduction mechanism, required documents, and how to apply.",
   author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: "https://asuransibatam.biz.id/en/surety-bond-insurance/advance-payment-bond",
+  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
+  mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
 };
 
 export default function AdvancePaymentBondENPage() {

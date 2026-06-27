@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Berapa premi asuransi marine cargo di Batam? Pelajari cara menghitung premi, faktor yang mempengaruhi biaya, dan tips mendapat premi terbaik. Konsultasi gratis!",
   canonical: "/blog/premi-asuransi-marine-cargo-batam",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/premi-asuransi-marine-cargo-batam",
-    en: "https://asuransibatam.biz.id/en/blog/marine-cargo-insurance-premium-batam",
+    id: "https://asuransibatam.com/blog/premi-asuransi-marine-cargo-batam",
+    en: "https://asuransibatam.com/en/blog/marine-cargo-insurance-premium-batam",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Berapa Premi Asuransi Marine Cargo di Batam?",
   description:
     "Panduan lengkap cara menghitung premi marine cargo insurance di Batam, faktor penentu biaya, dan tips mendapatkan coverage terbaik.",
-  url: "https://asuransibatam.biz.id/blog/premi-asuransi-marine-cargo-batam",
+  url: "https://asuransibatam.com/blog/premi-asuransi-marine-cargo-batam",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

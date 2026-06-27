@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Liability insurance in Batam. Public liability, product liability, and specialist B3 hazardous waste insurance. Essential for industry in Batam. +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/liability-insurance",
+    canonical: "https://asuransibatam.com/en/liability-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-liability",
-      en: "https://asuransibatam.biz.id/en/liability-insurance",
+      id: "https://asuransibatam.com/asuransi-liability",
+      en: "https://asuransibatam.com/en/liability-insurance",
     },
   },
 };

@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "How much does marine cargo insurance cost in Batam? Learn the premium formula, factors that affect your rate, and how to get the best coverage for your budget. Contact Rio!",
   canonical: "/en/blog/marine-cargo-insurance-premium-batam",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/premi-asuransi-marine-cargo-batam",
-    en: "https://asuransibatam.biz.id/en/blog/marine-cargo-insurance-premium-batam",
+    id: "https://asuransibatam.com/blog/premi-asuransi-marine-cargo-batam",
+    en: "https://asuransibatam.com/en/blog/marine-cargo-insurance-premium-batam",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "How Much Is Marine Cargo Insurance Premium in Batam?",
   description:
     "A complete guide to calculating marine cargo insurance premiums in Batam, covering key rating factors, policy types, and tips for getting the best coverage.",
-  url: "https://asuransibatam.biz.id/en/blog/marine-cargo-insurance-premium-batam",
+  url: "https://asuransibatam.com/en/blog/marine-cargo-insurance-premium-batam",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/en/about-us",
+    url: "https://asuransibatam.com/en/about-us",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

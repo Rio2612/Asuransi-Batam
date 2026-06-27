@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Asuransi properti industri di Batam: perlindungan gedung pabrik, mesin produksi, stok bahan baku, dan tanggung jawab kepada pihak ketiga. Khusus kawasan industri Batamindo, Kabil, Muka Kuning. Hubungi Rio: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
+    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
-      en: "https://asuransibatam.biz.id/en/property-insurance/factory-industrial-insurance-batam",
+      id: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
+      en: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
     },
   },
 };
@@ -111,9 +111,9 @@ const schema = {
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.biz.id" },
-      { "@type": "ListItem", position: 2, name: "Asuransi Properti", item: "https://asuransibatam.biz.id/asuransi-properti" },
-      { "@type": "ListItem", position: 3, name: "Asuransi Pabrik & Kawasan Industri", item: "https://asuransibatam.biz.id/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" },
+      { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+      { "@type": "ListItem", position: 2, name: "Asuransi Properti", item: "https://asuransibatam.com/asuransi-properti" },
+      { "@type": "ListItem", position: 3, name: "Asuransi Pabrik & Kawasan Industri", item: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" },
     ],
   },
 };

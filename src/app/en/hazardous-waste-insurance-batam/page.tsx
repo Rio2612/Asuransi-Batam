@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/en/blog/hazardous-waste-insurance-batam",
+      "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
     languages: {
-      en: "https://asuransibatam.biz.id/en/blog/hazardous-waste-insurance-batam",
-      id: "https://asuransibatam.biz.id/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
+      en: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
+      id: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     },
   },
 };
@@ -47,12 +47,12 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     name: "Asuransi Batam Team",
-    url: "https://asuransibatam.biz.id/en",
+    url: "https://asuransibatam.com/en",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Panduan lengkap asuransi builders risk untuk galangan kapal di Batam: apa yang dilindungi, periode coverage, dan mengapa berbeda dari marine hull biasa. Konsultasi Rio 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal",
+    canonical: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal",
-      en: "https://asuransibatam.biz.id/en/blog/builders-risk-shipyard-insurance-batam",
+      id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
+      en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
     },
   },
   openGraph: {
     title: "Builders Risk untuk Galangan Kapal – Asuransi Pembangunan Kapal di Batam",
     description: "Asuransi builders risk melindungi kapal yang sedang dibangun, dimodifikasi, atau direparasi besar. Panduan untuk galangan kapal di Batam.",
-    url: "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal",
+    url: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
     type: "article",
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/builders-risk-untuk-galangan-kapal" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal" },
 };
 
 export default function BuildersRiskGalanganKapalPage() {

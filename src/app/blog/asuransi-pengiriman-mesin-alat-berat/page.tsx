@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Asuransi khusus pengiriman mesin industri dan alat berat dari Batam. Perlindungan untuk excavator, crane, generator, dan mesin pabrik saat pengiriman laut. Hubungi Rio!",
   canonical: "/blog/asuransi-pengiriman-mesin-alat-berat",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-mesin-alat-berat",
-    en: "https://asuransibatam.biz.id/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-mesin-alat-berat",
+    en: "https://asuransibatam.com/en/blog/machinery-heavy-equipment-shipping-insurance-batam",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Asuransi Pengiriman Mesin dan Alat Berat dari Batam",
   description:
     "Panduan asuransi cargo untuk pengiriman mesin industri dan alat berat dari Batam, mencakup jenis perlindungan, risiko khusus, dan cara klaim.",
-  url: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-mesin-alat-berat",
+  url: "https://asuransibatam.com/blog/asuransi-pengiriman-mesin-alat-berat",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

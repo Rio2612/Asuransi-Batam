@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
+      "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
+      id: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     },
   },
 };
@@ -46,12 +46,12 @@ const articleSchema = {
   author: {
     "@type": "Organization",
     name: "Tim Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

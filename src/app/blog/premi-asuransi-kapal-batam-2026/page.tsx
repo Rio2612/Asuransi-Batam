@@ -31,8 +31,8 @@ export const metadata: Metadata = generateSEO({
     "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, simulasi perhitungan, dan tips menekan biaya. Dari konsultan 10+ tahun pengalaman.",
   canonical: "/blog/premi-asuransi-kapal-batam-2026",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/premi-asuransi-kapal-batam-2026",
-    en: "https://asuransibatam.biz.id/en/blog/ship-insurance-premium-batam-2026",
+    id: "https://asuransibatam.com/blog/premi-asuransi-kapal-batam-2026",
+    en: "https://asuransibatam.com/en/blog/ship-insurance-premium-batam-2026",
   },
 });
 
@@ -40,11 +40,11 @@ export const metadata: Metadata = generateSEO({
    SCHEMA DATA
 ───────────────────────────────────────────── */
 const breadcrumbSchema = schemaBreadcrumb([
-  { name: "Beranda", url: "https://asuransibatam.biz.id/" },
-  { name: "Blog", url: "https://asuransibatam.biz.id/blog" },
+  { name: "Beranda", url: "https://asuransibatam.com/" },
+  { name: "Blog", url: "https://asuransibatam.com/blog" },
   {
     name: "Premi Asuransi Kapal Batam 2026",
-    url: "https://asuransibatam.biz.id/blog/premi-asuransi-kapal-batam-2026",
+    url: "https://asuransibatam.com/blog/premi-asuransi-kapal-batam-2026",
   },
 ]);
 
@@ -84,19 +84,19 @@ const articleSchema = {
   description:
     "Panduan lengkap premi asuransi kapal di Batam 2026 dari konsultan berpengalaman 10+ tahun.",
   image:
-    "https://asuransibatam.biz.id/images/potoartikel/cek-mesin-kapal-batam.webp",
+    "https://asuransibatam.com/images/potoartikel/cek-mesin-kapal-batam.webp",
   datePublished: "2026-01-15",
   dateModified: "2026-06-01",
   author: {
     "@type": "Person",
     name: "Rio Mardiansyah",
     jobTitle: "Konsultan Asuransi Kerugian",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -30,8 +30,8 @@ export const metadata: Metadata = generateSEO({
     "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari konsultan berpengalaman 10+ tahun.",
   canonical: "/blog/jenis-jenis-asuransi-kapal-armada",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/jenis-jenis-asuransi-kapal-armada",
-    en: "https://asuransibatam.biz.id/en/blog/types-of-ship-insurance-fleet-owners",
+    id: "https://asuransibatam.com/blog/jenis-jenis-asuransi-kapal-armada",
+    en: "https://asuransibatam.com/en/blog/types-of-ship-insurance-fleet-owners",
   },
 });
 
@@ -39,11 +39,11 @@ export const metadata: Metadata = generateSEO({
    SCHEMA DATA
 ───────────────────────────────────────────── */
 const breadcrumbSchema = schemaBreadcrumb([
-  { name: "Beranda", url: "https://asuransibatam.biz.id/" },
-  { name: "Blog", url: "https://asuransibatam.biz.id/blog" },
+  { name: "Beranda", url: "https://asuransibatam.com/" },
+  { name: "Blog", url: "https://asuransibatam.com/blog" },
   {
     name: "Jenis-Jenis Asuransi Kapal",
-    url: "https://asuransibatam.biz.id/blog/jenis-jenis-asuransi-kapal-armada",
+    url: "https://asuransibatam.com/blog/jenis-jenis-asuransi-kapal-armada",
   },
 ]);
 
@@ -84,19 +84,19 @@ const articleSchema = {
   description:
     "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam dari konsultan berpengalaman 10+ tahun.",
   image:
-    "https://asuransibatam.biz.id/images/potoartikel/tongkangnongsa.webp",
+    "https://asuransibatam.com/images/potoartikel/tongkangnongsa.webp",
   datePublished: "2025-07-01",
   dateModified: "2025-07-01",
   author: {
     "@type": "Person",
     name: "Rio Mardiansyah",
     jobTitle: "Konsultan Asuransi Kerugian",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

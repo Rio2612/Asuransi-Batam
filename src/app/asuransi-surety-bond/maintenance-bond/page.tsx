@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/asuransi-surety-bond/maintenance-bond",
+      "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/maintenance-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/maintenance-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
     },
   },
 };
@@ -38,10 +38,10 @@ const schema = {
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage:
-    "https://asuransibatam.biz.id/asuransi-surety-bond/maintenance-bond",
+    "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
 };
 
 export default function MaintenanceBondPage() {

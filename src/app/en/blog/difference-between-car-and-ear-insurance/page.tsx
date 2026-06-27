@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     "Confused between Contractor All Risk (CAR) and Erection All Risk (EAR)? This guide breaks down the key differences, coverage scope, and how to choose the right policy for your project in Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/difference-between-car-and-ear-insurance",
+    canonical: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/perbedaan-car-dan-ear",
-      en: "https://asuransibatam.biz.id/en/blog/difference-between-car-and-ear-insurance",
+      id: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
+      en: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
     },
   },
 };
@@ -30,19 +30,19 @@ const schema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Batam Insurance – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/en/blog/difference-between-car-and-ear-insurance",
+    "@id": "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
   },
   inLanguage: "en-ID",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.biz.id/en" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.biz.id/en/blog" },
-      { "@type": "ListItem", position: 3, name: "CAR vs EAR Insurance", item: "https://asuransibatam.biz.id/en/blog/difference-between-car-and-ear-insurance" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/en/blog" },
+      { "@type": "ListItem", position: 3, name: "CAR vs EAR Insurance", item: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance" },
     ],
   },
 };

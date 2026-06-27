@@ -10,17 +10,17 @@ export const metadata: Metadata = {
     "A complete guide to choosing Builders Risk insurance for construction projects and shipyards in Batam: a real claim case study, common mistakes, and how to set the right sum insured. Consult Rio +62 813-7333-6728.",
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/en/blog/how-to-get-builders-risk-insurance-batam",
+      "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-get-builders-risk-insurance-batam",
+      id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+      en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
     },
   },
   openGraph: {
     title: "How to Get the Right Builders Risk Insurance in Batam",
     description:
       "A real Builders Risk claim case study from a Batam shipyard, and how to choose a policy that truly protects your project.",
-    url: "https://asuransibatam.biz.id/en/blog/how-to-get-builders-risk-insurance-batam",
+    url: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
     type: "article",
   },
 };
@@ -44,11 +44,11 @@ const articleSchema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/en/blog/how-to-get-builders-risk-insurance-batam",
+    "@id": "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
   },
 };
 

@@ -10,17 +10,17 @@ export const metadata: Metadata = {
     "Panduan lengkap memilih asuransi builders risk untuk proyek konstruksi & galangan kapal di Batam: studi kasus klaim nyata, kesalahan umum, dan langkah memilih sum insured yang tepat. Konsultasi Rio 0813-7333-6728.",
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+      "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-get-builders-risk-insurance-batam",
+      id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+      en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
     },
   },
   openGraph: {
     title: "Cara Mendapatkan Asuransi Builders Risk yang Tepat di Batam",
     description:
       "Studi kasus klaim builders risk di galangan kapal Batam dan langkah memilih polis yang tepat agar proyek konstruksi Anda terlindungi.",
-    url: "https://asuransibatam.biz.id/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+    url: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
     type: "article",
   },
 };
@@ -43,11 +43,11 @@ const articleSchema = {
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": "https://asuransibatam.biz.id/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+    "@id": "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
   },
 };
 

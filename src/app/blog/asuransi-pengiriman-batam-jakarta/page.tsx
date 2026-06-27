@@ -10,10 +10,10 @@ export const metadata: Metadata = generateSEO({
   title: "Asuransi Pengiriman Barang Batam ke Jakarta – Marine Cargo Domestik | Asuransi Batam",
   description:
     "Lindungi kiriman barang dari Batam ke Jakarta dengan Marine Cargo Insurance. Ekspedisi laut, Roro, dan kontainer. Premi terjangkau, klaim mudah. Hubungi Rio!",
-  canonical: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
+  canonical: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-jakarta",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
-    en: "https://asuransibatam.biz.id/en/blog/batam-jakarta-cargo-insurance",
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-jakarta",
+    en: "https://asuransibatam.com/en/blog/batam-jakarta-cargo-insurance",
   },
 });
 
@@ -23,18 +23,18 @@ const schemaArticle = {
   headline: "Asuransi Pengiriman Barang dari Batam ke Jakarta",
   description:
     "Panduan lengkap asuransi pengiriman barang jalur laut dari Batam ke Jakarta, mencakup risiko, klausul ICC, dan cara memilih polis yang tepat.",
-  url: "https://asuransibatam.biz.id/blog/asuransi-pengiriman-batam-jakarta",
+  url: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-jakarta",
   datePublished: "2026-05-08",
   dateModified: "2026-05-08",
   author: {
     "@type": "Person",
     name: "Rio",
-    url: "https://asuransibatam.biz.id/tentang-kami",
+    url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
 };
 

@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: 'Asuransi PA Individu & Keluarga Batam | Proteksi 24 Jam Anti Resiko',
   description: 'Asuransi Kecelakaan Diri (PA) Individu untuk warga Batam. Proteksi komprehensif 24 jam untuk komuter Batam-Singapura, pengendara motor, dan kepala keluarga. Premi mulai Rp 50rb/bulan, klaim proses 1 hari.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-individu-keluarga',
+    canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-individu-keluarga',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance/individual-family-pa',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
     },
   },
   openGraph: {
     title: 'Asuransi PA Individu Batam: Lindungi Diri & Keluarga dari Resiko Kecelakaan',
     description: 'Jangan biarkan kecelakaan mengganggu keuangan keluarga. Cover medis, cacat & meninggal. Khusus untuk residensi Batam & Kepri.',
-    url: 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-individu-keluarga',
+    url: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
     locale: 'id_ID',
     type: 'website',
   },
@@ -31,9 +31,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.biz.id/asuransi-personal-accident" },
-    { "@type": "ListItem", "position": 3, "name": "PA Individu & Keluarga", "item": "https://asuransibatam.biz.id/asuransi-personal-accident/pa-individu-keluarga" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.com/asuransi-personal-accident" },
+    { "@type": "ListItem", "position": 3, "name": "PA Individu & Keluarga", "item": "https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga" }
   ]
 };
 

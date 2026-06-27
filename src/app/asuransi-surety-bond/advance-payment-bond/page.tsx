@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/asuransi-surety-bond/advance-payment-bond",
+      "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/advance-payment-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/advance-payment-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
     },
   },
 };
@@ -38,10 +38,10 @@ const schema = {
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage:
-    "https://asuransibatam.biz.id/asuransi-surety-bond/advance-payment-bond",
+    "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
 };
 
 export default function AdvancePaymentBondPage() {

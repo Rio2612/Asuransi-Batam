@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Heavy Equipment Insurance for Construction Projects – Complete Guide for Contractors",
   description: "Contractors who don't insure their heavy equipment carry unnecessary risk. Understand EAR vs CAR, which equipment must be insured, how to calculate the right sum insured, and tips for a successful claim.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/blog/heavy-equipment-insurance-construction-projects",
+    canonical: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-alat-berat-proyek-konstruksi",
-      en: "https://asuransibatam.biz.id/en/blog/heavy-equipment-insurance-construction-projects",
+      id: "https://asuransibatam.com/blog/asuransi-alat-berat-proyek-konstruksi",
+      en: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
     },
   },
 };

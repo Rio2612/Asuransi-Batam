@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "Perbedaan Asuransi All Risk dan TLO – Mana yang Lebih Baik?",
   description: "Penjelasan lengkap perbedaan All Risk dan TLO, kelebihan kekurangan masing-masing, dan panduan memilih yang sesuai untuk kendaraan Anda di Batam.",
   alternates: {
-  canonical: "https://asuransibatam.biz.id/blog/perbedaan-all-risk-dan-tlo",
+  canonical: "https://asuransibatam.com/blog/perbedaan-all-risk-dan-tlo",
   languages: {
-    id: "https://asuransibatam.biz.id/blog/perbedaan-all-risk-dan-tlo",
-    en: "https://asuransibatam.biz.id/en/blog/all-risk-vs-tlo-car-insurance",
+    id: "https://asuransibatam.com/blog/perbedaan-all-risk-dan-tlo",
+    en: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
   },
 },
   } 

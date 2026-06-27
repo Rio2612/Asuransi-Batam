@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: 'Asuransi PA Karyawan Grup Batam | Premi Murah & Klaim Mudah (2024)',
   description: 'Program Asuransi Kecelakaan Diri Grup (Group PA) untuk perusahaan di Batam, Batamindo, Mukakuning, dan KIKN. Cover karyawan pabrik, shipyard & proyek. Proses klaim 1 hari kerja, melengkapi BPJS JKK.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup',
+    canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance/group-employee-pa',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
     },
   },
   openGraph: {
     title: 'Asuransi PA Grup Batam: Solusi Proteksi Karyawan Industri',
     description: 'Kelola risiko kerja di Batam dengan PA Group. Cover kecelakaan kerja & perjalanan. Konsultasi gratis untuk HRD & Manajer.',
-    url: 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup',
+    url: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
     locale: 'id_ID',
     type: 'website',
   },
@@ -31,9 +31,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.biz.id/asuransi-personal-accident" },
-    { "@type": "ListItem", "position": 3, "name": "PA Karyawan Grup Batam", "item": "https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Asuransi Personal Accident", "item": "https://asuransibatam.com/asuransi-personal-accident" },
+    { "@type": "ListItem", "position": 3, "name": "PA Karyawan Grup Batam", "item": "https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup" }
   ]
 };
 
@@ -41,8 +41,8 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "name": "Asuransi Kecelakaan Diri Grup - Asuransi Batam",
-  "image": "https://asuransibatam.biz.id/images/group-pa-batam.jpg",
-  "url": "https://asuransibatam.biz.id/asuransi-personal-accident/pa-karyawan-grup",
+  "image": "https://asuransibatam.com/images/group-pa-batam.jpg",
+  "url": "https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup",
   "areaServed": {
     "@type": "City",
     "name": "Batam",

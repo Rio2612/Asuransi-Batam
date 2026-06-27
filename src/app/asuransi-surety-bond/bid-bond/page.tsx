@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "surety bond bid bond batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-surety-bond/bid-bond",
+    canonical: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/bid-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/bid-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
     },
   },
 };
@@ -37,9 +37,9 @@ const schema = {
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
-  mainEntityOfPage: "https://asuransibatam.biz.id/asuransi-surety-bond/bid-bond",
+  mainEntityOfPage: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
 };
 
 export default function BidBondPage() {

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id",
+    canonical: "https://asuransibatam.com",
     languages: {
-      id: "https://asuransibatam.biz.id",
-      en: "https://asuransibatam.biz.id/en",
+      id: "https://asuransibatam.com",
+      en: "https://asuransibatam.com/en",
     },
   },
 };
@@ -121,11 +121,11 @@ export default function HomePage() {
     "@graph": [
       {
         "@type": ["InsuranceAgency", "LocalBusiness"],
-        "@id": "https://asuransibatam.biz.id/#organization",
+        "@id": "https://asuransibatam.com/#organization",
         name: "Asuransi Batam – Rio",
-        url: "https://asuransibatam.biz.id",
+        url: "https://asuransibatam.com",
         telephone: "+6281373336728",
-        email: "rio@asuransibatam.biz.id",
+        email: "rio@asuransibatam.com",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Batam Center",

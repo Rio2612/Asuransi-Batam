@@ -12,8 +12,8 @@ export const metadata: Metadata = generateSEO({
     "Marine Hull Insurance in Batam for comprehensive protection of vessel hull, engine, and navigation equipment against collision, grounding, fire, and sinking. Consult Rio!",
   canonical: "/en/marine-insurance/marine-hull",
   languages: {
-    id: "https://asuransibatam.biz.id/asuransi-marine/marine-hull",
-    en: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
+    id: "https://asuransibatam.com/asuransi-marine/marine-hull",
+    en: "https://asuransibatam.com/en/marine-insurance/marine-hull",
   },
 });
 
@@ -24,7 +24,7 @@ const schemaService = {
   name: "Marine Hull Insurance Batam",
   description:
     "Vessel hull insurance in Batam providing comprehensive physical protection for ships, engines, and navigation equipment against all marine perils.",
-  url: "https://asuransibatam.biz.id/en/marine-insurance/marine-hull",
+  url: "https://asuransibatam.com/en/marine-insurance/marine-hull",
   serviceType: "Marine Insurance – Marine Hull",
   areaServed: {
     "@type": "City",
@@ -35,7 +35,7 @@ const schemaService = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam",
     telephone: "081373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Contractor All Risk Insurance in Batam for building, road, bridge, and infrastructure construction projects. Material & third-party liability protection. Consult Rio!",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/engineering-insurance/contractor-all-risk",
+    canonical: "https://asuransibatam.com/en/engineering-insurance/contractor-all-risk",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-engineering/contractor-all-risk",
-      en: "https://asuransibatam.biz.id/en/engineering-insurance/contractor-all-risk",
+      id: "https://asuransibatam.com/asuransi-engineering/contractor-all-risk",
+      en: "https://asuransibatam.com/en/engineering-insurance/contractor-all-risk",
     },
   },
 };

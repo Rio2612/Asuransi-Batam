@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "Asuransi Crane Batam – Perlindungan Tower Crane & Mobile Crane",
   description: "Asuransi crane di Batam. Tower crane, mobile crane, dan lifting equipment dilindungi dari kerusakan dan tanggung jawab pihak ketiga. Konsultasi gratis.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-crane",
+    canonical: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-crane",
-      en: "https://asuransibatam.biz.id/en/machinery-insurance/crane-insurance",
+      id: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
+      en: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
     },
   },
 };

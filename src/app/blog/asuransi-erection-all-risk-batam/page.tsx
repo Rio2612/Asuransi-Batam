@@ -17,10 +17,10 @@ import CTASection from "@/components/CTASection";
   ],
   alternates: {
     // Canonical menunjuk ke URL halaman ini sendiri
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
+    canonical: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-erection-all-risk-batam",
-      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam", // Tambahkan URL versi Inggris di sini
+      id: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
+      en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam", // Tambahkan URL versi Inggris di sini
     },
   },
 };
@@ -32,8 +32,8 @@ const articleSchema = {
   headline: "Asuransi Erection All Risk (EAR) Batam: Panduan untuk Instalasi Mesin & Proyek Energi",
   datePublished: "2026-05-29",
   dateModified: "2026-05-29",
-  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.com" },
+  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
 };
 
 const faqSchema = {

@@ -11,16 +11,16 @@ export const metadata: Metadata = {
   title: 'Individual & Family PA Insurance Batam | 24-Hour Accident Protection',
   description: 'Personal Accident (PA) Insurance for Batam residents. Comprehensive 24/7 protection for commuters, motorcyclists, and families. Affordable premiums, 1-day claim process.',
   alternates: {
-    canonical: 'https://asuransibatam.biz.id/en/personal-accident-insurance/individual-family-pa',
+    canonical: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
     languages: {
-      'id-ID': 'https://asuransibatam.biz.id/asuransi-personal-accident/pa-individu-keluarga',
-      'en-US': 'https://asuransibatam.biz.id/en/personal-accident-insurance/individual-family-pa',
+      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
+      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
     },
   },
   openGraph: {
     title: 'Individual PA Insurance Batam: Protect Yourself & Family from Accident Risks',
     description: 'Don\'t let accidents disrupt your family\'s finances. Medical, disability & death coverage. Specifically for Batam & Riau Islands residency.',
-    url: 'https://asuransibatam.biz.id/en/personal-accident-insurance/individual-family-pa',
+    url: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
     locale: 'en_US',
     type: 'website',
   },
@@ -30,9 +30,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.biz.id" },
-    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.biz.id/en/personal-accident-insurance" },
-    { "@type": "ListItem", "position": 3, "name": "Individual & Family PA", "item": "https://asuransibatam.biz.id/en/personal-accident-insurance/individual-family-pa" }
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://asuransibatam.com" },
+    { "@type": "ListItem", "position": 2, "name": "Personal Accident Insurance", "item": "https://asuransibatam.com/en/personal-accident-insurance" },
+    { "@type": "ListItem", "position": 3, "name": "Individual & Family PA", "item": "https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa" }
   ]
 };
 

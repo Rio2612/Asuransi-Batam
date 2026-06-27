@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Artikel edukasi asuransi kerugian. Panduan klaim, perbedaan produk, tips memilih asuransi, dan informasi terkini tentang asuransi di Batam.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog",
+    canonical: "https://asuransibatam.com/blog",
     languages: {
-      id: "https://asuransibatam.biz.id/blog",
-      en: "https://asuransibatam.biz.id/en/blog",
+      id: "https://asuransibatam.com/blog",
+      en: "https://asuransibatam.com/en/blog",
     },
   },
 };

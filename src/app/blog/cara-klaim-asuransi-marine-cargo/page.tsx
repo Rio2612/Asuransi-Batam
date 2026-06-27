@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Panduan step-by-step mengajukan klaim asuransi marine cargo: dokumen wajib, batas waktu lapor, dan kesalahan umum yang membuat klaim ditolak. Konsultasi Rio 0813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-marine-cargo",
+    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
     languages: {
-      id: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-marine-cargo",
-      en: "https://asuransibatam.biz.id/en/blog/how-to-claim-marine-cargo-insurance",
+      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
+      en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
     },
   },
   openGraph: {
     title: "Cara Klaim Asuransi Marine Cargo yang Benar – Panduan Lengkap",
     description: "Dokumen wajib, batas waktu, dan langkah klaim marine cargo agar tidak ditolak.",
-    url: "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-marine-cargo",
+    url: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
     type: "article",
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/cara-klaim-asuransi-marine-cargo" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo" },
 };
 
 export default function CaraKlaimMarineCargoPage() {

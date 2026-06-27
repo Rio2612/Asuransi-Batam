@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     "Asuransi alat berat terpercaya di Batam. Perlindungan Equipment All Risk untuk excavator, bulldozer, wheel loader, crane, dan alat galangan kapal. Proses klaim mudah. Hubungi 0813-7333-6728.",
   alternates: {
     canonical:
-      "https://asuransibatam.biz.id/asuransi-machinery/asuransi-alat-berat",
+      "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-alat-berat",
-      en: "https://asuransibatam.biz.id/en/machinery-insurance/heavy-equipment-insurance",
+      id: "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
+      en: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
     },
   },
 };
@@ -92,7 +92,7 @@ const schema = {
     "@type": "InsuranceAgency",
     name: "Asuransi Batam – Rio",
     telephone: "+6281373336728",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   serviceType: "Equipment All Risk Insurance",
   offers: {

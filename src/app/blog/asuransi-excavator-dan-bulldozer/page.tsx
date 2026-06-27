@@ -18,10 +18,10 @@ import {
 export const metadata: Metadata = {
   title: "Asuransi Excavator dan Bulldozer di Batam – Proteksi, Coverage & Cara Klaim",
   description: "Excavator dan bulldozer adalah aset mahal yang rentan rusak di lapangan. Pelajari jenis perlindungan yang tepat, apa yang ditanggung, dan bagaimana cara mengasuransikan alat berat Anda di Batam.",
-  alternates: { canonical: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
+  alternates: { canonical: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
         languages: {
-      id: "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer",
-      en: "https://asuransibatam.biz.id/en/blog/excavator-and-bulldozer-insurance-batam",
+      id: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
+      en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam",
     },
   },
 };
@@ -35,8 +35,8 @@ const articleSchema = {
   datePublished: "2026-05-06",
   dateModified: "2026-05-06",
   author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
-  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.biz.id/blog/asuransi-excavator-dan-bulldozer" },
+  publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
+  mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer" },
 };
 
 // FAQ schema — dirender via prop resmi faqSchema di ArticleLayout

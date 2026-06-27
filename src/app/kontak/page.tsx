@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Kontak – Hubungi Rio Konsultan Asuransi Batam",
-  description: "Hubungi Rio untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-7333-6728, email rio@asuransibatam.biz.id. Batam Center.",
+  description: "Hubungi Rio untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-7333-6728, email rio@asuransibatam.com. Batam Center.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/kontak",
+    canonical: "https://asuransibatam.com/kontak",
     languages: {
-      id: "https://asuransibatam.biz.id/kontak",
-      en: "https://asuransibatam.biz.id/en/contact",
+      id: "https://asuransibatam.com/kontak",
+      en: "https://asuransibatam.com/en/contact",
     },
   },
 };
@@ -26,7 +26,7 @@ export default function KontakPage() {
             {[
               { icon: "💬", label: "WhatsApp", value: "0813-7333-6728", href: "https://wa.me/6281373336728", primary: true },
               { icon: "📞", label: "Telepon", value: "0813-7333-6728", href: "tel:081373336728", primary: false },
-              { icon: "📧", label: "Email", value: "rio@asuransibatam.biz.id", href: "mailto:rio@asuransibatam.biz.id", primary: false },
+              { icon: "📧", label: "Email", value: "rio@asuransibatam.com", href: "mailto:rio@asuransibatam.com", primary: false },
               { icon: "📍", label: "Alamat", value: "Batam Center, Kota Batam, Kepulauan Riau", href: null, primary: false },
             ].map((c) => (
               <div key={c.label} className={`p-5 rounded-2xl border-2 ${c.primary ? "bg-[#0a1628] border-[#c9a84c]/30" : "bg-white border-[#e2e8f0]"}`}>

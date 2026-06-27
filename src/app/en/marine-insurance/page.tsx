@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Marine insurance in Batam covering Marine Hull, Marine Cargo, and Builder's Risk. Protect your vessel, cargo, and shipbuilding projects. Consult Rio at +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/marine-insurance",
+    canonical: "https://asuransibatam.com/en/marine-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-marine",
-      en: "https://asuransibatam.biz.id/en/marine-insurance",
+      id: "https://asuransibatam.com/asuransi-marine",
+      en: "https://asuransibatam.com/en/marine-insurance",
     },
   },
 };

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Heavy equipment insurance in Batam. Protection for excavators, bulldozers, wheel loaders, and construction equipment from damage and accidents. Contact +62-813-7333-6728.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/machinery-insurance/heavy-equipment-insurance",
+    canonical: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-machinery/asuransi-alat-berat",
-      en: "https://asuransibatam.biz.id/en/machinery-insurance/heavy-equipment-insurance",
+      id: "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
+      en: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
     },
   },
 };

@@ -2,10 +2,10 @@
 export const SITE = {
   name: "Asuransi Batam",
   tagline: "Konsultan Asuransi Kerugian Terpercaya di Batam",
-  url: "https://asuransibatam.biz.id",
+  url: "https://asuransibatam.com",
   phone: "081373336728",
   phoneWA: "6281373336728",
-  email: "rio@asuransibatam.biz.id",
+  email: "rio@asuransibatam.com",
   address: "Batam Center, Kepulauan Riau",
   agent: {
     name: "Rio",

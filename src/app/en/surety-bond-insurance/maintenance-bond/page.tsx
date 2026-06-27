@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "surety bond maintenance batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/en/surety-bond-insurance/maintenance-bond",
+    canonical: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/maintenance-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/maintenance-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
     },
   },
 };
@@ -30,8 +30,8 @@ const schema = {
   description:
     "Guide to maintenance bonds in Batam: what they cover, bond value, validity periods, and how contractors can use them to replace cash retention.",
   author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  mainEntityOfPage: "https://asuransibatam.biz.id/en/surety-bond-insurance/maintenance-bond",
+  publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
+  mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
 };
 
 export default function MaintenanceBondENPage() {

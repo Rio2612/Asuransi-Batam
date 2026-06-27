@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "Kalkulator Premi Asuransi Mobil Batam – Cek Tarif OJK Sekarang, Gratis",
   description: "Berapa premi asuransi mobil Anda di Batam? Hitung langsung pakai tarif resmi OJK — All Risk mulai 2,08%, TLO mulai 0,37%. Hasil instan, tanpa daftar, langsung hubungi agen.",
   alternates: {
-    canonical: "https://asuransibatam.biz.id/kalkulator-premi-mobil",
+    canonical: "https://asuransibatam.com/kalkulator-premi-mobil",
     languages: {
-      id: "https://asuransibatam.biz.id/kalkulator-premi-mobil",
-      en: "https://asuransibatam.biz.id/en/car-premium-calculator",
+      id: "https://asuransibatam.com/kalkulator-premi-mobil",
+      en: "https://asuransibatam.com/en/car-premium-calculator",
     },
   },
 };

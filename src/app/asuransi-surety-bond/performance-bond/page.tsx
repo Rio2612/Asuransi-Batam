@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "jaminan kontrak proyek batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/asuransi-surety-bond/performance-bond",
+    canonical: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
     languages: {
-      id: "https://asuransibatam.biz.id/asuransi-surety-bond/performance-bond",
-      en: "https://asuransibatam.biz.id/en/surety-bond-insurance/performance-bond",
+      id: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
     },
   },
 };
@@ -37,10 +37,10 @@ const schema = {
   publisher: {
     "@type": "Organization",
     name: "Asuransi Batam",
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
   },
   mainEntityOfPage:
-    "https://asuransibatam.biz.id/asuransi-surety-bond/performance-bond",
+    "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
 };
 
 export default function PerformanceBondPage() {

@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "asuransi kendaraan Batam",
   ],
   alternates: {
-    canonical: "https://asuransibatam.biz.id/blog/asuransi-motor-batam",
-    languages: { id: "https://asuransibatam.biz.id/blog/asuransi-motor-batam" },
+    canonical: "https://asuransibatam.com/blog/asuransi-motor-batam",
+    languages: { id: "https://asuransibatam.com/blog/asuransi-motor-batam" },
   },
 };
 
@@ -27,8 +27,8 @@ const articleSchema = {
   headline: "Asuransi Motor Batam 2026: Premi, Tarif OJK Wilayah 1 & Tips Pilih All Risk vs TLO",
   datePublished: "2026-05-29",
   dateModified: "2026-05-29",
-  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.biz.id" },
-  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.biz.id" },
+  author: { "@type": "Organization", name: "Tim Asuransi Batam", url: "https://asuransibatam.com" },
+  publisher: { "@type": "Organization", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
 };
 
 const faqSchema = {

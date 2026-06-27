@@ -19,7 +19,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asuransibatam.biz.id"),
+  metadataBase: new URL("https://asuransibatam.com"),
   title: {
     default: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya | Rio",
     template: "%s | Asuransi Batam",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     alternateLocale: "en_US",          // ← tambahan bilingual
-    url: "https://asuransibatam.biz.id",
+    url: "https://asuransibatam.com",
     siteName: "Asuransi Batam",
     title: "Asuransi Batam – Konsultan Asuransi Kerugian Terpercaya",
     description:
@@ -75,9 +75,9 @@ export default function RootLayout({
           hreflang global — Google pakai ini untuk mendeteksi versi bahasa.
           Untuk halaman tertentu, override di metadata.alternates masing-masing page.
         */}
-        <link rel="alternate" hrefLang="id" href="https://asuransibatam.biz.id/" />
-        <link rel="alternate" hrefLang="en" href="https://asuransibatam.biz.id/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://asuransibatam.biz.id/" />
+        <link rel="alternate" hrefLang="id" href="https://asuransibatam.com/" />
+        <link rel="alternate" hrefLang="en" href="https://asuransibatam.com/en" />
+        <link rel="alternate" hrefLang="x-default" href="https://asuransibatam.com/" />
       </head>
       <body className="font-sans antialiased">
         <Navbar />
