@@ -320,6 +320,31 @@ export default function MachineryShippingInsuranceENPage() {
         </div>
       </section>
 
+      
+      {/* Related Links */}
+      <section className="py-12 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Related Pages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Products &amp; Services</p>
+              <ul className="space-y-2">
+                <li><a href="/en/marine-insurance/marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Cargo Insurance Batam</a></li>
+                <li><a href="/en/machinery-insurance/heavy-equipment-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ Heavy Equipment Insurance Batam</a></li>
+                <li><a href="/en/machinery-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ Machinery Insurance Batam</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Related Articles</p>
+              <ul className="space-y-2">
+                <li><a href="/en/blog/heavy-equipment-insurance-construction-projects" className="text-sm text-blue-700 hover:underline font-medium">→ Heavy Equipment Insurance for Construction</a></li>
+                <li><a href="/en/blog/mining-heavy-equipment-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ Mining Heavy Equipment Insurance</a></li>
+                <li><a href="/en/blog/how-to-claim-marine-cargo-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ How to Claim Marine Cargo Insurance</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTASection
         title="Protect Your Machinery from the First Voyage"
         waMsg="Hello Rio, I need cargo insurance for shipping machinery/heavy equipment from Batam"

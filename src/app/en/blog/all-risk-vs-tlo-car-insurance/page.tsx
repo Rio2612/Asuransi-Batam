@@ -189,6 +189,29 @@ export default function ArticleAllRiskTLOENPage() {
           </Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Related Pages</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Products &amp; Services</p>
+            <ul className="space-y-2">
+              <li><a href="/en/vehicle-insurance/car-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Car Insurance Batam</a></li>
+              <li><a href="/en/vehicle-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ Vehicle Insurance Batam</a></li>
+              <li><a href="/en/car-premium-calculator" className="text-sm text-blue-700 hover:underline font-medium">→ Car Insurance Premium Calculator</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Related Articles</p>
+            <ul className="space-y-2">
+              <li><a href="/en/blog/how-to-claim-car-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ How to Claim Car Insurance in Batam</a></li>
+              <li><a href="/en/blog/construction-project-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Dump Truck Insurance Batam</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

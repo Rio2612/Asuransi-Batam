@@ -254,6 +254,28 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
           </Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Related Pages</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Products &amp; Services</p>
+            <ul className="space-y-2">
+              <li><a href="/en/property-insurance/warehouse-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Warehouse Insurance Batam</a></li>
+              <li><a href="/en/property-insurance/hotel-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Hotel Insurance Batam</a></li>
+              <li><a href="/en/property-insurance/factory-industrial-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Factory & Industrial Insurance Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Related Articles</p>
+            <ul className="space-y-2">
+              <li><a href="/en/blog/how-to-claim-home-fire-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ How to Claim Home Fire Insurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

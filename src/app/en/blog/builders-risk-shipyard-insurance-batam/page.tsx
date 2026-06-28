@@ -152,6 +152,27 @@ export default function BuildersRiskShipyardPage() {
           <Link href="/en/marine-insurance" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ All Marine Insurance Products</Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Related Pages</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Products &amp; Services</p>
+            <ul className="space-y-2">
+              <li><a href="/en/marine-insurance/builders-risk" className="text-sm text-blue-700 hover:underline font-medium">→ Builders Risk Insurance Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Related Articles</p>
+            <ul className="space-y-2">
+              <li><a href="/en/blog/how-to-get-builders-risk-insurance-batam" className="text-sm text-blue-700 hover:underline font-medium">→ How to Get Builders Risk Insurance</a></li>
+              <li><a href="/en/blog/marine-hull-vs-cargo-insurance" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Hull vs Cargo Insurance</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }
