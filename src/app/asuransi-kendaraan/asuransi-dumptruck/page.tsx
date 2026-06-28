@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Dump Truck Batam – Perlindungan Kendaraan Berat & Armada",
@@ -31,6 +32,24 @@ export default function AsuransiDumpTruckPage() {
       description="Armada dump truck Anda adalah aset vital bisnis. Lindungi dari kerusakan, kecelakaan, dan risiko operasional dengan asuransi kendaraan berat terpercaya di Batam."
       benefits={benefits} faqs={faqs}
       breadcrumbs={[{ label: "Asuransi Kendaraan", href: "/asuransi-kendaraan" }, { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck" }]}
-      schema={schema} />
+      schema={schema}>
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Pelengkap untuk Operasional Tambang & Proyek</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
+            <p className="text-[#64748b] text-sm">Lindungi excavator, bulldozer, dan alat berat lain yang bekerja bersama dump truck.</p>
+          </Link>
+          <Link href="/asuransi-liability/public-liability" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Public Liability</h3>
+            <p className="text-[#64748b] text-sm">Perluas tanggung jawab hukum operasional di luar polis kendaraan.</p>
+          </Link>
+          <Link href="/blog/asuransi-dump-truck-batam-proyek-konstruksi" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Dump Truck untuk Proyek Konstruksi</h3>
+            <p className="text-[#64748b] text-sm">Panduan lengkap proteksi armada untuk kebutuhan proyek konstruksi.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

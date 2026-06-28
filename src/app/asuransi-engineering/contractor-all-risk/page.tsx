@@ -103,6 +103,26 @@ export default function ContractorAllRiskPage() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Lengkapi Proteksi Proyek" title="Produk Terkait untuk Kontraktor" center />
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/asuransi-engineering/erection-all-risk" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Erection All Risk (EAR)</h3>
+              <p className="text-sm text-gray-600">Untuk proyek pemasangan mesin & instalasi pabrik, bukan bangunan sipil.</p>
+            </a>
+            <a href="/asuransi-surety-bond/performance-bond" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Performance Bond</h3>
+              <p className="text-sm text-gray-600">Syarat tender proyek pemerintah/swasta — sering diminta berbarengan dengan CAR.</p>
+            </a>
+            <a href="/asuransi-personal-accident/pa-karyawan-grup" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">PA Karyawan Grup</h3>
+              <p className="text-sm text-gray-600">Lindungi pekerja lapangan proyek dari risiko kecelakaan kerja.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4" style={{ background: "#faf8f3" }}>
         <div className="max-w-3xl mx-auto">
           <SectionHeader eyebrow="FAQ" title="Pertanyaan Seputar CAR Insurance" center />

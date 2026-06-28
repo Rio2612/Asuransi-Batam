@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 // ─────────────────────────────────────────────
@@ -154,6 +155,24 @@ export default function PublicLiabilityPage() {
         { label: "Public Liability", href: "/asuransi-liability/public-liability" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dibutuhkan Bersamaan</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-marine/builders-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Builder&apos;s Risk Galangan Kapal</h3>
+            <p className="text-[#64748b] text-sm">Lengkapi proteksi aset proyek pembangunan kapal Anda di galangan.</p>
+          </Link>
+          <Link href="/asuransi-liability/asuransi-limbah-b3" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Limbah B3</h3>
+            <p className="text-[#64748b] text-sm">Wajib bagi industri penghasil limbah B3 sesuai PP 22/2021.</p>
+          </Link>
+          <Link href="/asuransi-engineering/contractor-all-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Contractor All Risk (CAR)</h3>
+            <p className="text-[#64748b] text-sm">Untuk proyek konstruksi yang juga butuh proteksi aset fisik.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

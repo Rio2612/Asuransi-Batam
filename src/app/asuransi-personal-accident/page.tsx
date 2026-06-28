@@ -226,6 +226,29 @@ export default function PersonalAccidentPageID() {
           </div>
         </section>
 
+        {/* SOLUSI PELENGKAP */}
+        <section className="section-padding bg-cream">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-8 text-center">
+              Sering Dipadukan Dengan
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              <Link href="/asuransi-engineering" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <h3 className="font-bold text-navy group-hover:text-gold transition-colors">Asuransi Engineering (CAR/EAR)</h3>
+                <p className="text-sm text-navy/60 mt-2">Proteksi proyek konstruksi & instalasi pabrik.</p>
+              </Link>
+              <Link href="/asuransi-marine" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <h3 className="font-bold text-navy group-hover:text-gold transition-colors">Asuransi Marine</h3>
+                <p className="text-sm text-navy/60 mt-2">Untuk pekerja & aset di sektor maritim dan galangan kapal.</p>
+              </Link>
+              <Link href="/asuransi-surety-bond" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <h3 className="font-bold text-navy group-hover:text-gold transition-colors">Surety Bond</h3>
+                <p className="text-sm text-navy/60 mt-2">Bid bond & performance bond untuk kontraktor proyek.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ SECTION (EEAT) */}
         <section className="section-padding bg-cream">
           <div className="container mx-auto px-6 max-w-3xl">

@@ -99,6 +99,26 @@ export default function ErectionAllRiskPage() {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Lengkapi Proteksi Instalasi" title="Produk Terkait untuk Proyek Pemasangan" center />
+          <div className="grid md:grid-cols-3 gap-6">
+            <a href="/asuransi-engineering/contractor-all-risk" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Contractor All Risk (CAR)</h3>
+              <p className="text-sm text-gray-600">Untuk proyek bangunan/sipil di luar pemasangan mesin atau instalasi pabrik.</p>
+            </a>
+            <a href="/asuransi-engineering/cecr" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">CECR (Civil Engineering)</h3>
+              <p className="text-sm text-gray-600">Untuk proyek infrastruktur sipil seperti talud, dermaga, dan jalan.</p>
+            </a>
+            <a href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
+              <p className="text-sm text-gray-600">Lindungi crane dan alat berat yang dipakai selama proses erection.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4" style={{ background: "#faf8f3" }}>
         <div className="max-w-3xl mx-auto">
           <SectionHeader eyebrow="FAQ" title="Pertanyaan Seputar EAR Insurance" center />

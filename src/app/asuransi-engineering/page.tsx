@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Engineering Batam – CAR, EAR, Contractor All Risk",
@@ -23,6 +24,7 @@ const faqs = [
   { q: "Apa perbedaan CAR dan EAR?", a: "CAR (Contractor All Risk) untuk proyek sipil/bangunan. EAR (Erection All Risk) untuk proyek pemasangan mesin, pabrik, dan infrastruktur mekanikal." },
   { q: "Apakah proyek jembatan dan jalan bisa diasuransikan?", a: "Ya, proyek infrastruktur termasuk jembatan, jalan, pelabuhan, dan fasilitas publik dapat diasuransikan dengan CAR." },
   { q: "Kapan sebaiknya membeli asuransi proyek?", a: "Sebaiknya sebelum proyek dimulai. Beberapa tender proyek juga mensyaratkan CAR/EAR sebagai syarat kontrak." },
+  { q: "Apakah saya juga butuh Performance Bond selain CAR/EAR?", a: "Sering keduanya berjalan bersamaan. Tender proyek pemerintah/swasta umumnya mensyaratkan Performance Bond sebagai jaminan pelaksanaan, sementara CAR/EAR melindungi aset fisik proyek dari risiko kerusakan. Lihat halaman Surety Bond kami untuk detailnya." },
 ];
 const policyComparison = [
   { feature: "Kerusakan Fisik Proyek", basic: "✅", standard: "✅", comprehensive: "✅" },
@@ -38,6 +40,25 @@ export default function AsuransiEngineeringPage() {
       description="Proyek konstruksi dan pemasangan instalasi di Batam penuh dengan risiko. Dengan asuransi engineering yang tepat, nilai investasi proyek Anda terlindungi dari awal hingga selesai."
       benefits={benefits} faqs={faqs} policyComparison={policyComparison}
       breadcrumbs={[{ label: "Asuransi Engineering", href: "/asuransi-engineering" }]}
-      schema={schema} />
+      schema={schema}>
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Proyek konstruksi biasanya membutuhkan lebih dari satu jenis perlindungan.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/asuransi-surety-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Surety Bond</h3>
+            <p className="text-[#64748b] text-sm">Bid bond & performance bond — sering disyaratkan untuk tender proyek.</p>
+          </Link>
+          <Link href="/asuransi-personal-accident/pa-karyawan-grup" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">PA Karyawan Grup</h3>
+            <p className="text-[#64748b] text-sm">Lindungi pekerja lapangan proyek dari risiko kecelakaan kerja.</p>
+          </Link>
+          <Link href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
+            <p className="text-[#64748b] text-sm">Lindungi crane dan alat berat yang digunakan selama proyek berlangsung.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

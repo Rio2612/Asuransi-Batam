@@ -1,5 +1,6 @@
 // app/asuransi-marine/marine-hull/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
@@ -218,6 +219,27 @@ export default function MarineHullPage() {
         </div>
       </section>
 
+      {/* Produk & Artikel Terkait */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Lengkapi Proteksi Maritim" title="Produk & Artikel Terkait" center />
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/asuransi-marine/marine-cargo" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Marine Cargo Insurance</h3>
+              <p className="text-sm text-gray-600">Lindungi muatan/barang yang diangkut, terpisah dari fisik kapal.</p>
+            </Link>
+            <Link href="/asuransi-marine/builders-risk" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Builder&apos;s Risk (DSU)</h3>
+              <p className="text-sm text-gray-600">Untuk kapal yang masih dalam proses pembangunan di galangan.</p>
+            </Link>
+            <Link href="/blog/perbedaan-marine-hull-vs-cargo" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Perbedaan Marine Hull vs Cargo</h3>
+              <p className="text-sm text-gray-600">Baca penjelasan lengkap agar memilih polis yang tepat.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-16 px-4" style={{ background: "#faf8f3" }}>
         <div className="max-w-3xl mx-auto">
@@ -236,4 +258,4 @@ export default function MarineHullPage() {
       />
     </>
   );
-                                              }
+}

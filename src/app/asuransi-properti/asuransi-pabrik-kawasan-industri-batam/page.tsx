@@ -1,5 +1,6 @@
 // app/asuransi-properti/asuransi-pabrik-kawasan-industri-batam/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -132,6 +133,24 @@ export default function AsuransiPabrikBatamPage() {
         { label: "Asuransi Pabrik & Kawasan Industri", href: "/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Lengkapi Proteksi Kawasan Industri Anda</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-properti/asuransi-gudang-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Gudang</h3>
+            <p className="text-[#64748b] text-sm">Lindungi fasilitas gudang dan stok logistik di area pabrik Anda.</p>
+          </Link>
+          <Link href="/asuransi-liability/asuransi-limbah-b3" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Limbah B3</h3>
+            <p className="text-[#64748b] text-sm">Wajib bagi industri penghasil limbah B3 sesuai PP 22/2021.</p>
+          </Link>
+          <Link href="/asuransi-personal-accident/pa-karyawan-grup" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">PA Karyawan Grup</h3>
+            <p className="text-[#64748b] text-sm">Lindungi karyawan pabrik dari risiko kecelakaan kerja.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

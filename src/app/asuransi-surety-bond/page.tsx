@@ -1,5 +1,6 @@
 // app/asuransi-surety-bond/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -29,21 +30,25 @@ const benefits = [
     icon: "📋",
     title: "Bid Bond (Jaminan Penawaran)",
     desc: "Jaminan bahwa pemenang tender akan menandatangani kontrak dan menyerahkan jaminan pelaksanaan sesuai syarat lelang.",
+    href: "/asuransi-surety-bond/bid-bond",
   },
   {
     icon: "🏗️",
     title: "Performance Bond (Jaminan Pelaksanaan)",
     desc: "Jaminan bahwa kontraktor akan menyelesaikan proyek sesuai kontrak, spesifikasi teknis, dan jadwal yang disepakati.",
+    href: "/asuransi-surety-bond/performance-bond",
   },
   {
     icon: "💵",
     title: "Advance Payment Bond (Jaminan Uang Muka)",
     desc: "Jaminan pengembalian uang muka apabila kontraktor gagal melaksanakan pekerjaan setelah menerima pembayaran awal.",
+    href: "/asuransi-surety-bond/advance-payment-bond",
   },
   {
     icon: "🔧",
     title: "Maintenance Bond (Jaminan Pemeliharaan)",
     desc: "Jaminan perbaikan cacat tersembunyi atau kerusakan yang timbul dalam masa pemeliharaan setelah proyek selesai.",
+    href: "/asuransi-surety-bond/maintenance-bond",
   },
   {
     icon: "⚡",
@@ -132,6 +137,25 @@ export default function SuretyBondPage() {
         { label: "Surety Bond", href: "/asuransi-surety-bond" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Kontraktor proyek biasanya membutuhkan jaminan ini sekaligus dengan polis berikut.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/asuransi-engineering/contractor-all-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Contractor All Risk (CAR)</h3>
+            <p className="text-[#64748b] text-sm">Lindungi aset fisik proyek dari risiko kerusakan selama konstruksi.</p>
+          </Link>
+          <Link href="/asuransi-marine/builders-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Builder&apos;s Risk (Galangan Kapal)</h3>
+            <p className="text-[#64748b] text-sm">Untuk kontrak pembangunan kapal di galangan, sering perlu performance bond.</p>
+          </Link>
+          <Link href="/blog/perbedaan-bid-bond-performance-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Perbedaan Bid Bond & Performance Bond</h3>
+            <p className="text-[#64748b] text-sm">Pahami kapan masing-masing jenis jaminan dibutuhkan.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 import CTASection from "./CTASection";
 
 interface FAQ { q: string; a: string; }
-interface Benefit { icon: string; title: string; desc: string; }
+interface Benefit { icon: string; title: string; desc: string; href?: string; }
 interface PolicyComparison { feature: string; basic: string; standard: string; comprehensive: string; }
 
 interface ProductPageProps {
@@ -100,13 +100,25 @@ export default function ProductPageLayout({
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.benefitsTitle}</h2>
           <p className="text-center text-[#64748b] mb-12 max-w-2xl mx-auto">{t.benefitsSubtitle}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((b, i) => (
-              <div key={i} className="p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
-                <div className="text-3xl mb-3">{b.icon}</div>
-                <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{b.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{b.desc}</p>
-              </div>
-            ))}
+            {benefits.map((b, i) => {
+              const cardClass = "p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover block";
+              const content = (
+                <>
+                  <div className="text-3xl mb-3">{b.icon}</div>
+                  <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{b.title}</h3>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{b.desc}</p>
+                </>
+              );
+              return b.href ? (
+                <Link key={i} href={b.href} className={cardClass}>
+                  {content}
+                </Link>
+              ) : (
+                <div key={i} className={cardClass}>
+                  {content}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 export const metadata: Metadata = {
   title: "Asuransi Crane Batam – Perlindungan Tower Crane & Mobile Crane",
@@ -32,6 +32,24 @@ export default function AsuransiCranePage() {
       description="Tower crane dan mobile crane adalah peralatan berisiko tinggi. Pastikan aset Anda dan tanggung jawab kepada pihak ketiga terlindungi dengan polis yang tepat."
       benefits={benefits} faqs={faqs}
       breadcrumbs={[{ label: "Asuransi Machinery", href: "/asuransi-machinery" }, { label: "Asuransi Crane", href: "/asuransi-machinery/asuransi-crane" }]}
-      schema={schema} />
+      schema={schema}>
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Pelengkap untuk Proyek Pengangkatan</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
+            <p className="text-[#64748b] text-sm">Lindungi excavator, bulldozer, dan alat berat lain di proyek Anda.</p>
+          </Link>
+          <Link href="/asuransi-engineering/erection-all-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Erection All Risk (EAR)</h3>
+            <p className="text-[#64748b] text-sm">Untuk proyek pemasangan mesin yang sering menggunakan crane.</p>
+          </Link>
+          <Link href="/asuransi-liability/public-liability" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Public Liability</h3>
+            <p className="text-[#64748b] text-sm">Perluas tanggung jawab hukum atas kerusakan properti di sekitar area kerja crane.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

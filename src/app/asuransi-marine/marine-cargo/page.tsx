@@ -1,5 +1,6 @@
 // app/asuransi-marine/marine-cargo/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
@@ -438,6 +439,27 @@ export default function MarineCargoPage() {
                 <p className="text-xs text-gray-500 mt-1">{item.sub}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Produk & Artikel Terkait */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Lengkapi Pengiriman Anda" title="Produk & Artikel Terkait" center />
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/asuransi-marine/marine-hull" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Marine Hull Insurance</h3>
+              <p className="text-sm text-gray-600">Untuk pemilik kapal yang juga ingin melindungi fisik kapalnya sendiri.</p>
+            </Link>
+            <Link href="/blog/asuransi-pengiriman-batam-singapore" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Asuransi Pengiriman Batam–Singapura</h3>
+              <p className="text-sm text-gray-600">Panduan asuransi cargo untuk rute pengiriman lintas negara.</p>
+            </Link>
+            <Link href="/blog/asuransi-cargo-ekspor-batam" className="block p-6 rounded-2xl border border-gray-100 hover:border-[#c9a84c] transition-all bg-gray-50">
+              <h3 className="font-bold text-[#0a1628] mb-2">Asuransi Cargo Ekspor Batam</h3>
+              <p className="text-sm text-gray-600">Tips memilih perlindungan untuk barang ekspor dari Batam.</p>
+            </Link>
           </div>
         </div>
       </section>

@@ -426,6 +426,35 @@ export default function GroupEmployeePA_ID() {
           </div>
         </section>
 
+        {/* PRODUK TERKAIT UNTUK PERUSAHAAN */}
+        <section className="section-padding bg-cream">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-3 text-center">
+              Solusi Lengkap untuk Perusahaan & Kontraktor
+            </h2>
+            <p className="text-navy/60 text-center mb-8 max-w-2xl mx-auto">
+              PA Karyawan biasanya dipadukan dengan proteksi aset dan proyek berikut ini.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/asuransi-engineering/contractor-all-risk" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <Landmark className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">Contractor All Risk (CAR)</h3>
+                <p className="text-sm text-navy/60">Perusahaan kontraktor proyek butuh proteksi aset proyek selain PA pekerja lapangan.</p>
+              </Link>
+              <Link href="/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <Building2 className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">Asuransi Pabrik Kawasan Industri</h3>
+                <p className="text-sm text-navy/60">Lindungi gedung dan aset pabrik di Batamindo, Mukakuning, atau KIKN.</p>
+              </Link>
+              <Link href="/asuransi-surety-bond/performance-bond" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <FileCheck className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">Surety Bond (Performance Bond)</h3>
+                <p className="text-sm text-navy/60">Untuk kontraktor yang mengikuti tender proyek, lengkapi dengan performance bond.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* SECTION: FAQ EXPANDED */}
         <section className="section-padding bg-cream">
           <div className="container mx-auto px-6 max-w-3xl">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -107,6 +108,24 @@ export default function AsuransiGudangBatamPage() {
         { label: "Asuransi Gudang Batam", href: "/asuransi-properti/asuransi-gudang-batam" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Baca & Lengkapi Juga</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Pabrik & Kawasan Industri</h3>
+            <p className="text-[#64748b] text-sm">Lindungi fasilitas produksi yang terhubung dengan gudang Anda.</p>
+          </Link>
+          <Link href="/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Gudang Muka Kuning</h3>
+            <p className="text-[#64748b] text-sm">Studi kasus dan tips khusus gudang di kawasan industri Muka Kuning.</p>
+          </Link>
+          <Link href="/asuransi-marine/marine-cargo" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Marine Cargo Insurance</h3>
+            <p className="text-[#64748b] text-sm">Lindungi barang Anda juga saat dalam proses pengiriman, bukan hanya saat di gudang.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

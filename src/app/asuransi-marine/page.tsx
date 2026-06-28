@@ -1,5 +1,6 @@
 // app/asuransi-marine/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -114,6 +115,25 @@ export default function AsuransiMarinePage() {
       policyComparison={policyComparison}
       breadcrumbs={[{ label: "Asuransi Marine", href: "/asuransi-marine" }]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Galangan kapal dan pelaku usaha maritim biasanya butuh lebih dari satu jenis polis.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/asuransi-surety-bond/performance-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Performance Bond</h3>
+            <p className="text-[#64748b] text-sm">Sering disyaratkan untuk kontrak pembangunan kapal di galangan.</p>
+          </Link>
+          <Link href="/asuransi-personal-accident/pa-karyawan-grup" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">PA Karyawan Grup</h3>
+            <p className="text-[#64748b] text-sm">Lindungi pekerja shipyard dari risiko kecelakaan kerja maritim.</p>
+          </Link>
+          <Link href="/asuransi-liability/public-liability" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Public Liability</h3>
+            <p className="text-[#64748b] text-sm">Tanggung jawab hukum atas kerusakan/cedera pihak ketiga di area pelabuhan.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

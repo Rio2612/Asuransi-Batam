@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -59,6 +60,24 @@ export default function AsuransiHotelBatamPage() {
         { label: "Asuransi Hotel Batam", href: "/asuransi-properti/asuransi-hotel-batam" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Properti Komersial Lainnya</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-properti/asuransi-ruko-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Ruko</h3>
+            <p className="text-[#64748b] text-sm">Untuk pemilik usaha komersial lain di kawasan kota Batam.</p>
+          </Link>
+          <Link href="/asuransi-properti/asuransi-apartemen-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Apartemen / Kondotel</h3>
+            <p className="text-[#64748b] text-sm">Proteksi unit dan tanggung jawab pemilik kondotel.</p>
+          </Link>
+          <Link href="/blog/asuransi-properti-komersial-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan Asuransi Properti Komersial</h3>
+            <p className="text-[#64748b] text-sm">Tips memilih perlindungan yang tepat untuk bisnis properti Anda.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

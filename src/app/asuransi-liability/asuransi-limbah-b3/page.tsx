@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 // ─────────────────────────────────────────────
@@ -153,6 +154,24 @@ export default function AsuransiLimbahB3Page() {
         { label: "Asuransi Limbah B3", href: "/asuransi-liability/asuransi-limbah-b3" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Lengkapi Kepatuhan Industri Anda</h2>
+        <div className="grid md:grid-cols-3 gap-6 mt-8">
+          <Link href="/asuransi-liability/public-liability" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Public Liability</h3>
+            <p className="text-[#64748b] text-sm">Tanggung jawab hukum yang lebih luas di luar risiko limbah B3.</p>
+          </Link>
+          <Link href="/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Pabrik Kawasan Industri</h3>
+            <p className="text-[#64748b] text-sm">Lindungi aset fisik pabrik penghasil limbah B3 dari risiko kerusakan.</p>
+          </Link>
+          <Link href="/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Cara Klaim Asuransi Limbah B3</h3>
+            <p className="text-[#64748b] text-sm">Pelajari proses klaim dan studi kasus nyata di kawasan industri Batam.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

@@ -462,6 +462,32 @@ export default function IndividualFamilyPA_ID() {
           </div>
         </section>
 
+        {/* ARTIKEL & PRODUK TERKAIT */}
+        <section className="section-padding bg-navy-light/10">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy mb-8 text-center">
+              Lengkapi Proteksi Anda
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Link href="/asuransi-personal-accident/pa-karyawan-grup" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <UserCheck className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">PA Karyawan Grup</h3>
+                <p className="text-sm text-navy/60">Jika perusahaan Anda juga butuh proteksi untuk karyawan, lihat skema Group PA.</p>
+              </Link>
+              <Link href="/asuransi-marine/marine-cargo" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <Ship className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">Asuransi Marine Cargo</h3>
+                <p className="text-sm text-navy/60">Sering menyeberang ke Singapura/Bintan untuk bisnis? Lindungi juga barang kiriman Anda.</p>
+              </Link>
+              <Link href="/asuransi-kendaraan/asuransi-mobil-batam" className="group bg-white p-6 rounded-2xl shadow-sm card-hover border border-navy/5">
+                <Car className="text-gold w-8 h-8 mb-3" />
+                <h3 className="font-bold text-navy mb-2 group-hover:text-gold transition-colors">Asuransi Mobil Batam</h3>
+                <p className="text-sm text-navy/60">PA melindungi diri Anda, sementara asuransi mobil melindungi kendaraan dari risiko kecelakaan.</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA SECTION */}
         <section id="form-pendaftaran" className="section-padding gradient-gold">
           <div className="container mx-auto px-6 text-center">

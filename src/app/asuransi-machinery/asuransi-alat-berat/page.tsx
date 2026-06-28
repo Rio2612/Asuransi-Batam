@@ -270,6 +270,18 @@ export default function AsuransiAlatBeratPage() {
           </Link>{" "}
           yang sesuai dengan standar keselamatan kerja di lingkungan shipyard.
         </p>
+        <p>
+          Bila alat berat Anda beroperasi berdampingan dengan armada angkutan,
+          lihat juga{" "}
+          <Link href="/asuransi-kendaraan/asuransi-dumptruck">
+            Asuransi Dump Truck
+          </Link>{" "}
+          untuk proteksi kendaraan operasional, dan{" "}
+          <Link href="/asuransi-engineering/contractor-all-risk">
+            Contractor All Risk (CAR)
+          </Link>{" "}
+          untuk perlindungan menyeluruh proyek konstruksi Anda.
+        </p>
       </section>
     </ProductPageLayout>
   );
