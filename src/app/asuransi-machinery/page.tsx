@@ -3,7 +3,7 @@ import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 export const metadata: Metadata = {
   title: "Asuransi Machinery Batam – Lindungi Mesin & Alat Berat dari Breakdown",
-  description: "Mesin rusak = operasional berhenti = kerugian besar. Proteksi asuransi machinery di Batam untuk excavator, crane, dan mesin industri. Klaim mudah, premi kompetitif. Konsultasi gratis dengan Rio: 0813-7333-6728.",
+  description: "Asuransi mesin dan alat berat di Batam untuk pabrik, galangan kapal, dan proyek konstruksi. Machinery breakdown, equipment all risk, dan loss of profit. Konsultasi gratis: 0813-7333-6728.",
   alternates: {
     canonical: "https://asuransibatam.com/asuransi-machinery",
     languages: {
@@ -13,32 +13,71 @@ export const metadata: Metadata = {
   },
 };
 const benefits = [
-  { icon: "⚙️", title: "Kerusakan Mesin (MB)", desc: "Machinery Breakdown – perlindungan kerusakan mesin akibat kegagalan operasional." },
-  { icon: "💥", title: "Kecelakaan Operasional", desc: "Kerusakan akibat benturan, terjatuh, atau kesalahan operator." },
-  { icon: "⚡", title: "Kerusakan Listrik", desc: "Lonjakan tegangan, korsleting, dan kerusakan elektrikal." },
-  { icon: "🏗️", title: "Selama Konstruksi/Pemasangan", desc: "Perlindungan saat mesin sedang dipasang atau dalam proses commissioning." },
-  { icon: "💼", title: "Biaya Pengiriman Suku Cadang", desc: "Biaya pengiriman darurat suku cadang untuk mempercepat perbaikan." },
-  { icon: "📉", title: "Kehilangan Keuntungan (LoP)", desc: "Kompensasi atas hilangnya keuntungan akibat mesin tidak beroperasi." },
+  { icon: "⚙️", title: "Kerusakan Mesin (Machinery Breakdown)", desc: "Perlindungan kerusakan tiba-tiba dan tidak terduga pada mesin produksi, generator, kompresor, dan peralatan industri akibat kegagalan mekanis internal." },
+  { icon: "💥", title: "Kecelakaan Operasional", desc: "Kerusakan akibat benturan, terjatuh, kesalahan operator, atau kecelakaan fisik lain saat mesin sedang atau tidak beroperasi." },
+  { icon: "⚡", title: "Kerusakan Listrik & Elektrikal", desc: "Lonjakan tegangan, korsleting, sambaran petir, dan kerusakan komponen elektrikal yang merusak sistem kontrol dan motor mesin." },
+  { icon: "🏗️", title: "Selama Pemasangan & Commissioning", desc: "Perlindungan saat mesin baru sedang dipasang, dikalibrasi, atau dalam proses uji coba pertama sebelum beroperasi penuh." },
+  { icon: "💼", title: "Biaya Pengiriman Suku Cadang Darurat", desc: "Biaya pengiriman ekspres suku cadang dari luar negeri atau luar kota Batam untuk mempercepat perbaikan dan meminimalkan downtime." },
+  { icon: "📉", title: "Kehilangan Keuntungan (Loss of Profit)", desc: "Kompensasi atas hilangnya margin keuntungan selama mesin tidak dapat beroperasi akibat kerusakan yang ditanggung polis." },
 ];
 const faqs = [
-  { q: "Apa itu Machinery Breakdown Insurance?", a: "Asuransi yang menanggung kerusakan tiba-tiba dan tidak terduga pada mesin dan peralatan industri, termasuk kerusakan mekanis dan elektrikal." },
-  { q: "Apakah keausan normal ditanggung?", a: "Tidak. Asuransi machinery menanggung kerusakan tiba-tiba, bukan keausan normal, korosi, atau deteriorasi bertahap." },
-  { q: "Apa yang dimaksud Equipment All Risk?", a: "Equipment All Risk (EAR) menanggung semua risiko kerusakan fisik alat berat selama proyek, termasuk kecelakaan dan bencana alam." },
+  { q: "Apa itu Machinery Breakdown Insurance dan siapa yang butuh?", a: "Machinery Breakdown Insurance menanggung kerusakan tiba-tiba dan tidak terduga pada mesin dan peralatan industri, termasuk kerusakan mekanis dan elektrikal. Produk ini sangat dibutuhkan oleh pabrik manufaktur di Muka Kuning dan Kabil, galangan kapal di Tanjung Uncang, fasilitas pengolahan di Batam, dan bisnis apa pun yang bergantung pada mesin untuk operasional harian." },
+  { q: "Apakah keausan normal dan perawatan rutin ditanggung?", a: "Tidak. Asuransi machinery menanggung kerusakan tiba-tiba dan tidak terduga, bukan keausan normal (wear & tear), korosi bertahap, atau kerusakan yang bisa diprediksi dari kurangnya perawatan. Justru mesin yang terawat baik lebih mudah mendapatkan polis dengan premi kompetitif." },
+  { q: "Apa perbedaan Equipment All Risk (EAR) dan Machinery Breakdown (MB)?", a: "Equipment All Risk (EAR) menanggung semua risiko kerusakan fisik alat berat selama proyek, termasuk kecelakaan eksternal dan bencana alam. Machinery Breakdown (MB) fokus pada kegagalan internal mesin yang sudah terpasang dan beroperasi di pabrik atau fasilitas permanen. Keduanya bisa dikombinasikan." },
+  { q: "Berapa estimasi premi asuransi mesin di Batam?", a: "Premi mesin terpasang (stasioner) di pabrik umumnya berkisar 0,25%–0,75% dari nilai mesin per tahun. Contoh: mesin CNC seharga Rp 2 miliar, premi MB sekitar Rp 5–15 juta per tahun. Untuk alat berat yang bergerak, premi lebih tinggi karena risiko lebih besar. Hubungi kami untuk kalkulasi spesifik." },
+  { q: "Apakah Loss of Profit (LoP) wajib diambil bersamaan?", a: "Tidak wajib, tapi sangat disarankan untuk industri yang bergantung pada satu atau sedikit mesin kritis. Jika satu mesin rusak selama 3 bulan dan bisnis Anda kehilangan Rp 500 juta pendapatan, tanpa LoP seluruh kerugian tersebut ditanggung sendiri. Dengan LoP, asuransi mengkompensasi hilangnya keuntungan selama periode perbaikan." },
+  { q: "Mesin lama (usia 10+ tahun) apakah masih bisa diasuransikan?", a: "Bisa, namun biasanya perlu survei kondisi mesin terlebih dahulu. Mesin dengan usia lebih tua umumnya mendapatkan premi lebih tinggi atau ada pengecualian tertentu. Kami akan membantu proses survei dan negosiasi dengan penanggung untuk mendapatkan terms terbaik." },
 ];
-const schema = { "@context": "https://schema.org", "@type": "Service", name: "Asuransi Machinery Batam", provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" } };
+const policyComparison = [
+  { feature: "Kerusakan Mesin (Breakdown)", basic: "✅", standard: "✅", comprehensive: "✅" },
+  { feature: "Kerusakan Elektrikal", basic: "Terbatas", standard: "✅", comprehensive: "✅" },
+  { feature: "Bencana Alam (Banjir, Petir)", basic: "❌", standard: "Opsional", comprehensive: "✅" },
+  { feature: "Biaya Suku Cadang Darurat", basic: "❌", standard: "✅", comprehensive: "✅" },
+  { feature: "Loss of Profit (LoP)", basic: "❌", standard: "Opsional", comprehensive: "✅" },
+  { feature: "Kesalahan Operator", basic: "❌", standard: "✅", comprehensive: "✅" },
+];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Asuransi Machinery Batam",
+  description: "Layanan asuransi mesin dan alat berat di Batam untuk pabrik, galangan kapal, dan proyek konstruksi mencakup machinery breakdown, equipment all risk, dan loss of profit.",
+  provider: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", telephone: "+6281373336728" },
+  areaServed: { "@type": "City", name: "Batam" },
+};
 export default function AsuransiMachineryPage() {
   return (
-    <ProductPageLayout title="Asuransi Machinery Batam" subtitle="Perlindungan Mesin & Alat Industri"
-      description="Mesin dan alat berat adalah jantung operasional bisnis Anda. Dengan asuransi machinery yang tepat, downtime akibat kerusakan tidak lagi mengancam keberlangsungan bisnis."
-      benefits={benefits} faqs={faqs}
+    <ProductPageLayout title="Asuransi Machinery Batam" subtitle="Perlindungan Mesin, Alat Berat & Equipment Industri"
+      description="Mesin adalah jantung operasional bisnis Anda. Di Batam — kota industri dengan ratusan pabrik, galangan kapal, dan fasilitas produksi — satu kerusakan mesin bisa menghentikan seluruh lini produksi dan mengakibatkan kerugian puluhan hingga ratusan juta rupiah per hari. Dengan asuransi machinery yang tepat, downtime tidak lagi mengancam keberlangsungan bisnis."
+      benefits={benefits} faqs={faqs} policyComparison={policyComparison}
       breadcrumbs={[{ label: "Asuransi Machinery", href: "/asuransi-machinery" }]}
       schema={schema}
     >
+      <div className="mb-12">
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Industri di Batam yang Paling Membutuhkan Asuransi Mesin</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Dari kawasan industri Muka Kuning hingga galangan kapal Tanjung Uncang, industri-industri ini sangat bergantung pada proteksi mesin.</p>
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
+            <p className="text-2xl mb-2">🏭</p>
+            <h3 className="font-bold text-[#0a1628] mb-1">Manufaktur Elektronik & Batam</h3>
+            <p className="text-sm text-[#64748b]">Pabrik PCB, komponen elektronik, dan peralatan presisi di Kabil dan Muka Kuning mengoperasikan mesin senilai puluhan miliar yang butuh perlindungan machinery breakdown 24/7.</p>
+          </div>
+          <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
+            <p className="text-2xl mb-2">⚓</p>
+            <h3 className="font-bold text-[#0a1628] mb-1">Galangan Kapal Tanjung Uncang</h3>
+            <p className="text-sm text-[#64748b]">Crane, gantry, mesin las, dan peralatan shipyard senilai ratusan miliar perlu perlindungan equipment all risk selama proses pembangunan dan perbaikan kapal berlangsung.</p>
+          </div>
+          <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
+            <p className="text-2xl mb-2">🏗️</p>
+            <h3 className="font-bold text-[#0a1628] mb-1">Proyek Konstruksi Aktif</h3>
+            <p className="text-sm text-[#64748b]">Excavator, bulldozer, crane mobile, dan concrete pump yang beroperasi di proyek properti dan infrastruktur Batam membutuhkan perlindungan equipment all risk selama masa proyek.</p>
+          </div>
+        </div>
+      </div>
       <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-6 text-center">Produk Machinery Kami</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {[
-          { title: "Asuransi Alat Berat", desc: "Perlindungan excavator, bulldozer, dan alat berat konstruksi.", href: "/asuransi-machinery/asuransi-alat-berat" },
-          { title: "Asuransi Crane", desc: "Perlindungan menyeluruh untuk crane dan lifting equipment.", href: "/asuransi-machinery/asuransi-crane" },
+          { title: "Asuransi Alat Berat", desc: "Perlindungan excavator, bulldozer, dan alat berat konstruksi dari kerusakan fisik, kecelakaan, dan bencana alam selama proyek.", href: "/asuransi-machinery/asuransi-alat-berat" },
+          { title: "Asuransi Crane", desc: "Perlindungan menyeluruh untuk tower crane dan mobile crane termasuk tanggung jawab pihak ketiga (TPL) yang krusial di area padat.", href: "/asuransi-machinery/asuransi-crane" },
         ].map((p) => (
           <Link key={p.href} href={p.href} className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>

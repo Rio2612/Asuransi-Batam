@@ -99,6 +99,69 @@ export default function ErectionAllRiskPage() {
         </div>
       </section>
 
+      <section className="py-16 px-4" style={{ background: "#faf8f3" }}>
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Estimasi Premi EAR" title="Berapa Biaya EAR Insurance di Batam?" center />
+          <p className="text-center text-gray-500 text-sm mb-8 max-w-2xl mx-auto">Premi EAR Insurance dihitung berdasarkan nilai kontrak erection. Berikut panduan estimasi untuk proyek pemasangan mesin dan instalasi di Batam dan kawasan industri Kepulauan Riau.</p>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-8">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-[#0a1628] text-white">
+                  <th className="text-left p-4 font-semibold">Jenis Proyek</th>
+                  <th className="text-left p-4 font-semibold">Nilai Kontrak</th>
+                  <th className="text-left p-4 font-semibold">Estimasi Premi EAR</th>
+                  <th className="text-left p-4 font-semibold">Catatan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="p-4 font-medium text-[#0a1628]">Pemasangan Mesin Pabrik (kecil)</td>
+                  <td className="p-4 text-gray-600">Rp 1 – 5 M</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Rp 5 – 50 jt</td>
+                  <td className="p-4 text-gray-500">Mesin produksi ringan, HVAC, genset</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50">
+                  <td className="p-4 font-medium text-[#0a1628]">Instalasi Plant Industri</td>
+                  <td className="p-4 text-gray-600">Rp 5 – 50 M</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Rp 50 – 500 jt</td>
+                  <td className="p-4 text-gray-500">Pabrik pengolahan, plant kimia, fasilitas energi</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-4 font-medium text-[#0a1628]">Proyek Infrastruktur Besar</td>
+                  <td className="p-4 text-gray-600">Rp 50 M ke atas</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Negosiasi khusus</td>
+                  <td className="p-4 text-gray-500">PLTU, offshore, menara telekomunikasi, dermaga</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-center text-xs text-gray-400">* Premi EAR umumnya berkisar 0,5%–2,0% dari nilai kontrak, tergantung kompleksitas erection, risiko testing & commissioning, dan durasi proyek. Konsultasi gratis untuk penawaran spesifik.</p>
+          <div className="mt-12">
+            <SectionHeader eyebrow="Studi Kasus EAR" title="Klaim Nyata EAR Insurance di Batam" center />
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                <h3 className="font-bold text-[#0a1628] mb-2">⚡ Kerusakan Saat Testing: Plant Pengolahan di Muka Kuning</h3>
+                <p className="text-sm text-gray-600 mb-3">Sebuah pabrik pengolahan di kawasan industri Muka Kuning mengalami kerusakan parah pada sistem kompresor utama saat proses commissioning pertama kali. Tekanan berlebih akibat valve yang belum terkalibrasi menyebabkan pipa meledak.</p>
+                <div className="bg-gray-50 rounded-xl p-3 text-sm">
+                  <p className="text-[#0a1628] font-semibold">Kerugian:</p>
+                  <p className="text-gray-600">Kerusakan kompresor & pipa: Rp 3,2 M | Biaya pengiriman suku cadang impor: Rp 450 jt</p>
+                  <p className="text-green-700 font-semibold mt-1">✅ Klaim testing & commissioning period ditanggung penuh karena klausul T&C aktif.</p>
+                </div>
+              </div>
+              <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                <h3 className="font-bold text-[#0a1628] mb-2">🏗️ Crane Jatuh saat Erection Menara Telekomunikasi</h3>
+                <p className="text-sm text-gray-600 mb-3">Sling crane putus saat mengangkat segmen teratas menara telekomunikasi di Nongsa. Segmen menara jatuh dan merusak komponen yang sudah terpasang di bawahnya serta kendaraan teknisi di area erection.</p>
+                <div className="bg-gray-50 rounded-xl p-3 text-sm">
+                  <p className="text-[#0a1628] font-semibold">Kerugian:</p>
+                  <p className="text-gray-600">Komponen menara rusak: Rp 1,8 M | Kendaraan TPL: Rp 120 jt | Biaya re-erection: Rp 280 jt</p>
+                  <p className="text-green-700 font-semibold mt-1">✅ EAR + TPL extension menanggung keseluruhan klaim termasuk kendaraan pihak ketiga.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeader eyebrow="Lengkapi Proteksi Instalasi" title="Produk Terkait untuk Proyek Pemasangan" center />

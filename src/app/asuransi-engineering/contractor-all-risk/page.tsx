@@ -103,6 +103,69 @@ export default function ContractorAllRiskPage() {
         </div>
       </section>
 
+      <section className="py-16 px-4" style={{ background: "#faf8f3" }}>
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader eyebrow="Estimasi Premi CAR" title="Berapa Biaya Asuransi CAR di Batam?" center />
+          <p className="text-center text-gray-500 text-sm mb-8 max-w-2xl mx-auto">Premi CAR Insurance dihitung berdasarkan nilai kontrak proyek. Berikut panduan estimasi untuk proyek konstruksi di Batam dan sekitar Kepulauan Riau.</p>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 mb-8">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-[#0a1628] text-white">
+                  <th className="text-left p-4 font-semibold">Skala Proyek</th>
+                  <th className="text-left p-4 font-semibold">Nilai Kontrak</th>
+                  <th className="text-left p-4 font-semibold">Estimasi Premi CAR</th>
+                  <th className="text-left p-4 font-semibold">Keterangan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-100">
+                  <td className="p-4 font-medium text-[#0a1628]">Renovasi / Proyek Kecil</td>
+                  <td className="p-4 text-gray-600">Rp 500 jt – 2 M</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Rp 2,5 – 10 jt</td>
+                  <td className="p-4 text-gray-500">Ruko, perumahan subsidi, renovasi fasilitas</td>
+                </tr>
+                <tr className="border-b border-gray-100 bg-gray-50">
+                  <td className="p-4 font-medium text-[#0a1628]">Proyek Menengah</td>
+                  <td className="p-4 text-gray-600">Rp 2 – 20 M</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Rp 10 – 100 jt</td>
+                  <td className="p-4 text-gray-500">Gedung bertingkat, ruko kompleks, fasilitas industri</td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="p-4 font-medium text-[#0a1628]">Proyek Besar / Infrastruktur</td>
+                  <td className="p-4 text-gray-600">Rp 20 M ke atas</td>
+                  <td className="p-4 text-[#1a4fa0] font-semibold">Negosiasi khusus</td>
+                  <td className="p-4 text-gray-500">Jembatan, dermaga, kawasan industri, apartemen besar</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-center text-xs text-gray-400">* Premi aktual berkisar 0,3%–1,0% dari nilai kontrak tergantung jenis konstruksi, durasi, lokasi, dan risiko spesifik proyek. Hubungi kami untuk penawaran tepat.</p>
+          <div className="mt-12">
+            <SectionHeader eyebrow="Studi Kasus CAR" title="Klaim Nyata CAR Insurance di Batam" center />
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                <h3 className="font-bold text-[#0a1628] mb-2">🏗️ Gedung Perkantoran di Batam Centre Ambruk Sebagian</h3>
+                <p className="text-sm text-gray-600 mb-3">Proyek pembangunan gedung 8 lantai di kawasan Batam Centre mengalami keruntuhan bekisting lantai 4 akibat penopang tidak sesuai spesifikasi, menyebabkan kerusakan struktur dan material senilai besar.</p>
+                <div className="bg-gray-50 rounded-xl p-3 text-sm">
+                  <p className="text-[#0a1628] font-semibold">Kerugian:</p>
+                  <p className="text-gray-600">Kerusakan struktur & material: Rp 4,7 M | Biaya pembersihan: Rp 380 jt</p>
+                  <p className="text-green-700 font-semibold mt-1">✅ Seluruh klaim disetujui dalam 21 hari kerja.</p>
+                </div>
+              </div>
+              <div className="p-6 rounded-2xl border border-gray-200 bg-white">
+                <h3 className="font-bold text-[#0a1628] mb-2">🌊 Banjir Rob Rusak Material Proyek di Sekupang</h3>
+                <p className="text-sm text-gray-600 mb-3">Material konstruksi — besi tulangan, semen, dan kayu bekisting — di proyek pembangunan fasilitas dermaga di Sekupang rusak terendam banjir rob yang datang tiba-tiba saat pekerjaan pondasi berlangsung.</p>
+                <div className="bg-gray-50 rounded-xl p-3 text-sm">
+                  <p className="text-[#0a1628] font-semibold">Kerugian:</p>
+                  <p className="text-gray-600">Material rusak: Rp 1,2 M | Biaya keterlambatan proyek: ditanggung polis BI</p>
+                  <p className="text-green-700 font-semibold mt-1">✅ Klaim material dan business interruption diproses sepenuhnya.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeader eyebrow="Lengkapi Proteksi Proyek" title="Produk Terkait untuk Kontraktor" center />
