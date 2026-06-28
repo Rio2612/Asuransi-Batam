@@ -116,6 +116,24 @@ export default function AsuransiMarinePage() {
       breadcrumbs={[{ label: "Asuransi Marine", href: "/asuransi-marine" }]}
       schema={schema}
     >
+      <div className="mb-12">
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Produk Asuransi Marine Kami</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Pilih perlindungan yang sesuai dengan kebutuhan maritim dan pengiriman Anda di Batam.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/asuransi-marine/marine-hull" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Marine Hull Insurance</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan menyeluruh untuk lambung kapal, mesin, dan perlengkapan navigasi dari tabrakan, kandas, dan kebakaran.</p>
+          </Link>
+          <Link href="/asuransi-marine/marine-cargo" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Marine Cargo Insurance</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan barang kiriman selama pengiriman laut dari Batam ke seluruh Indonesia dan mancanegara.</p>
+          </Link>
+          <Link href="/asuransi-marine/builders-risk" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Builder&apos;s Risk (DSU)</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan selama pembangunan kapal di galangan Batam, dari keel laying hingga sea trial selesai.</p>
+          </Link>
+        </div>
+      </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
         <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Galangan kapal dan pelaku usaha maritim biasanya butuh lebih dari satu jenis polis.</p>

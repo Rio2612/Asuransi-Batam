@@ -138,6 +138,28 @@ export default function SuretyBondPage() {
       ]}
       schema={schema}
     >
+      <div className="mb-12">
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Jenis Surety Bond yang Kami Terbitkan</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Pilih jenis jaminan sesuai tahapan proyek konstruksi atau pengadaan Anda di Batam.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Link href="/asuransi-surety-bond/bid-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Bid Bond</h3>
+            <p className="text-[#64748b] text-sm">Jaminan penawaran untuk mengikuti proses tender proyek pemerintah dan swasta.</p>
+          </Link>
+          <Link href="/asuransi-surety-bond/performance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Performance Bond</h3>
+            <p className="text-[#64748b] text-sm">Jaminan pelaksanaan bahwa kontraktor menyelesaikan proyek sesuai kontrak dan jadwal.</p>
+          </Link>
+          <Link href="/asuransi-surety-bond/advance-payment-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Advance Payment Bond</h3>
+            <p className="text-[#64748b] text-sm">Jaminan pengembalian uang muka jika kontraktor gagal memulai atau melanjutkan pekerjaan.</p>
+          </Link>
+          <Link href="/asuransi-surety-bond/maintenance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Maintenance Bond</h3>
+            <p className="text-[#64748b] text-sm">Jaminan pemeliharaan selama masa garansi setelah proyek konstruksi selesai dikerjakan.</p>
+          </Link>
+        </div>
+      </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
         <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Kontraktor proyek biasanya membutuhkan jaminan ini sekaligus dengan polis berikut.</p>

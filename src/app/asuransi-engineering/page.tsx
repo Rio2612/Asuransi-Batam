@@ -41,6 +41,24 @@ export default function AsuransiEngineeringPage() {
       benefits={benefits} faqs={faqs} policyComparison={policyComparison}
       breadcrumbs={[{ label: "Asuransi Engineering", href: "/asuransi-engineering" }]}
       schema={schema}>
+      <div className="mb-12">
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Produk Asuransi Engineering Kami</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Pilih perlindungan yang sesuai dengan jenis dan skala proyek konstruksi Anda di Batam.</p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Link href="/asuransi-engineering/contractor-all-risk" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Contractor All Risk (CAR)</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan all risk untuk proyek sipil dan bangunan selama masa konstruksi berlangsung.</p>
+          </Link>
+          <Link href="/asuransi-engineering/erection-all-risk" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Erection All Risk (EAR)</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan pemasangan mesin, pabrik, dan instalasi infrastruktur mekanikal dan elektrikal.</p>
+          </Link>
+          <Link href="/asuransi-engineering/cecr" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Civil Engineering Completed Risk (CECR)</h3>
+            <p className="text-[#64748b] text-sm">Perlindungan untuk infrastruktur sipil yang sudah selesai dibangun seperti jembatan, jalan, dan bendungan.</p>
+          </Link>
+        </div>
+      </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
         <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Proyek konstruksi biasanya membutuhkan lebih dari satu jenis perlindungan.</p>
