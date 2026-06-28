@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
+      "https://asuransibatam.com/en/hazardous-waste-insurance-batam",
     languages: {
-      en: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
+      en: "https://asuransibatam.com/en/hazardous-waste-insurance-batam",
       id: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     },
   },

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://asuransibatam.com/en/blog/difference-between-bid-bond-and-performance-bond",
+      "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
     languages: {
-      en: "https://asuransibatam.com/en/blog/difference-between-bid-bond-and-performance-bond",
+      en: "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
       id: "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     },
   },

@@ -53,10 +53,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // SUB-PAGES – KENDARAAN / VEHICLE
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/asuransi-kendaraan/asuransi-mobil-batam`,                     lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/asuransi-kendaraan/asuransi-dump-truck`,                      lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-kendaraan/asuransi-dumptruck`,                       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     { url: `${BASE_URL}/en/vehicle-insurance/car-insurance-batam`,                    lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/vehicle-insurance/dump-truck-insurance`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    // ────────────────────────────────────────────────────────────────────────
+    // PILLAR + SUB-PAGES – PERSONAL ACCIDENT (sebelumnya hilang dari sitemap)
+    // ────────────────────────────────────────────────────────────────────────
+    { url: `${BASE_URL}/asuransi-personal-accident`,                                  lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/asuransi-personal-accident/pa-individu-keluarga`,             lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-personal-accident/pa-karyawan-grup`,                 lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+
+    { url: `${BASE_URL}/en/personal-accident-insurance`,                              lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${BASE_URL}/en/personal-accident-insurance/individual-family-pa`,         lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/personal-accident-insurance/group-employee-pa`,           lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     // ────────────────────────────────────────────────────────────────────────
     // SUB-PAGES – MACHINERY
@@ -75,12 +86,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     { url: `${BASE_URL}/en/liability-insurance/b3-waste-insurance`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/liability-insurance/public-liability`,                     lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/hazardous-waste-insurance-batam`,                          lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // SUB-PAGES – ENGINEERING
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/asuransi-engineering/contractor-all-risk`,                    lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-engineering/erection-all-risk`,                      lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-engineering/cecr`,                                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
     { url: `${BASE_URL}/en/engineering-insurance/contractor-all-risk`,                lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/engineering-insurance/erection-all-risk`,                  lastModified: now, changeFrequency: "monthly", priority: 0.8 },
@@ -104,28 +117,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/asuransi-surety-bond/advance-payment-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-surety-bond/maintenance-bond`,                       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
 
-    { url: `${BASE_URL}/en/surety-bond-insurance/bid-bond`,                           lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/performance-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/advance-payment-bond`,               lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/maintenance-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/difference-between-bid-bond-and-performance-bond`,         lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // TOOLS / KALKULATOR
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/kalkulator-premi-mobil`,           lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/kalkulator-premi-motor`,           lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/kalkulator-premi/mobil`,           lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/kalkulator-premi/motor`,           lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE_URL}/en/car-premium-calculator`,        lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/en/motorcycle-premium-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – ID
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/blog`,                                       lastModified: now,                    changeFrequency: "weekly",  priority: 0.8 },
     // Kendaraan
-    { url: `${BASE_URL}/blog/cara-klaim-asuransi-mobil`,             lastModified: new Date("2025-03-10"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/cara-klaim-asuransi-mobil-batam`,       lastModified: new Date("2026-04-30"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/perbedaan-all-risk-dan-tlo`,            lastModified: new Date("2025-03-05"), changeFrequency: "yearly",  priority: 0.7 },
-    { url: `${BASE_URL}/blog/asuransi-mobil-batam`,                  lastModified: new Date("2025-03-01"), changeFrequency: "monthly", priority: 0.7 },
     // Alat Berat
     { url: `${BASE_URL}/blog/asuransi-excavator-dan-bulldozer`,      lastModified: new Date("2026-05-06"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/asuransi-alat-berat-proyek-konstruksi`, lastModified: new Date("2026-05-06"), changeFrequency: "yearly",  priority: 0.7 },
@@ -149,6 +161,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/asuransi-cargo-ekspor-batam`,           lastModified: new Date("2026-05-08"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/builders-risk-untuk-galangan-kapal`,    lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/cara-mendapatkan-asuransi-builders-risk-batam`,    lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/berapa-premi-asuransi-builders-risk-kapal-batam`,  lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/jenis-jenis-asuransi-kapal-armada`,               lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/premi-asuransi-kapal-batam-2026`,                  lastModified: new Date("2026-05-08"), changeFrequency: "yearly",  priority: 0.7 },
+    // Tambahan blog yang sebelumnya hilang dari sitemap
+    { url: `${BASE_URL}/blog/asuransi-motor-batam`,                            lastModified: new Date("2026-05-06"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-dump-truck-batam-proyek-konstruksi`,     lastModified: new Date("2026-05-06"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-erection-all-risk-batam`,                lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam`, lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam`, lastModified: new Date("2026-05-08"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/perbedaan-bid-bond-performance-bond`,             lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // BLOG – EN
@@ -179,14 +201,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/blog/marine-cargo-insurance-premium-batam`,                   lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/batam-export-cargo-insurance`,                           lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/builders-risk-shipyard-insurance-batam`,                 lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/how-to-get-builders-risk-insurance-batam`,               lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // INFO PAGES
     // ────────────────────────────────────────────────────────────────────────
     { url: `${BASE_URL}/tentang-kami`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/kontak`,       lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/lokasi`,       lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/en/about-us`,  lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE_URL}/en/contact`,   lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${BASE_URL}/en/location`,  lastModified: now, changeFrequency: "monthly", priority: 0.6 },
   ];
 
   return staticPages;
