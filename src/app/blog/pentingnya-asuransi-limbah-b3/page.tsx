@@ -307,6 +307,28 @@ export default function ArticleLimbahB3Page() {
           </a>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+            <ul className="space-y-2">
+              <li><a href="/asuransi-liability/asuransi-limbah-b3" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Limbah B3 Batam</a></li>
+              <li><a href="/asuransi-liability" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Liability Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+            <ul className="space-y-2">
+              <li><a href="/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Cara Klaim Asuransi Limbah B3</a></li>
+              <li><a href="/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Gudang Kawasan Industri Batam</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

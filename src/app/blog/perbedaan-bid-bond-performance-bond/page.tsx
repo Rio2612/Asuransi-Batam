@@ -661,6 +661,30 @@ export default function PerbedaanBidBondPerformanceBondPage() {
         </div>
       </article>
 
+      
+      {/* Related Links */}
+      <section className="py-12 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+              <ul className="space-y-2">
+                <li><a href="/asuransi-surety-bond/bid-bond" className="text-sm text-blue-700 hover:underline font-medium">→ Bid Bond Batam</a></li>
+                <li><a href="/asuransi-surety-bond/performance-bond" className="text-sm text-blue-700 hover:underline font-medium">→ Performance Bond Batam</a></li>
+                <li><a href="/asuransi-surety-bond/advance-payment-bond" className="text-sm text-blue-700 hover:underline font-medium">→ Advance Payment Bond Batam</a></li>
+                <li><a href="/asuransi-surety-bond/maintenance-bond" className="text-sm text-blue-700 hover:underline font-medium">→ Maintenance Bond Batam</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+              <ul className="space-y-2">
+                <li><a href="/blog/asuransi-proyek-konstruksi-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Proyek Konstruksi Batam</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTASection />
     </>
   );

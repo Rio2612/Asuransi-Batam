@@ -412,6 +412,29 @@ export default function ArticleCaraKlaimAsuransiKebakaranRumahPage() {
           </Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+            <ul className="space-y-2">
+              <li><a href="/asuransi-properti/asuransi-gudang-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Gudang Batam</a></li>
+              <li><a href="/asuransi-properti/asuransi-hotel-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Hotel Batam</a></li>
+              <li><a href="/asuransi-properti/asuransi-pabrik-kawasan-industri-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Pabrik & Kawasan Industri Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+            <ul className="space-y-2">
+              <li><a href="/blog/asuransi-properti-komersial-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Properti Komersial Batam</a></li>
+              <li><a href="/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Gudang Kawasan Industri Batam</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

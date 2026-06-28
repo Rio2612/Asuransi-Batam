@@ -714,6 +714,29 @@ export default function KlaimLimbahB3Page() {
         </div>
       </article>
 
+      
+      {/* Related Links */}
+      <section className="py-12 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+              <ul className="space-y-2">
+                <li><a href="/asuransi-liability/asuransi-limbah-b3" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Limbah B3 Batam</a></li>
+                <li><a href="/asuransi-liability/public-liability" className="text-sm text-blue-700 hover:underline font-medium">→ Public Liability Insurance Batam</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+              <ul className="space-y-2">
+                <li><a href="/blog/pentingnya-asuransi-limbah-b3" className="text-sm text-blue-700 hover:underline font-medium">→ Pentingnya Asuransi Limbah B3</a></li>
+                <li><a href="/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Gudang Kawasan Industri Batam</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTASection />
     </>
   );

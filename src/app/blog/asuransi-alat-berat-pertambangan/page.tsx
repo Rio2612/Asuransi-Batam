@@ -390,6 +390,28 @@ export default function ArticleAsuransiAlatBeratPertambanganPage() {
           </Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+            <ul className="space-y-2">
+              <li><a href="/asuransi-machinery/asuransi-alat-berat" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Alat Berat Batam</a></li>
+              <li><a href="/asuransi-machinery/asuransi-crane" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Crane Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+            <ul className="space-y-2">
+              <li><a href="/blog/asuransi-dump-truck-batam-proyek-konstruksi" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Dump Truck Proyek Konstruksi</a></li>
+              <li><a href="/blog/asuransi-pengiriman-mesin-alat-berat" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Pengiriman Mesin & Alat Berat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

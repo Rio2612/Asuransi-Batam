@@ -320,6 +320,31 @@ export default function MesinAlatBeratPage() {
         </div>
       </section>
 
+      
+      {/* Related Links */}
+      <section className="py-12 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+              <ul className="space-y-2">
+                <li><a href="/asuransi-marine/marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Cargo Insurance Batam</a></li>
+                <li><a href="/asuransi-machinery/asuransi-alat-berat" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Alat Berat Batam</a></li>
+                <li><a href="/asuransi-machinery" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Machinery Batam</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+              <ul className="space-y-2">
+                <li><a href="/blog/asuransi-alat-berat-proyek-konstruksi" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Alat Berat Proyek Konstruksi</a></li>
+                <li><a href="/blog/asuransi-excavator-dan-bulldozer" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Excavator dan Bulldozer</a></li>
+                <li><a href="/blog/cara-klaim-asuransi-marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Cara Klaim Asuransi Marine Cargo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTASection
         title="Lindungi Mesin Anda Sejak Perjalanan Pertama"
         waMsg="Halo Rio, saya butuh asuransi cargo untuk pengiriman mesin/alat berat dari Batam"

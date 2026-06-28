@@ -111,6 +111,29 @@ export default function ArticleAllRiskTLOPage() {
           <Link href="/asuransi-kendaraan/asuransi-mobil-batam" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl text-sm hover:bg-[#0a1628]/5 transition-colors">Info Lengkap Asuransi Mobil</Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+            <ul className="space-y-2">
+              <li><a href="/asuransi-kendaraan/asuransi-mobil-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Mobil Batam</a></li>
+              <li><a href="/kalkulator-premi-mobil" className="text-sm text-blue-700 hover:underline font-medium">→ Kalkulator Premi Asuransi Mobil</a></li>
+              <li><a href="/asuransi-kendaraan" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Kendaraan Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+            <ul className="space-y-2">
+              <li><a href="/blog/cara-klaim-asuransi-mobil-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Cara Klaim Asuransi Mobil Batam</a></li>
+              <li><a href="/blog/asuransi-dump-truck-batam-proyek-konstruksi" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Dump Truck Batam</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }

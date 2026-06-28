@@ -320,6 +320,31 @@ export default function CargoEksporBatamPage() {
         </div>
       </section>
 
+      
+      {/* Related Links */}
+      <section className="py-12 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+              <ul className="space-y-2">
+                <li><a href="/asuransi-marine/marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Cargo Insurance Batam</a></li>
+                <li><a href="/asuransi-marine" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Marine Batam</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+              <ul className="space-y-2">
+                <li><a href="/blog/premi-asuransi-marine-cargo-batam" className="text-sm text-blue-700 hover:underline font-medium">→ Cara Hitung Premi Marine Cargo di Batam</a></li>
+                <li><a href="/blog/asuransi-pengiriman-batam-singapore" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Pengiriman Batam–Singapura</a></li>
+                <li><a href="/blog/cara-klaim-asuransi-marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Cara Klaim Asuransi Marine Cargo</a></li>
+                <li><a href="/blog/perbedaan-marine-hull-vs-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Perbedaan Marine Hull vs Cargo</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <CTASection
         title="Siapkan Polis Cargo Ekspor Sebelum Kirim"
         waMsg="Halo Rio, saya eksportir di Batam dan butuh asuransi cargo untuk pengiriman ke luar negeri"

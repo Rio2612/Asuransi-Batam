@@ -164,6 +164,29 @@ export default function PerbedaanMarineHullVsCargoPage() {
           <Link href="/asuransi-marine" className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors">→ Semua Produk Asuransi Marine</Link>
         </div>
       </div>
+    
+      {/* Related Links */}
+      <div className="not-prose mt-10 pt-8 border-t border-gray-200">
+        <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Halaman Terkait</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Produk &amp; Layanan</p>
+            <ul className="space-y-2">
+              <li><a href="/asuransi-marine/marine-hull" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Hull Insurance Batam</a></li>
+              <li><a href="/asuransi-marine/marine-cargo" className="text-sm text-blue-700 hover:underline font-medium">→ Marine Cargo Insurance Batam</a></li>
+              <li><a href="/asuransi-marine" className="text-sm text-blue-700 hover:underline font-medium">→ Asuransi Marine Batam</a></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#c9a84c" }}>Artikel Terkait</p>
+            <ul className="space-y-2">
+              <li><a href="/blog/jenis-jenis-asuransi-kapal-armada" className="text-sm text-blue-700 hover:underline font-medium">→ Jenis-Jenis Asuransi Kapal Armada</a></li>
+              <li><a href="/blog/premi-asuransi-kapal-batam-2026" className="text-sm text-blue-700 hover:underline font-medium">→ Premi Asuransi Kapal Batam 2026</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </ArticleLayout>
   );
 }
