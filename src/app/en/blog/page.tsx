@@ -202,6 +202,15 @@ const articles: Article[] = [
       "Builder's Risk insurance for shipyards: protection during construction, risks covered, and policy requirements in Batam's shipbuilding industry.",
     readTime: "8 min",
   },
+  {
+    title: "How to Get the Right Builders Risk Insurance in Batam",
+    slug: "how-to-get-builders-risk-insurance-batam",
+    date: "June 23, 2026",
+    category: "Marine",
+    excerpt:
+      "A complete guide to choosing Builders Risk insurance for construction projects and shipyards in Batam: a real claim case study, common mistakes, and how to set the right sum insured.",
+    readTime: "8 min",
+  },
 ];
 
 const categoryColors: Record<string, string> = {

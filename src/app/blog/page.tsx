@@ -36,15 +36,6 @@ const articles: Article[] = [
     readTime: "7 menit",
   },
   {
-    title: "Cara Klaim Asuransi Mobil yang Benar",
-    slug: "cara-klaim-asuransi-mobil",
-    date: "10 Maret 2025",
-    category: "Kendaraan",
-    excerpt:
-      "Panduan umum cara mengajukan klaim asuransi mobil: dokumen yang diperlukan, prosedur pelaporan, dan tips agar proses klaim berjalan lancar.",
-    readTime: "6 menit",
-  },
-  {
     title: "Perbedaan Asuransi All Risk dan TLO",
     slug: "perbedaan-all-risk-dan-tlo",
     date: "5 Maret 2025",
@@ -54,13 +45,22 @@ const articles: Article[] = [
     readTime: "5 menit",
   },
   {
-    title: "Asuransi Mobil di Batam",
-    slug: "asuransi-mobil-batam",
-    date: "1 Maret 2025",
+    title: "Asuransi Motor Batam 2026: Premi, Tarif OJK & Tips Pilih Polis",
+    slug: "asuransi-motor-batam",
+    date: "29 Mei 2026",
     category: "Kendaraan",
     excerpt:
-      "Informasi lengkap asuransi mobil di Batam: perusahaan terpercaya, tarif premi OJK, jenis perlindungan, dan cara memilih polis yang tepat.",
+      "Panduan lengkap asuransi motor di Batam. Tarif OJK Wilayah 1, perbedaan all risk dan TLO motor, estimasi premi, dan tips memilih polis terbaik.",
     readTime: "7 menit",
+  },
+  {
+    title: "Asuransi Dump Truck Batam untuk Proyek Konstruksi",
+    slug: "asuransi-dump-truck-batam-proyek-konstruksi",
+    date: "29 Mei 2026",
+    category: "Kendaraan",
+    excerpt:
+      "Panduan lengkap asuransi dump truck di Batam untuk proyek konstruksi dan infrastruktur. Risiko operasional, jenis perlindungan, estimasi premi, dan tips klaim.",
+    readTime: "8 menit",
   },
   // ── Alat Berat ──────────────────────────────────────────────────────────────
   {
@@ -118,6 +118,15 @@ const articles: Article[] = [
       "Langkah-langkah klaim asuransi kebakaran rumah yang benar: dokumen yang diperlukan, tenggat waktu pelaporan, dan tips agar klaim tidak ditolak.",
     readTime: "6 menit",
   },
+  {
+    title: "Asuransi Gudang Kawasan Industri Muka Kuning & Batam",
+    slug: "asuransi-gudang-kawasan-industri-muka-kuning-batam",
+    date: "29 Mei 2026",
+    category: "Properti",
+    excerpt:
+      "Panduan asuransi gudang untuk kawasan industri Muka Kuning, Kabil, dan Batam. Risiko gudang logistik, syarat BP Batam, estimasi premi, dan tips klaim.",
+    readTime: "8 menit",
+  },
   // ── Liability ───────────────────────────────────────────────────────────────
   {
     title: "Pentingnya Asuransi Limbah B3 bagi Industri",
@@ -127,6 +136,15 @@ const articles: Article[] = [
     excerpt:
       "Mengapa perusahaan yang mengelola limbah B3 wajib memiliki asuransi? Pelajari risiko hukum, regulasi OJK, dan perlindungan yang tersedia.",
     readTime: "7 menit",
+  },
+  {
+    title: "Cara Klaim Asuransi Limbah B3 Kawasan Industri Batam",
+    slug: "klaim-asuransi-limbah-b3-kawasan-industri-batam",
+    date: "29 Mei 2026",
+    category: "Liability",
+    excerpt:
+      "Panduan lengkap prosedur klaim asuransi limbah B3 untuk pabrik di kawasan industri Batam. Regulasi KLHK, dokumen yang dibutuhkan, dan contoh kasus di Kabil dan Muka Kuning.",
+    readTime: "8 menit",
   },
   // ── Engineering ─────────────────────────────────────────────────────────────
   {
@@ -146,6 +164,24 @@ const articles: Article[] = [
     excerpt:
       "Apa yang membedakan Contractor's All Risk (CAR) dan Erection All Risk (EAR)? Pelajari polis mana yang berlaku untuk jenis proyek Anda dan apa saja yang dicakup.",
     readTime: "6 menit",
+  },
+  {
+    title: "Asuransi Erection All Risk (EAR) Batam",
+    slug: "asuransi-erection-all-risk-batam",
+    date: "29 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Panduan lengkap asuransi Erection All Risk (EAR) di Batam untuk instalasi mesin pabrik, proyek energi, dan pemasangan equipment industri. Cakupan, premi, dan proses klaim.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Cara Klaim Asuransi Contractor All Risk (CAR)",
+    slug: "cara-klaim-asuransi-car",
+    date: "7 Mei 2026",
+    category: "Engineering",
+    excerpt:
+      "Panduan langkah demi langkah mengajukan klaim Contractor All Risk (CAR) di Indonesia. Dari pelaporan awal hingga pencairan ganti rugi, termasuk dokumen yang wajib disiapkan.",
+    readTime: "7 menit",
   },
   // ── Marine ──────────────────────────────────────────────────────────────────
   {
@@ -211,6 +247,52 @@ const articles: Article[] = [
       "Asuransi Builder's Risk khusus galangan kapal: perlindungan selama masa pembangunan, risiko yang ditanggung, dan syarat polis di industri perkapalan Batam.",
     readTime: "8 menit",
   },
+  {
+    title: "Jenis-Jenis Asuransi Kapal untuk Pemilik Armada",
+    slug: "jenis-jenis-asuransi-kapal-armada",
+    date: "1 Juli 2025",
+    category: "Marine",
+    excerpt:
+      "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang dari konsultan berpengalaman.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Berapa Premi Asuransi Builder's Risk Kapal di Batam?",
+    slug: "berapa-premi-asuransi-builders-risk-kapal-batam",
+    date: "7 Mei 2026",
+    category: "Marine",
+    excerpt:
+      "Simulasi dan studi kasus perhitungan premi Builder's Risk Insurance kapal di Batam. Faktor penentu rate dan contoh klaim nyata di galangan.",
+    readTime: "7 menit",
+  },
+  {
+    title: "Cara Mendapatkan Asuransi Builders Risk di Batam",
+    slug: "cara-mendapatkan-asuransi-builders-risk-batam",
+    date: "23 Juni 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan lengkap memilih asuransi builders risk untuk proyek konstruksi & galangan kapal di Batam: studi kasus klaim nyata, kesalahan umum, dan langkah memilih sum insured yang tepat.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Premi Asuransi Kapal di Batam 2026",
+    slug: "premi-asuransi-kapal-batam-2026",
+    date: "15 Januari 2026",
+    category: "Marine",
+    excerpt:
+      "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, dan tips menekan biaya dari konsultan berpengalaman.",
+    readTime: "7 menit",
+  },
+  // ── Surety Bond ─────────────────────────────────────────────────────────────
+  {
+    title: "Perbedaan Bid Bond dan Performance Bond",
+    slug: "perbedaan-bid-bond-performance-bond",
+    date: "29 Mei 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Apa perbedaan bid bond dan performance bond? Panduan lengkap untuk kontraktor di Batam — kapan masing-masing wajib dipakai, nilai jaminan, dan konsekuensi jika klaim terjadi.",
+    readTime: "6 menit",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -220,9 +302,10 @@ const categoryColors: Record<string, string> = {
   Liability: "bg-orange-100 text-orange-800",
   Engineering: "bg-purple-100 text-purple-800",
   Marine: "bg-cyan-100 text-cyan-800",
+  "Surety Bond": "bg-rose-100 text-rose-800",
 };
 
-const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine"];
+const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine", "Surety Bond"];
 
 export default function BlogPage() {
   return (
