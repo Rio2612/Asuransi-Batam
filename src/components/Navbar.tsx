@@ -35,7 +35,6 @@ const URL_MAP: Record<string, string> = {
   
   // Surety Bond
   "/asuransi-surety-bond": "/en/surety-bond-insurance",
-  "/asuransi-surety-bond/bid-bond": "/en/surety-bond-insurance/bid-bond",
   "/asuransi-surety-bond/performance-bond": "/en/surety-bond-insurance/performance-bond",
   "/asuransi-surety-bond/advance-payment-bond": "/en/surety-bond-insurance/advance-payment-bond",
   "/asuransi-surety-bond/maintenance-bond": "/en/surety-bond-insurance/maintenance-bond",
@@ -46,7 +45,6 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-marine/builders-risk": "/en/marine-insurance/builders-risk",
   // Kalkulator
   "/kalkulator-premi-mobil": "/en/car-premium-calculator",
-  "/kalkulator-premi-motor": "/en/motorcycle-premium-calculator",
   // Info
   "/tentang-kami": "/en/about-us",
   "/kontak": "/en/contact",
@@ -54,9 +52,7 @@ const URL_MAP: Record<string, string> = {
   "/blog": "/en/blog",
   // Blog – Kendaraan
   "/blog/cara-klaim-asuransi-mobil-batam": "/en/blog/how-to-claim-car-insurance-batam",
-  "/blog/cara-klaim-asuransi-mobil": "/en/blog/how-to-claim-car-insurance-project",
   "/blog/perbedaan-all-risk-dan-tlo": "/en/blog/all-risk-vs-tlo-car-insurance",
-  "/blog/asuransi-mobil-batam": "/en/blog/all-risk-vs-tlo-car-insurance",
   // Blog – Alat Berat / Machinery
   "/blog/asuransi-excavator-dan-bulldozer": "/en/blog/excavator-and-bulldozer-insurance-batam",
   "/blog/asuransi-alat-berat-proyek-konstruksi": "/en/blog/heavy-equipment-insurance-construction-projects",
@@ -210,7 +206,6 @@ const productsEN: NavItem[] = [
     label: "Surety Bond",
     href: "/en/surety-bond-insurance",
     children: [
-      { label: "Bid Bond", href: "/en/surety-bond-insurance/bid-bond", desc: "Tender guarantee" },
       { label: "Performance Bond", href: "/en/surety-bond-insurance/performance-bond", desc: "Contract execution guarantee" },
       { label: "Advance Payment Bond", href: "/en/surety-bond-insurance/advance-payment-bond", desc: "Down payment guarantee" },
       { label: "Maintenance Bond", href: "/en/surety-bond-insurance/maintenance-bond", desc: "Post-project defect guarantee" },
@@ -236,9 +231,7 @@ const blogCategoriesID: BlogCategory[] = [
     category: "Kendaraan",
     articles: [
       { label: "Cara Klaim Asuransi Mobil Batam", href: "/blog/cara-klaim-asuransi-mobil-batam" },
-      { label: "Cara Klaim Asuransi Mobil", href: "/blog/cara-klaim-asuransi-mobil" },
       { label: "Perbedaan All Risk dan TLO", href: "/blog/perbedaan-all-risk-dan-tlo" },
-      { label: "Asuransi Mobil Batam", href: "/blog/asuransi-mobil-batam" },
     ],
   },
   {
