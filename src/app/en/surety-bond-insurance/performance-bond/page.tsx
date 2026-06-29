@@ -58,7 +58,7 @@ export default function PerformanceBondENPage() {
         Performance bonds are among the most commonly required documents for contractors
         operating in Batam, whether for government, SOE, or privately funded projects. They are
         typically submitted immediately after the{" "}
-        <Link href="/en/surety-bond-insurance/bid-bond">Bid Bond</Link> phase is complete and
+        <Link href="/en/surety-bond-insurance">Bid Bond</Link> phase is complete and
         the contract has been formally signed.
       </p>
 
@@ -135,7 +135,7 @@ export default function PerformanceBondENPage() {
         <li>Financial statements for the last 2 years (audited preferred)</li>
         <li>Signed contract or Work Order (SPK) from the project owner</li>
         <li>
-          Copy of the <Link href="/en/surety-bond-insurance/bid-bond">Bid Bond</Link> previously
+          Copy of the <Link href="/en/surety-bond-insurance">Bid Bond</Link> previously
           issued (if applicable)
         </li>
         <li>List of similar projects completed in the past 3–5 years</li>
@@ -182,7 +182,7 @@ export default function PerformanceBondENPage() {
       <h2>Other Surety Bonds in Your Project Cycle</h2>
       <ul>
         <li>
-          <Link href="/en/surety-bond-insurance/bid-bond">
+          <Link href="/en/surety-bond-insurance">
             Bid Bond – Pre-Tender Guarantee
           </Link>
         </li>

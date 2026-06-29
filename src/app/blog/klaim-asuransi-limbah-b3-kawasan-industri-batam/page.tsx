@@ -676,11 +676,6 @@ export default function KlaimLimbahB3Page() {
                 desc: "Detail produk polis Environmental Impairment Liability",
               },
               {
-                title: "Asuransi Public Liability Batam",
-                href: "/blog/asuransi-public-liability-batam",
-                desc: "Panduan perlindungan bisnis dari tuntutan pihak ketiga",
-              },
-              {
                 title: "Public Liability",
                 href: "/asuransi-liability/public-liability",
                 desc: "Detail produk asuransi tanggung jawab publik",

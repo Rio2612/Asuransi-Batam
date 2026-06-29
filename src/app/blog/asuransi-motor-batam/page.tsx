@@ -370,7 +370,7 @@ export default function AsuransiMotorBatamPage() {
               { title: "Kalkulator Premi Mobil", href: "/kalkulator-premi-mobil", desc: "Estimasi premi kendaraan roda empat" },
               { title: "Perbedaan All Risk dan TLO", href: "/blog/perbedaan-all-risk-dan-tlo", desc: "Panduan lengkap memilih jenis polis kendaraan" },
               { title: "Asuransi Mobil Batam", href: "/asuransi-kendaraan/asuransi-mobil-batam", desc: "Perlindungan kendaraan roda empat di Batam" },
-              { title: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dump-truck", desc: "Asuransi kendaraan niaga untuk proyek konstruksi" },
+              { title: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck", desc: "Asuransi kendaraan niaga untuk proyek konstruksi" },
               { title: "Semua Produk Kendaraan", href: "/asuransi-kendaraan", desc: "Pillar page asuransi kendaraan Batam" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="group flex items-start gap-3 p-4 bg-[#faf8f3] rounded-xl border border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-md transition-all">

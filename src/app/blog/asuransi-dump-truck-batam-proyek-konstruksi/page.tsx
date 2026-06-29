@@ -244,7 +244,7 @@ export default function AsuransiDumpTruckBatamPage() {
           </p>
           <div className="space-y-3 mb-6">
             {[
-              { item: "Asuransi kendaraan aktif", desc: "Untuk semua unit dump truck yang akan dioperasikan di proyek", href: "/asuransi-kendaraan/asuransi-dump-truck" },
+              { item: "Asuransi kendaraan aktif", desc: "Untuk semua unit dump truck yang akan dioperasikan di proyek", href: "/asuransi-kendaraan/asuransi-dumptruck" },
               { item: "Performance Bond", desc: "Jaminan bahwa pekerjaan akan diselesaikan sesuai kontrak", href: "/asuransi-surety-bond/performance-bond" },
               { item: "Public Liability", desc: "Perlindungan dari tuntutan pihak ketiga akibat operasional di lapangan", href: "/asuransi-liability/public-liability" },
             ].map((d) => (
@@ -288,10 +288,10 @@ export default function AsuransiDumpTruckBatamPage() {
           <h2 className="font-display font-bold text-xl text-[#0a1628] mb-5">Artikel & Halaman Terkait</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { title: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dump-truck", desc: "Halaman produk asuransi dump truck di Batam" },
+              { title: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck", desc: "Halaman produk asuransi dump truck di Batam" },
               { title: "Asuransi Kendaraan Batam", href: "/asuransi-kendaraan", desc: "Semua produk asuransi kendaraan — pillar page" },
               { title: "Asuransi Motor Batam", href: "/blog/asuransi-motor-batam", desc: "Panduan asuransi kendaraan roda dua di Batam" },
-              { title: "Surety Bond Proyek Pemerintah", href: "/blog/surety-bond-proyek-pemerintah-batam", desc: "Jaminan pelaksanaan dan penawaran untuk tender" },
+              { title: "Performance Bond untuk Kontraktor", href: "/asuransi-surety-bond/performance-bond", desc: "Jaminan pelaksanaan untuk tender proyek pemerintah/swasta" },
               { title: "Asuransi Alat Berat", href: "/asuransi-machinery/asuransi-alat-berat", desc: "Untuk excavator, bulldozer, dan alat berat lain" },
               { title: "Public Liability", href: "/asuransi-liability/public-liability", desc: "Perlindungan tanggung jawab terhadap pihak ketiga" },
             ].map((link) => (

@@ -634,7 +634,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              { title: "Surety Bond untuk Proyek Pemerintah Batam", href: "/blog/surety-bond-proyek-pemerintah-batam", desc: "Panduan lengkap semua jenis surety bond dan prosedur pengajuannya" },
+              { title: "Asuransi Surety Bond Batam", href: "/asuransi-surety-bond", desc: "Panduan lengkap semua jenis surety bond dan prosedur pengajuannya" },
               { title: "Halaman Utama Surety Bond", href: "/asuransi-surety-bond", desc: "Seluruh layanan penjaminan proyek kami di Batam" },
               { title: "Bid Bond", href: "/asuransi-surety-bond/bid-bond", desc: "Detail produk jaminan penawaran" },
               { title: "Performance Bond", href: "/asuransi-surety-bond/performance-bond", desc: "Detail produk jaminan pelaksanaan proyek" },
