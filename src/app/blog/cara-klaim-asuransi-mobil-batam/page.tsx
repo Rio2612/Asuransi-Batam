@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import { XCircle, ListChecks, Lightbulb, HelpCircle, Scale } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Mobil di Batam – Panduan Lengkap Agar Tidak Ditolak",
@@ -118,7 +119,12 @@ export default function ArticleAsuransiMobilBatamPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Mengapa Klaim Asuransi Mobil Bisa Ditolak?</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <XCircle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Mengapa Klaim Asuransi Mobil Bisa Ditolak?
+      </h2>
       <p>
         Sebelum masuk ke prosedur, penting untuk memahami penyebab umum klaim ditolak oleh perusahaan asuransi:
       </p>
@@ -141,7 +147,12 @@ export default function ArticleAsuransiMobilBatamPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Langkah-Langkah Klaim Asuransi Mobil yang Benar</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <ListChecks className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Langkah-Langkah Klaim Asuransi Mobil yang Benar
+      </h2>
       <p className="text-center">
         Ikuti urutan ini dengan cermat agar proses klaim berjalan mulus dari awal hingga kendaraan Anda selesai diperbaiki.
       </p>
@@ -296,7 +307,12 @@ export default function ArticleAsuransiMobilBatamPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Tips Agar Proses Klaim Lebih Cepat dan Lancar</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <Lightbulb className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Tips Agar Proses Klaim Lebih Cepat dan Lancar
+      </h2>
       <ol>
         <li>
           <strong>Simpan nomor darurat asuransi di ponsel Anda</strong> — jangan tunggu mencari
@@ -328,7 +344,12 @@ export default function ArticleAsuransiMobilBatamPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">FAQ Seputar Klaim Asuransi Mobil</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <HelpCircle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        FAQ Seputar Klaim Asuransi Mobil
+      </h2>
 
       <div className="not-prose mt-8 mb-10 space-y-3">
         {[
@@ -367,7 +388,12 @@ export default function ArticleAsuransiMobilBatamPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Bagaimana Jika Klaim Ditolak?</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <Scale className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Bagaimana Jika Klaim Ditolak?
+      </h2>
 
       <div className="not-prose my-6 rounded-2xl border-l-4 border-[#c9a84c] bg-[#faf8f3] px-6 py-5">
         <p className="text-[#0a1628] leading-relaxed">
