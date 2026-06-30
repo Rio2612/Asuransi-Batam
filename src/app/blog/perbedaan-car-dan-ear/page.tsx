@@ -1,5 +1,15 @@
 // app/blog/perbedaan-car-dan-ear/page.tsx
 import type { Metadata } from "next";
+import {
+  Building2,
+  Wrench,
+  Scale,
+  Layers,
+  AlertTriangle,
+  MapPin,
+  CheckCircle2,
+  MessageCircleMore,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Perbedaan CAR dan EAR dalam Asuransi Engineering – Panduan Lengkap",
@@ -70,7 +80,7 @@ export default function BlogCARvsEARPage() {
 
         {/* Header */}
         <header className="mb-10">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">
             Asuransi Engineering
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
@@ -87,7 +97,12 @@ export default function BlogCARvsEARPage() {
         {/* Konten Utama */}
         <section className="prose prose-gray max-w-none text-gray-700 leading-relaxed space-y-8">
 
-          <h2 className="text-2xl font-bold text-gray-900">Apa Itu CAR (Contractor All Risk)?</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Building2 className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Apa Itu CAR (Contractor All Risk)?
+          </h2>
           <p>
             CAR adalah produk asuransi yang dirancang khusus untuk melindungi <strong>proyek konstruksi sipil</strong> — segala sesuatu yang dibangun dari tanah ke atas menggunakan material beton, baja struktural, kayu, atau bata. Yang termasuk cakupan CAR bukan hanya gedung dan rumah, tetapi juga jembatan, jalan, terowongan, pelabuhan, bendungan, dan fasilitas publik lainnya.
           </p>
@@ -98,7 +113,12 @@ export default function BlogCARvsEARPage() {
             Polis CAR umumnya mencakup dua seksi utama. Seksi pertama menanggung <strong>kerusakan fisik</strong> pada pekerjaan konstruksi itu sendiri, termasuk material, alat, dan peralatan di lokasi proyek. Seksi kedua menanggung <strong>tanggung jawab hukum pihak ketiga</strong> — misalnya, jika material bangunan jatuh dan merusak kendaraan warga sekitar, atau pekerja proyek tidak sengaja merusak pipa air milik tetangga.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900">Apa Itu EAR (Erection All Risk)?</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Wrench className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Apa Itu EAR (Erection All Risk)?
+          </h2>
           <p>
             EAR hadir untuk kebutuhan yang berbeda. Produk ini dirancang melindungi proyek yang bersifat <strong>mekanikal dan elektrikal</strong> — seperti pemasangan mesin pabrik, instalasi turbin, perakitan peralatan industri berat, pembangunan pembangkit listrik, hingga pemasangan sistem pipa (piping) dalam fasilitas industri.
           </p>
@@ -109,12 +129,17 @@ export default function BlogCARvsEARPage() {
             EAR juga mencakup dua seksi serupa dengan CAR — kerusakan fisik pada mesin/peralatan yang sedang dipasang, dan tanggung jawab terhadap pihak ketiga. Yang membedakan adalah adanya opsi tambahan untuk menanggung <strong>Delay in Start-Up (DSU)</strong> — kerugian finansial akibat keterlambatan operasional pabrik karena kerusakan yang tertanggung.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900">Perbandingan Langsung: CAR vs EAR</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Scale className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Perbandingan Langsung: CAR vs EAR
+          </h2>
 
           {/* Tabel Perbandingan */}
           <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm my-6">
             <table className="w-full text-sm text-left">
-              <thead className="bg-blue-50 text-gray-700 font-semibold">
+              <thead className="bg-[#0a1628] text-white font-semibold">
                 <tr>
                   <th className="px-5 py-4">Aspek</th>
                   <th className="px-5 py-4">CAR</th>
@@ -131,7 +156,7 @@ export default function BlogCARvsEARPage() {
                   ["Periode Pemeliharaan", "Tersedia (biasanya 12–24 bulan)", "Tersedia (biasanya 12–24 bulan)"],
                   ["Tanggung Jawab Pihak Ketiga", "Tersedia (Seksi II)", "Tersedia (Seksi II)"],
                 ].map(([aspek, car, ear]) => (
-                  <tr key={aspek} className="bg-white hover:bg-gray-50 transition">
+                  <tr key={aspek} className="bg-white hover:bg-[#faf8f3] transition">
                     <td className="px-5 py-3 font-medium text-gray-800">{aspek}</td>
                     <td className="px-5 py-3 text-gray-600">{car}</td>
                     <td className="px-5 py-3 text-gray-600">{ear}</td>
@@ -141,7 +166,12 @@ export default function BlogCARvsEARPage() {
             </table>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900">Bagaimana Jika Proyek Saya Mengandung Keduanya?</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Layers className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Bagaimana Jika Proyek Saya Mengandung Keduanya?
+          </h2>
           <p>
             Ini adalah pertanyaan yang sangat umum, terutama untuk proyek skala besar di Batam — misalnya pembangunan fasilitas industri yang melibatkan konstruksi gedung pabrik <em>sekaligus</em> instalasi mesin di dalamnya.
           </p>
@@ -160,7 +190,12 @@ export default function BlogCARvsEARPage() {
             Pilihan terbaik bergantung pada struktur kontrak, siapa yang memegang polis (owner atau kontraktor), dan kompleksitas proyek. Konsultasikan dengan broker atau agen Anda sebelum memutuskan.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900">Kesalahan Umum yang Sering Terjadi di Lapangan</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <AlertTriangle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Kesalahan Umum yang Sering Terjadi di Lapangan
+          </h2>
           <p>
             Berdasarkan pengalaman menangani klaim proyek di Batam, ada beberapa kesalahan yang berulang terjadi:
           </p>
@@ -179,7 +214,12 @@ export default function BlogCARvsEARPage() {
             </li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-gray-900">Relevansi untuk Proyek di Batam</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <MapPin className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Relevansi untuk Proyek di Batam
+          </h2>
           <p>
             Batam memiliki karakteristik unik sebagai kota industri sekaligus kawasan perdagangan bebas. Proyek-proyek yang berjalan di sini sangat bervariasi — dari pembangunan ruko dan pergudangan, hingga fasilitas galangan kapal, pabrik elektronik, dan kawasan industri terpadu.
           </p>
@@ -192,7 +232,12 @@ export default function BlogCARvsEARPage() {
             <li>Kedekatan dengan laut meningkatkan risiko korosi dan dampak cuaca ekstrem. Ini perlu dideklarasikan dengan jelas agar tidak menjadi alasan penolakan klaim.</li>
           </ul>
 
-          <h2 className="text-2xl font-bold text-gray-900">Kesimpulan</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <CheckCircle2 className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Kesimpulan
+          </h2>
           <p>
             CAR dan EAR bukan produk yang bisa saling menggantikan begitu saja. Keduanya dirancang untuk jenis pekerjaan yang berbeda, dan memilih yang salah berarti Anda menanggung risiko tanpa perlindungan yang sesungguhnya.
           </p>
@@ -203,20 +248,23 @@ export default function BlogCARvsEARPage() {
         </section>
 
         {/* CTA */}
-        <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">Konsultasikan Proyek Anda</h3>
-          <p className="text-gray-600 mb-5">
+        <div className="mt-12 bg-[#0a1628] rounded-2xl p-8 text-center not-prose">
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 mb-3">
+            <MessageCircleMore className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          <h3 className="text-xl font-bold text-white mb-2">Konsultasikan Proyek Anda</h3>
+          <p className="text-white/70 mb-5">
             Tidak yakin CAR atau EAR yang tepat untuk proyek Anda? Hubungi Rio sekarang untuk konsultasi gratis.
           </p>
           <a
             href="https://wa.me/6281373336728"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition"
+            className="inline-block bg-[#c9a84c] hover:bg-[#f0d080] text-[#0a1628] font-bold px-8 py-3 rounded-xl transition"
           >
             Hubungi via WhatsApp
           </a>
-          <p className="text-sm text-gray-400 mt-3">0813-7333-6728 &middot; Rio, Agen Asuransi Batam</p>
+          <p className="text-sm text-white/40 mt-3">0813-7333-6728 &middot; Rio, Agen Asuransi Batam</p>
         </div>
 
         {/* Internal Links */}
@@ -224,17 +272,17 @@ export default function BlogCARvsEARPage() {
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Artikel Terkait</p>
           <ul className="space-y-2">
             <li>
-              <a href="/asuransi-engineering/contractor-all-risk" className="text-blue-600 hover:underline font-medium">
+              <a href="/asuransi-engineering/contractor-all-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Contractor All Risk (CAR) – Cakupan & Manfaat Lengkap
               </a>
             </li>
             <li>
-              <a href="/asuransi-engineering/erection-all-risk" className="text-blue-600 hover:underline font-medium">
+              <a href="/asuransi-engineering/erection-all-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Erection All Risk (EAR) – Proteksi Instalasi Industri
               </a>
             </li>
             <li>
-              <a href="/blog/cara-klaim-asuransi-car" className="text-blue-600 hover:underline font-medium">
+              <a href="/blog/cara-klaim-asuransi-car" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Cara Klaim Asuransi CAR saat Proyek Mengalami Kerusakan
               </a>
             </li>

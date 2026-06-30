@@ -1,5 +1,14 @@
 // app/blog/cara-klaim-asuransi-car/page.tsx
 import type { Metadata } from "next";
+import {
+  ListChecks,
+  ClipboardList,
+  XCircle,
+  Lightbulb,
+  Clock,
+  CheckCircle2,
+  MessageCircleMore,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Cara Klaim Asuransi CAR saat Proyek Mengalami Kerusakan – Panduan Lengkap",
@@ -128,7 +137,7 @@ export default function BlogCaraKlaimCARPage() {
 
         {/* Header */}
         <header className="mb-10">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-[#c9a84c] uppercase tracking-widest mb-3">
             Asuransi Engineering
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
@@ -153,12 +162,17 @@ export default function BlogCaraKlaimCARPage() {
           </p>
 
           {/* Step-by-step */}
-          <h2 className="text-2xl font-bold text-gray-900">6 Langkah Mengajukan Klaim CAR</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <ListChecks className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            6 Langkah Mengajukan Klaim CAR
+          </h2>
 
           <div className="space-y-6">
             {claimSteps.map((step) => (
               <div key={step.number} className="flex gap-5 p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 text-white font-bold text-lg rounded-xl flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#0a1628] text-[#c9a84c] font-display font-bold text-lg rounded-xl flex items-center justify-center">
                   {step.number}
                 </div>
                 <div>
@@ -170,14 +184,19 @@ export default function BlogCaraKlaimCARPage() {
           </div>
 
           {/* Dokumen Checklist */}
-          <h2 className="text-2xl font-bold text-gray-900">Checklist Dokumen Klaim CAR</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <ClipboardList className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Checklist Dokumen Klaim CAR
+          </h2>
           <p>
             Berikut daftar dokumen yang perlu disiapkan. Tandai mana yang wajib (🔴) dan mana yang situasional (⚪):
           </p>
 
           <div className="rounded-xl border border-gray-200 overflow-hidden shadow-sm">
             <table className="w-full text-sm">
-              <thead className="bg-gray-50 text-gray-600 font-semibold">
+              <thead className="bg-[#0a1628] text-white font-semibold">
                 <tr>
                   <th className="px-5 py-3 text-left">Dokumen</th>
                   <th className="px-5 py-3 text-center">Status</th>
@@ -185,10 +204,10 @@ export default function BlogCaraKlaimCARPage() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {docsChecklist.map((item) => (
-                  <tr key={item.doc} className="bg-white hover:bg-gray-50 transition">
+                  <tr key={item.doc} className="bg-white hover:bg-[#faf8f3] transition">
                     <td className="px-5 py-3 text-gray-700">{item.doc}</td>
                     <td className="px-5 py-3 text-center">
-                      <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full ${item.critical ? "bg-red-50 text-red-600" : "bg-gray-100 text-gray-500"}`}>
+                      <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full ${item.critical ? "bg-[#fdf3f2] text-[#b3261e]" : "bg-[#faf8f3] text-[#94a3b8]"}`}>
                         {item.critical ? "Wajib" : "Situasional"}
                       </span>
                     </td>
@@ -199,7 +218,12 @@ export default function BlogCaraKlaimCARPage() {
           </div>
 
           {/* Hal yang Membuat Klaim Ditolak */}
-          <h2 className="text-2xl font-bold text-gray-900">Hal-Hal yang Paling Sering Membuat Klaim CAR Ditolak</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <XCircle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Hal-Hal yang Paling Sering Membuat Klaim CAR Ditolak
+          </h2>
           <p>
             Memahami alasan penolakan klaim sama pentingnya dengan mengetahui prosedurnya. Berikut penyebab yang paling sering ditemui:
           </p>
@@ -235,7 +259,12 @@ export default function BlogCaraKlaimCARPage() {
           </div>
 
           {/* Tips Mempercepat Klaim */}
-          <h2 className="text-2xl font-bold text-gray-900">Tips Mempercepat Proses Klaim</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Lightbulb className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Tips Mempercepat Proses Klaim
+          </h2>
           <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Simpan semua komunikasi secara tertulis.</strong> Konfirmasi setiap percakapan telepon via WhatsApp atau email. Ini menciptakan jejak yang jelas jika timbul perselisihan di kemudian hari.
@@ -252,7 +281,12 @@ export default function BlogCaraKlaimCARPage() {
           </ul>
 
           {/* Berapa Lama Proses Klaim */}
-          <h2 className="text-2xl font-bold text-gray-900">Berapa Lama Proses Klaim CAR?</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <Clock className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Berapa Lama Proses Klaim CAR?
+          </h2>
           <p>
             Tidak ada jawaban baku, karena sangat bergantung pada kompleksitas kerusakan dan kelengkapan dokumen yang Anda berikan. Sebagai gambaran umum:
           </p>
@@ -265,7 +299,12 @@ export default function BlogCaraKlaimCARPage() {
             Kunci mempercepat proses ada di tangan Anda: semakin lengkap dan rapi dokumen yang diberikan sejak awal, semakin cepat penanggung dapat memproses dan memutuskan klaim.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900">Kesimpulan</h2>
+          <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+              <CheckCircle2 className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+            </span>
+            Kesimpulan
+          </h2>
           <p>
             Klaim CAR yang berhasil bukan keberuntungan — itu hasil dari persiapan yang baik dan tindakan yang tepat di momen kritis. Laporkan sesegera mungkin, dokumentasikan segalanya, dan jangan mengambil tindakan apapun di lokasi sebelum ada izin dari penanggung.
           </p>
@@ -276,20 +315,23 @@ export default function BlogCaraKlaimCARPage() {
         </section>
 
         {/* CTA */}
-        <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-2">Butuh Bantuan Klaim atau Konsultasi CAR?</h3>
-          <p className="text-gray-600 mb-5">
+        <div className="mt-12 bg-[#0a1628] rounded-2xl p-8 text-center not-prose">
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/10 mb-3">
+            <MessageCircleMore className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          <h3 className="text-xl font-bold text-white mb-2">Butuh Bantuan Klaim atau Konsultasi CAR?</h3>
+          <p className="text-white/70 mb-5">
             Rio siap membantu — dari pemilihan polis hingga pendampingan proses klaim.
           </p>
           <a
             href="https://wa.me/6281373336728"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl transition"
+            className="inline-block bg-[#c9a84c] hover:bg-[#f0d080] text-[#0a1628] font-bold px-8 py-3 rounded-xl transition"
           >
             Hubungi via WhatsApp
           </a>
-          <p className="text-sm text-gray-400 mt-3">0813-7333-6728 &middot; Rio, Agen Asuransi Batam</p>
+          <p className="text-sm text-white/40 mt-3">0813-7333-6728 &middot; Rio, Agen Asuransi Batam</p>
         </div>
 
         {/* Internal Links */}
@@ -297,17 +339,17 @@ export default function BlogCaraKlaimCARPage() {
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Artikel Terkait</p>
           <ul className="space-y-2">
             <li>
-              <a href="/blog/perbedaan-car-dan-ear" className="text-blue-600 hover:underline font-medium">
+              <a href="/blog/perbedaan-car-dan-ear" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Perbedaan CAR dan EAR: Mana yang Tepat untuk Proyek Anda?
               </a>
             </li>
             <li>
-              <a href="/asuransi-engineering/contractor-all-risk" className="text-blue-600 hover:underline font-medium">
+              <a href="/asuransi-engineering/contractor-all-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Contractor All Risk (CAR) – Cakupan & Manfaat Lengkap
               </a>
             </li>
             <li>
-              <a href="/asuransi-engineering" className="text-blue-600 hover:underline font-medium">
+              <a href="/asuransi-engineering" className="text-[#1a4fa0] hover:text-[#c9a84c] transition-colors font-medium">
                 → Asuransi Engineering Batam – Semua Produk
               </a>
             </li>
