@@ -19,6 +19,7 @@ const productLinksID2 = [
   { label: "Asuransi Limbah B3",   href: "/asuransi-liability/asuransi-limbah-b3" },
   { label: "Public Liability",     href: "/asuransi-liability/public-liability" },
   { label: "Asuransi Engineering", href: "/asuransi-engineering" },
+  { label: "Asuransi Surety Bond", href: "/asuransi-surety-bond" },
   { label: "Kalkulator Premi Mobil", href: "/kalkulator-premi-mobil" },
   { label: "Kalkulator Premi Motor", href: "/kalkulator-premi-motor" },
 ];
@@ -44,6 +45,7 @@ const productLinksEN2 = [
   { label: "B3 Waste Insurance",        href: "/en/liability-insurance/b3-waste-insurance" },
   { label: "Public Liability",          href: "/en/liability-insurance/public-liability" },
   { label: "Engineering Insurance",     href: "/en/engineering-insurance" },
+  { label: "Surety Bond Insurance",     href: "/en/surety-bond-insurance" },
   { label: "Car Premium Calculator",    href: "/en/car-premium-calculator" },
 ];
 const blogLinksEN = [

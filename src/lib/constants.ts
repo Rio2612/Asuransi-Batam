@@ -29,7 +29,7 @@ export const NAV_PRODUCTS = [
     href: "/asuransi-kendaraan",
     children: [
       { label: "Asuransi Mobil Batam", href: "/asuransi-kendaraan/asuransi-mobil-batam" },
-      { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dump-truck" },
+      { label: "Asuransi Dump Truck", href: "/asuransi-kendaraan/asuransi-dumptruck" },
     ],
   },
   {
@@ -54,6 +54,16 @@ export const NAV_PRODUCTS = [
     children: [
       { label: "Contractor All Risk", href: "/asuransi-engineering/contractor-all-risk" },
       { label: "Erection All Risk", href: "/asuransi-engineering/erection-all-risk" },
+    ],
+  },
+  {
+    label: "Asuransi Surety Bond",
+    href: "/asuransi-surety-bond",
+    children: [
+      { label: "Bid Bond", href: "/asuransi-surety-bond/bid-bond" },
+      { label: "Performance Bond", href: "/asuransi-surety-bond/performance-bond" },
+      { label: "Advance Payment Bond", href: "/asuransi-surety-bond/advance-payment-bond" },
+      { label: "Maintenance Bond", href: "/asuransi-surety-bond/maintenance-bond" },
     ],
   },
 ];
