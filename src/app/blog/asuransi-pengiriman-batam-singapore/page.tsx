@@ -2,6 +2,53 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  Ship,
+  Anchor,
+  Waves,
+  Zap,
+  Package,
+  ShieldAlert,
+  Droplets,
+  FileText,
+  CheckCircle2,
+  Wallet,
+  MessageCircleMore,
+} from "lucide-react";
+
+// --- Helper presentational components (lokal, tanpa dependensi baru) ---
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function IconList({ items }: { items: { icon: React.ElementType; title: string; desc: string }[] }) {
+  return (
+    <ul className="not-prose grid gap-3 my-5 list-none p-0">
+      {items.map((item, i) => {
+        const Icon = item.icon;
+        return (
+          <li key={i} className="flex items-start gap-3.5 p-4 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-white border border-[#e2e8f0] shrink-0">
+              <Icon className="w-[16px] h-[16px] text-[#1a4fa0]" strokeWidth={2} />
+            </span>
+            <div>
+              <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
+              <p className="text-sm text-[#64748b] mt-1 mb-0 leading-relaxed">{item.desc}</p>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Asuransi Pengiriman Barang Batam–Singapura – Panduan Lengkap untuk Eksportir",
@@ -45,7 +92,7 @@ export default function AsuransiPengirimanBatamSingapurePage() {
       breadcrumbs={[{ label: "Asuransi Pengiriman Batam–Singapura", href: "/blog/asuransi-pengiriman-batam-singapore" }]}
       schema={schema}
     >
-      <h2>Batam dan Singapura: Dua Ekonomi yang Saling Bergantung</h2>
+      <SectionHeading icon={Anchor}>Batam dan Singapura: Dua Ekonomi yang Saling Bergantung</SectionHeading>
       <p>
         Selat Singapura memisahkan Batam dan Singapura dengan jarak kurang dari 20 kilometer — tetapi secara ekonomi, keduanya terhubung lebih erat dari banyak kota bertetangga. Setiap hari, ratusan pengiriman melintas: komponen elektronik dari kawasan industri Batamindo ke fabrikan Singapura, produk makanan olahan, spare part industri, dan berbagai komoditas ekspor lainnya.
       </p>
@@ -53,22 +100,28 @@ export default function AsuransiPengirimanBatamSingapurePage() {
         Justru karena jaraknya pendek, banyak pelaku usaha menganggap risiko lebih rendah dan mengabaikan asuransi kargo. Ini keliru. <strong>Jarak pendek tidak mengurangi risiko kerusakan saat bongkar-muat, pencurian di dermaga, atau kerusakan akibat air laut.</strong> Selat Singapura adalah salah satu jalur pelayaran tersibuk di dunia — kepadatan lalu lintas justru meningkatkan risiko insiden.
       </p>
 
-      <h2>Jenis Pengiriman di Rute Batam–Singapura</h2>
-      <ul>
-        <li><strong>Kapal Feri Kargo (RoRo):</strong> Truk atau kontainer masuk langsung ke badan kapal. Waktu tempuh sekitar 45–60 menit.</li>
-        <li><strong>Ferry Konvensional + Barge:</strong> Barang diangkut terpisah dari kendaraan, umum untuk kargo berat atau oversized.</li>
-        <li><strong>Speedboat / Pompong Kargo:</strong> Untuk pengiriman kecil dan cepat. Rentan terhadap water ingress karena ukuran kapal yang lebih kecil.</li>
-        <li><strong>Air Freight via Bandara Hang Nadim:</strong> Untuk barang bernilai tinggi atau mendesak. Polis marine cargo standar umumnya mencakup air freight juga.</li>
-      </ul>
+      <SectionHeading icon={Ship}>Jenis Pengiriman di Rute Batam–Singapura</SectionHeading>
+      <IconList
+        items={[
+          { icon: Ship, title: "Kapal Feri Kargo (RoRo)", desc: "Truk atau kontainer masuk langsung ke badan kapal. Waktu tempuh sekitar 45–60 menit." },
+          { icon: Package, title: "Ferry Konvensional + Barge", desc: "Barang diangkut terpisah dari kendaraan, umum untuk kargo berat atau oversized." },
+          { icon: Waves, title: "Speedboat / Pompong Kargo", desc: "Untuk pengiriman kecil dan cepat. Rentan terhadap water ingress karena ukuran kapal yang lebih kecil." },
+          { icon: Zap, title: "Air Freight via Bandara Hang Nadim", desc: "Untuk barang bernilai tinggi atau mendesak. Polis marine cargo standar umumnya mencakup air freight juga." },
+        ]}
+      />
 
-      <h2>Risiko Spesifik di Jalur Batam–Singapura</h2>
-      <p><strong>Kepadatan Lalu Lintas Selat Singapura:</strong> Lebih dari 1.000 kapal per hari — tanker raksasa, bulk carrier, dan kapal kontainer berbagi jalur yang sama dengan kapal feri kecil. Risiko tubrukan lebih tinggi dibanding jalur terbuka.</p>
-      <p><strong>Cuaca Tidak Menentu di Musim Pancaroba:</strong> Antara Maret–Mei dan Oktober–Desember, ombak tinggi dan angin kencang dapat muncul tiba-tiba. Kapal kecil lebih rentan.</p>
-      <p><strong>Risiko di Dermaga dan Terminal:</strong> Kerusakan akibat handling yang kasar saat bongkar-muat di Pelabuhan Batam Center, Sekupang, atau Tanah Merah Ferry Terminal Singapura adalah titik risiko tertinggi untuk barang pecah belah dan elektronik.</p>
-      <p><strong>Pencurian dan Penggelapan:</strong> Kargo break-bulk yang menunggu di area dermaga lebih rentan, terutama saat malam hari atau saat kepadatan tinggi.</p>
-      <p><strong>Kelembaban dan Air Masuk:</strong> Untuk speedboat kargo atau barge terbuka, risiko air hujan atau percikan air laut nyata — terutama untuk barang yang tidak dikemas kedap air.</p>
+      <SectionHeading icon={ShieldAlert}>Risiko Spesifik di Jalur Batam–Singapura</SectionHeading>
+      <IconList
+        items={[
+          { icon: Ship, title: "Kepadatan Lalu Lintas Selat Singapura", desc: "Lebih dari 1.000 kapal per hari — tanker raksasa, bulk carrier, dan kapal kontainer berbagi jalur yang sama dengan kapal feri kecil. Risiko tubrukan lebih tinggi dibanding jalur terbuka." },
+          { icon: Zap, title: "Cuaca Tidak Menentu di Musim Pancaroba", desc: "Antara Maret–Mei dan Oktober–Desember, ombak tinggi dan angin kencang dapat muncul tiba-tiba. Kapal kecil lebih rentan." },
+          { icon: Package, title: "Risiko di Dermaga dan Terminal", desc: "Kerusakan akibat handling yang kasar saat bongkar-muat di Pelabuhan Batam Center, Sekupang, atau Tanah Merah Ferry Terminal Singapura adalah titik risiko tertinggi untuk barang pecah belah dan elektronik." },
+          { icon: ShieldAlert, title: "Pencurian dan Penggelapan", desc: "Kargo break-bulk yang menunggu di area dermaga lebih rentan, terutama saat malam hari atau saat kepadatan tinggi." },
+          { icon: Droplets, title: "Kelembaban dan Air Masuk", desc: "Untuk speedboat kargo atau barge terbuka, risiko air hujan atau percikan air laut nyata — terutama untuk barang yang tidak dikemas kedap air." },
+        ]}
+      />
 
-      <h2>Incoterms dan Siapa yang Wajib Beli Asuransi</h2>
+      <SectionHeading icon={FileText}>Incoterms dan Siapa yang Wajib Beli Asuransi</SectionHeading>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -97,12 +150,12 @@ export default function AsuransiPengirimanBatamSingapurePage() {
       </div>
       <p><strong>Perhatian khusus untuk CIF:</strong> Banyak eksportir Batam yang berjualan CIF membeli asuransi dengan nilai dan klausa minimum hanya untuk memenuhi persyaratan kontrak — bukan untuk perlindungan optimal. Ini merugikan importir Singapura yang sebenarnya menanggung risiko.</p>
 
-      <h2>Memilih Klausa yang Tepat untuk Rute Ini</h2>
+      <SectionHeading icon={CheckCircle2}>Memilih Klausa yang Tepat untuk Rute Ini</SectionHeading>
       <p><strong>ICC (A) — direkomendasikan untuk:</strong> elektronik, komponen mesin, peralatan medis, barang bernilai di atas Rp 100 juta per pengiriman, dan barang yang sensitif terhadap kelembaban.</p>
       <p><strong>ICC (B) atau ICC (C) — bisa dipertimbangkan untuk:</strong> bahan baku industri (besi, plastik, kimia bulk), komoditas hasil pertanian atau perikanan, dan barang dengan nilai rendah dan kemasan kuat.</p>
       <p><strong>Klausul tambahan yang sering relevan:</strong> War &amp; Strikes Clause (umumnya otomatis untuk rute internasional), TPND Clause (perlindungan pencurian tambahan), dan Refrigeration Clause (untuk pengiriman makanan beku).</p>
 
-      <h2>Berapa Premi Asuransi Kargo Batam–Singapura?</h2>
+      <SectionHeading icon={Wallet}>Berapa Premi Asuransi Kargo Batam–Singapura?</SectionHeading>
       <p>Karena rute ini pendek dan tergolong rutin, premi umumnya lebih kompetitif dibanding rute internasional jarak jauh:</p>
       <ul>
         <li>ICC (A) untuk elektronik: 0,2% – 0,4% dari nilai kargo</li>
@@ -113,7 +166,7 @@ export default function AsuransiPengirimanBatamSingapurePage() {
         Untuk pengiriman rutin, pertimbangkan <strong>Open Cover Policy</strong> — polis terbuka yang otomatis mencakup setiap pengiriman dalam periode tertentu tanpa harus membuat polis baru setiap kali. Lebih efisien dan sering lebih murah per pengiriman.
       </p>
 
-      <h2>Ilustrasi Kasus: Kerusakan Elektronik di Tanah Merah</h2>
+      <SectionHeading icon={Package}>Ilustrasi Kasus: Kerusakan Elektronik di Tanah Merah</SectionHeading>
       <p>
         Sebuah perusahaan elektronik di Batamindo mengirimkan 50 karton komponen sirkuit ke pembeli di Singapura via feri kargo. Saat bongkar di Tanah Merah Ferry Terminal, 8 karton jatuh dari forklift dan rusak. Total kerugian sekitar SGD 12.000.
       </p>
@@ -122,7 +175,12 @@ export default function AsuransiPengirimanBatamSingapurePage() {
       </p>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
-        <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Konsultasi Polis Kargo Batam–Singapura</h3>
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-lg text-[#c9a84c] mb-2">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
+            <MessageCircleMore className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Konsultasi Polis Kargo Batam–Singapura
+        </h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
           Saya membantu eksportir dan importir di Batam memilih polis yang benar sesuai Incoterms, jenis barang, dan frekuensi pengiriman — termasuk penyusunan Open Cover untuk pengiriman reguler.
         </p>
