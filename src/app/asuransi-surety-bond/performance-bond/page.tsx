@@ -2,6 +2,60 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  ShieldCheck,
+  Users,
+  Wallet,
+  CalendarClock,
+  ClipboardList,
+  Scale,
+  Gavel,
+  Network,
+  MessageCircleMore,
+  CheckCircle2,
+} from "lucide-react";
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function IconList({ items }: { items: React.ReactNode[] }) {
+  return (
+    <ul className="not-prose grid gap-3 my-5 list-none p-0">
+      {items.map((text, i) => (
+        <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+          <CheckCircle2 className="w-[18px] h-[18px] text-[#1a7a4c] shrink-0 mt-0.5" strokeWidth={2} />
+          <span className="text-sm text-[#374151] leading-relaxed">{text}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }) {
+  return (
+    <ol className="not-prose relative my-6 list-none p-0 space-y-5 ml-1">
+      {items.map((item, i) => (
+        <li key={i} className="flex gap-4">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a1628] text-[#c9a84c] font-display font-bold text-sm shrink-0">
+            {i + 1}
+          </span>
+          <div className="pt-0.5">
+            <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
+            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Performance Bond Batam – Jaminan Pelaksanaan Proyek Konstruksi",
@@ -72,7 +126,7 @@ export default function PerformanceBondPage() {
       </p>
 
       {/* ── H2: Definisi ── */}
-      <h2>Apa Itu Performance Bond (Jaminan Pelaksanaan)?</h2>
+      <SectionHeading icon={ShieldCheck}>Apa Itu Performance Bond (Jaminan Pelaksanaan)?</SectionHeading>
       <p>
         Performance bond adalah jenis <Link href="/asuransi-surety-bond">surety bond</Link> yang
         memberikan jaminan kepada pemilik proyek (<em>obligee</em>) bahwa kontraktor (
@@ -95,34 +149,22 @@ export default function PerformanceBondPage() {
       </p>
 
       {/* ── H2: Siapa yang Membutuhkan ── */}
-      <h2>Siapa yang Wajib Menyerahkan Performance Bond di Batam?</h2>
+      <SectionHeading icon={Users}>Siapa yang Wajib Menyerahkan Performance Bond di Batam?</SectionHeading>
       <p>
         Performance bond umumnya dipersyaratkan kepada:
       </p>
-      <ul>
-        <li>
-          <strong>Kontraktor konstruksi</strong> yang mengerjakan proyek gedung, fasilitas
-          industri, atau infrastruktur di Batam
-        </li>
-        <li>
-          <strong>Kontraktor EPC</strong> (Engineering, Procurement & Construction) untuk
-          proyek pabrik, kilang, atau instalasi besar di kawasan industri
-        </li>
-        <li>
-          <strong>Supplier pengadaan</strong> yang memasok barang atau peralatan dengan nilai
-          kontrak signifikan kepada BUMN atau pemerintah
-        </li>
-        <li>
-          <strong>Kontraktor IT dan jasa</strong> dalam proyek jangka panjang dengan milestone
-          penyelesaian yang terukur
-        </li>
-        <li>
-          <strong>Subkontraktor</strong> dalam kontrak back-to-back dengan kontraktor utama
-        </li>
-      </ul>
+      <IconList
+        items={[
+          <><strong>Kontraktor konstruksi</strong> yang mengerjakan proyek gedung, fasilitas industri, atau infrastruktur di Batam</>,
+          <><strong>Kontraktor EPC</strong> (Engineering, Procurement &amp; Construction) untuk proyek pabrik, kilang, atau instalasi besar di kawasan industri</>,
+          <><strong>Supplier pengadaan</strong> yang memasok barang atau peralatan dengan nilai kontrak signifikan kepada BUMN atau pemerintah</>,
+          <><strong>Kontraktor IT dan jasa</strong> dalam proyek jangka panjang dengan milestone penyelesaian yang terukur</>,
+          <><strong>Subkontraktor</strong> dalam kontrak back-to-back dengan kontraktor utama</>,
+        ]}
+      />
 
       {/* ── H2: Nilai Performance Bond ── */}
-      <h2>Berapa Nilai Performance Bond?</h2>
+      <SectionHeading icon={Wallet}>Berapa Nilai Performance Bond?</SectionHeading>
       <p>
         Berdasarkan Perpres 16/2018 dan ketentuan pengadaan yang berlaku, nilai performance bond
         umumnya ditetapkan sebesar <strong>5% dari nilai kontrak</strong>. Namun untuk proyek
@@ -135,7 +177,7 @@ export default function PerformanceBondPage() {
       </p>
 
       {/* ── H2: Masa Berlaku ── */}
-      <h2>Masa Berlaku Performance Bond</h2>
+      <SectionHeading icon={CalendarClock}>Masa Berlaku Performance Bond</SectionHeading>
       <p>
         Performance bond berlaku sejak tanggal penandatanganan kontrak hingga selesainya seluruh
         pekerjaan dan dilakukannya serah terima proyek (BAST). Masa berlaku biasanya
@@ -144,7 +186,7 @@ export default function PerformanceBondPage() {
       </p>
 
       {/* ── H2: Dokumen ── */}
-      <h2>Dokumen yang Dibutuhkan untuk Pengajuan Performance Bond</h2>
+      <SectionHeading icon={ClipboardList}>Dokumen yang Dibutuhkan untuk Pengajuan Performance Bond</SectionHeading>
       <ul>
         <li>Akta pendirian dan seluruh perubahan perusahaan</li>
         <li>NIB (Nomor Induk Berusaha) dan SIUJK (untuk kontraktor konstruksi)</li>
@@ -163,51 +205,36 @@ export default function PerformanceBondPage() {
       </ul>
 
       {/* ── H2: Perbedaan dengan Bid Bond ── */}
-      <h2>Perbedaan Performance Bond dan Bid Bond</h2>
+      <SectionHeading icon={Scale}>Perbedaan Performance Bond dan Bid Bond</SectionHeading>
       <p>
         Meskipun keduanya termasuk dalam kelompok{" "}
         <Link href="/asuransi-surety-bond">surety bond</Link>, performance bond dan bid bond
         memiliki perbedaan mendasar:
       </p>
-      <ul>
-        <li>
-          <strong>Bid bond</strong> diterbitkan sebelum tender dimulai dan berakhir saat kontrak
-          ditandatangani. Tujuannya memastikan pemenang tender tidak mengundurkan diri.
-        </li>
-        <li>
-          <strong>Performance bond</strong> diterbitkan setelah kontrak ditandatangani dan
-          berlaku selama masa pelaksanaan proyek. Tujuannya memastikan proyek selesai sesuai
-          kontrak.
-        </li>
-        <li>
-          Nilai performance bond umumnya lebih besar dari bid bond karena mencerminkan nilai
-          kontrak yang lebih tinggi.
-        </li>
-      </ul>
+      <IconList
+        items={[
+          <><strong>Bid bond</strong> diterbitkan sebelum tender dimulai dan berakhir saat kontrak ditandatangani. Tujuannya memastikan pemenang tender tidak mengundurkan diri.</>,
+          <><strong>Performance bond</strong> diterbitkan setelah kontrak ditandatangani dan berlaku selama masa pelaksanaan proyek. Tujuannya memastikan proyek selesai sesuai kontrak.</>,
+          <>Nilai performance bond umumnya lebih besar dari bid bond karena mencerminkan nilai kontrak yang lebih tinggi.</>,
+        ]}
+      />
 
       {/* ── H2: Klaim ── */}
-      <h2>Bagaimana Proses Klaim Performance Bond?</h2>
+      <SectionHeading icon={Gavel}>Bagaimana Proses Klaim Performance Bond?</SectionHeading>
       <p>
         Pemilik proyek dapat mengajukan klaim performance bond apabila kontraktor terbukti
         wanprestasi. Proses klaim umumnya melibatkan:
       </p>
-      <ol>
-        <li>
-          <strong>Notifikasi tertulis</strong> dari obligee kepada penanggung (perusahaan
-          asuransi) dan principal (kontraktor) mengenai pelanggaran kontrak
-        </li>
-        <li>
-          <strong>Investigasi</strong> oleh penanggung untuk memverifikasi keabsahan klaim dan
-          besaran kerugian
-        </li>
-        <li>
-          <strong>Penyelesaian:</strong> penanggung dapat membayar ganti rugi tunai, atau
-          membantu menyelesaikan proyek melalui kontraktor pengganti
-        </li>
-      </ol>
+      <Steps
+        items={[
+          { title: "Notifikasi tertulis", desc: "Dari obligee kepada penanggung (perusahaan asuransi) dan principal (kontraktor) mengenai pelanggaran kontrak." },
+          { title: "Investigasi", desc: "Penanggung memverifikasi keabsahan klaim dan besaran kerugian." },
+          { title: "Penyelesaian", desc: "Penanggung dapat membayar ganti rugi tunai, atau membantu menyelesaikan proyek melalui kontraktor pengganti." },
+        ]}
+      />
 
       {/* ── H2: Internal Links ── */}
-      <h2>Jenis Surety Bond Lain dalam Siklus Proyek Anda</h2>
+      <SectionHeading icon={Network}>Jenis Surety Bond Lain dalam Siklus Proyek Anda</SectionHeading>
       <ul>
         <li>
           <Link href="/asuransi-surety-bond/bid-bond">
@@ -232,17 +259,24 @@ export default function PerformanceBondPage() {
       </ul>
 
       {/* ── CTA ── */}
-      <h2>Butuh Performance Bond di Batam? Konsultasi Gratis</h2>
-      <p>
-        Jangan tunda penyerahan performance bond dan berisiko kehilangan kontrak. Hubungi Rio
-        sekarang untuk mendapatkan penawaran premi dan proses penerbitan dalam 1–3 hari kerja.
-        Kami melayani kontraktor, perusahaan EPC, dan supplier di seluruh wilayah Batam dan
-        Kepulauan Riau.
-      </p>
-      <p>
-        <strong>WhatsApp:</strong> 0813-7333-6728 |{" "}
-        <strong>Layanan:</strong> Senin–Sabtu, 08.00–17.00 WIB
-      </p>
+      <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-lg text-[#c9a84c] mb-2">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
+            <MessageCircleMore className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Butuh Performance Bond di Batam? Konsultasi Gratis
+        </h3>
+        <p className="text-white/70 text-sm mb-4 leading-relaxed">
+          Jangan tunda penyerahan performance bond dan berisiko kehilangan kontrak. Hubungi Rio
+          sekarang untuk mendapatkan penawaran premi dan proses penerbitan dalam 1–3 hari kerja.
+          Kami melayani kontraktor, perusahaan EPC, dan supplier di seluruh wilayah Batam dan
+          Kepulauan Riau.
+        </p>
+        <p className="text-sm text-white/80">
+          <strong className="text-[#c9a84c]">WhatsApp:</strong> 0813-7333-6728 &nbsp;|&nbsp;
+          <strong className="text-[#c9a84c]">Layanan:</strong> Senin–Sabtu, 08.00–17.00 WIB
+        </p>
+      </div>
     </ArticleLayout>
   );
 }
