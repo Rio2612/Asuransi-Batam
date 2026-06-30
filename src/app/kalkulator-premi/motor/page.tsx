@@ -3,10 +3,10 @@ import { generateSEO, schemaBreadcrumb } from "@/lib/seo";
 import KalkulatorMotorClient from "./KalkulatorMotorClient";
 
 export const metadata: Metadata = generateSEO({
-  title: "Kalkulator Premi Asuransi Motor 2025 – Estimasi All Risk & TLO",
+  title: "Kalkulator Premi Asuransi Motor Batam – Cek Tarif OJK Sekarang, Gratis",
   description:
     "Hitung estimasi premi asuransi motor secara online gratis. Berdasarkan tarif OJK. All Risk dan TLO tersedia. Batam & seluruh Indonesia.",
-  canonical: "/kalkulator-premi/motor",
+  canonical: "https://asuransibatam.com/kalkulator-premi-motor",
 });
 
 export default function KalkulatorPremiMotorPage() {

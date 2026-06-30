@@ -4,16 +4,16 @@ import { Shield, Clock, CheckCircle, ArrowRight, AlertCircle } from "lucide-reac
 import CTASection from "@/components/CTASection";
 
  export const metadata: Metadata = {
-  title: "Asuransi Erection All Risk (EAR) Batam: Panduan untuk Instalasi Mesin & Proyek Energi",
+  title: "Panduan Memilih Asuransi EAR untuk Proyek Energi & Instalasi Mesin di Batam",
   description:
-    "Panduan lengkap asuransi Erection All Risk (EAR) di Batam untuk instalasi mesin pabrik, proyek energi, dan pemasangan equipment industri. Perbedaan EAR vs CAR, cakupan, premi, dan proses klaim.",
+    "Bagaimana cara memilih asuransi Erection All Risk yang tepat untuk instalasi mesin pabrik dan proyek energi di Batam? Bandingkan EAR vs CAR, pahami cakupan testing & commissioning, dan tips menekan premi.",
   keywords: [
-    "erection all risk Batam",
-    "asuransi EAR Batam",
-    "asuransi erection all risk batam",
+    "panduan memilih asuransi EAR Batam",
+    "cara memilih erection all risk",
+    "EAR vs CAR proyek energi",
     "asuransi pemasangan mesin Batam",
     "asuransi proyek energi Batam",
-    "asuransi engineering Batam",
+    "tips premi EAR Batam",
   ],
   alternates: {
     // Canonical menunjuk ke URL halaman ini sendiri

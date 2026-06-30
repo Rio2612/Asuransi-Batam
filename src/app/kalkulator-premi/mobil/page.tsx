@@ -7,10 +7,10 @@ import KalkulatorMobilForm from "./KalkulatorMobilForm";
 import { Calculator, Shield, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = generateSEO({
-  title: "Kalkulator Premi Asuransi Mobil 2025 – Estimasi Premi All Risk & TLO",
+  title: "Kalkulator Premi Asuransi Mobil Batam – Cek Tarif OJK Sekarang, Gratis",
   description:
     "Hitung estimasi premi asuransi mobil secara online. Berdasarkan tarif resmi OJK. All Risk dan TLO tersedia. Gratis, cepat, akurat. Batam & seluruh Indonesia.",
-  canonical: "/kalkulator-premi/mobil",
+  canonical: "https://asuransibatam.com/kalkulator-premi-mobil",
 });
 
 const FAQS_KALKULATOR = [

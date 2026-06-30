@@ -4,9 +4,9 @@ import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Builders Risk untuk Galangan Kapal – Asuransi Pembangunan Kapal di Batam",
+  title: "Apa itu Builders Risk? Panduan Dasar untuk Galangan Kapal di Batam",
   description:
-    "Panduan lengkap asuransi builders risk untuk galangan kapal di Batam: apa yang dilindungi, periode coverage, dan mengapa berbeda dari marine hull biasa. Konsultasi Rio 0813-7333-6728.",
+    "Apa itu asuransi builders risk dan kenapa berbeda dari marine hull biasa? Panduan dasar untuk pemilik galangan kapal di Batam: apa yang dilindungi dan periode coverage. Konsultasi Rio 0813-7333-6728.",
   alternates: {
     canonical: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
     languages: {
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Builders Risk untuk Galangan Kapal – Asuransi Pembangunan Kapal di Batam",
-    description: "Asuransi builders risk melindungi kapal yang sedang dibangun, dimodifikasi, atau direparasi besar. Panduan untuk galangan kapal di Batam.",
+    title: "Apa itu Builders Risk? Panduan Dasar untuk Galangan Kapal di Batam",
+    description: "Asuransi builders risk melindungi kapal yang sedang dibangun, dimodifikasi, atau direparasi besar. Panduan dasar untuk galangan kapal di Batam.",
     url: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
     type: "article",
   },
