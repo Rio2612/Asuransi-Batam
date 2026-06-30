@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import { AlertTriangle, FileSearch, ShieldCheck, ListChecks, HelpCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Cara Mendapatkan Asuransi Builders Risk yang Tepat di Batam",
@@ -132,7 +133,12 @@ export default function CaraMendapatkanBuildersRiskPage() {
       <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
         Mengenal Risiko Proyek
       </p>
-      <h2>Mengapa Builders Risk Sering Diabaikan, Padahal Risikonya Besar</h2>
+      <h2 className="flex items-center gap-3">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <AlertTriangle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Mengapa Builders Risk Sering Diabaikan, Padahal Risikonya Besar
+      </h2>
       <p>
         Saat sebuah proyek konstruksi atau pekerjaan reparasi kapal dimulai, perhatian biasanya tersedot habis ke jadwal, anggaran, dan teknis pengerjaan. Asuransi sering dianggap urusan administratif yang bisa diurus &quot;belakangan&quot; — sampai sebuah insiden terjadi di tengah proyek dan baru disadari bahwa aset senilai miliaran rupiah belum punya perlindungan yang memadai.
       </p>
@@ -147,7 +153,12 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Studi Kasus: Klaim Builders Risk di Galangan Kapal Batam</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <FileSearch className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Studi Kasus: Klaim Builders Risk di Galangan Kapal Batam
+      </h2>
       <p>
         Salah satu kasus yang pernah saya tangani langsung melibatkan sebuah galangan kapal di Batam yang sedang mengerjakan proyek reparasi dan modifikasi struktur kapal niaga. Pekerjaan melibatkan proses pengelasan, penggantian pelat lambung, serta instalasi ulang sebagian sistem mekanikal di area dok.
       </p>
@@ -241,7 +252,12 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Apa yang Dijamin dan Tidak Dijamin dalam Polis Builders Risk</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <ShieldCheck className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Apa yang Dijamin dan Tidak Dijamin dalam Polis Builders Risk
+      </h2>
       <p>
         Builders Risk merupakan salah satu produk dalam lini <Link href="/asuransi-marine" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">asuransi marine</Link> yang kami tangani di Batam, dengan karakteristik cakupan yang spesifik untuk periode konstruksi. Secara umum, berikut pembagian antara risiko yang dijamin dan yang dikecualikan:
       </p>
@@ -286,7 +302,12 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Langkah Memilih Asuransi Builders Risk yang Tepat</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <ListChecks className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Langkah Memilih Asuransi Builders Risk yang Tepat
+      </h2>
 
       <div className="not-prose mt-10 mb-12">
         {[
@@ -348,7 +369,12 @@ export default function CaraMendapatkanBuildersRiskPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">FAQ Seputar Asuransi Builders Risk</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <HelpCircle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        FAQ Seputar Asuransi Builders Risk
+      </h2>
 
       <div className="not-prose mt-8 mb-10 space-y-3">
         {[
