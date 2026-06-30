@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import { Search, ListChecks, AlertTriangle, MessageCircleMore } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Cara Klaim Asuransi Marine Cargo yang Benar – Panduan Lengkap",
@@ -48,7 +49,12 @@ export default function CaraKlaimMarineCargoPage() {
       <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
         Memahami Akar Masalah
       </p>
-      <h2>Mengapa Proses Klaim Marine Cargo Sering Gagal?</h2>
+      <h2 className="flex items-center gap-3">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <Search className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Mengapa Proses Klaim Marine Cargo Sering Gagal?
+      </h2>
       <p>
         Banyak importir dan eksportir di Batam baru menyadari celah polis mereka justru saat kargo tiba dalam kondisi rusak atau hilang. Bukan karena perusahaan asuransi tidak mau membayar — melainkan karena langkah pertama setelah insiden sering dilakukan keliru.
       </p>
@@ -63,7 +69,12 @@ export default function CaraKlaimMarineCargoPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">5 Langkah Mengajukan Klaim Marine Cargo</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <ListChecks className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        5 Langkah Mengajukan Klaim Marine Cargo
+      </h2>
 
       <div className="not-prose mt-10 mb-4">
         {/* Langkah 1 */}
@@ -187,7 +198,12 @@ export default function CaraKlaimMarineCargoPage() {
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
       </div>
-      <h2 className="text-center">Kesalahan Umum vs Tips Sebelum Kargo Dikirim</h2>
+      <h2 className="flex items-center justify-center gap-3 text-center">
+        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+          <AlertTriangle className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        Kesalahan Umum vs Tips Sebelum Kargo Dikirim
+      </h2>
 
       <div className="not-prose mt-8 mb-10 grid gap-5 sm:grid-cols-2">
         <div className="rounded-2xl border border-[#e2e8f0] bg-[#faf8f3] p-6">
@@ -229,7 +245,12 @@ export default function CaraKlaimMarineCargoPage() {
         <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
           Konsultasi Gratis
         </p>
-        <h3 className="font-display font-bold text-xl text-white mb-3">Butuh Bantuan Klaim atau Konsultasi Polis Marine?</h3>
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-xl text-white mb-3">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
+            <MessageCircleMore className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Butuh Bantuan Klaim atau Konsultasi Polis Marine?
+        </h3>
         <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-2xl">
           Proses klaim marine cargo bisa rumit, terutama jika melibatkan beberapa moda transportasi atau transit di beberapa pelabuhan. Sebagai konsultan berbasis di Batam dengan pengalaman di jalur Batam–Singapura–Jakarta, saya siap membantu dari awal hingga klaim cair.
         </p>
