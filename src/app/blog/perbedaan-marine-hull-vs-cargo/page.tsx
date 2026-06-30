@@ -2,6 +2,27 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  Lightbulb,
+  Ship,
+  Package,
+  Scale,
+  Users,
+  Wallet,
+  MessageCircleMore,
+  Gavel,
+} from "lucide-react";
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
@@ -45,7 +66,7 @@ export default function PerbedaanMarineHullVsCargoPage() {
       breadcrumbs={[{ label: "Perbedaan Marine Hull vs Cargo", href: "/blog/perbedaan-marine-hull-vs-cargo" }]}
       schema={schema}
     >
-      <h2>Salah Kaprah yang Mahal: &quot;Kapal Sudah Diasuransikan, Muatan Pasti Aman&quot;</h2>
+      <SectionHeading icon={Lightbulb}>Salah Kaprah yang Mahal: &quot;Kapal Sudah Diasuransikan, Muatan Pasti Aman&quot;</SectionHeading>
       <p>
         Ini salah satu kesalahpahaman paling umum yang saya temui saat konsultasi dengan pengusaha di Batam. Pemilik kargo sering berasumsi bahwa karena kapal yang mengangkut barang mereka punya asuransi, otomatis muatan mereka terlindungi juga.
       </p>
@@ -53,7 +74,7 @@ export default function PerbedaanMarineHullVsCargoPage() {
         Kenyataannya: <strong>asuransi kapal (marine hull) dan asuransi muatan (marine cargo) adalah dua produk yang sepenuhnya terpisah</strong> — melindungi objek berbeda, untuk pihak yang berbeda, dengan mekanisme klaim yang berbeda pula.
       </p>
 
-      <h2>Apa Itu Marine Hull Insurance?</h2>
+      <SectionHeading icon={Ship}>Apa Itu Marine Hull Insurance?</SectionHeading>
       <p>
         Marine hull insurance adalah asuransi yang melindungi <strong>fisik kapal beserta perlengkapannya</strong> — lambung, mesin, peralatan navigasi, dan segala yang menjadi bagian permanen dari kapal.
       </p>
@@ -61,7 +82,7 @@ export default function PerbedaanMarineHullVsCargoPage() {
       <p><strong>Yang dilindungi:</strong> kerusakan lambung akibat tabrakan, kandas, atau cuaca ekstrem; kerusakan mesin tak terduga (opsional); tanggung jawab kepada kapal lain dalam insiden tabrakan; dan kerugian total kapal.</p>
       <p><strong>Yang tidak dilindungi:</strong> isi muatan atau kargo di atas kapal.</p>
 
-      <h2>Apa Itu Marine Cargo Insurance?</h2>
+      <SectionHeading icon={Package}>Apa Itu Marine Cargo Insurance?</SectionHeading>
       <p>
         Marine cargo insurance melindungi <strong>barang atau muatan</strong> yang diangkut, bukan kendaraan pengangkutnya. Polis ini mengikuti barang dari gudang pengirim hingga gudang penerima — termasuk saat di dermaga, dalam kontainer, atau berpindah moda transportasi.
       </p>
@@ -93,7 +114,7 @@ export default function PerbedaanMarineHullVsCargoPage() {
         </table>
       </div>
 
-      <h2>Perbandingan Langsung: Hull vs Cargo</h2>
+      <SectionHeading icon={Scale}>Perbandingan Langsung: Hull vs Cargo</SectionHeading>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -122,30 +143,35 @@ export default function PerbedaanMarineHullVsCargoPage() {
         </table>
       </div>
 
-      <h2>Bagaimana Keduanya Bekerja Bersama dalam Satu Insiden?</h2>
+      <SectionHeading icon={Ship}>Bagaimana Keduanya Bekerja Bersama dalam Satu Insiden?</SectionHeading>
       <p>
         Bayangkan kapal kargo kecil rute Batam–Jakarta mengalami kebakaran di dek dan sebagian muatan hangus. Pemilik kapal mengklaim kerusakan dek ke asuransi hull-nya. Pemilik muatan masing-masing mengklaim kerusakan barang mereka ke asuransi cargo masing-masing. Kedua klaim berjalan <strong>paralel dan independen</strong> — satu tidak mempengaruhi yang lain.
       </p>
       <p>Inilah mengapa dalam satu insiden yang sama, bisa ada puluhan klaim cargo terpisah dari berbagai pemilik barang, sementara hanya ada satu klaim hull dari pemilik kapal.</p>
 
-      <h2>Apakah Carrier Bertanggung Jawab atas Kerusakan Muatan?</h2>
+      <SectionHeading icon={Gavel}>Apakah Carrier Bertanggung Jawab atas Kerusakan Muatan?</SectionHeading>
       <p>
         Secara hukum, carrier memang punya tanggung jawab terbatas berdasarkan Konvensi Hague-Visby. Namun ada tiga masalah praktis: liability carrier sangat terbatas (dihitung per package atau per kilogram), proses tuntutan ke carrier panjang dan tidak pasti, serta carrier punya banyak pengecualian seperti <em>act of God</em> dan force majeure.
       </p>
       <p>Itulah mengapa pemilik barang dianjurkan memiliki asuransi cargo sendiri daripada hanya mengandalkan tanggung jawab carrier.</p>
 
-      <h2>Siapa yang Perlu Beli Apa?</h2>
+      <SectionHeading icon={Users}>Siapa yang Perlu Beli Apa?</SectionHeading>
       <p><strong>Beli Marine Hull jika Anda</strong> memiliki atau mengoperasikan kapal komersial, armada tug boat, feri, atau kapal patroli di perairan Batam.</p>
       <p><strong>Beli Marine Cargo jika Anda</strong> adalah importir atau eksportir yang rutin mengirim barang lewat laut atau udara, trading company, atau distributor yang menerima pengiriman dalam jumlah besar.</p>
       <p><strong>Beli keduanya</strong> jika Anda pemilik kapal sekaligus mengangkut muatan milik sendiri.</p>
 
-      <h2>Berapa Premi yang Wajar?</h2>
+      <SectionHeading icon={Wallet}>Berapa Premi yang Wajar?</SectionHeading>
       <p>
         Premi marine cargo umumnya berkisar antara <strong>0,1% hingga 0,5% dari nilai kargo</strong> tergantung jenis barang, rute, dan klausa yang dipilih. Untuk rute pendek seperti Batam–Singapura atau Batam–Jakarta, tarif cenderung lebih rendah dibanding rute internasional jarak jauh.
       </p>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
-        <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Konsultasi Gratis – Pilih Polis yang Tepat</h3>
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-lg text-[#c9a84c] mb-2">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
+            <MessageCircleMore className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Konsultasi Gratis – Pilih Polis yang Tepat
+        </h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
           Tidak yakin harus membeli hull, cargo, atau keduanya? Tergantung model bisnis dan posisi Anda dalam rantai pengiriman. Saya bantu analisis dari awal.
         </p>
