@@ -1,6 +1,67 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  ShieldCheck,
+  ShieldAlert,
+  Scale,
+  Car,
+  Wallet,
+  Sparkles,
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+} from "lucide-react";
+
+// --- Helper presentational components (lokal, tanpa dependensi baru) ---
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function CheckList({ items, variant = "check" }: { items: React.ReactNode[]; variant?: "check" | "cross" }) {
+  const Icon = variant === "check" ? CheckCircle2 : XCircle;
+  const color = variant === "check" ? "text-[#1a7a4c]" : "text-[#b3261e]";
+  return (
+    <ul className="not-prose grid sm:grid-cols-2 gap-3 my-5 list-none p-0">
+      {items.map((text, i) => (
+        <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+          <Icon className={`w-[18px] h-[18px] shrink-0 mt-0.5 ${color}`} strokeWidth={2} />
+          <span className="text-sm text-[#374151] leading-relaxed">{text}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ProfileCard({ icon: Icon, title, items }: { icon: React.ElementType; title: string; items: React.ReactNode[] }) {
+  return (
+    <div className="not-prose p-5 rounded-2xl border border-[#e2e8f0] bg-white">
+      <div className="flex items-center gap-3 mb-3">
+        <span className="flex items-center justify-center w-9 h-9 rounded-full bg-[#0a1628]">
+          <Icon className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+        </span>
+        <h3 className="font-display font-bold text-[#0a1628] text-base m-0">{title}</h3>
+      </div>
+      <ul className="space-y-2 list-none p-0 m-0">
+        {items.map((text, i) => (
+          <li key={i} className="flex items-start gap-2.5 text-sm text-[#374151]">
+            <ArrowRight className="w-[14px] h-[14px] text-[#c9a84c] shrink-0 mt-1" strokeWidth={2.5} />
+            <span>{text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export const metadata: Metadata = {
   title: "Perbedaan Asuransi All Risk dan TLO – Mana yang Lebih Baik?",
   description: "Penjelasan lengkap perbedaan All Risk dan TLO, kelebihan kekurangan masing-masing, dan panduan memilih yang sesuai untuk kendaraan Anda di Batam.",
@@ -24,32 +85,41 @@ export default function ArticleAllRiskTLOPage() {
     >
       <p>Saat membeli asuransi kendaraan, pertanyaan yang paling sering ditanyakan adalah: <em>"Pilih All Risk atau TLO?"</em> Keduanya punya kelebihan dan kekurangan masing-masing. Artikel ini akan membantu Anda membuat keputusan yang tepat.</p>
 
-      <h2>Apa itu Asuransi All Risk (Comprehensive)?</h2>
+      <SectionHeading icon={ShieldCheck}>Apa itu Asuransi All Risk (Comprehensive)?</SectionHeading>
       <p>All Risk atau Comprehensive adalah jenis asuransi kendaraan yang menanggung <strong>semua kerusakan fisik</strong>, baik ringan, sedang, maupun berat. Sesuai namanya, hampir semua risiko ditanggung, kecuali yang secara eksplisit dikecualikan dalam polis.</p>
       <p><strong>Yang ditanggung All Risk:</strong></p>
-      <ul>
-        <li>Kerusakan ringan (lecet, penyok, kaca retak)</li>
-        <li>Kerusakan sedang akibat tabrakan</li>
-        <li>Kerusakan total akibat kecelakaan berat</li>
-        <li>Kehilangan kendaraan (pencurian)</li>
-        <li>Kebakaran kendaraan</li>
-      </ul>
+      <CheckList
+        variant="check"
+        items={[
+          "Kerusakan ringan (lecet, penyok, kaca retak)",
+          "Kerusakan sedang akibat tabrakan",
+          "Kerusakan total akibat kecelakaan berat",
+          "Kehilangan kendaraan (pencurian)",
+          "Kebakaran kendaraan",
+        ]}
+      />
 
-      <h2>Apa itu Asuransi TLO (Total Loss Only)?</h2>
+      <SectionHeading icon={ShieldAlert}>Apa itu Asuransi TLO (Total Loss Only)?</SectionHeading>
       <p>TLO atau Total Loss Only hanya menanggung kerugian jika kendaraan <strong>rusak total (lebih dari 75% nilai kendaraan) atau hilang dicuri</strong>. Kerusakan ringan dan sedang tidak ditanggung.</p>
       <p><strong>Yang ditanggung TLO:</strong></p>
-      <ul>
-        <li>Kehilangan kendaraan karena pencurian</li>
-        <li>Kerusakan yang nilainya melebihi 75% harga kendaraan</li>
-      </ul>
+      <CheckList
+        variant="check"
+        items={[
+          "Kehilangan kendaraan karena pencurian",
+          "Kerusakan yang nilainya melebihi 75% harga kendaraan",
+        ]}
+      />
       <p><strong>Yang TIDAK ditanggung TLO:</strong></p>
-      <ul>
-        <li>Lecet, penyok ringan</li>
-        <li>Kerusakan kaca</li>
-        <li>Kerusakan akibat kecelakaan yang nilai perbaikannya di bawah 75%</li>
-      </ul>
+      <CheckList
+        variant="cross"
+        items={[
+          "Lecet, penyok ringan",
+          "Kerusakan kaca",
+          "Kerusakan akibat kecelakaan yang nilai perbaikannya di bawah 75%",
+        ]}
+      />
 
-      <h2>Perbandingan Langsung: All Risk vs TLO</h2>
+      <SectionHeading icon={Scale}>Perbandingan Langsung: All Risk vs TLO</SectionHeading>
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
         <table className="w-full text-sm">
           <thead className="bg-[#0a1628] text-white">
@@ -77,23 +147,31 @@ export default function ArticleAllRiskTLOPage() {
         </table>
       </div>
 
-      <h2>Kapan Pilih All Risk?</h2>
-      <ul>
-        <li>Kendaraan baru atau harga di atas Rp 200 juta</li>
-        <li>Kendaraan masih dalam cicilan/KKB (biasanya bank mewajibkan All Risk)</li>
-        <li>Sering digunakan di kota besar dengan risiko kecelakaan ringan tinggi</li>
-        <li>Anda menginginkan ketenangan pikiran penuh</li>
-      </ul>
+      <SectionHeading icon={Car}>Kapan Pilih yang Tepat untuk Anda?</SectionHeading>
+      <div className="not-prose grid sm:grid-cols-2 gap-4 my-5">
+        <ProfileCard
+          icon={ShieldCheck}
+          title="Kapan Pilih All Risk?"
+          items={[
+            "Kendaraan baru atau harga di atas Rp 200 juta",
+            "Kendaraan masih dalam cicilan/KKB (biasanya bank mewajibkan All Risk)",
+            "Sering digunakan di kota besar dengan risiko kecelakaan ringan tinggi",
+            "Anda menginginkan ketenangan pikiran penuh",
+          ]}
+        />
+        <ProfileCard
+          icon={ShieldAlert}
+          title="Kapan Pilih TLO?"
+          items={[
+            "Kendaraan tua berusia di atas 7-10 tahun",
+            "Nilai kendaraan relatif rendah (di bawah Rp 150 juta)",
+            "Anggaran premi terbatas",
+            "Kendaraan hanya untuk keperluan tertentu atau jarang digunakan",
+          ]}
+        />
+      </div>
 
-      <h2>Kapan Pilih TLO?</h2>
-      <ul>
-        <li>Kendaraan tua berusia di atas 7-10 tahun</li>
-        <li>Nilai kendaraan relatif rendah (di bawah Rp 150 juta)</li>
-        <li>Anggaran premi terbatas</li>
-        <li>Kendaraan hanya untuk keperluan tertentu atau jarang digunakan</li>
-      </ul>
-
-      <h2>Rekomendasi Berdasarkan Harga Kendaraan</h2>
+      <SectionHeading icon={Wallet}>Rekomendasi Berdasarkan Harga Kendaraan</SectionHeading>
       <div className="p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] my-6">
         <ul className="space-y-3">
           <li className="flex items-start gap-3"><span className="text-[#c9a84c] font-bold mt-0.5">→</span><div><strong>Di atas Rp 300 juta:</strong> Sangat disarankan All Risk</div></li>
@@ -104,7 +182,12 @@ export default function ArticleAllRiskTLOPage() {
       </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">Hitung Premi Mobil Anda Sekarang</h3>
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-[#0a1628] mb-3">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[#0a1628] shrink-0">
+            <Sparkles className="w-[15px] h-[15px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Hitung Premi Mobil Anda Sekarang
+        </h3>
         <p className="text-[#64748b] mb-4">Gunakan kalkulator premi kami untuk estimasi biaya All Risk dan TLO berdasarkan tarif OJK terbaru.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/kalkulator-premi-mobil" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm hover:bg-[#132040] transition-colors">Kalkulator Premi Mobil</Link>
