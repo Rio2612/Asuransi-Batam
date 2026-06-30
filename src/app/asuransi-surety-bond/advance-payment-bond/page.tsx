@@ -2,6 +2,40 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  Banknote,
+  TrendingDown,
+  Wallet,
+  Users,
+  ClipboardList,
+  Network,
+  MessageCircleMore,
+  CheckCircle2,
+} from "lucide-react";
+
+function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; children: React.ReactNode }) {
+  return (
+    <h2 className="flex items-center gap-3 not-prose font-display font-bold text-[#0a1628] text-2xl md:text-[1.65rem] mt-12 mb-4">
+      <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-[#0a1628] shrink-0">
+        <Icon className="w-[18px] h-[18px] text-[#c9a84c]" strokeWidth={2} />
+      </span>
+      {children}
+    </h2>
+  );
+}
+
+function IconList({ items }: { items: React.ReactNode[] }) {
+  return (
+    <ul className="not-prose grid gap-3 my-5 list-none p-0">
+      {items.map((text, i) => (
+        <li key={i} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#eee3cc]">
+          <CheckCircle2 className="w-[18px] h-[18px] text-[#1a7a4c] shrink-0 mt-0.5" strokeWidth={2} />
+          <span className="text-sm text-[#374151] leading-relaxed">{text}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Advance Payment Bond Batam – Jaminan Uang Muka Proyek",
@@ -75,7 +109,7 @@ export default function AdvancePaymentBondPage() {
       </p>
 
       {/* ── H2: Definisi ── */}
-      <h2>Apa Itu Advance Payment Bond?</h2>
+      <SectionHeading icon={Banknote}>Apa Itu Advance Payment Bond?</SectionHeading>
       <p>
         Advance payment bond adalah jenis <Link href="/asuransi-surety-bond">surety bond</Link>{" "}
         yang memberikan jaminan kepada pemilik proyek (<em>obligee</em>) bahwa apabila kontraktor
@@ -90,29 +124,19 @@ export default function AdvancePaymentBondPage() {
       </p>
 
       {/* ── H2: Mekanisme Pengurangan ── */}
-      <h2>Bagaimana Mekanisme Pengurangan Nilai Advance Payment Bond?</h2>
+      <SectionHeading icon={TrendingDown}>Bagaimana Mekanisme Pengurangan Nilai Advance Payment Bond?</SectionHeading>
       <p>
         Salah satu keunikan advance payment bond dibanding jenis surety bond lainnya adalah
         nilai jaminannya berkurang secara proporsional. Berikut ilustrasinya:
       </p>
-      <ul>
-        <li>
-          Nilai kontrak: <strong>Rp 20 miliar</strong>, uang muka 20% ={" "}
-          <strong>Rp 4 miliar</strong>
-        </li>
-        <li>
-          Advance payment bond diterbitkan senilai <strong>Rp 4 miliar</strong> (setara uang
-          muka)
-        </li>
-        <li>
-          Setiap kali kontraktor mengajukan tagihan progress dan di dalamnya terdapat potongan
-          uang muka, nilai bond otomatis berkurang secara proporsional
-        </li>
-        <li>
-          Ketika uang muka telah dipotong penuh dari tagihan, advance payment bond dinyatakan
-          lunas dan tidak berlaku lagi
-        </li>
-      </ul>
+      <IconList
+        items={[
+          <>Nilai kontrak: <strong>Rp 20 miliar</strong>, uang muka 20% = <strong>Rp 4 miliar</strong></>,
+          <>Advance payment bond diterbitkan senilai <strong>Rp 4 miliar</strong> (setara uang muka)</>,
+          <>Setiap kali kontraktor mengajukan tagihan progress dan di dalamnya terdapat potongan uang muka, nilai bond otomatis berkurang secara proporsional</>,
+          <>Ketika uang muka telah dipotong penuh dari tagihan, advance payment bond dinyatakan lunas dan tidak berlaku lagi</>,
+        ]}
+      />
       <p>
         Mekanisme ini memastikan bahwa nilai jaminan selalu mencerminkan sisa uang muka yang
         belum diserap, sehingga pemilik proyek mendapatkan perlindungan yang akurat sepanjang
@@ -120,20 +144,17 @@ export default function AdvancePaymentBondPage() {
       </p>
 
       {/* ── H2: Besaran Nilai ── */}
-      <h2>Berapa Besaran Uang Muka dan Nilai Advance Payment Bond?</h2>
+      <SectionHeading icon={Wallet}>Berapa Besaran Uang Muka dan Nilai Advance Payment Bond?</SectionHeading>
       <p>
         Untuk pengadaan pemerintah, ketentuan uang muka diatur dalam peraturan pengadaan yang
         berlaku:
       </p>
-      <ul>
-        <li>
-          <strong>Usaha Kecil:</strong> uang muka maksimal 30% dari nilai kontrak
-        </li>
-        <li>
-          <strong>Usaha Non-Kecil / Badan Usaha:</strong> uang muka maksimal 20% dari nilai
-          kontrak
-        </li>
-      </ul>
+      <IconList
+        items={[
+          <><strong>Usaha Kecil:</strong> uang muka maksimal 30% dari nilai kontrak</>,
+          <><strong>Usaha Non-Kecil / Badan Usaha:</strong> uang muka maksimal 20% dari nilai kontrak</>,
+        ]}
+      />
       <p>
         Untuk kontrak swasta di Batam, besaran uang muka disepakati dalam kontrak — umumnya
         berkisar 10%–30% dari nilai kontrak. Advance payment bond harus senilai penuh dengan
@@ -141,32 +162,22 @@ export default function AdvancePaymentBondPage() {
       </p>
 
       {/* ── H2: Kapan APB Dibutuhkan ── */}
-      <h2>Kapan Advance Payment Bond Dibutuhkan?</h2>
+      <SectionHeading icon={Users}>Kapan Advance Payment Bond Dibutuhkan?</SectionHeading>
       <p>
         Advance payment bond diperlukan saat kontraktor menerima uang muka dari:
       </p>
-      <ul>
-        <li>
-          Proyek konstruksi pemerintah di Batam (wajib sesuai regulasi pengadaan)
-        </li>
-        <li>
-          Proyek BUMN dan badan usaha yang mempersyaratkan uang muka dalam kontrak
-        </li>
-        <li>
-          Proyek EPC di kawasan industri Batam (Batamindo, Kabil, Tanjung Uncang, dll.)
-        </li>
-        <li>
-          Kontrak pengadaan mesin, peralatan, atau material dengan pembayaran awal yang
-          signifikan
-        </li>
-        <li>
-          Proyek swasta yang melibatkan investor asing (<em>foreign direct investment</em>) di
-          Batam dengan persyaratan jaminan ketat
-        </li>
-      </ul>
+      <IconList
+        items={[
+          <>Proyek konstruksi pemerintah di Batam (wajib sesuai regulasi pengadaan)</>,
+          <>Proyek BUMN dan badan usaha yang mempersyaratkan uang muka dalam kontrak</>,
+          <>Proyek EPC di kawasan industri Batam (Batamindo, Kabil, Tanjung Uncang, dll.)</>,
+          <>Kontrak pengadaan mesin, peralatan, atau material dengan pembayaran awal yang signifikan</>,
+          <>Proyek swasta yang melibatkan investor asing (<em>foreign direct investment</em>) di Batam dengan persyaratan jaminan ketat</>,
+        ]}
+      />
 
       {/* ── H2: Dokumen ── */}
-      <h2>Dokumen yang Dibutuhkan untuk Advance Payment Bond</h2>
+      <SectionHeading icon={ClipboardList}>Dokumen yang Dibutuhkan untuk Advance Payment Bond</SectionHeading>
       <ul>
         <li>Salinan kontrak / SPK yang memuat klausul uang muka</li>
         <li>
@@ -181,7 +192,7 @@ export default function AdvancePaymentBondPage() {
       </ul>
 
       {/* ── H2: Internal Links ── */}
-      <h2>Surety Bond Lain yang Relevan untuk Proyek Anda</h2>
+      <SectionHeading icon={Network}>Surety Bond Lain yang Relevan untuk Proyek Anda</SectionHeading>
       <ul>
         <li>
           <Link href="/asuransi-surety-bond/bid-bond">
@@ -206,16 +217,23 @@ export default function AdvancePaymentBondPage() {
       </ul>
 
       {/* ── CTA ── */}
-      <h2>Ajukan Advance Payment Bond di Batam Sekarang</h2>
-      <p>
-        Jangan biarkan pencairan uang muka tertunda hanya karena penerbitan advance payment bond
-        yang lambat. Tim kami membantu proses dari dokumen hingga penerbitan dalam 1–3 hari
-        kerja. Hubungi Rio untuk konsultasi gratis.
-      </p>
-      <p>
-        <strong>WhatsApp:</strong> 0813-7333-6728 |{" "}
-        <strong>Layanan:</strong> Senin–Sabtu, 08.00–17.00 WIB
-      </p>
+      <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
+        <h3 className="flex items-center gap-2.5 font-display font-bold text-lg text-[#c9a84c] mb-2">
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-white/10 shrink-0">
+            <MessageCircleMore className="w-[16px] h-[16px] text-[#c9a84c]" strokeWidth={2} />
+          </span>
+          Ajukan Advance Payment Bond di Batam Sekarang
+        </h3>
+        <p className="text-white/70 text-sm mb-4 leading-relaxed">
+          Jangan biarkan pencairan uang muka tertunda hanya karena penerbitan advance payment bond
+          yang lambat. Tim kami membantu proses dari dokumen hingga penerbitan dalam 1–3 hari
+          kerja. Hubungi Rio untuk konsultasi gratis.
+        </p>
+        <p className="text-sm text-white/80">
+          <strong className="text-[#c9a84c]">WhatsApp:</strong> 0813-7333-6728 &nbsp;|&nbsp;
+          <strong className="text-[#c9a84c]">Layanan:</strong> Senin–Sabtu, 08.00–17.00 WIB
+        </p>
+      </div>
     </ArticleLayout>
   );
 }
