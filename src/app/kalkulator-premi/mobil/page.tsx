@@ -129,7 +129,7 @@ export default function KalkulatorPremiMobilPage() {
             <Link href="/blog/perbedaan-all-risk-dan-tlo" className="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-blue-300 hover:text-blue-700 transition-all">
               All Risk vs TLO →
             </Link>
-            <Link href="/blog/cara-klaim-asuransi-mobil" className="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-blue-300 hover:text-blue-700 transition-all">
+            <Link href="/blog/cara-klaim-asuransi-mobil-batam" className="px-4 py-2 rounded-full bg-white border border-gray-200 text-sm text-gray-700 hover:border-blue-300 hover:text-blue-700 transition-all">
               Cara Klaim Asuransi →
             </Link>
           </div>

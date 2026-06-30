@@ -23,9 +23,9 @@ const productLinksID2 = [
   { label: "Kalkulator Premi Motor", href: "/kalkulator-premi-motor" },
 ];
 const blogLinksID = [
-  { label: "Cara Klaim Asuransi Mobil",     href: "/blog/cara-klaim-asuransi-mobil" },
+  { label: "Cara Klaim Asuransi Mobil",     href: "/blog/cara-klaim-asuransi-mobil-batam" },
   { label: "Perbedaan All Risk dan TLO",    href: "/blog/perbedaan-all-risk-dan-tlo" },
-  { label: "Asuransi Mobil Batam",          href: "/blog/asuransi-mobil-batam" },
+  { label: "Asuransi Motor Batam",          href: "/blog/asuransi-motor-batam" },
   { label: "Pentingnya Asuransi Limbah B3", href: "/blog/pentingnya-asuransi-limbah-b3" },
 ];
 
@@ -47,10 +47,10 @@ const productLinksEN2 = [
   { label: "Car Premium Calculator",    href: "/en/car-premium-calculator" },
 ];
 const blogLinksEN = [
-  { label: "How to File a Car Insurance Claim",  href: "/en/blog/how-to-claim-car-insurance" },
-  { label: "All Risk vs TLO Insurance",          href: "/en/blog/all-risk-vs-tlo-insurance" },
-  { label: "Car Insurance in Batam 2025",        href: "/en/blog/car-insurance-batam" },
-  { label: "Importance of B3 Waste Insurance",  href: "/en/blog/b3-hazardous-waste-insurance-importance" },
+  { label: "How to File a Car Insurance Claim",  href: "/en/blog/how-to-claim-car-insurance-batam" },
+  { label: "All Risk vs TLO Insurance",          href: "/en/blog/all-risk-vs-tlo-car-insurance" },
+  { label: "Marine Hull vs Cargo Insurance",     href: "/en/blog/marine-hull-vs-cargo-insurance" },
+  { label: "Hazardous Waste (B3) Insurance",     href: "/en/hazardous-waste-insurance-batam" },
 ];
 
 export default function Footer() {
