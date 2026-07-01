@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Shield, Star, Clock, Users, ArrowRight, CheckCircle, Phone } from "lucide-react";
+import Image from "next/image";
+import { Shield, Star, Clock, Users, ArrowRight, CheckCircle, Phone, Camera, MapPin } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
@@ -72,6 +73,51 @@ const products = [
     desc: "Perlindungan kecelakaan diri untuk karyawan (Group PA) maupun individu & keluarga dengan premi terjangkau.",
     href: "/asuransi-personal-accident",
     tags: ["Group PA", "Individu", "Keluarga"],
+  },
+];
+
+const fieldProofs = [
+  {
+    src: "/images/potoartikel/surveicecr.webp",
+    alt: "Rio melakukan survei lapangan asuransi CECR pada proyek revetment di Batu Ampar, Batam",
+    caption: "Survei Lapangan CECR",
+    location: "Batu Ampar, Batam",
+    href: "/asuransi-engineering/cecr",
+  },
+  {
+    src: "/images/potoartikel/tongkangnongsa.webp",
+    alt: "Tongkang di perairan Nongsa, Batam yang dilindungi asuransi kapal dan armada",
+    caption: "Survei Armada Tongkang",
+    location: "Nongsa, Batam",
+    href: "/blog/jenis-jenis-asuransi-kapal-armada",
+  },
+  {
+    src: "/images/potoartikel/cek-mesin-kapal-batam.webp",
+    alt: "Rio Mardiansyah memeriksa mesin kapal saat proses klaim asuransi di Batam",
+    caption: "Cek Mesin Saat Klaim",
+    location: "Galangan Kapal, Batam",
+    href: "/blog/premi-asuransi-kapal-batam-2026",
+  },
+  {
+    src: "/images/potoartikel/klaimbuilderisk.webp",
+    alt: "Dokumentasi proses penanganan klaim asuransi Builders Risk di galangan kapal Batam",
+    caption: "Penanganan Klaim Builder's Risk",
+    location: "Tanjung Uncang, Batam",
+    href: "/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+  },
+  {
+    src: "/images/potoartikel/Potobersamabuilderisk.webp",
+    alt: "Rio bersama owner kapal dan pihak asuransi di depan kapal yang sedang dibangun di galangan Tanjung Uncang, Batam",
+    caption: "Bersama Owner Kapal",
+    location: "Tanjung Uncang, Batam",
+    href: "/blog/berapa-premi-asuransi-builders-risk-kapal-batam",
+  },
+  {
+    src: "/images/potoartikel/kapalsedangdibangun.webp",
+    alt: "Kapal dalam proses pembangunan di galangan kapal Batam yang dilindungi Builder's Risk Insurance",
+    caption: "Proyek Builder's Risk Berjalan",
+    location: "Galangan Kapal, Batam",
+    href: "/blog/berapa-premi-asuransi-builders-risk-kapal-batam",
   },
 ];
 
@@ -339,6 +385,59 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── BUKTI KERJA LAPANGAN ── */}
+      <section className="section-padding bg-[#0a1628] relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-[#c9a84c]/10 rounded-full blur-3xl" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-14">
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
+              Bukan Sekadar Polis di Atas Kertas
+            </p>
+            <h2 className="font-display font-bold text-4xl text-white mb-4">
+              Dokumentasi Survei & Klaim Langsung di Lapangan
+            </h2>
+            <p className="text-white/60 text-lg max-w-2xl mx-auto">
+              Rio turun langsung ke lokasi — dari galangan kapal hingga proyek konstruksi —
+              memastikan setiap risiko dinilai dan setiap klaim ditangani dengan benar.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-6">
+            {fieldProofs.map((p) => (
+              <Link
+                key={p.src}
+                href={p.href}
+                className="group relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10"
+              >
+                <Image
+                  src={p.src}
+                  alt={p.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex items-center gap-1.5 text-[#c9a84c] text-xs mb-1">
+                    <MapPin className="w-3 h-3" />
+                    {p.location}
+                  </div>
+                  <h3 className="font-display font-bold text-white text-sm leading-snug">
+                    {p.caption}
+                  </h3>
+                  <div className="flex items-center gap-1.5 text-white/0 group-hover:text-white/80 text-xs font-semibold mt-2 transition-colors">
+                    Baca Kisahnya
+                    <ArrowRight className="w-3 h-3" />
+                  </div>
+                </div>
+                <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center">
+                  <Camera className="w-4 h-4 text-white/90" />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
