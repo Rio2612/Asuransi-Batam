@@ -31,6 +31,45 @@ const schema = {
   },
 };
 
+const fieldPhotos = [
+  {
+    src: "/images/potoartikel/Potobersamabuilderisk.webp",
+    alt: "Rio bersama pemilik kapal saat survei builders risk di galangan Batam",
+    caption: "Diskusi langsung dengan pemilik kapal",
+    desc: "Setiap polis builders risk dimulai dari pemahaman kondisi proyek secara langsung — bukan hanya dari dokumen.",
+  },
+  {
+    src: "/images/potoartikel/cek-mesin-kapal-batam.webp",
+    alt: "Survei mesin kapal di galangan Batam sebelum penerbitan polis",
+    caption: "Survei mesin kapal di lapangan",
+    desc: "Pengecekan kondisi mesin kapal dilakukan sebelum polis diterbitkan, agar pertanggungan sesuai kondisi aktual.",
+  },
+  {
+    src: "/images/potoartikel/klaimbuilderisk.webp",
+    alt: "Proses klaim builders risk di galangan kapal Batam",
+    caption: "Pendampingan klaim builders risk",
+    desc: "Saat klaim terjadi, Rio hadir langsung di lokasi untuk memastikan proses berjalan lancar dan klien mendapat hak penuhnya.",
+  },
+  {
+    src: "/images/potoartikel/surveicecr.webp",
+    alt: "Survei asuransi infrastruktur CECR di Batam",
+    caption: "Survei infrastruktur — proyek CECR",
+    desc: "Survei lapangan untuk proyek infrastruktur besar seperti jembatan dan jalan adalah bagian rutin dari layanan kami.",
+  },
+  {
+    src: "/images/potoartikel/tongkangnongsa.webp",
+    alt: "Tongkang beroperasi di perairan Nongsa Batam",
+    caption: "Perairan Nongsa — area kerja sehari-hari",
+    desc: "Batam dan perairan sekitarnya adalah wilayah kerja utama kami — dari galangan Tanjung Uncang hingga dermaga Nongsa.",
+  },
+  {
+    src: "/images/potoartikel/kapalsedangdibangun.webp",
+    alt: "Kapal sedang dibangun di galangan kapal Batam",
+    caption: "Kapal dalam proses pembangunan",
+    desc: "Mendampingi klien galangan dari fase keel laying hingga sea trial — itulah yang dimaksud perlindungan menyeluruh.",
+  },
+];
+
 export default function TentangKamiPage() {
   return (
     <>
@@ -56,7 +95,7 @@ export default function TentangKamiPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-            {/* Foto */}
+            {/* Foto profil */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
@@ -67,9 +106,7 @@ export default function TentangKamiPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
-                {/* Gradient overlay bawah */}
                 <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#0a1628]/80 to-transparent" />
-                {/* Name badge */}
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3">
                     <p className="font-display font-bold text-white text-lg leading-tight">Rio</p>
@@ -112,6 +149,71 @@ export default function TentangKamiPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Galeri Kerja Lapangan */}
+      <section className="section-padding bg-[#faf8f3]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Kerja Lapangan</p>
+            <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
+              Langsung di Lokasi, Bukan Hanya di Balik Meja
+            </h2>
+            <p className="text-[#64748b] max-w-2xl mx-auto">
+              Sebagian besar pekerjaan kami terjadi di lapangan — di galangan, di geladak kapal,
+              di area konstruksi. Karena memahami risiko yang sebenarnya dimulai dari melihat langsung.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {fieldPhotos.map((photo) => (
+              <div
+                key={photo.src}
+                className="group bg-white rounded-2xl overflow-hidden border border-[#e2e8f0] hover:shadow-xl transition-all duration-300"
+              >
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="p-5">
+                  <p className="font-display font-bold text-[#0a1628] mb-1">{photo.caption}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{photo.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cara Kerja */}
+      <section className="section-padding bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Cara Kerja Kami</p>
+          <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Sederhana, Transparan, Tepat Sasaran</h2>
+          <p className="text-[#64748b] mb-12 max-w-xl mx-auto">
+            Tidak ada jargon berlebihan. Kami bantu Anda memahami apa yang benar-benar perlu dilindungi
+            dan berapa biaya yang wajar untuk itu.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { step: "01", title: "Konsultasi & Survei", desc: "Kami datang langsung ke lokasi aset Anda — kapal, alat berat, properti, atau proyek — untuk memahami risiko aktual." },
+              { step: "02", title: "Rekomendasi Polis", desc: "Kami carikan produk dari perusahaan asuransi yang sesuai kebutuhan dan anggaran, bukan yang paling mahal preminya." },
+              { step: "03", title: "Pendampingan Klaim", desc: "Jika terjadi klaim, kami hadir langsung. Tugas kami belum selesai sampai klaim klien diselesaikan dengan benar." },
+            ].map((w) => (
+              <div key={w.step} className="p-6 rounded-2xl border border-[#e2e8f0] text-left">
+                <p className="font-display font-bold text-4xl text-[#c9a84c]/40 mb-3">{w.step}</p>
+                <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{w.title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed">{w.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
