@@ -193,7 +193,7 @@ export default function ArticleAllRiskTLOENPage() {
         </p>
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/en/car-insurance-calculator"
+            href="/en/car-premium-calculator"
             className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm hover:bg-[#132040] transition-colors"
           >
             Car Insurance Calculator <ArrowRight size={16} />

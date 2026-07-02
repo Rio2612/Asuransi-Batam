@@ -62,7 +62,7 @@ export function CTASection({
           Konsultasi Gratis
         </a>
         <Link
-          href="/kalkulator-premi/mobil"
+          href="/kalkulator-premi-mobil"
           className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border-2 border-white/30 rounded-xl hover:border-yellow-400 hover:text-yellow-400 transition-all"
         >
           Hitung Premi
@@ -168,7 +168,7 @@ export function ProductPageHero({
             Konsultasi Sekarang
           </a>
           <Link
-            href="/kalkulator-premi/mobil"
+            href="/kalkulator-premi-mobil"
             className="inline-flex items-center justify-center gap-2 px-8 py-3.5 font-semibold text-white border border-white/30 rounded-xl hover:border-yellow-400 hover:text-yellow-400 transition-all"
           >
             Hitung Premi

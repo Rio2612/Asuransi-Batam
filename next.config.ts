@@ -24,12 +24,13 @@ const nextConfig: NextConfig = {
       { source: "/contact.html", destination: "/kontak",       permanent: true },
       { source: "/:path*.html",  destination: "/",             permanent: true },
       
-      // Alat Berat Fix
-      { source: "/asuransi-kendaraan/asuransi-dumptruck",     destination: "/asuransi-kendaraan/asuransi-dump-truck", permanent: true }, // Menggunakan 301 permanent redirect untuk SEO
-      
       // Solusi Kanibalisme Konten: Blog → Halaman Induk Layanan
       { source: "/blog/asuransi-mobil-batam", destination: "/asuransi-kendaraan/asuransi-mobil-batam", permanent: true },
       { source: "/blog/cara-klaim-asuransi-mobil", destination: "/blog/cara-klaim-asuransi-mobil-batam", permanent: true },
+
+      // Fix duplicate kalkulator premi (2 URL berbeda, title identik) → konsolidasi ke versi flat
+      { source: "/kalkulator-premi/mobil", destination: "/kalkulator-premi-mobil", permanent: true },
+      { source: "/kalkulator-premi/motor", destination: "/kalkulator-premi-motor", permanent: true },
     ];
   },
 };
