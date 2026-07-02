@@ -129,6 +129,15 @@ const articles: Article[] = [
   },
   // ── Liability ───────────────────────────────────────────────────────────────
   {
+    title: "Employers Liability & Product Liability di Batam",
+    slug: "employers-liability-product-liability-batam",
+    date: "2 Juli 2026",
+    category: "Liability",
+    excerpt:
+      "Dua jenis liability yang sering terlewat perusahaan di Batam: Employers Liability (tuntutan karyawan di luar BPJS TK) dan Product Liability (tuntutan atas produk yang diproduksi/didistribusikan).",
+    readTime: "10 menit",
+  },
+  {
     title: "Cara Klaim Asuransi Public Liability di Batam",
     slug: "cara-klaim-asuransi-public-liability-batam",
     date: "2 Juli 2026",
