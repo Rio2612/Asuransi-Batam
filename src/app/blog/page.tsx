@@ -285,6 +285,15 @@ const articles: Article[] = [
   },
   // ── Surety Bond ─────────────────────────────────────────────────────────────
   {
+    title: "Cara Mendapatkan Surety Bond untuk Tender Proyek di Batam",
+    slug: "cara-mendapatkan-surety-bond-tender-proyek-batam",
+    date: "2 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Panduan lengkap kontraktor di Batam untuk mendapatkan surety bond — bid bond, performance bond, advance payment bond, maintenance bond, dokumen yang dibutuhkan, dan tahapan prosesnya.",
+    readTime: "11 menit",
+  },
+  {
     title: "Perbedaan Bid Bond dan Performance Bond",
     slug: "perbedaan-bid-bond-performance-bond",
     date: "29 Mei 2026",
@@ -292,6 +301,16 @@ const articles: Article[] = [
     excerpt:
       "Apa perbedaan bid bond dan performance bond? Panduan lengkap untuk kontraktor di Batam — kapan masing-masing wajib dipakai, nilai jaminan, dan konsekuensi jika klaim terjadi.",
     readTime: "6 menit",
+  },
+  // ── Personal Accident ───────────────────────────────────────────────────────
+  {
+    title: "Asuransi Kecelakaan Diri (PA) untuk Pekerja Industri Batam",
+    slug: "asuransi-kecelakaan-diri-pekerja-industri-batam",
+    date: "2 Juli 2026",
+    category: "Personal Accident",
+    excerpt:
+      "Panduan lengkap Asuransi Kecelakaan Diri (PA) untuk pekerja galangan kapal dan manufaktur di Batam — celah BPJS Ketenagakerjaan, skema PA Individu vs Grup, dan cara klaim yang benar.",
+    readTime: "10 menit",
   },
 ];
 
@@ -303,9 +322,10 @@ const categoryColors: Record<string, string> = {
   Engineering: "bg-purple-100 text-purple-800",
   Marine: "bg-cyan-100 text-cyan-800",
   "Surety Bond": "bg-rose-100 text-rose-800",
+  "Personal Accident": "bg-indigo-100 text-indigo-800",
 };
 
-const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine", "Surety Bond"];
+const categories = ["Kendaraan", "Alat Berat", "Properti", "Liability", "Engineering", "Marine", "Surety Bond", "Personal Accident"];
 
 export default function BlogPage() {
   return (
