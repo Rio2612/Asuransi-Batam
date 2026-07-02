@@ -2,6 +2,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  Flame,
+  Zap,
+  Bomb,
+  Plane,
+  Wind,
+  Camera,
+  FileText,
+  Phone,
+  Search,
+  Handshake,
+  Clock,
+  Trash2,
+  TrendingDown,
+  ShieldOff,
+  MessageSquareWarning,
+  Timer,
+  Headset,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "How to Claim Home Fire Insurance – Documents, Procedure & Fatal Mistakes to Avoid",
@@ -24,6 +43,39 @@ const schema = {
   author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
+
+const FLEXAS = [
+  { letter: "F", label: "Fire", icon: Flame },
+  { letter: "L", label: "Lightning", icon: Zap },
+  { letter: "E", label: "Explosion", icon: Bomb },
+  { letter: "A", label: "Aircraft impact", icon: Plane },
+  { letter: "S", label: "Smoke damage", icon: Wind },
+];
+
+const FIRST_24H = [
+  { icon: Camera, title: "Prioritise Safety, Then Documentation", desc: "Once safe, document thoroughly: exterior photos/video from all sides, interior of every affected room, damaged items, and the fire's point of origin if identifiable — before anything is touched or cleared away." },
+  { icon: FileText, title: "File a Report with the Fire Brigade or Police", desc: "A letter from the Fire Department (Damkar) is mandatory in almost all claims. For major losses or suspected arson, a police report is also required — request the STPL as proof." },
+  { icon: Phone, title: "Contact Your Insurance Agent or Company", desc: "Report within 3×24 hours of the incident — the deadline set by almost every policy. Give an honest, consistent account; discrepancies are scrutinised closely during verification." },
+];
+
+const AFTER_SUBMISSION = [
+  { icon: Search, title: "Survey by a Loss Adjuster", desc: "For claims above roughly Rp 50 million, an independent Loss Adjuster inspects the site and produces a loss assessment report. Do not begin repairs before the survey is complete and written approval is given." },
+  { icon: Handshake, title: "Claim Value Negotiation", desc: "If your claimed amount differs from the adjuster's assessment, you can raise an objection with supporting evidence — receipts, before-photos, or a contractor's repair estimate. This is a normal part of the process." },
+];
+
+const MISTAKES = [
+  { icon: Clock, title: "Waiting too long to report", desc: "If three days have passed before contacting the insurer, the risk of technical rejection is very high." },
+  { icon: Trash2, title: "Clearing the site before the survey", desc: "The instinct to start cleaning up is understandable, but it's one of the biggest causes of claim complications. Wait for written approval." },
+  { icon: TrendingDown, title: "Underinsurance — sum insured too low", desc: "A house worth Rp 800 million insured for only Rp 400 million gets only 50% of the actual loss approved, per the underinsurance ratio." },
+  { icon: ShieldOff, title: "Cause of fire not covered", desc: "Short-circuit fires are generally covered, but causes excluded by the policy — e.g. excess flammable material storage — can result in rejection." },
+  { icon: MessageSquareWarning, title: "Inconsistent information", desc: "Telling the fire brigade one origin point and the surveyor another will be flagged as a red mark during verification." },
+];
+
+const TIMELINE = [
+  { range: "Under Rp 50 million", duration: "7–14 working days", note: "after complete documentation is received" },
+  { range: "Rp 50 million – Rp 500 million", duration: "14–30 working days", note: "depending on the Loss Adjuster's schedule" },
+  { range: "Above Rp 500 million", duration: "30–60 working days or more", note: "as the negotiation process is longer" },
+];
 
 export default function ArticleHomeFireInsuranceClaimPage() {
   return (
@@ -52,13 +104,17 @@ export default function ArticleHomeFireInsuranceClaimPage() {
         fire-related damage is automatically covered by insurance. Standard property
         policies in Indonesia use the <strong>FLEXAS</strong> format as the base:
       </p>
-      <ul>
-        <li><strong>F</strong>ire</li>
-        <li><strong>L</strong>ightning</li>
-        <li><strong>E</strong>xplosion</li>
-        <li><strong>A</strong>ircraft impact</li>
-        <li><strong>S</strong>moke damage</li>
-      </ul>
+      <div className="not-prose grid grid-cols-2 sm:grid-cols-5 gap-3 my-6">
+        {FLEXAS.map(({ letter, label, icon: Icon }) => (
+          <div key={letter} className="rounded-2xl p-4 text-center border" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-2 text-white font-bold" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              {letter}
+            </div>
+            <Icon size={16} className="mx-auto mb-1" style={{ color: "#a07830" }} />
+            <p className="text-xs font-semibold" style={{ color: "#0a1628" }}>{label}</p>
+          </div>
+        ))}
+      </div>
       <p>
         Extensions such as flood, storm, riot, and earthquake are only covered if they
         are explicitly stated in your policy. Before submitting a claim, open your policy
@@ -72,53 +128,22 @@ export default function ArticleHomeFireInsuranceClaimPage() {
         Panic is completely understandable, but certain actions taken (or not taken) during
         this phase can determine whether your claim succeeds or fails.
       </p>
-
-      <h3>1. Prioritise Safety, Then Documentation</h3>
-      <p>
-        Make sure all occupants are safe and the fire is completely extinguished before
-        approaching the site. Once it is safe, begin documenting the damage thoroughly:
-      </p>
-      <ul>
-        <li>Photos and video of the building from outside — front, sides, and rear views</li>
-        <li>Photos of the interior of every affected room</li>
-        <li>Photos of damaged or destroyed items — furniture, electronics, documents</li>
-        <li>Photos of the point of origin of the fire if it can still be visually identified</li>
-        <li>Document conditions before anything is touched or cleared away</li>
-      </ul>
-      <p>
-        This documentation is the primary evidence that the insurance surveyor will
-        evaluate. The more complete and detailed it is, the more smoothly the
-        verification process will run.
-      </p>
-
-      <h3>2. File a Report with the Fire Brigade or Police</h3>
-      <p>
-        A letter from the Fire Department (Damkar) is a mandatory document in almost all
-        fire insurance claims. It contains the date of the incident, the estimated cause,
-        and an initial damage assessment from the fire service. In Batam, reports can be
-        filed with the Batam City Fire Department, which has offices across multiple
-        districts.
-      </p>
-      <p>
-        For fires causing major losses, damage to neighbouring properties, or where there
-        is any suspicion of arson, a police report must also be filed. Request a copy of
-        the Surat Tanda Penerimaan Laporan (STPL) as official proof.
-      </p>
-
-      <h3>3. Contact Your Insurance Agent or Company</h3>
-      <p>
-        Don't wait for the situation to calm down or until you feel ready. Reporting must
-        be done <strong>within 3 × 24 hours</strong> of the incident being known — this
-        is the deadline set by almost every property insurance policy. Missing this window
-        can be used as a technical ground for rejection, even when the damage is clearly
-        covered by the policy.
-      </p>
-      <p>
-        Provide an honest and straightforward account of what happened. Do not add details
-        that didn't occur and do not omit relevant facts — consistency between your initial
-        report and the surveyor's findings is scrutinised closely throughout the verification
-        process.
-      </p>
+      <div className="not-prose space-y-4 my-6">
+        {FIRST_24H.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              <Icon size={20} className="text-white" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1 flex items-center gap-2" style={{ color: "#0a1628" }}>
+                <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>{i + 1}</span>
+                {title}
+              </p>
+              <p className="text-sm text-[#64748b]">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Documents Required for the Claim Submission</h2>
       <p>
@@ -157,85 +182,60 @@ export default function ArticleHomeFireInsuranceClaimPage() {
       </div>
 
       <h2>What Happens After Documents Are Submitted</h2>
-
-      <h3>Survey by a Loss Adjuster</h3>
-      <p>
-        For fire claims above a certain threshold (typically above Rp 50 million), the
-        insurance company will appoint an independent <em>Loss Adjuster</em> — not an
-        insurer employee — to objectively assess the damage. The Loss Adjuster will visit
-        the site, inspect the building's condition, cross-reference your documentation
-        with the actual condition on the ground, and produce a loss assessment report
-        that forms the basis for the claim payout.
-      </p>
-      <p>
-        During this process, <strong>do not begin any repairs</strong> before the survey
-        is complete and written approval has been given by the insurer. Repairs carried
-        out before the survey are considered to have altered the evidence and can result
-        in the claim being rejected or the payout being reduced.
-      </p>
-
-      <h3>Claim Value Negotiation</h3>
-      <p>
-        If there is a difference between the loss amount you are claiming and the amount
-        assessed by the Loss Adjuster, this is the negotiation stage. You have the right
-        to raise an objection with additional supporting evidence — purchase receipts,
-        photos showing the condition before the fire, or an opinion from your own
-        contractor regarding estimated repair costs. This negotiation is a normal part
-        of the claims process and does not mean there is a problem with your claim.
-      </p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {AFTER_SUBMISSION.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "#0a162810" }}>
+              <Icon size={20} style={{ color: "#0a1628" }} />
+            </div>
+            <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
 
       <h2>Fatal Mistakes That Frequently Lead to Rejected Claims</h2>
-      <ul>
-        <li>
-          <strong>Waiting too long to report:</strong> Many homeowners wait for the
-          situation to settle or for family members to gather before contacting the
-          insurer. If three days have passed, the risk of technical rejection is very high.
-        </li>
-        <li>
-          <strong>Clearing the site before the survey:</strong> The instinct to start
-          cleaning up the rubble is understandable, but this is one of the biggest causes
-          of claim complications. Wait for written approval before beginning any cleanup.
-        </li>
-        <li>
-          <strong>Underinsurance — sum insured too low:</strong> If a house worth Rp 800
-          million is insured for only Rp 400 million, only 50% of the actual loss will
-          be approved — in line with the underinsurance ratio. This is not insurer
-          misconduct; it is a contractual consequence already stated in the policy.
-        </li>
-        <li>
-          <strong>Cause of fire not covered:</strong> Fires from short circuits are
-          generally covered. But fires demonstrably caused by something excluded by the
-          policy — for example, storing flammable materials in excess of declared amounts
-          — can result in rejection.
-        </li>
-        <li>
-          <strong>Inconsistent information:</strong> If you tell the fire brigade the
-          fire started in the kitchen, but later tell the surveyor it started in the
-          garage, this inconsistency will be flagged as a red mark in the verification
-          process.
-        </li>
-      </ul>
+      <div className="not-prose space-y-3 my-6">
+        {MISTAKES.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="flex items-start gap-4 p-4 rounded-xl border" style={{ borderColor: "#dc262620", background: "#fef2f2" }}>
+            <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 bg-red-100">
+              <Icon size={17} className="text-red-600" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
+              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>How Long Does a Home Fire Insurance Claim Take to Settle?</h2>
-      <p>
-        The duration varies considerably depending on the complexity of the damage and
-        the completeness of the documents. As a general guide:
-      </p>
-      <ul>
-        <li><strong>Small claims (under Rp 50 million):</strong> 7–14 working days after complete documentation is received</li>
-        <li><strong>Mid-range claims (Rp 50 million – Rp 500 million):</strong> 14–30 working days, depending on the Loss Adjuster's schedule</li>
-        <li><strong>Large claims (above Rp 500 million):</strong> 30–60 working days or more, as the negotiation process is longer</li>
-      </ul>
+      <p>The duration varies considerably depending on the complexity of the damage and the completeness of the documents:</p>
+      <div className="not-prose space-y-3 my-6">
+        {TIMELINE.map((t) => (
+          <div key={t.range} className="flex items-center gap-4 p-4 rounded-xl bg-[#faf8f3] border border-[#e2e8f0]">
+            <Timer size={20} className="flex-shrink-0" style={{ color: "#c9a84c" }} />
+            <div className="flex-1">
+              <p className="text-sm font-semibold" style={{ color: "#0a1628" }}>{t.range}</p>
+              <p className="text-xs text-[#64748b]">{t.note}</p>
+            </div>
+            <span className="text-sm font-bold px-3 py-1.5 rounded-full text-white flex-shrink-0" style={{ background: "#0a1628" }}>{t.duration}</span>
+          </div>
+        ))}
+      </div>
       <p>
         Complete documentation from the outset is the single most significant factor in
         speeding up the process. Every request for an additional document from the insurer
         can add 5–10 working days to the total processing time.
       </p>
 
-      <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Need Help with a Claim or Property Insurance Consultation in Batam?
-        </h3>
+      <div className="not-prose my-8 p-6 rounded-2xl border" style={{ borderColor: "#c9a84c30", background: "linear-gradient(135deg, #faf8f3, #ffffff)" }}>
+        <div className="flex items-center gap-3 mb-3">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <Headset size={20} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-[#0a1628] m-0">Need Help with a Claim or Property Insurance Consultation in Batam?</h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Rio assists with property insurance claims from start to finish — from document
           preparation and coordination with the Loss Adjuster to negotiating the claim

@@ -2,6 +2,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  HardHat,
+  Truck,
+  Mountain,
+  MoveHorizontal,
+  Landmark,
+  TrendingDown,
+  TrendingUp,
+  FileCheck2,
+  Camera,
+  Gauge,
+  FileSpreadsheet,
+  Building2,
+  MapPin,
+  Ban,
+  PhoneCall,
+  Wrench,
+  FileSearch2,
+  HelpCircle,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Heavy Equipment Insurance for Construction Projects – Complete Guide for Contractors",
@@ -24,6 +44,48 @@ const schema = {
   author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
+
+const EQUIPMENT = [
+  { icon: Mountain, title: "Excavators (all classes)", desc: "From 5-tonne mini excavators to 30–50 tonne class machines. The larger and more expensive the unit, the more urgent the need. Highest claim frequency of any equipment type due to intensity of use." },
+  { icon: Truck, title: "Bulldozers", desc: "Prone to undercarriage damage and accidents on slopes or soft ground. Expensive to repair because track components require specialist spare parts." },
+  { icon: MoveHorizontal, title: "Wheel Loaders and Motor Graders", desc: "Often operate in heavy-traffic areas, making collisions relatively common. Consider adding Third Party Liability (TPL) coverage." },
+  { icon: Gauge, title: "Vibro Rollers and Compactors", desc: "Simpler machines, but frequently suffer damage from unstable ground or slipping on wet surfaces." },
+  { icon: Landmark, title: "Equipment under a financing arrangement", desc: "An absolute priority. If a financed unit is totally destroyed and uninsured, you still owe the remaining instalments — with no income-generating unit to show for it." },
+];
+
+const SUM_INSURED_MISTAKES = [
+  { icon: TrendingDown, title: "Underinsurance (too low)", desc: "A unit worth Rp 1.5 billion insured for only Rp 800 million to save on premiums. A partial claim payout is reduced proportionally in line with the underinsurance ratio — you only receive a fraction of your actual loss.", color: "#dc2626" },
+  { icon: TrendingUp, title: "Overinsurance (too high)", desc: "You pay higher premiums for no additional benefit. Claim payouts cannot exceed the proven actual loss.", color: "#a07830" },
+];
+
+const SUM_INSURED_STEPS = [
+  { title: "New units or under 2 years old", desc: "Use the purchase price (invoice price) as the basis, ensuring the payout is sufficient to replace the unit with an equivalent one in the event of a total loss." },
+  { title: "Units aged 2–5 years", desc: "Use current fair market value. Reference prices from used equipment dealers or an independent appraisal (KJPP). Update this value annually at renewal." },
+  { title: "Units over 5 years old", desc: "Consider whether the unit's value still justifies a full EAR premium. For older, low-value units it may be more efficient to set aside a repair reserve instead." },
+];
+
+const DOCUMENTS = [
+  { icon: FileCheck2, text: "Purchase invoice or BPKB (proof of ownership)" },
+  { icon: Camera, text: "Photos of the unit from 4 angles (front, rear, left, right)" },
+  { icon: Gauge, text: "Photo of the hour meter / machine operating hours" },
+  { icon: FileSpreadsheet, text: "Technical specification document (manual or spec sheet)" },
+  { icon: Building2, text: "Company profile or owner's ID (if an individual)" },
+  { icon: MapPin, text: "Information on the unit's primary operating location" },
+];
+
+const BREAKDOWN_STEPS = [
+  { icon: Ban, title: "Stop operating the unit immediately", desc: "Forcing a damaged unit to keep working can worsen the damage and complicate the claim assessment." },
+  { icon: Camera, title: "Complete visual documentation", desc: "Photos and video of the unit, the incident location, and surrounding site conditions. Record the other party's details if involved." },
+  { icon: PhoneCall, title: "Contact your insurance agent within 1×24 hours", desc: "Most policies allow up to 3×24 hours, but reporting faster accelerates the survey schedule and the whole claims process." },
+  { icon: Ban, title: "Do not carry out any repairs before the survey", desc: "The rule most often broken due to pressure to resume production. If the unit must be moved, get written permission first and document its condition." },
+  { icon: Wrench, title: "Obtain a repair cost estimate from a workshop", desc: "The surveyor will request this as a reference. Ideally get quotes from at least two workshops for comparison." },
+];
+
+const FAQS = [
+  { q: "Can heavy equipment be claimed if it's damaged by flooding on a project site?", a: "Yes, as long as the policy covers natural disaster risks including flood — generally standard in EAR policies. Confirm the site is within the declared territory and the damage was sudden, not from leaving equipment in a known flood-prone area without precautions." },
+  { q: "What if heavy equipment is stolen from a project site?", a: "Theft is generally covered under EAR, but a police report must be filed promptly. There is typically a waiting period (60–90 days) before payout, allowing time for law enforcement to search." },
+  { q: "Does the equipment operator need a valid SIO for claims to be processed?", a: "Yes, in most policies. An SIO (Operator Licence) proves the operator is competent and licensed. Without a valid SIO at the time of incident, the insurer can reject the claim on safety-negligence grounds." },
+];
 
 export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
   return (
@@ -57,28 +119,32 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
         terms are often used interchangeably, but they protect fundamentally different things.
       </p>
 
-      <h3>CAR — Contractor's All Risk</h3>
-      <p>
-        CAR is a policy that protects <em>the construction project as a whole</em> —
-        covering building materials, completed permanent works, and the heavy equipment
-        used within that project. The key word is <strong>project</strong>. A CAR policy
-        is tied to a single specific project with a defined contract value, location, and
-        duration. When the project ends, the policy ends. If equipment is moved to another
-        project not covered by the same policy, the protection lapses.
-      </p>
-      <p>
-        CAR is typically required by project owners in tender documents or contracts —
-        especially for government and large-scale private projects.
-      </p>
-
-      <h3>EAR — Equipment All Risk</h3>
-      <p>
-        EAR is a policy that protects <em>the equipment unit itself</em>, not the project.
-        Coverage follows the unit wherever it operates during the policy period — one
-        project, multiple sites, or even while in standby at a yard. EAR is the more
-        appropriate choice for contractors who own their own fleet and deploy it across
-        multiple projects throughout the year.
-      </p>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-5 my-6">
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+            <HardHat size={22} className="text-white" />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>CAR — Contractor's All Risk</h3>
+          <p className="text-sm text-[#64748b]">
+            Protects <em>the construction project as a whole</em> — building materials,
+            completed permanent works, and heavy equipment used within it. Tied to a single
+            specific project; when the project ends, the policy ends. Typically required by
+            project owners in tender documents or contracts.
+          </p>
+        </div>
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <Truck size={22} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>EAR — Equipment All Risk</h3>
+          <p className="text-sm text-[#64748b]">
+            Protects <em>the equipment unit itself</em>, not the project. Coverage follows
+            the unit wherever it operates — one project, multiple sites, or standby at a
+            yard. The more appropriate choice for contractors deploying their own fleet
+            across multiple projects.
+          </p>
+        </div>
+      </div>
 
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
         <table className="w-full text-sm">
@@ -120,158 +186,97 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
         The short answer: any unit with a significant value whose breakdown would materially
         disrupt project operations. Here is a practical guide by equipment category:
       </p>
-      <ul>
-        <li>
-          <strong>Excavators (all classes):</strong> From 5-tonne mini excavators to
-          30–50 tonne class machines. The larger and more expensive the unit, the more
-          urgent the insurance need. Excavators have the highest claim frequency of any
-          equipment type due to their intensity of use.
-        </li>
-        <li>
-          <strong>Bulldozers:</strong> Prone to undercarriage damage and accidents when
-          working on slopes or soft ground. Expensive to repair because track components
-          require specialist spare parts.
-        </li>
-        <li>
-          <strong>Wheel Loaders and Motor Graders:</strong> Often operate in areas with
-          heavy traffic, making collisions with other vehicles relatively common. Consider
-          adding Third Party Liability (TPL) coverage to guard against third-party claims.
-        </li>
-        <li>
-          <strong>Vibro Rollers and Compactors:</strong> Though simpler machines, they
-          frequently suffer damage from operating on unstable ground or slipping on
-          wet surfaces.
-        </li>
-        <li>
-          <strong>Equipment under a financing arrangement:</strong> This is an absolute
-          priority. If a financed unit is totally destroyed and uninsured, you still owe
-          the remaining instalments to the leasing company — with no income-generating
-          unit to show for it.
-        </li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {EQUIPMENT.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "#0a162810" }}>
+              <Icon size={20} style={{ color: "#0a1628" }} />
+            </div>
+            <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
 
       <h2>How to Determine the Right Sum Insured</h2>
-      <p>
-        Setting the correct sum insured is the single most critical step in the policy
-        process. The two most common mistakes are:
-      </p>
-      <ul>
-        <li>
-          <strong>Underinsurance (too low):</strong> For example, a unit worth Rp 1.5
-          billion insured for only Rp 800 million to save on premiums. When a partial
-          claim occurs, the payout is reduced proportionally in line with the
-          underinsurance ratio — meaning you only receive a fraction of your actual loss.
-        </li>
-        <li>
-          <strong>Overinsurance (too high):</strong> You pay higher premiums for no
-          additional benefit. Claim payouts cannot exceed the proven actual loss.
-        </li>
-      </ul>
-      <p>
-        Recommended approach for determining the sum insured:
-      </p>
-      <ol>
-        <li>
-          <strong>New units or under 2 years old:</strong> Use the purchase price
-          (invoice price) as the basis. This ensures the payout is sufficient to
-          replace the unit with an equivalent one in the event of a total loss.
-        </li>
-        <li>
-          <strong>Units aged 2–5 years:</strong> Use the current fair market value.
-          Reference prices from used equipment dealers or an independent appraisal
-          (KJPP). Update this value annually when renewing the policy.
-        </li>
-        <li>
-          <strong>Units over 5 years old:</strong> Consider whether the unit's value
-          is still high enough to justify a full EAR premium. For older, low-value
-          units, it may sometimes be more efficient to set aside a repair reserve
-          rather than pay insurance premiums.
-        </li>
-      </ol>
+      <p>Setting the correct sum insured is the single most critical step in the policy process. The two most common mistakes are:</p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {SUM_INSURED_MISTAKES.map(({ icon: Icon, title, desc, color }) => (
+          <div key={title} className="rounded-2xl p-5 border" style={{ borderColor: color + "30", background: color + "0a" }}>
+            <div className="flex items-center gap-2 mb-2">
+              <Icon size={18} style={{ color }} />
+              <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{title}</p>
+            </div>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <p>Recommended approach for determining the sum insured:</p>
+      <div className="not-prose space-y-3 my-6">
+        {SUM_INSURED_STEPS.map((step, i) => (
+          <div key={step.title} className="flex items-start gap-4 p-4 rounded-xl bg-[#faf8f3] border border-[#e2e8f0]">
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0" style={{ background: "#0a1628" }}>
+              {i + 1}
+            </div>
+            <div>
+              <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{step.title}</p>
+              <p className="text-sm text-[#64748b] mt-0.5">{step.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Documents Needed When Taking Out a Policy</h2>
-      <p>
-        The EAR policy application process for construction heavy equipment typically
-        requires the following documents. Preparing them upfront will speed up
-        underwriting and avoid requests for additional documents that delay policy issuance:
-      </p>
-      <ul>
-        <li>Purchase invoice or BPKB (proof of ownership)</li>
-        <li>Photos of the unit from 4 angles (front, rear, left, right) in current condition</li>
-        <li>Photo of the hour meter / machine operating hours</li>
-        <li>Technical specification document (manual or spec sheet from the dealer)</li>
-        <li>Company profile or owner's ID (if an individual)</li>
-        <li>Information on the unit's primary operating location</li>
-      </ul>
+      <p>Preparing these upfront will speed up underwriting and avoid requests for additional documents that delay policy issuance:</p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 my-6">
+        {DOCUMENTS.map(({ icon: Icon, text }) => (
+          <div key={text} className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-[#e2e8f0]">
+            <Icon size={18} className="flex-shrink-0" style={{ color: "#1a4fa0" }} />
+            <span className="text-sm text-[#374151]">{text}</span>
+          </div>
+        ))}
+      </div>
 
       <h2>What to Do When Equipment Breaks Down on Site</h2>
-      <p>
-        Many claims end up rejected not because the damage isn't covered by the policy,
-        but because the reporting procedure wasn't followed correctly. Here is the
-        right sequence:
-      </p>
-      <ol>
-        <li>
-          <strong>Stop operating the unit immediately:</strong> Forcing a damaged unit to
-          keep working can worsen the damage and complicate the claim assessment.
-          The surveyor needs to evaluate the damage in the condition it was in at the
-          time of the incident.
-        </li>
-        <li>
-          <strong>Complete visual documentation:</strong> Photos and video of the unit,
-          the incident location, and the surrounding site conditions. If the damage
-          involved another party, record their identity and vehicle registration.
-        </li>
-        <li>
-          <strong>Contact your insurance agent within 1 × 24 hours:</strong> Although
-          most policies allow up to 3 × 24 hours, reporting faster accelerates the
-          survey schedule and ultimately speeds up the entire claims process.
-        </li>
-        <li>
-          <strong>Do not carry out any repairs before the survey:</strong> This is the
-          rule most often broken by contractors due to pressure to resume production.
-          If the unit must be moved for safety reasons, obtain written permission from
-          the insurer first and document its condition before any movement.
-        </li>
-        <li>
-          <strong>Obtain a repair cost estimate from a workshop:</strong> The surveyor
-          will request this as a reference for their assessment. Ideally obtain quotes
-          from at least two different workshops for comparison.
-        </li>
-      </ol>
+      <p>Many claims end up rejected not because the damage isn't covered, but because the reporting procedure wasn't followed correctly. Here is the right sequence:</p>
+      <div className="not-prose space-y-4 my-6">
+        {BREAKDOWN_STEPS.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              <Icon size={20} className="text-white" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1 flex items-center gap-2" style={{ color: "#0a1628" }}>
+                <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>Step {i + 1}</span>
+                {title}
+              </p>
+              <p className="text-sm text-[#64748b]">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Frequently Asked Questions from Contractors</h2>
+      <div className="not-prose space-y-3 my-6">
+        {FAQS.map((faq) => (
+          <div key={faq.q} className="rounded-2xl border border-[#e2e8f0] p-5 bg-white">
+            <div className="flex items-start gap-2.5 mb-2">
+              <HelpCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
+              <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{faq.q}</p>
+            </div>
+            <p className="text-sm text-[#64748b] pl-[26px]">{faq.a}</p>
+          </div>
+        ))}
+      </div>
 
-      <h3>Can heavy equipment be claimed if it's damaged by flooding on a project site?</h3>
-      <p>
-        Yes, as long as the policy covers natural disaster risks including flood — which
-        is generally standard in EAR policies. Key things to confirm: the site location
-        is within the territory declared in the policy, and the damage was sudden rather
-        than the result of leaving equipment in a known flood-prone area without taking
-        any precautions.
-      </p>
-
-      <h3>What if heavy equipment is stolen from a project site?</h3>
-      <p>
-        Equipment theft is generally covered under EAR, but a police report must be
-        filed promptly after the theft is discovered. For theft claims, there is typically
-        a waiting period (usually 60–90 days) before the payout is made — allowing time
-        for law enforcement to conduct a search.
-      </p>
-
-      <h3>Does the equipment operator need a valid SIO for claims to be processed?</h3>
-      <p>
-        Yes, in most policies. An SIO (Operator Licence) is proof that the operator
-        is competent and licensed to run the unit. If the operator does not hold a valid
-        SIO at the time of the incident, the insurer is entitled to reject the claim on
-        grounds of safety procedure negligence. Make sure all operators' licences are
-        renewed before they expire.
-      </p>
-
-      <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Ready to Protect Your Construction Equipment Fleet?
-        </h3>
+      <div className="not-prose my-8 p-6 rounded-2xl border" style={{ borderColor: "#c9a84c30", background: "linear-gradient(135deg, #faf8f3, #ffffff)" }}>
+        <div className="flex items-center gap-3 mb-3">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <FileSearch2 size={20} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-[#0a1628] m-0">Ready to Protect Your Construction Equipment Fleet?</h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           No need to navigate the CAR vs EAR decision alone or figure out the right sum
           insured by yourself. Rio will help analyse your fleet's protection needs, structure

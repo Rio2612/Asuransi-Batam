@@ -2,6 +2,19 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  PenLine,
+  BellRing,
+  FolderCheck,
+  Search,
+  Calculator,
+  CircleX,
+  Camera,
+  ShieldCheck,
+  Layers,
+  FolderOpen,
+  Coins,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "How to Claim Marine Cargo Insurance the Right Way – Complete Guide",
@@ -35,6 +48,41 @@ const schema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance" },
 };
 
+const STEPS = [
+  { icon: PenLine, title: "Create a Damage Notation on the Spot", desc: <>The moment cargo arrives and something looks wrong — wet cartons, visible dents, short count, or missing packages — note the discrepancy directly on the receiving documents before signing anything. Don't sign a clean Delivery Order if the cargo isn't in that condition. <strong>Common mistake:</strong> staff signing documents clean under time pressure without inspecting the cargo — this alone can void an otherwise valid claim.</> },
+  { icon: BellRing, title: "Notify the Insurer Within 3×24 Hours", desc: "Most policies require a first notice of loss within 3 calendar days of receiving the cargo or discovering the damage — some narrow this to 24 hours. The initial notice doesn't need to be complete: policy number, B/L number, brief description, and a preliminary estimate is enough. File first, gather full documentation after." },
+  { icon: FolderCheck, title: "Compile the Full Claims Document Package", desc: "See the document table below. Additional documents depend on claim type: an independent marine survey report for wet/damaged cargo, a short-landing report from the port authority, or customs dispute documents for detained cargo." },
+  { icon: Search, title: "The Loss Adjuster Survey", desc: "The insurer appoints an independent surveyor to assess the damage objectively. Do not move, repair, or dispose of damaged cargo before the survey is complete. Separate damaged from undamaged units and provide the full routing history. The output is a Survey Report forming the basis of settlement." },
+  { icon: Calculator, title: "Settlement Calculation and Payment", desc: "Three common valuation bases: Agreed Value (fixed at inception), Market Value (at time/place of loss), or Invoice Value + margin (typically +10%). Know your deductible before filing — a claim below the threshold creates a claims record without a payout." },
+];
+
+const DOCS: [string, string][] = [
+  ["Insurance policy / cover note", "Proof of active coverage"],
+  ["Bill of Lading / Airway Bill", "Official shipment record"],
+  ["Commercial Invoice", "Insured value of the goods"],
+  ["Packing List", "Contents per carton or pallet"],
+  ["Certificate of Insurance", "Confirms cargo is under the policy"],
+  ["Delivery Order / Gate Pass", "Handover document – must carry damage notation"],
+  ["Damage photographs", "Taken before goods are moved"],
+];
+
+const REJECTION_REASONS = [
+  "No damage notation on delivery documents",
+  "Late notification — first notice filed after the policy deadline",
+  "Cargo altered before the survey (wet goods dried or sold before the loss adjuster visited)",
+  "Policy does not cover the transport mode used",
+  "Inadequate packaging — explicitly excluded in most policies",
+  "Under-insurance — payout reduced proportionally under the Average Clause",
+];
+
+const HABITS = [
+  { icon: Camera, text: "Photograph and video cargo condition before loading into the container" },
+  { icon: ShieldCheck, text: "Confirm the policy is active before goods depart" },
+  { icon: Layers, text: "Choose the right coverage terms: ICC (A) covers all risks; ICC (B) and (C) are named-perils" },
+  { icon: FolderOpen, text: "Keep one folder per shipment: B/L, invoice, packing list, certificate of insurance" },
+  { icon: Coins, text: "Insure at the correct value — under-declaring to save on premium will cost more at claim time" },
+];
+
 export default function HowToClaimMarineCargoPage() {
   return (
     <ArticleLayout
@@ -54,24 +102,24 @@ export default function HowToClaimMarineCargoPage() {
         Marine cargo claims are uniquely complex: goods pass through multiple carriers and modes of transport, documentation involves shippers, freight forwarders, carriers, and customs authorities, and reporting windows are unforgiving.
       </p>
 
-      <h2>Step 1 – Create a Damage Notation on the Spot</h2>
-      <p>
-        The moment cargo arrives and something looks wrong — wet cartons, visible dents, short count, or missing packages — your first action is to <strong>note the discrepancy directly on the receiving documents</strong> before signing anything.
-      </p>
-      <p>
-        Do not sign a clean Delivery Order or Gate Pass if the cargo is not in the condition described. Write explicitly: <em>&quot;Received with damage – dents on 3 cartons&quot;</em> or <em>&quot;Short landed – 2 boxes missing.&quot;</em>
-      </p>
-      <p>
-        <strong>What commonly goes wrong:</strong> Warehouse staff sign documents clean under time pressure without physically inspecting the cargo. This single mistake can void an otherwise valid claim.
-      </p>
+      <div className="not-prose space-y-4 my-6">
+        {STEPS.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              <Icon size={20} className="text-white" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1 flex items-center gap-2" style={{ color: "#0a1628" }}>
+                <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>Step {i + 1}</span>
+                {title}
+              </p>
+              <p className="text-sm text-[#64748b]">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
-      <h2>Step 2 – Notify the Insurer Within 3×24 Hours</h2>
-      <p>
-        Most marine cargo policies require a <strong>first notice of loss</strong> within 3 calendar days of receiving the cargo or discovering the damage. Some policies narrow this to 24 hours.
-      </p>
-      <p>The initial notice does not need to be complete. Communicate the policy number, bill of lading number, a brief description of the damage, and a preliminary loss estimate. File the notice first — gather full documentation after.</p>
-
-      <h2>Step 3 – Compile the Full Claims Document Package</h2>
+      <h3>Full Claims Document Package</h3>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -81,15 +129,7 @@ export default function HowToClaimMarineCargoPage() {
             </tr>
           </thead>
           <tbody>
-            {[
-              ["Insurance policy / cover note", "Proof of active coverage"],
-              ["Bill of Lading / Airway Bill", "Official shipment record"],
-              ["Commercial Invoice", "Insured value of the goods"],
-              ["Packing List", "Contents per carton or pallet"],
-              ["Certificate of Insurance", "Confirms cargo is under the policy"],
-              ["Delivery Order / Gate Pass", "Handover document – must carry damage notation"],
-              ["Damage photographs", "Taken before goods are moved"],
-            ].map(([doc, purpose], i) => (
+            {DOCS.map(([doc, purpose], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{doc}</td>
                 <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{purpose}</td>
@@ -98,38 +138,26 @@ export default function HowToClaimMarineCargoPage() {
           </tbody>
         </table>
       </div>
-      <p>Additional documents depend on the claim type: an independent marine survey report for wet or damaged cargo, a short-landing report from the port authority for short-landed cargo, or customs dispute documents for detained cargo.</p>
-
-      <h2>Step 4 – The Loss Adjuster Survey</h2>
-      <p>
-        After your notice is filed, the insurer will appoint an <strong>independent surveyor / loss adjuster</strong> to assess the damage objectively. Do not move, repair, or dispose of damaged cargo before the survey is complete. Separate damaged from undamaged units, and provide the surveyor with the full routing history from port of loading to warehouse.
-      </p>
-      <p>The output is a <strong>Survey Report</strong> that forms the basis of the settlement calculation.</p>
-
-      <h2>Step 5 – Settlement Calculation and Payment</h2>
-      <p>Three common valuation bases: <strong>Agreed Value</strong> (fixed at policy inception), <strong>Market Value</strong> (at the time and place of loss), or <strong>Invoice Value + margin</strong> (typically +10% to cover ancillary costs).</p>
-      <p>
-        Know your <strong>deductible</strong> before filing — virtually all marine cargo policies carry one. Filing a claim below the deductible threshold creates a claims record without a payout.
-      </p>
 
       <h2>Common Reasons Marine Cargo Claims Are Rejected</h2>
-      <ol>
-        <li>No damage notation on delivery documents</li>
-        <li>Late notification — first notice filed after the policy deadline</li>
-        <li>Cargo altered before the survey (wet goods dried or sold before the loss adjuster visited)</li>
-        <li>Policy does not cover the transport mode used</li>
-        <li>Inadequate packaging — explicitly excluded in most policies</li>
-        <li>Under-insurance — payout reduced proportionally under the Average Clause</li>
-      </ol>
+      <div className="not-prose space-y-2 my-6">
+        {REJECTION_REASONS.map((reason) => (
+          <div key={reason} className="flex items-start gap-3 p-3.5 rounded-xl border" style={{ borderColor: "#dc262620", background: "#fef2f2" }}>
+            <CircleX size={16} className="flex-shrink-0 mt-0.5 text-red-600" />
+            <span className="text-sm text-[#374151]">{reason}</span>
+          </div>
+        ))}
+      </div>
 
       <h2>Pre-Shipment Habits That Make Claims Easier</h2>
-      <ul>
-        <li>Photograph and video cargo condition before loading into the container</li>
-        <li>Confirm the policy is active before goods depart</li>
-        <li>Choose the right coverage terms: ICC (A) covers all risks; ICC (B) and (C) are named-perils</li>
-        <li>Keep one folder per shipment: B/L, invoice, packing list, certificate of insurance</li>
-        <li>Insure at the correct value — under-declaring to save on premium will cost more at claim time</li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 my-6">
+        {HABITS.map(({ icon: Icon, text }) => (
+          <div key={text} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#e2e8f0] shadow-sm">
+            <Icon size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
+            <span className="text-sm text-[#374151]">{text}</span>
+          </div>
+        ))}
+      </div>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
         <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Need Help Filing a Claim or Reviewing Your Policy?</h3>

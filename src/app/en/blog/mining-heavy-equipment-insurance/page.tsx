@@ -2,6 +2,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  ShieldCheck,
+  Cog,
+  Users,
+  Ban,
+  Weight,
+  MapPinOff,
+  Wrench,
+  Package,
+  Calendar,
+  MapPin,
+  Coins,
+  History,
+  Layers,
+  FileCheck,
+  MapPinned,
+  Scale,
+  PlaneTakeoff,
+  Boxes,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Mining Heavy Equipment Insurance – Mandatory, What's Covered & How to Choose",
@@ -24,6 +44,36 @@ const schema = {
   author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
+
+const POLICY_TYPES = [
+  { icon: ShieldCheck, title: "Equipment All Risk (EAR) with Mining Clause", desc: "The primary policy protecting the equipment unit from physical damage caused by all risks not explicitly excluded. A mining clause is added to accommodate burial by landslide material, ground subsidence damage, and operations within a mining licence area (IUP)." },
+  { icon: Cog, title: "Machinery Breakdown (MB)", desc: "Protection against sudden and unexpected mechanical failure not caused by an external event — a piston fracturing without warning, a bearing collapsing suddenly, or a transmission failing abruptly. Highly relevant given the high operating hours mining units accumulate." },
+  { icon: Users, title: "Third Party Liability (TPL)", desc: "In mining areas dense with workers, light vehicles, and infrastructure, the risk of heavy equipment striking or damaging assets or people is significant. TPL covers compensation claims from third parties who suffer loss from your equipment's operations." },
+];
+
+const EXCLUSIONS = [
+  { icon: Ban, title: "Normal wear and gradual deterioration", desc: "Components that wear slowly due to age and normal use are not the insurer's responsibility — filter replacements, seals, and other consumable components." },
+  { icon: Weight, title: "Damage from intentional overloading", desc: "If a dump truck is loaded beyond the capacity stated in its technical specifications, resulting damage is generally not covered." },
+  { icon: MapPinOff, title: "Operations outside the declared area", desc: "If the policy is issued for operations in Batam but the unit is used in Kalimantan without notification, a claim can be rejected due to the difference in operating location." },
+  { icon: Wrench, title: "Damage during repair or modification", desc: "Units dismantled at a workshop for repairs are generally not covered during that process." },
+];
+
+const PREMIUM_FACTORS = [
+  { icon: Package, text: "Unit type and brand — brands with easily available spare parts tend to attract lower premiums" },
+  { icon: Calendar, text: "Unit age and operating hours (hour meter) — older units and higher hours mean higher premiums" },
+  { icon: MapPin, text: "Location and type of operation — open pit mining is riskier than a standard quarry" },
+  { icon: Coins, text: "Sum insured basis — market value or replacement value" },
+  { icon: History, text: "Claims history — companies with a clean claims record get more competitive rates" },
+  { icon: Layers, text: "Number of units on a single policy — fleet policies covering multiple units are typically more efficient" },
+];
+
+const TIPS = [
+  { icon: FileCheck, title: "Ensure a mining or heavy equipment clause is included", desc: "Don't accept a standard policy that doesn't explicitly name the type of operation." },
+  { icon: MapPinned, title: "Check the territorial coverage", desc: "Make sure the policy covers all areas where the unit operates, including transit routes if units are frequently moved between locations." },
+  { icon: Scale, title: "Compare the indemnity basis", desc: "Agreed Value (a fixed agreed sum) is more favourable than Indemnity Value (market value at claim time) for expensive units with fluctuating values." },
+  { icon: PlaneTakeoff, title: "Check the sublimit for evacuation costs", desc: "Evacuating an excavator from a remote mining area can be extremely expensive. Make sure these costs are covered or an adequate sublimit is in place." },
+  { icon: Boxes, title: "Use a fleet policy if you have more than 3 units", desc: "Insuring all units under one fleet policy is usually more cost-effective and simpler to manage administratively, especially at claims time." },
+];
 
 export default function ArticleMiningHeavyEquipmentInsurancePage() {
   return (
@@ -110,59 +160,35 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
       </p>
 
       <h2>Relevant Policy Types for Mining Heavy Equipment</h2>
-
-      <h3>1. Equipment All Risk (EAR) with Mining Clause</h3>
-      <p>
-        The primary policy that protects the equipment unit from physical damage caused
-        by all risks not explicitly excluded. For mining operations, a mining clause is
-        added to accommodate specific risks such as burial by landslide material, damage
-        from ground subsidence, and operations within a mining licence area (IUP).
-      </p>
-
-      <h3>2. Machinery Breakdown (MB)</h3>
-      <p>
-        Protection against sudden and unexpected mechanical failure not caused by an
-        external event. Examples include a piston fracturing without warning, a bearing
-        collapsing suddenly, or a transmission system failing abruptly. MB coverage is
-        highly relevant for mining equipment because the high operating hours accelerate
-        wear on internal components even in well-maintained machines.
-      </p>
-
-      <h3>3. Third Party Liability (TPL)</h3>
-      <p>
-        In mining areas dense with workers, light vehicles, and infrastructure, the risk
-        of heavy equipment striking or damaging assets or people is significant. TPL
-        covers compensation claims from third parties who suffer loss as a result of your
-        equipment's operations.
-      </p>
+      <div className="not-prose space-y-4 my-6">
+        {POLICY_TYPES.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              <Icon size={20} className="text-white" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{i + 1}. {title}</p>
+              <p className="text-sm text-[#64748b]">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>What Is Typically Not Covered — Read Before Buying</h2>
-      <p>
-        This is the most important section and the most frequently overlooked. Some common
-        exclusions you need to understand before signing a policy:
-      </p>
-      <ul>
-        <li>
-          <strong>Normal wear and gradual deterioration:</strong> Components that wear
-          slowly due to age and normal use are not the insurer's responsibility. This
-          includes filter replacements, seals, and other consumable components.
-        </li>
-        <li>
-          <strong>Damage from intentional overloading:</strong> If a dump truck is loaded
-          beyond the capacity stated in its technical specifications, resulting damage is
-          generally not covered.
-        </li>
-        <li>
-          <strong>Operations outside the declared area:</strong> If the policy is issued
-          for operations in Batam but the unit is used in Kalimantan without notification,
-          a claim can be rejected due to the difference in operating location.
-        </li>
-        <li>
-          <strong>Damage while the unit is undergoing repair or modification:</strong>
-          Units that are dismantled at a workshop for repairs are generally not covered
-          during that process.
-        </li>
-      </ul>
+      <p>This is the most important section and the most frequently overlooked. Some common exclusions you need to understand before signing a policy:</p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {EXCLUSIONS.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="flex items-start gap-3 p-4 rounded-xl border" style={{ borderColor: "#dc262620", background: "#fef2f2" }}>
+            <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 bg-red-100">
+              <Icon size={17} className="text-red-600" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
+              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>How Mining Equipment Insurance Premiums Are Calculated</h2>
       <p>
@@ -170,50 +196,42 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
         for motor vehicle insurance (which is regulated by OJK). Premiums are calculated
         on a <em>case-by-case</em> basis by the underwriter based on a number of factors:
       </p>
-      <ul>
-        <li><strong>Unit type and brand</strong> — brands with easily available spare parts tend to attract lower premiums</li>
-        <li><strong>Unit age and operating hours (hour meter)</strong> — older units and higher hours mean higher premiums</li>
-        <li><strong>Location and type of operation</strong> — open pit mining is riskier than a standard quarry</li>
-        <li><strong>Sum insured basis</strong> — market value or replacement value</li>
-        <li><strong>Claims history</strong> — companies with a clean claims record get more competitive rates</li>
-        <li><strong>Number of units on a single policy</strong> — fleet policies covering multiple units are typically more efficient</li>
-      </ul>
-      <p>
-        As a general guide, EAR premiums for mining heavy equipment typically range from
-        <strong> 1.5% to 3.5%</strong> of the sum insured per year, depending on the
-        factors above. To get an accurate figure for your specific fleet, a direct
-        consultation with an experienced insurance agent in this sector is the most
-        reliable approach.
-      </p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-3 my-6">
+        {PREMIUM_FACTORS.map(({ icon: Icon, text }) => (
+          <div key={text} className="flex items-start gap-3 p-3.5 rounded-xl bg-[#faf8f3] border border-[#e2e8f0]">
+            <Icon size={17} className="flex-shrink-0 mt-0.5" style={{ color: "#1a4fa0" }} />
+            <span className="text-sm text-[#374151]">{text}</span>
+          </div>
+        ))}
+      </div>
+      <div className="not-prose my-6 p-5 rounded-2xl border flex items-start gap-4" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+        <Coins size={22} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+        <p className="text-sm text-[#374151] m-0">
+          As a general guide, EAR premiums for mining heavy equipment typically range from{" "}
+          <strong style={{ color: "#0a1628" }}>1.5% to 3.5%</strong> of the sum insured per year,
+          depending on the factors above. To get an accurate figure for your specific fleet,
+          a direct consultation with an experienced insurance agent in this sector is the
+          most reliable approach.
+        </p>
+      </div>
 
       <h2>Tips for Choosing the Right Policy for Your Mining Operation</h2>
-      <ol>
-        <li>
-          <strong>Ensure a mining or heavy equipment clause is included</strong> —
-          don't accept a standard policy that doesn't explicitly name the type of
-          operation.
-        </li>
-        <li>
-          <strong>Check the territorial coverage:</strong> Make sure the policy covers
-          all areas where the unit operates, including transit routes if units are
-          frequently moved between locations.
-        </li>
-        <li>
-          <strong>Compare the indemnity basis:</strong> Agreed Value (a fixed agreed
-          sum) is more favourable than Indemnity Value (market value at claim time)
-          for expensive units with fluctuating values.
-        </li>
-        <li>
-          <strong>Check the sublimit for evacuation costs:</strong> Evacuating an
-          excavator from a remote mining area can be extremely expensive. Make sure
-          these costs are covered or an adequate sublimit is in place.
-        </li>
-        <li>
-          <strong>Use a fleet policy if you have more than 3 units:</strong> Insuring
-          all units under one fleet policy is usually more cost-effective and simpler
-          to manage administratively, especially at claims time.
-        </li>
-      </ol>
+      <div className="not-prose space-y-3 my-6">
+        {TIPS.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-4 rounded-xl bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0" style={{ background: "#0a1628" }}>
+              {i + 1}
+            </div>
+            <div>
+              <p className="font-semibold text-sm flex items-center gap-2" style={{ color: "#0a1628" }}>
+                <Icon size={15} style={{ color: "#c9a84c" }} />
+                {title}
+              </p>
+              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
         <h3 className="font-display font-bold text-[#0a1628] mb-3">
