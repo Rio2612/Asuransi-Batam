@@ -129,6 +129,15 @@ const articles: Article[] = [
   },
   // ── Liability ───────────────────────────────────────────────────────────────
   {
+    title: "Asuransi Public Liability di Batam: Panduan Lengkap",
+    slug: "asuransi-public-liability-batam-panduan-lengkap",
+    date: "2 Juli 2026",
+    category: "Liability",
+    excerpt:
+      "Panduan lengkap Public Liability Insurance untuk subkontraktor galangan kapal, hotel, dan bisnis publik di Batam — siapa yang wajib punya, Additional Insured, Certificate of Insurance (COI), dan proses klaim.",
+    readTime: "10 menit",
+  },
+  {
     title: "Pentingnya Asuransi Limbah B3 bagi Industri",
     slug: "pentingnya-asuransi-limbah-b3",
     date: "20 Februari 2025",
