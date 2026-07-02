@@ -285,6 +285,15 @@ const articles: Article[] = [
   },
   // ── Surety Bond ─────────────────────────────────────────────────────────────
   {
+    title: "Biaya dan Premi Surety Bond di Batam",
+    slug: "biaya-premi-surety-bond-batam",
+    date: "2 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Berapa biaya surety bond di Batam? Cara perhitungan premi bid bond, performance bond, advance payment bond, dan maintenance bond, serta faktor yang membuat tarif lebih murah atau lebih mahal.",
+    readTime: "9 menit",
+  },
+  {
     title: "Cara Mendapatkan Surety Bond untuk Tender Proyek di Batam",
     slug: "cara-mendapatkan-surety-bond-tender-proyek-batam",
     date: "2 Juli 2026",

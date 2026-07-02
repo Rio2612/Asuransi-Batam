@@ -172,6 +172,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam`, lastModified: new Date("2026-05-08"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/perbedaan-bid-bond-performance-bond`,             lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/cara-mendapatkan-surety-bond-tender-proyek-batam`, lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/biaya-premi-surety-bond-batam`,                    lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
     // Personal Accident
     { url: `${BASE_URL}/blog/asuransi-kecelakaan-diri-pekerja-industri-batam`, lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
 
