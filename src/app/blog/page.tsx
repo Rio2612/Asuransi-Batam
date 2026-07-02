@@ -129,6 +129,15 @@ const articles: Article[] = [
   },
   // ── Liability ───────────────────────────────────────────────────────────────
   {
+    title: "Cara Klaim Asuransi Public Liability di Batam",
+    slug: "cara-klaim-asuransi-public-liability-batam",
+    date: "2 Juli 2026",
+    category: "Liability",
+    excerpt:
+      "Prosedur klaim Public Liability di Batam — dokumen yang dibutuhkan, tahapan proses, simulasi kasus subkontraktor galangan kapal, hotel, dan mall, serta kesalahan umum yang membuat klaim tertunda.",
+    readTime: "9 menit",
+  },
+  {
     title: "Asuransi Public Liability di Batam: Panduan Lengkap",
     slug: "asuransi-public-liability-batam-panduan-lengkap",
     date: "2 Juli 2026",
