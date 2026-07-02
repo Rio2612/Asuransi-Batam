@@ -2,6 +2,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  Store,
+  Warehouse,
+  Building,
+  Users,
+  Layers,
+  Scale,
+  TrendingDown,
+  FileWarning,
+  ShieldQuestion,
+  UserCheck,
+  FileSearch,
+  GitCompareArrows,
+  Headset,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Commercial Property Insurance Batam – Guide for Shophouse, Warehouse & Building Owners",
@@ -24,6 +39,46 @@ const schema = {
   author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
 };
+
+const DIFFERENCES = [
+  { icon: Layers, title: "Different exposure profile", desc: "Higher foot traffic, more intensive activity, and more electrical equipment running simultaneously — statistically raising the probability of loss-causing events." },
+  { icon: Scale, title: "More complex value", desc: "Beyond building value, commercial property has contents value (stock, business equipment) and economic value (revenue potential) that need separate cover." },
+  { icon: Users, title: "Broader third-party liability", desc: "Owners are responsible for the safety of visitors, customers, third-party workers, and business partners on their premises — a much greater exposure than residential." },
+];
+
+const PROPERTY_TYPES = [
+  {
+    icon: Store,
+    title: "Shophouses in Trading Areas",
+    body: "Shophouses in Nagoya, Jodoh, Batam Center, and Batu Aji form the backbone of Batam's retail economy. Comprehensive cover needs to include the building structure (including tenant renovations), merchandise stock, cashier equipment/electronics, and liability to customers.",
+    note: "Frequently overlooked: stock coverage. Many policies only cover the building, leaving hundreds of millions in stock uninsured — if fire strikes, the policy pays for the building, not the destroyed stock.",
+  },
+  {
+    icon: Warehouse,
+    title: "Warehouses and Logistics Facilities",
+    body: "Batam's industrial zones — Muka Kuning, Kabil, Tanjung Uncang, Batu Ampar — are full of storage warehouses. Cover needs to account for goods type (general vs chemicals vs high-value electronics), stock turnover, and fire protection systems.",
+    note: "Warehouses storing chemicals or flammables must fully disclose this to the underwriter. Concealing it for a lower premium is dangerous — undisclosed hazardous materials found after a fire can void the claim entirely.",
+  },
+  {
+    icon: Building,
+    title: "Hotels and Accommodation",
+    body: "Batam's growing hospitality industry — driven by tourism from Singapore and Malaysia — makes hotel insurance increasingly relevant. Beyond building and furnishings, consider Business Interruption Insurance for lost room revenue during restoration.",
+    note: "Guest liability (public liability) is critical — a bathroom slip, lift malfunction, or pool incident can trigger substantial compensation claims.",
+  },
+];
+
+const MISTAKES = [
+  { icon: TrendingDown, title: "Underinsurance — Sum Insured Too Low", desc: "The most widespread and damaging problem. If a shophouse bought for Rp 500 million ten years ago now costs Rp 900 million to rebuild, but the policy is still at Rp 500 million, a total loss only pays 55% of the actual loss. Update your sum insured every renewal to reflect current replacement cost." },
+  { icon: FileWarning, title: "Failing to Report Changes in Property Use", desc: "If a shophouse insured as a retail store is later converted to a restaurant or workshop, this must be reported — cooking activity carries higher fire risk. Unreported changes can lead to claim rejection on grounds of material misrepresentation." },
+  { icon: ShieldQuestion, title: "Not Reading the Exclusion Clauses", desc: "Gradual wear and deterioration, structural damage from faulty design/construction defects, and losses when a property has been unoccupied for 30+ consecutive days are commonly excluded or require a special endorsement." },
+];
+
+const AGENT_TIPS = [
+  { icon: UserCheck, text: "Ask about specific experience with commercial property — an agent who mainly handles home insurance may not understand a warehouse with high-value stock." },
+  { icon: FileSearch, text: "Ask for an explanation of the exclusion clauses — a good agent proactively explains what is not covered, not just the features that are." },
+  { icon: GitCompareArrows, text: "Compare at least two quotes — commercial property premiums vary considerably between insurers." },
+  { icon: Headset, text: "Ask about claim support — make sure your agent actively assists with claims, not only at the point of sale." },
+];
 
 export default function ArticleCommercialPropertyInsuranceBatamPage() {
   return (
@@ -56,80 +111,41 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
         their commercial properties using a standard home insurance policy because it's
         cheaper and easier to arrange. When a claim arises, they discover that home
         insurance policies contain explicit exclusions for property used for commercial
-        purposes.
+        purposes. There are three fundamental differences from an insurance perspective:
       </p>
-      <p>
-        There are three fundamental differences between commercial and residential property
-        from an insurance perspective:
-      </p>
-      <ul>
-        <li>
-          <strong>Different exposure profile:</strong> Commercial property has higher
-          foot traffic, more intensive activity, and more electrical equipment running
-          simultaneously. This statistically increases the probability of loss-causing
-          events.
-        </li>
-        <li>
-          <strong>More complex value:</strong> Beyond the building value, commercial
-          property has contents value (stock, business equipment) and economic value
-          (revenue potential) that need to be insured separately.
-        </li>
-        <li>
-          <strong>Broader third-party liability:</strong> Commercial property owners
-          are responsible for the safety of visitors, customers, third-party workers,
-          and business partners who operate on their premises. This exposure is
-          significantly greater than for residential property.
-        </li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+        {DIFFERENCES.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+              <Icon size={18} className="text-white" />
+            </div>
+            <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
 
       <h2>Types of Commercial Property in Batam and Their Protection Needs</h2>
-
-      <h3>Shophouses in Trading Areas</h3>
-      <p>
-        Shophouses in Nagoya, Jodoh, Batam Center, and Batu Aji form the backbone of
-        Batam's retail economy. Comprehensive shophouse insurance needs to cover at minimum:
-        the building structure (including interior renovations carried out by tenants),
-        merchandise stock, cashier equipment and electronics, and liability to customers
-        operating inside the shop.
-      </p>
-      <p>
-        One thing frequently overlooked in shophouse insurance is <em>stock coverage</em>.
-        Many insured policies only cover the building, while hundreds of millions of
-        rupiah worth of stock stored inside goes uninsured. If a fire occurs, the policy
-        only pays for the building — not the destroyed stock.
-      </p>
-
-      <h3>Warehouses and Logistics Facilities</h3>
-      <p>
-        Batam's industrial zones — Muka Kuning, Kabil, Tanjung Uncang, Batu Ampar —
-        are full of storage warehouses at various scales. Warehouse insurance has its
-        own nuances, as it needs to account for the type of goods stored (general goods
-        vs chemicals vs high-value electronics), stock volume and turnover, and the
-        fire protection systems in place.
-      </p>
-      <p>
-        Warehouses storing chemicals or flammable materials must make full disclosure
-        to the underwriter. Concealing this information to obtain a lower premium is
-        a dangerous approach — if a fire occurs and the investigation finds undisclosed
-        hazardous materials, the claim can be voided entirely.
-      </p>
-
-      <h3>Hotels and Accommodation</h3>
-      <p>
-        Batam's growing hospitality industry — driven by tourism from Singapore and
-        Malaysia — makes hotel insurance an increasingly relevant need. Beyond the
-        building and furnishings, hotels should consider Business Interruption Insurance,
-        which compensates for lost room revenue during a restoration period following
-        an incident.
-      </p>
-      <p>
-        Guest liability (<em>public liability</em>) is also critical — if a guest has
-        an accident inside the hotel (slipping in the bathroom, a lift malfunction, or
-        an incident at the pool), compensation claims can be substantial.
-      </p>
+      <div className="not-prose space-y-4 my-6">
+        {PROPERTY_TYPES.map(({ icon: Icon, title, body, note }) => (
+          <div key={title} className="rounded-2xl border border-[#e2e8f0] bg-white overflow-hidden">
+            <div className="flex items-center gap-3 p-5 pb-3">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "#0a162810" }}>
+                <Icon size={22} style={{ color: "#0a1628" }} />
+              </div>
+              <p className="font-display font-bold" style={{ color: "#0a1628" }}>{title}</p>
+            </div>
+            <div className="px-5 pb-5">
+              <p className="text-sm text-[#64748b] mb-3">{body}</p>
+              <div className="p-3.5 rounded-xl border-l-4 border-[#c9a84c] bg-[#faf8f3] text-sm text-[#374151]">
+                {note}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Commercial Property Policy Components That Should Be Present</h2>
-
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
         <table className="w-full text-sm">
           <thead className="bg-[#0a1628] text-white">
@@ -161,68 +177,30 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
       </div>
 
       <h2>Three Most Common Mistakes Made by Commercial Property Owners in Batam</h2>
-
-      <h3>1. Underinsurance — Sum Insured Too Low</h3>
-      <p>
-        This is the most widespread structural problem and the most damaging at claim time.
-        Property owners often set their sum insured based on what they paid for the property
-        years ago, while construction and material costs have risen steadily every year.
-        If a shophouse bought for Rp 500 million ten years ago would cost Rp 900 million
-        to rebuild today, but the policy is still at Rp 500 million — then in the event
-        of a total loss, you only receive 55% of the actual loss. The rest comes from
-        your own pocket.
-      </p>
-      <p>
-        The solution is simple: <strong>update your sum insured every time you renew the
-        policy</strong>. Ask your agent to help calculate the current replacement cost,
-        rather than simply copying the figure from last year's policy.
-      </p>
-
-      <h3>2. Failing to Report Changes in Property Use</h3>
-      <p>
-        If a shophouse insured as a retail store is later converted into a restaurant or
-        workshop, this change must be reported to the insurer. A restaurant carries a
-        higher fire risk than a retail shop because of stoves and cooking activities —
-        this different risk profile affects the premium rate and policy clauses. If not
-        reported and a fire occurs as a result of restaurant activities, the claim can
-        be rejected on grounds of material misrepresentation.
-      </p>
-
-      <h3>3. Not Reading the Exclusion Clauses</h3>
-      <p>
-        Every policy contains a fairly long list of exclusions. Some that frequently
-        surprise commercial property owners: damage from gradual wear and deterioration
-        is not covered, structural damage resulting from faulty design or construction
-        defects is not covered, and losses that occur when the property has been unoccupied
-        for more than 30 consecutive days are often excluded or require a special endorsement.
-      </p>
+      <div className="not-prose space-y-4 my-6">
+        {MISTAKES.map(({ icon: Icon, title, desc }, i) => (
+          <div key={title} className="flex items-start gap-4 p-5 rounded-2xl border" style={{ borderColor: "#dc262620", background: "#fef2f2" }}>
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 bg-red-100">
+              <Icon size={20} className="text-red-600" />
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{i + 1}. {title}</p>
+              <p className="text-sm text-[#64748b]">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>How to Choose the Right Commercial Property Insurance Agent</h2>
-      <p>
-        Not every insurance agent is familiar with the nuances of commercial property.
-        Things to look for when selecting an agent for your business property insurance:
-      </p>
-      <ul>
-        <li>
-          <strong>Ask about specific experience with commercial property:</strong> An agent
-          who mainly handles home insurance may not understand the needs of a warehouse
-          with high-value stock.
-        </li>
-        <li>
-          <strong>Ask for an explanation of the exclusion clauses:</strong> A good agent
-          will proactively explain what is <em>not</em> covered, not just sell the
-          features that are.
-        </li>
-        <li>
-          <strong>Compare at least two quotes:</strong> Commercial property premiums vary
-          considerably between insurers. Obtaining two different quotes gives you a much
-          better perspective on what's fair.
-        </li>
-        <li>
-          <strong>Ask about claim support:</strong> Make sure your agent will actively
-          assist with the claims process, not only at the point of policy sale.
-        </li>
-      </ul>
+      <p>Not every insurance agent is familiar with the nuances of commercial property. Things to look for:</p>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {AGENT_TIPS.map(({ icon: Icon, text }) => (
+          <div key={text} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#e2e8f0] shadow-sm">
+            <Icon size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
+            <span className="text-sm text-[#374151]">{text}</span>
+          </div>
+        ))}
+      </div>
 
       <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
         <h3 className="font-display font-bold text-[#0a1628] mb-3">

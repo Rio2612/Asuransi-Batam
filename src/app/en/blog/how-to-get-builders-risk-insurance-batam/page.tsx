@@ -114,8 +114,8 @@ export default function HowToGetBuildersRiskPage() {
       readTime="10 min read"
       category="Marine"
       breadcrumbs={[
-        { label: "Marine Insurance", href: "/asuransi-marine" },
-        { label: "Builders Risk", href: "/asuransi-marine/builders-risk" },
+        { label: "Marine Insurance", href: "/en/marine-insurance" },
+        { label: "Builders Risk", href: "/en/marine-insurance/builders-risk" },
         {
           label: "How to Get Builders Risk Insurance",
           href: "/en/blog/how-to-get-builders-risk-insurance-batam",
@@ -138,7 +138,7 @@ export default function HowToGetBuildersRiskPage() {
         Once a construction project or a ship repair job kicks off, attention is almost entirely absorbed by schedules, budgets, and technical execution. Insurance often gets treated as administrative paperwork that can be sorted out &quot;later&quot; — until an incident happens mid-project and everyone realizes an asset worth billions of rupiah was never properly protected.
       </p>
       <p>
-        <Link href="/asuransi-marine/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">Builders Risk insurance</Link> (sometimes also written as Contractors&apos; All Risks or Erection All Risks) was built specifically to close that gap: it protects a project while it is being built, not an asset that is already finished. For projects like building construction, plant installation, and especially ship construction or repair at a shipyard, the construction period itself is exactly when the project is most exposed to major loss.
+        <Link href="/en/marine-insurance/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">Builders Risk insurance</Link> (sometimes also written as Contractors&apos; All Risks or Erection All Risks) was built specifically to close that gap: it protects a project while it is being built, not an asset that is already finished. For projects like building construction, plant installation, and especially ship construction or repair at a shipyard, the construction period itself is exactly when the project is most exposed to major loss.
       </p>
 
       <div className="mt-14 mb-3 flex items-center gap-3">
@@ -244,7 +244,7 @@ export default function HowToGetBuildersRiskPage() {
       </div>
       <h2 className="text-center">What Is and Isn&apos;t Covered Under a Builders Risk Policy</h2>
       <p>
-        Builders Risk is one of the products within the <Link href="/asuransi-marine" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">marine insurance</Link> line we handle in Batam, with coverage characteristics specific to the construction period. Generally speaking, here is how covered risks and exclusions break down:
+        Builders Risk is one of the products within the <Link href="/en/marine-insurance" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">marine insurance</Link> line we handle in Batam, with coverage characteristics specific to the construction period. Generally speaking, here is how covered risks and exclusions break down:
       </p>
 
       <div className="not-prose mt-8 mb-10 grid gap-5 sm:grid-cols-2">
@@ -317,7 +317,7 @@ export default function HowToGetBuildersRiskPage() {
             body: (
               <>
                 A single exclusion clause can determine whether a claim worth hundreds of millions of rupiah gets paid in full or denied. Working with an insurance consultant who understands the nature of construction and shipyard projects — not just shopping for the cheapest premium — is the step that most often saves a project when an incident actually happens. You can review{" "}
-                <Link href="/asuransi-marine/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">
+                <Link href="/en/marine-insurance/builders-risk" className="text-[#1a4fa0] hover:text-[#c9a84c] underline transition-colors">
                   our Builders Risk policy coverage here
                 </Link>
                 .
@@ -407,7 +407,7 @@ export default function HowToGetBuildersRiskPage() {
             Consult via WhatsApp
           </a>
           <Link
-            href="/asuransi-marine/builders-risk"
+            href="/en/marine-insurance/builders-risk"
             className="px-5 py-3 border border-white/30 text-white font-semibold rounded-xl text-sm text-center hover:bg-white/10 transition-colors"
           >
             View Builders Risk Product
@@ -421,13 +421,13 @@ export default function HowToGetBuildersRiskPage() {
         </p>
         <div className="flex flex-col gap-3">
           <Link
-            href="/asuransi-marine"
+            href="/en/marine-insurance"
             className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors"
           >
             → Marine Insurance Batam
           </Link>
           <Link
-            href="/asuransi-marine/builders-risk"
+            href="/en/marine-insurance/builders-risk"
             className="text-sm text-[#1a4fa0] hover:text-[#c9a84c] transition-colors"
           >
             → Builders Risk Insurance Product (Batam)

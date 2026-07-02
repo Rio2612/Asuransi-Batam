@@ -2,6 +2,15 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  Ship,
+  Package,
+  Gavel,
+  Percent,
+  Anchor,
+  Container,
+  Layers,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Marine Hull vs Marine Cargo Insurance – What's the Difference?",
@@ -54,21 +63,31 @@ export default function MarineHullVsCargoPage() {
         It is not. <strong>Marine hull insurance and marine cargo insurance are two entirely separate products</strong> — covering different objects, for different parties, through different claims processes.
       </p>
 
-      <h2>What Is Marine Hull Insurance?</h2>
-      <p>
-        Marine hull insurance protects the <strong>physical vessel and its permanently fitted equipment</strong> — the hull structure, machinery, navigation systems, and everything that forms a permanent part of the ship.
-      </p>
-      <p><strong>Who buys it:</strong> Ship owners and fleet operators. In Batam, this includes shipping companies, ferry operators, tug boat owners, and patrol vessel operators.</p>
-      <p><strong>What it covers:</strong> hull damage from collision, grounding, or severe weather; unexpected machinery breakdown (optional); collision liability to another vessel; and total loss of the vessel.</p>
-      <p><strong>What it does not cover:</strong> cargo or goods on board the vessel.</p>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+            <Ship size={24} className="text-white" />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>Marine Hull Insurance</h3>
+          <p className="text-sm text-[#64748b] mb-3">
+            Protects the <strong className="text-[#0a1628]">physical vessel and its permanently fitted equipment</strong> — the hull structure, machinery, navigation systems, and everything that forms a permanent part of the ship.
+          </p>
+          <p className="text-sm text-[#64748b] mb-1"><strong className="text-[#0a1628]">Who buys it:</strong> ship owners and fleet operators — shipping companies, ferry operators, tug boat owners, patrol vessel operators.</p>
+          <p className="text-sm text-[#64748b]"><strong className="text-[#0a1628]">Covers:</strong> hull damage from collision, grounding, or severe weather; machinery breakdown (optional); collision liability; total loss.</p>
+        </div>
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <Package size={24} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>Marine Cargo Insurance</h3>
+          <p className="text-sm text-[#64748b] mb-3">
+            Protects <strong className="text-[#0a1628]">the goods being transported</strong>, not the vessel. Follows the goods from the shipper's warehouse to the consignee's warehouse — including terminal time, inside the container, and across transport modes.
+          </p>
+          <p className="text-sm text-[#64748b]"><strong className="text-[#0a1628]">Who buys it:</strong> the cargo owner — shipper, importer, exporter, or trading company. Who bears the risk depends on the agreed Incoterms.</p>
+        </div>
+      </div>
 
-      <h2>What Is Marine Cargo Insurance?</h2>
-      <p>
-        Marine cargo insurance protects <strong>the goods being transported</strong>, not the vessel carrying them. The policy follows the goods from the shipper&apos;s warehouse to the consignee&apos;s warehouse — including time at the terminal, inside the container, and across different transport modes.
-      </p>
-      <p><strong>Who buys it:</strong> The cargo owner — shipper, importer, exporter, or trading company. In international trade, who bears the risk depends on the agreed Incoterms.</p>
-
-      <p><strong>Three coverage levels under Institute Cargo Clauses (ICC):</strong></p>
+      <h2>Three Coverage Levels Under Institute Cargo Clauses (ICC)</h2>
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse text-sm">
           <thead>
@@ -124,26 +143,49 @@ export default function MarineHullVsCargoPage() {
       </div>
 
       <h2>How Both Work Together in a Single Incident</h2>
-      <p>
-        Consider a small cargo vessel on the Batam–Jakarta route that catches fire on deck, destroying part of the cargo. The ship owner claims hull and structural damage against their hull policy. Each cargo owner independently claims their damaged goods against their own cargo policy. Both claims run <strong>in parallel and independently</strong> — one does not affect the other.
-      </p>
-      <p>This is why a single incident can generate dozens of separate cargo claims from different cargo owners, while there is only one hull claim from the vessel owner.</p>
+      <div className="not-prose my-6 p-5 rounded-2xl border-l-4 border-[#c9a84c] bg-[#faf8f3] flex items-start gap-4">
+        <Container size={22} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+        <p className="text-sm text-[#374151] m-0">
+          Consider a small cargo vessel on the Batam–Jakarta route that catches fire on deck, destroying part of the cargo. The ship owner claims hull and structural damage against their hull policy. Each cargo owner independently claims their damaged goods against their own cargo policy. Both claims run <strong style={{ color: "#0a1628" }}>in parallel and independently</strong> — one does not affect the other. This is why a single incident can generate dozens of separate cargo claims from different cargo owners, while there is only one hull claim from the vessel owner.
+        </p>
+      </div>
 
       <h2>Does the Carrier Cover Cargo Damage?</h2>
-      <p>
-        Under international maritime law — the Hague-Visby Rules — carriers do have limited liability for cargo damage. But there are three practical problems: carrier liability is capped (calculated per package or per kilogram, often far below actual value), pursuing a carrier takes months or years through legal proceedings, and carriers have broad exclusions including acts of God and force majeure.
-      </p>
-      <p>This is why cargo owners should hold their own cargo policy rather than relying solely on carrier responsibility.</p>
+      <div className="not-prose my-6 p-5 rounded-2xl border flex items-start gap-4" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+        <Gavel size={22} className="flex-shrink-0 mt-0.5" style={{ color: "#0a1628" }} />
+        <p className="text-sm text-[#374151] m-0">
+          Under international maritime law — the Hague-Visby Rules — carriers do have limited liability for cargo damage. But there are three practical problems: carrier liability is capped (calculated per package or per kilogram, often far below actual value), pursuing a carrier takes months or years through legal proceedings, and carriers have broad exclusions including acts of God and force majeure. This is why cargo owners should hold their own cargo policy rather than relying solely on carrier responsibility.
+        </p>
+      </div>
 
       <h2>Who Should Buy What?</h2>
-      <p><strong>Buy Marine Hull if you</strong> own or operate a commercial vessel, run a fleet of tug boats, ferries, or patrol vessels operating in Batam waters.</p>
-      <p><strong>Buy Marine Cargo if you</strong> import or export goods regularly by sea or air, are a trading company, or are a distributor receiving large inbound shipments.</p>
-      <p><strong>Buy both if you</strong> own the vessel and also carry your own cargo on board.</p>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+        <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+          <Anchor size={20} className="mb-2" style={{ color: "#0a1628" }} />
+          <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy Marine Hull if you</p>
+          <p className="text-sm text-[#64748b]">Own or operate a commercial vessel, or run a fleet of tug boats, ferries, or patrol vessels in Batam waters.</p>
+        </div>
+        <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+          <Package size={20} className="mb-2" style={{ color: "#0a1628" }} />
+          <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy Marine Cargo if you</p>
+          <p className="text-sm text-[#64748b]">Import or export goods regularly by sea or air, run a trading company, or distribute large inbound shipments.</p>
+        </div>
+        <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+          <Layers size={20} className="mb-2" style={{ color: "#0a1628" }} />
+          <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy both if you</p>
+          <p className="text-sm text-[#64748b]">Own the vessel and also carry your own cargo on board.</p>
+        </div>
+      </div>
 
       <h2>What Does It Cost?</h2>
-      <p>
-        Marine cargo premiums typically range from <strong>0.1% to 0.5% of cargo value</strong>, depending on the type of goods, route, and coverage clause. Short routes like Batam–Singapore or Batam–Jakarta tend to attract lower rates than long-haul international corridors.
-      </p>
+      <div className="not-prose my-6 p-5 rounded-2xl border flex items-start gap-4" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+        <Percent size={22} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+        <p className="text-sm text-[#374151] m-0">
+          Marine cargo premiums typically range from <strong style={{ color: "#0a1628" }}>0.1% to 0.5% of cargo value</strong>, depending
+          on the type of goods, route, and coverage clause. Short routes like Batam–Singapore or Batam–Jakarta
+          tend to attract lower rates than long-haul international corridors.
+        </p>
+      </div>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
         <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Free Consultation – Find the Right Cover</h3>

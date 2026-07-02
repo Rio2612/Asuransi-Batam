@@ -2,6 +2,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  ShieldCheck,
+  ShieldOff,
+  CircleCheck,
+  CircleX,
+  Wallet,
+  Car,
+  Calculator,
+  ArrowRight,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "All Risk vs TLO Car Insurance – Which One Is Right for You?",
@@ -27,6 +37,21 @@ const schema = {
   inLanguage: "en",
 };
 
+const COMPARISON_ROWS: [string, string, string][] = [
+  ["Minor damage", "Covered", "Not covered"],
+  ["Total loss", "Covered", "Covered"],
+  ["Theft", "Covered", "Covered"],
+  ["Premium rate", "Higher (1.5–3.5%)", "Lower (0.2–0.7%)"],
+  ["Best suited for", "New or high-value cars", "Older or lower-value cars"],
+];
+
+const RECOMMENDATIONS = [
+  { range: "Above Rp 300 million", verdict: "All Risk is strongly recommended", color: "#0a1628" },
+  { range: "Rp 150–300 million", verdict: "All Risk is recommended; TLO if budget is a constraint", color: "#1a4fa0" },
+  { range: "Below Rp 150 million", verdict: "TLO is generally sufficient", color: "#4a7fb5" },
+  { range: "Under financing (KKB)", verdict: "All Risk is mandatory for the duration of the loan", color: "#c9a84c" },
+];
+
 export default function ArticleAllRiskTLOENPage() {
   return (
     <ArticleLayout
@@ -46,45 +71,54 @@ export default function ArticleAllRiskTLOENPage() {
         the right call for your situation.
       </p>
 
-      <h2>What Is All Risk (Comprehensive) Insurance?</h2>
-      <p>
-        All Risk — also called Comprehensive cover — is a type of car insurance that covers
-        <strong> all physical damage</strong> to your vehicle, whether minor, moderate, or
-        severe. True to its name, almost every risk is covered unless it is explicitly excluded
-        in the policy wording.
-      </p>
-      <p>
-        <strong>What All Risk covers:</strong>
-      </p>
-      <ul>
-        <li>Minor damage (scratches, dents, cracked windscreen)</li>
-        <li>Moderate damage from collisions</li>
-        <li>Total loss from a serious accident</li>
-        <li>Theft (vehicle stolen)</li>
-        <li>Vehicle fire</li>
-      </ul>
+      {/* Two-column type cards */}
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-5 my-8">
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #0a1628, #1a4fa0)" }}>
+            <ShieldCheck size={24} className="text-white" />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>All Risk (Comprehensive)</h3>
+          <p className="text-sm text-[#64748b] mb-4">
+            Covers <strong className="text-[#0a1628]">all physical damage</strong> to your vehicle —
+            minor, moderate, or severe — unless explicitly excluded in the policy wording.
+          </p>
+          <ul className="space-y-2">
+            {["Minor damage (scratches, dents, cracked windscreen)", "Moderate damage from collisions", "Total loss from a serious accident", "Theft (vehicle stolen)", "Vehicle fire"].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-[#374151]">
+                <CircleCheck size={16} className="flex-shrink-0 mt-0.5" style={{ color: "#1a4fa0" }} />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <h2>What Is TLO (Total Loss Only) Insurance?</h2>
-      <p>
-        TLO — Total Loss Only — covers your vehicle only if it is{" "}
-        <strong>written off (damage exceeding 75% of the vehicle's value) or stolen</strong>.
-        Minor and moderate damage is not covered under this type of policy.
-      </p>
-      <p>
-        <strong>What TLO covers:</strong>
-      </p>
-      <ul>
-        <li>Theft (vehicle stolen)</li>
-        <li>Damage where the repair cost exceeds 75% of the vehicle's market value</li>
-      </ul>
-      <p>
-        <strong>What TLO does NOT cover:</strong>
-      </p>
-      <ul>
-        <li>Scratches and minor dents</li>
-        <li>Glass damage</li>
-        <li>Accident damage where the repair cost is below 75% of the vehicle's value</li>
-      </ul>
+        <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <ShieldOff size={24} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>TLO (Total Loss Only)</h3>
+          <p className="text-sm text-[#64748b] mb-4">
+            Covers your vehicle only if it is{" "}
+            <strong className="text-[#0a1628]">written off (damage exceeding 75% of value) or stolen</strong>.
+          </p>
+          <ul className="space-y-2 mb-3">
+            {["Theft (vehicle stolen)", "Damage where repair cost exceeds 75% of market value"].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-[#374151]">
+                <CircleCheck size={16} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <ul className="space-y-2">
+            {["Scratches and minor dents", "Glass damage", "Accident damage below 75% of value"].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-sm text-[#94a3b8]">
+                <CircleX size={16} className="flex-shrink-0 mt-0.5 text-[#cbd5e1]" />
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
       <h2>Side-by-Side Comparison: All Risk vs TLO</h2>
       <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
@@ -97,13 +131,7 @@ export default function ArticleAllRiskTLOENPage() {
             </tr>
           </thead>
           <tbody>
-            {[
-              ["Minor damage", "✅ Covered", "❌ Not covered"],
-              ["Total loss", "✅ Covered", "✅ Covered"],
-              ["Theft", "✅ Covered", "✅ Covered"],
-              ["Premium rate", "Higher (1.5–3.5%)", "Lower (0.2–0.7%)"],
-              ["Best suited for", "New or high-value cars", "Older or lower-value cars"],
-            ].map(([a, b, c], i) => (
+            {COMPARISON_ROWS.map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
                 <td className="p-4 text-center text-[#64748b]">{b}</td>
@@ -114,62 +142,51 @@ export default function ArticleAllRiskTLOENPage() {
         </table>
       </div>
 
-      <h2>When Should You Choose All Risk?</h2>
-      <ul>
-        <li>Your vehicle is new or valued above Rp 200 million</li>
-        <li>
-          Your vehicle is under a financing agreement (KKB) — most banks in Indonesia
-          require All Risk cover throughout the loan period
-        </li>
-        <li>
-          You drive frequently in busy urban areas where minor accidents and parking
-          damage are a realistic daily risk
-        </li>
-        <li>You want complete peace of mind regardless of the type of damage</li>
-      </ul>
-
-      <h2>When Should You Choose TLO?</h2>
-      <ul>
-        <li>Your vehicle is more than 7–10 years old</li>
-        <li>The vehicle's current market value is relatively low (below Rp 150 million)</li>
-        <li>You have a limited insurance budget and want to keep premiums minimal</li>
-        <li>The vehicle is used occasionally or only for specific purposes</li>
-      </ul>
-
-      <h2>Recommendation by Vehicle Value</h2>
-      <div className="p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] my-6">
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3">
-            <span className="text-[#c9a84c] font-bold mt-0.5">→</span>
-            <div>
-              <strong>Above Rp 300 million:</strong> All Risk is strongly recommended
-            </div>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-[#c9a84c] font-bold mt-0.5">→</span>
-            <div>
-              <strong>Rp 150–300 million:</strong> All Risk is recommended; TLO if budget is a constraint
-            </div>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-[#c9a84c] font-bold mt-0.5">→</span>
-            <div>
-              <strong>Below Rp 150 million:</strong> TLO is generally sufficient
-            </div>
-          </li>
-          <li className="flex items-start gap-3">
-            <span className="text-[#c9a84c] font-bold mt-0.5">→</span>
-            <div>
-              <strong>Under financing (KKB):</strong> All Risk is mandatory for the duration of the loan
-            </div>
-          </li>
-        </ul>
+      <h2>When Should You Choose Which?</h2>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-5 my-6">
+        <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+          <p className="font-bold text-sm mb-3 flex items-center gap-2" style={{ color: "#0a1628" }}>
+            <Car size={16} /> Choose All Risk if…
+          </p>
+          <ul className="space-y-2 text-sm text-[#374151]">
+            <li>Your vehicle is new or valued above Rp 200 million</li>
+            <li>It's under a financing agreement (KKB) — most banks require All Risk throughout the loan</li>
+            <li>You drive frequently in busy urban areas with realistic daily accident/parking risk</li>
+            <li>You want complete peace of mind regardless of damage type</li>
+          </ul>
+        </div>
+        <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+          <p className="font-bold text-sm mb-3 flex items-center gap-2" style={{ color: "#0a1628" }}>
+            <Wallet size={16} /> Choose TLO if…
+          </p>
+          <ul className="space-y-2 text-sm text-[#374151]">
+            <li>Your vehicle is more than 7–10 years old</li>
+            <li>Its current market value is relatively low (below Rp 150 million)</li>
+            <li>You have a limited budget and want minimal premiums</li>
+            <li>The vehicle is used occasionally or for specific purposes only</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Calculate Your Car Insurance Premium Now
-        </h3>
+      <h2>Recommendation by Vehicle Value</h2>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {RECOMMENDATIONS.map((r) => (
+          <div key={r.range} className="rounded-2xl p-5 border" style={{ borderColor: r.color + "30", background: r.color + "08" }}>
+            <span className="text-xs font-bold px-3 py-1 rounded-full text-white" style={{ background: r.color }}>
+              {r.range}
+            </span>
+            <p className="text-sm text-[#374151] mt-3">{r.verdict}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="not-prose my-8 p-6 rounded-2xl border" style={{ borderColor: "#c9a84c30", background: "linear-gradient(135deg, #faf8f3, #ffffff)" }}>
+        <div className="flex items-center gap-3 mb-3">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <Calculator size={20} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-[#0a1628] m-0">Calculate Your Car Insurance Premium Now</h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Use our premium calculator to get an instant estimate for both All Risk and TLO cover,
           based on the latest OJK official rate tables for Batam.
@@ -177,9 +194,9 @@ export default function ArticleAllRiskTLOENPage() {
         <div className="flex flex-wrap gap-3">
           <Link
             href="/en/car-insurance-calculator"
-            className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm hover:bg-[#132040] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm hover:bg-[#132040] transition-colors"
           >
-            Car Insurance Calculator
+            Car Insurance Calculator <ArrowRight size={16} />
           </Link>
           <Link
             href="/en/vehicle-insurance/car-insurance-batam"
@@ -189,7 +206,7 @@ export default function ArticleAllRiskTLOENPage() {
           </Link>
         </div>
       </div>
-    
+
       {/* Related Links */}
       <div className="not-prose mt-10 pt-8 border-t border-gray-200">
         <h2 className="text-lg font-bold mb-6" style={{ color: "#0a1628", fontFamily: "Syne, sans-serif" }}>Related Pages</h2>
@@ -215,4 +232,3 @@ export default function ArticleAllRiskTLOENPage() {
     </ArticleLayout>
   );
 }
-

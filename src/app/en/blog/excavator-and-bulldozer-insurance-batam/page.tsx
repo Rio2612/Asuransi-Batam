@@ -2,6 +2,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
+import {
+  Mountain,
+  Wrench,
+  Flame,
+  Truck,
+  Scale,
+  Gauge,
+  CircleCheck,
+  CircleX,
+  HelpCircle,
+  PhoneCall,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Excavator and Bulldozer Insurance in Batam – Coverage, Protection & How to Claim",
@@ -23,6 +35,46 @@ const schema = {
   dateModified: "2026-05-06",
   author: { "@type": "Person", name: "Rio" },
   publisher: { "@type": "Organization", name: "Asuransi Batam" },
+};
+
+const RISKS = [
+  { icon: Mountain, title: "Sliding and overturning on sloped terrain", desc: "Excavators near embankment edges or slopes risk losing stability, especially on wet ground or during a landslide. Repair costs can reach hundreds of millions of rupiah." },
+  { icon: Wrench, title: "Boom and arm damage from impact", desc: "The hydraulic arm and boom are highly vulnerable when digging hard materials like bedrock or old concrete. Replacement requires imported parts with long lead times." },
+  { icon: Gauge, title: "Bulldozer undercarriage damage", desc: "The track system wears quickly on rocky terrain. Replacing a full undercarriage set can cost upwards of Rp 100 million depending on unit size." },
+  { icon: Flame, title: "Fire from hydraulic oil leaks", desc: "High-pressure hydraulic systems leaking onto hot components is one of the most underestimated causes of fire that operators fail to anticipate." },
+  { icon: Truck, title: "Transit damage by flatbed trailer", desc: "Moving units between project sites carries risk — from units falling during loading to damage caused by poor road conditions during transport." },
+];
+
+const COVERAGE = [
+  { item: "Operational accidents (overturning, collision, sinking into ground)", status: "covered" },
+  { item: "Fire and explosion", status: "covered" },
+  { item: "Natural disasters (flood, high winds, earthquake)", status: "covered" },
+  { item: "Transit damage / transport between locations", status: "covered" },
+  { item: "Third-party liability (persons/property)", status: "optional" },
+  { item: "Sudden mechanical breakdown", status: "optional" },
+  { item: "Normal wear and gradual deterioration", status: "excluded" },
+  { item: "Damage from intentional overloading", status: "excluded" },
+  { item: "Routine maintenance costs (scheduled servicing)", status: "excluded" },
+];
+
+const CLAIM_STEPS = [
+  { title: "Stop operations and secure the area", desc: "As soon as damage occurs, stop using the unit. Do not attempt any repairs before the surveyor arrives — doing so can void the claim on the grounds of altering the evidence." },
+  { title: "Document the damage thoroughly", desc: "Take photos and videos from multiple angles — external physical damage, surrounding site conditions, and the instrument panel if accessible. Record the exact time and location." },
+  { title: "Report to your insurance agent within 3 × 24 hours", desc: "Nearly all EAR policies require reporting within this window. Missing the deadline is the most common — and most easily avoidable — reason for claim rejection." },
+  { title: "Wait for the survey appointment", desc: "The insurance surveyor will visit the site to assess the damage. Do not move the unit to a workshop before the survey is complete unless you have written permission." },
+  { title: "Follow the panel workshop recommendation", desc: "Once the claim is approved, repairs are directed to an authorised workshop or dealer. Repairs outside the panel without written approval generally cannot be claimed." },
+];
+
+const FAQS = [
+  { q: "Can a rented excavator be insured by the hirer?", a: "Yes, but care is needed. A hirer can take out a policy in their own name to cover their liability during the rental period. However, it must be confirmed there is no double insurance — if the equipment owner already has an active policy covering the same period, complications can arise at claims time. Coordinate with the owner before taking out an additional policy." },
+  { q: "What if the excavator is damaged due to operator error?", a: "EAR policies generally cover damage caused by operator negligence as long as it is not intentional (willful misconduct). Damage caused by an unqualified or uncertified operator can be grounds for rejection in some policies — make sure all operators hold a valid SIO (Operator Licence)." },
+  { q: "Is the policy still valid when the equipment is on standby?", a: "Yes. As long as the policy is active and premiums are paid, coverage remains in place even when the unit is parked or on standby — including fire, theft, or natural disaster risks while not in use." },
+];
+
+const statusStyle: Record<string, { color: string; icon: typeof CircleCheck; label: string }> = {
+  covered: { color: "#1a4fa0", icon: CircleCheck, label: "Covered" },
+  optional: { color: "#a07830", icon: CircleCheck, label: "Optional extension" },
+  excluded: { color: "#94a3b8", icon: CircleX, label: "Not covered" },
 };
 
 export default function ArticleExcavatorBulldozerInsurancePage() {
@@ -72,64 +124,33 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
         Before choosing a policy, it's important to understand the types of risks that
         most commonly affect both machines based on actual field conditions:
       </p>
-      <ul>
-        <li>
-          <strong>Sliding and overturning on sloped terrain:</strong> Excavators operating
-          near embankment edges or slopes risk losing stability, especially on wet ground
-          or during a landslide. Repair costs for an overturned unit can reach hundreds of
-          millions of rupiah, not including the cost of recovery from difficult terrain.
-        </li>
-        <li>
-          <strong>Boom and arm damage from impact:</strong> The hydraulic arm and boom of
-          an excavator are highly vulnerable when digging hard materials like bedrock or
-          old concrete. Boom replacement requires imported parts with long lead times.
-        </li>
-        <li>
-          <strong>Bulldozer undercarriage damage:</strong> The track system of a bulldozer
-          wears quickly on rocky terrain. Replacing a full undercarriage set can cost
-          upwards of Rp 100 million depending on the unit's size.
-        </li>
-        <li>
-          <strong>Fire from hydraulic oil leaks:</strong> High-pressure hydraulic systems
-          that leak onto hot components are one of the most frequently underestimated
-          causes of fire that operators fail to anticipate.
-        </li>
-        <li>
-          <strong>Transit damage by flatbed trailer:</strong> Moving units between project
-          sites carries risk — from units falling during loading to damage caused by poor
-          road conditions during transport.
-        </li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {RISKS.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "#0a162810" }}>
+              <Icon size={20} style={{ color: "#0a1628" }} />
+            </div>
+            <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
 
       <h2>What Does an EAR Policy Cover for Excavators and Bulldozers?</h2>
-
-      <div className="overflow-x-auto my-6 rounded-2xl border border-[#e2e8f0]">
-        <table className="w-full text-sm">
-          <thead className="bg-[#0a1628] text-white">
-            <tr>
-              <th className="text-left p-4">Type of Risk</th>
-              <th className="p-4 text-left">Covered by EAR?</th>
-            </tr>
-          </thead>
-          <tbody>
-            {[
-              ["Operational accidents (overturning, collision, sinking into ground)", "✅ Covered"],
-              ["Fire and explosion", "✅ Covered"],
-              ["Natural disasters (flood, high winds, earthquake)", "✅ Covered"],
-              ["Transit damage / transport between locations", "✅ Covered"],
-              ["Third-party liability (persons/property)", "✅ Optional (extension)"],
-              ["Sudden mechanical breakdown", "✅ Optional (MB extension)"],
-              ["Normal wear and gradual deterioration", "❌ Not covered"],
-              ["Damage from intentional overloading", "❌ Not covered"],
-              ["Routine maintenance costs (scheduled servicing)", "❌ Not covered"],
-            ].map(([a, b], i) => (
-              <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
-                <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div className="not-prose grid grid-cols-1 gap-2.5 my-6">
+        {COVERAGE.map(({ item, status }) => {
+          const s = statusStyle[status];
+          const Icon = s.icon;
+          return (
+            <div key={item} className="flex items-center gap-3 p-4 rounded-xl border" style={{ borderColor: s.color + "25", background: s.color + "08" }}>
+              <Icon size={18} className="flex-shrink-0" style={{ color: s.color }} />
+              <span className="text-sm text-[#374151] flex-1">{item}</span>
+              <span className="text-xs font-bold px-2.5 py-1 rounded-full text-white flex-shrink-0" style={{ background: s.color }}>
+                {s.label}
+              </span>
+            </div>
+          );
+        })}
       </div>
 
       <h2>How to Determine the Right Sum Insured</h2>
@@ -137,20 +158,30 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
         This is the question that comes up most often when equipment owners arrange
         insurance for the first time. There are two common approaches:
       </p>
-      <ul>
-        <li>
-          <strong>Market Value:</strong> The current resale value of the unit in the
-          secondhand market, taking into account age and machine hours. More commonly
-          used for units over three years old. In the event of a total loss, compensation
-          is based on the market value at the time of the incident.
-        </li>
-        <li>
-          <strong>Replacement Value:</strong> The cost of a new unit with equivalent
-          specifications at current market prices. Premiums are higher, but the payout
-          is more favourable since no depreciation is deducted. Best suited to new units
-          or units still under a financing arrangement.
-        </li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-5 my-6">
+        <div className="rounded-2xl p-6 border-2" style={{ borderColor: "#0a162820", background: "#0a16280a" }}>
+          <div className="flex items-center gap-2 mb-2">
+            <Scale size={18} style={{ color: "#0a1628" }} />
+            <p className="font-bold text-sm" style={{ color: "#0a1628" }}>Market Value</p>
+          </div>
+          <p className="text-sm text-[#64748b]">
+            The current resale value of the unit in the secondhand market, taking into account
+            age and machine hours. More commonly used for units over three years old — payout
+            reflects market value at the time of the incident.
+          </p>
+        </div>
+        <div className="rounded-2xl p-6 border-2" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+          <div className="flex items-center gap-2 mb-2">
+            <Scale size={18} style={{ color: "#a07830" }} />
+            <p className="font-bold text-sm" style={{ color: "#0a1628" }}>Replacement Value</p>
+          </div>
+          <p className="text-sm text-[#64748b]">
+            The cost of a new unit with equivalent specifications at current market prices.
+            Premiums are higher, but payout is more favourable since no depreciation is deducted.
+            Best for new units or units under financing.
+          </p>
+        </div>
+      </div>
       <p>
         Insurance companies typically require a physical survey of the unit before issuing
         a policy. The surveyor will inspect the physical condition, check the hour meter
@@ -159,65 +190,40 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
       </p>
 
       <h2>Claims Process: What to Do When Damage Occurs</h2>
-      <ol>
-        <li>
-          <strong>Stop operations and secure the area:</strong> As soon as damage occurs,
-          stop using the unit. Do not attempt any repairs before the surveyor arrives —
-          doing so can void the claim on the grounds of altering the evidence.
-        </li>
-        <li>
-          <strong>Document the damage thoroughly:</strong> Take photos and videos from
-          multiple angles — external physical damage, the surrounding site conditions,
-          and the instrument panel if it can still be accessed. Record the exact time
-          and location of the incident.
-        </li>
-        <li>
-          <strong>Report to your insurance agent within 3 × 24 hours:</strong> Nearly
-          all EAR policies require reporting within this window. Missing the deadline
-          is the most common — and most easily avoidable — reason for claim rejection.
-        </li>
-        <li>
-          <strong>Wait for the survey appointment:</strong> The insurance surveyor will
-          visit the site to assess the damage. Do not move the unit to a workshop before
-          the survey is complete unless you have written permission from the insurer.
-        </li>
-        <li>
-          <strong>Follow the panel workshop recommendation:</strong> Once the claim is
-          approved, repairs are directed to an authorised workshop or dealer. Repairs
-          outside the panel without written approval generally cannot be claimed.
-        </li>
-      </ol>
+      <div className="not-prose space-y-4 my-6">
+        {CLAIM_STEPS.map((step, i) => (
+          <div key={step.title} className="flex items-start gap-4 p-5 rounded-2xl bg-[#faf8f3] border border-[#e2e8f0]">
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center text-white font-bold text-sm flex-shrink-0" style={{ background: "#0a1628" }}>
+              {i + 1}
+            </div>
+            <div>
+              <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{step.title}</p>
+              <p className="text-sm text-[#64748b]">{step.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Frequently Asked Questions About Excavator Insurance</h2>
+      <div className="not-prose space-y-3 my-6">
+        {FAQS.map((faq) => (
+          <div key={faq.q} className="rounded-2xl border border-[#e2e8f0] p-5 bg-white">
+            <div className="flex items-start gap-2.5 mb-2">
+              <HelpCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
+              <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{faq.q}</p>
+            </div>
+            <p className="text-sm text-[#64748b] pl-[26px]">{faq.a}</p>
+          </div>
+        ))}
+      </div>
 
-      <h3>Can a rented excavator be insured by the hirer?</h3>
-      <p>
-        Yes, but care is needed. A hirer can take out a policy in their own name to cover
-        their liability during the rental period. However, it must be confirmed there is
-        no <em>double insurance</em> — if the equipment owner already has an active policy
-        covering the same period, complications can arise at claims time. Coordinate with
-        the owner before taking out an additional policy.
-      </p>
-
-      <h3>What if the excavator is damaged due to operator error?</h3>
-      <p>
-        EAR policies generally cover damage caused by operator <em>negligence</em> as long
-        as the negligence is not intentional (willful misconduct). Damage caused by an
-        unqualified or uncertified operator can be grounds for rejection in some policies —
-        make sure all your operators hold a valid SIO (Operator Licence) at all times.
-      </p>
-
-      <h3>Is the policy still valid when the equipment is not in operation (standby)?</h3>
-      <p>
-        Yes. As long as the policy is active and premiums are paid, coverage remains in
-        place even when the unit is parked or on standby — including risks such as fire,
-        theft, or natural disaster occurring while the unit is not in use.
-      </p>
-
-      <div className="my-8 p-6 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0]">
-        <h3 className="font-display font-bold text-[#0a1628] mb-3">
-          Free Heavy Equipment Insurance Consultation in Batam
-        </h3>
+      <div className="not-prose my-8 p-6 rounded-2xl border" style={{ borderColor: "#c9a84c30", background: "linear-gradient(135deg, #faf8f3, #ffffff)" }}>
+        <div className="flex items-center gap-3 mb-3">
+          <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
+            <PhoneCall size={20} style={{ color: "#0a1628" }} />
+          </div>
+          <h3 className="font-display font-bold text-[#0a1628] m-0">Free Heavy Equipment Insurance Consultation in Batam</h3>
+        </div>
         <p className="text-[#64748b] mb-4">
           Every piece of heavy equipment has a different risk profile depending on the
           type of work, operating terrain, and machine age. Rio is ready to help calculate

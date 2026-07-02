@@ -2,6 +2,20 @@
 import type { Metadata } from "next";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
+import {
+  Ship,
+  Container,
+  Zap,
+  Plane,
+  TrafficCone,
+  CloudLightning,
+  PackageX,
+  ShieldAlert,
+  Droplets,
+  FileCheck,
+  Percent,
+  Layers,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Batam–Singapore Cargo Shipping Insurance – Complete Guide for Exporters",
@@ -35,6 +49,21 @@ const schema = {
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance" },
 };
 
+const METHODS = [
+  { icon: Ship, title: "Roll-on/Roll-off (RoRo) Ferry", desc: "Trucks or containers drive directly onto the vessel. Transit time: approximately 45–60 minutes." },
+  { icon: Container, title: "Conventional Ferry + Barge", desc: "Cargo transported separately from vehicles, typically in containers or break-bulk. Used for heavy or oversized cargo." },
+  { icon: Zap, title: "Speedboat / Cargo Pompong", desc: "Small fast craft for urgent or small-volume shipments. More vulnerable to water ingress due to vessel size." },
+  { icon: Plane, title: "Air Freight via Hang Nadim Airport", desc: "For high-value or time-critical goods. Standard marine cargo policies generally extend to cover air freight." },
+];
+
+const RISKS = [
+  { icon: TrafficCone, title: "Singapore Strait Traffic Congestion", desc: "Over 1,000 vessel movements per day — supertankers, bulk carriers, and large container ships sharing the passage with small ferry craft. Collision and near-miss risk is higher here than on open ocean routes." },
+  { icon: CloudLightning, title: "Unpredictable Weather During Monsoon Transitions", desc: "Between March–May and October–December, sudden squalls with high waves and strong winds can develop quickly. Smaller vessels are particularly vulnerable." },
+  { icon: PackageX, title: "Terminal Handling Damage", desc: "Rough handling during loading/unloading at Batam Centre Ferry Terminal, Sekupang, or Singapore's Tanah Merah Ferry Terminal is the highest-risk point for fragile and electronic goods." },
+  { icon: ShieldAlert, title: "Theft and Pilferage", desc: "Break-bulk cargo waiting in open quayside areas is more exposed, especially during night operations or peak congestion periods." },
+  { icon: Droplets, title: "Moisture and Water Ingress", desc: "For cargo on speedboats or open barges, rainwater and sea spray are real risks for goods that are not moisture-proof packaged." },
+];
+
 export default function BatamSingaporeShippingInsurancePage() {
   return (
     <ArticleLayout
@@ -55,19 +84,30 @@ export default function BatamSingaporeShippingInsurancePage() {
       </p>
 
       <h2>Common Shipping Methods on the Batam–Singapore Route</h2>
-      <ul>
-        <li><strong>Roll-on/Roll-off (RoRo) Ferry:</strong> Trucks or containers drive directly onto the vessel. Transit time: approximately 45–60 minutes.</li>
-        <li><strong>Conventional Ferry + Barge:</strong> Cargo transported separately from vehicles, typically in containers or break-bulk. Used for heavy or oversized cargo.</li>
-        <li><strong>Speedboat / Cargo Pompong:</strong> Small fast craft for urgent or small-volume shipments. More vulnerable to water ingress due to vessel size.</li>
-        <li><strong>Air Freight via Hang Nadim Airport:</strong> For high-value or time-critical goods. Standard marine cargo policies generally extend to cover air freight.</li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+        {METHODS.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ background: "#0a162810" }}>
+              <Icon size={20} style={{ color: "#0a1628" }} />
+            </div>
+            <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
+            <p className="text-sm text-[#64748b]">{desc}</p>
+          </div>
+        ))}
+      </div>
 
       <h2>Route-Specific Risks on the Batam–Singapore Corridor</h2>
-      <p><strong>Singapore Strait Traffic Congestion:</strong> The strait handles over 1,000 vessel movements per day — supertankers, bulk carriers, and large container ships sharing the same passage with small ferry craft. Collision and near-miss risk is higher here than on open ocean routes.</p>
-      <p><strong>Unpredictable Weather During Monsoon Transitions:</strong> Between March–May and October–December, sudden squalls with high waves and strong winds can develop quickly. Smaller vessels are particularly vulnerable.</p>
-      <p><strong>Terminal Handling Damage:</strong> Rough handling during loading and unloading at Batam Centre Ferry Terminal, Sekupang, or Singapore&apos;s Tanah Merah Ferry Terminal is the highest-risk point for fragile and electronic goods.</p>
-      <p><strong>Theft and Pilferage:</strong> Break-bulk cargo waiting in open quayside areas is more exposed, especially during night operations or peak congestion periods.</p>
-      <p><strong>Moisture and Water Ingress:</strong> For cargo on speedboats or open barges, rainwater and sea spray are real risks for goods that are not moisture-proof packaged.</p>
+      <div className="not-prose space-y-3 my-6">
+        {RISKS.map(({ icon: Icon, title, desc }) => (
+          <div key={title} className="flex items-start gap-4 p-4 rounded-xl bg-[#faf8f3] border border-[#e2e8f0]">
+            <Icon size={20} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+            <div>
+              <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
+              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <h2>Incoterms and Who Must Buy Insurance</h2>
       <div className="overflow-x-auto my-6">
@@ -96,31 +136,61 @@ export default function BatamSingaporeShippingInsurancePage() {
           </tbody>
         </table>
       </div>
-      <p><strong>A critical note on CIF:</strong> Many Batam exporters selling CIF purchase the minimum coverage required by the contract rather than coverage that actually protects the buyer&apos;s interest. A low ICC (C) policy purchased just to satisfy the contract leaves the importer underprotected while believing they are covered.</p>
+      <div className="not-prose my-6 p-4 rounded-xl border-l-4 border-[#c9a84c] bg-[#faf8f3] text-sm text-[#374151]">
+        <strong style={{ color: "#0a1628" }}>A critical note on CIF:</strong> Many Batam exporters selling CIF purchase the minimum coverage required by the contract rather than coverage that actually protects the buyer's interest. A low ICC (C) policy purchased just to satisfy the contract leaves the importer underprotected while believing they are covered.
+      </div>
 
       <h2>Choosing the Right Clause for This Route</h2>
-      <p><strong>ICC (A) — recommended for:</strong> electronics, circuit boards, medical equipment, precision instruments, goods valued above USD 10,000 per shipment, and moisture-sensitive items.</p>
-      <p><strong>ICC (B) or ICC (C) — worth considering for:</strong> industrial raw materials (steel, plastics, bulk chemicals), agricultural and fishery commodities, and robust low-value cargo.</p>
+      <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div className="rounded-2xl p-5 border" style={{ borderColor: "#1a4fa025", background: "#1a4fa008" }}>
+          <div className="flex items-center gap-2 mb-2">
+            <Layers size={18} style={{ color: "#1a4fa0" }} />
+            <p className="font-bold text-sm" style={{ color: "#0a1628" }}>ICC (A) — recommended for</p>
+          </div>
+          <p className="text-sm text-[#64748b]">Electronics, circuit boards, medical equipment, precision instruments, goods valued above USD 10,000 per shipment, and moisture-sensitive items.</p>
+        </div>
+        <div className="rounded-2xl p-5 border" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
+          <div className="flex items-center gap-2 mb-2">
+            <Layers size={18} style={{ color: "#a07830" }} />
+            <p className="font-bold text-sm" style={{ color: "#0a1628" }}>ICC (B) or (C) — worth considering for</p>
+          </div>
+          <p className="text-sm text-[#64748b]">Industrial raw materials (steel, plastics, bulk chemicals), agricultural and fishery commodities, and robust low-value cargo.</p>
+        </div>
+      </div>
       <p><strong>Relevant additional clauses:</strong> War &amp; Strikes Clause (typically automatic for international routes), Institute Theft, Pilferage &amp; Non-Delivery (TPND) Clause, and Refrigeration Clause for frozen or temperature-controlled shipments.</p>
 
       <h2>What Does Cargo Insurance Cost on This Route?</h2>
       <p>Because this is a short, well-established corridor, premiums tend to be competitive:</p>
-      <ul>
-        <li>ICC (A) for electronics: 0.2% – 0.4% of cargo value</li>
-        <li>ICC (A) for general cargo: 0.1% – 0.25%</li>
-        <li>ICC (C) for bulk cargo: from 0.05%</li>
-      </ul>
+      <div className="not-prose grid grid-cols-1 sm:grid-cols-3 gap-3 my-6">
+        {[
+          ["ICC (A) for electronics", "0.2% – 0.4%"],
+          ["ICC (A) for general cargo", "0.1% – 0.25%"],
+          ["ICC (C) for bulk cargo", "from 0.05%"],
+        ].map(([label, rate]) => (
+          <div key={label} className="rounded-2xl p-4 text-center bg-white border border-[#e2e8f0]">
+            <Percent size={18} className="mx-auto mb-2" style={{ color: "#c9a84c" }} />
+            <p className="text-xs text-[#64748b] mb-1">{label}</p>
+            <p className="font-display font-bold text-lg" style={{ color: "#0a1628" }}>{rate}</p>
+          </div>
+        ))}
+      </div>
       <p>
         For regular shippers, consider an <strong>Open Cover Policy</strong> — a standing arrangement that automatically covers each shipment within a defined period without requiring a new policy for every dispatch. This reduces administrative burden and typically lowers the per-shipment cost.
       </p>
 
       <h2>A Real-World Scenario: Electronics Damaged at Tanah Merah Terminal</h2>
-      <p>
-        An electronics firm in Batamindo shipped 50 cartons of circuit board components to a buyer in Singapore via cargo ferry. During unloading at Tanah Merah Ferry Terminal, 8 cartons were dropped by a forklift and damaged. Total loss: approximately SGD 12,000.
-      </p>
-      <p>
-        Because the policy was ICC (A) with the TPND clause, and the receiving staff immediately noted the damage on the delivery order before signing, the claim was processed within 3 weeks. Without insurance, the company would have faced either absorbing the full loss or pursuing the ferry operator through a prolonged legal process with an uncertain outcome.
-      </p>
+      <div className="not-prose my-6 p-5 rounded-2xl border-l-4 border-[#c9a84c] bg-[#faf8f3] flex items-start gap-4">
+        <FileCheck size={22} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
+        <p className="text-sm text-[#374151] m-0">
+          An electronics firm in Batamindo shipped 50 cartons of circuit board components to a buyer in
+          Singapore via cargo ferry. During unloading at Tanah Merah Ferry Terminal, 8 cartons were dropped
+          by a forklift and damaged — total loss approximately SGD 12,000. Because the policy was ICC (A)
+          with the TPND clause, and the receiving staff immediately noted the damage on the delivery order
+          before signing, the claim was processed within <strong style={{ color: "#0a1628" }}>3 weeks</strong>.
+          Without insurance, the company would have faced either absorbing the full loss or pursuing the
+          ferry operator through a prolonged legal process with an uncertain outcome.
+        </p>
+      </div>
 
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
         <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Consult on Cargo Insurance for Your Batam–Singapore Shipments</h3>
