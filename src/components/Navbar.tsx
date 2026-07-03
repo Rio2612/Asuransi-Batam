@@ -539,11 +539,13 @@ export default function Navbar() {
           {/* ── Desktop Right: Phone + Lang + CTA ── */}
           <div className="hidden lg:flex items-center gap-2 flex-shrink-0">
             <a
-              href="tel:081373336728"
+              href="https://wa.me/6281373336728"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-1.5 text-sm text-[#c9a84c] font-medium hover:text-[#f0d080] transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>0813-7333-6728</span>
+              <span>WhatsApp</span>
             </a>
 
             <Link

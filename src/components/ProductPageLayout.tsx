@@ -84,10 +84,12 @@ export default function ProductPageLayout({
                 {t.cta}
               </a>
               <a
-                href="tel:081373336728"
+                href="https://wa.me/6281373336728"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-all text-center"
               >
-                0813-7333-6728
+                WhatsApp Sekarang
               </a>
             </div>
           </div>

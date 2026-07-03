@@ -25,7 +25,7 @@ export default function KontakPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
             {[
               { icon: "💬", label: "WhatsApp", value: "0813-7333-6728", href: "https://wa.me/6281373336728", primary: true },
-              { icon: "📞", label: "Telepon", value: "0813-7333-6728", href: "tel:081373336728", primary: false },
+              { icon: "💬", label: "WhatsApp (EN)", value: "Chat in English", href: "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20need%20insurance%20consultation", primary: false },
               { icon: "📧", label: "Email", value: "rio@asuransibatam.com", href: "mailto:rio@asuransibatam.com", primary: false },
               { icon: "📍", label: "Alamat", value: "Batam Center, Kota Batam, Kepulauan Riau", href: null, primary: false },
             ].map((c) => (

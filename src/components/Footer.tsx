@@ -102,9 +102,9 @@ export default function Footer() {
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">{t.tagline}</p>
             <div className="space-y-3">
-              <a href="tel:081373336728" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
+              <a href="https://wa.me/6281373336728" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Phone className="w-4 h-4 text-[#c9a84c]" />
-                0813-7333-6728
+                WhatsApp: 0813-7333-6728
               </a>
               <a href="mailto:rio@asuransibatam.com" className="flex items-center gap-2 text-sm text-white/70 hover:text-[#c9a84c] transition-colors">
                 <Mail className="w-4 h-4 text-[#c9a84c]" />

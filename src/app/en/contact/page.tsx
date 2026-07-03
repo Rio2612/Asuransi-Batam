@@ -30,7 +30,6 @@ export default function ContactPageEN() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
             {[
               { icon: "💬", label: "WhatsApp", value: "+62-813-7333-6728", href: "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance", primary: true },
-              { icon: "📞", label: "Phone", value: "+62-813-7333-6728", href: "tel:081373336728", primary: false },
               { icon: "📧", label: "Email", value: "rio@asuransibatam.com", href: "mailto:rio@asuransibatam.com", primary: false },
               { icon: "📍", label: "Address", value: "Batam Center, Batam City, Kepulauan Riau", href: null, primary: false },
             ].map((c) => (

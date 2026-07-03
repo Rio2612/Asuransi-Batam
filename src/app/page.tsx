@@ -313,9 +313,11 @@ export default function HomePage() {
                 <div className="mt-6 p-4 bg-[#c9a84c]/20 rounded-2xl flex items-center gap-3">
                   <Phone className="w-5 h-5 text-[#c9a84c]" />
                   <div>
-                    <div className="text-[#c9a84c] font-bold text-sm">Hubungi Rio Langsung</div>
+                    <div className="text-[#c9a84c] font-bold text-sm">WhatsApp Rio Langsung</div>
                     <a
-                      href="tel:081373336728"
+                      href="https://wa.me/6281373336728"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-white font-display font-bold text-lg hover:text-[#f0d080] transition-colors"
                     >
                       0813-7333-6728
