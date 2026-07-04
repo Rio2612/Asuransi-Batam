@@ -38,6 +38,7 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-surety-bond/performance-bond": "/en/surety-bond-insurance/performance-bond",
   "/asuransi-surety-bond/advance-payment-bond": "/en/surety-bond-insurance/advance-payment-bond",
   "/asuransi-surety-bond/maintenance-bond": "/en/surety-bond-insurance/maintenance-bond",
+  "/asuransi-surety-bond/custom-bond": "/en/surety-bond-insurance/custom-bond",
   // Marine
   "/asuransi-marine": "/en/marine-insurance",
   "/asuransi-marine/marine-hull": "/en/marine-insurance/marine-hull",
@@ -144,6 +145,7 @@ const productsID: NavItem[] = [
       { label: "Performance Bond", href: "/asuransi-surety-bond/performance-bond", desc: "Jaminan pelaksanaan proyek" },
       { label: "Advance Payment Bond", href: "/asuransi-surety-bond/advance-payment-bond", desc: "Jaminan uang muka" },
       { label: "Maintenance Bond", href: "/asuransi-surety-bond/maintenance-bond", desc: "Jaminan masa pemeliharaan" },
+      { label: "Custom Bond", href: "/asuransi-surety-bond/custom-bond", desc: "Jaminan kepabeanan OB 23/KITE" },
     ],
   },
   {
@@ -209,6 +211,7 @@ const productsEN: NavItem[] = [
       { label: "Performance Bond", href: "/en/surety-bond-insurance/performance-bond", desc: "Contract execution guarantee" },
       { label: "Advance Payment Bond", href: "/en/surety-bond-insurance/advance-payment-bond", desc: "Down payment guarantee" },
       { label: "Maintenance Bond", href: "/en/surety-bond-insurance/maintenance-bond", desc: "Post-project defect guarantee" },
+      { label: "Custom Bond", href: "/en/surety-bond-insurance/custom-bond", desc: "Customs guarantee OB 23/KITE" },
     ],
   },
   {
