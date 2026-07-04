@@ -1,5 +1,6 @@
 // app/en/surety-bond-insurance/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 export const metadata: Metadata = {
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     "bid bond batam",
     "performance bond batam",
     "advance payment bond batam",
+    "custom bond batam",
+    "ob 23 batam",
     "construction surety bond batam",
     "surety bond insurance batam",
     "contract guarantee batam",
@@ -44,6 +47,11 @@ const benefits = [
     icon: "🔧",
     title: "Maintenance Bond",
     desc: "Guarantees rectification of latent defects or damage arising during the maintenance period after project completion.",
+  },
+  {
+    icon: "🚢",
+    title: "Custom Bond",
+    desc: "Guarantee for customs facilities — OB 23/temporary import, KITE, Bonded Zone, and PPJK — without full cash collateral.",
   },
   {
     icon: "⚡",
@@ -115,6 +123,7 @@ const schema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Performance Bond" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Advance Payment Bond" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Maintenance Bond" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Bond" } },
     ],
   },
 };
@@ -132,6 +141,29 @@ export default function SuretyBondInsurancePage() {
         { label: "Surety Bond Insurance", href: "/en/surety-bond-insurance" },
       ]}
       schema={schema}
-    />
+    >
+      <div>
+        <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Guarantee Types We Issue</h2>
+        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Choose the guarantee that matches your project or customs facility stage in Batam.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Link href="/en/surety-bond-insurance/performance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Performance Bond</h3>
+            <p className="text-[#64748b] text-sm">Guarantee that the contractor will complete the project per contract and schedule.</p>
+          </Link>
+          <Link href="/en/surety-bond-insurance/advance-payment-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Advance Payment Bond</h3>
+            <p className="text-[#64748b] text-sm">Guarantee for down payment recovery if the contractor fails to start or continue work.</p>
+          </Link>
+          <Link href="/en/surety-bond-insurance/maintenance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Maintenance Bond</h3>
+            <p className="text-[#64748b] text-sm">Guarantee covering the maintenance period after construction project completion.</p>
+          </Link>
+          <Link href="/en/surety-bond-insurance/custom-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Custom Bond</h3>
+            <p className="text-[#64748b] text-sm">Customs guarantee for OB 23/temporary import, KITE, and Bonded Zone facilities.</p>
+          </Link>
+        </div>
+      </div>
+    </ProductPageLayout>
   );
 }

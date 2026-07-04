@@ -211,6 +211,15 @@ const articles: Article[] = [
       "A complete guide to choosing Builders Risk insurance for construction projects and shipyards in Batam: a real claim case study, common mistakes, and how to set the right sum insured.",
     readTime: "8 min",
   },
+  {
+    title: "OB 23 Guide: How to Handle Temporary Import for Exhibitions & Projects in Batam",
+    slug: "temporary-import-guarantee-ob23-batam",
+    date: "July 5, 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Complete guide to OB 23 (temporary import) in Batam: when to use it, required documents, the application process, common mistakes that lead to penalties, and custom bond cost estimates.",
+    readTime: "9 min",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -220,9 +229,10 @@ const categoryColors: Record<string, string> = {
   Liability: "bg-orange-100 text-orange-800",
   Engineering: "bg-purple-100 text-purple-800",
   Marine: "bg-cyan-100 text-cyan-800",
+  "Surety Bond": "bg-rose-100 text-rose-800",
 };
 
-const categories = ["Vehicle", "Heavy Equipment", "Property", "Liability", "Engineering", "Marine"];
+const categories = ["Vehicle", "Heavy Equipment", "Property", "Liability", "Engineering", "Marine", "Surety Bond"];
 
 export default function BlogPageEN() {
   return (

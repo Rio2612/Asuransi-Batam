@@ -338,6 +338,15 @@ const articles: Article[] = [
       "Apa perbedaan bid bond dan performance bond? Panduan lengkap untuk kontraktor di Batam — kapan masing-masing wajib dipakai, nilai jaminan, dan konsekuensi jika klaim terjadi.",
     readTime: "6 menit",
   },
+  {
+    title: "Panduan OB 23: Cara Mengurus Impor Sementara untuk Pameran & Proyek di Batam",
+    slug: "panduan-ob23-impor-sementara-batam",
+    date: "5 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Panduan lengkap OB 23 (impor sementara) di Batam: kapan dipakai, dokumen yang dibutuhkan, proses pengajuan, kesalahan umum yang bikin denda, dan estimasi biaya custom bond.",
+    readTime: "9 menit",
+  },
   // ── Personal Accident ───────────────────────────────────────────────────────
   {
     title: "Asuransi Kecelakaan Diri (PA) untuk Pekerja Industri Batam",

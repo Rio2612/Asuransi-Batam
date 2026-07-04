@@ -341,7 +341,11 @@ export default function CustomBondPage() {
           <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
             Pelaku impor-ekspor di Batam sering membutuhkan lebih dari satu jenis jaminan sekaligus.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link href="/blog/panduan-ob23-impor-sementara-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+              <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan OB 23</h3>
+              <p className="text-[#64748b] text-sm">Cara mengurus impor sementara untuk pameran dan proyek, lengkap dengan kesalahan umum yang harus dihindari.</p>
+            </Link>
             <Link href="/asuransi-surety-bond/bid-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Bid Bond</h3>
               <p className="text-[#64748b] text-sm">Jaminan penawaran untuk tender pengadaan barang/jasa pemerintah dan swasta.</p>
