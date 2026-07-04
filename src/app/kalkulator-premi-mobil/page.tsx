@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import KalkulatorMobil from "@/components/KalkulatorMobil";
 
 export const metadata: Metadata = {
@@ -61,6 +62,15 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+    { "@type": "ListItem", position: 2, name: "Kalkulator Premi Mobil", item: "https://asuransibatam.com/kalkulator-premi-mobil" },
+  ],
+};
+
 export default function KalkulatorPremiMobilPage() {
   return (
     <div className="min-h-screen">
@@ -69,9 +79,15 @@ export default function KalkulatorPremiMobilPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
 
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <nav className="flex items-center justify-center gap-2 text-sm text-white/50 mb-4 flex-wrap" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white/80 transition-colors">Beranda</Link>
+            <span>/</span>
+            <span className="text-white/70">Kalkulator Premi Mobil</span>
+          </nav>
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">
             Kalkulator Online
           </p>

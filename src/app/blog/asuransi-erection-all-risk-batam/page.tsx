@@ -110,10 +110,22 @@ const faqs = [
   { q: "Berapa lama proses penerbitan polis EAR?", a: "Untuk proyek di bawah Rp 50 miliar, polis EAR umumnya dapat diterbitkan dalam 3–5 hari kerja setelah dokumen lengkap. Proyek lebih besar memerlukan underwriting lebih mendalam dan bisa memakan 7–14 hari." },
 ];
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/blog" },
+    { "@type": "ListItem", position: 3, name: "Engineering", item: "https://asuransibatam.com/asuransi-engineering" },
+    { "@type": "ListItem", position: 4, name: "Erection All Risk Batam", item: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam" },
+  ],
+};
+
 export default function AsuransiErectionAllRiskBatamPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
@@ -121,7 +133,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
         <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#c9a84c]/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-1/4 w-56 h-56 bg-[#1a4fa0]/40 rounded-full blur-3xl" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap">
+          <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Beranda</Link>
             <span>/</span>
             <Link href="/blog" className="hover:text-white/80 transition-colors">Blog</Link>

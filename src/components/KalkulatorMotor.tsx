@@ -22,6 +22,11 @@ export default function KalkulatorMotor() {
     <div className="min-h-screen">
       <section className="pt-24 pb-12 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <nav className="flex items-center justify-center gap-2 text-sm text-white/50 mb-4 flex-wrap" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white/80 transition-colors">Beranda</Link>
+            <span>/</span>
+            <span className="text-white/70">Kalkulator Premi Motor</span>
+          </nav>
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Kalkulator Online</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Kalkulator Premi Asuransi Motor</h1>
           <p className="text-white/70 text-xl">Estimasi premi asuransi sepeda motor berdasarkan tarif OJK.</p>

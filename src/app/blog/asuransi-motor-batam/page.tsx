@@ -101,10 +101,22 @@ const faqs = [
   { q: "Motor modifikasi apakah bisa diasuransikan?", a: "Bisa, namun perlu deklarasi saat pengajuan polis. Nilai pertanggungan harus disesuaikan dengan nilai motor termasuk modifikasi. Beberapa modifikasi yang meningkatkan risiko dapat mempengaruhi premi atau klausul polis." },
 ];
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://asuransibatam.com/blog" },
+    { "@type": "ListItem", position: 3, name: "Kendaraan", item: "https://asuransibatam.com/asuransi-kendaraan" },
+    { "@type": "ListItem", position: 4, name: "Asuransi Motor Batam", item: "https://asuransibatam.com/blog/asuransi-motor-batam" },
+  ],
+};
+
 export default function AsuransiMotorBatamPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
@@ -112,7 +124,7 @@ export default function AsuransiMotorBatamPage() {
         <div className="absolute top-1/3 right-0 w-80 h-80 bg-[#c9a84c]/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-1/4 w-56 h-56 bg-[#1a4fa0]/40 rounded-full blur-3xl" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap">
+          <nav className="flex items-center gap-2 text-sm text-white/50 mb-8 flex-wrap" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-white/80 transition-colors">Beranda</Link>
             <span>/</span>
             <Link href="/blog" className="hover:text-white/80 transition-colors">Blog</Link>

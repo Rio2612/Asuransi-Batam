@@ -1,5 +1,6 @@
 // app/en/contact/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
@@ -15,11 +16,26 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+    { "@type": "ListItem", position: 2, name: "Contact", item: "https://asuransibatam.com/en/contact" },
+  ],
+};
+
 export default function ContactPageEN() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <nav className="flex items-center justify-center gap-2 text-sm text-white/50 mb-6 flex-wrap" aria-label="Breadcrumb">
+            <Link href="/en" className="hover:text-white/80 transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-white/70">Contact</span>
+          </nav>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Contact Us</h1>
           <p className="text-white/70 text-xl">Free insurance consultation. Rio is ready to help you.</p>
         </div>

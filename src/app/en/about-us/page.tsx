@@ -1,6 +1,7 @@
 // app/en/about-us/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
@@ -32,14 +33,29 @@ const schema = {
   },
 };
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://asuransibatam.com/en" },
+    { "@type": "ListItem", position: 2, name: "About Us", item: "https://asuransibatam.com/en/about-us" },
+  ],
+};
+
 export default function AboutUsPageEN() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
 
       {/* Hero */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-sm text-white/50 mb-4 flex-wrap" aria-label="Breadcrumb">
+            <Link href="/en" className="hover:text-white/80 transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-white/70">About Us</span>
+          </nav>
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">About Us</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">

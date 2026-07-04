@@ -13,6 +13,20 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+    { "@type": "ListItem", position: 2, name: "Kalkulator Premi Motor", item: "https://asuransibatam.com/kalkulator-premi-motor" },
+  ],
+};
+
 export default function KalkulatorPremiMotorPage() {
-  return <KalkulatorMotor />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
+      <KalkulatorMotor />
+    </>
+  );
 }

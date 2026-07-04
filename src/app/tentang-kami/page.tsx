@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import KonsultasiForm from "./KonsultasiForm";
 
@@ -70,6 +71,15 @@ const fieldPhotos = [
   },
 ];
 
+const breadcrumbListSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Beranda", item: "https://asuransibatam.com" },
+    { "@type": "ListItem", position: 2, name: "Tentang Kami", item: "https://asuransibatam.com/tentang-kami" },
+  ],
+};
+
 export default function TentangKamiPage() {
   return (
     <>
@@ -77,10 +87,16 @@ export default function TentangKamiPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }} />
 
       {/* Hero */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-sm text-white/50 mb-4 flex-wrap" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-white/80 transition-colors">Beranda</Link>
+            <span>/</span>
+            <span className="text-white/70">Tentang Kami</span>
+          </nav>
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Tentang Kami</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">
