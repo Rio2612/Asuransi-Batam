@@ -15,6 +15,8 @@ export const metadata: Metadata = {
     "jaminan uang muka batam",
     "surety bond konstruksi batam",
     "asuransi surety bond batam",
+    "custom bond batam",
+    "ob 23 batam",
   ],
   alternates: {
     canonical: "https://asuransibatam.com/asuransi-surety-bond",
@@ -49,6 +51,12 @@ const benefits = [
     title: "Maintenance Bond (Jaminan Pemeliharaan)",
     desc: "Jaminan perbaikan cacat tersembunyi atau kerusakan yang timbul dalam masa pemeliharaan setelah proyek selesai.",
     href: "/asuransi-surety-bond/maintenance-bond",
+  },
+  {
+    icon: "🚢",
+    title: "Custom Bond (Jaminan Kepabeanan)",
+    desc: "Jaminan untuk fasilitas Bea Cukai — OB 23/impor sementara, KITE, Kawasan Berikat, dan PPJK — tanpa perlu agunan tunai penuh.",
+    href: "/asuransi-surety-bond/custom-bond",
   },
   {
     icon: "⚡",
@@ -120,6 +128,7 @@ const schema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Performance Bond" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Advance Payment Bond" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Maintenance Bond" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Custom Bond" } },
     ],
   },
 };
@@ -157,6 +166,10 @@ export default function SuretyBondPage() {
           <Link href="/asuransi-surety-bond/maintenance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Maintenance Bond</h3>
             <p className="text-[#64748b] text-sm">Jaminan pemeliharaan selama masa garansi setelah proyek konstruksi selesai dikerjakan.</p>
+          </Link>
+          <Link href="/asuransi-surety-bond/custom-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
+            <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Custom Bond</h3>
+            <p className="text-[#64748b] text-sm">Jaminan kepabeanan untuk fasilitas OB 23/impor sementara, KITE, dan Kawasan Berikat.</p>
           </Link>
         </div>
       </div>
