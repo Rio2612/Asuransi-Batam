@@ -116,10 +116,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/asuransi-surety-bond/performance-bond`,                       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-surety-bond/advance-payment-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/asuransi-surety-bond/maintenance-bond`,                       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/asuransi-surety-bond/custom-bond`,                            lastModified: new Date("2026-07-05"), changeFrequency: "monthly", priority: 0.8 },
 
+    { url: `${BASE_URL}/en/surety-bond-insurance/bid-bond`,                           lastModified: new Date("2026-07-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/performance-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/advance-payment-bond`,               lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/surety-bond-insurance/maintenance-bond`,                   lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${BASE_URL}/en/surety-bond-insurance/custom-bond`,                        lastModified: new Date("2026-07-05"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE_URL}/en/difference-between-bid-bond-and-performance-bond`,         lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
@@ -174,6 +177,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/blog/perbedaan-bid-bond-performance-bond`,             lastModified: new Date("2026-05-07"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/cara-mendapatkan-surety-bond-tender-proyek-batam`, lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${BASE_URL}/blog/biaya-premi-surety-bond-batam`,                    lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/panduan-ob23-impor-sementara-batam`,               lastModified: new Date("2026-07-05"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/ob23-vs-kite-batam`,                               lastModified: new Date("2026-07-05"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/custom-bond-galangan-kapal-batam`,                 lastModified: new Date("2026-07-05"), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${BASE_URL}/blog/checklist-dokumen-custom-bond-ditolak`,            lastModified: new Date("2026-07-05"), changeFrequency: "yearly",  priority: 0.7 },
     // Personal Accident
     { url: `${BASE_URL}/blog/asuransi-kecelakaan-diri-pekerja-industri-batam`, lastModified: new Date("2026-07-02"), changeFrequency: "yearly",  priority: 0.7 },
 
@@ -207,6 +214,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/en/blog/batam-export-cargo-insurance`,                           lastModified: new Date("2026-05-08"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/builders-risk-shipyard-insurance-batam`,                 lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
     { url: `${BASE_URL}/en/blog/how-to-get-builders-risk-insurance-batam`,               lastModified: new Date("2026-05-07"), changeFrequency: "yearly", priority: 0.7 },
+    { url: `${BASE_URL}/en/blog/temporary-import-guarantee-ob23-batam`,                  lastModified: new Date("2026-07-05"), changeFrequency: "yearly", priority: 0.7 },
 
     // ────────────────────────────────────────────────────────────────────────
     // INFO PAGES
