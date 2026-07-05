@@ -308,7 +308,7 @@ export default function BidBondVsPerformanceBondPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             {[
-              { num: "01", title: "Bid Bond", sub: "Guarantee during tendering", href: "/en/surety-bond-insurance" },
+              { num: "01", title: "Bid Bond", sub: "Guarantee during tendering", href: "/en/surety-bond-insurance/bid-bond" },
               { num: "02", title: "Performance Bond", sub: "Guarantee during execution", href: "/en/surety-bond-insurance/performance-bond" },
               { num: "03", title: "Advance Payment Bond", sub: "Guarantee for advance payment", href: "/en/surety-bond-insurance/advance-payment-bond" },
               { num: "04", title: "Maintenance Bond", sub: "Guarantee during defects liability period", href: "/en/surety-bond-insurance/maintenance-bond" },
@@ -643,7 +643,7 @@ export default function BidBondVsPerformanceBondPage() {
             {[
               { title: "Surety Bond Insurance Batam", href: "/en/surety-bond-insurance", desc: "Complete guide to all surety bond types and submission procedures" },
               { title: "Surety Bond Insurance Overview", href: "/en/surety-bond-insurance", desc: "Our full range of project guarantee services in Batam" },
-              { title: "Bid Bond", href: "/en/surety-bond-insurance", desc: "Bid guarantee product details" },
+              { title: "Bid Bond", href: "/en/surety-bond-insurance/bid-bond", desc: "Bid guarantee product details" },
               { title: "Performance Bond", href: "/en/surety-bond-insurance/performance-bond", desc: "Project execution guarantee product details" },
             ].map((link) => (
               <Link key={link.href} href={link.href}

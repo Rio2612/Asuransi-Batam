@@ -57,7 +57,7 @@ export default function MaintenanceBondENPage() {
       </p>
       <p>
         The maintenance bond completes the full surety bond cycle for a project — from the{" "}
-        <Link href="/en/surety-bond-insurance">Bid Bond</Link> (pre-tender) through
+        <Link href="/en/surety-bond-insurance/bid-bond">Bid Bond</Link> (pre-tender) through
         the{" "}
         <Link href="/en/surety-bond-insurance/performance-bond">Performance Bond</Link>{" "}
         (execution phase) to the maintenance bond (post-handover).
@@ -171,7 +171,7 @@ export default function MaintenanceBondENPage() {
       <h2>Complete Surety Bond Cycle for Your Project</h2>
       <ul>
         <li>
-          <Link href="/en/surety-bond-insurance">
+          <Link href="/en/surety-bond-insurance/bid-bond">
             Bid Bond – Pre-Tender Guarantee
           </Link>
         </li>

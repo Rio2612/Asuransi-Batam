@@ -144,7 +144,7 @@ export default function AdvancePaymentBondENPage() {
       <h2>Other Surety Bonds Relevant to Your Project</h2>
       <ul>
         <li>
-          <Link href="/en/surety-bond-insurance">
+          <Link href="/en/surety-bond-insurance/bid-bond">
             Bid Bond – Pre-Tender Guarantee
           </Link>
         </li>

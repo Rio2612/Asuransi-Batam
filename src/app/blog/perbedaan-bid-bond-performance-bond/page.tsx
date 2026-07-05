@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     languages: {
       id: "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
+      en: "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
     },
   },
 };

@@ -35,6 +35,7 @@ const URL_MAP: Record<string, string> = {
   
   // Surety Bond
   "/asuransi-surety-bond": "/en/surety-bond-insurance",
+  "/asuransi-surety-bond/bid-bond": "/en/surety-bond-insurance/bid-bond",
   "/asuransi-surety-bond/performance-bond": "/en/surety-bond-insurance/performance-bond",
   "/asuransi-surety-bond/advance-payment-bond": "/en/surety-bond-insurance/advance-payment-bond",
   "/asuransi-surety-bond/maintenance-bond": "/en/surety-bond-insurance/maintenance-bond",
@@ -76,6 +77,9 @@ const URL_MAP: Record<string, string> = {
   "/blog/asuransi-cargo-ekspor-batam": "/en/blog/batam-export-cargo-insurance",
   "/blog/builders-risk-untuk-galangan-kapal": "/en/blog/builders-risk-shipyard-insurance-batam",
   "/blog/cara-mendapatkan-asuransi-builders-risk-batam": "/en/blog/how-to-get-builders-risk-insurance-batam",
+  // Blog – Surety Bond
+  "/blog/perbedaan-bid-bond-performance-bond": "/en/difference-between-bid-bond-and-performance-bond",
+  "/blog/panduan-ob23-impor-sementara-batam": "/en/blog/temporary-import-guarantee-ob23-batam",
 };
 
 // Build reverse map (EN → ID) automatically
@@ -208,6 +212,7 @@ const productsEN: NavItem[] = [
     label: "Surety Bond",
     href: "/en/surety-bond-insurance",
     children: [
+      { label: "Bid Bond", href: "/en/surety-bond-insurance/bid-bond", desc: "Tender bid guarantee" },
       { label: "Performance Bond", href: "/en/surety-bond-insurance/performance-bond", desc: "Contract execution guarantee" },
       { label: "Advance Payment Bond", href: "/en/surety-bond-insurance/advance-payment-bond", desc: "Down payment guarantee" },
       { label: "Maintenance Bond", href: "/en/surety-bond-insurance/maintenance-bond", desc: "Post-project defect guarantee" },

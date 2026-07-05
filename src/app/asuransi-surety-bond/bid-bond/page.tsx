@@ -72,6 +72,7 @@ export const metadata: Metadata = {
     canonical: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
     languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
+      en: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
     },
   },
 };
