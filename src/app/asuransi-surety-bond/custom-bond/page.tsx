@@ -341,18 +341,26 @@ export default function CustomBondPage() {
           <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
             Pelaku impor-ekspor di Batam sering membutuhkan lebih dari satu jenis jaminan sekaligus.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/blog/panduan-ob23-impor-sementara-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan OB 23</h3>
               <p className="text-[#64748b] text-sm">Cara mengurus impor sementara untuk pameran dan proyek, lengkap dengan kesalahan umum yang harus dihindari.</p>
             </Link>
+            <Link href="/blog/ob23-vs-kite-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+              <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">OB 23 vs KITE</h3>
+              <p className="text-[#64748b] text-sm">Cara menentukan fasilitas kepabeanan yang tepat untuk bisnis impor-ekspor Anda.</p>
+            </Link>
+            <Link href="/blog/custom-bond-galangan-kapal-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+              <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Custom Bond Galangan Kapal</h3>
+              <p className="text-[#64748b] text-sm">Kombinasi Kawasan Berikat dan OB 23 yang umum dipakai industri shipyard Batam.</p>
+            </Link>
+            <Link href="/blog/checklist-dokumen-custom-bond-ditolak" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
+              <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Checklist Dokumen Sering Ditolak</h3>
+              <p className="text-[#64748b] text-sm">5 dokumen yang paling sering bikin pengajuan custom bond tertunda di Bea Cukai.</p>
+            </Link>
             <Link href="/asuransi-surety-bond/bid-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Bid Bond</h3>
               <p className="text-[#64748b] text-sm">Jaminan penawaran untuk tender pengadaan barang/jasa pemerintah dan swasta.</p>
-            </Link>
-            <Link href="/asuransi-surety-bond/performance-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
-              <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Performance Bond</h3>
-              <p className="text-[#64748b] text-sm">Jaminan pelaksanaan proyek konstruksi dan pengadaan sesuai kontrak.</p>
             </Link>
             <Link href="/asuransi-marine/marine-cargo" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Marine Cargo</h3>

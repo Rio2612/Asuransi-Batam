@@ -254,9 +254,9 @@ export default function PanduanOB23BatamPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { title: "Custom Bond Batam", href: "/asuransi-surety-bond/custom-bond", desc: "Halaman produk lengkap: OB 23, KITE, Kawasan Berikat, dan PPJK" },
-              { title: "Asuransi Surety Bond Batam", href: "/asuransi-surety-bond", desc: "Semua jenis jaminan proyek dan kepabeanan di Batam" },
-              { title: "Marine Cargo", href: "/asuransi-marine/marine-cargo", desc: "Lindungi nilai barang impor/ekspor dari risiko selama pengiriman" },
-              { title: "Perbedaan Bid Bond & Performance Bond", href: "/blog/perbedaan-bid-bond-performance-bond", desc: "Pahami jenis jaminan proyek lainnya" },
+              { title: "OB 23 vs KITE", href: "/blog/ob23-vs-kite-batam", desc: "Cara menentukan fasilitas yang tepat untuk bisnis Anda" },
+              { title: "Custom Bond untuk Galangan Kapal", href: "/blog/custom-bond-galangan-kapal-batam", desc: "Kombinasi Kawasan Berikat dan OB 23 di industri shipyard" },
+              { title: "Checklist Dokumen yang Sering Ditolak", href: "/blog/checklist-dokumen-custom-bond-ditolak", desc: "5 dokumen yang paling sering bikin pengajuan tertunda" },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="group flex items-start gap-3 p-4 bg-[#faf8f3] rounded-xl border border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-md transition-all">
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />

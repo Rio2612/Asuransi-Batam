@@ -347,6 +347,33 @@ const articles: Article[] = [
       "Panduan lengkap OB 23 (impor sementara) di Batam: kapan dipakai, dokumen yang dibutuhkan, proses pengajuan, kesalahan umum yang bikin denda, dan estimasi biaya custom bond.",
     readTime: "9 menit",
   },
+  {
+    title: "OB 23 vs KITE: Mana yang Tepat untuk Bisnis Impor-Ekspor Anda di Batam?",
+    slug: "ob23-vs-kite-batam",
+    date: "5 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Bingung pilih OB 23 atau KITE untuk fasilitas kepabeanan di Batam? Ini perbedaan mendasar, contoh kasus nyata, dan cara menentukan mana yang sesuai kebutuhan bisnis Anda.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Custom Bond untuk Galangan Kapal Batam: Panduan Lengkap Impor Peralatan Proyek",
+    slug: "custom-bond-galangan-kapal-batam",
+    date: "5 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "Galangan kapal di Tanjung Uncang, Kabil, dan Sekupang butuh strategi kepabeanan yang tepat untuk peralatan dan unit asing. Ini cara kerja custom bond untuk industri shipyard Batam.",
+    readTime: "8 menit",
+  },
+  {
+    title: "Checklist Dokumen Custom Bond yang Paling Sering Ditolak Bea Cukai",
+    slug: "checklist-dokumen-custom-bond-ditolak",
+    date: "5 Juli 2026",
+    category: "Surety Bond",
+    excerpt:
+      "5 dokumen custom bond yang paling sering bikin pengajuan ditolak atau tertunda di Batam — lengkap dengan contoh kesalahan umum dan cara memperbaikinya sebelum diajukan.",
+    readTime: "7 menit",
+  },
   // ── Personal Accident ───────────────────────────────────────────────────────
   {
     title: "Asuransi Kecelakaan Diri (PA) untuk Pekerja Industri Batam",
