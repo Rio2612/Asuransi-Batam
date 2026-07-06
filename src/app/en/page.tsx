@@ -218,7 +218,7 @@ export default function HomePageEN() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Featured Products</p>
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Featured Products</p>
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               All Your Insurance Needs in One Place
             </h2>
@@ -272,7 +272,7 @@ export default function HomePageEN() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Our Advantages</p>
+              <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Our Advantages</p>
               <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-6">
                 Why Trust Us with Your Insurance?
               </h2>
@@ -336,7 +336,7 @@ export default function HomePageEN() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Testimonials</p>
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Testimonials</p>
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               What Our Clients Say
             </h2>
@@ -364,7 +364,7 @@ export default function HomePageEN() {
       <section className="section-padding bg-[#faf8f3]">
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">FAQ</p>
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">FAQ</p>
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">Frequently Asked Questions</h2>
           </div>
           <div className="space-y-4">

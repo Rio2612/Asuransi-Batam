@@ -173,7 +173,7 @@ export default function TentangKamiPage() {
       <section className="section-padding bg-[#faf8f3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Kerja Lapangan</p>
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Kerja Lapangan</p>
             <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
               Langsung di Lokasi, Bukan Hanya di Balik Meja
             </h2>
@@ -212,7 +212,7 @@ export default function TentangKamiPage() {
       {/* Cara Kerja */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Cara Kerja Kami</p>
+          <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Cara Kerja Kami</p>
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Sederhana, Transparan, Tepat Sasaran</h2>
           <p className="text-[#64748b] mb-12 max-w-xl mx-auto">
             Tidak ada jargon berlebihan. Kami bantu Anda memahami apa yang benar-benar perlu dilindungi

@@ -610,7 +610,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
         {/* ── SECTION 9: FAQ ── */}
         <section className="mb-14">
           <div className="text-center mb-8">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">FAQ</p>
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">FAQ</p>
             <h2 className="font-display font-bold text-3xl text-[#0a1628]">Pertanyaan yang Sering Diajukan</h2>
           </div>
           <div className="space-y-4">

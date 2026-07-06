@@ -130,7 +130,7 @@ export default function HowToGetBuildersRiskPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] mb-3">
+      <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#8a6d1f] mb-3">
         Understanding the Risk
       </p>
       <h2>Why Builders Risk Insurance Gets Overlooked, Despite the High Stakes</h2>
@@ -143,7 +143,7 @@ export default function HowToGetBuildersRiskPage() {
 
       <div className="mt-14 mb-3 flex items-center gap-3">
         <span className="h-px flex-1 bg-[#e2e8f0]" />
-        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#8a6d1f] whitespace-nowrap">
           Field Experience
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
@@ -237,7 +237,7 @@ export default function HowToGetBuildersRiskPage() {
 
       <div className="mt-14 mb-3 flex items-center gap-3">
         <span className="h-px flex-1 bg-[#e2e8f0]" />
-        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#8a6d1f] whitespace-nowrap">
           Policy Coverage
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
@@ -282,7 +282,7 @@ export default function HowToGetBuildersRiskPage() {
 
       <div className="mt-14 mb-3 flex items-center gap-3">
         <span className="h-px flex-1 bg-[#e2e8f0]" />
-        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#8a6d1f] whitespace-nowrap">
           Practical Steps
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
@@ -344,7 +344,7 @@ export default function HowToGetBuildersRiskPage() {
 
       <div className="mt-14 mb-3 flex items-center gap-3">
         <span className="h-px flex-1 bg-[#e2e8f0]" />
-        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#c9a84c] whitespace-nowrap">
+        <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#8a6d1f] whitespace-nowrap">
           Frequently Asked Questions
         </p>
         <span className="h-px flex-1 bg-[#e2e8f0]" />
