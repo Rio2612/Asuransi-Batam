@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Asuransi Batam Terpercaya – Properti, Kendaraan, Alat Berat & Liability | Rio",
   description:
-    "Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
+    "Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
   alternates: {
     canonical: "https://asuransibatam.com",
     languages: {
@@ -188,7 +188,7 @@ export default function HomePage() {
         employee: {
           "@type": "Person",
           name: "Rio",
-          jobTitle: "Konsultan Asuransi",
+          jobTitle: "Praktisi Asuransi",
         },
       },
       {
@@ -222,7 +222,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c9a84c]/20 border border-[#c9a84c]/30 rounded-full text-[#c9a84c] text-sm font-semibold mb-6">
                 <Shield className="w-4 h-4" />
-                Konsultan Asuransi Kerugian Batam
+                Praktisi Asuransi Batam
               </div>
               <h1 className="font-display font-bold text-5xl md:text-6xl text-white leading-tight mb-6">
                 Lindungi Aset &<br />
@@ -230,7 +230,7 @@ export default function HomePage() {
                 di Batam
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
-                Rio, konsultan asuransi kerugian berpengalaman 10+ tahun di Batam.
+                Rio, praktisi asuransi berpengalaman 8 tahun di Batam.
                 Solusi lengkap untuk properti, kendaraan, alat berat, liability, engineering,
                 marine, surety bond, dan personal accident.
               </p>
@@ -284,7 +284,7 @@ export default function HomePage() {
                 </h2>
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   {[
-                    { label: "Tahun Pengalaman", value: "10+" },
+                    { label: "Tahun Pengalaman", value: "8+" },
                     { label: "Klien Aktif", value: "200+" },
                     { label: "Klaim Berhasil", value: "98%" },
                     { label: "Produk Tersedia", value: "20+" },
@@ -456,7 +456,7 @@ export default function HomePage() {
                 Mengapa Percayakan Asuransi ke Kami?
               </h2>
               <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-                Dengan pengalaman lebih dari 10 tahun di industri asuransi kerugian Batam,
+                Dengan pengalaman 8 tahun di industri asuransi Batam,
                 Rio hadir sebagai mitra terpercaya yang memahami kebutuhan lokal.
               </p>
               <div className="space-y-5">
@@ -496,7 +496,7 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { val: "10+", label: "Tahun Pengalaman", bg: "bg-[#0a1628]", color: "text-[#c9a84c]" },
+                { val: "8+", label: "Tahun Pengalaman", bg: "bg-[#0a1628]", color: "text-[#c9a84c]" },
                 { val: "200+", label: "Klien Aktif", bg: "bg-[#c9a84c]", color: "text-[#0a1628]" },
                 { val: "98%", label: "Tingkat Klaim Sukses", bg: "bg-[#1a4fa0]", color: "text-white" },
                 { val: "24/7", label: "Layanan Darurat", bg: "bg-[#132040]", color: "text-[#f0d080]" },

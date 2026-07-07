@@ -23,7 +23,7 @@ const articleSchema = {
   description: "Proses klaim asuransi mobil di Batam sering gagal karena dokumen kurang atau prosedur salah. Panduan lengkap langkah klaim yang benar dan dokumen wajib.",
   datePublished: "2026-04-30",
   dateModified: "2026-04-30",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Praktisi Asuransi", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam" },
 };

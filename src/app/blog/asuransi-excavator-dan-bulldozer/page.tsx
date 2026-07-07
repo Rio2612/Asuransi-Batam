@@ -34,7 +34,7 @@ const articleSchema = {
   description: "Excavator dan bulldozer adalah aset mahal yang rentan rusak di lapangan. Pelajari jenis perlindungan yang tepat, apa yang ditanggung, dan cara mengasuransikan alat berat Anda di Batam.",
   datePublished: "2026-05-06",
   dateModified: "2026-05-06",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Praktisi Asuransi", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer" },
 };

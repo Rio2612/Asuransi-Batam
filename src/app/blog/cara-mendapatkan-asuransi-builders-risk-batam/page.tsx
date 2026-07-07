@@ -38,7 +38,7 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Rio",
-    jobTitle: "Konsultan Asuransi Kerugian",
+    jobTitle: "Praktisi Asuransi",
     telephone: "+6281373336728",
   },
   publisher: {

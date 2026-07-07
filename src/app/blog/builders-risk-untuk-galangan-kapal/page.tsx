@@ -90,7 +90,7 @@ const schema = {
   description: "Panduan lengkap asuransi builders risk untuk galangan kapal di Batam: apa yang dilindungi, periode coverage, dan mengapa berbeda dari marine hull biasa.",
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Praktisi Asuransi", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal" },
 };

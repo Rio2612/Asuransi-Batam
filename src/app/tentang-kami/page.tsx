@@ -5,8 +5,8 @@ import CTASection from "@/components/CTASection";
 import KonsultasiForm from "./KonsultasiForm";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami – Rio, Konsultan Asuransi Batam",
-  description: "Profil Rio, konsultan asuransi kerugian profesional di Batam dengan pengalaman 10+ tahun. Spesialis properti, kendaraan, alat berat, dan liability.",
+  title: "Tentang Kami – Rio, Praktisi Asuransi Batam",
+  description: "Profil Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
   alternates: {
     canonical: "https://asuransibatam.com/tentang-kami",
     languages: {
@@ -20,7 +20,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Rio",
-  jobTitle: "Konsultan Asuransi Kerugian",
+  jobTitle: "Praktisi Asuransi",
   worksFor: { "@type": "InsuranceAgency", name: "Asuransi Batam" },
   telephone: "+6281373336728",
   email: "rio@asuransibatam.com",
@@ -100,7 +100,7 @@ export default function TentangKamiPage() {
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Tentang Kami</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Konsultan Asuransi Kerugian Profesional di Batam dengan pengalaman lebih dari 10 tahun
+            Praktisi Asuransi di Batam dengan pengalaman 8 tahun
             melayani klien individu dan korporat.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function TentangKamiPage() {
               <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/rio-mardiansyah.jpg"
-                  alt="Rio – Konsultan Asuransi Kerugian Batam"
+                  alt="Rio – Praktisi Asuransi Batam"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -126,7 +126,7 @@ export default function TentangKamiPage() {
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3">
                     <p className="font-display font-bold text-white text-lg leading-tight">Rio</p>
-                    <p className="text-[#c9a84c] text-sm font-medium">Konsultan Asuransi Kerugian</p>
+                    <p className="text-[#c9a84c] text-sm font-medium">Praktisi Asuransi</p>
                   </div>
                 </div>
               </div>
@@ -138,19 +138,23 @@ export default function TentangKamiPage() {
                 Profil Rio
               </h2>
               <p className="text-[#64748b] leading-relaxed mb-6">
-                Rio adalah konsultan asuransi kerugian berpengalaman yang telah melayani
-                klien di Batam dan Kepulauan Riau selama lebih dari 10 tahun. Dengan pemahaman mendalam
-                tentang industri asuransi lokal dan kebutuhan bisnis di kawasan industri Batam, Rio
-                hadir sebagai mitra terpercaya untuk solusi perlindungan aset Anda.
+                Rio adalah praktisi asuransi yang telah berkarier selama 8 tahun di industri
+                asuransi kerugian, meniti jenjang dari Account Officer di Asuransi Bumida (3 tahun),
+                Marketing di PT. Asuransi Purna Artanugraha/ASPAN (4 tahun), hingga Kepala Cabang
+                di ASPAN (1 tahun). Pengalaman lintas fungsi ini memberi Rio pemahaman langsung
+                tentang proses akuisisi nasabah, pemasaran produk, hingga operasional cabang dan
+                penanganan klaim di lapangan.
               </p>
               <p className="text-[#64748b] leading-relaxed mb-8">
-                Spesialisasi Rio meliputi asuransi properti komersial, kendaraan niaga dan armada,
-                alat berat dan machinery, serta asuransi liability khusus industri termasuk limbah B3 –
-                bidang yang sangat relevan dengan karakteristik industri Batam sebagai kawasan ekonomi khusus.
+                Kini Rio fokus mengelola layanan konsultasi dan pemasaran asuransi untuk klien di
+                Batam dan Kepulauan Riau, dengan spesialisasi asuransi properti komersial, kendaraan
+                niaga dan armada, alat berat dan machinery, serta asuransi liability khusus industri
+                termasuk limbah B3 – bidang yang sangat relevan dengan karakteristik industri Batam
+                sebagai kawasan ekonomi khusus.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { val: "10+", label: "Tahun Pengalaman" },
+                  { val: "8", label: "Tahun Pengalaman" },
                   { val: "200+", label: "Klien Aktif" },
                   { val: "98%", label: "Kepuasan Klien" },
                   { val: "20+", label: "Produk Asuransi" },

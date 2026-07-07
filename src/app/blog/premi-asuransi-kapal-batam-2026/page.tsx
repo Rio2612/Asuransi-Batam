@@ -90,7 +90,7 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Rio Mardiansyah",
-    jobTitle: "Konsultan Asuransi Kerugian",
+    jobTitle: "Praktisi Asuransi",
     url: "https://asuransibatam.com/tentang-kami",
   },
   publisher: {

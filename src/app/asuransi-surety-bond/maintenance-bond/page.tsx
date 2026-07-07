@@ -70,7 +70,7 @@ const schema = {
   author: {
     "@type": "Person",
     name: "Rio Mardiansyah",
-    jobTitle: "Konsultan Asuransi Kerugian",
+    jobTitle: "Praktisi Asuransi",
   },
   publisher: {
     "@type": "Organization",

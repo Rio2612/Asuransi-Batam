@@ -41,8 +41,8 @@ export default function ProductPageLayout({
     feature: isEN ? "Feature" : "Fitur",
     cta: isEN ? "Free Consultation" : "Konsultasi Gratis",
     authorSubtitle: isEN
-      ? "General Insurance Consultant · 10+ Years Experience"
-      : "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
+      ? "Insurance Practitioner · 8 Years Experience"
+      : "Praktisi Asuransi · 8 Tahun Pengalaman",
     reviewedBy: isEN ? "Reviewed by" : "Ditinjau oleh",
     phone: isEN
       ? "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance"

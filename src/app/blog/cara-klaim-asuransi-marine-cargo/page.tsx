@@ -30,7 +30,7 @@ const schema = {
   description: "Panduan step-by-step mengajukan klaim asuransi marine cargo: dokumen wajib, batas waktu lapor, dan kesalahan umum yang membuat klaim ditolak.",
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Praktisi Asuransi", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo" },
 };

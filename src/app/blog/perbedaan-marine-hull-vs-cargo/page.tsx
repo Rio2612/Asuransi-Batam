@@ -50,7 +50,7 @@ const schema = {
   description: "Penjelasan lengkap perbedaan asuransi marine hull (kapal) dan marine cargo (muatan). Siapa yang wajib beli, berapa preminya, dan bagaimana keduanya bekerja bersama.",
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Konsultan Asuransi", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Praktisi Asuransi", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo" },
 };

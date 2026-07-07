@@ -9,8 +9,8 @@ export const SITE = {
   address: "Batam Center, Kepulauan Riau",
   agent: {
     name: "Rio",
-    title: "Konsultan Asuransi Kerugian",
-    experience: "10+ Tahun",
+    title: "Praktisi Asuransi",
+    experience: "8 Tahun",
     photo: "/images/rio-mardiansyah.jpg",
   },
 } as const;
