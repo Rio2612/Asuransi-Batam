@@ -18,7 +18,7 @@ const stops: Stop[] = [
     period: "Feb 2013 – Agu 2016",
     duration: "3 thn 7 bln",
     location: "Batam, Kepulauan Riau",
-    desc: "Mengawali karier langsung di lapangan Batam — akuisisi nasabah dan pemahaman risiko dasar industri asuransi kerugian.",
+    desc: "Terjun langsung di lapangan Batam — dari galangan kapal hingga kawasan industri FTZ, belajar memahami risiko dari sisi nasabah, bukan dari balik meja.",
     logo: "/images/logos/bumida.png",
   },
   {
@@ -27,7 +27,7 @@ const stops: Stop[] = [
     period: "Sep 2016 – Agu 2021",
     duration: "4 thn 11 bln",
     location: "Bengkulu",
-    desc: "Memperdalam sisi pemasaran produk asuransi kerugian lintas segmen, dari ritel hingga korporat.",
+    desc: "Menangani portofolio klien yang makin beragam — dari pemilik usaha kecil hingga korporat, mengasah kemampuan mencocokkan produk dengan kebutuhan riil, bukan sekadar menjual polis.",
     logo: "/images/logos/aspan.png",
   },
   {
@@ -36,7 +36,7 @@ const stops: Stop[] = [
     period: "Sep 2021 – Agu 2022",
     duration: "11 bln",
     location: "Bengkulu",
-    desc: "Memimpin operasional cabang — target penjualan, manajemen tim, hingga penyelesaian klaim nasabah.",
+    desc: "Memegang tanggung jawab penuh atas operasional cabang — mulai dari target tim hingga memastikan klaim nasabah benar-benar tuntas, bukan cuma diajukan.",
     logo: "/images/logos/aspan.png",
   },
   {
@@ -45,7 +45,7 @@ const stops: Stop[] = [
     period: "Agu 2022 – Sekarang",
     duration: "4 thn",
     location: "Batam, Kepulauan Riau",
-    desc: "Melanjutkan pengalaman lapangan ke ranah digital — membantu klien Batam memilih & mengurus polis secara transparan.",
+    desc: "Menggabungkan pengalaman lapangan dengan platform digital — melayani klien Batam dan Kepulauan Riau, dari asuransi kendaraan pribadi hingga liability industri dan proyek kawasan FTZ.",
     current: true,
   },
 ];
