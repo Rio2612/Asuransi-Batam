@@ -1,6 +1,7 @@
 // components/ProductPageLayout.tsx
 import Link from "next/link";
 import CTASection from "./CTASection";
+import AuthorAvatar from "./AuthorAvatar";
 
 interface FAQ { q: string; a: string; }
 interface Benefit { icon: string; title: string; desc: string; href?: string; }
@@ -39,9 +40,44 @@ export default function ProductPageLayout({
     faqSubtitle: isEN ? "Answers to commonly asked questions" : "Jawaban untuk pertanyaan yang sering ditanyakan",
     feature: isEN ? "Feature" : "Fitur",
     cta: isEN ? "Free Consultation" : "Konsultasi Gratis",
+    authorSubtitle: isEN
+      ? "General Insurance Consultant · 10+ Years Experience"
+      : "Konsultan Asuransi Kerugian · 10+ Tahun Pengalaman",
+    reviewedBy: isEN ? "Reviewed by" : "Ditinjau oleh",
     phone: isEN
       ? "https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance"
       : "https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20asuransi",
+  };
+
+  // BreadcrumbList JSON-LD — generated from the same breadcrumbs prop used for the visual nav.
+  const breadcrumbListSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: t.home,
+        item: `https://asuransibatam.com${t.homeHref === "/" ? "" : t.homeHref}`,
+      },
+      ...breadcrumbs.map((b, i) => ({
+        "@type": "ListItem",
+        position: i + 2,
+        name: b.label,
+        item: `https://asuransibatam.com${b.href}`,
+      })),
+    ],
+  };
+
+  // FAQPage JSON-LD — auto-generated from the faqs prop already used for the visual accordion.
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
   };
 
   return (
@@ -50,6 +86,16 @@ export default function ProductPageLayout({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbListSchema) }}
+      />
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
       {/* Hero */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-[#0a1628] via-[#132040] to-[#1a4fa0]">
@@ -75,6 +121,17 @@ export default function ProductPageLayout({
             <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-3">{subtitle}</p>
             <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-6 leading-tight">{title}</h1>
             <p className="text-white/70 text-lg leading-relaxed mb-8">{description}</p>
+
+            {/* EEAT author byline */}
+            <div className="flex items-center gap-3 mb-8 pb-8 border-b border-white/10">
+              <AuthorAvatar />
+              <div>
+                <div className="text-white/60 text-xs">{t.reviewedBy}</div>
+                <div className="text-white font-medium text-sm">Rio Mardiansyah</div>
+                <div className="text-white/50 text-xs">{t.authorSubtitle}</div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={t.phone}
