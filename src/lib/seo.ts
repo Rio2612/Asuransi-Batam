@@ -80,6 +80,7 @@ export function schemaOrganization() {
       "@type": "Person",
       name: SITE.agent.name,
       jobTitle: SITE.agent.title,
+      sameAs: SITE.agent.sameAs,
     },
     openingHours: "Mo-Fr 08:00-17:00",
     sameAs: [`https://wa.me/${SITE.phoneWA}`],
@@ -189,6 +190,7 @@ export function schemaArticle(data: {
     author: {
       "@type": "Person",
       name: data.authorName,
+      sameAs: SITE.agent.sameAs,
     },
     publisher: {
       "@type": "Organization",

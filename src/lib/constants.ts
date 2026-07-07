@@ -12,6 +12,7 @@ export const SITE = {
     title: "Praktisi Asuransi",
     experience: "8 Tahun",
     photo: "/images/rio-mardiansyah.jpg",
+    sameAs: ["https://www.linkedin.com/in/riomardiansyah"],
   },
 } as const;
 

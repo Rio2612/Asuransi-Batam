@@ -189,6 +189,7 @@ export default function HomePage() {
           "@type": "Person",
           name: "Rio",
           jobTitle: "Praktisi Asuransi",
+          sameAs: ["https://www.linkedin.com/in/riomardiansyah"],
         },
       },
       {

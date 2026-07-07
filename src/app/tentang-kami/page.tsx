@@ -24,6 +24,7 @@ const schema = {
   worksFor: { "@type": "InsuranceAgency", name: "Asuransi Batam" },
   telephone: "+6281373336728",
   email: "rio@asuransibatam.com",
+  sameAs: ["https://www.linkedin.com/in/riomardiansyah"],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Batam Center",
@@ -168,6 +169,14 @@ export default function TentangKamiPage() {
                   </div>
                 ))}
               </div>
+              <a
+                href="https://www.linkedin.com/in/riomardiansyah"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#1a4fa0] font-medium hover:text-[#c9a84c] transition-colors"
+              >
+                Lihat profil LinkedIn Rio →
+              </a>
             </div>
           </div>
         </div>
