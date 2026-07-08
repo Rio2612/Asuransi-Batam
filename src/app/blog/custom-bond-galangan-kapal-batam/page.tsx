@@ -121,7 +121,7 @@ export default function CustomBondGalanganKapalPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Dua Skema yang Biasa Berjalan Beriringan
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Galangan kapal jarang hanya memakai satu jenis fasilitas kepabeanan. Berikut kombinasi yang paling umum:
           </p>
           <div className="space-y-5">
@@ -161,7 +161,7 @@ export default function CustomBondGalanganKapalPage() {
             <div className="relative">
               <span className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow" />
               <p className="font-display font-bold text-[#0a1628] text-sm mb-1">Bulan 1 — Mobilisasi Peralatan</p>
-              <p className="text-[#64748b] text-sm leading-relaxed">
+              <p className="text-[#475569] text-sm leading-relaxed">
                 Galangan menerima kontrak konversi FPSO dari operator migas asing. Kontraktor
                 teknis membawa masuk crane barge dan unit welding otomatis senilai total sekitar{" "}
                 <strong>Rp 12 miliar</strong> — seluruhnya akan dibawa kembali setelah proyek
@@ -172,7 +172,7 @@ export default function CustomBondGalanganKapalPage() {
             <div className="relative">
               <span className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-orange-500 border-4 border-white shadow" />
               <p className="font-display font-bold text-[#0a1628] text-sm mb-1">Bulan 2–8 — Fabrikasi Berjalan</p>
-              <p className="text-[#64748b] text-sm leading-relaxed">
+              <p className="text-[#475569] text-sm leading-relaxed">
                 Bersamaan dengan itu, pelat baja dan pipa untuk modifikasi struktur FPSO diimpor
                 melalui skema Kawasan Berikat karena akan diproses menjadi bagian struktur baru —
                 bukan dikembalikan dalam bentuk semula.
@@ -181,7 +181,7 @@ export default function CustomBondGalanganKapalPage() {
             <div className="relative">
               <span className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-amber-500 border-4 border-white shadow" />
               <p className="font-display font-bold text-[#0a1628] text-sm mb-1">Bulan 9 — Proyek Molor 1 Bulan</p>
-              <p className="text-[#64748b] text-sm leading-relaxed">
+              <p className="text-[#475569] text-sm leading-relaxed">
                 Cuaca laut yang buruk menunda jadwal penyelesaian. Karena custom bond OB 23 akan
                 jatuh tempo, tim galangan mengajukan perpanjangan 14 hari sebelum masa berlaku
                 habis — menghindari denda keterlambatan re-ekspor.
@@ -190,7 +190,7 @@ export default function CustomBondGalanganKapalPage() {
             <div className="relative">
               <span className="absolute -left-[41px] top-0 w-5 h-5 rounded-full bg-green-500 border-4 border-white shadow" />
               <p className="font-display font-bold text-[#0a1628] text-sm mb-1">Bulan 10 — Selesai & Custom Bond Ditutup</p>
-              <p className="text-[#64748b] text-sm leading-relaxed">
+              <p className="text-[#475569] text-sm leading-relaxed">
                 Crane barge dan unit welding diekspor kembali dengan dokumen PEB lengkap. Custom
                 bond OB 23 ditutup tanpa klaim. FPSO hasil konversi berlayar keluar dari Tanjung Uncang.
               </p>
@@ -233,7 +233,7 @@ export default function CustomBondGalanganKapalPage() {
                   {faq.q}
                   <span className="ml-4 text-amber-500 text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -253,7 +253,7 @@ export default function CustomBondGalanganKapalPage() {
                 <Ship className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-amber-700 transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

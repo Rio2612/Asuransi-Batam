@@ -139,7 +139,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
                 <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>{i + 1}</span>
                 {title}
               </p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -174,7 +174,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
             ].map(([a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
               </tr>
             ))}
           </tbody>
@@ -189,7 +189,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
               <Icon size={20} style={{ color: "#0a1628" }} />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -203,7 +203,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -217,7 +217,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
             <Timer size={20} className="flex-shrink-0" style={{ color: "#c9a84c" }} />
             <div className="flex-1">
               <p className="text-sm font-semibold" style={{ color: "#0a1628" }}>{t.range}</p>
-              <p className="text-xs text-[#64748b]">{t.note}</p>
+              <p className="text-xs text-[#475569]">{t.note}</p>
             </div>
             <span className="text-sm font-bold px-3 py-1.5 rounded-full text-white flex-shrink-0" style={{ background: "#0a1628" }}>{t.duration}</span>
           </div>
@@ -236,7 +236,7 @@ export default function ArticleHomeFireInsuranceClaimPage() {
           </div>
           <h3 className="font-display font-bold text-[#0a1628] m-0">Need Help with a Claim or Property Insurance Consultation in Batam?</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio assists with property insurance claims from start to finish — from document
           preparation and coordination with the Loss Adjuster to negotiating the claim
           value if there's a valuation discrepancy. Free consultation, no extra charges

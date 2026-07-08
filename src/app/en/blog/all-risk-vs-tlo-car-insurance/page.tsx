@@ -78,7 +78,7 @@ export default function ArticleAllRiskTLOENPage() {
             <ShieldCheck size={24} className="text-white" />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>All Risk (Comprehensive)</h3>
-          <p className="text-sm text-[#64748b] mb-4">
+          <p className="text-sm text-[#475569] mb-4">
             Covers <strong className="text-[#0a1628]">all physical damage</strong> to your vehicle —
             minor, moderate, or severe — unless explicitly excluded in the policy wording.
           </p>
@@ -97,7 +97,7 @@ export default function ArticleAllRiskTLOENPage() {
             <ShieldOff size={24} style={{ color: "#0a1628" }} />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>TLO (Total Loss Only)</h3>
-          <p className="text-sm text-[#64748b] mb-4">
+          <p className="text-sm text-[#475569] mb-4">
             Covers your vehicle only if it is{" "}
             <strong className="text-[#0a1628]">written off (damage exceeding 75% of value) or stolen</strong>.
           </p>
@@ -134,8 +134,8 @@ export default function ArticleAllRiskTLOENPage() {
             {COMPARISON_ROWS.map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-center text-[#64748b]">{b}</td>
-                <td className="p-4 text-center text-[#64748b]">{c}</td>
+                <td className="p-4 text-center text-[#475569]">{b}</td>
+                <td className="p-4 text-center text-[#475569]">{c}</td>
               </tr>
             ))}
           </tbody>
@@ -187,7 +187,7 @@ export default function ArticleAllRiskTLOENPage() {
           </div>
           <h3 className="font-display font-bold text-[#0a1628] m-0">Calculate Your Car Insurance Premium Now</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Use our premium calculator to get an instant estimate for both All Risk and TLO cover,
           based on the latest OJK official rate tables for Batam.
         </p>

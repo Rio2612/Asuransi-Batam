@@ -84,7 +84,7 @@ export default function VehicleInsurancePage() {
             className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all"
           >
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>
-            <p className="text-[#64748b] text-sm">{p.desc}</p>
+            <p className="text-[#475569] text-sm">{p.desc}</p>
           </Link>
         ))}
       </div>

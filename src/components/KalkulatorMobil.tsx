@@ -161,7 +161,7 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
         <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2">
           {t.heading}
         </h2>
-        <p className="text-[#64748b]">{t.subheading}</p>
+        <p className="text-[#475569]">{t.subheading}</p>
       </div>
 
       <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 shadow-sm">
@@ -170,7 +170,7 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
           <span className="text-lg">📍</span>
           <div>
             <span className="font-display font-bold text-sm text-[#0a1628]">{t.regionTitle}</span>
-            <p className="text-xs text-[#64748b]">{t.regionSub}</p>
+            <p className="text-xs text-[#475569]">{t.regionSub}</p>
           </div>
         </div>
 
@@ -195,7 +195,7 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
                   }`}
                 >
                   <div className="font-semibold text-sm text-[#0a1628]">{opt.label}</div>
-                  <div className="text-xs text-[#64748b] mt-0.5">{opt.sub}</div>
+                  <div className="text-xs text-[#475569] mt-0.5">{opt.sub}</div>
                 </button>
               ))}
             </div>
@@ -214,7 +214,7 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
               onChange={(e) => { setVehicleValue(e.target.value); setResult(null); }}
               className="w-full px-4 py-3 rounded-xl border-2 border-[#e2e8f0] focus:border-[#1a4fa0] outline-none text-[#0a1628] font-medium transition-colors"
             />
-            <p className="text-xs text-[#64748b] mt-1.5">{t.priceHint}</p>
+            <p className="text-xs text-[#475569] mt-1.5">{t.priceHint}</p>
           </div>
 
           <button
@@ -228,7 +228,7 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
         {/* Result */}
         {result && (
           <div className="mt-6 space-y-4">
-            <p className="text-center text-xs text-[#64748b]">
+            <p className="text-center text-xs text-[#475569]">
               {type === "allrisk" ? "All Risk" : "TLO"} · {t.regionTitle} · {t.selectVehicle}
             </p>
 
@@ -247,11 +247,11 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
                   <span className="text-xl">⛽</span>
                   <span className="font-display font-bold text-sm text-[#0a1628]">{t.convLabel}</span>
                 </div>
-                <p className="text-xs text-[#64748b] mb-2 leading-relaxed">{t.convDesc}</p>
+                <p className="text-xs text-[#475569] mb-2 leading-relaxed">{t.convDesc}</p>
                 <div className="font-display font-bold text-lg text-[#0a1628]">
                   {formatRupiah(result.konvensional)}
                 </div>
-                <div className="text-xs text-[#64748b] mt-0.5">
+                <div className="text-xs text-[#475569] mt-0.5">
                   {t.perYear} {result.rate.toFixed(2)}%
                 </div>
               </button>
@@ -269,11 +269,11 @@ export default function KalkulatorMobil({ lang = "id" }: KalkulatorMobilProps) {
                   <span className="text-xl">⚡</span>
                   <span className="font-display font-bold text-sm text-[#0a1628]">{t.evLabel}</span>
                 </div>
-                <p className="text-xs text-[#64748b] mb-2 leading-relaxed">{t.evDesc}</p>
+                <p className="text-xs text-[#475569] mb-2 leading-relaxed">{t.evDesc}</p>
                 <div className="font-display font-bold text-lg text-[#c9a84c]">
                   {formatRupiah(result.listrik)}
                 </div>
-                <div className="text-xs text-[#64748b] mt-0.5">
+                <div className="text-xs text-[#475569] mt-0.5">
                   {t.perYear} {result.rateListrik.toFixed(2)}%
                 </div>
               </button>

@@ -181,7 +181,7 @@ export default function CaraMendapatkanBuildersRiskPage() {
           <span className="font-display text-xs font-semibold uppercase tracking-wider text-[#0a1628]">
             Dokumentasi Lapangan
           </span>
-          <span className="text-xs text-[#64748b]">
+          <span className="text-xs text-[#475569]">
             — Penanganan klaim Builders Risk di salah satu galangan kapal, Batam
           </span>
         </figcaption>
@@ -230,7 +230,7 @@ export default function CaraMendapatkanBuildersRiskPage() {
                 <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">
                   {tahap}
                 </td>
-                <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">
+                <td className="px-5 py-4 text-[#475569] leading-relaxed border-b border-[#e2e8f0]">
                   {ket}
                 </td>
               </tr>
@@ -406,7 +406,7 @@ export default function CaraMendapatkanBuildersRiskPage() {
             <p className="font-display font-semibold text-[#0a1628] mb-1.5">
               {item.q}
             </p>
-            <p className="text-sm text-[#64748b] leading-relaxed">{item.a}</p>
+            <p className="text-sm text-[#475569] leading-relaxed">{item.a}</p>
           </div>
         ))}
       </div>

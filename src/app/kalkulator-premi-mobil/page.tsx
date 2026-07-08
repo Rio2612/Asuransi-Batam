@@ -105,7 +105,7 @@ export default function KalkulatorPremiMobilPage() {
 
         {/* CTA Konsultasi */}
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-2xl border border-[#e2e8f0] text-center">
-          <p className="text-[#64748b] text-sm mb-4">
+          <p className="text-[#475569] text-sm mb-4">
             Ingin penawaran resmi dengan harga kompetitif? Hubungi Rio untuk simulasi polis
             dari berbagai perusahaan asuransi terkemuka.
           </p>
@@ -149,7 +149,7 @@ export default function KalkulatorPremiMobilPage() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl border border-[#e2e8f0] p-6">
                 <h3 className="font-display font-bold text-[#0a1628] mb-2">{item.q}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{item.a}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>

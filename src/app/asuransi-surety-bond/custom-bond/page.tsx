@@ -184,7 +184,7 @@ export default function CustomBondPage() {
               perusahaan menerbitkan custom bond senilai kewajiban tersebut — dana operasional
               tetap cair untuk kebutuhan pameran lainnya.
             </p>
-            <p className="text-[#64748b] mt-3 text-xs leading-relaxed">
+            <p className="text-[#475569] mt-3 text-xs leading-relaxed">
               Setelah barang diekspor kembali sesuai jadwal dan dibuktikan dengan dokumen PEB
               (Pemberitahuan Ekspor Barang), custom bond dinyatakan selesai dan tidak ada
               pencairan yang terjadi.
@@ -197,7 +197,7 @@ export default function CustomBondPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Custom Bond vs Bank Garansi
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Keduanya diakui sah oleh Bea Cukai — tapi dampaknya ke keuangan perusahaan sangat berbeda.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
@@ -217,7 +217,7 @@ export default function CustomBondPage() {
               <h3 className="font-display font-bold text-[#0a1628] mb-3 flex items-center gap-2">
                 <span className="text-xl">🏦</span> Bank Garansi
               </h3>
-              <ul className="space-y-2 text-sm text-[#64748b]">
+              <ul className="space-y-2 text-sm text-[#475569]">
                 <li>• Umumnya mensyaratkan agunan tunai/deposito hingga 100%</li>
                 <li>• Mengunci plafon kredit perusahaan di bank terkait</li>
                 <li>• Dana tertahan sepanjang masa berlaku jaminan</li>
@@ -233,7 +233,7 @@ export default function CustomBondPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Persyaratan Dokumen Pengajuan Custom Bond
           </h2>
-          <p className="text-center text-[#64748b] mb-8">
+          <p className="text-center text-[#475569] mb-8">
             Siapkan dokumen berikut agar proses penerbitan tidak tertunda.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -277,7 +277,7 @@ export default function CustomBondPage() {
                 </span>
                 <div className="pt-1">
                   <p className="font-semibold text-[#0a1628] text-[15px]">{step.title}</p>
-                  <p className="text-sm text-[#64748b] mt-1">{step.desc}</p>
+                  <p className="text-sm text-[#475569] mt-1">{step.desc}</p>
                 </div>
               </li>
             ))}
@@ -289,7 +289,7 @@ export default function CustomBondPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Estimasi Premi Custom Bond
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Premi dihitung dari persentase nilai jaminan (bukan nilai barang), tergantung jenis
             fasilitas, tenor, dan profil risiko perusahaan.
           </p>
@@ -305,28 +305,28 @@ export default function CustomBondPage() {
               <tbody>
                 <tr className="border-b border-[#e2e8f0]">
                   <td className="p-4 text-[#0a1628] font-medium">Rp 100 juta</td>
-                  <td className="p-4 text-[#64748b]">OB 23 (Impor Sementara)</td>
+                  <td className="p-4 text-[#475569]">OB 23 (Impor Sementara)</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">Rp 800 rb – 2 jt</td>
                 </tr>
                 <tr className="border-b border-[#e2e8f0] bg-[#f8faff]">
                   <td className="p-4 text-[#0a1628] font-medium">Rp 500 juta</td>
-                  <td className="p-4 text-[#64748b]">KITE / Kawasan Berikat</td>
+                  <td className="p-4 text-[#475569]">KITE / Kawasan Berikat</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">Rp 4 – 9 jt</td>
                 </tr>
                 <tr className="border-b border-[#e2e8f0]">
                   <td className="p-4 text-[#0a1628] font-medium">Rp 1 miliar</td>
-                  <td className="p-4 text-[#64748b]">KITE / Kawasan Berikat</td>
+                  <td className="p-4 text-[#475569]">KITE / Kawasan Berikat</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">Rp 8 – 18 jt</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-[#0a1628] font-medium">Rp 150 juta (min. Tj. Priok)</td>
-                  <td className="p-4 text-[#64748b]">PPJK</td>
+                  <td className="p-4 text-[#475569]">PPJK</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">Rp 1,2 – 2,7 jt</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#64748b] mt-3 text-center">
+          <p className="text-xs text-[#475569] mt-3 text-center">
             * Estimasi ilustrasi umum berdasarkan rate pasar (kisaran 0,8%–1,8% dari nilai jaminan
             per tahun). Premi aktual ditentukan underwriter berdasarkan jenis fasilitas, tenor,
             dan profil risiko perusahaan Anda — hubungi kami untuk penawaran resmi.
@@ -338,33 +338,33 @@ export default function CustomBondPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Jenis Jaminan Lain yang Sering Dibutuhkan Bersamaan
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Pelaku impor-ekspor di Batam sering membutuhkan lebih dari satu jenis jaminan sekaligus.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link href="/blog/panduan-ob23-impor-sementara-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan OB 23</h3>
-              <p className="text-[#64748b] text-sm">Cara mengurus impor sementara untuk pameran dan proyek, lengkap dengan kesalahan umum yang harus dihindari.</p>
+              <p className="text-[#475569] text-sm">Cara mengurus impor sementara untuk pameran dan proyek, lengkap dengan kesalahan umum yang harus dihindari.</p>
             </Link>
             <Link href="/blog/ob23-vs-kite-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">OB 23 vs KITE</h3>
-              <p className="text-[#64748b] text-sm">Cara menentukan fasilitas kepabeanan yang tepat untuk bisnis impor-ekspor Anda.</p>
+              <p className="text-[#475569] text-sm">Cara menentukan fasilitas kepabeanan yang tepat untuk bisnis impor-ekspor Anda.</p>
             </Link>
             <Link href="/blog/custom-bond-galangan-kapal-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Custom Bond Galangan Kapal</h3>
-              <p className="text-[#64748b] text-sm">Kombinasi Kawasan Berikat dan OB 23 yang umum dipakai industri shipyard Batam.</p>
+              <p className="text-[#475569] text-sm">Kombinasi Kawasan Berikat dan OB 23 yang umum dipakai industri shipyard Batam.</p>
             </Link>
             <Link href="/blog/checklist-dokumen-custom-bond-ditolak" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Checklist Dokumen Sering Ditolak</h3>
-              <p className="text-[#64748b] text-sm">5 dokumen yang paling sering bikin pengajuan custom bond tertunda di Bea Cukai.</p>
+              <p className="text-[#475569] text-sm">5 dokumen yang paling sering bikin pengajuan custom bond tertunda di Bea Cukai.</p>
             </Link>
             <Link href="/asuransi-surety-bond/bid-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Bid Bond</h3>
-              <p className="text-[#64748b] text-sm">Jaminan penawaran untuk tender pengadaan barang/jasa pemerintah dan swasta.</p>
+              <p className="text-[#475569] text-sm">Jaminan penawaran untuk tender pengadaan barang/jasa pemerintah dan swasta.</p>
             </Link>
             <Link href="/asuransi-marine/marine-cargo" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Marine Cargo</h3>
-              <p className="text-[#64748b] text-sm">Lindungi nilai barang impor/ekspor Anda dari risiko kerusakan atau kehilangan selama pengiriman.</p>
+              <p className="text-[#475569] text-sm">Lindungi nilai barang impor/ekspor Anda dari risiko kerusakan atau kehilangan selama pengiriman.</p>
             </Link>
           </div>
         </div>

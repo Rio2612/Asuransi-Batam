@@ -147,7 +147,7 @@ export default function CaraKlaimMarineCargoPage() {
                   ].map(([doc, ket], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                       <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">{doc}</td>
-                      <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">{ket}</td>
+                      <td className="px-5 py-4 text-[#475569] leading-relaxed border-b border-[#e2e8f0]">{ket}</td>
                     </tr>
                   ))}
                 </tbody>

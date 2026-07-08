@@ -42,7 +42,7 @@ function IconList({ items }: { items: { icon: React.ElementType; title: string; 
             </span>
             <div>
               <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
-              <p className="text-sm text-[#64748b] mt-1 mb-0 leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-[#475569] mt-1 mb-0 leading-relaxed">{item.desc}</p>
             </div>
           </li>
         );
@@ -140,7 +140,7 @@ export default function BuildersRiskGalanganKapalPage() {
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspek}</td>
                 <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{br}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{hull}</td>
               </tr>
             ))}
           </tbody>

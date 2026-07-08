@@ -109,15 +109,15 @@ export default function AsuransiRukoBatamPage() {
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <Link href="/asuransi-properti/asuransi-hotel-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Hotel</h3>
-            <p className="text-[#64748b] text-sm">Untuk pelaku usaha perhotelan dan penginapan di Batam.</p>
+            <p className="text-[#475569] text-sm">Untuk pelaku usaha perhotelan dan penginapan di Batam.</p>
           </Link>
           <Link href="/asuransi-properti/asuransi-gudang-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Gudang</h3>
-            <p className="text-[#64748b] text-sm">Untuk pemilik ruko yang juga punya stok besar di gudang terpisah.</p>
+            <p className="text-[#475569] text-sm">Untuk pemilik ruko yang juga punya stok besar di gudang terpisah.</p>
           </Link>
           <Link href="/blog/asuransi-properti-komersial-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan Asuransi Properti Komersial</h3>
-            <p className="text-[#64748b] text-sm">Tips memilih perlindungan yang tepat untuk bisnis properti Anda.</p>
+            <p className="text-[#475569] text-sm">Tips memilih perlindungan yang tepat untuk bisnis properti Anda.</p>
           </Link>
         </div>
       </div>

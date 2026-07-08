@@ -106,15 +106,15 @@ export default function AsuransiMobilBatamPage() {
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <Link href="/blog/perbedaan-all-risk-dan-tlo" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Perbedaan All Risk dan TLO</h3>
-            <p className="text-[#64748b] text-sm">Pahami dulu sebelum memilih jenis perlindungan mobil Anda.</p>
+            <p className="text-[#475569] text-sm">Pahami dulu sebelum memilih jenis perlindungan mobil Anda.</p>
           </Link>
           <Link href="/blog/cara-klaim-asuransi-mobil-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Cara Klaim Asuransi Mobil</h3>
-            <p className="text-[#64748b] text-sm">Panduan langkah-langkah klaim agar prosesnya cepat dan tidak ribet.</p>
+            <p className="text-[#475569] text-sm">Panduan langkah-langkah klaim agar prosesnya cepat dan tidak ribet.</p>
           </Link>
           <Link href="/asuransi-personal-accident/pa-individu-keluarga" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">PA Individu & Keluarga</h3>
-            <p className="text-[#64748b] text-sm">Lindungi diri Anda sendiri, bukan hanya kendaraannya.</p>
+            <p className="text-[#475569] text-sm">Lindungi diri Anda sendiri, bukan hanya kendaraannya.</p>
           </Link>
         </div>
       </div>

@@ -157,7 +157,7 @@ export default function ProductPageLayout({
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.benefitsTitle}</h2>
-          <p className="text-center text-[#64748b] mb-12 max-w-2xl mx-auto">{t.benefitsSubtitle}</p>
+          <p className="text-center text-[#475569] mb-12 max-w-2xl mx-auto">{t.benefitsSubtitle}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((b, i) => {
               const cardClass = "p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover block";
@@ -165,7 +165,7 @@ export default function ProductPageLayout({
                 <>
                   <div className="text-3xl mb-3">{b.icon}</div>
                   <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{b.title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{b.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{b.desc}</p>
                 </>
               );
               return b.href ? (
@@ -194,7 +194,7 @@ export default function ProductPageLayout({
         <section className="section-padding bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.compareTitle}</h2>
-            <p className="text-center text-[#64748b] mb-10">{t.compareSubtitle}</p>
+            <p className="text-center text-[#475569] mb-10">{t.compareSubtitle}</p>
             <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0] shadow-sm">
               <table className="w-full">
                 <thead>
@@ -209,7 +209,7 @@ export default function ProductPageLayout({
                   {policyComparison.map((row, i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                       <td className="py-3.5 px-6 text-[#0a1628] font-medium text-sm">{row.feature}</td>
-                      <td className="py-3.5 px-6 text-center text-sm text-[#64748b]">{row.basic}</td>
+                      <td className="py-3.5 px-6 text-center text-sm text-[#475569]">{row.basic}</td>
                       <td className="py-3.5 px-6 text-center text-sm text-[#0a1628] font-medium">{row.standard}</td>
                       <td className="py-3.5 px-6 text-center text-sm text-[#1a4fa0] font-bold">{row.comprehensive}</td>
                     </tr>
@@ -217,7 +217,7 @@ export default function ProductPageLayout({
                 </tbody>
               </table>
             </div>
-            <p className="text-center text-sm text-[#64748b] mt-4">{t.compareNote}</p>
+            <p className="text-center text-sm text-[#475569] mt-4">{t.compareNote}</p>
           </div>
         </section>
       )}
@@ -226,7 +226,7 @@ export default function ProductPageLayout({
       <section className="section-padding bg-[#faf8f3]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-2 text-center">{t.faqTitle}</h2>
-          <p className="text-center text-[#64748b] mb-10">{t.faqSubtitle}</p>
+          <p className="text-center text-[#475569] mb-10">{t.faqSubtitle}</p>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <details key={i} className="group bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden">
@@ -234,7 +234,7 @@ export default function ProductPageLayout({
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>

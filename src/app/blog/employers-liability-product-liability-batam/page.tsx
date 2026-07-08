@@ -309,7 +309,7 @@ export default function ArticleEmployersLiabilityProductLiabilityBatamPage() {
         Public Liability yang lebih umum dikenal:
       </p>
       <ComparisonTable />
-      <p className="text-sm text-[#64748b]">
+      <p className="text-sm text-[#475569]">
         Sudah familiar dengan Public Liability?{" "}
         <Link
           href="/blog/asuransi-public-liability-batam-panduan-lengkap"
@@ -371,7 +371,7 @@ export default function ArticleEmployersLiabilityProductLiabilityBatamPage() {
             Cek Celah Perlindungan Liability Perusahaan Anda
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio membantu perusahaan di Batam memetakan risiko Employers Liability dan
           Product Liability sesuai profil operasional, dan menyusun struktur
           perlindungan liability yang menyeluruh — bukan hanya Public Liability saja.

@@ -297,7 +297,7 @@ export default function ArticleCaraMendapatkanSuretyBondTenderProyekBatamPage() 
         cacat atau kerusakan yang muncul selama masa pemeliharaan (defect liability
         period) sesuai ketentuan kontrak.
       </p>
-      <p className="text-sm text-[#64748b]">
+      <p className="text-sm text-[#475569]">
         Ingin memahami perbedaan detail antara dua bond yang paling sering
         dipertukarkan?{" "}
         <Link
@@ -433,7 +433,7 @@ export default function ArticleCaraMendapatkanSuretyBondTenderProyekBatamPage() 
             Konsultasi Surety Bond untuk Proyek Anda di Batam
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Setiap tender dan kontrak punya karakteristik jaminan yang berbeda. Rio
           membantu kontraktor di Batam menentukan jenis bond yang tepat, menyiapkan
           dokumen agar proses underwriting berjalan lancar, dan mendapatkan limit bond

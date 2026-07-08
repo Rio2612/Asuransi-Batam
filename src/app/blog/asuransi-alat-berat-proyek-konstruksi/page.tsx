@@ -114,7 +114,7 @@ function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }
           </span>
           <div className="pt-0.5">
             <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
-            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+            {item.desc && <p className="text-sm text-[#475569] mt-1 mb-0">{item.desc}</p>}
           </div>
         </li>
       ))}
@@ -205,8 +205,8 @@ export default function ArticleAsuransiAlatBeratKonstruksiPage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-                <td className="p-4 text-[#64748b]">{c}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
+                <td className="p-4 text-[#475569]">{c}</td>
               </tr>
             ))}
           </tbody>
@@ -385,7 +385,7 @@ export default function ArticleAsuransiAlatBeratKonstruksiPage() {
             Siap Melindungi Armada Alat Berat Proyek Anda?
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Tidak perlu bingung memilih antara CAR dan EAR, atau menghitung nilai pertanggungan
           yang tepat sendirian. Rio akan membantu menganalisis kebutuhan proteksi armada Anda,
           menyusun struktur polis yang efisien, dan memastikan tidak ada celah perlindungan

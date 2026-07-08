@@ -149,45 +149,45 @@ export default function SuretyBondPage() {
     >
       <div className="mb-12">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Jenis Surety Bond yang Kami Terbitkan</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Pilih jenis jaminan sesuai tahapan proyek konstruksi atau pengadaan Anda di Batam.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Pilih jenis jaminan sesuai tahapan proyek konstruksi atau pengadaan Anda di Batam.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Link href="/asuransi-surety-bond/bid-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Bid Bond</h3>
-            <p className="text-[#64748b] text-sm">Jaminan penawaran untuk mengikuti proses tender proyek pemerintah dan swasta.</p>
+            <p className="text-[#475569] text-sm">Jaminan penawaran untuk mengikuti proses tender proyek pemerintah dan swasta.</p>
           </Link>
           <Link href="/asuransi-surety-bond/performance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Performance Bond</h3>
-            <p className="text-[#64748b] text-sm">Jaminan pelaksanaan bahwa kontraktor menyelesaikan proyek sesuai kontrak dan jadwal.</p>
+            <p className="text-[#475569] text-sm">Jaminan pelaksanaan bahwa kontraktor menyelesaikan proyek sesuai kontrak dan jadwal.</p>
           </Link>
           <Link href="/asuransi-surety-bond/advance-payment-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Advance Payment Bond</h3>
-            <p className="text-[#64748b] text-sm">Jaminan pengembalian uang muka jika kontraktor gagal memulai atau melanjutkan pekerjaan.</p>
+            <p className="text-[#475569] text-sm">Jaminan pengembalian uang muka jika kontraktor gagal memulai atau melanjutkan pekerjaan.</p>
           </Link>
           <Link href="/asuransi-surety-bond/maintenance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Maintenance Bond</h3>
-            <p className="text-[#64748b] text-sm">Jaminan pemeliharaan selama masa garansi setelah proyek konstruksi selesai dikerjakan.</p>
+            <p className="text-[#475569] text-sm">Jaminan pemeliharaan selama masa garansi setelah proyek konstruksi selesai dikerjakan.</p>
           </Link>
           <Link href="/asuransi-surety-bond/custom-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Custom Bond</h3>
-            <p className="text-[#64748b] text-sm">Jaminan kepabeanan untuk fasilitas OB 23/impor sementara, KITE, dan Kawasan Berikat.</p>
+            <p className="text-[#475569] text-sm">Jaminan kepabeanan untuk fasilitas OB 23/impor sementara, KITE, dan Kawasan Berikat.</p>
           </Link>
         </div>
       </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Kontraktor proyek biasanya membutuhkan jaminan ini sekaligus dengan polis berikut.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Kontraktor proyek biasanya membutuhkan jaminan ini sekaligus dengan polis berikut.</p>
         <div className="grid md:grid-cols-3 gap-6">
           <Link href="/asuransi-engineering/contractor-all-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Contractor All Risk (CAR)</h3>
-            <p className="text-[#64748b] text-sm">Lindungi aset fisik proyek dari risiko kerusakan selama konstruksi.</p>
+            <p className="text-[#475569] text-sm">Lindungi aset fisik proyek dari risiko kerusakan selama konstruksi.</p>
           </Link>
           <Link href="/asuransi-marine/builders-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Builder&apos;s Risk (Galangan Kapal)</h3>
-            <p className="text-[#64748b] text-sm">Untuk kontrak pembangunan kapal di galangan, sering perlu performance bond.</p>
+            <p className="text-[#475569] text-sm">Untuk kontrak pembangunan kapal di galangan, sering perlu performance bond.</p>
           </Link>
           <Link href="/blog/perbedaan-bid-bond-performance-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Perbedaan Bid Bond & Performance Bond</h3>
-            <p className="text-[#64748b] text-sm">Pahami kapan masing-masing jenis jaminan dibutuhkan.</p>
+            <p className="text-[#475569] text-sm">Pahami kapan masing-masing jenis jaminan dibutuhkan.</p>
           </Link>
         </div>
       </div>

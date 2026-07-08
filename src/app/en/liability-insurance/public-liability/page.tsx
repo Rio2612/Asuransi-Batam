@@ -144,15 +144,15 @@ export default function PublicLiabilityENPage() {
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <Link href="/en/marine-insurance/builders-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Shipyard Builder&apos;s Risk</h3>
-            <p className="text-[#64748b] text-sm">Complete the protection of your shipbuilding project's assets at the shipyard.</p>
+            <p className="text-[#475569] text-sm">Complete the protection of your shipbuilding project's assets at the shipyard.</p>
           </Link>
           <Link href="/en/liability-insurance/b3-waste-insurance" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Hazardous Waste (B3) Insurance</h3>
-            <p className="text-[#64748b] text-sm">Mandatory for industries generating B3 waste under Government Regulation 22/2021.</p>
+            <p className="text-[#475569] text-sm">Mandatory for industries generating B3 waste under Government Regulation 22/2021.</p>
           </Link>
           <Link href="/en/engineering-insurance/contractor-all-risk" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Contractor All Risk (CAR)</h3>
-            <p className="text-[#64748b] text-sm">For construction projects that also need physical asset protection.</p>
+            <p className="text-[#475569] text-sm">For construction projects that also need physical asset protection.</p>
           </Link>
         </div>
       </div>

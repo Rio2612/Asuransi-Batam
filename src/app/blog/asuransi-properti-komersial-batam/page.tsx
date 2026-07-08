@@ -267,8 +267,8 @@ export default function ArticleAsuransiPropertiKomersialBatamPage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-                <td className={`p-4 font-semibold ${c === "Wajib" ? "text-red-600" : c === "Sangat Direkomendasikan" ? "text-orange-500" : "text-[#64748b]"}`}>{c}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
+                <td className={`p-4 font-semibold ${c === "Wajib" ? "text-red-600" : c === "Sangat Direkomendasikan" ? "text-orange-500" : "text-[#475569]"}`}>{c}</td>
               </tr>
             ))}
           </tbody>
@@ -365,7 +365,7 @@ export default function ArticleAsuransiPropertiKomersialBatamPage() {
             Konsultasi Asuransi Properti Komersial di Batam
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Setiap properti komersial memiliki karakteristik dan risiko yang unik. Rio
           membantu Anda menganalisis kebutuhan perlindungan yang tepat, menghindari
           underinsurance, dan memastikan polis yang Anda miliki benar-benar melindungi

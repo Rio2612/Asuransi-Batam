@@ -341,7 +341,7 @@ export default function HomePage() {
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               Semua Kebutuhan Asuransi Anda
             </h2>
-            <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
+            <p className="text-[#475569] text-lg max-w-2xl mx-auto">
               Dari properti hingga surety bond – kami menyediakan solusi asuransi kerugian
               lengkap untuk individu dan bisnis di Batam.
             </p>
@@ -354,7 +354,7 @@ export default function HomePage() {
                   <h3 className="font-display font-bold text-xl text-[#0a1628] mb-3 group-hover:text-[#1a4fa0] transition-colors">
                     {p.title}
                   </h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed mb-4">{p.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed mb-4">{p.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.tags.map((tag) => (
                       <span
@@ -456,7 +456,7 @@ export default function HomePage() {
               <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-6">
                 Mengapa Percayakan Asuransi ke Kami?
               </h2>
-              <p className="text-[#64748b] text-lg leading-relaxed mb-8">
+              <p className="text-[#475569] text-lg leading-relaxed mb-8">
                 Dengan pengalaman 8 tahun di industri asuransi Batam,
                 Rio hadir sebagai mitra terpercaya yang memahami kebutuhan lokal.
               </p>
@@ -489,7 +489,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <h3 className="font-display font-bold text-[#0a1628] mb-1">{item.title}</h3>
-                      <p className="text-[#64748b] text-sm">{item.desc}</p>
+                      <p className="text-[#475569] text-sm">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -497,10 +497,10 @@ export default function HomePage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { val: "8+", label: "Tahun Pengalaman", bg: "bg-[#0a1628]", color: "text-[#c9a84c]" },
-                { val: "200+", label: "Klien Aktif", bg: "bg-[#c9a84c]", color: "text-[#0a1628]" },
-                { val: "98%", label: "Tingkat Klaim Sukses", bg: "bg-[#1a4fa0]", color: "text-white" },
-                { val: "24/7", label: "Layanan Darurat", bg: "bg-[#132040]", color: "text-[#f0d080]" },
+                { val: "8+", label: "Tahun Pengalaman", bg: "bg-[#0a1628]", color: "text-[#c9a84c]", labelColor: "text-white/70" },
+                { val: "200+", label: "Klien Aktif", bg: "bg-[#c9a84c]", color: "text-[#0a1628]", labelColor: "text-[#0a1628]/80" },
+                { val: "98%", label: "Tingkat Klaim Sukses", bg: "bg-[#1a4fa0]", color: "text-white", labelColor: "text-white/85" },
+                { val: "24/7", label: "Layanan Darurat", bg: "bg-[#132040]", color: "text-[#f0d080]", labelColor: "text-white/70" },
               ].map((s) => (
                 <div
                   key={s.label}
@@ -511,7 +511,7 @@ export default function HomePage() {
                   >
                     {s.val}
                   </div>
-                  <div className="text-white/60 text-xs sm:text-sm mt-1">{s.label}</div>
+                  <div className={`${s.labelColor} text-xs sm:text-sm mt-1`}>{s.label}</div>
                 </div>
               ))}
             </div>
@@ -541,7 +541,7 @@ export default function HomePage() {
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-[#64748b] text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
+                <p className="text-[#475569] text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
                 <div>
                   <div className="font-display font-bold text-[#0a1628]">{t.name}</div>
                   <div className="text-[#c9a84c] text-sm">{t.company}</div>
@@ -575,7 +575,7 @@ export default function HomePage() {
                     +
                   </span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>

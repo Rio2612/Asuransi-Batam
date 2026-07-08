@@ -309,7 +309,7 @@ export default function ArticleCaraKlaimAsuransiPublicLiabilityBatamPage() {
           outcome="→ Klaim diproses berdasarkan investigasi kelalaian operasional, dengan biaya pembelaan hukum turut ditanggung."
         />
       </div>
-      <p className="text-xs text-[#64748b]">
+      <p className="text-xs text-[#475569]">
         Skenario di atas adalah ilustrasi umum untuk tujuan edukasi, bukan representasi
         kasus klaim aktual dari klien tertentu.
       </p>
@@ -370,7 +370,7 @@ export default function ArticleCaraKlaimAsuransiPublicLiabilityBatamPage() {
             Butuh Pendampingan Klaim Public Liability?
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio membantu pemegang polis di Batam menyiapkan dokumen klaim yang lengkap
           sejak insiden pertama kali dilaporkan, agar proses verifikasi berjalan cepat
           tanpa bolak-balik permintaan dokumen tambahan.

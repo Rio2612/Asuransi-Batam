@@ -120,7 +120,7 @@ export default function BuildersRiskShipyardPage() {
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspect}</td>
                 <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{br}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{hull}</td>
               </tr>
             ))}
           </tbody>
@@ -135,7 +135,7 @@ export default function BuildersRiskShipyardPage() {
               <Icon size={18} className="text-white" />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -147,7 +147,7 @@ export default function BuildersRiskShipyardPage() {
             <CircleCheck size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#1a4fa0" }} />
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{c.title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{c.desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{c.desc}</p>
             </div>
           </div>
         ))}
@@ -188,7 +188,7 @@ export default function BuildersRiskShipyardPage() {
               <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#c9a84c" }}>{label}</span>
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
