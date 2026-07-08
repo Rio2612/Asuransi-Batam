@@ -290,14 +290,14 @@ export default function BlogPageEN() {
                           >
                             {a.category}
                           </span>
-                          <span className="text-[#64748b] text-xs">{a.readTime} read</span>
+                          <span className="text-[#475569] text-xs">{a.readTime} read</span>
                         </div>
                         <h2 className="font-display font-bold text-base text-[#0a1628] mb-2 group-hover:text-[#1a4fa0] transition-colors leading-tight">
                           {a.title}
                         </h2>
-                        <p className="text-[#64748b] text-sm leading-relaxed mb-4">{a.excerpt}</p>
+                        <p className="text-[#475569] text-sm leading-relaxed mb-4">{a.excerpt}</p>
                         <div className="flex items-center justify-between">
-                          <span className="text-[#64748b] text-xs">{a.date}</span>
+                          <span className="text-[#475569] text-xs">{a.date}</span>
                           <span className="text-[#1a4fa0] text-sm font-semibold group-hover:text-[#c9a84c] transition-colors">
                             Read →
                           </span>

@@ -171,7 +171,7 @@ function SectorTable() {
           ))}
         </tbody>
       </table>
-      <p className="text-xs text-[#64748b] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
+      <p className="text-xs text-[#475569] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
         Ilustrasi umum berdasarkan pola permintaan principal/klien di Batam. Nilai
         pertanggungan aktual tetap mengikuti kontrak, penilaian risiko, dan kesepakatan
         dengan penanggung.
@@ -289,7 +289,7 @@ export default function ArticleAsuransiPublicLiabilityBatamPanduanLengkapPage() 
           },
         ]}
       />
-      <p className="text-sm text-[#64748b]">
+      <p className="text-sm text-[#475569]">
         Sudah membaca soal kewajiban limbah industri?{" "}
         <Link
           href="/blog/pentingnya-asuransi-limbah-b3"
@@ -391,7 +391,7 @@ export default function ArticleAsuransiPublicLiabilityBatamPanduanLengkapPage() 
             Siapkan Public Liability & COI untuk Bisnis Anda
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio membantu subkontraktor galangan kapal, hotel, mall, dan penyelenggara
           acara di Batam menyiapkan polis Public Liability beserta dokumen Certificate
           of Insurance yang langsung diterima tim HSE/Procurement principal.

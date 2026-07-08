@@ -277,7 +277,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           <p className="text-[#0a1628] mt-4 leading-relaxed">
             <em>"Bukankah bid bond sudah cukup?"</em> tanya sang direktur kepada timnya.
           </p>
-          <p className="text-[#64748b] mt-4 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-4 text-sm leading-relaxed">
             Jawabannya: <strong className="text-[#0a1628]">tidak.</strong> Inilah kesalahpahaman yang paling sering
             menjebak kontraktor pemula di Batam. Artikel ini membedah perbedaan keduanya secara tuntas.
           </p>
@@ -288,12 +288,12 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Apa Itu Surety Bond dan Mengapa Ada Lebih dari Satu Jenis?
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-5">
+          <p className="text-[#475569] leading-relaxed mb-5">
             Surety bond bukan satu produk tunggal — melainkan keluarga produk penjaminan yang masing-masing
             dirancang untuk mengamankan <strong className="text-[#0a1628]">fase dan kewajiban tertentu</strong> dalam
             siklus proyek konstruksi atau pengadaan.
           </p>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Dalam pengadaan pemerintah yang diatur oleh Perpres 16/2018, dikenal minimal empat jenis surety bond:
           </p>
 
@@ -314,14 +314,14 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                   <div className="font-display font-bold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">
                     {item.title}
                   </div>
-                  <div className="text-[#64748b] text-xs">{item.sub}</div>
+                  <div className="text-[#475569] text-xs">{item.sub}</div>
                 </div>
                 <ArrowRight className="w-4 h-4 text-[#c9a84c] ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </Link>
             ))}
           </div>
 
-          <p className="text-[#64748b] leading-relaxed">
+          <p className="text-[#475569] leading-relaxed">
             Bid bond dan performance bond adalah dua yang paling sering membingungkan kontraktor karena keduanya
             diterbitkan dalam siklus yang berdekatan — sebelum dan sesaat setelah kontrak ditandatangani.
           </p>
@@ -338,7 +338,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
             </h2>
           </div>
 
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             <strong className="text-[#0a1628]">Bid bond</strong> (atau <em>jaminan penawaran</em>) adalah sertifikat
             surety bond yang diterbitkan untuk menjamin bahwa kontraktor yang mengikuti proses tender serius
             dalam mengajukan penawaran, mampu memenuhi persyaratan kontrak, dan tidak akan mundur setelah
@@ -352,9 +352,9 @@ export default function PerbedaanBidBondPerformanceBondPage() {
               { label: "Diterbitkan", val: "Sebelum", sub: "pemasukan dokumen penawaran" },
             ].map((s) => (
               <div key={s.label} className="bg-[#faf8f3] rounded-2xl p-5 text-center border border-[#e2e8f0]">
-                <div className="text-[#64748b] text-xs uppercase tracking-widest mb-2">{s.label}</div>
+                <div className="text-[#475569] text-xs uppercase tracking-widest mb-2">{s.label}</div>
                 <div className="font-display font-bold text-2xl text-[#c9a84c] mb-1">{s.val}</div>
-                <div className="text-[#64748b] text-xs">{s.sub}</div>
+                <div className="text-[#475569] text-xs">{s.sub}</div>
               </div>
             ))}
           </div>
@@ -363,11 +363,11 @@ export default function PerbedaanBidBondPerformanceBondPage() {
             <h3 className="font-display font-bold text-[#0a1628] mb-3">Contoh Ilustrasi</h3>
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div className="bg-[#faf8f3] rounded-xl p-3">
-                <div className="text-[#64748b] text-xs mb-1">Nilai penawaran</div>
+                <div className="text-[#475569] text-xs mb-1">Nilai penawaran</div>
                 <div className="font-bold text-[#0a1628]">Rp 8,5 miliar</div>
               </div>
               <div className="bg-[#faf8f3] rounded-xl p-3">
-                <div className="text-[#64748b] text-xs mb-1">Bid bond 2%</div>
+                <div className="text-[#475569] text-xs mb-1">Bid bond 2%</div>
                 <div className="font-bold text-[#c9a84c]">Rp 170 juta</div>
               </div>
             </div>
@@ -399,7 +399,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
             </h2>
           </div>
 
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             <strong className="text-[#0a1628]">Performance bond</strong> (atau <em>jaminan pelaksanaan</em>) diterbitkan
             <strong className="text-[#0a1628]"> setelah kontraktor ditetapkan sebagai pemenang</strong> dan siap
             menandatangani kontrak. Fungsinya: menjamin bahwa kontraktor akan menyelesaikan pekerjaan sesuai
@@ -424,15 +424,15 @@ export default function PerbedaanBidBondPerformanceBondPage() {
             <h3 className="font-display font-bold text-[#0a1628] mb-3">Contoh Ilustrasi (lanjutan skenario)</h3>
             <div className="grid grid-cols-2 gap-3 text-sm">
               <div className="bg-[#faf8f3] rounded-xl p-3">
-                <div className="text-[#64748b] text-xs mb-1">Nilai kontrak</div>
+                <div className="text-[#475569] text-xs mb-1">Nilai kontrak</div>
                 <div className="font-bold text-[#0a1628]">Rp 8,5 miliar</div>
               </div>
               <div className="bg-[#faf8f3] rounded-xl p-3">
-                <div className="text-[#64748b] text-xs mb-1">Performance bond 5%</div>
+                <div className="text-[#475569] text-xs mb-1">Performance bond 5%</div>
                 <div className="font-bold text-[#1a4fa0]">Rp 425 juta</div>
               </div>
             </div>
-            <p className="text-[#64748b] text-xs mt-3 leading-relaxed">
+            <p className="text-[#475569] text-xs mt-3 leading-relaxed">
               Nilai performance bond <strong className="text-[#0a1628]">jauh lebih besar</strong> dari bid bond — karena
               kegagalan di tahap pelaksanaan menimbulkan kerugian yang jauh lebih signifikan bagi pemilik proyek.
             </p>
@@ -472,8 +472,8 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                 {comparisonRows.map((row, i) => (
                   <tr key={row.aspect} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-semibold text-[#0a1628]">{row.aspect}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{row.bidBond}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{row.perfBond}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{row.bidBond}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{row.perfBond}</td>
                   </tr>
                 ))}
               </tbody>
@@ -486,7 +486,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Alur Kronologis dalam Satu Siklus Proyek di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Bid bond <strong className="text-[#0a1628]">mendahului</strong> performance bond dan tidak pernah berlaku
             bersamaan dalam fase yang sama. Pahami alurnya untuk mempersiapkan dokumen lebih awal.
           </p>
@@ -508,7 +508,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                   <div className={`flex-1 rounded-xl px-4 py-3 ${
                     step.highlight
                       ? step.bond ? `${bondColors[step.bond]} shadow-sm` : "bg-[#c9a84c] text-navy"
-                      : "bg-[#faf8f3] text-[#64748b]"
+                      : "bg-[#faf8f3] text-[#475569]"
                   }`}>
                     <span className={`text-sm font-${step.highlight ? "bold font-display" : "medium"}`}>
                       {step.highlight && "→ "}{step.label}
@@ -525,7 +525,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Proyek di Batam yang Rutin Memerlukan Keduanya
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Di ekosistem proyek Batam, berbagai instansi dan badan memiliki ritme tender yang berbeda namun
             semuanya mensyaratkan bid bond dan performance bond.
           </p>
@@ -535,7 +535,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
               <div key={ctx.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-6 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{ctx.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2">{ctx.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{ctx.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{ctx.desc}</p>
               </div>
             ))}
           </div>
@@ -546,7 +546,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Estimasi Biaya: Satu Siklus Proyek Rp 5 Miliar
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Sebagai ilustrasi umum, berikut gambaran total biaya surety bond untuk satu proyek fiktif di Batam.
           </p>
 
@@ -563,8 +563,8 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                 {costRows.map((row, i) => (
                   <tr key={row.type} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 text-[#0a1628] font-medium">{row.type}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.nilai}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.biaya}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.nilai}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.biaya}</td>
                   </tr>
                 ))}
                 <tr className="bg-[#0a1628]">
@@ -576,7 +576,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
             </table>
           </div>
 
-          <div className="bg-[#faf8f3] border border-[#e2e8f0] rounded-xl p-4 text-sm text-[#64748b] leading-relaxed">
+          <div className="bg-[#faf8f3] border border-[#e2e8f0] rounded-xl p-4 text-sm text-[#475569] leading-relaxed">
             <strong className="text-[#0a1628]">Catatan:</strong> Angka di atas adalah ilustrasi umum berdasarkan kondisi pasar.
             Total biaya surety bond kurang dari <strong className="text-[#0a1628]">0,3%</strong> dari nilai proyek Rp 5 miliar —
             investasi kecil dibanding risiko gagal lolos tender. Biaya aktual bergantung pada profil perusahaan, rekam
@@ -600,7 +600,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-[#0a1628] mb-1">{tip.title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{tip.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{tip.desc}</p>
                 </div>
               </div>
             ))}
@@ -620,7 +620,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>
@@ -645,7 +645,7 @@ export default function PerbedaanBidBondPerformanceBondPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

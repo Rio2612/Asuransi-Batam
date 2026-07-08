@@ -177,7 +177,7 @@ export default function ArticleAsuransiExcavatorBulldozerPage() {
                 <Icon size={18} className="text-[#c9a84c]" />
               </span>
               <p className="font-display font-bold text-[#0a1628] mb-2">{item.title}</p>
-              <p className="text-sm text-[#64748b] leading-relaxed">{item.body}</p>
+              <p className="text-sm text-[#475569] leading-relaxed">{item.body}</p>
             </div>
           );
         })}
@@ -214,7 +214,7 @@ export default function ArticleAsuransiExcavatorBulldozerPage() {
             ].map(([a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">{a}</td>
-                <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">{b}</td>
+                <td className="px-5 py-4 text-[#475569] leading-relaxed border-b border-[#e2e8f0]">{b}</td>
               </tr>
             ))}
           </tbody>
@@ -249,7 +249,7 @@ export default function ArticleAsuransiExcavatorBulldozerPage() {
             <Hourglass size={18} className="text-[#c9a84c]" />
           </span>
           <p className="font-display font-bold text-[#0a1628] mb-2">Nilai Pasar Wajar (Market Value)</p>
-          <p className="text-sm text-[#64748b] leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Nilai jual unit di pasaran pada kondisi saat ini, memperhitungkan usia dan jam operasi
             mesin. Metode ini lebih umum untuk unit berusia di atas 3 tahun. Jika terjadi klaim
             total loss, ganti rugi dihitung berdasarkan nilai pasar saat kejadian.
@@ -261,7 +261,7 @@ export default function ArticleAsuransiExcavatorBulldozerPage() {
             <ShieldCheck size={18} className="text-[#c9a84c]" />
           </span>
           <p className="font-display font-bold text-[#0a1628] mb-2">Nilai Penggantian Baru (Replacement Value)</p>
-          <p className="text-sm text-[#64748b] leading-relaxed">
+          <p className="text-sm text-[#475569] leading-relaxed">
             Nilai unit baru dengan spesifikasi setara di pasaran saat ini. Premi lebih tinggi, tapi
             ganti rugi lebih menguntungkan karena tidak dipotong penyusutan. Cocok untuk unit baru
             atau unit yang masih dalam cicilan pembiayaan.
@@ -355,7 +355,7 @@ export default function ArticleAsuransiExcavatorBulldozerPage() {
         ].map((item) => (
           <div key={item.q} className="rounded-xl border border-[#e2e8f0] bg-white px-5 py-4">
             <p className="font-display font-semibold text-[#0a1628] mb-1.5">{item.q}</p>
-            <p className="text-sm text-[#64748b] leading-relaxed">{item.a}</p>
+            <p className="text-sm text-[#475569] leading-relaxed">{item.a}</p>
           </div>
         ))}
       </div>

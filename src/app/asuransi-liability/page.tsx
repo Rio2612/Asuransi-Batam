@@ -54,19 +54,19 @@ export default function AsuransiLiabilityPage() {
     >
       <div className="mb-12">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Mengapa Bisnis di Batam Wajib Punya Liability Insurance</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Batam adalah kota industri dengan risiko tanggung gugat yang lebih tinggi dari kota biasa — galangan kapal, pabrik elektronik, kawasan logistik, dan pariwisata internasional beroperasi berdampingan.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Batam adalah kota industri dengan risiko tanggung gugat yang lebih tinggi dari kota biasa — galangan kapal, pabrik elektronik, kawasan logistik, dan pariwisata internasional beroperasi berdampingan.</p>
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-3xl font-bold text-[#1a4fa0] mb-1">200+</p>
-            <p className="text-sm text-[#64748b]">Perusahaan manufaktur aktif di kawasan industri Batam yang wajib memiliki jaminan pencemaran lingkungan</p>
+            <p className="text-sm text-[#475569]">Perusahaan manufaktur aktif di kawasan industri Batam yang wajib memiliki jaminan pencemaran lingkungan</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-3xl font-bold text-[#1a4fa0] mb-1">Rp 5 M+</p>
-            <p className="text-sm text-[#64748b]">Potensi kerugian tuntutan hukum tunggal di industri berat — tanpa asuransi bisa menguras modal kerja perusahaan</p>
+            <p className="text-sm text-[#475569]">Potensi kerugian tuntutan hukum tunggal di industri berat — tanpa asuransi bisa menguras modal kerja perusahaan</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-3xl font-bold text-[#1a4fa0] mb-1">PP 22/2021</p>
-            <p className="text-sm text-[#64748b]">Regulasi KLHK yang mewajibkan industri penghasil limbah B3 di Batam memiliki asuransi pencemaran lingkungan</p>
+            <p className="text-sm text-[#475569]">Regulasi KLHK yang mewajibkan industri penghasil limbah B3 di Batam memiliki asuransi pencemaran lingkungan</p>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default function AsuransiLiabilityPage() {
         ].map((p) => (
           <Link key={p.href} href={p.href} className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>
-            <p className="text-[#64748b] text-sm">{p.desc}</p>
+            <p className="text-[#475569] text-sm">{p.desc}</p>
           </Link>
         ))}
       </div>

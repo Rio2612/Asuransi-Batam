@@ -131,7 +131,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
               <Icon size={20} style={{ color: "#0a1628" }} />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -164,7 +164,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
             <Scale size={18} style={{ color: "#0a1628" }} />
             <p className="font-bold text-sm" style={{ color: "#0a1628" }}>Market Value</p>
           </div>
-          <p className="text-sm text-[#64748b]">
+          <p className="text-sm text-[#475569]">
             The current resale value of the unit in the secondhand market, taking into account
             age and machine hours. More commonly used for units over three years old — payout
             reflects market value at the time of the incident.
@@ -175,7 +175,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
             <Scale size={18} style={{ color: "#a07830" }} />
             <p className="font-bold text-sm" style={{ color: "#0a1628" }}>Replacement Value</p>
           </div>
-          <p className="text-sm text-[#64748b]">
+          <p className="text-sm text-[#475569]">
             The cost of a new unit with equivalent specifications at current market prices.
             Premiums are higher, but payout is more favourable since no depreciation is deducted.
             Best for new units or units under financing.
@@ -198,7 +198,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
             </div>
             <div>
               <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{step.title}</p>
-              <p className="text-sm text-[#64748b]">{step.desc}</p>
+              <p className="text-sm text-[#475569]">{step.desc}</p>
             </div>
           </div>
         ))}
@@ -212,7 +212,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
               <HelpCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
               <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{faq.q}</p>
             </div>
-            <p className="text-sm text-[#64748b] pl-[26px]">{faq.a}</p>
+            <p className="text-sm text-[#475569] pl-[26px]">{faq.a}</p>
           </div>
         ))}
       </div>
@@ -224,7 +224,7 @@ export default function ArticleExcavatorBulldozerInsurancePage() {
           </div>
           <h3 className="font-display font-bold text-[#0a1628] m-0">Free Heavy Equipment Insurance Consultation in Batam</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Every piece of heavy equipment has a different risk profile depending on the
           type of work, operating terrain, and machine age. Rio is ready to help calculate
           the right protection needs and compare policy options that fit your project budget.

@@ -120,7 +120,7 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
               <Icon size={18} className="text-white" />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -136,7 +136,7 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
               <p className="font-display font-bold" style={{ color: "#0a1628" }}>{title}</p>
             </div>
             <div className="px-5 pb-5">
-              <p className="text-sm text-[#64748b] mb-3">{body}</p>
+              <p className="text-sm text-[#475569] mb-3">{body}</p>
               <div className="p-3.5 rounded-xl border-l-4 border-[#c9a84c] bg-[#faf8f3] text-sm text-[#374151]">
                 {note}
               </div>
@@ -168,8 +168,8 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-                <td className={`p-4 font-semibold ${c === "Mandatory" ? "text-red-600" : c === "Highly Recommended" ? "text-orange-500" : "text-[#64748b]"}`}>{c}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
+                <td className={`p-4 font-semibold ${c === "Mandatory" ? "text-red-600" : c === "Highly Recommended" ? "text-orange-500" : "text-[#475569]"}`}>{c}</td>
               </tr>
             ))}
           </tbody>
@@ -185,7 +185,7 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
             </div>
             <div>
               <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{i + 1}. {title}</p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -206,7 +206,7 @@ export default function ArticleCommercialPropertyInsuranceBatamPage() {
         <h3 className="font-display font-bold text-[#0a1628] mb-3">
           Commercial Property Insurance Consultation in Batam
         </h3>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Every commercial property has unique characteristics and risks. Rio helps you
           analyse the right coverage needs, avoid underinsurance, and ensure the policy
           you hold will genuinely protect your business assets when it matters most.

@@ -358,7 +358,7 @@ export default function HazardousWasteInsuranceBatamPage() {
             compensation claims from three neighbouring factories, and a remediation cost demand from the
             estate manager. Total financial exposure: over <strong>IDR 4.5 billion</strong>.
           </p>
-          <p className="text-[#64748b] mt-4 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-4 text-sm leading-relaxed">
             This factory held a Liability B3 policy. That fact made a decisive difference to the outcome.
           </p>
         </div>
@@ -368,7 +368,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Why B3 Waste Requires a Separate Policy — Not Just Public Liability
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-5">
+          <p className="text-[#475569] leading-relaxed mb-5">
             Many factory owners in Batam assume their{" "}
             <Link href="/en/liability-insurance/public-liability" className="text-[#1a4fa0] font-semibold hover:underline">
               public liability insurance
@@ -411,15 +411,15 @@ export default function HazardousWasteInsuranceBatamPage() {
                 ].map(([area, pub, b3], i) => (
                   <tr key={area} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-medium text-[#0a1628]">{area}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{pub}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{b3}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{pub}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{b3}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <p className="text-[#64748b] leading-relaxed">
+          <p className="text-[#475569] leading-relaxed">
             For businesses in Batam's industrial zones that generate, store, or transport B3 waste, a combination
             of both policies is necessary. Consult our{" "}
             <Link href="/en/liability-insurance" className="text-[#1a4fa0] font-semibold hover:underline">
@@ -434,7 +434,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Regulations Binding B3 Waste Managers in Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Despite its Free Trade Zone (FTZ) and Special Economic Zone (KEK) status, Batam remains fully
             subject to national environmental regulations. The following are the key frameworks relevant to
             B3 waste managers in Batam's industrial estates:
@@ -449,7 +449,7 @@ export default function HazardousWasteInsuranceBatamPage() {
                   </div>
                   <div>
                     <p className="font-display font-bold text-[#0a1628] text-sm mb-1">{reg.nama}</p>
-                    <p className="text-[#64748b] text-sm leading-relaxed">{reg.relevansi}</p>
+                    <p className="text-[#475569] text-sm leading-relaxed">{reg.relevansi}</p>
                   </div>
                 </div>
               </div>
@@ -457,7 +457,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           </div>
 
           <div className="mt-6 bg-[#faf8f3] border border-[#e2e8f0] rounded-2xl p-5">
-            <p className="text-[#64748b] text-sm leading-relaxed">
+            <p className="text-[#475569] text-sm leading-relaxed">
               <strong className="text-[#0a1628]">Key point:</strong> Law 32/2009 applies the principle of{" "}
               <em>strict liability</em> to B3 pollution — meaning a company can be held liable{" "}
               <strong className="text-[#0a1628]">even in the absence of negligence</strong>. This is
@@ -512,7 +512,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             7-Step B3 Insurance Claim Procedure
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Actions taken in the first 24–72 hours after an incident are critical to the success of the claim.
             Follow this procedure carefully:
           </p>
@@ -541,7 +541,7 @@ export default function HazardousWasteInsuranceBatamPage() {
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-[#0a1628] mb-1">{s.title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -574,7 +574,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Case Studies: B3 Incidents in Batam Industrial Estates
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             The following three scenarios illustrate the scale of risk and the importance of Liability B3
             coverage for industry in Batam. Company names and specific details have been anonymised.
           </p>
@@ -591,15 +591,15 @@ export default function HazardousWasteInsuranceBatamPage() {
                 <div className="space-y-3 text-sm">
                   <div>
                     <span className="font-semibold text-[#0a1628]">Incident: </span>
-                    <span className="text-[#64748b]">{kasus.insiden}</span>
+                    <span className="text-[#475569]">{kasus.insiden}</span>
                   </div>
                   <div>
                     <span className="font-semibold text-[#0a1628]">Financial exposure: </span>
-                    <span className="text-[#64748b]">{kasus.dampak}</span>
+                    <span className="text-[#475569]">{kasus.dampak}</span>
                   </div>
                   <div className="bg-white/70 rounded-xl p-3">
                     <span className="font-semibold text-[#0a1628]">Outcome: </span>
-                    <span className="text-[#64748b]">{kasus.hasil}</span>
+                    <span className="text-[#475569]">{kasus.hasil}</span>
                   </div>
                 </div>
               </div>
@@ -612,7 +612,7 @@ export default function HazardousWasteInsuranceBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Liability B3 Premium Estimates for Batam Industry
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Premiums for Liability B3 policies are influenced by the type and volume of waste generated,
             incident history, existing management systems, location, and coverage limit. The following
             figures are general illustrations only:
@@ -631,8 +631,8 @@ export default function HazardousWasteInsuranceBatamPage() {
                 {premiEstimasi.map((row, i) => (
                   <tr key={row.jenis} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 text-[#0a1628] font-medium">{row.jenis}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.limit}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.premi}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.limit}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.premi}</td>
                   </tr>
                 ))}
               </tbody>
@@ -661,7 +661,7 @@ export default function HazardousWasteInsuranceBatamPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>
@@ -707,7 +707,7 @@ export default function HazardousWasteInsuranceBatamPage() {
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">
                     {link.title}
                   </div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

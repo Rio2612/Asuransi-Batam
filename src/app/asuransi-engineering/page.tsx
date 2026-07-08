@@ -43,37 +43,37 @@ export default function AsuransiEngineeringPage() {
       schema={schema}>
       <div className="mb-12">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Produk Asuransi Engineering Kami</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Pilih perlindungan yang sesuai dengan jenis dan skala proyek konstruksi Anda di Batam.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Pilih perlindungan yang sesuai dengan jenis dan skala proyek konstruksi Anda di Batam.</p>
         <div className="grid md:grid-cols-3 gap-6">
           <Link href="/asuransi-engineering/contractor-all-risk" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Contractor All Risk (CAR)</h3>
-            <p className="text-[#64748b] text-sm">Perlindungan all risk untuk proyek sipil dan bangunan selama masa konstruksi berlangsung.</p>
+            <p className="text-[#475569] text-sm">Perlindungan all risk untuk proyek sipil dan bangunan selama masa konstruksi berlangsung.</p>
           </Link>
           <Link href="/asuransi-engineering/erection-all-risk" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Erection All Risk (EAR)</h3>
-            <p className="text-[#64748b] text-sm">Perlindungan pemasangan mesin, pabrik, dan instalasi infrastruktur mekanikal dan elektrikal.</p>
+            <p className="text-[#475569] text-sm">Perlindungan pemasangan mesin, pabrik, dan instalasi infrastruktur mekanikal dan elektrikal.</p>
           </Link>
           <Link href="/asuransi-engineering/cecr" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Civil Engineering Completed Risk (CECR)</h3>
-            <p className="text-[#64748b] text-sm">Perlindungan untuk infrastruktur sipil yang sudah selesai dibangun seperti jembatan, jalan, dan bendungan.</p>
+            <p className="text-[#475569] text-sm">Perlindungan untuk infrastruktur sipil yang sudah selesai dibangun seperti jembatan, jalan, dan bendungan.</p>
           </Link>
         </div>
       </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Sering Dipadukan Dengan</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Proyek konstruksi biasanya membutuhkan lebih dari satu jenis perlindungan.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Proyek konstruksi biasanya membutuhkan lebih dari satu jenis perlindungan.</p>
         <div className="grid md:grid-cols-3 gap-6">
           <Link href="/asuransi-surety-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Surety Bond</h3>
-            <p className="text-[#64748b] text-sm">Bid bond & performance bond — sering disyaratkan untuk tender proyek.</p>
+            <p className="text-[#475569] text-sm">Bid bond & performance bond — sering disyaratkan untuk tender proyek.</p>
           </Link>
           <Link href="/asuransi-personal-accident/pa-karyawan-grup" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">PA Karyawan Grup</h3>
-            <p className="text-[#64748b] text-sm">Lindungi pekerja lapangan proyek dari risiko kecelakaan kerja.</p>
+            <p className="text-[#475569] text-sm">Lindungi pekerja lapangan proyek dari risiko kecelakaan kerja.</p>
           </Link>
           <Link href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
-            <p className="text-[#64748b] text-sm">Lindungi crane dan alat berat yang digunakan selama proyek berlangsung.</p>
+            <p className="text-[#475569] text-sm">Lindungi crane dan alat berat yang digunakan selama proyek berlangsung.</p>
           </Link>
         </div>
       </div>

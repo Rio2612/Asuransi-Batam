@@ -171,7 +171,7 @@ export default function HowToGetBuildersRiskPage() {
           <span className="font-display text-xs font-semibold uppercase tracking-wider text-[#0a1628]">
             Field Documentation
           </span>
-          <span className="text-xs text-[#64748b]">
+          <span className="text-xs text-[#475569]">
             — Handling a Builders Risk claim at a shipyard in Batam
           </span>
         </figcaption>
@@ -220,7 +220,7 @@ export default function HowToGetBuildersRiskPage() {
                 <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">
                   {stage}
                 </td>
-                <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">
+                <td className="px-5 py-4 text-[#475569] leading-relaxed border-b border-[#e2e8f0]">
                   {detail}
                 </td>
               </tr>
@@ -381,7 +381,7 @@ export default function HowToGetBuildersRiskPage() {
             <p className="font-display font-semibold text-[#0a1628] mb-1.5">
               {item.q}
             </p>
-            <p className="text-sm text-[#64748b] leading-relaxed">{item.a}</p>
+            <p className="text-sm text-[#475569] leading-relaxed">{item.a}</p>
           </div>
         ))}
       </div>

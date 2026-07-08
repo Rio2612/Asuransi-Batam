@@ -139,8 +139,8 @@ export default function ArticleAllRiskTLOPage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-center text-[#64748b]">{b}</td>
-                <td className="p-4 text-center text-[#64748b]">{c}</td>
+                <td className="p-4 text-center text-[#475569]">{b}</td>
+                <td className="p-4 text-center text-[#475569]">{c}</td>
               </tr>
             ))}
           </tbody>
@@ -188,7 +188,7 @@ export default function ArticleAllRiskTLOPage() {
           </span>
           Hitung Premi Mobil Anda Sekarang
         </h3>
-        <p className="text-[#64748b] mb-4">Gunakan kalkulator premi kami untuk estimasi biaya All Risk dan TLO berdasarkan tarif OJK terbaru.</p>
+        <p className="text-[#475569] mb-4">Gunakan kalkulator premi kami untuk estimasi biaya All Risk dan TLO berdasarkan tarif OJK terbaru.</p>
         <div className="flex flex-wrap gap-3">
           <Link href="/kalkulator-premi-mobil" className="px-6 py-2.5 bg-[#0a1628] text-white font-semibold rounded-xl text-sm hover:bg-[#132040] transition-colors">Kalkulator Premi Mobil</Link>
           <Link href="/asuransi-kendaraan/asuransi-mobil-batam" className="px-6 py-2.5 border border-[#0a1628] text-[#0a1628] font-semibold rounded-xl text-sm hover:bg-[#0a1628]/5 transition-colors">Info Lengkap Asuransi Mobil</Link>

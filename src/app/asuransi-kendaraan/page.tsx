@@ -64,22 +64,22 @@ export default function AsuransiKendaraanPage() {
     >
       <div className="mb-12 max-w-4xl mx-auto">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Mengapa Pemilik Kendaraan di Batam Perlu Asuransi?</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Batam memiliki keunikan risiko yang berbeda dari kota lain di Indonesia.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Batam memiliki keunikan risiko yang berbeda dari kota lain di Indonesia.</p>
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">🌊</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Risiko Banjir Musiman</h3>
-            <p className="text-sm text-[#64748b]">Kawasan Sekupang, Batu Aji, dan beberapa titik di Batam Center rutin terdampak banjir saat musim hujan. Mesin mobil yang terendam bisa mengakibatkan kerusakan total yang tidak murah diperbaiki.</p>
+            <p className="text-sm text-[#475569]">Kawasan Sekupang, Batu Aji, dan beberapa titik di Batam Center rutin terdampak banjir saat musim hujan. Mesin mobil yang terendam bisa mengakibatkan kerusakan total yang tidak murah diperbaiki.</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">🚛</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Lalu Lintas Kendaraan Berat</h3>
-            <p className="text-sm text-[#64748b]">Kendaraan berat dari kawasan industri Muka Kuning, Kabil, dan Tanjung Uncang berbagi jalan dengan kendaraan pribadi — meningkatkan risiko kecelakaan, terutama di jam sibuk pagi dan sore.</p>
+            <p className="text-sm text-[#475569]">Kendaraan berat dari kawasan industri Muka Kuning, Kabil, dan Tanjung Uncang berbagi jalan dengan kendaraan pribadi — meningkatkan risiko kecelakaan, terutama di jam sibuk pagi dan sore.</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">🔑</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Angka Pencurian Kendaraan</h3>
-            <p className="text-sm text-[#64748b]">Sebagai kota perbatasan dengan mobilitas tinggi, risiko pencurian kendaraan di Batam lebih tinggi dibanding rata-rata kota di Indonesia — terutama untuk kendaraan niaga yang diparkir di lokasi terpencil.</p>
+            <p className="text-sm text-[#475569]">Sebagai kota perbatasan dengan mobilitas tinggi, risiko pencurian kendaraan di Batam lebih tinggi dibanding rata-rata kota di Indonesia — terutama untuk kendaraan niaga yang diparkir di lokasi terpencil.</p>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function AsuransiKendaraanPage() {
         ].map((p) => (
           <Link key={p.href} href={p.href} className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>
-            <p className="text-[#64748b] text-sm">{p.desc}</p>
+            <p className="text-[#475569] text-sm">{p.desc}</p>
           </Link>
         ))}
       </div>

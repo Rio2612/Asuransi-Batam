@@ -141,7 +141,7 @@ export default function TentangKamiPage() {
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
                 Profil Rio
               </h2>
-              <p className="text-[#64748b] leading-relaxed mb-6">
+              <p className="text-[#475569] leading-relaxed mb-6">
                 Rio Mardiansyah adalah praktisi asuransi dengan lebih dari 9 tahun pengalaman
                 langsung di industri asuransi kerugian, meniti karier dari Account Officer di
                 PT Asuransi Umum Bumida 1967 (Batam), Sales &amp; Marketing Specialist, hingga
@@ -149,7 +149,7 @@ export default function TentangKamiPage() {
                 ini memberi Rio pemahaman langsung tentang proses akuisisi nasabah, pemasaran
                 produk, hingga operasional cabang dan penanganan klaim di lapangan.
               </p>
-              <p className="text-[#64748b] leading-relaxed mb-8">
+              <p className="text-[#475569] leading-relaxed mb-8">
                 Sejak 2022, Rio melanjutkan sebagai praktisi asuransi digital, fokus melayani
                 klien di Batam dan Kepulauan Riau dengan spesialisasi asuransi properti komersial,
                 kendaraan niaga dan armada, alat berat dan machinery, serta asuransi liability
@@ -168,7 +168,7 @@ export default function TentangKamiPage() {
                     className="p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] text-center"
                   >
                     <div className="font-display font-bold text-3xl text-[#c9a84c]">{s.val}</div>
-                    <div className="text-[#64748b] text-sm mt-1">{s.label}</div>
+                    <div className="text-[#475569] text-sm mt-1">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -186,7 +186,7 @@ export default function TentangKamiPage() {
             <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
               Dari Account Officer hingga Praktisi Digital
             </h2>
-            <p className="text-[#64748b] max-w-xl mx-auto">
+            <p className="text-[#475569] max-w-xl mx-auto">
               Setiap jenjang karier ini membentuk cara Rio memahami risiko dan mendampingi klien hari ini.
             </p>
           </div>
@@ -202,7 +202,7 @@ export default function TentangKamiPage() {
             <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
               Langsung di Lokasi, Bukan Hanya di Balik Meja
             </h2>
-            <p className="text-[#64748b] max-w-2xl mx-auto">
+            <p className="text-[#475569] max-w-2xl mx-auto">
               Sebagian besar pekerjaan kami terjadi di lapangan — di galangan, di geladak kapal,
               di area konstruksi. Karena memahami risiko yang sebenarnya dimulai dari melihat langsung.
             </p>
@@ -226,7 +226,7 @@ export default function TentangKamiPage() {
                 </div>
                 <div className="p-5">
                   <p className="font-display font-bold text-[#0a1628] mb-1">{photo.caption}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{photo.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{photo.desc}</p>
                 </div>
               </div>
             ))}
@@ -239,7 +239,7 @@ export default function TentangKamiPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Cara Kerja Kami</p>
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Sederhana, Transparan, Tepat Sasaran</h2>
-          <p className="text-[#64748b] mb-12 max-w-xl mx-auto">
+          <p className="text-[#475569] mb-12 max-w-xl mx-auto">
             Tidak ada jargon berlebihan. Kami bantu Anda memahami apa yang benar-benar perlu dilindungi
             dan berapa biaya yang wajar untuk itu.
           </p>
@@ -252,7 +252,7 @@ export default function TentangKamiPage() {
               <div key={w.step} className="p-6 rounded-2xl border border-[#e2e8f0] text-left">
                 <p className="font-display font-bold text-4xl text-[#c9a84c]/40 mb-3">{w.step}</p>
                 <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{w.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{w.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{w.desc}</p>
               </div>
             ))}
           </div>
@@ -277,7 +277,7 @@ export default function TentangKamiPage() {
                       {c.icon}
                     </div>
                     <div>
-                      <div className="text-[#64748b] text-sm">{c.label}</div>
+                      <div className="text-[#475569] text-sm">{c.label}</div>
                       {c.href ? (
                         <a
                           href={c.href}

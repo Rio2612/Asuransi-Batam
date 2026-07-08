@@ -21,7 +21,7 @@ export default function KonsultasiForm() {
         ))}
         <div>
           <label className="block text-sm font-semibold text-[#0a1628] mb-1.5">Kebutuhan Asuransi</label>
-          <select className="w-full px-4 py-3 rounded-xl border-2 border-[#e2e8f0] focus:border-[#1a4fa0] outline-none text-sm transition-colors text-[#64748b]">
+          <select className="w-full px-4 py-3 rounded-xl border-2 border-[#e2e8f0] focus:border-[#1a4fa0] outline-none text-sm transition-colors text-[#475569]">
             <option value="">Pilih jenis asuransi...</option>
             <option>Asuransi Properti</option>
             <option>Asuransi Kendaraan</option>

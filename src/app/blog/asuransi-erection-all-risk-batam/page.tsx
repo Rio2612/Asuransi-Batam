@@ -175,7 +175,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
             Pada hari ke-61, saat proses alignment mesin terakhir, sebuah kesalahan prosedur menyebabkan
             kerusakan pada sistem gear yang baru terpasang. Biaya perbaikan: <strong>Rp 1,8 miliar</strong>.
           </p>
-          <p className="text-[#64748b] mt-3 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-3 text-sm leading-relaxed">
             Polis EAR yang mereka miliki menanggung penuh insiden ini, termasuk biaya mendatangkan kembali
             teknisi dari Jepang. Tanpa EAR, seluruh biaya jatuh ke tangan pemilik pabrik.
           </p>
@@ -186,7 +186,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             EAR vs CAR: Apa Bedanya dan Kapan Masing-Masing Dipakai?
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Ini adalah sumber kebingungan paling umum di industri engineering insurance. Keduanya termasuk
             asuransi engineering, namun peruntukannya berbeda secara fundamental. Lihat juga artikel kami
             tentang{" "}
@@ -207,8 +207,8 @@ export default function AsuransiErectionAllRiskBatamPage() {
                 {perbedaanEARCAR.map((row, i) => (
                   <tr key={row.aspek} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-medium text-[#0a1628]">{row.aspek}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{row.ear}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{row.car}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{row.ear}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{row.car}</td>
                   </tr>
                 ))}
               </tbody>
@@ -221,7 +221,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Proyek di Batam yang Wajib Menggunakan EAR
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Dengan ekosistem industri yang padat dan proyek energi yang terus berkembang, Batam adalah
             salah satu kota dengan permintaan EAR tertinggi di Sumatera.
           </p>
@@ -230,7 +230,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
               <div key={p.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-5 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2 text-sm">{p.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed mb-3">{p.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed mb-3">{p.desc}</p>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#faf8f3] rounded-full text-xs text-[#1a4fa0] font-semibold border border-[#e2e8f0]">
                   📍 {p.kawasan}
                 </span>
@@ -266,7 +266,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Estimasi Premi EAR untuk Proyek di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Premi EAR dihitung berdasarkan nilai kontrak instalasi, jenis peralatan, durasi proyek,
             dan perluasan yang dipilih (testing & commissioning, TPL, dll.).
           </p>
@@ -283,8 +283,8 @@ export default function AsuransiErectionAllRiskBatamPage() {
                 {premiIlustrasi.map((row, i) => (
                   <tr key={row.proyek} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628]">{row.proyek}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.ear}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.durasi}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.ear}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.durasi}</td>
                   </tr>
                 ))}
               </tbody>
@@ -306,7 +306,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -328,7 +328,7 @@ export default function AsuransiErectionAllRiskBatamPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

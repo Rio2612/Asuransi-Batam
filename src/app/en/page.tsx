@@ -222,7 +222,7 @@ export default function HomePageEN() {
             <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-4">
               All Your Insurance Needs in One Place
             </h2>
-            <p className="text-[#64748b] text-lg max-w-2xl mx-auto">
+            <p className="text-[#475569] text-lg max-w-2xl mx-auto">
               From property to engineering — we provide complete non-life insurance solutions for individuals and businesses in Batam.
             </p>
           </div>
@@ -234,7 +234,7 @@ export default function HomePageEN() {
                   <h3 className="font-display font-bold text-xl text-[#0a1628] mb-3 group-hover:text-[#1a4fa0] transition-colors">
                     {p.title}
                   </h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed mb-4">{p.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed mb-4">{p.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {p.tags.map((tag) => (
                       <span key={tag} className="px-3 py-1 bg-[#faf8f3] text-[#1a4fa0] text-xs font-semibold rounded-full border border-[#e2e8f0]">
@@ -276,7 +276,7 @@ export default function HomePageEN() {
               <h2 className="font-display font-bold text-4xl text-[#0a1628] mb-6">
                 Why Trust Us with Your Insurance?
               </h2>
-              <p className="text-[#64748b] text-lg leading-relaxed mb-8">
+              <p className="text-[#475569] text-lg leading-relaxed mb-8">
                 With over 10 years of experience in the Batam non-life insurance industry,
                 Rio is here as a trusted partner who understands local needs.
               </p>
@@ -309,7 +309,7 @@ export default function HomePageEN() {
                     </div>
                     <div>
                       <h3 className="font-display font-bold text-[#0a1628] mb-1">{item.title}</h3>
-                      <p className="text-[#64748b] text-sm">{item.desc}</p>
+                      <p className="text-[#475569] text-sm">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -349,7 +349,7 @@ export default function HomePageEN() {
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-[#64748b] text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
+                <p className="text-[#475569] text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
                 <div>
                   <div className="font-display font-bold text-[#0a1628]">{t.name}</div>
                   <div className="text-[#c9a84c] text-sm">{t.company}</div>
@@ -374,7 +374,7 @@ export default function HomePageEN() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>
