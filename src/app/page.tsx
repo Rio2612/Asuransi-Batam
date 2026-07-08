@@ -544,7 +544,7 @@ export default function HomePage() {
                 <p className="text-[#475569] text-sm leading-relaxed mb-5 italic">"{t.text}"</p>
                 <div>
                   <div className="font-display font-bold text-[#0a1628]">{t.name}</div>
-                  <div className="text-[#c9a84c] text-sm">{t.company}</div>
+                  <div className="text-[#8a6d1f] text-sm">{t.company}</div>
                 </div>
               </div>
             ))}
