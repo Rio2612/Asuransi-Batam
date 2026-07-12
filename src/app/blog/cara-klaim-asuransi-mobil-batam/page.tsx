@@ -252,7 +252,7 @@ export default function ArticleAsuransiMobilBatamPage() {
                   ].map(([a, b], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                       <td className="px-5 py-4 font-semibold text-[#0a1628] border-b border-[#e2e8f0]">{a}</td>
-                      <td className="px-5 py-4 text-[#64748b] leading-relaxed border-b border-[#e2e8f0]">{b}</td>
+                      <td className="px-5 py-4 text-[#475569] leading-relaxed border-b border-[#e2e8f0]">{b}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -376,7 +376,7 @@ export default function ArticleAsuransiMobilBatamPage() {
         ].map((item) => (
           <div key={item.q} className="rounded-xl border border-[#e2e8f0] bg-white px-5 py-4">
             <p className="font-display font-semibold text-[#0a1628] mb-1.5">{item.q}</p>
-            <p className="text-sm text-[#64748b] leading-relaxed">{item.a}</p>
+            <p className="text-sm text-[#475569] leading-relaxed">{item.a}</p>
           </div>
         ))}
       </div>

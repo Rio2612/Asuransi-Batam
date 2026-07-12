@@ -49,7 +49,7 @@ function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }
           </span>
           <div className="pt-0.5">
             <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
-            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+            {item.desc && <p className="text-sm text-[#475569] mt-1 mb-0">{item.desc}</p>}
           </div>
         </li>
       ))}

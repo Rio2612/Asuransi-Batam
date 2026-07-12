@@ -125,7 +125,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
             <HardHat size={22} className="text-white" />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>CAR — Contractor's All Risk</h3>
-          <p className="text-sm text-[#64748b]">
+          <p className="text-sm text-[#475569]">
             Protects <em>the construction project as a whole</em> — building materials,
             completed permanent works, and heavy equipment used within it. Tied to a single
             specific project; when the project ends, the policy ends. Typically required by
@@ -137,7 +137,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
             <Truck size={22} style={{ color: "#0a1628" }} />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>EAR — Equipment All Risk</h3>
-          <p className="text-sm text-[#64748b]">
+          <p className="text-sm text-[#475569]">
             Protects <em>the equipment unit itself</em>, not the project. Coverage follows
             the unit wherever it operates — one project, multiple sites, or standby at a
             yard. The more appropriate choice for contractors deploying their own fleet
@@ -166,8 +166,8 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-                <td className="p-4 text-[#64748b]">{c}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
+                <td className="p-4 text-[#475569]">{c}</td>
               </tr>
             ))}
           </tbody>
@@ -193,7 +193,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
               <Icon size={20} style={{ color: "#0a1628" }} />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -207,7 +207,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
               <Icon size={18} style={{ color }} />
               <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{title}</p>
             </div>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -221,7 +221,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{step.title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{step.desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{step.desc}</p>
             </div>
           </div>
         ))}
@@ -251,7 +251,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
                 <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>Step {i + 1}</span>
                 {title}
               </p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -265,7 +265,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
               <HelpCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: "#c9a84c" }} />
               <p className="font-bold text-sm" style={{ color: "#0a1628" }}>{faq.q}</p>
             </div>
-            <p className="text-sm text-[#64748b] pl-[26px]">{faq.a}</p>
+            <p className="text-sm text-[#475569] pl-[26px]">{faq.a}</p>
           </div>
         ))}
       </div>
@@ -277,7 +277,7 @@ export default function ArticleHeavyEquipmentInsuranceConstructionPage() {
           </div>
           <h3 className="font-display font-bold text-[#0a1628] m-0">Ready to Protect Your Construction Equipment Fleet?</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           No need to navigate the CAR vs EAR decision alone or figure out the right sum
           insured by yourself. Rio will help analyse your fleet's protection needs, structure
           an efficient policy arrangement, and ensure there are no coverage gaps that

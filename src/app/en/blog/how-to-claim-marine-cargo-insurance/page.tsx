@@ -113,7 +113,7 @@ export default function HowToClaimMarineCargoPage() {
                 <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>Step {i + 1}</span>
                 {title}
               </p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -132,7 +132,7 @@ export default function HowToClaimMarineCargoPage() {
             {DOCS.map(([doc, purpose], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{doc}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{purpose}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{purpose}</td>
               </tr>
             ))}
           </tbody>

@@ -164,7 +164,7 @@ export default function AsuransiMotorBatamPage() {
             saat istirahat siang. Ketika kembali 45 menit kemudian, motor Honda PCX-nya sudah raib. Laporan polisi
             dibuat, tapi karena tidak punya asuransi, ia harus menanggung sendiri kerugian Rp 32 juta.
           </p>
-          <p className="text-[#64748b] mt-3 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-3 text-sm leading-relaxed">
             Jika ia memiliki polis TLO seharga sekitar <strong>Rp 150 ribu per tahun</strong>, motor tersebut
             akan diganti penuh oleh perusahaan asuransi. Selisih antara terlindungi dan tidak hanyalah
             keputusan kecil yang sering diabaikan.
@@ -176,7 +176,7 @@ export default function AsuransiMotorBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Risiko Khusus Motor di Batam yang Perlu Diantisipasi
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Batam memiliki karakteristik risiko yang berbeda dari kota-kota besar di Jawa. Beberapa faktor
             ini meningkatkan relevansi asuransi motor bagi pengguna di Batam:
           </p>
@@ -185,7 +185,7 @@ export default function AsuransiMotorBatamPage() {
               <div key={r.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-5 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{r.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2 text-sm">{r.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{r.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{r.desc}</p>
               </div>
             ))}
           </div>
@@ -196,7 +196,7 @@ export default function AsuransiMotorBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             All Risk vs TLO Motor: Mana yang Tepat untuk Anda?
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Ini adalah pertanyaan yang paling sering ditanyakan. Jawabannya bergantung pada nilai motor,
             usia motor, dan pola penggunaan harian Anda. Lihat perbandingan lengkapnya:
           </p>
@@ -222,8 +222,8 @@ export default function AsuransiMotorBatamPage() {
                 ].map(([aspek, allRisk, tlo], i) => (
                   <tr key={aspek} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-medium text-[#0a1628]">{aspek}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{allRisk}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{tlo}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{allRisk}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{tlo}</td>
                   </tr>
                 ))}
               </tbody>
@@ -233,7 +233,7 @@ export default function AsuransiMotorBatamPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-[#c9a84c]/10 border border-[#c9a84c]/30 rounded-2xl p-5">
               <h3 className="font-display font-bold text-[#0a1628] mb-2">Pilih All Risk jika:</h3>
-              <ul className="space-y-2 text-sm text-[#64748b]">
+              <ul className="space-y-2 text-sm text-[#475569]">
                 {["Motor baru atau harga di atas Rp 25 juta", "Motor masih dalam cicilan leasing", "Sering parkir di area publik ramai", "Menggunakan motor untuk aktivitas harian intensif"].map(t => (
                   <li key={t} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-[#c9a84c] flex-shrink-0 mt-0.5" />{t}</li>
                 ))}
@@ -241,7 +241,7 @@ export default function AsuransiMotorBatamPage() {
             </div>
             <div className="bg-blue-50 border border-blue-200 rounded-2xl p-5">
               <h3 className="font-display font-bold text-[#0a1628] mb-2">Pilih TLO jika:</h3>
-              <ul className="space-y-2 text-sm text-[#64748b]">
+              <ul className="space-y-2 text-sm text-[#475569]">
                 {["Motor berusia lebih dari 5 tahun", "Motor hanya dipakai untuk rute tetap", "Ingin premi serendah mungkin", "Motor disimpan di garasi tertutup malam hari"].map(t => (
                   <li key={t} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0 mt-0.5" />{t}</li>
                 ))}
@@ -255,12 +255,12 @@ export default function AsuransiMotorBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Tarif OJK Wilayah 1 & Estimasi Premi Motor di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-2">
+          <p className="text-[#475569] leading-relaxed mb-2">
             Batam termasuk dalam <strong className="text-[#0a1628]">Wilayah 1</strong> berdasarkan pembagian
             tarif OJK untuk asuransi kendaraan bermotor. Tarif ini ditetapkan OJK sebagai batas bawah dan batas
             atas yang harus dipatuhi seluruh perusahaan asuransi di Indonesia.
           </p>
-          <p className="text-[#64748b] text-sm mb-6 leading-relaxed">
+          <p className="text-[#475569] text-sm mb-6 leading-relaxed">
             Wilayah 1 mencakup: Sumatera dan seluruh kepulauannya, termasuk Kepulauan Riau (Batam, Tanjung Pinang, Bintan).
           </p>
 
@@ -277,8 +277,8 @@ export default function AsuransiMotorBatamPage() {
                 {tarifOJK.map((row, i) => (
                   <tr key={row.kategori} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628]">{row.kategori}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.allRisk}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.tlo}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.allRisk}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.tlo}</td>
                   </tr>
                 ))}
               </tbody>
@@ -301,8 +301,8 @@ export default function AsuransiMotorBatamPage() {
                 {ilustrasiPremi.map((row, i) => (
                   <tr key={row.motor} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628]">{row.motor}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.allRisk}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.tlo}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.allRisk}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.tlo}</td>
                   </tr>
                 ))}
               </tbody>
@@ -311,7 +311,7 @@ export default function AsuransiMotorBatamPage() {
 
           <div className="bg-[#faf8f3] border border-[#e2e8f0] rounded-xl p-4 flex items-start gap-3">
             <Calculator className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-[#64748b] leading-relaxed">
+            <p className="text-sm text-[#475569] leading-relaxed">
               Angka di atas adalah <strong className="text-[#0a1628]">estimasi ilustrasi</strong> berdasarkan tarif OJK.
               Premi final dapat bervariasi tergantung perusahaan asuransi, profil pengemudi, dan add-on yang dipilih.{" "}
               <Link href="/kalkulator-premi-motor" className="text-[#1a4fa0] font-semibold hover:underline">
@@ -326,7 +326,7 @@ export default function AsuransiMotorBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Proses Klaim Asuransi Motor di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Proses klaim yang benar dimulai dari langkah pertama setelah insiden terjadi. Berikut yang perlu disiapkan:
           </p>
 
@@ -334,7 +334,7 @@ export default function AsuransiMotorBatamPage() {
             {claimDocs.map((doc, i) => (
               <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-[#e2e8f0]">
                 <CheckCircle className="w-4 h-4 text-[#c9a84c] flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-[#64748b]">{doc}</span>
+                <span className="text-sm text-[#475569]">{doc}</span>
               </div>
             ))}
           </div>
@@ -367,7 +367,7 @@ export default function AsuransiMotorBatamPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -389,7 +389,7 @@ export default function AsuransiMotorBatamPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

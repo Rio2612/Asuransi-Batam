@@ -138,7 +138,7 @@ export default function PanduanOB23BatamPage() {
             <strong>OB 23 (Impor Sementara)</strong> dan menerbitkan custom bond sebagai jaminan
             kepada Bea Cukai — alih-alih membayar Bea Masuk penuh yang nilainya bisa ratusan juta rupiah.
           </p>
-          <p className="text-[#64748b] mt-3 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-3 text-sm leading-relaxed">
             Proyek selesai tepat waktu, peralatan diekspor kembali dengan dokumen PEB lengkap, dan
             custom bond ditutup tanpa ada pencairan sama sekali.
           </p>
@@ -149,7 +149,7 @@ export default function PanduanOB23BatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Siapa yang Umumnya Membutuhkan OB 23 di Batam?
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Sebagai kawasan FTZ dengan lalu lintas barang tinggi, ada beberapa jenis kebutuhan yang
             paling sering memakai fasilitas ini di Batam. Untuk gambaran lebih luas soal jenis
             jaminan kepabeanan lainnya, lihat juga halaman{" "}
@@ -162,7 +162,7 @@ export default function PanduanOB23BatamPage() {
               <div key={p.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-5 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2 text-sm">{p.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -173,7 +173,7 @@ export default function PanduanOB23BatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Kesalahan Umum yang Bikin OB 23 Bermasalah — dan Cara Menghindarinya
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Sebagian besar denda atau penolakan OB 23 sebenarnya bisa dihindari dengan persiapan yang tepat.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,7 +198,7 @@ export default function PanduanOB23BatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Estimasi Biaya Custom Bond untuk OB 23
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Biaya dihitung dari nilai jaminan (potensi Bea Masuk + PPN yang dibebaskan), bukan dari
             nilai barang itu sendiri. Untuk penjelasan lengkap soal jenis fasilitas kepabeanan
             lainnya, kunjungi halaman{" "}
@@ -219,8 +219,8 @@ export default function PanduanOB23BatamPage() {
                 {biayaIlustrasi.map((row, i) => (
                   <tr key={row.kebutuhan} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628]">{row.kebutuhan}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.biaya}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.tenor}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.biaya}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.tenor}</td>
                   </tr>
                 ))}
               </tbody>
@@ -242,7 +242,7 @@ export default function PanduanOB23BatamPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -262,7 +262,7 @@ export default function PanduanOB23BatamPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

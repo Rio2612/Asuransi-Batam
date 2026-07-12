@@ -348,7 +348,7 @@ export default function KlaimLimbahB3Page() {
             tuntutan ganti rugi dari tiga pabrik tetangga, dan permintaan biaya remediasi dari pengelola kawasan.
             Total eksposur finansial: lebih dari <strong>Rp 4,5 miliar</strong>.
           </p>
-          <p className="text-[#64748b] mt-4 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-4 text-sm leading-relaxed">
             Pabrik tersebut memiliki polis Liability B3. Yang membedakan hasilnya secara drastis
             dibanding pabrik tanpa polis.
           </p>
@@ -359,7 +359,7 @@ export default function KlaimLimbahB3Page() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Mengapa Limbah B3 Butuh Polis Terpisah — Bukan Sekadar Public Liability
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-5">
+          <p className="text-[#475569] leading-relaxed mb-5">
             Banyak pengusaha pabrik di Batam berasumsi bahwa{" "}
             <Link href="/asuransi-liability/public-liability" className="text-[#1a4fa0] font-semibold hover:underline">
               asuransi public liability
@@ -402,15 +402,15 @@ export default function KlaimLimbahB3Page() {
                 ].map(([aspek, pub, b3], i) => (
                   <tr key={aspek} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-medium text-[#0a1628]">{aspek}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{pub}</td>
-                    <td className="px-5 py-3.5 text-[#64748b]">{b3}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{pub}</td>
+                    <td className="px-5 py-3.5 text-[#475569]">{b3}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <p className="text-[#64748b] leading-relaxed">
+          <p className="text-[#475569] leading-relaxed">
             Untuk bisnis di kawasan industri Batam yang menghasilkan, menyimpan, atau mengangkut limbah B3,
             kombinasi kedua polis diperlukan. Konsultasikan kebutuhan spesifik bisnis Anda dengan{" "}
             <Link href="/asuransi-liability" className="text-[#1a4fa0] font-semibold hover:underline">
@@ -424,7 +424,7 @@ export default function KlaimLimbahB3Page() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Regulasi yang Mengikat Pengelola Limbah B3 di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Batam sebagai kawasan FTZ dan KEK tetap tunduk pada regulasi lingkungan nasional.
             Berikut regulasi utama yang relevan bagi pengelola limbah B3 di kawasan industri Batam:
           </p>
@@ -438,7 +438,7 @@ export default function KlaimLimbahB3Page() {
                   </div>
                   <div>
                     <p className="font-display font-bold text-[#0a1628] text-sm mb-1">{reg.nama}</p>
-                    <p className="text-[#64748b] text-sm leading-relaxed">{reg.relevansi}</p>
+                    <p className="text-[#475569] text-sm leading-relaxed">{reg.relevansi}</p>
                   </div>
                 </div>
               </div>
@@ -446,7 +446,7 @@ export default function KlaimLimbahB3Page() {
           </div>
 
           <div className="mt-6 bg-[#faf8f3] border border-[#e2e8f0] rounded-2xl p-5">
-            <p className="text-[#64748b] text-sm leading-relaxed">
+            <p className="text-[#475569] text-sm leading-relaxed">
               <strong className="text-[#0a1628]">Penting:</strong> UU 32/2009 menerapkan prinsip{" "}
               <em>strict liability</em> untuk pencemaran limbah B3 — artinya perusahaan dapat
               dimintai pertanggungjawaban <strong className="text-[#0a1628]">meskipun tidak ada unsur kelalaian</strong>.
@@ -501,7 +501,7 @@ export default function KlaimLimbahB3Page() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             7 Langkah Prosedur Klaim Asuransi Limbah B3
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Tindakan yang diambil dalam 24–72 jam pertama setelah insiden sangat menentukan kelancaran
             proses klaim. Berikut prosedur yang harus diikuti:
           </p>
@@ -530,7 +530,7 @@ export default function KlaimLimbahB3Page() {
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-[#0a1628] mb-1">{s.title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -563,7 +563,7 @@ export default function KlaimLimbahB3Page() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Contoh Kasus: Insiden B3 di Kawasan Industri Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Berikut tiga skenario insiden yang menggambarkan skala risiko dan pentingnya polis Liability B3
             bagi industri di Batam. Nama perusahaan dan detail spesifik disamarkan.
           </p>
@@ -580,15 +580,15 @@ export default function KlaimLimbahB3Page() {
                 <div className="space-y-3 text-sm">
                   <div>
                     <span className="font-semibold text-[#0a1628]">Insiden: </span>
-                    <span className="text-[#64748b]">{kasus.insiden}</span>
+                    <span className="text-[#475569]">{kasus.insiden}</span>
                   </div>
                   <div>
                     <span className="font-semibold text-[#0a1628]">Eksposur finansial: </span>
-                    <span className="text-[#64748b]">{kasus.dampak}</span>
+                    <span className="text-[#475569]">{kasus.dampak}</span>
                   </div>
                   <div className="bg-white/70 rounded-xl p-3">
                     <span className="font-semibold text-[#0a1628]">Hasil: </span>
-                    <span className="text-[#64748b]">{kasus.hasil}</span>
+                    <span className="text-[#475569]">{kasus.hasil}</span>
                   </div>
                 </div>
               </div>
@@ -601,7 +601,7 @@ export default function KlaimLimbahB3Page() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Estimasi Premi Liability B3 untuk Industri di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Premi polis Liability B3 dipengaruhi oleh jenis dan volume limbah yang dihasilkan,
             rekam jejak insiden, sistem pengelolaan yang ada, lokasi, dan limit pertanggungan.
             Berikut gambaran umum ilustratif:
@@ -620,8 +620,8 @@ export default function KlaimLimbahB3Page() {
                 {premiEstimasi.map((row, i) => (
                   <tr key={row.jenis} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 text-[#0a1628] font-medium">{row.jenis}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.limit}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.premi}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.limit}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.premi}</td>
                   </tr>
                 ))}
               </tbody>
@@ -650,7 +650,7 @@ export default function KlaimLimbahB3Page() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">
                   {faq.a}
                 </div>
               </details>
@@ -691,7 +691,7 @@ export default function KlaimLimbahB3Page() {
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">
                     {link.title}
                   </div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

@@ -148,7 +148,7 @@ export default function ArticleHazardousWasteInsuranceENPage() {
               <Icon size={18} className="text-white" />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -168,7 +168,7 @@ export default function ArticleHazardousWasteInsuranceENPage() {
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -205,7 +205,7 @@ export default function ArticleHazardousWasteInsuranceENPage() {
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{i + 1}. {title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -215,7 +215,7 @@ export default function ArticleHazardousWasteInsuranceENPage() {
         <h3 className="font-display font-bold text-[#0a1628] mb-3">
           Ensure Your Business Is Fully Compliant
         </h3>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio assists industries across Batam in meeting their environmental liability
           obligations — from assessing the right level of coverage to submitting the
           policy as proof of financial guarantee to the relevant authorities.

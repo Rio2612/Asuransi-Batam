@@ -106,7 +106,7 @@ export default function CarPremiumCalculatorPage() {
 
         {/* CTA */}
         <div className="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-2xl border border-[#e2e8f0] text-center">
-          <p className="text-[#64748b] text-sm mb-4">
+          <p className="text-[#475569] text-sm mb-4">
             Want an official quote with competitive pricing? Contact Rio for a policy simulation
             from multiple leading insurance companies.
           </p>
@@ -150,7 +150,7 @@ export default function CarPremiumCalculatorPage() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-2xl border border-[#e2e8f0] p-6">
                 <h3 className="font-display font-bold text-[#0a1628] mb-2">{item.q}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{item.a}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
           </div>

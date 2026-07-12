@@ -175,7 +175,7 @@ function DisabilityTable() {
           ))}
         </tbody>
       </table>
-      <p className="text-xs text-[#64748b] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
+      <p className="text-xs text-[#475569] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
         Ilustrasi umum tabel cacat tetap. Persentase aktual mengikuti tabel yang tercantum
         dalam polis masing-masing penanggung dan dapat berbeda antar perusahaan asuransi.
       </p>
@@ -465,7 +465,7 @@ export default function ArticleAsuransiKecelakaanDiriPekerjaIndustriBatamPage() 
             Konsultasi Asuransi Kecelakaan Diri (PA) di Batam
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Setiap sektor pekerjaan punya profil risiko yang berbeda. Rio membantu Anda —
           baik sebagai individu, kepala keluarga, maupun HRD perusahaan — menentukan
           skema dan nilai pertanggungan PA yang realistis sesuai kebutuhan, tanpa

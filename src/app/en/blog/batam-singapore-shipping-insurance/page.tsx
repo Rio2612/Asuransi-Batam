@@ -91,7 +91,7 @@ export default function BatamSingaporeShippingInsurancePage() {
               <Icon size={20} style={{ color: "#0a1628" }} />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -103,7 +103,7 @@ export default function BatamSingaporeShippingInsurancePage() {
             <Icon size={20} className="flex-shrink-0 mt-0.5" style={{ color: "#a07830" }} />
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -130,7 +130,7 @@ export default function BatamSingaporeShippingInsurancePage() {
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-bold text-[#1a4fa0] border-b border-[#e2e8f0]">{inc}</td>
                 <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{risk}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{who}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{who}</td>
               </tr>
             ))}
           </tbody>
@@ -147,14 +147,14 @@ export default function BatamSingaporeShippingInsurancePage() {
             <Layers size={18} style={{ color: "#1a4fa0" }} />
             <p className="font-bold text-sm" style={{ color: "#0a1628" }}>ICC (A) — recommended for</p>
           </div>
-          <p className="text-sm text-[#64748b]">Electronics, circuit boards, medical equipment, precision instruments, goods valued above USD 10,000 per shipment, and moisture-sensitive items.</p>
+          <p className="text-sm text-[#475569]">Electronics, circuit boards, medical equipment, precision instruments, goods valued above USD 10,000 per shipment, and moisture-sensitive items.</p>
         </div>
         <div className="rounded-2xl p-5 border" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
           <div className="flex items-center gap-2 mb-2">
             <Layers size={18} style={{ color: "#a07830" }} />
             <p className="font-bold text-sm" style={{ color: "#0a1628" }}>ICC (B) or (C) — worth considering for</p>
           </div>
-          <p className="text-sm text-[#64748b]">Industrial raw materials (steel, plastics, bulk chemicals), agricultural and fishery commodities, and robust low-value cargo.</p>
+          <p className="text-sm text-[#475569]">Industrial raw materials (steel, plastics, bulk chemicals), agricultural and fishery commodities, and robust low-value cargo.</p>
         </div>
       </div>
       <p><strong>Relevant additional clauses:</strong> War &amp; Strikes Clause (typically automatic for international routes), Institute Theft, Pilferage &amp; Non-Delivery (TPND) Clause, and Refrigeration Clause for frozen or temperature-controlled shipments.</p>
@@ -169,7 +169,7 @@ export default function BatamSingaporeShippingInsurancePage() {
         ].map(([label, rate]) => (
           <div key={label} className="rounded-2xl p-4 text-center bg-white border border-[#e2e8f0]">
             <Percent size={18} className="mx-auto mb-2" style={{ color: "#c9a84c" }} />
-            <p className="text-xs text-[#64748b] mb-1">{label}</p>
+            <p className="text-xs text-[#475569] mb-1">{label}</p>
             <p className="font-display font-bold text-lg" style={{ color: "#0a1628" }}>{rate}</p>
           </div>
         ))}

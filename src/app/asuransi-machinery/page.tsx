@@ -54,22 +54,22 @@ export default function AsuransiMachineryPage() {
     >
       <div className="mb-12">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Industri di Batam yang Paling Membutuhkan Asuransi Mesin</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Dari kawasan industri Muka Kuning hingga galangan kapal Tanjung Uncang, industri-industri ini sangat bergantung pada proteksi mesin.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Dari kawasan industri Muka Kuning hingga galangan kapal Tanjung Uncang, industri-industri ini sangat bergantung pada proteksi mesin.</p>
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">🏭</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Manufaktur Elektronik & Batam</h3>
-            <p className="text-sm text-[#64748b]">Pabrik PCB, komponen elektronik, dan peralatan presisi di Kabil dan Muka Kuning mengoperasikan mesin senilai puluhan miliar yang butuh perlindungan machinery breakdown 24/7.</p>
+            <p className="text-sm text-[#475569]">Pabrik PCB, komponen elektronik, dan peralatan presisi di Kabil dan Muka Kuning mengoperasikan mesin senilai puluhan miliar yang butuh perlindungan machinery breakdown 24/7.</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">⚓</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Galangan Kapal Tanjung Uncang</h3>
-            <p className="text-sm text-[#64748b]">Crane, gantry, mesin las, dan peralatan shipyard senilai ratusan miliar perlu perlindungan equipment all risk selama proses pembangunan dan perbaikan kapal berlangsung.</p>
+            <p className="text-sm text-[#475569]">Crane, gantry, mesin las, dan peralatan shipyard senilai ratusan miliar perlu perlindungan equipment all risk selama proses pembangunan dan perbaikan kapal berlangsung.</p>
           </div>
           <div className="p-5 rounded-2xl border border-[#e2e8f0] bg-[#f8faff]">
             <p className="text-2xl mb-2">🏗️</p>
             <h3 className="font-bold text-[#0a1628] mb-1">Proyek Konstruksi Aktif</h3>
-            <p className="text-sm text-[#64748b]">Excavator, bulldozer, crane mobile, dan concrete pump yang beroperasi di proyek properti dan infrastruktur Batam membutuhkan perlindungan equipment all risk selama masa proyek.</p>
+            <p className="text-sm text-[#475569]">Excavator, bulldozer, crane mobile, dan concrete pump yang beroperasi di proyek properti dan infrastruktur Batam membutuhkan perlindungan equipment all risk selama masa proyek.</p>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ export default function AsuransiMachineryPage() {
         ].map((p) => (
           <Link key={p.href} href={p.href} className="group p-6 bg-white rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">{p.title}</h3>
-            <p className="text-[#64748b] text-sm">{p.desc}</p>
+            <p className="text-[#475569] text-sm">{p.desc}</p>
           </Link>
         ))}
       </div>

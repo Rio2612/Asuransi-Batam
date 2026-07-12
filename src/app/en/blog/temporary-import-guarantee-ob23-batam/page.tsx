@@ -139,7 +139,7 @@ export default function OB23GuideENPage() {
             custom bond as a guarantee to Customs — instead of paying the full import duty upfront,
             which could have run into hundreds of millions of rupiah.
           </p>
-          <p className="text-[#64748b] mt-3 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-3 text-sm leading-relaxed">
             The project finished on schedule, the equipment was re-exported with complete export
             declaration documents, and the custom bond was closed with no claim ever triggered.
           </p>
@@ -150,7 +150,7 @@ export default function OB23GuideENPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Who Typically Needs OB 23 in Batam?
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             As a high-traffic Free Trade Zone, several types of needs most commonly use this
             facility in Batam. For a broader look at other customs guarantee types, see our{" "}
             <Link href="/en/surety-bond-insurance/custom-bond" className="text-[#1a4fa0] font-semibold hover:underline">
@@ -163,7 +163,7 @@ export default function OB23GuideENPage() {
               <div key={p.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-5 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{p.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2 text-sm">{p.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{p.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -174,7 +174,7 @@ export default function OB23GuideENPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-3">
             Common Mistakes That Cause OB 23 Problems — and How to Avoid Them
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-8">
+          <p className="text-[#475569] leading-relaxed mb-8">
             Most OB 23 penalties or rejections can actually be avoided with the right preparation.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -199,7 +199,7 @@ export default function OB23GuideENPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Custom Bond Cost Estimate for OB 23
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Cost is calculated from the guarantee value (potential import duty + VAT exempted),
             not from the value of the goods themselves. For a full breakdown of other customs
             facility types, visit our{" "}
@@ -221,8 +221,8 @@ export default function OB23GuideENPage() {
                 {costEstimates.map((row, i) => (
                   <tr key={row.need} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628]">{row.need}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.cost}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.tenor}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.cost}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.tenor}</td>
                   </tr>
                 ))}
               </tbody>
@@ -244,7 +244,7 @@ export default function OB23GuideENPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -264,7 +264,7 @@ export default function OB23GuideENPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}

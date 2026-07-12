@@ -42,7 +42,7 @@ export default function KalkulatorMotor() {
                   {[{ val: "allrisk", label: "All Risk", sub: "Semua kerusakan" }, { val: "tlo", label: "TLO", sub: "Total loss & hilang" }].map((opt) => (
                     <button key={opt.val} onClick={() => setType(opt.val as "allrisk" | "tlo")} className={`p-4 rounded-xl border-2 text-left transition-all ${type === opt.val ? "border-[#c9a84c] bg-[#c9a84c]/5" : "border-[#e2e8f0] hover:border-[#c9a84c]/40"}`}>
                       <div className="font-semibold text-sm text-[#0a1628]">{opt.label}</div>
-                      <div className="text-xs text-[#64748b]">{opt.sub}</div>
+                      <div className="text-xs text-[#475569]">{opt.sub}</div>
                     </button>
                   ))}
                 </div>

@@ -144,23 +144,23 @@ export default function SuretyBondInsurancePage() {
     >
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Guarantee Types We Issue</h2>
-        <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">Choose the guarantee that matches your project or customs facility stage in Batam.</p>
+        <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">Choose the guarantee that matches your project or customs facility stage in Batam.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Link href="/en/surety-bond-insurance/performance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Performance Bond</h3>
-            <p className="text-[#64748b] text-sm">Guarantee that the contractor will complete the project per contract and schedule.</p>
+            <p className="text-[#475569] text-sm">Guarantee that the contractor will complete the project per contract and schedule.</p>
           </Link>
           <Link href="/en/surety-bond-insurance/advance-payment-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Advance Payment Bond</h3>
-            <p className="text-[#64748b] text-sm">Guarantee for down payment recovery if the contractor fails to start or continue work.</p>
+            <p className="text-[#475569] text-sm">Guarantee for down payment recovery if the contractor fails to start or continue work.</p>
           </Link>
           <Link href="/en/surety-bond-insurance/maintenance-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Maintenance Bond</h3>
-            <p className="text-[#64748b] text-sm">Guarantee covering the maintenance period after construction project completion.</p>
+            <p className="text-[#475569] text-sm">Guarantee covering the maintenance period after construction project completion.</p>
           </Link>
           <Link href="/en/surety-bond-insurance/custom-bond" className="group block p-6 rounded-2xl border-2 border-[#e2e8f0] hover:border-[#c9a84c]/50 hover:shadow-lg transition-all">
             <h3 className="font-display font-bold text-lg text-[#0a1628] group-hover:text-[#1a4fa0] mb-2">Custom Bond</h3>
-            <p className="text-[#64748b] text-sm">Customs guarantee for OB 23/temporary import, KITE, and Bonded Zone facilities.</p>
+            <p className="text-[#475569] text-sm">Customs guarantee for OB 23/temporary import, KITE, and Bonded Zone facilities.</p>
           </Link>
         </div>
       </div>

@@ -93,13 +93,13 @@ export default function AboutUsPageEN() {
             {/* Bio */}
             <div>
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Rio's Profile</h2>
-              <p className="text-[#64748b] leading-relaxed mb-6">
+              <p className="text-[#475569] leading-relaxed mb-6">
                 Rio is an experienced insurance practitioner who has served clients in Batam and
                 Kepulauan Riau for 8 years. With deep understanding of the local insurance industry
                 and the needs of businesses in Batam's industrial zone, Rio is a trusted partner for
                 comprehensive asset protection solutions.
               </p>
-              <p className="text-[#64748b] leading-relaxed mb-8">
+              <p className="text-[#475569] leading-relaxed mb-8">
                 Rio's specialisations include commercial property insurance, commercial vehicles and fleet,
                 heavy equipment and machinery, and specialist liability insurance including B3 hazardous
                 waste — areas highly relevant to Batam's unique characteristics as a special economic zone.
@@ -113,7 +113,7 @@ export default function AboutUsPageEN() {
                 ].map((s) => (
                   <div key={s.label} className="p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] text-center">
                     <div className="font-display font-bold text-3xl text-[#c9a84c]">{s.val}</div>
-                    <div className="text-[#64748b] text-sm mt-1">{s.label}</div>
+                    <div className="text-[#475569] text-sm mt-1">{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -138,7 +138,7 @@ export default function AboutUsPageEN() {
                   {c.icon}
                 </div>
                 <div>
-                  <div className="text-[#64748b] text-sm">{c.label}</div>
+                  <div className="text-[#475569] text-sm">{c.label}</div>
                   {c.href ? (
                     <a href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
                       className="font-semibold text-[#0a1628] hover:text-[#c9a84c] transition-colors">

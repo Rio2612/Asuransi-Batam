@@ -144,8 +144,8 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
             ].map(([a, b, c], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
-                <td className="p-4 text-[#64748b]">{c}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
+                <td className="p-4 text-[#475569]">{c}</td>
               </tr>
             ))}
           </tbody>
@@ -168,7 +168,7 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
             </div>
             <div>
               <p className="font-semibold text-sm mb-1" style={{ color: "#0a1628" }}>{i + 1}. {title}</p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -184,7 +184,7 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
             </div>
             <div>
               <p className="font-semibold text-sm" style={{ color: "#0a1628" }}>{title}</p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -227,7 +227,7 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
                 <Icon size={15} style={{ color: "#c9a84c" }} />
                 {title}
               </p>
-              <p className="text-sm text-[#64748b] mt-0.5">{desc}</p>
+              <p className="text-sm text-[#475569] mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -237,7 +237,7 @@ export default function ArticleMiningHeavyEquipmentInsurancePage() {
         <h3 className="font-display font-bold text-[#0a1628] mb-3">
           Discuss Your Mining Equipment Insurance Needs
         </h3>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Every mining fleet has a unique risk profile. Rio can help analyse the right
           coverage requirements, compare offers from multiple insurers, and ensure no
           protection gaps are left in your policy.

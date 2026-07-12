@@ -51,7 +51,7 @@ export default function ContactPageEN() {
             ].map((c) => (
               <div key={c.label} className={`p-5 rounded-2xl border-2 ${c.primary ? "bg-[#0a1628] border-[#c9a84c]/30" : "bg-white border-[#e2e8f0]"}`}>
                 <div className="text-2xl mb-2">{c.icon}</div>
-                <div className={`text-xs font-semibold uppercase tracking-wide mb-1 ${c.primary ? "text-[#c9a84c]" : "text-[#64748b]"}`}>{c.label}</div>
+                <div className={`text-xs font-semibold uppercase tracking-wide mb-1 ${c.primary ? "text-[#c9a84c]" : "text-[#475569]"}`}>{c.label}</div>
                 {c.href ? (
                   <a href={c.href} target={c.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
                     className={`font-bold text-sm ${c.primary ? "text-white hover:text-[#f0d080]" : "text-[#0a1628] hover:text-[#1a4fa0]"} transition-colors`}>
@@ -74,7 +74,7 @@ export default function ContactPageEN() {
 
           <div className="mt-8 p-6 bg-white rounded-2xl border border-[#e2e8f0]">
             <h2 className="font-display font-bold text-xl text-[#0a1628] mb-4">Office Hours</h2>
-            <div className="space-y-2 text-sm text-[#64748b]">
+            <div className="space-y-2 text-sm text-[#475569]">
               <div className="flex justify-between">
                 <span>Monday – Friday</span>
                 <span className="font-semibold text-[#0a1628]">08:00 – 17:00 WIB</span>
@@ -85,10 +85,10 @@ export default function ContactPageEN() {
               </div>
               <div className="flex justify-between">
                 <span>Sunday & Public Holidays</span>
-                <span className="font-semibold text-[#64748b]">Closed</span>
+                <span className="font-semibold text-[#475569]">Closed</span>
               </div>
             </div>
-            <p className="text-xs text-[#64748b] mt-4 italic">
+            <p className="text-xs text-[#475569] mt-4 italic">
               * Emergency claims assistance available 24/7 via WhatsApp
             </p>
           </div>

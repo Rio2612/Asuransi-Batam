@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
+import CareerTimeline from "@/components/CareerTimeline";
+import LinkedInCard from "@/components/LinkedInCard";
 import KonsultasiForm from "./KonsultasiForm";
 
 export const metadata: Metadata = {
-  title: "Tentang Kami – Rio, Praktisi Asuransi Batam",
-  description: "Profil Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
+  title: "Tentang Kami – Rio Mardiansyah, Praktisi Asuransi Batam",
+  description: "Profil Rio Mardiansyah, praktisi asuransi di Batam dengan 9+ tahun pengalaman di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
   alternates: {
     canonical: "https://asuransibatam.com/tentang-kami",
     languages: {
@@ -19,7 +21,8 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Rio",
+  name: "Rio Mardiansyah",
+  alternateName: "Rio",
   jobTitle: "Praktisi Asuransi",
   worksFor: { "@type": "InsuranceAgency", name: "Asuransi Batam" },
   telephone: "+6281373336728",
@@ -99,10 +102,10 @@ export default function TentangKamiPage() {
             <span className="text-white/70">Tentang Kami</span>
           </nav>
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Tentang Kami</p>
-          <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
+          <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio Mardiansyah</h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Praktisi Asuransi di Batam dengan pengalaman 8 tahun
-            melayani klien individu dan korporat.
+            Praktisi Asuransi dengan 9+ tahun pengalaman di industri asuransi kerugian,
+            kini melayani klien individu dan korporat di Batam.
           </p>
         </div>
       </section>
@@ -117,7 +120,7 @@ export default function TentangKamiPage() {
               <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/rio-mardiansyah.jpg"
-                  alt="Rio – Praktisi Asuransi Batam"
+                  alt="Rio Mardiansyah – Praktisi Asuransi Batam"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -126,7 +129,7 @@ export default function TentangKamiPage() {
                 <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#0a1628]/80 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3">
-                    <p className="font-display font-bold text-white text-lg leading-tight">Rio</p>
+                    <p className="font-display font-bold text-white text-lg leading-tight">Rio Mardiansyah</p>
                     <p className="text-[#c9a84c] text-sm font-medium">Praktisi Asuransi</p>
                   </div>
                 </div>
@@ -138,24 +141,24 @@ export default function TentangKamiPage() {
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
                 Profil Rio
               </h2>
-              <p className="text-[#64748b] leading-relaxed mb-6">
-                Rio adalah praktisi asuransi yang telah berkarier selama 8 tahun di industri
-                asuransi kerugian, meniti jenjang dari Account Officer di Asuransi Bumida (3 tahun),
-                Marketing di PT. Asuransi Purna Artanugraha/ASPAN (4 tahun), hingga Kepala Cabang
-                di ASPAN (1 tahun). Pengalaman lintas fungsi ini memberi Rio pemahaman langsung
-                tentang proses akuisisi nasabah, pemasaran produk, hingga operasional cabang dan
-                penanganan klaim di lapangan.
+              <p className="text-[#475569] leading-relaxed mb-6">
+                Rio Mardiansyah adalah praktisi asuransi dengan lebih dari 9 tahun pengalaman
+                langsung di industri asuransi kerugian, meniti karier dari Account Officer di
+                PT Asuransi Umum Bumida 1967 (Batam), Sales &amp; Marketing Specialist, hingga
+                Branch Manager di PT Asuransi Purna Artanugraha (ASPAN). Pengalaman lintas fungsi
+                ini memberi Rio pemahaman langsung tentang proses akuisisi nasabah, pemasaran
+                produk, hingga operasional cabang dan penanganan klaim di lapangan.
               </p>
-              <p className="text-[#64748b] leading-relaxed mb-8">
-                Kini Rio fokus mengelola layanan konsultasi dan pemasaran asuransi untuk klien di
-                Batam dan Kepulauan Riau, dengan spesialisasi asuransi properti komersial, kendaraan
-                niaga dan armada, alat berat dan machinery, serta asuransi liability khusus industri
-                termasuk limbah B3 – bidang yang sangat relevan dengan karakteristik industri Batam
-                sebagai kawasan ekonomi khusus.
+              <p className="text-[#475569] leading-relaxed mb-8">
+                Sejak 2022, Rio melanjutkan sebagai praktisi asuransi digital, fokus melayani
+                klien di Batam dan Kepulauan Riau dengan spesialisasi asuransi properti komersial,
+                kendaraan niaga dan armada, alat berat dan machinery, serta asuransi liability
+                khusus industri termasuk limbah B3 – bidang yang sangat relevan dengan karakteristik
+                industri Batam sebagai kawasan ekonomi khusus.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { val: "8", label: "Tahun Pengalaman" },
+                  { val: "9+", label: "Tahun Pengalaman" },
                   { val: "200+", label: "Klien Aktif" },
                   { val: "98%", label: "Kepuasan Klien" },
                   { val: "20+", label: "Produk Asuransi" },
@@ -165,20 +168,29 @@ export default function TentangKamiPage() {
                     className="p-5 bg-[#faf8f3] rounded-2xl border border-[#e2e8f0] text-center"
                   >
                     <div className="font-display font-bold text-3xl text-[#c9a84c]">{s.val}</div>
-                    <div className="text-[#64748b] text-sm mt-1">{s.label}</div>
+                    <div className="text-[#475569] text-sm mt-1">{s.label}</div>
                   </div>
                 ))}
               </div>
-              <a
-                href="https://www.linkedin.com/in/riomardiansyah"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#1a4fa0] font-medium hover:text-[#c9a84c] transition-colors"
-              >
-                Lihat profil LinkedIn Rio →
-              </a>
+              <LinkedInCard />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Perjalanan Karier */}
+      <section className="section-padding bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Perjalanan Karier</p>
+            <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
+              Dari Account Officer hingga Praktisi Digital
+            </h2>
+            <p className="text-[#475569] max-w-xl mx-auto">
+              Setiap jenjang karier ini membentuk cara Rio memahami risiko dan mendampingi klien hari ini.
+            </p>
+          </div>
+          <CareerTimeline />
         </div>
       </section>
 
@@ -190,7 +202,7 @@ export default function TentangKamiPage() {
             <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">
               Langsung di Lokasi, Bukan Hanya di Balik Meja
             </h2>
-            <p className="text-[#64748b] max-w-2xl mx-auto">
+            <p className="text-[#475569] max-w-2xl mx-auto">
               Sebagian besar pekerjaan kami terjadi di lapangan — di galangan, di geladak kapal,
               di area konstruksi. Karena memahami risiko yang sebenarnya dimulai dari melihat langsung.
             </p>
@@ -214,7 +226,7 @@ export default function TentangKamiPage() {
                 </div>
                 <div className="p-5">
                   <p className="font-display font-bold text-[#0a1628] mb-1">{photo.caption}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{photo.desc}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{photo.desc}</p>
                 </div>
               </div>
             ))}
@@ -227,7 +239,7 @@ export default function TentangKamiPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-[#8a6d1f] font-semibold uppercase tracking-widest text-sm mb-2">Cara Kerja Kami</p>
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Sederhana, Transparan, Tepat Sasaran</h2>
-          <p className="text-[#64748b] mb-12 max-w-xl mx-auto">
+          <p className="text-[#475569] mb-12 max-w-xl mx-auto">
             Tidak ada jargon berlebihan. Kami bantu Anda memahami apa yang benar-benar perlu dilindungi
             dan berapa biaya yang wajar untuk itu.
           </p>
@@ -240,7 +252,7 @@ export default function TentangKamiPage() {
               <div key={w.step} className="p-6 rounded-2xl border border-[#e2e8f0] text-left">
                 <p className="font-display font-bold text-4xl text-[#c9a84c]/40 mb-3">{w.step}</p>
                 <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">{w.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{w.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{w.desc}</p>
               </div>
             ))}
           </div>
@@ -265,7 +277,7 @@ export default function TentangKamiPage() {
                       {c.icon}
                     </div>
                     <div>
-                      <div className="text-[#64748b] text-sm">{c.label}</div>
+                      <div className="text-[#475569] text-sm">{c.label}</div>
                       {c.href ? (
                         <a
                           href={c.href}

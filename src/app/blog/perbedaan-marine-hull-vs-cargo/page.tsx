@@ -107,7 +107,7 @@ export default function PerbedaanMarineHullVsCargoPage() {
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-bold text-[#1a4fa0] border-b border-[#e2e8f0]">{klausa}</td>
                 <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{cakupan}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{cocok}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{cocok}</td>
               </tr>
             ))}
           </tbody>
@@ -135,8 +135,8 @@ export default function PerbedaanMarineHullVsCargoPage() {
             ].map(([aspek, hull, cargo], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspek}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{cargo}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{hull}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{cargo}</td>
               </tr>
             ))}
           </tbody>

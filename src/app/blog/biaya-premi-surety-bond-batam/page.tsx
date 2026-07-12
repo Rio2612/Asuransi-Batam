@@ -196,7 +196,7 @@ function IllustrationTable() {
           ))}
         </tbody>
       </table>
-      <p className="text-xs text-[#64748b] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
+      <p className="text-xs text-[#475569] p-3 bg-[#faf8f3] border-t border-[#e2e8f0] m-0">
         Ilustrasi umum untuk menggambarkan cara perhitungan, bukan penawaran resmi.
         Tarif aktual ditentukan melalui proses underwriting dan dapat berbeda-beda
         tergantung profil risiko perusahaan serta kebijakan masing-masing penanggung.
@@ -366,7 +366,7 @@ export default function ArticleBiayaPremiSuretyBondBatamPage() {
             Dapatkan Estimasi Premi Surety Bond Anda
           </h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Setiap proyek punya profil risiko dan struktur biaya yang berbeda. Rio
           membantu menghitungkan estimasi premi secara realistis sesuai nilai jaminan
           dan profil perusahaan Anda, sebelum mengajukan ke penanggung.

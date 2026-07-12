@@ -185,7 +185,7 @@ export default function CustomBondENPage() {
               Instead of depositing cash or tying up a bank credit line, the company issues a
               custom bond for that amount — keeping working capital free for other exhibition needs.
             </p>
-            <p className="text-[#64748b] mt-3 text-xs leading-relaxed">
+            <p className="text-[#475569] mt-3 text-xs leading-relaxed">
               Once the goods are re-exported on schedule and proven with an export declaration
               (PEB), the custom bond is closed with no claim ever triggered.
             </p>
@@ -197,7 +197,7 @@ export default function CustomBondENPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Custom Bond vs Bank Guarantee
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Both are recognized by Customs — but the impact on company finances is very different.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
@@ -217,7 +217,7 @@ export default function CustomBondENPage() {
               <h3 className="font-display font-bold text-[#0a1628] mb-3 flex items-center gap-2">
                 <span className="text-xl">🏦</span> Bank Guarantee
               </h3>
-              <ul className="space-y-2 text-sm text-[#64748b]">
+              <ul className="space-y-2 text-sm text-[#475569]">
                 <li>• Usually requires cash/deposit collateral up to 100%</li>
                 <li>• Locks up your company's credit facility with the bank</li>
                 <li>• Funds remain tied up for the entire guarantee period</li>
@@ -233,7 +233,7 @@ export default function CustomBondENPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Documents Required for a Custom Bond Application
           </h2>
-          <p className="text-center text-[#64748b] mb-8">
+          <p className="text-center text-[#475569] mb-8">
             Prepare these documents in advance to avoid delays in issuance.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
@@ -277,7 +277,7 @@ export default function CustomBondENPage() {
                 </span>
                 <div className="pt-1">
                   <p className="font-semibold text-[#0a1628] text-[15px]">{step.title}</p>
-                  <p className="text-sm text-[#64748b] mt-1">{step.desc}</p>
+                  <p className="text-sm text-[#475569] mt-1">{step.desc}</p>
                 </div>
               </li>
             ))}
@@ -289,7 +289,7 @@ export default function CustomBondENPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Custom Bond Premium Estimate
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Premium is calculated as a percentage of the guarantee value (not the goods value),
             depending on facility type, tenor, and the company's risk profile.
           </p>
@@ -305,28 +305,28 @@ export default function CustomBondENPage() {
               <tbody>
                 <tr className="border-b border-[#e2e8f0]">
                   <td className="p-4 text-[#0a1628] font-medium">IDR 100 million</td>
-                  <td className="p-4 text-[#64748b]">OB 23 (Temporary Import)</td>
+                  <td className="p-4 text-[#475569]">OB 23 (Temporary Import)</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">IDR 0.8–2 million</td>
                 </tr>
                 <tr className="border-b border-[#e2e8f0] bg-[#f8faff]">
                   <td className="p-4 text-[#0a1628] font-medium">IDR 500 million</td>
-                  <td className="p-4 text-[#64748b]">KITE / Bonded Zone</td>
+                  <td className="p-4 text-[#475569]">KITE / Bonded Zone</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">IDR 4–9 million</td>
                 </tr>
                 <tr className="border-b border-[#e2e8f0]">
                   <td className="p-4 text-[#0a1628] font-medium">IDR 1 billion</td>
-                  <td className="p-4 text-[#64748b]">KITE / Bonded Zone</td>
+                  <td className="p-4 text-[#475569]">KITE / Bonded Zone</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">IDR 8–18 million</td>
                 </tr>
                 <tr>
                   <td className="p-4 text-[#0a1628] font-medium">IDR 150 million (min. Tj. Priok)</td>
-                  <td className="p-4 text-[#64748b]">PPJK</td>
+                  <td className="p-4 text-[#475569]">PPJK</td>
                   <td className="p-4 text-[#1a4fa0] font-semibold">IDR 1.2–2.7 million</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#64748b] mt-3 text-center">
+          <p className="text-xs text-[#475569] mt-3 text-center">
             * General illustrative estimate based on market rates (roughly 0.8%–1.8% of the
             guarantee value per year). Actual premium is determined by underwriters based on
             facility type, tenor, and your company's risk profile — contact us for an official quote.
@@ -338,25 +338,25 @@ export default function CustomBondENPage() {
           <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">
             Other Guarantees Often Needed Alongside Custom Bond
           </h2>
-          <p className="text-center text-[#64748b] mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#475569] mb-8 max-w-2xl mx-auto">
             Import-export businesses in Batam often need more than one type of guarantee at once.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link href="/en/blog/temporary-import-guarantee-ob23-batam" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">OB 23 Guide</h3>
-              <p className="text-[#64748b] text-sm">How to handle temporary import for exhibitions and projects, plus common mistakes to avoid.</p>
+              <p className="text-[#475569] text-sm">How to handle temporary import for exhibitions and projects, plus common mistakes to avoid.</p>
             </Link>
             <Link href="/en/surety-bond-insurance" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Bid Bond</h3>
-              <p className="text-[#64748b] text-sm">Pre-tender guarantee for government and private procurement.</p>
+              <p className="text-[#475569] text-sm">Pre-tender guarantee for government and private procurement.</p>
             </Link>
             <Link href="/en/surety-bond-insurance/advance-payment-bond" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Advance Payment Bond</h3>
-              <p className="text-[#64748b] text-sm">Guarantee for down payment recovery in construction and procurement contracts.</p>
+              <p className="text-[#475569] text-sm">Guarantee for down payment recovery in construction and procurement contracts.</p>
             </Link>
             <Link href="/en/marine-insurance/marine-cargo" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
               <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Marine Cargo</h3>
-              <p className="text-[#64748b] text-sm">Protect the value of your import/export goods against loss or damage in transit.</p>
+              <p className="text-[#475569] text-sm">Protect the value of your import/export goods against loss or damage in transit.</p>
             </Link>
           </div>
         </div>

@@ -53,7 +53,7 @@ export default function AsuransiDumpTruckPage() {
       schema={schema}>
       <div className="mb-12 max-w-4xl mx-auto">
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Estimasi Premi Dump Truck di Batam</h2>
-        <p className="text-center text-[#64748b] mb-8">Panduan harga perlindungan untuk armada kendaraan berat Anda.</p>
+        <p className="text-center text-[#475569] mb-8">Panduan harga perlindungan untuk armada kendaraan berat Anda.</p>
         <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0]">
           <table className="w-full text-sm">
             <thead>
@@ -67,41 +67,41 @@ export default function AsuransiDumpTruckPage() {
             <tbody>
               <tr className="border-b border-[#e2e8f0]">
                 <td className="p-4 text-[#0a1628] font-medium">Dump Truck Mitsubishi Colt Diesel (6 roda)</td>
-                <td className="p-4 text-[#64748b]">Rp 350–450 jt</td>
+                <td className="p-4 text-[#475569]">Rp 350–450 jt</td>
                 <td className="p-4 text-[#1a4fa0] font-semibold">Rp 3,5–6,7 jt/th</td>
-                <td className="p-4 text-[#64748b]">Rp 7–18 jt/th</td>
+                <td className="p-4 text-[#475569]">Rp 7–18 jt/th</td>
               </tr>
               <tr className="border-b border-[#e2e8f0] bg-[#f8faff]">
                 <td className="p-4 text-[#0a1628] font-medium">Dump Truck Hino 260 (10 roda)</td>
-                <td className="p-4 text-[#64748b]">Rp 700–900 jt</td>
+                <td className="p-4 text-[#475569]">Rp 700–900 jt</td>
                 <td className="p-4 text-[#1a4fa0] font-semibold">Rp 7–13,5 jt/th</td>
-                <td className="p-4 text-[#64748b]">Rp 14–36 jt/th</td>
+                <td className="p-4 text-[#475569]">Rp 14–36 jt/th</td>
               </tr>
               <tr className="border-b border-[#e2e8f0]">
                 <td className="p-4 text-[#0a1628] font-medium">Dump Truck Volvo / Scania (Articulated)</td>
-                <td className="p-4 text-[#64748b]">Rp 2,5–4 M</td>
+                <td className="p-4 text-[#475569]">Rp 2,5–4 M</td>
                 <td className="p-4 text-[#1a4fa0] font-semibold">Rp 25–60 jt/th</td>
-                <td className="p-4 text-[#64748b]">Hubungi kami</td>
+                <td className="p-4 text-[#475569]">Hubungi kami</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-[#64748b] mt-3 text-center">* Estimasi premi berdasarkan tarif on-road. Premi aktual bergantung pada kondisi kendaraan, area operasi, dan rekam jejak klaim. Hubungi kami untuk penawaran spesifik termasuk fleet discount.</p>
+        <p className="text-xs text-[#475569] mt-3 text-center">* Estimasi premi berdasarkan tarif on-road. Premi aktual bergantung pada kondisi kendaraan, area operasi, dan rekam jejak klaim. Hubungi kami untuk penawaran spesifik termasuk fleet discount.</p>
       </div>
       <div>
         <h2 className="font-display font-bold text-2xl text-[#0a1628] mb-2 text-center">Pelengkap untuk Operasional Tambang & Proyek</h2>
         <div className="grid md:grid-cols-3 gap-6 mt-8">
           <Link href="/asuransi-machinery/asuransi-alat-berat" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Asuransi Alat Berat</h3>
-            <p className="text-[#64748b] text-sm">Lindungi excavator dan bulldozer yang bekerja bersama armada dump truck Anda.</p>
+            <p className="text-[#475569] text-sm">Lindungi excavator dan bulldozer yang bekerja bersama armada dump truck Anda.</p>
           </Link>
           <Link href="/asuransi-liability/public-liability" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Public Liability</h3>
-            <p className="text-[#64748b] text-sm">Perluas tanggung jawab hukum operasional armada di luar batas polis kendaraan standar.</p>
+            <p className="text-[#475569] text-sm">Perluas tanggung jawab hukum operasional armada di luar batas polis kendaraan standar.</p>
           </Link>
           <Link href="/blog/asuransi-dump-truck-batam-proyek-konstruksi" className="block p-6 rounded-2xl border border-[#e2e8f0] hover:border-[#c9a84c]/40 hover:shadow-lg transition-all card-hover">
             <h3 className="font-display font-bold text-lg text-[#0a1628] mb-2">Panduan Dump Truck untuk Proyek</h3>
-            <p className="text-[#64748b] text-sm">Tips lengkap proteksi armada dump truck untuk kebutuhan proyek konstruksi Batam.</p>
+            <p className="text-[#475569] text-sm">Tips lengkap proteksi armada dump truck untuk kebutuhan proyek konstruksi Batam.</p>
           </Link>
         </div>
       </div>

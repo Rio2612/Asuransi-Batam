@@ -69,21 +69,21 @@ export default function MarineHullVsCargoPage() {
             <Ship size={24} className="text-white" />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>Marine Hull Insurance</h3>
-          <p className="text-sm text-[#64748b] mb-3">
+          <p className="text-sm text-[#475569] mb-3">
             Protects the <strong className="text-[#0a1628]">physical vessel and its permanently fitted equipment</strong> — the hull structure, machinery, navigation systems, and everything that forms a permanent part of the ship.
           </p>
-          <p className="text-sm text-[#64748b] mb-1"><strong className="text-[#0a1628]">Who buys it:</strong> ship owners and fleet operators — shipping companies, ferry operators, tug boat owners, patrol vessel operators.</p>
-          <p className="text-sm text-[#64748b]"><strong className="text-[#0a1628]">Covers:</strong> hull damage from collision, grounding, or severe weather; machinery breakdown (optional); collision liability; total loss.</p>
+          <p className="text-sm text-[#475569] mb-1"><strong className="text-[#0a1628]">Who buys it:</strong> ship owners and fleet operators — shipping companies, ferry operators, tug boat owners, patrol vessel operators.</p>
+          <p className="text-sm text-[#475569]"><strong className="text-[#0a1628]">Covers:</strong> hull damage from collision, grounding, or severe weather; machinery breakdown (optional); collision liability; total loss.</p>
         </div>
         <div className="rounded-2xl border-2 p-6" style={{ borderColor: "#c9a84c30", background: "#faf8f3" }}>
           <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: "linear-gradient(135deg, #c9a84c, #f0d080)" }}>
             <Package size={24} style={{ color: "#0a1628" }} />
           </div>
           <h3 className="font-display font-bold text-lg mb-2" style={{ color: "#0a1628" }}>Marine Cargo Insurance</h3>
-          <p className="text-sm text-[#64748b] mb-3">
+          <p className="text-sm text-[#475569] mb-3">
             Protects <strong className="text-[#0a1628]">the goods being transported</strong>, not the vessel. Follows the goods from the shipper's warehouse to the consignee's warehouse — including terminal time, inside the container, and across transport modes.
           </p>
-          <p className="text-sm text-[#64748b]"><strong className="text-[#0a1628]">Who buys it:</strong> the cargo owner — shipper, importer, exporter, or trading company. Who bears the risk depends on the agreed Incoterms.</p>
+          <p className="text-sm text-[#475569]"><strong className="text-[#0a1628]">Who buys it:</strong> the cargo owner — shipper, importer, exporter, or trading company. Who bears the risk depends on the agreed Incoterms.</p>
         </div>
       </div>
 
@@ -106,7 +106,7 @@ export default function MarineHullVsCargoPage() {
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-bold text-[#1a4fa0] border-b border-[#e2e8f0]">{clause}</td>
                 <td className="px-4 py-3 text-[#374151] border-b border-[#e2e8f0]">{scope}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{best}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{best}</td>
               </tr>
             ))}
           </tbody>
@@ -134,8 +134,8 @@ export default function MarineHullVsCargoPage() {
             ].map(([aspect, hull, cargo], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="px-4 py-3 font-medium text-[#0a1628] border-b border-[#e2e8f0]">{aspect}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{hull}</td>
-                <td className="px-4 py-3 text-[#64748b] border-b border-[#e2e8f0]">{cargo}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{hull}</td>
+                <td className="px-4 py-3 text-[#475569] border-b border-[#e2e8f0]">{cargo}</td>
               </tr>
             ))}
           </tbody>
@@ -163,17 +163,17 @@ export default function MarineHullVsCargoPage() {
         <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
           <Anchor size={20} className="mb-2" style={{ color: "#0a1628" }} />
           <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy Marine Hull if you</p>
-          <p className="text-sm text-[#64748b]">Own or operate a commercial vessel, or run a fleet of tug boats, ferries, or patrol vessels in Batam waters.</p>
+          <p className="text-sm text-[#475569]">Own or operate a commercial vessel, or run a fleet of tug boats, ferries, or patrol vessels in Batam waters.</p>
         </div>
         <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
           <Package size={20} className="mb-2" style={{ color: "#0a1628" }} />
           <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy Marine Cargo if you</p>
-          <p className="text-sm text-[#64748b]">Import or export goods regularly by sea or air, run a trading company, or distribute large inbound shipments.</p>
+          <p className="text-sm text-[#475569]">Import or export goods regularly by sea or air, run a trading company, or distribute large inbound shipments.</p>
         </div>
         <div className="rounded-2xl p-5 bg-white border border-[#e2e8f0] shadow-sm">
           <Layers size={20} className="mb-2" style={{ color: "#0a1628" }} />
           <p className="font-bold text-sm mb-1" style={{ color: "#0a1628" }}>Buy both if you</p>
-          <p className="text-sm text-[#64748b]">Own the vessel and also carry your own cargo on board.</p>
+          <p className="text-sm text-[#475569]">Own the vessel and also carry your own cargo on board.</p>
         </div>
       </div>
 

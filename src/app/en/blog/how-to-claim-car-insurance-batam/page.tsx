@@ -101,7 +101,7 @@ export default function ArticleCarInsuranceClaimBatamPage() {
               <Icon size={18} className="text-red-600" />
             </div>
             <p className="font-bold text-sm mb-1.5" style={{ color: "#0a1628" }}>{title}</p>
-            <p className="text-sm text-[#64748b]">{desc}</p>
+            <p className="text-sm text-[#475569]">{desc}</p>
           </div>
         ))}
       </div>
@@ -120,7 +120,7 @@ export default function ArticleCarInsuranceClaimBatamPage() {
                 <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "#c9a84c20", color: "#a07830" }}>Step {i + 1}</span>
                 {title}
               </p>
-              <p className="text-sm text-[#64748b]">{desc}</p>
+              <p className="text-sm text-[#475569]">{desc}</p>
             </div>
           </div>
         ))}
@@ -139,7 +139,7 @@ export default function ArticleCarInsuranceClaimBatamPage() {
             {DOC_TABLE.map(([a, b], i) => (
               <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                 <td className="p-4 font-medium text-[#0a1628]">{a}</td>
-                <td className="p-4 text-[#64748b]">{b}</td>
+                <td className="p-4 text-[#475569]">{b}</td>
               </tr>
             ))}
           </tbody>
@@ -175,7 +175,7 @@ export default function ArticleCarInsuranceClaimBatamPage() {
           </div>
           <h3 className="font-display font-bold text-[#0a1628] m-0">Need Help with a Claim or Car Insurance Consultation in Batam?</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Rio is ready to assist you through the entire claims process — from document
           preparation and survey coordination to communicating with the insurer on your
           behalf. Free consultation, no extra charges.

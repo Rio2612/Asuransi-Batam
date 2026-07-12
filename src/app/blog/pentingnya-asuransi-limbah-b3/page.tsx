@@ -120,7 +120,7 @@ function Steps({ items }: { items: { title: string; desc?: string }[] }) {
           </span>
           <div className="pt-0.5">
             <p className="font-semibold text-[#0a1628] m-0 text-[15px]">{item.title}</p>
-            {item.desc && <p className="text-sm text-[#64748b] mt-1 mb-0">{item.desc}</p>}
+            {item.desc && <p className="text-sm text-[#475569] mt-1 mb-0">{item.desc}</p>}
           </div>
         </li>
       ))}
@@ -205,28 +205,28 @@ export default function ArticleLimbahB3Page() {
             <Gavel className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
             <p className="text-sm font-semibold text-[#0a1628] m-0">Sanksi Administratif</p>
           </div>
-          <p className="text-sm text-[#64748b] m-0">Teguran, paksaan pemerintah, hingga pembekuan izin usaha.</p>
+          <p className="text-sm text-[#475569] m-0">Teguran, paksaan pemerintah, hingga pembekuan izin usaha.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
           <div className="flex items-center gap-2.5 mb-2">
             <Scale className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
             <p className="text-sm font-semibold text-[#0a1628] m-0">Sanksi Pidana</p>
           </div>
-          <p className="text-sm text-[#64748b] m-0">Penjara 1–10 tahun dan denda hingga Rp 10 miliar.</p>
+          <p className="text-sm text-[#475569] m-0">Penjara 1–10 tahun dan denda hingga Rp 10 miliar.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
           <div className="flex items-center gap-2.5 mb-2">
             <FileSignature className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
             <p className="text-sm font-semibold text-[#0a1628] m-0">Tuntutan Perdata</p>
           </div>
-          <p className="text-sm text-[#64748b] m-0">Klaim ganti rugi dari masyarakat yang terdampak pencemaran.</p>
+          <p className="text-sm text-[#475569] m-0">Klaim ganti rugi dari masyarakat yang terdampak pencemaran.</p>
         </div>
         <div className="p-5 rounded-xl border border-[#e2e8f0] bg-white">
           <div className="flex items-center gap-2.5 mb-2">
             <Megaphone className="w-[18px] h-[18px] text-[#a07830]" strokeWidth={2} />
             <p className="text-sm font-semibold text-[#0a1628] m-0">Reputasi Bisnis</p>
           </div>
-          <p className="text-sm text-[#64748b] m-0">Pemberitaan negatif yang merusak citra perusahaan di mata mitra dan investor.</p>
+          <p className="text-sm text-[#475569] m-0">Pemberitaan negatif yang merusak citra perusahaan di mata mitra dan investor.</p>
         </div>
       </div>
 
@@ -294,7 +294,7 @@ export default function ArticleLimbahB3Page() {
           <CreditCard className="w-5 h-5 text-[#c9a84c]" strokeWidth={2} />
           <h3 className="font-display font-bold text-[#0a1628] m-0">Pastikan Bisnis Anda Patuh Regulasi</h3>
         </div>
-        <p className="text-[#64748b] mb-4">
+        <p className="text-[#475569] mb-4">
           Konsultasikan kebutuhan asuransi limbah B3 Anda dengan Rio. Kami membantu industri di
           Batam memenuhi kewajiban hukum lingkungan.
         </p>

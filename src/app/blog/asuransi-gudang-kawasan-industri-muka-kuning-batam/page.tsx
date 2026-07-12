@@ -170,7 +170,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
             hanya memiliki polis kebakaran standar tanpa perluasan konten — artinya hanya bangunannya
             yang diganti, sementara stok Rp 12 miliar tidak ditanggung.
           </p>
-          <p className="text-[#64748b] mt-3 text-sm leading-relaxed">
+          <p className="text-[#475569] mt-3 text-sm leading-relaxed">
             Ini adalah kesalahan paling umum dalam asuransi gudang: hanya melindungi bangunan, lupa
             melindungi isi gudang yang nilainya bisa jauh lebih besar.
           </p>
@@ -186,7 +186,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
               <div key={r.title} className="bg-white rounded-2xl border-2 border-[#e2e8f0] p-5 hover:border-[#c9a84c]/50 hover:shadow-lg transition-all card-hover">
                 <div className="text-3xl mb-3">{r.icon}</div>
                 <h3 className="font-display font-bold text-[#0a1628] mb-2 text-sm">{r.title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{r.desc}</p>
+                <p className="text-[#475569] text-sm leading-relaxed">{r.desc}</p>
               </div>
             ))}
           </div>
@@ -197,7 +197,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
           <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-5">
             Profil Risiko per Kawasan Industri di Batam
           </h2>
-          <p className="text-[#64748b] leading-relaxed mb-6">
+          <p className="text-[#475569] leading-relaxed mb-6">
             Setiap kawasan industri di Batam memiliki karakteristik risiko yang berbeda.
             Memahami profil kawasan membantu menentukan jenis endorsemen yang diperlukan:
           </p>
@@ -208,7 +208,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
                   <span className="inline-flex px-3 py-1.5 gradient-navy rounded-lg font-display font-bold text-[#c9a84c] text-xs whitespace-nowrap flex-shrink-0">
                     📍 {k.nama}
                   </span>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{k.karakteristik}</p>
+                  <p className="text-[#475569] text-sm leading-relaxed">{k.karakteristik}</p>
                 </div>
               </div>
             ))}
@@ -233,7 +233,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
                 {jenisProteksi.map((row, i) => (
                   <tr key={row.produk} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3.5 font-medium text-[#0a1628] text-xs">{row.produk}</td>
-                    <td className="px-5 py-3.5 text-[#64748b] text-xs">{row.cakupan}</td>
+                    <td className="px-5 py-3.5 text-[#475569] text-xs">{row.cakupan}</td>
                     <td className="px-5 py-3.5 text-center">
                       <span className={`px-2 py-1 rounded-full text-xs font-bold ${row.wajib ? "bg-red-100 text-red-700" : "bg-blue-100 text-blue-700"}`}>
                         {row.wajib ? "Dasar" : "Disarankan"}
@@ -264,8 +264,8 @@ export default function AsuransiGudangMukaKuningBatamPage() {
                 {premiIlustrasi.map((row, i) => (
                   <tr key={row.gudang} className={i % 2 === 0 ? "bg-white" : "bg-[#faf8f3]"}>
                     <td className="px-5 py-3 font-medium text-[#0a1628] text-xs">{row.gudang}</td>
-                    <td className="px-5 py-3 text-[#64748b]">{row.premi}</td>
-                    <td className="px-5 py-3 text-[#64748b] text-xs">{row.catatan}</td>
+                    <td className="px-5 py-3 text-[#475569]">{row.premi}</td>
+                    <td className="px-5 py-3 text-[#475569] text-xs">{row.catatan}</td>
                   </tr>
                 ))}
               </tbody>
@@ -301,7 +301,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
                   {faq.q}
                   <span className="ml-4 text-[#c9a84c] text-xl group-open:rotate-45 transition-transform flex-shrink-0">+</span>
                 </summary>
-                <div className="px-5 pb-5 text-[#64748b] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
+                <div className="px-5 pb-5 text-[#475569] text-sm leading-relaxed border-t border-[#e2e8f0] pt-4">{faq.a}</div>
               </details>
             ))}
           </div>
@@ -323,7 +323,7 @@ export default function AsuransiGudangMukaKuningBatamPage() {
                 <Shield className="w-5 h-5 text-[#c9a84c] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-[#0a1628] group-hover:text-[#1a4fa0] transition-colors text-sm">{link.title}</div>
-                  <div className="text-[#64748b] text-xs mt-0.5">{link.desc}</div>
+                  <div className="text-[#475569] text-xs mt-0.5">{link.desc}</div>
                 </div>
               </Link>
             ))}
