@@ -30,10 +30,10 @@ export const metadata: Metadata = generateSEO({
   description:
     "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, simulasi perhitungan, dan tips menekan biaya. Dari konsultan 10+ tahun pengalaman.",
   canonical: "/blog/premi-asuransi-kapal-batam-2026",
-  languages: {
-    id: "https://asuransibatam.com/blog/premi-asuransi-kapal-batam-2026",
-    en: "https://asuransibatam.com/en/blog/ship-insurance-premium-batam-2026",
-  },
+  // Catatan: versi EN belum dibuat. Jangan tambahkan `languages.en` di sini
+  // sampai halaman /en/blog/ship-insurance-premium-batam-2026 benar-benar ada,
+  // karena hreflang yang nunjuk ke halaman 404 membuat Google mengabaikan
+  // seluruh sinyal hreflang di halaman ini.
 });
 
 /* ─────────────────────────────────────────────

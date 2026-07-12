@@ -10,6 +10,10 @@ export const metadata: Metadata = generateSEO({
   description:
     "Temukan lokasi kantor konsultan asuransi kerugian terpercaya di Batam Center. Rio melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
   canonical: "/lokasi",
+  languages: {
+    id: "https://asuransibatam.com/lokasi",
+    en: "https://asuransibatam.com/en/location",
+  },
 });
 
 const AREAS_SERVED = [
