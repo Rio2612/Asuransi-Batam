@@ -1,23 +1,20 @@
 // app/en/location/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
-import { schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaBreadcrumb } from "@/lib/seo";
 import { SITE, WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection } from "@/components/ui/index";
 import { MapPin, Clock, Phone, MessageCircle, Navigation } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Location – Batam Insurance Practitioner | Batam Center, Riau Islands",
-  description:
-    "Find the office of a trusted insurance practitioner in Batam Center. Rio serves all areas of Batam and the Riau Islands. Contact us now!",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/location",
-    languages: {
+  description: "Find the office of a trusted insurance practitioner in Batam Center. Rio serves all areas of Batam and the Riau Islands. Contact us now!",
+  canonical: "https://asuransibatam.com/en/location",
+  languages: {
       id: "https://asuransibatam.com/lokasi",
       en: "https://asuransibatam.com/en/location",
     },
-  },
-};
+});
 
 const AREAS_SERVED = [
   "Batam Center", "Nagoya", "Baloi", "Sekupang", "Batu Aji",

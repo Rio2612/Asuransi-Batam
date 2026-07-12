@@ -1,20 +1,18 @@
 // app/asuransi-properti/asuransi-apartemen-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Apartemen Batam – Proteksi Unit, Isi, dan Tanggung Jawab Pemilik",
-  description:
-    "Asuransi apartemen dan kondotel di Batam: proteksi unit dari kebakaran, banjir, ledakan, dan kehilangan. Cocok untuk pemilik unit, investor, maupun penyewa. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-apartemen-batam",
-    languages: {
+  description: "Asuransi apartemen dan kondotel di Batam: proteksi unit dari kebakaran, banjir, ledakan, dan kehilangan. Cocok untuk pemilik unit, investor, maupun penyewa. Hubungi Rio: 0813-7333-6728.",
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-apartemen-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-apartemen-batam",
       en: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

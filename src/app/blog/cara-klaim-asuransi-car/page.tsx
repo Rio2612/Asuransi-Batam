@@ -1,5 +1,6 @@
 // app/blog/cara-klaim-asuransi-car/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import {
   ListChecks,
   ClipboardList,
@@ -10,18 +11,15 @@ import {
   MessageCircleMore,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Cara Klaim Asuransi CAR saat Proyek Mengalami Kerusakan – Panduan Lengkap",
-  description:
-    "Panduan langkah demi langkah mengajukan klaim Contractor All Risk (CAR) di Indonesia. Dari pelaporan awal hingga pencairan ganti rugi — termasuk dokumen yang wajib disiapkan.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
-    languages: {
+  description: "Panduan langkah demi langkah mengajukan klaim Contractor All Risk (CAR) di Indonesia. Dari pelaporan awal hingga pencairan ganti rugi — termasuk dokumen yang wajib disiapkan.",
+  canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
       en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

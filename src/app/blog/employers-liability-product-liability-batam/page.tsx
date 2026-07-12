@@ -1,5 +1,6 @@
 // app/blog/employers-liability-product-liability-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -19,16 +20,11 @@ import {
   AlertTriangle,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Employers Liability & Product Liability di Batam – Perlindungan yang Sering Terlewat",
-  description:
-    "Dua jenis asuransi liability yang jarang disadari perusahaan di Batam: Employers Liability (tuntutan karyawan di luar BPJS TK) dan Product Liability (tuntutan atas produk yang diproduksi/didistribusikan). Panduan lengkap siapa yang butuh dan kenapa.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/employers-liability-product-liability-batam",
-  },
-};
+export const metadata: Metadata = generateSEO({
+  title: "Employers Liability & Product Liability di Batam – Perlindungan yang Sering Terlewat",
+  description: "Dua jenis asuransi liability yang jarang disadari perusahaan di Batam: Employers Liability (tuntutan karyawan di luar BPJS TK) dan Product Liability (tuntutan atas produk yang diproduksi/didistribusikan). Panduan lengkap siapa yang butuh dan kenapa.",
+  canonical: "https://asuransibatam.com/blog/employers-liability-product-liability-batam",
+});
 
 const schema = {
   "@context": "https://schema.org",

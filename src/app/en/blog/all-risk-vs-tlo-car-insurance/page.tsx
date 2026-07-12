@@ -1,5 +1,6 @@
 // src/app/en/blog/all-risk-vs-tlo-car-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -13,18 +14,15 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "All Risk vs TLO Car Insurance – Which One Is Right for You?",
-  description:
-    "A clear explanation of the difference between Comprehensive (All Risk) and Total Loss Only (TLO) car insurance in Batam — what each covers, their pros and cons, and how to choose the right one for your vehicle.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
-    languages: {
+  description: "A clear explanation of the difference between Comprehensive (All Risk) and Total Loss Only (TLO) car insurance in Batam — what each covers, their pros and cons, and how to choose the right one for your vehicle.",
+  canonical: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
+  languages: {
       id: "https://asuransibatam.com/blog/perbedaan-all-risk-dan-tlo",
       en: "https://asuransibatam.com/en/blog/all-risk-vs-tlo-car-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

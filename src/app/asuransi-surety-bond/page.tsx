@@ -1,12 +1,12 @@
 // app/asuransi-surety-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Surety Bond Batam – Jaminan Proyek & Kontrak",
-  description:
-    "Surety Bond di Batam untuk perusahaan konstruksi, kontraktor, dan pengadaan. Bid bond, performance bond, advance payment bond, dan maintenance bond. Proses cepat, premi kompetitif. Konsultasi gratis dengan Rio.",
+  description: "Surety Bond di Batam untuk perusahaan konstruksi, kontraktor, dan pengadaan. Bid bond, performance bond, advance payment bond, dan maintenance bond. Proses cepat, premi kompetitif. Konsultasi gratis dengan Rio.",
   keywords: [
     "surety bond batam",
     "jaminan penawaran batam",
@@ -18,14 +18,12 @@ export const metadata: Metadata = {
     "custom bond batam",
     "ob 23 batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-surety-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-surety-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

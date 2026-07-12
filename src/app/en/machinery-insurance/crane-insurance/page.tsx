@@ -1,20 +1,18 @@
 // app/en/machinery-insurance/crane-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Crane Insurance Batam – Tower Crane & Mobile Crane Protection",
-  description:
-    "Crane insurance in Batam covering tower cranes, mobile cranes, and lifting equipment against structural collapse, mechanical failure, and third-party liability. Free consultation with Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
-    languages: {
+  description: "Crane insurance in Batam covering tower cranes, mobile cranes, and lifting equipment against structural collapse, mechanical failure, and third-party liability. Free consultation with Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
       en: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

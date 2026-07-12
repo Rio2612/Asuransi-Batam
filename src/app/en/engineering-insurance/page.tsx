@@ -1,19 +1,17 @@
 // app/en/engineering-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Engineering Insurance Batam – CAR, EAR, Contractor All Risk",
-  description:
-    "Engineering insurance in Batam. Contractor All Risk (CAR), Erection All Risk (EAR), and construction project protection. Consult Rio at +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/engineering-insurance",
-    languages: {
+  description: "Engineering insurance in Batam. Contractor All Risk (CAR), Erection All Risk (EAR), and construction project protection. Consult Rio at +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/engineering-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-engineering",
       en: "https://asuransibatam.com/en/engineering-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏗️", title: "Contractor All Risk (CAR)", desc: "Protection for construction projects against all risks during the build period.", href: "/en/engineering-insurance/contractor-all-risk", },

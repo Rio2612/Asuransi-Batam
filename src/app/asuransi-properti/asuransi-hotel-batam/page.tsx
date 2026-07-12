@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Hotel Batam – Perlindungan Lengkap Aset Perhotelan",
   description: "Asuransi hotel dan penginapan di Batam. Lindungi bangunan, perabot, peralatan, dan tanggung jawab tamu dari kebakaran, banjir, dan kerusakan. Konsultasi gratis: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-hotel-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-hotel-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-hotel-batam",
       en: "https://asuransibatam.com/en/property-insurance/hotel-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏨", title: "Bangunan & Struktur Hotel", desc: "Perlindungan struktur bangunan hotel dari kebakaran, sambaran petir, ledakan, bencana alam, dan kerusakan fisik lainnya yang merugikan." },

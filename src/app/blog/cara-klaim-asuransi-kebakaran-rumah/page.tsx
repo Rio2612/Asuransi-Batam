@@ -1,5 +1,6 @@
 // app/blog/cara-klaim-asuransi-kebakaran-rumah/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -25,17 +26,15 @@ import {
   Home,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Cara Klaim Asuransi Kebakaran Rumah – Dokumen, Prosedur & Kesalahan Fatal yang Harus Dihindari",
   description: "Mengklaim asuransi kebakaran rumah tidak semudah kelihatannya. Pelajari dokumen yang diperlukan, prosedur yang benar, dan kesalahan umum yang menyebabkan klaim ditolak — panduan lengkap untuk pemilik rumah di Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
       en: "https://asuransibatam.com/en/blog/how-to-claim-home-fire-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

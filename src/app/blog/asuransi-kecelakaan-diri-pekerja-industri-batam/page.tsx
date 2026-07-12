@@ -1,5 +1,6 @@
 // app/blog/asuransi-kecelakaan-diri-pekerja-industri-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -21,15 +22,11 @@ import {
   UserCheck,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Kecelakaan Diri (PA) untuk Pekerja Industri Batam – Panduan Lengkap",
-  description:
-    "Panduan lengkap Asuransi Kecelakaan Diri (Personal Accident) untuk pekerja galangan kapal, manufaktur, dan sektor maritim di Batam. Pelajari perbedaannya dengan BPJS Ketenagakerjaan, skema PA Individu vs Grup, dan cara klaim yang benar.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/asuransi-kecelakaan-diri-pekerja-industri-batam",
-  },
-};
+  description: "Panduan lengkap Asuransi Kecelakaan Diri (Personal Accident) untuk pekerja galangan kapal, manufaktur, dan sektor maritim di Batam. Pelajari perbedaannya dengan BPJS Ketenagakerjaan, skema PA Individu vs Grup, dan cara klaim yang benar.",
+  canonical: "https://asuransibatam.com/blog/asuransi-kecelakaan-diri-pekerja-industri-batam",
+});
 
 const schema = {
   "@context": "https://schema.org",

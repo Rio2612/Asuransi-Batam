@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Kontak – Hubungi Rio Praktisi Asuransi Batam",
   description: "Hubungi Rio untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-7333-6728, email rio@asuransibatam.com. Batam Center.",
-  alternates: {
-    canonical: "https://asuransibatam.com/kontak",
-    languages: {
+  canonical: "https://asuransibatam.com/kontak",
+  languages: {
       id: "https://asuransibatam.com/kontak",
       en: "https://asuransibatam.com/en/contact",
     },
-  },
-};
+});
 const breadcrumbListSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

@@ -1,5 +1,6 @@
 // app/en/blog/mining-heavy-equipment-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -23,17 +24,15 @@ import {
   Boxes,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Mining Heavy Equipment Insurance – Mandatory, What's Covered & How to Choose",
   description: "Operating a mine without heavy equipment insurance is an unacceptably large financial risk. Learn about mandatory coverage types, applicable K3 regulations, and how to choose the right policy for equipment in mining areas.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/mining-heavy-equipment-insurance",
-    languages: {
+  canonical: "https://asuransibatam.com/en/blog/mining-heavy-equipment-insurance",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-alat-berat-pertambangan",
       en: "https://asuransibatam.com/en/blog/mining-heavy-equipment-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

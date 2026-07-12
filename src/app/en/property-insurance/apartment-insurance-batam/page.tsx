@@ -1,19 +1,17 @@
 // app/en/property-insurance/apartment-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Apartment Insurance Batam – Unit, Contents & Owner Liability Coverage",
-  description:
-    "Apartment and condotel insurance in Batam covering fire, flood, contents, and third-party liability. Suitable for unit owners, investors, and tenants. Contact Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
-    languages: {
+  description: "Apartment and condotel insurance in Batam covering fire, flood, contents, and third-party liability. Suitable for unit owners, investors, and tenants. Contact Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-apartemen-batam",
       en: "https://asuransibatam.com/en/property-insurance/apartment-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

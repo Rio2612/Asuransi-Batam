@@ -1,12 +1,12 @@
 // app/en/surety-bond-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Surety Bond Insurance Batam – Project & Contract Guarantee",
-  description:
-    "Surety bond services in Batam for contractors, construction companies, and procurement. Bid bond, performance bond, advance payment bond, and maintenance bond. Fast issuance, competitive premium. Free consultation with Rio.",
+  description: "Surety bond services in Batam for contractors, construction companies, and procurement. Bid bond, performance bond, advance payment bond, and maintenance bond. Fast issuance, competitive premium. Free consultation with Rio.",
   keywords: [
     "surety bond batam",
     "bid bond batam",
@@ -18,14 +18,12 @@ export const metadata: Metadata = {
     "surety bond insurance batam",
     "contract guarantee batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

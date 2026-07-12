@@ -1,5 +1,6 @@
 // app/blog/asuransi-properti-komersial-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -22,17 +23,15 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Properti Komersial Batam – Panduan untuk Pemilik Ruko, Gudang & Gedung",
   description: "Properti komersial di Batam memiliki profil risiko yang berbeda dari rumah tinggal. Pelajari jenis polis yang tepat, apa saja yang wajib dilindungi, dan cara memilih perlindungan yang sesuai untuk bisnis Anda.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-properti-komersial-batam",
       en: "https://asuransibatam.com/en/blog/commercial-property-insurance-batam",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

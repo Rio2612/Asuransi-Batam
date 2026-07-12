@@ -1,5 +1,6 @@
 // app/blog/biaya-premi-surety-bond-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -20,14 +21,11 @@ import {
   History,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Biaya dan Premi Surety Bond di Batam – Faktor yang Mempengaruhi Tarif",
-  description:
-    "Berapa biaya surety bond di Batam? Panduan lengkap cara perhitungan premi bid bond, performance bond, advance payment bond, dan maintenance bond, serta faktor yang membuat tarif lebih murah atau lebih mahal.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/biaya-premi-surety-bond-batam",
-  },
-};
+  description: "Berapa biaya surety bond di Batam? Panduan lengkap cara perhitungan premi bid bond, performance bond, advance payment bond, dan maintenance bond, serta faktor yang membuat tarif lebih murah atau lebih mahal.",
+  canonical: "https://asuransibatam.com/blog/biaya-premi-surety-bond-batam",
+});
 
 const schema = {
   "@context": "https://schema.org",

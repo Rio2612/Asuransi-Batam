@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock, CheckCircle, ArrowRight, AlertCircle } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
- export const metadata: Metadata = {
+ export const metadata: Metadata = generateSEO({
   title: "Panduan Memilih Asuransi EAR untuk Proyek Energi & Instalasi Mesin di Batam",
-  description:
-    "Bagaimana cara memilih asuransi Erection All Risk yang tepat untuk instalasi mesin pabrik dan proyek energi di Batam? Bandingkan EAR vs CAR, pahami cakupan testing & commissioning, dan tips menekan premi.",
+  description: "Bagaimana cara memilih asuransi Erection All Risk yang tepat untuk instalasi mesin pabrik dan proyek energi di Batam? Bandingkan EAR vs CAR, pahami cakupan testing & commissioning, dan tips menekan premi.",
   keywords: [
     "panduan memilih asuransi EAR Batam",
     "cara memilih erection all risk",
@@ -15,15 +15,12 @@ import CTASection from "@/components/CTASection";
     "asuransi proyek energi Batam",
     "tips premi EAR Batam",
   ],
-  alternates: {
-    // Canonical menunjuk ke URL halaman ini sendiri
-    canonical: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
       en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam", // Tambahkan URL versi Inggris di sini
     },
-  },
-};
+});
 
 
 const articleSchema = {

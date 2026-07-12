@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { ClipboardCheck, FileWarning, Clock, ShieldAlert } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Checklist Dokumen Custom Bond yang Paling Sering Ditolak Bea Cukai",
-  description:
-    "5 dokumen custom bond yang paling sering bikin pengajuan ditolak atau tertunda di Batam — lengkap dengan contoh kesalahan umum dan cara memperbaikinya sebelum diajukan.",
+  description: "5 dokumen custom bond yang paling sering bikin pengajuan ditolak atau tertunda di Batam — lengkap dengan contoh kesalahan umum dan cara memperbaikinya sebelum diajukan.",
   keywords: [
     "dokumen custom bond ditolak",
     "checklist custom bond",
@@ -14,10 +14,8 @@ export const metadata: Metadata = {
     "spgr notaris",
     "skep bea cukai",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/checklist-dokumen-custom-bond-ditolak",
-  },
-};
+  canonical: "https://asuransibatam.com/blog/checklist-dokumen-custom-bond-ditolak",
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

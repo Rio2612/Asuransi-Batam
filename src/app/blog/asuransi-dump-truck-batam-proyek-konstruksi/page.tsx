@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Dump Truck Batam untuk Proyek Konstruksi: Premi, Risiko & Proses Klaim",
-  description:
-    "Panduan lengkap asuransi dump truck di Batam untuk proyek konstruksi dan infrastruktur. Risiko khusus operasional dump truck, jenis perlindungan, estimasi premi, dan tips klaim.",
+  description: "Panduan lengkap asuransi dump truck di Batam untuk proyek konstruksi dan infrastruktur. Risiko khusus operasional dump truck, jenis perlindungan, estimasi premi, dan tips klaim.",
   keywords: [
     "asuransi dump truck Batam",
     "asuransi dump truck proyek konstruksi",
@@ -15,11 +15,9 @@ export const metadata: Metadata = {
     "asuransi truk Batam",
     "asuransi alat berat kendaraan Batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi",
-    languages: { id: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi" },
-  },
-};
+  canonical: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi",
+  languages: { id: "https://asuransibatam.com/blog/asuransi-dump-truck-batam-proyek-konstruksi" },
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

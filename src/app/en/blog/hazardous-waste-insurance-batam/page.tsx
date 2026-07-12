@@ -1,5 +1,6 @@
 // src/app/en/blog/hazardous-waste-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -29,18 +30,15 @@ import {
   Send,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Hazardous Waste (B3) Insurance for Industry in Batam – Legal Requirements & Coverage",
-  description:
-    "Indonesian law requires industries handling hazardous waste (B3) to hold financial guarantees. Learn what the regulations say, what the penalties are for non-compliance, and how insurance is the most practical solution for industries in Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
-    languages: {
+  description: "Indonesian law requires industries handling hazardous waste (B3) to hold financial guarantees. Learn what the regulations say, what the penalties are for non-compliance, and how insurance is the most practical solution for industries in Batam.",
+  canonical: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3",
       en: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

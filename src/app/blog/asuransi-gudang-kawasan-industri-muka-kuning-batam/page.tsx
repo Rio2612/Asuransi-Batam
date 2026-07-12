@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock, CheckCircle, AlertCircle } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Gudang Kawasan Industri Muka Kuning & Batam: Panduan Lengkap 2026",
-  description:
-    "Panduan asuransi gudang untuk kawasan industri Muka Kuning, Kabil, dan Batam. Risiko khusus gudang logistik dan pabrik, jenis perlindungan, syarat BP Batam, estimasi premi, dan tips klaim.",
+  description: "Panduan asuransi gudang untuk kawasan industri Muka Kuning, Kabil, dan Batam. Risiko khusus gudang logistik dan pabrik, jenis perlindungan, syarat BP Batam, estimasi premi, dan tips klaim.",
   keywords: [
     "asuransi gudang Muka Kuning",
     "asuransi properti kawasan industri Batam",
@@ -15,11 +15,9 @@ export const metadata: Metadata = {
     "asuransi pabrik Batam",
     "asuransi properti komersial Batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam",
-    languages: { id: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" },
-  },
-};
+  canonical: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam",
+  languages: { id: "https://asuransibatam.com/blog/asuransi-gudang-kawasan-industri-muka-kuning-batam" },
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

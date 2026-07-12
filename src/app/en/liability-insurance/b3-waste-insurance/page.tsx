@@ -1,19 +1,17 @@
 // app/en/liability-insurance/b3-waste-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "B3 Hazardous Waste Insurance Batam – Mandatory for Hazardous Waste Industries",
-  description:
-    "B3 hazardous waste insurance in Batam. A legal obligation for industries producing hazardous waste. Protection from environmental pollution claims. +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
-    languages: {
+  description: "B3 hazardous waste insurance in Batam. A legal obligation for industries producing hazardous waste. Protection from environmental pollution claims. +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
       en: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "☣️", title: "Soil & Water Pollution", desc: "Clean-up and environmental restoration costs from B3 waste spills or leaks." },

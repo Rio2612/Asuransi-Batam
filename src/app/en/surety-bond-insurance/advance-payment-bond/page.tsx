@@ -1,12 +1,12 @@
 // app/en/surety-bond-insurance/advance-payment-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Advance Payment Bond Batam – Down Payment Guarantee",
-  description:
-    "Advance payment bond in Batam: protect your project's advance payment from contractor default. Fast issuance, competitive premium. Free consultation with Rio.",
+  description: "Advance payment bond in Batam: protect your project's advance payment from contractor default. Fast issuance, competitive premium. Free consultation with Rio.",
   keywords: [
     "advance payment bond batam",
     "down payment guarantee batam",
@@ -14,14 +14,12 @@ export const metadata: Metadata = {
     "surety bond advance payment batam",
     "project advance guarantee batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

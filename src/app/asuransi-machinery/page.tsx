@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Machinery Batam – Lindungi Mesin & Alat Berat dari Breakdown",
   description: "Asuransi mesin dan alat berat di Batam untuk pabrik, galangan kapal, dan proyek konstruksi. Machinery breakdown, equipment all risk, dan loss of profit. Konsultasi gratis: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-machinery",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-machinery",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery",
       en: "https://asuransibatam.com/en/machinery-insurance",
     },
-  },
-};
+});
 const benefits = [
   { icon: "⚙️", title: "Kerusakan Mesin (Machinery Breakdown)", desc: "Perlindungan kerusakan tiba-tiba dan tidak terduga pada mesin produksi, generator, kompresor, dan peralatan industri akibat kegagalan mekanis internal." },
   { icon: "💥", title: "Kecelakaan Operasional", desc: "Kerusakan akibat benturan, terjatuh, kesalahan operator, atau kecelakaan fisik lain saat mesin sedang atau tidak beroperasi." },

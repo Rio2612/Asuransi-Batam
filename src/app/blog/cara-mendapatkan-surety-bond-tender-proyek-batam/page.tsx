@@ -1,5 +1,6 @@
 // app/blog/cara-mendapatkan-surety-bond-tender-proyek-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -21,15 +22,11 @@ import {
   Landmark,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Cara Mendapatkan Surety Bond untuk Tender Proyek di Batam – Panduan Lengkap",
-  description:
-    "Panduan lengkap bagi kontraktor di Batam untuk mendapatkan Surety Bond — dokumen yang dibutuhkan, jenis-jenis bond (bid bond, performance bond, advance payment bond, maintenance bond), tahapan proses, dan tips agar pengajuan disetujui lebih cepat.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/cara-mendapatkan-surety-bond-tender-proyek-batam",
-  },
-};
+  description: "Panduan lengkap bagi kontraktor di Batam untuk mendapatkan Surety Bond — dokumen yang dibutuhkan, jenis-jenis bond (bid bond, performance bond, advance payment bond, maintenance bond), tahapan proses, dan tips agar pengajuan disetujui lebih cepat.",
+  canonical: "https://asuransibatam.com/blog/cara-mendapatkan-surety-bond-tender-proyek-batam",
+});
 
 const schema = {
   "@context": "https://schema.org",

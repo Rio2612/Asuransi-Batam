@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock, CheckCircle, AlertCircle, ArrowRight, Calculator } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Motor Batam 2026: Premi, Tarif OJK Wilayah 1 & Tips Pilih All Risk vs TLO",
-  description:
-    "Panduan lengkap asuransi motor di Batam. Tarif OJK Wilayah 1, perbedaan all risk dan TLO motor, estimasi premi, proses klaim, dan tips memilih polis terbaik sesuai jenis motor Anda.",
+  description: "Panduan lengkap asuransi motor di Batam. Tarif OJK Wilayah 1, perbedaan all risk dan TLO motor, estimasi premi, proses klaim, dan tips memilih polis terbaik sesuai jenis motor Anda.",
   keywords: [
     "asuransi motor Batam",
     "premi asuransi motor Batam 2026",
@@ -15,11 +15,9 @@ export const metadata: Metadata = {
     "tarif OJK asuransi motor",
     "asuransi kendaraan Batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-motor-batam",
-    languages: { id: "https://asuransibatam.com/blog/asuransi-motor-batam" },
-  },
-};
+  canonical: "https://asuransibatam.com/blog/asuransi-motor-batam",
+  languages: { id: "https://asuransibatam.com/blog/asuransi-motor-batam" },
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

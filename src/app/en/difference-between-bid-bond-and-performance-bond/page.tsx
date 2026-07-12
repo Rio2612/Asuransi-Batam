@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { FileText, CheckCircle, AlertCircle, ArrowRight, Clock, Shield } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Bid Bond vs Performance Bond: Differences, Functions & When to Use Each | Asuransi Batam",
-  description:
-    "What is the difference between a bid bond and a performance bond? A complete guide for contractors in Batam — when each is required, guarantee values, validity periods, and claim consequences.",
+  description: "What is the difference between a bid bond and a performance bond? A complete guide for contractors in Batam — when each is required, guarantee values, validity periods, and claim consequences.",
   keywords: [
     "bid bond vs performance bond",
     "difference bid bond performance bond",
@@ -15,15 +15,12 @@ export const metadata: Metadata = {
     "performance guarantee Batam",
     "surety bond insurance Batam",
   ],
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
+  languages: {
       en: "https://asuransibatam.com/en/difference-between-bid-bond-and-performance-bond",
       id: "https://asuransibatam.com/blog/perbedaan-bid-bond-performance-bond",
     },
-  },
-};
+});
 
 // ── SCHEMA ───────────────────────────────────────────────────────────────────
 

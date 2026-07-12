@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 // ─────────────────────────────────────────────
 // METADATA — diperkaya dengan keyword lokal & long-tail
 // ─────────────────────────────────────────────
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Limbah B3 Batam – Kewajiban Hukum PP 22/2021 untuk Industri Penghasil Limbah Berbahaya",
-  description:
-    "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum PP No. 22/2021 bagi industri manufaktur, galangan kapal & rumah sakit. Lindungi bisnis dari tuntutan pencemaran miliaran rupiah. Konsultasi gratis: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
-    languages: {
+  description: "Asuransi limbah B3 (Bahan Berbahaya & Beracun) di Batam. Kewajiban hukum PP No. 22/2021 bagi industri manufaktur, galangan kapal & rumah sakit. Lindungi bisnis dari tuntutan pencemaran miliaran rupiah. Konsultasi gratis: 0813-7333-6728.",
+  canonical: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability/asuransi-limbah-b3",
       en: "https://asuransibatam.com/en/liability-insurance/b3-waste-insurance",
     },
-  },
-};
+});
 
 // ─────────────────────────────────────────────
 // BENEFITS — diperkaya dengan konteks risiko nyata & nilai klaim

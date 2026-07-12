@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Alat Berat Batam – Excavator, Bulldozer, Crane & Alat Konstruksi",
-  description:
-    "Asuransi alat berat terpercaya di Batam. Perlindungan Equipment All Risk untuk excavator, bulldozer, wheel loader, crane, dan alat galangan kapal. Proses klaim mudah. Hubungi 0813-7333-6728.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
-    languages: {
+  description: "Asuransi alat berat terpercaya di Batam. Perlindungan Equipment All Risk untuk excavator, bulldozer, wheel loader, crane, dan alat galangan kapal. Proses klaim mudah. Hubungi 0813-7333-6728.",
+  canonical: "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
       en: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

@@ -1,22 +1,20 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
 // ─────────────────────────────────────────────
 // METADATA — diperkaya keyword subcon galangan kapal & lokal Batam
 // ─────────────────────────────────────────────
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Public Liability Batam – Wajib untuk Subkon Galangan Kapal, Hotel & Bisnis Publik",
-  description:
-    "Public Liability Insurance di Batam untuk subkontraktor galangan kapal (PT. Paxocean & lainnya), hotel, restoran, dan pusat perbelanjaan. Perlindungan tuntutan cedera pengunjung & pihak ketiga. Proses cepat, harga kompetitif. Hubungi: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-liability/public-liability",
-    languages: {
+  description: "Public Liability Insurance di Batam untuk subkontraktor galangan kapal (PT. Paxocean & lainnya), hotel, restoran, dan pusat perbelanjaan. Perlindungan tuntutan cedera pengunjung & pihak ketiga. Proses cepat, harga kompetitif. Hubungi: 0813-7333-6728.",
+  canonical: "https://asuransibatam.com/asuransi-liability/public-liability",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability/public-liability",
       en: "https://asuransibatam.com/en/liability-insurance/public-liability",
     },
-  },
-};
+});
 
 // ─────────────────────────────────────────────
 // BENEFITS — diperkaya dengan konteks operasional nyata

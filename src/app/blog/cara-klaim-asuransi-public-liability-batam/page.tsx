@@ -1,5 +1,6 @@
 // app/blog/cara-klaim-asuransi-public-liability-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -20,16 +21,11 @@ import {
   Store,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Cara Klaim Asuransi Public Liability di Batam – Prosedur & Simulasi Kasus",
-  description:
-    "Panduan lengkap prosedur klaim Asuransi Public Liability di Batam — dokumen yang dibutuhkan, tahapan proses, simulasi kasus subkontraktor galangan kapal, hotel, dan mall, serta kesalahan umum yang membuat klaim tertunda.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/cara-klaim-asuransi-public-liability-batam",
-  },
-};
+export const metadata: Metadata = generateSEO({
+  title: "Cara Klaim Asuransi Public Liability di Batam – Prosedur & Simulasi Kasus",
+  description: "Panduan lengkap prosedur klaim Asuransi Public Liability di Batam — dokumen yang dibutuhkan, tahapan proses, simulasi kasus subkontraktor galangan kapal, hotel, dan mall, serta kesalahan umum yang membuat klaim tertunda.",
+  canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-public-liability-batam",
+});
 
 const schema = {
   "@context": "https://schema.org",

@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Rumah Batam – Lindungi Rumah & Isi Rumah dari Kebakaran & Banjir",
   description: "Asuransi rumah tinggal di Batam. Perlindungan dari kebakaran, banjir, pencurian, dan bencana alam. Premi mulai ratusan ribu per tahun. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-rumah-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-rumah-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-rumah-batam",
       en: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏠", title: "Struktur & Bangunan Rumah", desc: "Dinding, atap, lantai, pondasi, instalasi listrik, dan pipa air dilindungi dari kebakaran, sambaran petir, ledakan, dan bencana alam." },

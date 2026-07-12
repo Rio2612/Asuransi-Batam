@@ -1,5 +1,6 @@
 // app/asuransi-surety-bond/custom-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import {
@@ -11,10 +12,9 @@ import {
   Ship,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Custom Bond Batam – Jaminan Kepabeanan Impor Ekspor & OB 23",
-  description:
-    "Custom bond (customs bond) di Batam untuk fasilitas kepabeanan: OB 23/impor sementara, KITE, Kawasan Berikat, dan PPJK. Tanpa agunan tunai penuh, proses 3-7 hari kerja. Konsultasi gratis dengan Rio.",
+  description: "Custom bond (customs bond) di Batam untuk fasilitas kepabeanan: OB 23/impor sementara, KITE, Kawasan Berikat, dan PPJK. Tanpa agunan tunai penuh, proses 3-7 hari kerja. Konsultasi gratis dengan Rio.",
   keywords: [
     "custom bond batam",
     "customs bond batam",
@@ -26,10 +26,8 @@ export const metadata: Metadata = {
     "jaminan bea cukai batam",
     "ppjk batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-surety-bond/custom-bond",
-  },
-};
+  canonical: "https://asuransibatam.com/asuransi-surety-bond/custom-bond",
+});
 
 const benefits = [
   {

@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Gudang Batam – Proteksi Stok, Bangunan & Risiko Logistik",
   description: "Gudang di Batam menyimpan aset bernilai miliaran. Lindungi dari kebakaran, banjir, dan pencurian dengan asuransi gudang yang mencakup bangunan, isi, dan tanggung jawab pihak ketiga. Hubungi Rio sekarang.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-gudang-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-gudang-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-gudang-batam",
       en: "https://asuransibatam.com/en/property-insurance/warehouse-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

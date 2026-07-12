@@ -1,18 +1,16 @@
 // app/en/blog/how-to-claim-car-insurance-project/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "How to Claim CAR Insurance When Your Project Is Damaged – Step-by-Step Guide",
-  description:
-    "A step-by-step guide to filing a Contractor All Risk (CAR) insurance claim in Indonesia — from the first notification to receiving your settlement payment, including the documents you need.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
-    languages: {
+  description: "A step-by-step guide to filing a Contractor All Risk (CAR) insurance claim in Indonesia — from the first notification to receiving your settlement payment, including the documents you need.",
+  canonical: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-car",
       en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-project",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

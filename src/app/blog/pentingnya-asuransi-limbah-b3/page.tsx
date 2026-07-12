@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -29,11 +30,11 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam",
   description: "Mengapa asuransi limbah B3 wajib dimiliki industri di Batam. Regulasi PP 22/2021, sanksi, dan cara mendapatkan jaminan finansial limbah B3 yang tepat.",
-  alternates: { canonical: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3" },
-};
+  canonical: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3",
+});
 
 const schema = {
   "@context": "https://schema.org",

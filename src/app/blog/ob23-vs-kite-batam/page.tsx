@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { GitCompareArrows, Clock, Compass, ShieldCheck } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "OB 23 vs KITE: Mana yang Tepat untuk Bisnis Impor-Ekspor Anda di Batam?",
-  description:
-    "Bingung pilih OB 23 atau KITE untuk fasilitas kepabeanan di Batam? Ini perbedaan mendasar, contoh kasus nyata, dan cara menentukan mana yang sesuai kebutuhan bisnis Anda.",
+  description: "Bingung pilih OB 23 atau KITE untuk fasilitas kepabeanan di Batam? Ini perbedaan mendasar, contoh kasus nyata, dan cara menentukan mana yang sesuai kebutuhan bisnis Anda.",
   keywords: [
     "ob 23 vs kite",
     "perbedaan ob 23 dan kite",
@@ -14,10 +14,8 @@ export const metadata: Metadata = {
     "impor sementara vs kite",
     "fasilitas kepabeanan batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/ob23-vs-kite-batam",
-  },
-};
+  canonical: "https://asuransibatam.com/blog/ob23-vs-kite-batam",
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

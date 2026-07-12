@@ -1,19 +1,18 @@
 // app/asuransi-properti/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Properti Batam – Rumah, Hotel, Gedung Komersial",
   description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio, konsultan asuransi properti terpercaya.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-properti",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti",
       en: "https://asuransibatam.com/en/property-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🔥", title: "Kebakaran & Petir", desc: "Perlindungan menyeluruh dari kebakaran, sambaran petir, ledakan, dan kerusakan akibat asap." },

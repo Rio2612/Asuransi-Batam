@@ -1,20 +1,18 @@
 // app/en/machinery-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Machinery Insurance Batam – Protect Machines & Heavy Equipment from Breakdown",
-  description:
-    "Machinery breakdown = operations halt = major losses. Machinery insurance in Batam for excavators, cranes, and industrial machinery. Easy claims, competitive premiums. Free consultation with Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/machinery-insurance",
-    languages: {
+  description: "Machinery breakdown = operations halt = major losses. Machinery insurance in Batam for excavators, cranes, and industrial machinery. Easy claims, competitive premiums. Free consultation with Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/machinery-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery",
       en: "https://asuransibatam.com/en/machinery-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "⚙️", title: "Machinery Breakdown (MB)", desc: "Machinery Breakdown – protection against machine failure from operational faults." },

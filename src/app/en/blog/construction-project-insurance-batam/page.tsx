@@ -1,18 +1,16 @@
 // app/en/blog/construction-project-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Construction Project Insurance in Batam – A Complete Guide for Contractors",
-  description:
-    "Everything contractors and developers need to know about construction insurance in Batam: policy types, tender requirements, Batam-specific risks, and how to choose the right coverage.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
-    languages: {
+  description: "Everything contractors and developers need to know about construction insurance in Batam: policy types, tender requirements, Batam-specific risks, and how to choose the right coverage.",
+  canonical: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
       en: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

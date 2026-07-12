@@ -1,19 +1,17 @@
 // app/en/property-insurance/factory-industrial-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Factory & Industrial Property Insurance Batam – All Risk Coverage",
-  description:
-    "Industrial property insurance in Batam covering factory buildings, production machinery, raw material stocks, and third-party liability. Serving Batamindo, Kabil, and Muka Kuning industrial estates. Contact Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
-    languages: {
+  description: "Industrial property insurance in Batam covering factory buildings, production machinery, raw material stocks, and third-party liability. Serving Batamindo, Kabil, and Muka Kuning industrial estates. Contact Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
       en: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

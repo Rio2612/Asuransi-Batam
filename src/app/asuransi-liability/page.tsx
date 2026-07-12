@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Liability Batam – Tanggung Gugat Pihak Ketiga & Limbah B3",
   description: "Asuransi liability di Batam. Perlindungan public liability, produk liability, dan asuransi khusus limbah B3 untuk kawasan industri. Wajib untuk bisnis di Batam. Konsultasi gratis: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-liability",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-liability",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability",
       en: "https://asuransibatam.com/en/liability-insurance",
     },
-  },
-};
+});
 const benefits = [
   { icon: "⚖️", title: "Tanggung Gugat Pihak Ketiga", desc: "Biaya ganti rugi, kompensasi, dan biaya hukum jika operasional bisnis Anda menyebabkan kerugian fisik atau kerusakan properti pihak ketiga." },
   { icon: "🏭", title: "Liability Operasional Industri", desc: "Perlindungan atas tanggung jawab hukum yang timbul dari kegiatan operasional pabrik, gudang, dan fasilitas industri di kawasan Batam." },

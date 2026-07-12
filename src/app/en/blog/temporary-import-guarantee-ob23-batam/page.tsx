@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "OB 23 Guide: How to Handle Temporary Import for Exhibitions & Projects in Batam",
-  description:
-    "Complete guide to OB 23 (temporary import) in Batam: when to use it, required documents, the application process, common mistakes that lead to penalties, and custom bond cost estimates.",
+  description: "Complete guide to OB 23 (temporary import) in Batam: when to use it, required documents, the application process, common mistakes that lead to penalties, and custom bond cost estimates.",
   keywords: [
     "ob 23 batam",
     "temporary import batam",
@@ -15,14 +15,12 @@ export const metadata: Metadata = {
     "temporary import guarantee",
     "customs temporary import batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/temporary-import-guarantee-ob23-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/en/blog/temporary-import-guarantee-ob23-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/panduan-ob23-impor-sementara-batam",
       en: "https://asuransibatam.com/en/blog/temporary-import-guarantee-ob23-batam",
     },
-  },
-};
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

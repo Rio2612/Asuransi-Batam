@@ -1,20 +1,18 @@
 // app/en/liability-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Liability Insurance Batam – Third-Party Liability & B3 Hazardous Waste",
-  description:
-    "Liability insurance in Batam. Public liability, product liability, and specialist B3 hazardous waste insurance. Essential for industry in Batam. +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/liability-insurance",
-    languages: {
+  description: "Liability insurance in Batam. Public liability, product liability, and specialist B3 hazardous waste insurance. Essential for industry in Batam. +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/liability-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability",
       en: "https://asuransibatam.com/en/liability-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "⚖️", title: "Third-Party Legal Liability", desc: "Compensation and legal costs if your business causes loss to a third party." },

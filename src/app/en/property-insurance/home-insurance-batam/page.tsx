@@ -1,19 +1,17 @@
 // app/en/property-insurance/home-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Home Insurance Batam – Protect Your Home & Contents",
-  description:
-    "Home insurance in Batam. Protection from fire, flood, theft, and natural disasters. Affordable premiums, easy process. Contact +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
-    languages: {
+  description: "Home insurance in Batam. Protection from fire, flood, theft, and natural disasters. Affordable premiums, easy process. Contact +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-rumah-batam",
       en: "https://asuransibatam.com/en/property-insurance/home-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏠", title: "Building Structure", desc: "Walls, roof, floors, and foundations protected from fire, lightning, and disasters." },

@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Crane Batam – Perlindungan Tower Crane & Mobile Crane",
   description: "Asuransi crane di Batam. Tower crane, mobile crane, dan lifting equipment dilindungi dari kerusakan dan tanggung jawab pihak ketiga. Konsultasi gratis dengan Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery/asuransi-crane",
       en: "https://asuransibatam.com/en/machinery-insurance/crane-insurance",
     },
-  },
-};
+});
 const benefits = [
   { icon: "🏗️", title: "Kerusakan Fisik Crane", desc: "Perlindungan boom, cabin, sistem hidrolik, spreader, dan komponen utama crane dari kerusakan mendadak akibat kecelakaan atau kegagalan operasional." },
   { icon: "💥", title: "Kegagalan Struktural", desc: "Kerusakan akibat kegagalan struktur, overload melebihi kapasitas angkat, fatigue material, atau kesalahan rigging yang menyebabkan collapse." },

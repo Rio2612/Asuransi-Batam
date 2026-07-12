@@ -1,20 +1,18 @@
 // app/en/vehicle-insurance/car-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import KalkulatorMobil from "@/components/KalkulatorMobil";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Trusted Car Insurance Batam – All Risk & TLO | Free Premium Calculator",
-  description:
-    "Looking for car insurance in Batam? Choose All Risk or TLO with affordable premiums, easy claims, and authorised repair workshops. Calculate your estimated premium online now — free and instant. Contact Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
-    languages: {
+  description: "Looking for car insurance in Batam? Choose All Risk or TLO with affordable premiums, easy claims, and authorised repair workshops. Calculate your estimated premium online now — free and instant. Contact Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-mobil-batam",
       en: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🛡️", title: "All Risk / Comprehensive", desc: "The most complete protection for your vehicle. Covers all physical damage in any condition — from minor scratches in a car park to severe damage from a collision. Ideal for new cars or high-value vehicles that need maximum protection." },

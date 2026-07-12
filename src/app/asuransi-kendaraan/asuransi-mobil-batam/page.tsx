@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import KalkulatorMobil from "@/components/KalkulatorMobil";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Mobil Batam Terpercaya – All Risk & TLO | Hitung Premi Gratis",
   description: "Cari asuransi mobil di Batam? Pilih All Risk atau TLO dengan premi terjangkau, klaim mudah, dan bengkel rekanan resmi. Hitung estimasi premi Anda secara online sekarang — gratis, cepat, tanpa ribet. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-kendaraan/asuransi-mobil-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-kendaraan/asuransi-mobil-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-mobil-batam",
       en: "https://asuransibatam.com/en/vehicle-insurance/car-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

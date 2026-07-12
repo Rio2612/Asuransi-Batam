@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import { XCircle, ListChecks, Lightbulb, HelpCircle, Scale } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Cara Klaim Asuransi Mobil di Batam – Panduan Lengkap Agar Tidak Ditolak",
   description: "Proses klaim asuransi mobil di Batam sering gagal karena dokumen kurang atau prosedur salah. Pelajari langkah klaim yang benar, dokumen wajib, dan tips agar klaim Anda disetujui cepat.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
       en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-batam",
     },
-  },
-};
+});
 
 // Article schema (E-E-A-T: authorship & publisher signal)
 const articleSchema = {
