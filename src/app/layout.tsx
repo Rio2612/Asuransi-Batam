@@ -68,17 +68,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // lang="id" tetap di sini — halaman English akan override via <head> hreflang
+    // lang="id" tetap di sini sebagai default; halaman /en/* punya metadata sendiri
     <html lang="id" className={`${dmSans.variable} ${syne.variable}`}>
-      <head>
-        {/*
-          hreflang global — Google pakai ini untuk mendeteksi versi bahasa.
-          Untuk halaman tertentu, override di metadata.alternates masing-masing page.
-        */}
-        <link rel="alternate" hrefLang="id" href="https://asuransibatam.com/" />
-        <link rel="alternate" hrefLang="en" href="https://asuransibatam.com/en" />
-        <link rel="alternate" hrefLang="x-default" href="https://asuransibatam.com/" />
-      </head>
+      {/*
+        hreflang TIDAK di-hardcode di sini lagi.
+        Setiap page.tsx sudah punya alternates.languages sendiri via generateSEO()
+        atau metadata.alternates — itu satu-satunya sumber hreflang per halaman.
+        Hardcode global sebelumnya bikin SETIAP halaman punya 2 set hreflang
+        yang saling konflik (satu nunjuk ke homepage, satu nunjuk ke halaman
+        sebenarnya), yang membuat Google mengabaikan sinyal hreflang.
+      */}
       <body className="font-sans antialiased">
         <Navbar />
         <main>{children}</main>

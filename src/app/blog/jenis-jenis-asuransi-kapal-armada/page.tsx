@@ -29,10 +29,10 @@ export const metadata: Metadata = generateSEO({
   description:
     "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari konsultan berpengalaman 10+ tahun.",
   canonical: "/blog/jenis-jenis-asuransi-kapal-armada",
-  languages: {
-    id: "https://asuransibatam.com/blog/jenis-jenis-asuransi-kapal-armada",
-    en: "https://asuransibatam.com/en/blog/types-of-ship-insurance-fleet-owners",
-  },
+  // Catatan: versi EN belum dibuat. Jangan tambahkan `languages.en` di sini
+  // sampai halaman /en/blog/types-of-ship-insurance-fleet-owners benar-benar ada,
+  // karena hreflang yang nunjuk ke halaman 404 membuat Google mengabaikan
+  // seluruh sinyal hreflang di halaman ini.
 });
 
 /* ─────────────────────────────────────────────

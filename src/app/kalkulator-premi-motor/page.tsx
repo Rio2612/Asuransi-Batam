@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     canonical: "https://asuransibatam.com/kalkulator-premi-motor",
     languages: {
       id: "https://asuransibatam.com/kalkulator-premi-motor",
-      en: "https://asuransibatam.com/en/motorcycle-insurance-calculator",
+      en: "https://asuransibatam.com/en/motorcycle-premium-calculator",
     },
   },
 };
