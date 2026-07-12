@@ -1,19 +1,17 @@
 // app/en/vehicle-insurance/dump-truck-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Dump Truck Insurance Batam – Heavy & Commercial Vehicle Protection",
-  description:
-    "Dump truck insurance in Batam for heavy commercial vehicles. All Risk and TLO available. Comprehensive protection, fast claims, competitive premiums. Contact Rio!",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
-    languages: {
+  description: "Dump truck insurance in Batam for heavy commercial vehicles. All Risk and TLO available. Comprehensive protection, fast claims, competitive premiums. Contact Rio!",
+  canonical: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
       en: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🚛", title: "All Risk / Comprehensive", desc: "Complete protection for dump trucks against all types of physical damage, from minor damage during operations to major collisions on haulage routes." },

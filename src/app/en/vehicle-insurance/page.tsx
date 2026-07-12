@@ -1,20 +1,18 @@
 // app/en/vehicle-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Vehicle Insurance Batam – All Risk & TLO for Cars, Dump Trucks & Commercial Vehicles",
-  description:
-    "Looking for trusted vehicle insurance in Batam? We provide All Risk and TLO protection for private cars, dump trucks, and commercial fleets. Competitive premiums, fast claims. Calculate online or contact Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/vehicle-insurance",
-    languages: {
+  description: "Looking for trusted vehicle insurance in Batam? We provide All Risk and TLO protection for private cars, dump trucks, and commercial fleets. Competitive premiums, fast claims. Calculate online or contact Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/vehicle-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan",
       en: "https://asuransibatam.com/en/vehicle-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🚗", title: "Total & Partial Loss", desc: "All Risk covers minor, moderate, and total damage from accidents." },

@@ -1,5 +1,6 @@
 // app/en/blog/how-to-claim-home-fire-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -22,17 +23,15 @@ import {
   Headset,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "How to Claim Home Fire Insurance – Documents, Procedure & Fatal Mistakes to Avoid",
   description: "Claiming home fire insurance is not as straightforward as it seems. Learn the required documents, the correct procedure, and the common mistakes that cause claims to be rejected — a complete guide for homeowners in Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/how-to-claim-home-fire-insurance",
-    languages: {
+  canonical: "https://asuransibatam.com/en/blog/how-to-claim-home-fire-insurance",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-kebakaran-rumah",
       en: "https://asuransibatam.com/en/blog/how-to-claim-home-fire-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

@@ -1,20 +1,18 @@
 // app/asuransi-marine/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Marine Batam – Marine Hull, Cargo & Builder's Risk",
-  description:
-    "Asuransi marine di Batam mencakup Marine Hull, Marine Cargo, dan Builder's Risk. Perlindungan kapal, muatan, dan pembangunan kapal.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-marine",
-    languages: {
+  description: "Asuransi marine di Batam mencakup Marine Hull, Marine Cargo, dan Builder's Risk. Perlindungan kapal, muatan, dan pembangunan kapal.",
+  canonical: "https://asuransibatam.com/asuransi-marine",
+  languages: {
       id: "https://asuransibatam.com/asuransi-marine",
       en: "https://asuransibatam.com/en/marine-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

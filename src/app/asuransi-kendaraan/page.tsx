@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Kendaraan Batam – All Risk & TLO untuk Mobil, Dump Truck & Armada Niaga",
   description: "Asuransi kendaraan terpercaya di Batam. All Risk dan TLO untuk mobil pribadi, dump truck, hingga armada niaga. Premi bersaing, klaim cepat. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-kendaraan",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-kendaraan",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan",
       en: "https://asuransibatam.com/en/vehicle-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🚗", title: "Kerusakan Total & Sebagian (All Risk)", desc: "All Risk mencakup semua kerusakan — dari lecet dan penyok ringan, kerusakan sedang akibat kecelakaan, hingga total loss — tanpa perlu hitung persentase kerusakan." },

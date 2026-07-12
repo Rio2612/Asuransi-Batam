@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Ruko Batam – Lindungi Bangunan & Stok Dagangan Anda",
   description: "Pemilik ruko di Batam wajib punya proteksi dari kebakaran, banjir, dan pencurian. Asuransi ruko all risk mencakup bangunan, isi toko, dan tanggung jawab pihak ketiga. Konsultasi gratis dengan Rio.",
-  alternates: { canonical: "https://asuransibatam.com/asuransi-properti/asuransi-ruko-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-ruko-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-ruko-batam",
       en: "https://asuransibatam.com/en/property-insurance/shophouse-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

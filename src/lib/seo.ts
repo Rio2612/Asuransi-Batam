@@ -7,6 +7,7 @@ interface SEOProps {
   canonical?: string;
   ogImage?: string;
   noIndex?: boolean;
+  keywords?: string[];
   languages?: {
     id?: string;
     en?: string;
@@ -19,6 +20,7 @@ export function generateSEO({
   canonical,
   ogImage = "/images/og-default.jpg",
   noIndex = false,
+  keywords,
   languages,
 }: SEOProps): Metadata {
   const fullTitle = title.includes(SITE.name)
@@ -31,6 +33,7 @@ export function generateSEO({
   return {
     title: fullTitle,
     description,
+    ...(keywords && { keywords }),
     ...(noIndex && { robots: { index: false, follow: false } }),
     alternates: {
       canonical: canonicalUrl,

@@ -1,5 +1,6 @@
 // app/asuransi-surety-bond/bid-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -57,10 +58,9 @@ function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }
   );
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Bid Bond Batam – Jaminan Penawaran Tender & Lelang",
-  description:
-    "Bid bond atau jaminan penawaran di Batam untuk keperluan tender pemerintah, BUMN, dan swasta. Proses cepat, tanpa agunan, diakui resmi. Hubungi Rio untuk konsultasi gratis.",
+  description: "Bid bond atau jaminan penawaran di Batam untuk keperluan tender pemerintah, BUMN, dan swasta. Proses cepat, tanpa agunan, diakui resmi. Hubungi Rio untuk konsultasi gratis.",
   keywords: [
     "bid bond batam",
     "jaminan penawaran batam",
@@ -68,14 +68,12 @@ export const metadata: Metadata = {
     "bid bond konstruksi batam",
     "surety bond bid bond batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

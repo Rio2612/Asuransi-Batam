@@ -1,18 +1,16 @@
 // app/en/blog/difference-between-car-and-ear-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "CAR vs EAR Insurance: What's the Difference and Which Do You Need?",
-  description:
-    "Confused between Contractor All Risk (CAR) and Erection All Risk (EAR)? This guide breaks down the key differences, coverage scope, and how to choose the right policy for your project in Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
-    languages: {
+  description: "Confused between Contractor All Risk (CAR) and Erection All Risk (EAR)? This guide breaks down the key differences, coverage scope, and how to choose the right policy for your project in Batam.",
+  canonical: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
+  languages: {
       id: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
       en: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

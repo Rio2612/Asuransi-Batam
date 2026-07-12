@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -15,16 +16,15 @@ import {
   Hourglass,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Excavator dan Bulldozer di Batam – Proteksi, Coverage & Cara Klaim",
   description: "Excavator dan bulldozer adalah aset mahal yang rentan rusak di lapangan. Pelajari jenis perlindungan yang tepat, apa yang ditanggung, dan bagaimana cara mengasuransikan alat berat Anda di Batam.",
-  alternates: { canonical: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
-        languages: {
+  canonical: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-excavator-dan-bulldozer",
       en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam",
     },
-  },
-};
+});
 
 // Article schema (E-E-A-T: authorship & publisher signal)
 const articleSchema = {

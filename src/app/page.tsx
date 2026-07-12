@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
 import { Shield, Star, Clock, Users, ArrowRight, CheckCircle, Phone, Camera, MapPin } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Batam Terpercaya – Properti, Kendaraan, Alat Berat & Liability | Rio",
-  description:
-    "Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com",
-    languages: {
+  description: "Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
+  canonical: "https://asuransibatam.com",
+  languages: {
       id: "https://asuransibatam.com",
       en: "https://asuransibatam.com/en",
     },
-  },
-};
+});
 
 const products = [
   {

@@ -1,20 +1,18 @@
 // app/asuransi-properti/asuransi-pabrik-kawasan-industri-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Pabrik & Kawasan Industri Batam – Properti Industri All Risk",
-  description:
-    "Asuransi properti industri di Batam: perlindungan gedung pabrik, mesin produksi, stok bahan baku, dan tanggung jawab kepada pihak ketiga. Khusus kawasan industri Batamindo, Kabil, Muka Kuning. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
-    languages: {
+  description: "Asuransi properti industri di Batam: perlindungan gedung pabrik, mesin produksi, stok bahan baku, dan tanggung jawab kepada pihak ketiga. Khusus kawasan industri Batamindo, Kabil, Muka Kuning. Hubungi Rio: 0813-7333-6728.",
+  canonical: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-pabrik-kawasan-industri-batam",
       en: "https://asuransibatam.com/en/property-insurance/factory-industrial-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

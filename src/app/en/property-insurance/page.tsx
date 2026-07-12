@@ -1,20 +1,18 @@
 // app/en/property-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Property Insurance Batam – Homes, Hotels, Commercial Buildings",
-  description:
-    "Protect your property in Batam from fire, natural disaster, and structural damage. Free consultation with Rio, an insurance practitioner in Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance",
-    languages: {
+  description: "Protect your property in Batam from fire, natural disaster, and structural damage. Free consultation with Rio, an insurance practitioner in Batam.",
+  canonical: "https://asuransibatam.com/en/property-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti",
       en: "https://asuransibatam.com/en/property-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🔥", title: "Fire & Lightning", desc: "Comprehensive protection from fire, lightning strikes, explosions, and smoke damage." },

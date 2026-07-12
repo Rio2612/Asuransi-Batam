@@ -1,5 +1,6 @@
 // app/en/blog/how-to-claim-car-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -18,17 +19,15 @@ import {
   Calculator,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "How to Claim Car Insurance in Batam – Complete Guide to Avoid Rejection",
   description: "Car insurance claims in Batam often fail due to missing documents or wrong procedures. Learn the correct claim steps, required documents, and tips to get your claim approved quickly.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/cara-klaim-asuransi-mobil-batam",
       en: "https://asuransibatam.com/en/blog/how-to-claim-car-insurance-batam",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

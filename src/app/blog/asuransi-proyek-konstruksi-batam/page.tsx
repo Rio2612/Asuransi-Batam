@@ -1,5 +1,6 @@
 // app/blog/asuransi-proyek-konstruksi-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import {
   AlertTriangle,
   Layers,
@@ -15,18 +16,15 @@ import {
   MessageCircleMore,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Proyek Konstruksi Batam – Panduan Lengkap untuk Kontraktor",
-  description:
-    "Panduan lengkap asuransi proyek konstruksi di Batam: jenis polis yang dibutuhkan, persyaratan tender, risiko khas kawasan industri Batam, dan cara memilih perlindungan yang tepat.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
-    languages: {
+  description: "Panduan lengkap asuransi proyek konstruksi di Batam: jenis polis yang dibutuhkan, persyaratan tender, risiko khas kawasan industri Batam, dan cara memilih perlindungan yang tepat.",
+  canonical: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-proyek-konstruksi-batam",
       en: "https://asuransibatam.com/en/blog/construction-project-insurance-batam",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

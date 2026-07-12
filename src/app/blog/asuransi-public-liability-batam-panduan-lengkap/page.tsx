@@ -1,5 +1,6 @@
 // app/blog/asuransi-public-liability-batam-panduan-lengkap/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -21,16 +22,11 @@ import {
   HardHat,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Asuransi Public Liability di Batam – Panduan Lengkap untuk Subkontraktor Galangan Kapal, Hotel & Bisnis Publik",
-  description:
-    "Panduan lengkap Asuransi Public Liability di Batam — siapa yang wajib memilikinya, cara kerja Additional Insured & Certificate of Insurance (COI) untuk subkontraktor galangan kapal, nilai pertanggungan, dan proses klaim.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/asuransi-public-liability-batam-panduan-lengkap",
-  },
-};
+export const metadata: Metadata = generateSEO({
+  title: "Asuransi Public Liability di Batam – Panduan Lengkap untuk Subkontraktor Galangan Kapal, Hotel & Bisnis Publik",
+  description: "Panduan lengkap Asuransi Public Liability di Batam — siapa yang wajib memilikinya, cara kerja Additional Insured & Certificate of Insurance (COI) untuk subkontraktor galangan kapal, nilai pertanggungan, dan proses klaim.",
+  canonical: "https://asuransibatam.com/blog/asuransi-public-liability-batam-panduan-lengkap",
+});
 
 const schema = {
   "@context": "https://schema.org",

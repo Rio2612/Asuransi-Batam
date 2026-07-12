@@ -1,19 +1,17 @@
 // app/en/marine-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Marine Insurance Batam – Marine Hull, Cargo & Builder's Risk",
-  description:
-    "Marine insurance in Batam covering Marine Hull, Marine Cargo, and Builder's Risk. Protect your vessel, cargo, and shipbuilding projects. Consult Rio at +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/marine-insurance",
-    languages: {
+  description: "Marine insurance in Batam covering Marine Hull, Marine Cargo, and Builder's Risk. Protect your vessel, cargo, and shipbuilding projects. Consult Rio at +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/marine-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-marine",
       en: "https://asuransibatam.com/en/marine-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   {

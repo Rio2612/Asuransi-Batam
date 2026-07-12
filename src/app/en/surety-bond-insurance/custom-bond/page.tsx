@@ -1,5 +1,6 @@
 // app/en/surety-bond-insurance/custom-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 import {
@@ -11,10 +12,9 @@ import {
   Ship,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Custom Bond Batam – Customs Guarantee for Import & Export",
-  description:
-    "Custom bond (customs bond) services in Batam for customs facilities: OB 23/temporary import, KITE, Bonded Zone, and PPJK. No full cash collateral, 3-7 business day issuance. Free consultation with Rio.",
+  description: "Custom bond (customs bond) services in Batam for customs facilities: OB 23/temporary import, KITE, Bonded Zone, and PPJK. No full cash collateral, 3-7 business day issuance. Free consultation with Rio.",
   keywords: [
     "custom bond batam",
     "customs bond batam",
@@ -25,14 +25,12 @@ export const metadata: Metadata = {
     "kite batam",
     "customs bond indonesia",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/custom-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
     },
-  },
-};
+});
 
 const benefits = [
   {

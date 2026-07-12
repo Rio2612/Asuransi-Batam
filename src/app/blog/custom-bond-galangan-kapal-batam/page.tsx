@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Anchor, Ship, Wrench, Clock, Factory } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Custom Bond untuk Galangan Kapal Batam: Panduan Lengkap Impor Peralatan Proyek",
-  description:
-    "Galangan kapal di Tanjung Uncang, Kabil, dan Sekupang butuh strategi kepabeanan yang tepat untuk peralatan dan unit asing. Ini cara kerja custom bond untuk industri shipyard Batam.",
+  description: "Galangan kapal di Tanjung Uncang, Kabil, dan Sekupang butuh strategi kepabeanan yang tepat untuk peralatan dan unit asing. Ini cara kerja custom bond untuk industri shipyard Batam.",
   keywords: [
     "custom bond galangan kapal",
     "asuransi kepabeanan galangan kapal batam",
@@ -14,10 +14,8 @@ export const metadata: Metadata = {
     "kawasan berikat galangan kapal",
     "impor peralatan kapal batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/custom-bond-galangan-kapal-batam",
-  },
-};
+  canonical: "https://asuransibatam.com/blog/custom-bond-galangan-kapal-batam",
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

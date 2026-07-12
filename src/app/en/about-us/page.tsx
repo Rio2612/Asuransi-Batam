@@ -1,21 +1,19 @@
 // app/en/about-us/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "About Us – Rio, Batam Insurance Practitioner",
-  description:
-    "Profile of Rio, an insurance practitioner in Batam with 8 years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/about-us",
-    languages: {
+  description: "Profile of Rio, an insurance practitioner in Batam with 8 years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
+  canonical: "https://asuransibatam.com/en/about-us",
+  languages: {
       id: "https://asuransibatam.com/tentang-kami",
       en: "https://asuransibatam.com/en/about-us",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

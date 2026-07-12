@@ -1,20 +1,18 @@
 // app/en/contact/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Contact – Reach Rio, Batam Insurance Practitioner",
-  description:
-    "Contact Rio for a free insurance consultation in Batam. WhatsApp +62-813-7333-6728, email rio@asuransibatam.com. Batam Center.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/contact",
-    languages: {
+  description: "Contact Rio for a free insurance consultation in Batam. WhatsApp +62-813-7333-6728, email rio@asuransibatam.com. Batam Center.",
+  canonical: "https://asuransibatam.com/en/contact",
+  languages: {
       id: "https://asuransibatam.com/kontak",
       en: "https://asuransibatam.com/en/contact",
     },
-  },
-};
+});
 
 const breadcrumbListSchema = {
   "@context": "https://schema.org",

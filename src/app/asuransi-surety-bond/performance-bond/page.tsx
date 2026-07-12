@@ -1,5 +1,6 @@
 // app/asuransi-surety-bond/performance-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -57,10 +58,9 @@ function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }
   );
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Performance Bond Batam – Jaminan Pelaksanaan Proyek Konstruksi",
-  description:
-    "Performance bond atau jaminan pelaksanaan di Batam untuk kontraktor konstruksi, EPC, dan pengadaan. Jaminan proyek selesai sesuai kontrak. Proses cepat, konsultasi gratis dengan Rio.",
+  description: "Performance bond atau jaminan pelaksanaan di Batam untuk kontraktor konstruksi, EPC, dan pengadaan. Jaminan proyek selesai sesuai kontrak. Proses cepat, konsultasi gratis dengan Rio.",
   keywords: [
     "performance bond batam",
     "jaminan pelaksanaan batam",
@@ -68,14 +68,12 @@ export const metadata: Metadata = {
     "surety bond performance bond batam",
     "jaminan kontrak proyek batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

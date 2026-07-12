@@ -1,19 +1,17 @@
 // app/en/blog/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Insurance Education Blog – Tips, Guides & Batam Insurance Info",
-  description:
-    "General insurance education articles. Claims guides, product comparisons, tips for choosing insurance, and the latest insurance information in Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog",
-    languages: {
+  description: "General insurance education articles. Claims guides, product comparisons, tips for choosing insurance, and the latest insurance information in Batam.",
+  canonical: "https://asuransibatam.com/en/blog",
+  languages: {
       id: "https://asuransibatam.com/blog",
       en: "https://asuransibatam.com/en/blog",
     },
-  },
-};
+});
 
 type Article = {
   title: string;

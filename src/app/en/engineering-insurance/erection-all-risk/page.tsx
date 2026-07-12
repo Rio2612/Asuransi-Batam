@@ -1,19 +1,17 @@
 // app/en/engineering-insurance/erection-all-risk/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Erection All Risk (EAR) Insurance Batam – Machinery & Plant Installation Insurance",
-  description:
-    "Erection All Risk Insurance in Batam for machinery installation, factories, and industrial plant. Protection from mobilisation through commissioning. Contact Rio!",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/engineering-insurance/erection-all-risk",
-    languages: {
+  description: "Erection All Risk Insurance in Batam for machinery installation, factories, and industrial plant. Protection from mobilisation through commissioning. Contact Rio!",
+  canonical: "https://asuransibatam.com/en/engineering-insurance/erection-all-risk",
+  languages: {
       id: "https://asuransibatam.com/asuransi-engineering/erection-all-risk",
       en: "https://asuransibatam.com/en/engineering-insurance/erection-all-risk",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "⚙️", title: "Damage During Erection", desc: "Physical loss or damage to machinery, equipment, and structural components during the erection process." },

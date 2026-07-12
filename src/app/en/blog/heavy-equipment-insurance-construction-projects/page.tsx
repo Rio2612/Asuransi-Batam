@@ -1,5 +1,6 @@
 // app/en/blog/heavy-equipment-insurance-construction-projects/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ArticleLayout from "@/components/ArticleLayout";
 import {
@@ -23,17 +24,15 @@ import {
   HelpCircle,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Heavy Equipment Insurance for Construction Projects – Complete Guide for Contractors",
   description: "Contractors who don't insure their heavy equipment carry unnecessary risk. Understand EAR vs CAR, which equipment must be insured, how to calculate the right sum insured, and tips for a successful claim.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
-    languages: {
+  canonical: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
+  languages: {
       id: "https://asuransibatam.com/blog/asuransi-alat-berat-proyek-konstruksi",
       en: "https://asuransibatam.com/en/blog/heavy-equipment-insurance-construction-projects",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

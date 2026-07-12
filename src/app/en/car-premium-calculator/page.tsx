@@ -1,20 +1,18 @@
 // app/en/car-premium-calculator/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import KalkulatorMobil from "@/components/KalkulatorMobil";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Car Insurance Premium Calculator Batam – Check OJK Rates Now, Free",
-  description:
-    "How much is your car insurance premium in Batam? Calculate instantly using official OJK rates — All Risk from 2.08%, TLO from 0.37%. Instant results, no registration required.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/car-premium-calculator",
-    languages: {
+  description: "How much is your car insurance premium in Batam? Calculate instantly using official OJK rates — All Risk from 2.08%, TLO from 0.37%. Instant results, no registration required.",
+  canonical: "https://asuransibatam.com/en/car-premium-calculator",
+  languages: {
       id: "https://asuransibatam.com/kalkulator-premi-mobil",
       en: "https://asuransibatam.com/en/car-premium-calculator",
     },
-  },
-};
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

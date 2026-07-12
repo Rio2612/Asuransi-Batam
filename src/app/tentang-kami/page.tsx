@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
@@ -6,17 +7,15 @@ import CareerTimeline from "@/components/CareerTimeline";
 import LinkedInCard from "@/components/LinkedInCard";
 import KonsultasiForm from "./KonsultasiForm";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Tentang Kami – Rio Mardiansyah, Praktisi Asuransi Batam",
   description: "Profil Rio Mardiansyah, praktisi asuransi di Batam dengan 9+ tahun pengalaman di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
-  alternates: {
-    canonical: "https://asuransibatam.com/tentang-kami",
-    languages: {
+  canonical: "https://asuransibatam.com/tentang-kami",
+  languages: {
       id: "https://asuransibatam.com/tentang-kami",
       en: "https://asuransibatam.com/en/about-us",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

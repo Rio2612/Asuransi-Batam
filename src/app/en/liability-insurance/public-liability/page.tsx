@@ -1,20 +1,18 @@
 // app/en/liability-insurance/public-liability/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Public Liability Insurance Batam – Mandatory for Shipyard Subcontractors, Hotels & Public Businesses",
-  description:
-    "Public Liability Insurance in Batam for shipyard subcontractors (PT. Paxocean and others), hotels, restaurants, and shopping centres. Protection against visitor and third-party injury claims. Fast process, competitive rates. Contact: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/liability-insurance/public-liability",
-    languages: {
+  description: "Public Liability Insurance in Batam for shipyard subcontractors (PT. Paxocean and others), hotels, restaurants, and shopping centres. Protection against visitor and third-party injury claims. Fast process, competitive rates. Contact: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/liability-insurance/public-liability",
+  languages: {
       id: "https://asuransibatam.com/asuransi-liability/public-liability",
       en: "https://asuransibatam.com/en/liability-insurance/public-liability",
     },
-  },
-};
+});
 
 const benefits = [
   {

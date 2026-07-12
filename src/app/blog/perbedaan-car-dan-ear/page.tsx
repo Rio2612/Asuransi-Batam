@@ -1,5 +1,6 @@
 // app/blog/perbedaan-car-dan-ear/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import {
   Building2,
   Wrench,
@@ -11,18 +12,15 @@ import {
   MessageCircleMore,
 } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Perbedaan CAR dan EAR dalam Asuransi Engineering – Panduan Lengkap",
-  description:
-    "Bingung memilih antara Contractor All Risk (CAR) dan Erection All Risk (EAR)? Pelajari perbedaan mendasar keduanya, cakupan risiko, dan mana yang tepat untuk proyek Anda di Batam.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
-    languages: {
+  description: "Bingung memilih antara Contractor All Risk (CAR) dan Erection All Risk (EAR)? Pelajari perbedaan mendasar keduanya, cakupan risiko, dan mana yang tepat untuk proyek Anda di Batam.",
+  canonical: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
+  languages: {
       id: "https://asuransibatam.com/blog/perbedaan-car-dan-ear",
       en: "https://asuransibatam.com/en/blog/difference-between-car-and-ear-insurance",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

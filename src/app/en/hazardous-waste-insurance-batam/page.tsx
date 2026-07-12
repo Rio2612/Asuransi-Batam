@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import {
   AlertTriangle,
@@ -11,10 +12,9 @@ import {
 } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Hazardous Waste (B3) Insurance Claims in Batam Industrial Estates: Procedure, Regulations & Case Studies",
-  description:
-    "Complete guide to filing hazardous waste (B3) insurance claims for factories in Batam's industrial zones. KLHK regulations, required documents, real case examples from Kabil and Muka Kuning, premium estimates.",
+  description: "Complete guide to filing hazardous waste (B3) insurance claims for factories in Batam's industrial zones. KLHK regulations, required documents, real case examples from Kabil and Muka Kuning, premium estimates.",
   keywords: [
     "hazardous waste insurance Batam",
     "B3 liability insurance Batam",
@@ -23,15 +23,12 @@ export const metadata: Metadata = {
     "EIL insurance Batam",
     "B3 waste claim Batam",
   ],
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/en/hazardous-waste-insurance-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/en/hazardous-waste-insurance-batam",
+  languages: {
       en: "https://asuransibatam.com/en/hazardous-waste-insurance-batam",
       id: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     },
-  },
-};
+});
 
 // ── SCHEMA ───────────────────────────────────────────────────────────────────
 

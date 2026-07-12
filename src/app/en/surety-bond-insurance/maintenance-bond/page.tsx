@@ -1,12 +1,12 @@
 // app/en/surety-bond-insurance/maintenance-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Maintenance Bond Batam – Post-Project Defect Guarantee",
-  description:
-    "Maintenance bond in Batam: guarantee your post-project obligations and replace cash retention with a surety bond. Fast issuance, free consultation with Rio.",
+  description: "Maintenance bond in Batam: guarantee your post-project obligations and replace cash retention with a surety bond. Fast issuance, free consultation with Rio.",
   keywords: [
     "maintenance bond batam",
     "defect guarantee batam",
@@ -14,14 +14,12 @@ export const metadata: Metadata = {
     "retention bond batam",
     "surety bond maintenance batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

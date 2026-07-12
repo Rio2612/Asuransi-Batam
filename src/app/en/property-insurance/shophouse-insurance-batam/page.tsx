@@ -1,18 +1,17 @@
 // app/en/property-insurance/shophouse-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Shophouse Insurance Batam – Protect Your Building & Business Stock",
   description: "Shophouse owners in Batam need protection from fire, flood, and theft. All-risk shophouse insurance covers the building, store contents, and third-party liability. Free consultation with Rio.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/shophouse-insurance-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/en/property-insurance/shophouse-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-ruko-batam",
       en: "https://asuransibatam.com/en/property-insurance/shophouse-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {

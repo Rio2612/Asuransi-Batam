@@ -1,5 +1,6 @@
 // app/en/surety-bond-insurance/bid-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -57,10 +58,9 @@ function Steps({ items }: { items: { title: string; desc?: React.ReactNode }[] }
   );
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Bid Bond Batam – Tender Bid Guarantee",
-  description:
-    "Bid bond (tender guarantee) in Batam for government, SOE, and private tenders. Fast issuance, no collateral, officially recognized. Contact Rio for a free consultation.",
+  description: "Bid bond (tender guarantee) in Batam for government, SOE, and private tenders. Fast issuance, no collateral, officially recognized. Contact Rio for a free consultation.",
   keywords: [
     "bid bond batam",
     "tender guarantee batam",
@@ -68,14 +68,12 @@ export const metadata: Metadata = {
     "construction bid bond batam",
     "surety bond bid bond batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

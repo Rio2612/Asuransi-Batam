@@ -1,19 +1,17 @@
 // app/en/engineering-insurance/contractor-all-risk/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Contractor All Risk (CAR) Insurance Batam – Construction Project Insurance",
-  description:
-    "Contractor All Risk Insurance in Batam for building, road, bridge, and infrastructure construction projects. Material & third-party liability protection. Consult Rio!",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/engineering-insurance/contractor-all-risk",
-    languages: {
+  description: "Contractor All Risk Insurance in Batam for building, road, bridge, and infrastructure construction projects. Material & third-party liability protection. Consult Rio!",
+  canonical: "https://asuransibatam.com/en/engineering-insurance/contractor-all-risk",
+  languages: {
       id: "https://asuransibatam.com/asuransi-engineering/contractor-all-risk",
       en: "https://asuransibatam.com/en/engineering-insurance/contractor-all-risk",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏗️", title: "Construction Work Damage", desc: "Physical loss or damage to the contract works during the construction period, including materials already incorporated." },

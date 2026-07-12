@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import {
   AlertTriangle,
@@ -11,10 +12,9 @@ import {
 } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Klaim Asuransi Limbah B3 di Kawasan Industri Batam: Prosedur, Regulasi & Contoh Kasus",
-  description:
-    "Panduan lengkap prosedur klaim asuransi limbah B3 untuk pabrik di kawasan industri Batam. Regulasi KLHK, dokumen yang dibutuhkan, contoh kasus di Kabil dan Muka Kuning, estimasi premi.",
+  description: "Panduan lengkap prosedur klaim asuransi limbah B3 untuk pabrik di kawasan industri Batam. Regulasi KLHK, dokumen yang dibutuhkan, contoh kasus di Kabil dan Muka Kuning, estimasi premi.",
   keywords: [
     "klaim asuransi limbah B3 Batam",
     "liability limbah kawasan industri",
@@ -23,14 +23,11 @@ export const metadata: Metadata = {
     "asuransi liability B3 Kabil",
     "asuransi tanggung jawab lingkungan Batam",
   ],
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/klaim-asuransi-limbah-b3-kawasan-industri-batam",
     },
-  },
-};
+});
 
 // ── SCHEMA ───────────────────────────────────────────────────────────────────
 

@@ -1,19 +1,17 @@
 // app/en/machinery-insurance/heavy-equipment-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Heavy Equipment Insurance Batam – Excavator, Bulldozer, Wheel Loader",
-  description:
-    "Heavy equipment insurance in Batam. Protection for excavators, bulldozers, wheel loaders, and construction equipment from damage and accidents. Contact +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
-    languages: {
+  description: "Heavy equipment insurance in Batam. Protection for excavators, bulldozers, wheel loaders, and construction equipment from damage and accidents. Contact +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
+  languages: {
       id: "https://asuransibatam.com/asuransi-machinery/asuransi-alat-berat",
       en: "https://asuransibatam.com/en/machinery-insurance/heavy-equipment-insurance",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🚜", title: "Equipment All Risk", desc: "Comprehensive protection for heavy equipment against all physical risks." },

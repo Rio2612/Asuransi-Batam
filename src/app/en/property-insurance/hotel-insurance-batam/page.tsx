@@ -1,19 +1,17 @@
 // app/en/property-insurance/hotel-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Hotel Insurance Batam – Comprehensive Hotel Asset Protection",
-  description:
-    "Hotel insurance in Batam. Protection for hotel buildings, contents, guest liability, and business interruption. Competitive premiums. Contact Rio: +62-813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/hotel-insurance-batam",
-    languages: {
+  description: "Hotel insurance in Batam. Protection for hotel buildings, contents, guest liability, and business interruption. Competitive premiums. Contact Rio: +62-813-7333-6728.",
+  canonical: "https://asuransibatam.com/en/property-insurance/hotel-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-hotel-batam",
       en: "https://asuransibatam.com/en/property-insurance/hotel-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   { icon: "🏨", title: "Building Structure", desc: "Protection for the entire hotel building from fire, natural disasters, explosion, and structural damage." },

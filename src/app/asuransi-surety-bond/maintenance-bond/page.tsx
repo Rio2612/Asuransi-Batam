@@ -1,5 +1,6 @@
 // app/asuransi-surety-bond/maintenance-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -40,10 +41,9 @@ function IconList({ items, variant = "check" }: { items: React.ReactNode[]; vari
   );
 }
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Maintenance Bond Batam – Jaminan Pemeliharaan Pasca Proyek",
-  description:
-    "Maintenance bond atau jaminan pemeliharaan di Batam untuk proyek konstruksi setelah serah terima. Lindungi pemilik proyek dari cacat tersembunyi. Proses cepat, konsultasi gratis dengan Rio.",
+  description: "Maintenance bond atau jaminan pemeliharaan di Batam untuk proyek konstruksi setelah serah terima. Lindungi pemilik proyek dari cacat tersembunyi. Proses cepat, konsultasi gratis dengan Rio.",
   keywords: [
     "maintenance bond batam",
     "jaminan pemeliharaan batam",
@@ -51,15 +51,12 @@ export const metadata: Metadata = {
     "surety bond maintenance bond batam",
     "jaminan retensi konstruksi batam",
   ],
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/maintenance-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

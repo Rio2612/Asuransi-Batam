@@ -1,12 +1,12 @@
 // app/en/surety-bond-insurance/performance-bond/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Performance Bond Batam – Contract Execution Guarantee",
-  description:
-    "Performance bond services in Batam for construction contractors, EPC companies, and suppliers. Guarantee your project is completed on time and on spec. Fast issuance, free consultation with Rio.",
+  description: "Performance bond services in Batam for construction contractors, EPC companies, and suppliers. Guarantee your project is completed on time and on spec. Fast issuance, free consultation with Rio.",
   keywords: [
     "performance bond batam",
     "contract execution guarantee batam",
@@ -14,14 +14,12 @@ export const metadata: Metadata = {
     "surety bond performance bond batam",
     "project completion guarantee batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
-    languages: {
+  canonical: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
     },
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

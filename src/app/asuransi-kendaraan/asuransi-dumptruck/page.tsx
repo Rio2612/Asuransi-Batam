@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import ProductPageLayout from "@/components/ProductPageLayout";
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Asuransi Dump Truck Batam – Perlindungan Armada Kendaraan Berat",
   description: "Asuransi dump truck dan kendaraan niaga berat di Batam. All risk, TLO, dan fleet insurance untuk armada tambang & konstruksi. Premi kompetitif. Hubungi Rio: 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
-    languages: {
+  canonical: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
+  languages: {
       id: "https://asuransibatam.com/asuransi-kendaraan/asuransi-dumptruck",
       en: "https://asuransibatam.com/en/vehicle-insurance/dump-truck-insurance",
     },
-  },
-};
+});
 const benefits = [
   { icon: "🚛", title: "Kerusakan Fisik Kendaraan", desc: "Kerusakan akibat kecelakaan, benturan, terbalik, terperosok, atau risiko medan jalan tambang dan konstruksi yang tidak rata." },
   { icon: "🔥", title: "Kebakaran & Ledakan", desc: "Perlindungan dari kebakaran mesin, ledakan tangki bahan bakar, dan korsleting listrik yang umum terjadi pada kendaraan berat beroperasi tinggi." },

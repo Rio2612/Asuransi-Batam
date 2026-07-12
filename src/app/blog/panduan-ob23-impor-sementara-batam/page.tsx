@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { Shield, Clock } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Panduan OB 23: Cara Mengurus Impor Sementara untuk Pameran & Proyek di Batam",
-  description:
-    "Panduan lengkap OB 23 (impor sementara) di Batam: kapan dipakai, dokumen yang dibutuhkan, proses pengajuan, kesalahan umum yang bikin denda, dan estimasi biaya custom bond.",
+  description: "Panduan lengkap OB 23 (impor sementara) di Batam: kapan dipakai, dokumen yang dibutuhkan, proses pengajuan, kesalahan umum yang bikin denda, dan estimasi biaya custom bond.",
   keywords: [
     "ob 23 batam",
     "impor sementara batam",
@@ -15,14 +15,12 @@ export const metadata: Metadata = {
     "jaminan impor sementara",
     "bea cukai impor sementara batam",
   ],
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/panduan-ob23-impor-sementara-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/blog/panduan-ob23-impor-sementara-batam",
+  languages: {
       id: "https://asuransibatam.com/blog/panduan-ob23-impor-sementara-batam",
       en: "https://asuransibatam.com/en/blog/temporary-import-guarantee-ob23-batam",
     },
-  },
-};
+});
 
 const articleSchema = {
   "@context": "https://schema.org",

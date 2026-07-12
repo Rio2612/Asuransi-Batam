@@ -1,18 +1,17 @@
 // app/en/property-insurance/warehouse-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ProductPageLayout from "@/components/ProductPageLayout";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = generateSEO({
   title: "Warehouse Insurance Batam – Stock, Building & Logistics Risk Protection",
   description: "Warehouses in Batam store assets worth billions. Protect them from fire, flood, and theft with warehouse insurance covering the building, contents, and third-party liability. Contact Rio now.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/property-insurance/warehouse-insurance-batam",
-    languages: {
+  canonical: "https://asuransibatam.com/en/property-insurance/warehouse-insurance-batam",
+  languages: {
       id: "https://asuransibatam.com/asuransi-properti/asuransi-gudang-batam",
       en: "https://asuransibatam.com/en/property-insurance/warehouse-insurance-batam",
     },
-  },
-};
+});
 
 const benefits = [
   {
