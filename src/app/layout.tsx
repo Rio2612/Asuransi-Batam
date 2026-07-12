@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import HtmlLangSync from "@/components/HtmlLangSync";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -68,7 +69,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // lang="id" tetap di sini sebagai default; halaman /en/* punya metadata sendiri
+    // lang="id" adalah default statis (perlu untuk SSG). Untuk halaman /en/*,
+    // <HtmlLangSync /> mengoreksi document.documentElement.lang ke "en" saat
+    // render — didekati begini (bukan headers()/middleware) supaya SEMUA 140
+    // halaman tetap bisa di-generate statis (SSG), tidak korbankan PageSpeed
+    // 100 yang sudah dicapai. Googlebot me-render JS sepenuhnya jadi atribut
+    // lang yang benar tetap terbaca saat indexing.
     <html lang="id" className={`${dmSans.variable} ${syne.variable}`}>
       {/*
         hreflang TIDAK di-hardcode di sini lagi.
@@ -79,6 +85,7 @@ export default function RootLayout({
         sebenarnya), yang membuat Google mengabaikan sinyal hreflang.
       */}
       <body className="font-sans antialiased">
+        <HtmlLangSync />
         <Navbar />
         <main>{children}</main>
         <Footer />
