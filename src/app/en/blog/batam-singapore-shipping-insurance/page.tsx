@@ -44,7 +44,7 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   inLanguage: "en",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Practitioner", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance" },
 };

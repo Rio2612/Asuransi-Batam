@@ -38,7 +38,7 @@ const articleSchema = {
   author: {
     "@type": "Person",
     name: "Rio",
-    jobTitle: "Insurance Consultant",
+    jobTitle: "Insurance Practitioner",
     telephone: "+6281373336728",
   },
   publisher: {

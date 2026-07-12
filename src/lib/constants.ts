@@ -1,7 +1,7 @@
 // Site-wide constants
 export const SITE = {
   name: "Asuransi Batam",
-  tagline: "Konsultan Asuransi Kerugian Terpercaya di Batam",
+  tagline: "Praktisi Asuransi Terpercaya di Batam",
   url: "https://asuransibatam.com",
   phone: "081373336728",
   phoneWA: "6281373336728",

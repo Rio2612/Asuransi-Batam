@@ -29,7 +29,7 @@ const schema = {
   headline: "Maintenance Bond Batam – Post-Project Defect Guarantee",
   description:
     "Guide to maintenance bonds in Batam: what they cover, bond value, validity periods, and how contractors can use them to replace cash retention.",
-  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
+  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "Insurance Practitioner" },
   publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
 };

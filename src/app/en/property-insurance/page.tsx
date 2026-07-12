@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Property Insurance Batam – Homes, Hotels, Commercial Buildings",
   description:
-    "Protect your property in Batam from fire, natural disaster, and structural damage. Free consultation with Rio, a trusted property insurance consultant in Batam.",
+    "Protect your property in Batam from fire, natural disaster, and structural damage. Free consultation with Rio, an insurance practitioner in Batam.",
   alternates: {
     canonical: "https://asuransibatam.com/en/property-insurance",
     languages: {

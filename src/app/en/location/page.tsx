@@ -7,9 +7,9 @@ import { Breadcrumb, CTASection } from "@/components/ui/index";
 import { MapPin, Clock, Phone, MessageCircle, Navigation } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Location – Batam Insurance Consultant | Batam Center, Riau Islands",
+  title: "Location – Batam Insurance Practitioner | Batam Center, Riau Islands",
   description:
-    "Find the office of a trusted general insurance consultant in Batam Center. Rio serves all areas of Batam and the Riau Islands. Contact us now!",
+    "Find the office of a trusted insurance practitioner in Batam Center. Rio serves all areas of Batam and the Riau Islands. Contact us now!",
   alternates: {
     canonical: "https://asuransibatam.com/en/location",
     languages: {
@@ -90,7 +90,7 @@ export default function LocationPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "Syne, sans-serif" }}>
             Location & Service Area
           </h1>
-          <p className="text-gray-300 text-lg">General Insurance Consultant Batam – Rio</p>
+          <p className="text-gray-300 text-lg">Insurance Practitioner Batam – Rio</p>
         </div>
       </section>
 

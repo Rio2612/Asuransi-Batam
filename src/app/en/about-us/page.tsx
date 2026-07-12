@@ -5,9 +5,9 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "About Us – Rio, Batam Insurance Consultant",
+  title: "About Us – Rio, Batam Insurance Practitioner",
   description:
-    "Profile of Rio, a professional general insurance consultant in Batam with 10+ years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
+    "Profile of Rio, an insurance practitioner in Batam with 8 years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
   alternates: {
     canonical: "https://asuransibatam.com/en/about-us",
     languages: {
@@ -21,7 +21,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Rio",
-  jobTitle: "General Insurance Consultant",
+  jobTitle: "Insurance Practitioner",
   worksFor: { "@type": "InsuranceAgency", name: "Batam Insurance" },
   telephone: "+6281373336728",
   email: "rio@asuransibatam.com",
@@ -59,7 +59,7 @@ export default function AboutUsPageEN() {
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">About Us</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Professional General Insurance Consultant in Batam with over 10 years of experience
+            Insurance Practitioner in Batam with 8 years of experience
             serving individual and corporate clients.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function AboutUsPageEN() {
               <div className="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/images/rio-mardiansyah.jpg"
-                  alt="Rio – General Insurance Consultant Batam"
+                  alt="Rio – Insurance Practitioner Batam"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -84,7 +84,7 @@ export default function AboutUsPageEN() {
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-3">
                     <p className="font-display font-bold text-white text-lg leading-tight">Rio</p>
-                    <p className="text-[#c9a84c] text-sm font-medium">General Insurance Consultant</p>
+                    <p className="text-[#c9a84c] text-sm font-medium">Insurance Practitioner</p>
                   </div>
                 </div>
               </div>
@@ -94,8 +94,8 @@ export default function AboutUsPageEN() {
             <div>
               <h2 className="font-display font-bold text-3xl text-[#0a1628] mb-4">Rio's Profile</h2>
               <p className="text-[#64748b] leading-relaxed mb-6">
-                Rio is an experienced general insurance consultant who has served clients in Batam and
-                Kepulauan Riau for over 10 years. With deep understanding of the local insurance industry
+                Rio is an experienced insurance practitioner who has served clients in Batam and
+                Kepulauan Riau for 8 years. With deep understanding of the local insurance industry
                 and the needs of businesses in Batam's industrial zone, Rio is a trusted partner for
                 comprehensive asset protection solutions.
               </p>

@@ -43,7 +43,7 @@ const schema = {
   datePublished: "2026-05-07",
   dateModified: "2026-05-07",
   inLanguage: "en",
-  author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Consultant", telephone: "+6281373336728" },
+  author: { "@type": "Person", name: "Rio", jobTitle: "Insurance Practitioner", telephone: "+6281373336728" },
   publisher: { "@type": "InsuranceAgency", name: "Asuransi Batam – Rio", url: "https://asuransibatam.com" },
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance" },
 };
@@ -162,7 +162,7 @@ export default function HowToClaimMarineCargoPage() {
       <div className="mt-10 p-6 bg-[#0a1628] rounded-2xl text-white not-prose">
         <h3 className="font-display font-bold text-lg text-[#c9a84c] mb-2">Need Help Filing a Claim or Reviewing Your Policy?</h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
-          Marine cargo claims become significantly more complicated when multiple modes of transport are involved or when goods have transited through several ports. As a Batam-based insurance consultant with direct experience on the Batam–Singapore–Jakarta corridor, I can assist from the first notice through to settlement.
+          Marine cargo claims become significantly more complicated when multiple modes of transport are involved or when goods have transited through several ports. As a Batam-based insurance practitioner with direct experience on the Batam–Singapore–Jakarta corridor, I can assist from the first notice through to settlement.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
           <a href="https://wa.me/6281373336728?text=Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20a%20marine%20cargo%20claim"

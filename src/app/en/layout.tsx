@@ -9,14 +9,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   metadataBase: new URL("https://asuransibatam.com"),
   title: {
-    default: "Batam Insurance – Trusted General Insurance Consultant | Rio",
+    default: "Batam Insurance – Trusted Insurance Practitioner | Rio",
     template: "%s | Batam Insurance",
   },
   description:
-    "Rio, professional general insurance consultant in Batam with 10+ years of experience. Property, vehicle, heavy equipment, liability & engineering insurance. Free consultation.",
+    "Rio, insurance practitioner in Batam with 8 years of experience. Property, vehicle, heavy equipment, liability & engineering insurance. Free consultation.",
   keywords: [
     "batam insurance",
-    "insurance consultant batam",
+    "insurance practitioner batam",
     "car insurance batam",
     "property insurance batam",
     "heavy equipment insurance batam",
@@ -29,15 +29,15 @@ export const metadata: Metadata = {
     alternateLocale: "id_ID",
     url: "https://asuransibatam.com/en",
     siteName: "Batam Insurance",
-    title: "Batam Insurance – Trusted General Insurance Consultant",
+    title: "Batam Insurance – Trusted Insurance Practitioner",
     description:
-      "Professional general insurance consultant in Batam. Property, vehicle, heavy equipment, liability & engineering.",
+      "Insurance practitioner in Batam. Property, vehicle, heavy equipment, liability & engineering.",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Batam Insurance – Rio",
-    description: "Professional general insurance consultant in Batam",
+    description: "Insurance practitioner in Batam",
   },
   robots: { index: true, follow: true },
 };

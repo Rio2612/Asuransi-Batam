@@ -80,8 +80,8 @@ export default function Footer() {
       ? `© ${new Date().getFullYear()} Batam Insurance – Rio. All rights reserved.`
       : `© ${new Date().getFullYear()} Asuransi Batam – Rio. Hak cipta dilindungi.`,
     tagline2: isEN
-      ? "Registered General Insurance Consultant | Batam, Kepulauan Riau"
-      : "Konsultan Asuransi Kerugian Terdaftar | Batam, Kepulauan Riau",
+      ? "Insurance Practitioner | Batam, Kepulauan Riau"
+      : "Praktisi Asuransi | Batam, Kepulauan Riau",
     homeHref: isEN ? "/en" : "/",
   };
 

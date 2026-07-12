@@ -4,7 +4,7 @@ import Link from "next/link";
 import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Contact – Reach Rio, Batam Insurance Consultant",
+  title: "Contact – Reach Rio, Batam Insurance Practitioner",
   description:
     "Contact Rio for a free insurance consultation in Batam. WhatsApp +62-813-7333-6728, email rio@asuransibatam.com. Batam Center.",
   alternates: {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
-  title: "Kontak – Hubungi Rio Konsultan Asuransi Batam",
+  title: "Kontak – Hubungi Rio Praktisi Asuransi Batam",
   description: "Hubungi Rio untuk konsultasi asuransi gratis di Batam. WhatsApp 0813-7333-6728, email rio@asuransibatam.com. Batam Center.",
   alternates: {
     canonical: "https://asuransibatam.com/kontak",

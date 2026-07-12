@@ -29,7 +29,7 @@ const schema = {
   headline: "Performance Bond Batam – Contract Execution Guarantee",
   description:
     "Complete guide to performance bonds in Batam: definition, who needs one, value, validity, required documents, and the claims process.",
-  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
+  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "Insurance Practitioner" },
   publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
 };

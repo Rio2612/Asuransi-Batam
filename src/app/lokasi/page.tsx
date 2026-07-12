@@ -6,7 +6,7 @@ import { Breadcrumb, CTASection } from "@/components/ui/index";
 import { MapPin, Clock, Phone, MessageCircle, Navigation } from "lucide-react";
 
 export const metadata: Metadata = generateSEO({
-  title: "Lokasi Konsultan Asuransi Batam – Batam Center, Kepulauan Riau",
+  title: "Lokasi Praktisi Asuransi Batam – Batam Center, Kepulauan Riau",
   description:
     "Temukan lokasi kantor konsultan asuransi kerugian terpercaya di Batam Center. Rio melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
   canonical: "/lokasi",
@@ -83,7 +83,7 @@ export default function LokasPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "Syne, sans-serif" }}>
             Lokasi & Area Layanan
           </h1>
-          <p className="text-gray-300 text-lg">Konsultan Asuransi Kerugian Batam – Rio</p>
+          <p className="text-gray-300 text-lg">Praktisi Asuransi Batam – Rio</p>
         </div>
       </section>
 

@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = {
   title: "Trusted Insurance Batam – Property, Vehicle, Heavy Equipment & Liability | Rio",
-  description: "Rio, a professional non-life insurance consultant in Batam with 10+ years of experience. Serving property, vehicle, heavy equipment, liability, and engineering insurance. Free consultation, fast response via WhatsApp. Call now: 0813-7333-6728.",
+  description: "Rio, an insurance practitioner in Batam with 8 years of experience. Serving property, vehicle, heavy equipment, liability, and engineering insurance. Free consultation, fast response via WhatsApp. Call now: 0813-7333-6728.",
   alternates: {
     canonical: "https://asuransibatam.com/en",
     languages: {
@@ -121,7 +121,7 @@ export default function HomePageEN() {
         employee: {
           "@type": "Person",
           name: "Rio",
-          jobTitle: "Insurance Consultant",
+          jobTitle: "Insurance Practitioner",
         },
       },
       {
@@ -155,7 +155,7 @@ export default function HomePageEN() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#c9a84c]/20 border border-[#c9a84c]/30 rounded-full text-[#c9a84c] text-sm font-semibold mb-6">
                 <Shield className="w-4 h-4" />
-                Non-Life Insurance Consultant Batam
+                Insurance Practitioner Batam
               </div>
               <h1 className="font-display font-bold text-5xl md:text-6xl text-white leading-tight mb-6">
                 Protect Your<br />
@@ -163,7 +163,7 @@ export default function HomePageEN() {
                 in Batam
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
-                Rio, a non-life insurance consultant with 10+ years of experience in Batam.
+                Rio, an insurance practitioner with 8 years of experience in Batam.
                 The right solution for property, vehicles, heavy equipment, liability, and engineering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -187,7 +187,7 @@ export default function HomePageEN() {
               <div className="flex flex-wrap gap-6">
                 {[
                   { icon: <CheckCircle className="w-4 h-4" />, text: "OJK-Registered" },
-                  { icon: <CheckCircle className="w-4 h-4" />, text: "10+ Years Experience" },
+                  { icon: <CheckCircle className="w-4 h-4" />, text: "8 Years Experience" },
                   { icon: <CheckCircle className="w-4 h-4" />, text: "Fast Claim Process" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-2 text-white/70 text-sm">
@@ -277,7 +277,7 @@ export default function HomePageEN() {
                 Why Trust Us with Your Insurance?
               </h2>
               <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-                With over 10 years of experience in the Batam non-life insurance industry,
+                With 8 years of experience in the Batam non-life insurance industry,
                 Rio is here as a trusted partner who understands local needs.
               </p>
               <div className="space-y-5">
@@ -386,7 +386,7 @@ export default function HomePageEN() {
       {/* ── CTA ── */}
       <CTASection
         title="Protect Your Assets in Batam"
-        subtitle="Consult your insurance needs with Rio, a trusted insurance consultant in Batam."
+        subtitle="Consult your insurance needs with Rio, an insurance practitioner in Batam."
         primaryLabel="Free Consultation via WhatsApp"
         waMsg="Hello%20Rio%2C%20I%20would%20like%20to%20consult%20about%20insurance"
         secondaryLabel="Calculate Car Premium"

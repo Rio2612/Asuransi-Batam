@@ -29,7 +29,7 @@ const schema = {
   headline: "Advance Payment Bond Batam – Down Payment Guarantee",
   description:
     "Complete guide to advance payment bonds in Batam: how they work, the reduction mechanism, required documents, and how to apply.",
-  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "General Insurance Consultant" },
+  author: { "@type": "Person", name: "Rio Mardiansyah", jobTitle: "Insurance Practitioner" },
   publisher: { "@type": "Organization", name: "Asuransi Batam", url: "https://asuransibatam.com" },
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
 };
