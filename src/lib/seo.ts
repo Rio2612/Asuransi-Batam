@@ -14,6 +14,8 @@ interface SEOProps {
   };
 }
 
+const EN_BRAND = "Batam Insurance";
+
 export function generateSEO({
   title,
   description,
@@ -23,15 +25,27 @@ export function generateSEO({
   keywords,
   languages,
 }: SEOProps): Metadata {
-  const fullTitle = title.includes(SITE.name)
-    ? title
-    : `${title} | ${SITE.name}`;
   const canonicalUrl = canonical
     ? canonical.startsWith("http") ? canonical : `${SITE.url}${canonical}`
     : SITE.url;
 
+  // Deteksi bahasa halaman dari path canonical (/en atau /en/...)
+  const canonicalPath = canonicalUrl.replace(SITE.url, "") || "/";
+  const isEnglish = canonicalPath === "/en" || canonicalPath.startsWith("/en/");
+  const brand = isEnglish ? EN_BRAND : SITE.name;
+  const locale = isEnglish ? "en_US" : "id_ID";
+  const alternateLocale = isEnglish ? "id_ID" : "en_US";
+
+  const fullTitle =
+    title.includes(SITE.name) || title.includes(EN_BRAND)
+      ? title
+      : `${title} | ${brand}`;
+
   return {
-    title: fullTitle,
+    // title.absolute mem-bypass title.template dari root/en layout, jadi
+    // fullTitle di atas TIDAK ditumpuk lagi oleh layout (dulu ini penyebab
+    // title dobel, mis. "... | Asuransi Batam | Asuransi Batam").
+    title: { absolute: fullTitle },
     description,
     ...(keywords && { keywords }),
     ...(noIndex && { robots: { index: false, follow: false } }),
@@ -45,7 +59,8 @@ export function generateSEO({
       url: canonicalUrl,
       siteName: SITE.name,
       type: "website",
-      locale: "id_ID",
+      locale,
+      ...(languages?.id && languages?.en && { alternateLocale }),
       images: [
         {
           url: `${SITE.url}${ogImage}`,
