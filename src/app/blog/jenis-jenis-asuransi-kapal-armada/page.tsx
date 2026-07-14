@@ -27,7 +27,7 @@ export const metadata: Metadata = generateSEO({
   title:
     "Jenis-Jenis Asuransi Kapal yang Wajib Diketahui Pemilik Armada di Batam",
   description:
-    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari konsultan berpengalaman 10+ tahun.",
+    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari konsultan berpengalaman 8+ tahun.",
   canonical: "/blog/jenis-jenis-asuransi-kapal-armada",
   // Catatan: versi EN belum dibuat. Jangan tambahkan `languages.en` di sini
   // sampai halaman /en/blog/types-of-ship-insurance-fleet-owners benar-benar ada,
@@ -82,7 +82,7 @@ const articleSchema = {
   headline:
     "Jenis-Jenis Asuransi Kapal yang Wajib Diketahui Pemilik Armada di Batam",
   description:
-    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam dari konsultan berpengalaman 10+ tahun.",
+    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam dari konsultan berpengalaman 8+ tahun.",
   image:
     "https://asuransibatam.com/images/potoartikel/tongkangnongsa.webp",
   datePublished: "2025-07-01",
@@ -251,7 +251,7 @@ export default function ArticleJenisAsuransiKapal() {
         dalam hitungan jam.
       </p>
       <p>
-        Sebagai konsultan asuransi kerugian yang telah lebih dari 10 tahun
+        Sebagai konsultan asuransi kerugian yang telah lebih dari 8 tahun
         mendampingi pemilik kapal dan perusahaan pelayaran di Batam dan
         sekitarnya, saya sering menemukan satu pertanyaan yang sama:{" "}
         <strong>
@@ -455,7 +455,7 @@ export default function ArticleJenisAsuransiKapal() {
         <strong>
           bukan soal apakah kapal Anda akan mengalami insiden, tapi kapan.
         </strong>{" "}
-        Dengan lebih dari 30 tahun karir di industri pelayaran, saya belum
+        Dengan lebih dari 8 tahun karir di industri pelayaran, saya belum
         pernah bertemu pemilik kapal yang tidak pernah mengalami satu pun
         insiden berarti dalam seumur hidup operasinya.
       </p>

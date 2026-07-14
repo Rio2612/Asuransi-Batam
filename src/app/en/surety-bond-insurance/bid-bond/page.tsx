@@ -272,7 +272,7 @@ export default function BidBondENPage() {
         </h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
           Do you have tender documents in hand and need a bid bond quickly? Contact Rio — a
-          insurance practitioner with 8 years of experience in Batam — to get the best
+          insurance practitioner with 8+ years of experience in Batam — to get the best
           premium offer and fast issuance.
         </p>
         <p className="text-sm text-white/80">

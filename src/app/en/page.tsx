@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = generateSEO({
   title: "Trusted Insurance Batam – Property, Vehicle, Heavy Equipment & Liability | Rio",
-  description: "Rio, an insurance practitioner in Batam with 8 years of experience. Serving property, vehicle, heavy equipment, liability, and engineering insurance. Free consultation, fast response via WhatsApp. Call now: 0813-7333-6728.",
+  description: "Rio, an insurance practitioner in Batam with 8+ years of experience. Serving property, vehicle, heavy equipment, liability, and engineering insurance. Free consultation, fast response via WhatsApp. Call now: 0813-7333-6728.",
   canonical: "https://asuransibatam.com/en",
   languages: {
       id: "https://asuransibatam.com",
@@ -162,7 +162,7 @@ export default function HomePageEN() {
                 in Batam
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
-                Rio, an insurance practitioner with 8 years of experience in Batam.
+                Rio, an insurance practitioner with 8+ years of experience in Batam.
                 The right solution for property, vehicles, heavy equipment, liability, and engineering.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -186,7 +186,7 @@ export default function HomePageEN() {
               <div className="flex flex-wrap gap-6">
                 {[
                   { icon: <CheckCircle className="w-4 h-4" />, text: "OJK-Registered" },
-                  { icon: <CheckCircle className="w-4 h-4" />, text: "8 Years Experience" },
+                  { icon: <CheckCircle className="w-4 h-4" />, text: "8+ Years Experience" },
                   { icon: <CheckCircle className="w-4 h-4" />, text: "Fast Claim Process" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-2 text-white/70 text-sm">
@@ -198,7 +198,7 @@ export default function HomePageEN() {
             </div>
             <div className="hidden lg:grid grid-cols-2 gap-4">
               {[
-                { val: "10+", label: "Years of Experience", bg: "bg-[#c9a84c]/20", color: "text-[#c9a84c]" },
+                { val: "8+", label: "Years of Experience", bg: "bg-[#c9a84c]/20", color: "text-[#c9a84c]" },
                 { val: "200+", label: "Active Clients", bg: "bg-white/10", color: "text-white" },
                 { val: "98%", label: "Claim Success Rate", bg: "bg-white/10", color: "text-white" },
                 { val: "24/7", label: "Emergency Service", bg: "bg-[#c9a84c]/20", color: "text-[#c9a84c]" },
@@ -276,7 +276,7 @@ export default function HomePageEN() {
                 Why Trust Us with Your Insurance?
               </h2>
               <p className="text-[#475569] text-lg leading-relaxed mb-8">
-                With 8 years of experience in the Batam non-life insurance industry,
+                With 8+ years of experience in the Batam non-life insurance industry,
                 Rio is here as a trusted partner who understands local needs.
               </p>
               <div className="space-y-5">
@@ -316,7 +316,7 @@ export default function HomePageEN() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { val: "10+", label: "Years of Experience", bg: "bg-[#0a1628]", color: "text-[#c9a84c]" },
+                { val: "8+", label: "Years of Experience", bg: "bg-[#0a1628]", color: "text-[#c9a84c]" },
                 { val: "200+", label: "Active Clients", bg: "bg-[#c9a84c]", color: "text-[#0a1628]" },
                 { val: "98%", label: "Claim Success Rate", bg: "bg-[#1a4fa0]", color: "text-white" },
                 { val: "24/7", label: "Emergency Service", bg: "bg-[#132040]", color: "text-[#f0d080]" },
