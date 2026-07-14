@@ -111,7 +111,7 @@ export const FAQS_HOME = [
   },
   {
     q: "Berapa lama proses klaim asuransi?",
-    a: "Proses klaim umumnya 14–30 hari kerja setelah dokumen lengkap diterima. Dengan panduan dari konsultan kami, proses klaim bisa lebih cepat dan lancar.",
+    a: "Proses klaim umumnya 14–30 hari kerja setelah dokumen lengkap diterima. Dengan panduan dari praktisi kami, proses klaim bisa lebih cepat dan lancar.",
   },
   {
     q: "Apakah tersedia layanan konsultasi gratis?",
