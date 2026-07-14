@@ -42,7 +42,7 @@ const metadata_url = `${PAGE_URL}`;
 export const metadata: Metadata = generateSEO({
   title: "Asuransi CECR Batam – Civil Engineering Completed Risk untuk Talud, Dermaga & Infrastruktur Sipil",
   description:
-    "Konsultasi asuransi CECR (Civil Engineering Completed Risk) di Batam untuk talud, revetment, dermaga, dan infrastruktur sipil pasca-konstruksi. Simulasi premi, survei lapangan, dan klaim dibantu langsung oleh Rio, konsultan asuransi berpengalaman 8+ tahun.",
+    "Konsultasi asuransi CECR (Civil Engineering Completed Risk) di Batam untuk talud, revetment, dermaga, dan infrastruktur sipil pasca-konstruksi. Simulasi premi, survei lapangan, dan klaim dibantu langsung oleh Rio, praktisi asuransi berpengalaman 8+ tahun.",
   canonical: metadata_url,
 });
 
@@ -125,7 +125,7 @@ export default function CECRPage() {
         {/* ─── PENGANTAR: APA ITU CECR ─────────────────────── */}
         <section className="section-padding">
           <SectionHeader
-            eyebrow="Panduan Konsultan"
+            eyebrow="Panduan Praktisi"
             title="Apa Itu Asuransi CECR?"
             subtitle="Memahami posisi CECR dalam siklus perlindungan aset infrastruktur, dari masa konstruksi hingga operasional."
           />
@@ -158,7 +158,7 @@ export default function CECRPage() {
               sehari-hari.
             </p>
             <p>
-              Sebagai konsultan yang menangani langsung proyek-proyek
+              Sebagai praktisi yang menangani langsung proyek-proyek
               infrastruktur di Batam, saya kerap menyarankan klien untuk
               menyambung CAR dengan CECR secara berurutan tanpa jeda
               (back-to-back), supaya tidak ada satu hari pun aset Anda tanpa
@@ -211,7 +211,7 @@ export default function CECRPage() {
             <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
               <Image
                 src="/images/potoartikel/surveicecr.webp"
-                alt="Rio, konsultan asuransi kerugian Batam, melakukan survei lapangan untuk asuransi CECR pada proyek pemasangan batu miring (revetment) di kawasan Batu Ampar, Batam"
+                alt="Rio, praktisi asuransi kerugian Batam, melakukan survei lapangan untuk asuransi CECR pada proyek pemasangan batu miring (revetment) di kawasan Batu Ampar, Batam"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 800px"

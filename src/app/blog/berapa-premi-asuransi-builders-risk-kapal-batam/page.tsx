@@ -96,7 +96,7 @@ export default function Page() {
         dihitung berdasarkan beberapa variabel teknis yang saling berkaitan.
       </p>
       <p>
-        Sebagai konsultan asuransi kerugian yang telah menangani berbagai proyek di galangan kapal
+        Sebagai praktisi asuransi kerugian yang telah menangani berbagai proyek di galangan kapal
         Batam—termasuk Tanjung Uncang—saya akan membahas secara mendalam bagaimana premi Builder&apos;s
         Risk dihitung, faktor-faktor yang mempengaruhinya, simulasi perhitungan nyata, hingga studi
         kasus klaim yang pernah saya tangani langsung.
@@ -409,7 +409,7 @@ export default function Page() {
         <div className="flex items-start gap-3">
           <CheckCircle2 className="w-6 h-6 text-[#c9a84c] shrink-0 mt-1" />
           <div>
-            <p className="font-semibold text-[#0a1628] mb-1">Insight Konsultan</p>
+            <p className="font-semibold text-[#0a1628] mb-1">Insight Praktisi</p>
             <p className="text-[#374151] text-sm leading-relaxed m-0">
               Premi murah bukan selalu pilihan terbaik. Dari pengalaman menangani klaim langsung di
               galangan, gap cakupan (coverage gap) yang tidak terdeteksi sejak awal sering menjadi

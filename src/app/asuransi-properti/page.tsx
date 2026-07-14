@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = generateSEO({
   title: "Asuransi Properti Batam – Rumah, Hotel, Gedung Komersial",
-  description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio, konsultan asuransi properti terpercaya.",
+  description: "Lindungi properti Anda di Batam dari risiko kebakaran, bencana, dan kerusakan. Konsultasi gratis dengan Rio, praktisi asuransi properti terpercaya.",
   canonical: "https://asuransibatam.com/asuransi-properti",
   languages: {
       id: "https://asuransibatam.com/asuransi-properti",

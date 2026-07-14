@@ -198,7 +198,7 @@ export default function BidBondPage() {
       </ul>
       <p>
         Untuk kontraktor baru atau perusahaan yang belum memiliki laporan keuangan audit,
-        tetap ada alternatif proses yang dapat didiskusikan bersama konsultan kami.
+        tetap ada alternatif proses yang dapat didiskusikan bersama praktisi kami.
       </p>
 
       {/* ── H2: Keunggulan Surety Bond vs Bank Garansi ── */}
@@ -270,7 +270,7 @@ export default function BidBondPage() {
         </h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
           Anda memiliki dokumen tender di tangan dan membutuhkan bid bond secepatnya? Hubungi
-          Rio — konsultan asuransi kerugian dengan pengalaman 8+ tahun di Batam — untuk
+          Rio — praktisi asuransi kerugian dengan pengalaman 8+ tahun di Batam — untuk
           mendapatkan penawaran premi terbaik dan proses penerbitan yang cepat.
         </p>
         <p className="text-sm text-white/80">

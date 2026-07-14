@@ -421,7 +421,7 @@ export default function MarineCargoPage() {
           />
           <div className="mt-8 space-y-5 text-gray-700 leading-relaxed">
             <p>
-              Sebagai konsultan asuransi yang berbasis di Batam, saya — Rio — memahami langsung dinamika bisnis ekspor–impor di kota ini. Setiap hari saya membantu pelaku usaha dari berbagai sektor: manufaktur di Kawasan Industri Muka Kuning, distributor di Nagoya, hingga freight forwarder di sekitar Pelabuhan Batu Ampar — memilih polis Marine Cargo yang sesuai dengan jenis barang dan rute pengirimannya.
+              Sebagai praktisi asuransi yang berbasis di Batam, saya — Rio — memahami langsung dinamika bisnis ekspor–impor di kota ini. Setiap hari saya membantu pelaku usaha dari berbagai sektor: manufaktur di Kawasan Industri Muka Kuning, distributor di Nagoya, hingga freight forwarder di sekitar Pelabuhan Batu Ampar — memilih polis Marine Cargo yang sesuai dengan jenis barang dan rute pengirimannya.
             </p>
             <p>
               Saya bekerja sama dengan perusahaan asuransi terpercaya yang terdaftar dan diawasi OJK, sehingga Anda mendapatkan perlindungan yang sah secara hukum dengan proses klaim yang transparan. Tidak perlu repot datang ke kantor — konsultasi bisa dilakukan via WhatsApp, dan dokumen polis dikirim langsung ke email Anda.

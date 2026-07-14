@@ -311,7 +311,7 @@ export default function BuildersRiskPage() {
             <p className="text-gray-700 leading-relaxed">
               Pada proyek pembangunan kapal yang sedang berjalan di salah satu galangan Tanjung
               Uncang, terjadi insiden teknis pada tahap konstruksi yang menyebabkan kerusakan pada
-              sebagian struktur kapal. Sebagai konsultan yang mendampingi proses asuransinya,
+              sebagian struktur kapal. Sebagai praktisi yang mendampingi proses asuransinya,
               langkah pertama yang dilakukan adalah memastikan dokumentasi kerusakan — foto, video,
               dan kronologi kejadian — dilakukan secepat mungkin sebelum proses perbaikan dimulai.
               Dokumentasi awal ini krusial karena surveyor asuransi memerlukan bukti kondisi riil di
@@ -359,7 +359,7 @@ export default function BuildersRiskPage() {
             </div>
 
             <div className="border-l-4 border-[#c9a84c] bg-[#faf8f3] px-6 py-5 rounded-r-lg">
-              <p className="font-semibold text-[#0a1628] mb-1">Insight Konsultan</p>
+              <p className="font-semibold text-[#0a1628] mb-1">Insight Praktisi</p>
               <p className="text-gray-700 text-sm leading-relaxed m-0">
                 Kasus ini menjadi bukti nyata betapa pentingnya menentukan cakupan polis (scope of
                 cover) secara tepat sejak awal proyek — bukan sekadar memenuhi syarat administratif

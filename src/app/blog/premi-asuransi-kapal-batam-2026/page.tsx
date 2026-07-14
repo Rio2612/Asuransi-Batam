@@ -28,7 +28,7 @@ export const metadata: Metadata = generateSEO({
   title:
     "Berapa Premi Asuransi Kapal di Batam? Panduan Lengkap Tahun 2026",
   description:
-    "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, simulasi perhitungan, dan tips menekan biaya. Dari konsultan 8+ tahun pengalaman.",
+    "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, simulasi perhitungan, dan tips menekan biaya. Dari praktisi 8+ tahun pengalaman.",
   canonical: "/blog/premi-asuransi-kapal-batam-2026",
   // Catatan: versi EN belum dibuat. Jangan tambahkan `languages.en` di sini
   // sampai halaman /en/blog/ship-insurance-premium-batam-2026 benar-benar ada,
@@ -82,7 +82,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Berapa Premi Asuransi Kapal di Batam? Panduan Lengkap Tahun 2026",
   description:
-    "Panduan lengkap premi asuransi kapal di Batam 2026 dari konsultan berpengalaman 8+ tahun.",
+    "Panduan lengkap premi asuransi kapal di Batam 2026 dari praktisi berpengalaman 8+ tahun.",
   image:
     "https://asuransibatam.com/images/potoartikel/cek-mesin-kapal-batam.webp",
   datePublished: "2026-01-15",

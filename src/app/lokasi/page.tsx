@@ -8,7 +8,7 @@ import { MapPin, Clock, Phone, MessageCircle, Navigation } from "lucide-react";
 export const metadata: Metadata = generateSEO({
   title: "Lokasi Praktisi Asuransi Batam – Batam Center, Kepulauan Riau",
   description:
-    "Temukan lokasi kantor konsultan asuransi kerugian terpercaya di Batam Center. Rio melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
+    "Temukan lokasi kantor praktisi asuransi kerugian terpercaya di Batam Center. Rio melayani seluruh wilayah Batam dan Kepulauan Riau. Hubungi sekarang!",
   canonical: "/lokasi",
   languages: {
     id: "https://asuransibatam.com/lokasi",

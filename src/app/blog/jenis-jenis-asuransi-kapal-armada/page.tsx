@@ -27,7 +27,7 @@ export const metadata: Metadata = generateSEO({
   title:
     "Jenis-Jenis Asuransi Kapal yang Wajib Diketahui Pemilik Armada di Batam",
   description:
-    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari konsultan berpengalaman 8+ tahun.",
+    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang Nongsa Batam dari praktisi berpengalaman 8+ tahun.",
   canonical: "/blog/jenis-jenis-asuransi-kapal-armada",
   // Catatan: versi EN belum dibuat. Jangan tambahkan `languages.en` di sini
   // sampai halaman /en/blog/types-of-ship-insurance-fleet-owners benar-benar ada,
@@ -70,7 +70,7 @@ const faqData = [
   },
   {
     q: "Bagaimana cara klaim asuransi kapal jika terjadi kecelakaan di Batam?",
-    a: "Segera laporkan insiden ke perusahaan asuransi dalam 24–48 jam setelah kejadian. Dokumentasikan kerusakan dengan foto dan video, buat laporan Berita Acara Kecelakaan, hubungi Syahbandar setempat untuk membuat laporan resmi, dan koordinasikan dengan surveyor asuransi. Sebagai konsultan, saya siap mendampingi proses klaim dari awal hingga selesai.",
+    a: "Segera laporkan insiden ke perusahaan asuransi dalam 24–48 jam setelah kejadian. Dokumentasikan kerusakan dengan foto dan video, buat laporan Berita Acara Kecelakaan, hubungi Syahbandar setempat untuk membuat laporan resmi, dan koordinasikan dengan surveyor asuransi. Sebagai praktisi, saya siap mendampingi proses klaim dari awal hingga selesai.",
   },
 ];
 
@@ -82,7 +82,7 @@ const articleSchema = {
   headline:
     "Jenis-Jenis Asuransi Kapal yang Wajib Diketahui Pemilik Armada di Batam",
   description:
-    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam dari konsultan berpengalaman 8+ tahun.",
+    "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam dari praktisi berpengalaman 8+ tahun.",
   image:
     "https://asuransibatam.com/images/potoartikel/tongkangnongsa.webp",
   datePublished: "2025-07-01",
@@ -225,7 +225,7 @@ export default function ArticleJenisAsuransiKapal() {
   return (
     <ArticleLayout
       title="Jenis-Jenis Asuransi Kapal yang Wajib Diketahui Pemilik Armada di Batam"
-      description="Panduan menyeluruh dari konsultan berpengalaman: mulai Marine Hull, P&I, hingga War Risk — lengkap dengan studi kasus nyata tongkang di kawasan Nongsa, Batam."
+      description="Panduan menyeluruh dari praktisi berpengalaman: mulai Marine Hull, P&I, hingga War Risk — lengkap dengan studi kasus nyata tongkang di kawasan Nongsa, Batam."
       date="1 Juli 2025"
       category="Asuransi Marine"
       readTime="12 menit"
@@ -251,7 +251,7 @@ export default function ArticleJenisAsuransiKapal() {
         dalam hitungan jam.
       </p>
       <p>
-        Sebagai konsultan asuransi kerugian yang telah lebih dari 8 tahun
+        Sebagai praktisi asuransi kerugian yang telah lebih dari 8 tahun
         mendampingi pemilik kapal dan perusahaan pelayaran di Batam dan
         sekitarnya, saya sering menemukan satu pertanyaan yang sama:{" "}
         <strong>
@@ -269,7 +269,7 @@ export default function ArticleJenisAsuransiKapal() {
         <div className="relative w-full aspect-[16/9]">
           <Image
             src="/images/potoartikel/tongkangnongsa.webp"
-            alt="Survei tongkang di kawasan Nongsa Batam oleh Rio Mardiansyah, konsultan asuransi marine"
+            alt="Survei tongkang di kawasan Nongsa Batam oleh Rio Mardiansyah, praktisi asuransi marine"
             fill
             className="object-cover"
             priority
@@ -507,7 +507,7 @@ export default function ArticleJenisAsuransiKapal() {
       {/* ── EKSKLUSI PENTING ── */}
       <h2>Apa yang Tidak Ditanggung? Eksklusi Kritis yang Sering Terlewat</h2>
       <p>
-        Sebagai konsultan, saya sering menerima telepon dari pemilik kapal yang
+        Sebagai praktisi, saya sering menerima telepon dari pemilik kapal yang
         kecewa karena klaim ditolak. Setelah saya telusuri, hampir selalu ada
         satu penyebab yang sama:{" "}
         <strong>mereka tidak membaca klausul eksklusi polis dengan teliti.</strong>

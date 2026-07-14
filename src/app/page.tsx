@@ -463,7 +463,7 @@ export default function HomePage() {
                   {
                     icon: <Users className="w-5 h-5" />,
                     title: "Pendampingan Personal",
-                    desc: "Anda mendapat konsultan dedicated yang memandu dari pemilihan polis hingga klaim selesai.",
+                    desc: "Anda mendapat praktisi dedicated yang memandu dari pemilihan polis hingga klaim selesai.",
                   },
                   {
                     icon: <Clock className="w-5 h-5" />,

@@ -252,7 +252,7 @@ export default function CaraKlaimMarineCargoPage() {
           Butuh Bantuan Klaim atau Konsultasi Polis Marine?
         </h3>
         <p className="text-white/70 text-sm mb-6 leading-relaxed max-w-2xl">
-          Proses klaim marine cargo bisa rumit, terutama jika melibatkan beberapa moda transportasi atau transit di beberapa pelabuhan. Sebagai konsultan berbasis di Batam dengan pengalaman di jalur Batam–Singapura–Jakarta, saya siap membantu dari awal hingga klaim cair.
+          Proses klaim marine cargo bisa rumit, terutama jika melibatkan beberapa moda transportasi atau transit di beberapa pelabuhan. Sebagai praktisi berbasis di Batam dengan pengalaman di jalur Batam–Singapura–Jakarta, saya siap membantu dari awal hingga klaim cair.
         </p>
         <div className="flex flex-col sm:flex-row gap-3">
           <a href="https://wa.me/6281373336728?text=Halo%20Rio%2C%20saya%20ingin%20konsultasi%20klaim%20marine%20cargo"
