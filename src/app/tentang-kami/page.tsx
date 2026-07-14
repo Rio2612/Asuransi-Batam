@@ -9,7 +9,7 @@ import KonsultasiForm from "./KonsultasiForm";
 
 export const metadata: Metadata = generateSEO({
   title: "Tentang Kami – Rio Mardiansyah, Praktisi Asuransi Batam",
-  description: "Profil Rio Mardiansyah, praktisi asuransi di Batam dengan 9+ tahun pengalaman di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
+  description: "Profil Rio Mardiansyah, praktisi asuransi di Batam dengan 8+ tahun pengalaman di industri asuransi. Spesialis properti, kendaraan, alat berat, dan liability.",
   canonical: "https://asuransibatam.com/tentang-kami",
   languages: {
       id: "https://asuransibatam.com/tentang-kami",
@@ -103,7 +103,7 @@ export default function TentangKamiPage() {
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">Tentang Kami</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio Mardiansyah</h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Praktisi Asuransi dengan 9+ tahun pengalaman di industri asuransi kerugian,
+            Praktisi Asuransi dengan 8+ tahun pengalaman di industri asuransi kerugian,
             kini melayani klien individu dan korporat di Batam.
           </p>
         </div>
@@ -141,7 +141,7 @@ export default function TentangKamiPage() {
                 Profil Rio
               </h2>
               <p className="text-[#475569] leading-relaxed mb-6">
-                Rio Mardiansyah adalah praktisi asuransi dengan lebih dari 9 tahun pengalaman
+                Rio Mardiansyah adalah praktisi asuransi dengan lebih dari 8 tahun pengalaman
                 langsung di industri asuransi kerugian, meniti karier dari Account Officer di
                 PT Asuransi Umum Bumida 1967 (Batam), Sales &amp; Marketing Specialist, hingga
                 Branch Manager di PT Asuransi Purna Artanugraha (ASPAN). Pengalaman lintas fungsi
@@ -157,7 +157,7 @@ export default function TentangKamiPage() {
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { val: "9+", label: "Tahun Pengalaman" },
+                  { val: "8+", label: "Tahun Pengalaman" },
                   { val: "200+", label: "Klien Aktif" },
                   { val: "98%", label: "Kepuasan Klien" },
                   { val: "20+", label: "Produk Asuransi" },

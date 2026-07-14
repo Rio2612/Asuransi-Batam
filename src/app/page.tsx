@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = generateSEO({
   title: "Asuransi Batam Terpercaya – Properti, Kendaraan, Alat Berat & Liability | Rio",
-  description: "Rio, praktisi asuransi di Batam dengan pengalaman 8 tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
+  description: "Rio, praktisi asuransi di Batam dengan pengalaman 8+ tahun. Melayani asuransi properti, kendaraan, alat berat, liability, engineering, marine, surety bond, dan personal accident. Konsultasi gratis, respons cepat via WhatsApp. Hubungi sekarang: 0813-7333-6728.",
   canonical: "https://asuransibatam.com",
   languages: {
       id: "https://asuransibatam.com",
@@ -229,7 +229,7 @@ export default function HomePage() {
                 di Batam
               </h1>
               <p className="text-white/70 text-xl leading-relaxed mb-10">
-                Rio, praktisi asuransi berpengalaman 8 tahun di Batam.
+                Rio, praktisi asuransi berpengalaman 8+ tahun di Batam.
                 Solusi lengkap untuk properti, kendaraan, alat berat, liability, engineering,
                 marine, surety bond, dan personal accident.
               </p>
@@ -455,7 +455,7 @@ export default function HomePage() {
                 Mengapa Percayakan Asuransi ke Kami?
               </h2>
               <p className="text-[#475569] text-lg leading-relaxed mb-8">
-                Dengan pengalaman 8 tahun di industri asuransi Batam,
+                Dengan pengalaman 8+ tahun di industri asuransi Batam,
                 Rio hadir sebagai mitra terpercaya yang memahami kebutuhan lokal.
               </p>
               <div className="space-y-5">

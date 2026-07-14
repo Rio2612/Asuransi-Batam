@@ -32,8 +32,8 @@ export default function ArticleLayout({
     blogHref:       isEN ? "/en/blog" : "/blog",
     readLabel:      isEN ? "read"     : "baca",
     authorSubtitle: isEN
-      ? "Insurance Practitioner · 8 Years Experience"
-      : "Praktisi Asuransi · 8 Tahun Pengalaman",
+      ? "Insurance Practitioner · 8+ Years Experience"
+      : "Praktisi Asuransi · 8+ Tahun Pengalaman",
   };
 
   // BreadcrumbList JSON-LD — generated from the same breadcrumbs prop used for the visual nav,

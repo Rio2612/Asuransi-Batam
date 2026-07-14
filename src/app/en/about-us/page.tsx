@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 
 export const metadata: Metadata = generateSEO({
   title: "About Us – Rio, Batam Insurance Practitioner",
-  description: "Profile of Rio, an insurance practitioner in Batam with 8 years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
+  description: "Profile of Rio, an insurance practitioner in Batam with 8+ years of experience. Specialist in property, vehicles, heavy equipment, and liability insurance.",
   canonical: "https://asuransibatam.com/en/about-us",
   languages: {
       id: "https://asuransibatam.com/tentang-kami",
@@ -57,7 +57,7 @@ export default function AboutUsPageEN() {
           <p className="text-[#c9a84c] font-semibold uppercase tracking-widest text-sm mb-2">About Us</p>
           <h1 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">Rio</h1>
           <p className="text-white/70 text-xl max-w-2xl">
-            Insurance Practitioner in Batam with 8 years of experience
+            Insurance Practitioner in Batam with 8+ years of experience
             serving individual and corporate clients.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function AboutUsPageEN() {
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
-                  { val: "10+", label: "Years Experience" },
+                  { val: "8+", label: "Years Experience" },
                   { val: "200+", label: "Active Clients" },
                   { val: "98%", label: "Client Satisfaction" },
                   { val: "20+", label: "Insurance Products" },

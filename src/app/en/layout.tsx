@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Batam Insurance",
   },
   description:
-    "Rio, insurance practitioner in Batam with 8 years of experience. Property, vehicle, heavy equipment, liability & engineering insurance. Free consultation.",
+    "Rio, insurance practitioner in Batam with 8+ years of experience. Property, vehicle, heavy equipment, liability & engineering insurance. Free consultation.",
   keywords: [
     "batam insurance",
     "insurance practitioner batam",

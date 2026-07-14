@@ -270,7 +270,7 @@ export default function BidBondPage() {
         </h3>
         <p className="text-white/70 text-sm mb-4 leading-relaxed">
           Anda memiliki dokumen tender di tangan dan membutuhkan bid bond secepatnya? Hubungi
-          Rio — konsultan asuransi kerugian dengan pengalaman 10+ tahun di Batam — untuk
+          Rio — konsultan asuransi kerugian dengan pengalaman 8+ tahun di Batam — untuk
           mendapatkan penawaran premi terbaik dan proses penerbitan yang cepat.
         </p>
         <p className="text-sm text-white/80">
