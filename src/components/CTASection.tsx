@@ -15,7 +15,7 @@ interface CTASectionProps {
 const DEFAULTS = {
   id: {
     title: "Siap Melindungi Aset Anda?",
-    subtitle: "Konsultasikan kebutuhan asuransi Anda bersama Rio, konsultan asuransi terpercaya di Batam.",
+    subtitle: "Konsultasikan kebutuhan asuransi Anda bersama Rio, Praktisi asuransi terpercaya di Batam.",
     primaryLabel: "Konsultasi Gratis via WhatsApp",
     secondaryLabel: "Hitung Premi Mobil",
     secondaryHref: "/kalkulator-premi-mobil",
