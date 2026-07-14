@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Rio, praktisi asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 8+ tahun.",
   keywords: [
     "asuransi batam",
-    "konsultan asuransi batam",
+    "praktisi asuransi batam",
     "asuransi mobil batam",
     "asuransi properti batam",
     "asuransi alat berat batam",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Asuransi Batam",
     title: "Asuransi Batam – Praktisi Asuransi Terpercaya",
     description:
-      "Konsultan asuransi kerugian profesional di Batam. Properti, kendaraan, alat berat, liability & engineering.",
+      "Praktisi asuransi kerugian profesional di Batam. Properti, kendaraan, alat berat, liability & engineering.",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
   },
   icons: {
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Asuransi Batam – Rio",
-    description: "Konsultan asuransi kerugian profesional di Batam",
+    description: "Praktisi asuransi kerugian profesional di Batam",
   },
   robots: { index: true, follow: true },
 };
