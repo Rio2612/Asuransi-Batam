@@ -278,7 +278,7 @@ const articles: Article[] = [
     date: "1 Juli 2025",
     category: "Marine",
     excerpt:
-      "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang dari konsultan berpengalaman.",
+      "Panduan lengkap jenis asuransi kapal untuk pemilik armada di Batam: Marine Hull, P&I, Cargo, hingga War Risk. Studi kasus tongkang dari praktisi berpengalaman.",
     readTime: "8 menit",
   },
   {
@@ -305,7 +305,7 @@ const articles: Article[] = [
     date: "15 Januari 2026",
     category: "Marine",
     excerpt:
-      "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, dan tips menekan biaya dari konsultan berpengalaman.",
+      "Panduan lengkap premi asuransi kapal di Batam 2026: kisaran tarif Marine Hull, P&I, faktor penentu premi, dan tips menekan biaya dari praktisi asuransi berpengalaman.",
     readTime: "7 menit",
   },
   // ── Surety Bond ─────────────────────────────────────────────────────────────
