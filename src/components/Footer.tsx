@@ -67,7 +67,7 @@ export default function Footer() {
     brand: isEN ? "Batam Insurance" : "AsuransiBatam",
     tagline: isEN
       ? "Professional general insurance consultant in Batam. Protecting your assets & business with trusted insurance solutions."
-      : "Konsultan asuransi kerugian profesional di Batam. Melindungi aset & bisnis Anda dengan solusi asuransi terpercaya.",
+      : "Praktisi asuransi kerugian profesional di Batam. Melindungi aset & bisnis Anda dengan solusi asuransi terpercaya.",
     products: isEN ? "Insurance Products" : "Produk Asuransi",
     more: isEN ? "Other Products" : "Produk Lainnya",
     articles: isEN ? "Education Articles" : "Artikel Edukasi",
