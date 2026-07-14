@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | Asuransi Batam",
   },
   description:
-    "Rio, konsultan asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 8+ tahun.",
+    "Rio, praktisi asuransi kerugian profesional di Batam. Solusi asuransi properti, kendaraan, alat berat, liability & engineering. Pengalaman 8+ tahun.",
   keywords: [
     "asuransi batam",
     "konsultan asuransi batam",
