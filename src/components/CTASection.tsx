@@ -23,7 +23,7 @@ const DEFAULTS = {
   },
   en: {
     title: "Ready to Protect Your Assets?",
-    subtitle: "Consult with Rio, your trusted insurance consultant in Batam. Free, fast, and tailored to your needs.",
+    subtitle: "Consult with Rio, your trusted insurance practitioner in Batam. Free, fast, and tailored to your needs.",
     primaryLabel: "Free Consultation via WhatsApp",
     secondaryLabel: "Calculate Car Premium",
     secondaryHref: "/en/car-premium-calculator",
