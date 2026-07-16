@@ -1,6 +1,6 @@
 // app/en/surety-bond-insurance/maintenance-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
@@ -32,9 +32,21 @@ const schema = {
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/maintenance-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Maintenance Bond Batam",
+  description: "Maintenance bond services in Batam for post-project construction obligations, replacing cash retention with a surety bond.",
+  url: "/en/surety-bond-insurance/maintenance-bond",
+  category: "Surety Bond",
+});
+
 export default function MaintenanceBondENPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Maintenance Bond Batam: Post-Project Defect & Retention Guarantee"
       description="A complete guide to maintenance bonds in Batam — what they cover, bond value, maintenance period durations, and how contractors can use them to release cash retention and improve project cash flow."
       date="2025"
@@ -205,5 +217,6 @@ export default function MaintenanceBondENPage() {
         <strong>Hours:</strong> Mon–Sat, 08:00–17:00 WIB
       </p>
     </ArticleLayout>
+    </>
   );
 }

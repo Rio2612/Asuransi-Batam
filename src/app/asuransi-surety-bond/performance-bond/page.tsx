@@ -1,6 +1,6 @@
 // app/asuransi-surety-bond/performance-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -95,9 +95,21 @@ const schema = {
     "https://asuransibatam.com/asuransi-surety-bond/performance-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Performance Bond (Jaminan Pelaksanaan) Batam",
+  description: "Performance bond atau jaminan pelaksanaan proyek konstruksi di Batam untuk kontraktor, EPC, dan pengadaan. Menjamin proyek selesai sesuai kontrak.",
+  url: "/asuransi-surety-bond/performance-bond",
+  category: "Surety Bond",
+});
+
 export default function PerformanceBondPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Performance Bond Batam: Jaminan Pelaksanaan Proyek Sesuai Kontrak"
       description="Panduan lengkap performance bond di Batam — pengertian, fungsi, nilai, dokumen yang dibutuhkan, dan cara mengajukan jaminan pelaksanaan untuk proyek konstruksi, EPC, dan pengadaan barang/jasa."
       date="2025"
@@ -276,5 +288,6 @@ export default function PerformanceBondPage() {
         </p>
       </div>
     </ArticleLayout>
+    </>
   );
 }

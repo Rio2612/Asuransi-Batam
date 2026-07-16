@@ -1,6 +1,6 @@
 // app/en/surety-bond-insurance/performance-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
@@ -32,9 +32,21 @@ const schema = {
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/performance-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Performance Bond Batam",
+  description: "Performance bond services in Batam for construction contractors, EPC companies, and suppliers, guaranteeing project completion per contract.",
+  url: "/en/surety-bond-insurance/performance-bond",
+  category: "Surety Bond",
+});
+
 export default function PerformanceBondENPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Performance Bond Batam: Guaranteeing Contract Execution"
       description="A complete guide to performance bonds in Batam — what they cover, who is required to submit one, how much they cost, required documents, and how the claims process works for construction and procurement projects."
       date="2025"
@@ -212,5 +224,6 @@ export default function PerformanceBondENPage() {
         <strong>Hours:</strong> Mon–Sat, 08:00–17:00 WIB
       </p>
     </ArticleLayout>
+    </>
   );
 }

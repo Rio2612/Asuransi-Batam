@@ -1,6 +1,6 @@
 // app/en/surety-bond-insurance/bid-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -94,9 +94,21 @@ const schema = {
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/bid-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Bid Bond (Tender Guarantee) Batam",
+  description: "Bid bond / tender guarantee services in Batam for government, SOE, and private tenders. Fast issuance, no collateral required.",
+  url: "/en/surety-bond-insurance/bid-bond",
+  category: "Surety Bond",
+});
+
 export default function BidBondENPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Bid Bond Batam: Tender Bid Guarantee"
       description="A complete guide to bid bonds in Batam — definition, purpose, guarantee value, required documents, and how to quickly obtain a bid guarantee for government and private tenders."
       date="2025"
@@ -281,5 +293,6 @@ export default function BidBondENPage() {
         </p>
       </div>
     </ArticleLayout>
+    </>
   );
 }

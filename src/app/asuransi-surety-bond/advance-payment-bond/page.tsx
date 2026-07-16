@@ -1,6 +1,6 @@
 // app/asuransi-surety-bond/advance-payment-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -75,9 +75,21 @@ const schema = {
     "https://asuransibatam.com/asuransi-surety-bond/advance-payment-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Advance Payment Bond (Jaminan Uang Muka) Batam",
+  description: "Advance payment bond atau jaminan uang muka proyek di Batam. Melindungi pemberi kerja dari risiko kontraktor gagal setelah menerima uang muka.",
+  url: "/asuransi-surety-bond/advance-payment-bond",
+  category: "Surety Bond",
+});
+
 export default function AdvancePaymentBondPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Advance Payment Bond Batam: Jaminan Keamanan Uang Muka Proyek"
       description="Panduan lengkap advance payment bond di Batam — pengertian, fungsi, besaran nilai, mekanisme pengurangan, dan cara mendapatkan jaminan uang muka untuk proyek konstruksi dan pengadaan."
       date="2025"
@@ -232,5 +244,6 @@ export default function AdvancePaymentBondPage() {
         </p>
       </div>
     </ArticleLayout>
+    </>
   );
 }
