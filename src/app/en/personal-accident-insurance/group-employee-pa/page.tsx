@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   Building2, Users, ShieldCheck, FileText, Clock, ChevronRight, 
   MapPin, AlertTriangle, CheckCircle, PhoneCall, ArrowRight, 
@@ -7,24 +8,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO SUPER OPTIMIZED (EN) ---
-export const metadata: Metadata = {
-  title: 'Group Personal Accident Insurance Batam | Employee Protection (2024)',
+export const metadata: Metadata = generateSEO({
+  title: 'Group Personal Accident Insurance Batam',
   description: 'Group Personal Accident (PA) Insurance for companies in Batam, Batamindo, Mukakuning, and KIKN. Coverage for factory, shipyard, & project workers. Fast claims process (1 working day), supplementing BPJS JKK.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
-    },
+  canonical: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
   },
-  openGraph: {
-    title: 'Group PA Insurance Batam: Industrial Employee Protection Solutions',
-    description: 'Manage workplace risks in Batam with Group PA. Coverage for work accidents & travel. Free consultation for HR Managers.',
-    url: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
-    locale: 'en_US',
-    type: 'website',
-  },
-};
+});
 
 // --- JSON-LD SCHEMAS ---
 const breadcrumbSchema = {

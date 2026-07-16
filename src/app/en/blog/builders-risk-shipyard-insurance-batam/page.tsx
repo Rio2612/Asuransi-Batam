@@ -1,5 +1,6 @@
 // app/en/blog/builders-risk-shipyard-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -14,24 +15,16 @@ import {
   Handshake,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
+export const metadata: Metadata = generateSEO({
+  title: "Builders Risk Insurance Batam Shipyards",
   description:
     "Marine builders risk insurance explained: what it covers during vessel construction, how it differs from hull insurance, and who needs it in Batam's shipyard industry. Call Rio +62813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
-    languages: {
-      en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
-      id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
-    },
+  canonical: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
+  languages: {
+    en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
+    id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
   },
-  openGraph: {
-    title: "Builders Risk Insurance for Shipyards in Batam – Complete Guide",
-    description: "Builders risk covers vessels under construction or major repair — not operational hull insurance. A practical guide for Batam shipyards and vessel owners.",
-    url: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

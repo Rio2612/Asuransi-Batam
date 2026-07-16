@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   HeartHandshake, Car, Ship, ShieldAlert, ChevronRight, 
   PhoneCall, MapPin, Clock, FileText, CheckCircle, AlertTriangle,
@@ -7,24 +8,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO (EN) ---
-export const metadata: Metadata = {
-  title: 'Individual & Family PA Insurance Batam | 24-Hour Accident Protection',
+export const metadata: Metadata = generateSEO({
+  title: 'Individual & Family PA Insurance Batam',
   description: 'Personal Accident (PA) Insurance for Batam residents. Comprehensive 24/7 protection for commuters, motorcyclists, and families. Affordable premiums, 1-day claim process.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
-    },
+  canonical: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
   },
-  openGraph: {
-    title: 'Individual PA Insurance Batam: Protect Yourself & Family from Accident Risks',
-    description: 'Don\'t let accidents disrupt your family\'s finances. Medical, disability & death coverage. Specifically for Batam & Riau Islands residency.',
-    url: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
-    locale: 'en_US',
-    type: 'website',
-  },
-};
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

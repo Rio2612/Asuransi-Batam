@@ -1,5 +1,6 @@
 // app/en/blog/batam-singapore-shipping-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -17,24 +18,16 @@ import {
   Layers,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Batam–Singapore Cargo Shipping Insurance – Complete Guide for Exporters",
+export const metadata: Metadata = generateSEO({
+  title: "Batam-Singapore Cargo Shipping Insurance",
   description:
     "Everything importers and exporters need to know about marine cargo insurance on the Batam–Singapore route: Incoterms, policy clauses, route risks, and open cover. Call Rio +62813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
-    languages: {
-      en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
-      id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
-    },
+  canonical: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
+  languages: {
+    en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
   },
-  openGraph: {
-    title: "Batam–Singapore Cargo Shipping Insurance – Complete Guide for Exporters",
-    description: "Cargo insurance for the Batam–Singapore corridor: right clauses, Incoterms responsibilities, and route-specific risks.",
-    url: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

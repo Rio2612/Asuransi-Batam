@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   Building2, Users, ShieldCheck, FileText, Clock, ChevronRight, 
   MapPin, AlertTriangle, CheckCircle, PhoneCall, ArrowRight, 
@@ -7,24 +8,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO SUPER OPTIMIZED ---
-export const metadata: Metadata = {
-  title: 'Asuransi PA Karyawan Grup Batam | Premi Murah & Klaim Mudah (2024)',
+export const metadata: Metadata = generateSEO({
+  title: 'Asuransi PA Karyawan Grup Batam',
   description: 'Program Asuransi Kecelakaan Diri Grup (Group PA) untuk perusahaan di Batam, Batamindo, Mukakuning, dan KIKN. Cover karyawan pabrik, shipyard & proyek. Proses klaim 1 hari kerja, melengkapi BPJS JKK.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
-    },
+  canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance/group-employee-pa',
   },
-  openGraph: {
-    title: 'Asuransi PA Grup Batam: Solusi Proteksi Karyawan Industri',
-    description: 'Kelola risiko kerja di Batam dengan PA Group. Cover kecelakaan kerja & perjalanan. Konsultasi gratis untuk HRD & Manajer.',
-    url: 'https://asuransibatam.com/asuransi-personal-accident/pa-karyawan-grup',
-    locale: 'id_ID',
-    type: 'website',
-  },
-};
+});
 
 // --- JSON-LD SCHEMAS ---
 const breadcrumbSchema = {

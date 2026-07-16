@@ -1,5 +1,6 @@
 // app/en/blog/how-to-claim-marine-cargo-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -16,24 +17,16 @@ import {
   Coins,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "How to Claim Marine Cargo Insurance the Right Way – Complete Guide",
+export const metadata: Metadata = generateSEO({
+  title: "How to Claim Marine Cargo Insurance",
   description:
     "Step-by-step guide to filing a marine cargo insurance claim in Indonesia: required documents, reporting deadlines, and common mistakes that get claims rejected. Call Rio +62813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
-    languages: {
-      en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
-      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
-    },
+  canonical: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
+  languages: {
+    en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
+    id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
   },
-  openGraph: {
-    title: "How to Claim Marine Cargo Insurance the Right Way – Complete Guide",
-    description: "Required documents, deadlines, and step-by-step process to get your marine cargo claim paid.",
-    url: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

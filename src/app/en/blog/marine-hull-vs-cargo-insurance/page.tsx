@@ -1,5 +1,6 @@
 // app/en/blog/marine-hull-vs-cargo-insurance/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -12,24 +13,16 @@ import {
   Layers,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Marine Hull vs Marine Cargo Insurance – What's the Difference?",
+export const metadata: Metadata = generateSEO({
+  title: "Marine Hull vs Marine Cargo Insurance",
   description:
     "Clear explanation of marine hull (vessel) and marine cargo (goods) insurance: who buys each, what they cover, and how they work together. Consult Rio +62813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
-    languages: {
-      en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
-      id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
-    },
+  canonical: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
+  languages: {
+    en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
+    id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
   },
-  openGraph: {
-    title: "Marine Hull vs Marine Cargo Insurance – What's the Difference?",
-    description: "Vessel insurance vs goods insurance: different objects, different policyholders, different claims.",
-    url: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

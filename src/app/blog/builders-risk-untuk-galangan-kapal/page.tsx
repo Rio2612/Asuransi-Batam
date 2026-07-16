@@ -1,5 +1,6 @@
 // app/blog/builders-risk-untuk-galangan-kapal/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -64,24 +65,16 @@ function CrossList({ items }: { items: string[] }) {
   );
 }
 
-export const metadata: Metadata = {
-  title: "Apa itu Builders Risk? Panduan Dasar untuk Galangan Kapal di Batam",
+export const metadata: Metadata = generateSEO({
+  title: "Builders Risk untuk Galangan Kapal Batam",
   description:
     "Apa itu asuransi builders risk dan kenapa berbeda dari marine hull biasa? Panduan dasar untuk pemilik galangan kapal di Batam: apa yang dilindungi dan periode coverage. Konsultasi Rio 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
-    languages: {
-      id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
-      en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
-    },
+  canonical: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
+  languages: {
+    id: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
+    en: "https://asuransibatam.com/en/blog/builders-risk-shipyard-insurance-batam",
   },
-  openGraph: {
-    title: "Apa itu Builders Risk? Panduan Dasar untuk Galangan Kapal di Batam",
-    description: "Asuransi builders risk melindungi kapal yang sedang dibangun, dimodifikasi, atau direparasi besar. Panduan dasar untuk galangan kapal di Batam.",
-    url: "https://asuransibatam.com/blog/builders-risk-untuk-galangan-kapal",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

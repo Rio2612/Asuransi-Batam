@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   HeartHandshake, Car, Ship, ShieldAlert, ChevronRight, 
   PhoneCall, MapPin, Clock, FileText, CheckCircle, AlertTriangle,
@@ -7,24 +8,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO (OPTIMIZED FOR LOCAL BATAM) ---
-export const metadata: Metadata = {
-  title: 'Asuransi PA Individu & Keluarga Batam | Proteksi 24 Jam Anti Resiko',
+export const metadata: Metadata = generateSEO({
+  title: 'Asuransi PA Individu & Keluarga Batam',
   description: 'Asuransi Kecelakaan Diri (PA) Individu untuk warga Batam. Proteksi komprehensif 24 jam untuk komuter Batam-Singapura, pengendara motor, dan kepala keluarga. Premi mulai Rp 50rb/bulan, klaim proses 1 hari.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
-    },
+  canonical: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance/individual-family-pa',
   },
-  openGraph: {
-    title: 'Asuransi PA Individu Batam: Lindungi Diri & Keluarga dari Resiko Kecelakaan',
-    description: 'Jangan biarkan kecelakaan mengganggu keuangan keluarga. Cover medis, cacat & meninggal. Khusus untuk residensi Batam & Kepri.',
-    url: 'https://asuransibatam.com/asuransi-personal-accident/pa-individu-keluarga',
-    locale: 'id_ID',
-    type: 'website',
-  },
-};
+});
 
 // --- JSON-LD SCHEMAS ---
 const breadcrumbSchema = {
