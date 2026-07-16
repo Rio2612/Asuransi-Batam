@@ -1,6 +1,6 @@
 // app/en/surety-bond-insurance/advance-payment-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
@@ -32,9 +32,21 @@ const schema = {
   mainEntityOfPage: "https://asuransibatam.com/en/surety-bond-insurance/advance-payment-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Advance Payment Bond Batam",
+  description: "Advance payment bond services in Batam. Protects the project owner from contractor default after an advance payment has been disbursed.",
+  url: "/en/surety-bond-insurance/advance-payment-bond",
+  category: "Surety Bond",
+});
+
 export default function AdvancePaymentBondENPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Advance Payment Bond Batam: Securing Your Project's Down Payment"
       description="A complete guide to advance payment bonds in Batam — what they cover, how the reduction mechanism works, who needs one, required documents, and how to apply."
       date="2025"
@@ -174,5 +186,6 @@ export default function AdvancePaymentBondENPage() {
         <strong>Hours:</strong> Mon–Sat, 08:00–17:00 WIB
       </p>
     </ArticleLayout>
+    </>
   );
 }

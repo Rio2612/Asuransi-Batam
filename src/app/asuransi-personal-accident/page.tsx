@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { generateSEO } from '@/lib/seo';
+import { generateSEO, schemaInsuranceProduct } from '@/lib/seo';
 import { 
   ShieldCheck, 
   Users, 
@@ -64,11 +64,19 @@ const faqSchema = {
   ]
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Asuransi Kecelakaan Diri (Personal Accident) Batam",
+  description: "Proteksi Asuransi Kecelakaan Diri untuk pekerja industri, galangan kapal, dan logistik di Batam. Solusi Group PA & Individu.",
+  url: "/asuransi-personal-accident",
+  category: "Personal Accident",
+});
+
 // --- KOMPONEN UTAMA ---
 export default function PersonalAccidentPageID() {
   return (
     <>
       {/* Inject Schema JSON-LD */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 

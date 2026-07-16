@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { generateSEO, schemaFAQ, schemaBreadcrumb } from "@/lib/seo";
+import { generateSEO, schemaFAQ, schemaBreadcrumb, schemaInsuranceProduct } from "@/lib/seo";
 import { WHATSAPP_URL } from "@/lib/constants";
 import { Breadcrumb, CTASection, SectionHeader } from "@/components/ui/index";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -52,10 +52,20 @@ const jsonLdBreadcrumb = schemaBreadcrumb([
   { name: "Asuransi Engineering", url: "/asuransi-engineering" },
   { name: "Asuransi CECR", url: PAGE_URL },
 ]);
+const jsonLdService = schemaInsuranceProduct({
+  name: "Asuransi CECR (Civil Engineering Completed Risk) Batam",
+  description: "Asuransi untuk talud, revetment, dermaga, dan infrastruktur sipil pasca-konstruksi di Batam.",
+  url: PAGE_URL,
+  category: "Asuransi Engineering",
+});
 
 export default function CECRPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdService) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }}

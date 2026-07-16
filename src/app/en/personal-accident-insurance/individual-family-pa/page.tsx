@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { generateSEO } from '@/lib/seo';
+import { generateSEO, schemaInsuranceProduct } from '@/lib/seo';
 import { 
   HeartHandshake, Car, Ship, ShieldAlert, ChevronRight, 
   PhoneCall, MapPin, Clock, FileText, CheckCircle, AlertTriangle,
@@ -59,9 +59,17 @@ const faqSchema = {
   ]
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Individual & Family PA Insurance Batam",
+  description: "Personal Accident Insurance for Batam residents: comprehensive 24/7 protection for commuters, motorcyclists, and families.",
+  url: "/en/personal-accident-insurance/individual-family-pa",
+  category: "Personal Accident",
+});
+
 export default function IndividualFamilyPA_EN() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 

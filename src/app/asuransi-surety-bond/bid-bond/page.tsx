@@ -1,6 +1,6 @@
 // app/asuransi-surety-bond/bid-bond/page.tsx
 import type { Metadata } from "next";
-import { generateSEO } from "@/lib/seo";
+import { generateSEO, schemaInsuranceProduct } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -94,9 +94,21 @@ const schema = {
   mainEntityOfPage: "https://asuransibatam.com/asuransi-surety-bond/bid-bond",
 };
 
+const serviceSchema = schemaInsuranceProduct({
+  name: "Bid Bond (Jaminan Penawaran Tender) Batam",
+  description: "Jasa penerbitan bid bond / jaminan penawaran untuk tender pemerintah, BUMN, dan swasta di Batam. Proses cepat, tanpa agunan.",
+  url: "/asuransi-surety-bond/bid-bond",
+  category: "Surety Bond",
+});
+
 export default function BidBondPage() {
   return (
-    <ArticleLayout
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <ArticleLayout
       title="Bid Bond Batam: Jaminan Penawaran untuk Tender & Lelang"
       description="Panduan lengkap bid bond di Batam — pengertian, fungsi, besaran nilai, syarat dokumen, dan cara cepat mendapatkan jaminan penawaran untuk tender pemerintah maupun swasta."
       date="2025"
@@ -279,5 +291,6 @@ export default function BidBondPage() {
         </p>
       </div>
     </ArticleLayout>
+    </>
   );
 }
