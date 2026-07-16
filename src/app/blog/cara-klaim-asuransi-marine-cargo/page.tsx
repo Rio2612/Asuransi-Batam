@@ -1,27 +1,20 @@
 // app/blog/cara-klaim-asuransi-marine-cargo/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import { Search, ListChecks, AlertTriangle, MessageCircleMore } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Cara Klaim Asuransi Marine Cargo yang Benar – Panduan Lengkap",
+export const metadata: Metadata = generateSEO({
+  title: "Cara Klaim Asuransi Marine Cargo",
   description:
     "Panduan step-by-step mengajukan klaim asuransi marine cargo: dokumen wajib, batas waktu lapor, dan kesalahan umum yang membuat klaim ditolak. Konsultasi Rio 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
-    languages: {
-      id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
-      en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
-    },
+  canonical: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
+  languages: {
+    id: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
+    en: "https://asuransibatam.com/en/blog/how-to-claim-marine-cargo-insurance",
   },
-  openGraph: {
-    title: "Cara Klaim Asuransi Marine Cargo yang Benar – Panduan Lengkap",
-    description: "Dokumen wajib, batas waktu, dan langkah klaim marine cargo agar tidak ditolak.",
-    url: "https://asuransibatam.com/blog/cara-klaim-asuransi-marine-cargo",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

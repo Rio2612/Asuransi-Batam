@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   ShieldCheck, 
   Users, 
@@ -12,25 +13,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO & HREFLANG ---
-export const metadata: Metadata = {
-  title: 'Personal Accident Insurance (PA) Batam | Industrial & Shipyard Workers',
+export const metadata: Metadata = generateSEO({
+  title: 'Personal Accident Insurance (PA) Batam',
   description: 'Comprehensive Personal Accident Insurance in Batam. Specialized protection for shipyard, manufacturing, and logistics workers. Group PA & Individual solutions to supplement BPJS/Workman Compensation.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/en/personal-accident-insurance',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance',
-    },
+  canonical: 'https://asuransibatam.com/en/personal-accident-insurance',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance',
   },
-  openGraph: {
-    title: 'Personal Accident Insurance Batam | Industrial Worker Protection',
-    description: 'Group & Individual PA Insurance Solutions in Batam. Fast claims process & high-risk coverage for shipyard & manufacturing sectors.',
-    url: 'https://asuransibatam.com/en/personal-accident-insurance',
-    siteName: 'Asuransi Batam',
-    locale: 'en_US',
-    type: 'website',
-  },
-};
+});
 
 // --- JSON-LD SCHEMA (GSC Safety) ---
 const breadcrumbSchema = {

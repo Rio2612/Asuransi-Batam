@@ -1,5 +1,6 @@
 // app/blog/perbedaan-marine-hull-vs-cargo/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -24,24 +25,16 @@ function SectionHeading({ icon: Icon, children }: { icon: React.ElementType; chi
   );
 }
 
-export const metadata: Metadata = {
-  title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
+export const metadata: Metadata = generateSEO({
+  title: "Perbedaan Marine Hull dan Marine Cargo",
   description:
     "Penjelasan lengkap perbedaan asuransi marine hull (kapal) dan marine cargo (muatan). Siapa yang wajib beli, berapa preminya, dan bagaimana keduanya bekerja bersama. Konsultasi Rio 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
-    languages: {
-      id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
-      en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
-    },
+  canonical: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
+  languages: {
+    id: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
+    en: "https://asuransibatam.com/en/blog/marine-hull-vs-cargo-insurance",
   },
-  openGraph: {
-    title: "Perbedaan Marine Hull dan Marine Cargo – Mana yang Anda Butuhkan?",
-    description: "Asuransi kapal vs asuransi muatan: objek, tertanggung, dan kasus klaim yang berbeda.",
-    url: "https://asuransibatam.com/blog/perbedaan-marine-hull-vs-cargo",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

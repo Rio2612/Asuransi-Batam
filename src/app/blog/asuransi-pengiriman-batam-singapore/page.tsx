@@ -1,5 +1,6 @@
 // app/blog/asuransi-pengiriman-batam-singapore/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import {
@@ -50,24 +51,16 @@ function IconList({ items }: { items: { icon: React.ElementType; title: string; 
   );
 }
 
-export const metadata: Metadata = {
-  title: "Asuransi Pengiriman Barang Batam–Singapura – Panduan Lengkap untuk Eksportir",
+export const metadata: Metadata = generateSEO({
+  title: "Asuransi Pengiriman Barang Batam-Singapura",
   description:
     "Panduan asuransi marine cargo rute Batam–Singapura: Incoterms, jenis polis, waktu tempuh, dan risiko spesifik di Selat Singapura. Konsultasi Rio 0813-7333-6728.",
-  alternates: {
-    canonical: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
-    languages: {
-      id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
-      en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
-    },
+  canonical: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
+  languages: {
+    id: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
+    en: "https://asuransibatam.com/en/blog/batam-singapore-shipping-insurance",
   },
-  openGraph: {
-    title: "Asuransi Pengiriman Barang Batam–Singapura – Panduan Lengkap untuk Eksportir",
-    description: "Semua yang perlu diketahui eksportir dan importir tentang asuransi kargo rute Batam–Singapura.",
-    url: "https://asuransibatam.com/blog/asuransi-pengiriman-batam-singapore",
-    type: "article",
-  },
-};
+});
 
 const schema = {
   "@context": "https://schema.org",

@@ -1,30 +1,22 @@
 // app/blog/cara-mendapatkan-asuransi-builders-risk-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 import { AlertTriangle, FileSearch, ShieldCheck, ListChecks, HelpCircle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Cara Mendapatkan Asuransi Builders Risk yang Tepat di Batam",
+export const metadata: Metadata = generateSEO({
+  title: "Cara Mendapatkan Builders Risk Batam",
   description:
     "Panduan lengkap memilih asuransi builders risk untuk proyek konstruksi & galangan kapal di Batam: studi kasus klaim nyata, kesalahan umum, dan langkah memilih sum insured yang tepat. Konsultasi Rio 0813-7333-6728.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-    languages: {
-      id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-      en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
-    },
+  canonical:
+    "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+  languages: {
+    id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+    en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
   },
-  openGraph: {
-    title: "Cara Mendapatkan Asuransi Builders Risk yang Tepat di Batam",
-    description:
-      "Studi kasus klaim builders risk di galangan kapal Batam dan langkah memilih polis yang tepat agar proyek konstruksi Anda terlindungi.",
-    url: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-    type: "article",
-  },
-};
+});
 
 // Article schema (E-E-A-T: authorship & publisher signal)
 const articleSchema = {

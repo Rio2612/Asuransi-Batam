@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateSEO } from '@/lib/seo';
 import { 
   ShieldCheck, 
   Users, 
@@ -12,25 +13,15 @@ import {
 } from 'lucide-react';
 
 // --- METADATA SEO & HREFLANG ---
-export const metadata: Metadata = {
-  title: 'Asuransi Kecelakaan Diri (PA) Batam | Proteksi Pekerja Industri & Galangan',
+export const metadata: Metadata = generateSEO({
+  title: 'Asuransi Kecelakaan Diri (PA) Batam',
   description: 'Layanan Asuransi Kecelakaan Diri (Personal Accident) di Batam. Proteksi komprehensif untuk pekerja industri, galangan kapal (shipyard), dan logistik. Solusi Group PA & Individu untuk melengkapi BPJS Ketenagakerjaan.',
-  alternates: {
-    canonical: 'https://asuransibatam.com/asuransi-personal-accident',
-    languages: {
-      'id-ID': 'https://asuransibatam.com/asuransi-personal-accident',
-      'en-US': 'https://asuransibatam.com/en/personal-accident-insurance',
-    },
+  canonical: 'https://asuransibatam.com/asuransi-personal-accident',
+  languages: {
+    id: 'https://asuransibatam.com/asuransi-personal-accident',
+    en: 'https://asuransibatam.com/en/personal-accident-insurance',
   },
-  openGraph: {
-    title: 'Asuransi Kecelakaan Diri (PA) Batam | Proteksi Pekerja Industri',
-    description: 'Solusi Asuransi PA Group & Individu di Batam. Fokus klaim cepat & proteksi risiko tinggi pekerja shipyard & manufaktur.',
-    url: 'https://asuransibatam.com/asuransi-personal-accident',
-    siteName: 'Asuransi Batam',
-    locale: 'id_ID',
-    type: 'website',
-  },
-};
+});
 
 // --- JSON-LD SCHEMA (GSC Safety) ---
 const breadcrumbSchema = {

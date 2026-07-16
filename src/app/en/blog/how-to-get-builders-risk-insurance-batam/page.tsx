@@ -1,29 +1,21 @@
 // app/en/blog/how-to-get-builders-risk-insurance-batam/page.tsx
 import type { Metadata } from "next";
+import { generateSEO } from "@/lib/seo";
 import Image from "next/image";
 import ArticleLayout from "@/components/ArticleLayout";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How to Get the Right Builders Risk Insurance in Batam",
+export const metadata: Metadata = generateSEO({
+  title: "How to Get Builders Risk Insurance Batam",
   description:
     "A complete guide to choosing Builders Risk insurance for construction projects and shipyards in Batam: a real claim case study, common mistakes, and how to set the right sum insured. Consult Rio +62 813-7333-6728.",
-  alternates: {
-    canonical:
-      "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
-    languages: {
-      id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
-      en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
-    },
+  canonical:
+    "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
+  languages: {
+    id: "https://asuransibatam.com/blog/cara-mendapatkan-asuransi-builders-risk-batam",
+    en: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
   },
-  openGraph: {
-    title: "How to Get the Right Builders Risk Insurance in Batam",
-    description:
-      "A real Builders Risk claim case study from a Batam shipyard, and how to choose a policy that truly protects your project.",
-    url: "https://asuransibatam.com/en/blog/how-to-get-builders-risk-insurance-batam",
-    type: "article",
-  },
-};
+});
 
 // Article schema (E-E-A-T: authorship & publisher signal)
 const articleSchema = {
