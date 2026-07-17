@@ -18,7 +18,9 @@ import CTASection from "@/components/CTASection";
   canonical: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
   languages: {
       id: "https://asuransibatam.com/blog/asuransi-erection-all-risk-batam",
-      en: "https://asuransibatam.com/en/blog/excavator-and-bulldozer-insurance-batam", // Tambahkan URL versi Inggris di sini
+      // Belum ada versi EN artikel EAR ini — jangan isi field "en" sampai
+      // artikel padanannya benar-benar dibuat (sebelumnya salah tertaut ke
+      // excavator-and-bulldozer-insurance-batam, topik berbeda).
     },
 });
 
