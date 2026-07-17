@@ -326,7 +326,7 @@ export default function IndividualFamilyPA_EN() {
             <p className="text-navy/80 mb-8 max-w-2xl mx-auto text-lg">
                 A small investment today for peace of mind tomorrow. Consult your needs with our team for FREE.
             </p>
-            <Link href="https://wa.me/6281234567890?text=Hello,%20I%20am%20interested%20in%20Individual%20PA%20Insurance%20in%20Batam." 
+            <Link href="https://wa.me/6281373336728?text=Hello,%20I%20am%20interested%20in%20Individual%20PA%20Insurance%20in%20Batam." 
                   className="inline-flex items-center gap-2 bg-navy hover:bg-navy-mid text-cream font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-lg">
                 <PhoneCall size={22} /> Chat via WhatsApp
             </Link>

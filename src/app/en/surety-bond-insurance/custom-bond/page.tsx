@@ -27,6 +27,10 @@ export const metadata: Metadata = generateSEO({
   ],
   canonical: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
   languages: {
+    id: "https://asuransibatam.com/asuransi-surety-bond/custom-bond",
+    en: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
+  },
+  languages: {
       id: "https://asuransibatam.com/asuransi-surety-bond/custom-bond",
       en: "https://asuransibatam.com/en/surety-bond-insurance/custom-bond",
     },
