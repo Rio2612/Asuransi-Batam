@@ -46,6 +46,17 @@ const nextConfig: NextConfig = {
       // Fix duplicate kalkulator premi (2 URL berbeda, title identik) → konsolidasi ke versi flat
       { source: "/kalkulator-premi/mobil", destination: "/kalkulator-premi-mobil", permanent: true },
       { source: "/kalkulator-premi/motor", destination: "/kalkulator-premi-motor", permanent: true },
+
+      // Fix GSC "Tidak ditemukan (404)" — 3 URL lama/phantom yang masih ter-index
+      // Google tapi sudah tidak ada di source manapun (bukan link aktif di situs).
+      // Dipasang 301 supaya crawl budget & sinyal link lama tidak hilang percuma.
+      // 1) Slug lama kalkulator motor EN (urutan kata beda dari nama folder saat ini)
+      { source: "/en/motorcycle-insurance-calculator", destination: "/en/motorcycle-premium-calculator", permanent: true },
+      // 2) Slug lama sebelum artikel klaim mobil EN dipecah jadi -batam & -project
+      { source: "/en/blog/how-to-claim-car-insurance", destination: "/en/blog/how-to-claim-car-insurance-batam", permanent: true },
+      // 3) Versi EN artikel premi kapal belum pernah dibuat — arahkan ke halaman
+      //    marine insurance EN yang paling relevan, bukan ke blog index generik
+      { source: "/en/blog/ship-insurance-premium-batam-2026", destination: "/en/marine-insurance", permanent: true },
     ];
   },
 };
