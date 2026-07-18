@@ -34,6 +34,10 @@ export const metadata: Metadata = generateSEO({
   title: "Pentingnya Asuransi Limbah B3 untuk Industri di Batam",
   description: "Mengapa asuransi limbah B3 wajib dimiliki industri di Batam. Regulasi PP 22/2021, sanksi, dan cara mendapatkan jaminan finansial limbah B3 yang tepat.",
   canonical: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3",
+  languages: {
+    id: "https://asuransibatam.com/blog/pentingnya-asuransi-limbah-b3",
+    en: "https://asuransibatam.com/en/blog/hazardous-waste-insurance-batam",
+  },
 });
 
 const schema = {

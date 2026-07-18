@@ -32,7 +32,12 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-engineering": "/en/engineering-insurance",
   "/asuransi-engineering/contractor-all-risk": "/en/engineering-insurance/contractor-all-risk",
   "/asuransi-engineering/erection-all-risk": "/en/engineering-insurance/erection-all-risk",
-  
+
+  // Personal Accident
+  "/asuransi-personal-accident": "/en/personal-accident-insurance",
+  "/asuransi-personal-accident/pa-individu-keluarga": "/en/personal-accident-insurance/individual-family-pa",
+  "/asuransi-personal-accident/pa-karyawan-grup": "/en/personal-accident-insurance/group-employee-pa",
+
   // Surety Bond
   "/asuransi-surety-bond": "/en/surety-bond-insurance",
   "/asuransi-surety-bond/bid-bond": "/en/surety-bond-insurance/bid-bond",
@@ -47,9 +52,11 @@ const URL_MAP: Record<string, string> = {
   "/asuransi-marine/builders-risk": "/en/marine-insurance/builders-risk",
   // Kalkulator
   "/kalkulator-premi-mobil": "/en/car-premium-calculator",
+  "/kalkulator-premi-motor": "/en/motorcycle-premium-calculator",
   // Info
   "/tentang-kami": "/en/about-us",
   "/kontak": "/en/contact",
+  "/lokasi": "/en/location",
   // Blog – index
   "/blog": "/en/blog",
   // Blog – Kendaraan
